@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutAdvancedMachineFeatur
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutAttachedDiskParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutAttachedDiskParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutConfidentialInstanceC
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutGuestAcceleratorParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutGuestAcceleratorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -310,7 +310,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutInstanceEncryptionKey
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutNetworkInterfaceParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutNetworkInterfaceParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -385,7 +385,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutSchedulingParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutScratchDiskParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutScratchDiskParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -465,7 +465,7 @@ func validateComputeInstanceFromTemplate_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateComputeInstanceFromTemplate_IsConstructParameters(x interface{}) error {
+func validateComputeInstanceFromTemplate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -473,7 +473,7 @@ func validateComputeInstanceFromTemplate_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateComputeInstanceFromTemplate_IsTerraformElementParameters(x interface{}) error {
+func validateComputeInstanceFromTemplate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -481,7 +481,7 @@ func validateComputeInstanceFromTemplate_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateComputeInstanceFromTemplate_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeInstanceFromTemplate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -489,7 +489,7 @@ func validateComputeInstanceFromTemplate_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetAllowStoppingForUpdateParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetAllowStoppingForUpdateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -509,7 +509,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetAllowStoppingForUpdat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetCanIpForwardParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetCanIpForwardParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -529,7 +529,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetCanIpForwardParameter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -562,7 +562,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -619,7 +619,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -655,7 +655,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetDesiredStatusParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetEnableDisplayParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetEnableDisplayParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -763,7 +763,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -859,4 +859,3 @@ func validateNewComputeInstanceFromTemplateParameters(scope constructs.Construct
 
 	return nil
 }
-

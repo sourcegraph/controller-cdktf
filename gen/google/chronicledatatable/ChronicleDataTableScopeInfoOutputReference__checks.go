@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleDataTableScopeInfoOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDataTableScopeInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDataTableScopeInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewChronicleDataTableScopeInfoOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

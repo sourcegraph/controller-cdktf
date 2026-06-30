@@ -12,9 +12,9 @@ type ComputeRegionBackendServiceIapOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ComputeRegionBackendServiceIapOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeRegionBackendServiceIap
@@ -50,7 +50,7 @@ type ComputeRegionBackendServiceIapOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ComputeRegionBackendServiceIapOutputReference interface {
 	ResetOauth2ClientSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ComputeRegionBackendServiceIapOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) CreationStack(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) Enabled() inte
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -228,7 +228,6 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewComputeRegionBackendServiceIapOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionBackendServiceIapOutputReference {
 	_init_.Initialize()
 
@@ -239,7 +238,7 @@ func NewComputeRegionBackendServiceIapOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceIapOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -251,12 +250,12 @@ func NewComputeRegionBackendServiceIapOutputReference_Override(c ComputeRegionBa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceIapOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetEnabled(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetInternalValue(val *ComputeRegionBackendServiceIap) {
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) SetInternalValue(val *ComputeRegionBackendServiceIap) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetOauth2ClientId(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) SetOauth2ClientId(val *string) {
 	if err := j.validateSetOauth2ClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetOauth2Client
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetOauth2ClientSecret(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) SetOauth2ClientSecret(val *string) {
 	if err := j.validateSetOauth2ClientSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetOauth2Client
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,16 +356,16 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -494,7 +493,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) InterpolationF
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -546,16 +545,16 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) ResetOauth2Cli
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -574,4 +573,3 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) ToString() *st
 
 	return returns
 }
-

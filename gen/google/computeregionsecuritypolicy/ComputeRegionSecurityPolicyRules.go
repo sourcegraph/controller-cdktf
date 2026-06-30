@@ -1,6 +1,5 @@
 package computeregionsecuritypolicy
 
-
 type ComputeRegionSecurityPolicyRules struct {
 	// The Action to perform when the rule is matched. The following are the valid actions:.
 	//
@@ -42,10 +41,9 @@ type ComputeRegionSecurityPolicyRules struct {
 	// If set to true, the specified action is not enforced.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_security_policy#preview ComputeRegionSecurityPolicy#preview}
-	Preview interface{} `field:"optional" json:"preview" yaml:"preview"`
+	Preview any `field:"optional" json:"preview" yaml:"preview"`
 	// rate_limit_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_security_policy#rate_limit_options ComputeRegionSecurityPolicy#rate_limit_options}
 	RateLimitOptions *ComputeRegionSecurityPolicyRulesRateLimitOptions `field:"optional" json:"rateLimitOptions" yaml:"rateLimitOptions"`
 }
-

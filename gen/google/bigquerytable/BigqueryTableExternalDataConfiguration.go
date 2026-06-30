@@ -1,11 +1,10 @@
 package bigquerytable
 
-
 type BigqueryTableExternalDataConfiguration struct {
 	// Let BigQuery try to autodetect the schema and format of the table.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#autodetect BigqueryTable#autodetect}
-	Autodetect interface{} `field:"required" json:"autodetect" yaml:"autodetect"`
+	Autodetect any `field:"required" json:"autodetect" yaml:"autodetect"`
 	// A list of the fully-qualified URIs that point to your data in Google Cloud.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#source_uris BigqueryTable#source_uris}
@@ -55,7 +54,7 @@ type BigqueryTableExternalDataConfiguration struct {
 	// If true, the extra values are ignored. If false, records with extra columns are treated as bad records, and if there are too many bad records, an invalid error is returned in the job result. The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#ignore_unknown_values BigqueryTable#ignore_unknown_values}
-	IgnoreUnknownValues interface{} `field:"optional" json:"ignoreUnknownValues" yaml:"ignoreUnknownValues"`
+	IgnoreUnknownValues any `field:"optional" json:"ignoreUnknownValues" yaml:"ignoreUnknownValues"`
 	// Load option to be used together with sourceFormat newline-delimited JSON to indicate that a variant of JSON is being loaded.
 	//
 	// To load newline-delimited GeoJSON, specify GEOJSON (and sourceFormat must be set to NEWLINE_DELIMITED_JSON).
@@ -101,4 +100,3 @@ type BigqueryTableExternalDataConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_table#source_format BigqueryTable#source_format}
 	SourceFormat *string `field:"optional" json:"sourceFormat" yaml:"sourceFormat"`
 }
-

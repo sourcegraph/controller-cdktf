@@ -19,7 +19,7 @@ func (s *jsiiProxy_StorageDefaultObjectAcl) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAcl) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StorageDefaultObjectAcl) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StorageDefaultObjectAcl) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StorageDefaultObjectAcl) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateStorageDefaultObjectAcl_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateStorageDefaultObjectAcl_IsConstructParameters(x interface{}) error {
+func validateStorageDefaultObjectAcl_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateStorageDefaultObjectAcl_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateStorageDefaultObjectAcl_IsTerraformElementParameters(x interface{}) error {
+func validateStorageDefaultObjectAcl_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateStorageDefaultObjectAcl_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateStorageDefaultObjectAcl_IsTerraformResourceParameters(x interface{}) error {
+func validateStorageDefaultObjectAcl_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetBucketParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetLifecycleParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewStorageDefaultObjectAclParameters(scope constructs.Construct, id
 
 	return nil
 }
-

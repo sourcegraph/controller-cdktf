@@ -101,7 +101,7 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validatePutSubParametersParameters(value interface{}) error {
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validatePutSubParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validatePutSubstitutionRulesParameters(value interface{}) error {
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validatePutSubstitutionRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -263,7 +263,7 @@ func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -287,7 +287,7 @@ func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validateSetIsRequiredParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecOutputReference) validateSetIsRequiredParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -358,4 +358,3 @@ func validateNewCloudSecurityComplianceCloudControlParameterSpecOutputReferenceP
 
 	return nil
 }
-

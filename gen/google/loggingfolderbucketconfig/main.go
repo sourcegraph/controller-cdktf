@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
-		reflect.TypeOf((*LoggingFolderBucketConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingFolderBucketConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingFolderBucketConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,11 +86,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettings",
-		reflect.TypeOf((*LoggingFolderBucketConfigCmekSettings)(nil)).Elem(),
+		reflect.TypeFor[LoggingFolderBucketConfigCmekSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettingsOutputReference",
-		reflect.TypeOf((*LoggingFolderBucketConfigCmekSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingFolderBucketConfigCmekSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingFolderBucketConfigCmekSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,15 +127,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig",
-		reflect.TypeOf((*LoggingFolderBucketConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingFolderBucketConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs",
-		reflect.TypeOf((*LoggingFolderBucketConfigIndexConfigs)(nil)).Elem(),
+		reflect.TypeFor[LoggingFolderBucketConfigIndexConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList",
-		reflect.TypeOf((*LoggingFolderBucketConfigIndexConfigsList)(nil)).Elem(),
+		reflect.TypeFor[LoggingFolderBucketConfigIndexConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingFolderBucketConfigIndexConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -157,7 +157,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference",
-		reflect.TypeOf((*LoggingFolderBucketConfigIndexConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingFolderBucketConfigIndexConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingFolderBucketConfigIndexConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

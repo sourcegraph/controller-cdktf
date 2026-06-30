@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageHmacKey.StorageHmacKey",
-		reflect.TypeOf((*StorageHmacKey)(nil)).Elem(),
+		reflect.TypeFor[StorageHmacKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessId", GoGetter: "AccessId"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updated", GoGetter: "Updated"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageHmacKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageHmacKey.StorageHmacKeyConfig",
-		reflect.TypeOf((*StorageHmacKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageHmacKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageHmacKey.StorageHmacKeyTimeouts",
-		reflect.TypeOf((*StorageHmacKeyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StorageHmacKeyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageHmacKey.StorageHmacKeyTimeoutsOutputReference",
-		reflect.TypeOf((*StorageHmacKeyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageHmacKeyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -121,7 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageHmacKeyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

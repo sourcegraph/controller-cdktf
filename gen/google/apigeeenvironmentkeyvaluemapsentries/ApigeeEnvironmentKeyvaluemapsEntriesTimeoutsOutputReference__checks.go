@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReferenceParam
 
 	return nil
 }
-

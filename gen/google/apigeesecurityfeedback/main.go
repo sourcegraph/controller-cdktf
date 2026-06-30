@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback",
-		reflect.TypeOf((*ApigeeSecurityFeedback)(nil)).Elem(),
+		reflect.TypeFor[ApigeeSecurityFeedback](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeSecurityFeedback{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig",
-		reflect.TypeOf((*ApigeeSecurityFeedbackConfig)(nil)).Elem(),
+		reflect.TypeFor[ApigeeSecurityFeedbackConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackFeedbackContexts",
-		reflect.TypeOf((*ApigeeSecurityFeedbackFeedbackContexts)(nil)).Elem(),
+		reflect.TypeFor[ApigeeSecurityFeedbackFeedbackContexts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackFeedbackContextsList",
-		reflect.TypeOf((*ApigeeSecurityFeedbackFeedbackContextsList)(nil)).Elem(),
+		reflect.TypeFor[ApigeeSecurityFeedbackFeedbackContextsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackFeedbackContextsOutputReference",
-		reflect.TypeOf((*ApigeeSecurityFeedbackFeedbackContextsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeSecurityFeedbackFeedbackContextsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeInput", GoGetter: "AttributeInput"},
@@ -147,7 +147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeSecurityFeedbackFeedbackContextsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -155,11 +155,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts",
-		reflect.TypeOf((*ApigeeSecurityFeedbackTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ApigeeSecurityFeedbackTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeoutsOutputReference",
-		reflect.TypeOf((*ApigeeSecurityFeedbackTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeSecurityFeedbackTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeSecurityFeedbackTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

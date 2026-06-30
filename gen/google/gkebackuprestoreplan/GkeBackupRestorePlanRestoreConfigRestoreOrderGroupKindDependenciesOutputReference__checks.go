@@ -120,7 +120,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDepende
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDepende
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewGkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenci
 
 	return nil
 }
-

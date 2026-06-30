@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeNetworkEndpointsNetworkEndpointsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkEndpointsNetworkEndpointsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetworkEndpointsNetworkEndpointsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeNetworkEndpointsNetworkEndpointsListParameters(terraformR
 
 	return nil
 }
-

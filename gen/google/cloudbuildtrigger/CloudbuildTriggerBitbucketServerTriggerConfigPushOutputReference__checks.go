@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateSetInvertRegexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateSetInvertRegexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference
 
 	return nil
 }
-

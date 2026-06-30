@@ -12,9 +12,9 @@ type DataCatalogTagTemplateFieldsTypeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type DataCatalogTagTemplateFieldsTypeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type DataCatalogTagTemplateFieldsTypeOutputReference interface {
 	ResetPrimitiveType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewDataCatalogTagTemplateFieldsTypeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataCatalogTagTemplateFieldsTypeOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewDataCatalogTagTemplateFieldsTypeOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewDataCatalogTagTemplateFieldsTypeOutputReference_Override(d DataCatalogTa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetInternalValue(val *DataCatalogTagTemplateFieldsType) {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) SetInternalValue(val *DataCatalogTagTemplateFieldsType) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetPrimitiveType(val *string) {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) SetPrimitiveType(val *string) {
 	if err := j.validateSetPrimitiveTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetPrimitiveT
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) ComputeFqn()
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetListAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) GetStringMap
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) PutEnumType(
 	_jsii_.InvokeVoid(
 		d,
 		"putEnumType",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) ResetPrimiti
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeOutputReference) ToString() *
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerAnalysisNoteAttestationAuthorityHintOutputReferencePara
 
 	return nil
 }
-

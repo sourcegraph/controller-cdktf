@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetPublishCaCertParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetPublishCaCertParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetP
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetPublishCrlParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetPublishCrlParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,4 +246,3 @@ func validateNewPrivatecaCaPoolPublishingOptionsOutputReferenceParameters(terraf
 
 	return nil
 }
-

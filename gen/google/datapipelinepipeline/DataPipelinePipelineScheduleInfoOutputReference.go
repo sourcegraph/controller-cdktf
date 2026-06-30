@@ -12,9 +12,9 @@ type DataPipelinePipelineScheduleInfoOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -47,7 +47,7 @@ type DataPipelinePipelineScheduleInfoOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type DataPipelinePipelineScheduleInfoOutputReference interface {
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -205,7 +205,6 @@ func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) TimeZoneInpu
 	return returns
 }
 
-
 func NewDataPipelinePipelineScheduleInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataPipelinePipelineScheduleInfoOutputReference {
 	_init_.Initialize()
 
@@ -216,7 +215,7 @@ func NewDataPipelinePipelineScheduleInfoOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineScheduleInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -228,12 +227,12 @@ func NewDataPipelinePipelineScheduleInfoOutputReference_Override(d DataPipelineP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineScheduleInfoOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetInternalValue(val *DataPipelinePipelineScheduleInfo) {
+func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) SetInternalValue(val *DataPipelinePipelineScheduleInfo) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetSchedule(val *string) {
+func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) SetSchedule(val *string) {
 	if err := j.validateSetScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetSchedule(v
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference)SetTimeZone(val *string) {
+func (j *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) SetTimeZone(val *string) {
 	if err := j.validateSetTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) ComputeFqn()
 	return returns
 }
 
-func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetListAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) GetStringMap
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -512,16 +511,16 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) ResetTimeZon
 	)
 }
 
-func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -540,4 +539,3 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) ToString() *
 
 	return returns
 }
-

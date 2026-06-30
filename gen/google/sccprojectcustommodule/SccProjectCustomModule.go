@@ -16,15 +16,15 @@ type SccProjectCustomModule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CustomConfig() SccProjectCustomModuleCustomConfigOutputReference
 	CustomConfigInput() *SccProjectCustomModuleCustomConfig
 	// Experimental.
@@ -64,27 +64,27 @@ type SccProjectCustomModule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SccProjectCustomModuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type SccProjectCustomModule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type SccProjectCustomModule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type SccProjectCustomModule interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SccProjectCustomModule
@@ -167,8 +167,8 @@ func (j *jsiiProxy_SccProjectCustomModule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SccProjectCustomModule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccProjectCustomModule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_SccProjectCustomModule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccProjectCustomModule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccProjectCustomModule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_SccProjectCustomModule) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_SccProjectCustomModule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccProjectCustomModule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_SccProjectCustomModule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SccProjectCustomModule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SccProjectCustomModule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -397,8 +397,8 @@ func (j *jsiiProxy_SccProjectCustomModule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccProjectCustomModule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccProjectCustomModule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_SccProjectCustomModule) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_SccProjectCustomModule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccProjectCustomModule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_SccProjectCustomModule) Timeouts() SccProjectCustomModuleTime
 	return returns
 }
 
-func (j *jsiiProxy_SccProjectCustomModule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccProjectCustomModule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -467,7 +467,6 @@ func (j *jsiiProxy_SccProjectCustomModule) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_project_custom_module google_scc_project_custom_module} Resource.
 func NewSccProjectCustomModule(scope constructs.Construct, id *string, config *SccProjectCustomModuleConfig) SccProjectCustomModule {
 	_init_.Initialize()
@@ -479,7 +478,7 @@ func NewSccProjectCustomModule(scope constructs.Construct, id *string, config *S
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccProjectCustomModule.SccProjectCustomModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -492,12 +491,12 @@ func NewSccProjectCustomModule_Override(s SccProjectCustomModule, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccProjectCustomModule.SccProjectCustomModule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetConnection(val interface{}) {
+func (j *jsiiProxy_SccProjectCustomModule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -508,7 +507,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetCount(val interface{}) {
+func (j *jsiiProxy_SccProjectCustomModule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -519,7 +518,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SccProjectCustomModule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -527,7 +526,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetDisplayName(val *string) {
+func (j *jsiiProxy_SccProjectCustomModule) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetEnablementState(val *string) {
+func (j *jsiiProxy_SccProjectCustomModule) SetEnablementState(val *string) {
 	if err := j.validateSetEnablementStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetEnablementState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SccProjectCustomModule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -557,7 +556,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetId(val *string) {
+func (j *jsiiProxy_SccProjectCustomModule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SccProjectCustomModule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetProject(val *string) {
+func (j *jsiiProxy_SccProjectCustomModule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SccProjectCustomModule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -598,7 +597,7 @@ func (j *jsiiProxy_SccProjectCustomModule)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_SccProjectCustomModule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SccProjectCustomModule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func SccProjectCustomModule_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccProjectCustomModule.SccProjectCustomModule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func SccProjectCustomModule_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SccProjectCustomModule_IsConstruct(x interface{}) *bool {
+func SccProjectCustomModule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccProjectCustomModule_IsConstructParameters(x); err != nil {
@@ -656,7 +655,7 @@ func SccProjectCustomModule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccProjectCustomModule.SccProjectCustomModule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func SccProjectCustomModule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SccProjectCustomModule_IsTerraformElement(x interface{}) *bool {
+func SccProjectCustomModule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccProjectCustomModule_IsTerraformElementParameters(x); err != nil {
@@ -675,7 +674,7 @@ func SccProjectCustomModule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccProjectCustomModule.SccProjectCustomModule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func SccProjectCustomModule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SccProjectCustomModule_IsTerraformResource(x interface{}) *bool {
+func SccProjectCustomModule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccProjectCustomModule_IsTerraformResourceParameters(x); err != nil {
@@ -694,7 +693,7 @@ func SccProjectCustomModule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccProjectCustomModule.SccProjectCustomModule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,31 +718,31 @@ func (s *jsiiProxy_SccProjectCustomModule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SccProjectCustomModule) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SccProjectCustomModule) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SccProjectCustomModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SccProjectCustomModule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (s *jsiiProxy_SccProjectCustomModule) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (s *jsiiProxy_SccProjectCustomModule) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (s *jsiiProxy_SccProjectCustomModule) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (s *jsiiProxy_SccProjectCustomModule) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (s *jsiiProxy_SccProjectCustomModule) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (s *jsiiProxy_SccProjectCustomModule) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (s *jsiiProxy_SccProjectCustomModule) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,15 +870,15 @@ func (s *jsiiProxy_SccProjectCustomModule) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SccProjectCustomModule) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccProjectCustomModule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -898,7 +897,7 @@ func (s *jsiiProxy_SccProjectCustomModule) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -911,7 +910,7 @@ func (s *jsiiProxy_SccProjectCustomModule) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,18 +924,18 @@ func (s *jsiiProxy_SccProjectCustomModule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SccProjectCustomModule) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SccProjectCustomModule) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -947,7 +946,7 @@ func (s *jsiiProxy_SccProjectCustomModule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -958,7 +957,7 @@ func (s *jsiiProxy_SccProjectCustomModule) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -969,7 +968,7 @@ func (s *jsiiProxy_SccProjectCustomModule) PutCustomConfig(value *SccProjectCust
 	_jsii_.InvokeVoid(
 		s,
 		"putCustomConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -980,7 +979,7 @@ func (s *jsiiProxy_SccProjectCustomModule) PutTimeouts(value *SccProjectCustomMo
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1016,8 +1015,8 @@ func (s *jsiiProxy_SccProjectCustomModule) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SccProjectCustomModule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccProjectCustomModule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1029,8 +1028,8 @@ func (s *jsiiProxy_SccProjectCustomModule) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (s *jsiiProxy_SccProjectCustomModule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccProjectCustomModule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1042,8 +1041,8 @@ func (s *jsiiProxy_SccProjectCustomModule) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (s *jsiiProxy_SccProjectCustomModule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccProjectCustomModule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1055,8 +1054,8 @@ func (s *jsiiProxy_SccProjectCustomModule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SccProjectCustomModule) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccProjectCustomModule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1081,8 +1080,8 @@ func (s *jsiiProxy_SccProjectCustomModule) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SccProjectCustomModule) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccProjectCustomModule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1093,4 +1092,3 @@ func (s *jsiiProxy_SccProjectCustomModule) ToTerraform() interface{} {
 
 	return returns
 }
-

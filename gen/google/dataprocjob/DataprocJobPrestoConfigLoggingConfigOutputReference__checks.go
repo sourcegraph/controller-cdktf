@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocJobPrestoConfigLoggingConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobPrestoConfigLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocJobPrestoConfigLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocJobPrestoConfigLoggingConfigOutputReferenceParameters(te
 
 	return nil
 }
-

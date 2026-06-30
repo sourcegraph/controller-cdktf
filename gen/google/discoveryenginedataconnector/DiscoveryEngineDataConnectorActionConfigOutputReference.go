@@ -15,17 +15,17 @@ type DiscoveryEngineDataConnectorActionConfigOutputReference interface {
 	ActionParamsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreateBapConnection() interface{}
-	SetCreateBapConnection(val interface{})
-	CreateBapConnectionInput() interface{}
+	CreateBapConnection() any
+	SetCreateBapConnection(val any)
+	CreateBapConnectionInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -47,7 +47,7 @@ type DiscoveryEngineDataConnectorActionConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type DiscoveryEngineDataConnectorActionConfigOutputReference interface {
 	ResetCreateBapConnection()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,8 +105,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) Acti
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) Comp
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) CreateBapConnection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) CreateBapConnection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createBapConnection",
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) Crea
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) CreateBapConnectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) CreateBapConnectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createBapConnectionInput",
@@ -205,7 +205,6 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) Terr
 	return returns
 }
 
-
 func NewDiscoveryEngineDataConnectorActionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataConnectorActionConfigOutputReference {
 	_init_.Initialize()
 
@@ -216,7 +215,7 @@ func NewDiscoveryEngineDataConnectorActionConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -228,12 +227,12 @@ func NewDiscoveryEngineDataConnectorActionConfigOutputReference_Override(d Disco
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetActionParams(val *map[string]*string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) SetActionParams(val *map[string]*string) {
 	if err := j.validateSetActionParamsParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetAc
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetCreateBapConnection(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) SetCreateBapConnection(val any) {
 	if err := j.validateSetCreateBapConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetCr
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetInternalValue(val *DiscoveryEngineDataConnectorActionConfig) {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) SetInternalValue(val *DiscoveryEngineDataConnectorActionConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) Comp
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetL
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) Inte
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -512,16 +511,16 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -540,4 +539,3 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference) ToSt
 
 	return returns
 }
-

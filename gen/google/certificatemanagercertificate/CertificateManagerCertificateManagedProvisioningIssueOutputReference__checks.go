@@ -98,7 +98,7 @@ func (c *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCertificateManagerCertificateManagedProvisioningIssueOutputRefer
 
 	return nil
 }
-

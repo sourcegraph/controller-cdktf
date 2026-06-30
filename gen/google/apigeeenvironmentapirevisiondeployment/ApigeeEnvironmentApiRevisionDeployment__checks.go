@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateAddMoveTarget
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateMoveFromIdPar
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateApigeeEnvironmentApiRevisionDeployment_GenerateConfigForImportParam
 	return nil
 }
 
-func validateApigeeEnvironmentApiRevisionDeployment_IsConstructParameters(x interface{}) error {
+func validateApigeeEnvironmentApiRevisionDeployment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateApigeeEnvironmentApiRevisionDeployment_IsConstructParameters(x inte
 	return nil
 }
 
-func validateApigeeEnvironmentApiRevisionDeployment_IsTerraformElementParameters(x interface{}) error {
+func validateApigeeEnvironmentApiRevisionDeployment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateApigeeEnvironmentApiRevisionDeployment_IsTerraformElementParameters
 	return nil
 }
 
-func validateApigeeEnvironmentApiRevisionDeployment_IsTerraformResourceParameters(x interface{}) error {
+func validateApigeeEnvironmentApiRevisionDeployment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetApiParamet
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetOrgIdParam
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetOverrideParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetOverrideParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -405,7 +405,7 @@ func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetOverridePa
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -459,7 +459,7 @@ func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetRevisionPa
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetSequencedRolloutParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentApiRevisionDeployment) validateSetSequencedRolloutParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -505,4 +505,3 @@ func validateNewApigeeEnvironmentApiRevisionDeploymentParameters(scope construct
 
 	return nil
 }
-

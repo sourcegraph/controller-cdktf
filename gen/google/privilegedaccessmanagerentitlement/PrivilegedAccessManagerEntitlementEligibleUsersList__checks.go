@@ -34,7 +34,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersList) validate
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPrivilegedAccessManagerEntitlementEligibleUsersListParameters(te
 
 	return nil
 }
-

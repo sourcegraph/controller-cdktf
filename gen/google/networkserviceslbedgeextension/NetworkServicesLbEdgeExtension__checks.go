@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesLbEdgeExtension) validateAddMoveTargetParamete
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbEdgeExtension) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesLbEdgeExtension) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesLbEdgeExtension) validateMoveFromIdParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbEdgeExtension) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesLbEdgeExtension) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (n *jsiiProxy_NetworkServicesLbEdgeExtension) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbEdgeExtension) validatePutExtensionChainsParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkServicesLbEdgeExtension) validatePutExtensionChainsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateNetworkServicesLbEdgeExtension_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateNetworkServicesLbEdgeExtension_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesLbEdgeExtension_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateNetworkServicesLbEdgeExtension_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateNetworkServicesLbEdgeExtension_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesLbEdgeExtension_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateNetworkServicesLbEdgeExtension_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateNetworkServicesLbEdgeExtension_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesLbEdgeExtension_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateNetworkServicesLbEdgeExtension_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbEdgeExtension) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbEdgeExtension) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_NetworkServicesLbEdgeExtension) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbEdgeExtension) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbEdgeExtension) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -448,7 +448,7 @@ func (j *jsiiProxy_NetworkServicesLbEdgeExtension) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbEdgeExtension) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbEdgeExtension) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewNetworkServicesLbEdgeExtensionParameters(scope constructs.Constr
 
 	return nil
 }
-

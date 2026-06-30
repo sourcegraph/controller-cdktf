@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateSetDeleteParam
 	return nil
 }
 
-func (j *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStorageHmacKeyTimeoutsOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

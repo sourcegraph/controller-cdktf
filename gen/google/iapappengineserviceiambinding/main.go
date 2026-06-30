@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapAppEngineServiceIamBinding.IapAppEngineServiceIamBinding",
-		reflect.TypeOf((*IapAppEngineServiceIamBinding)(nil)).Elem(),
+		reflect.TypeFor[IapAppEngineServiceIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapAppEngineServiceIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,11 +80,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapAppEngineServiceIamBinding.IapAppEngineServiceIamBindingCondition",
-		reflect.TypeOf((*IapAppEngineServiceIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[IapAppEngineServiceIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapAppEngineServiceIamBinding.IapAppEngineServiceIamBindingConditionOutputReference",
-		reflect.TypeOf((*IapAppEngineServiceIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapAppEngineServiceIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapAppEngineServiceIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -123,6 +123,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapAppEngineServiceIamBinding.IapAppEngineServiceIamBindingConfig",
-		reflect.TypeOf((*IapAppEngineServiceIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[IapAppEngineServiceIamBindingConfig](),
 	)
 }

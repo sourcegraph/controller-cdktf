@@ -109,7 +109,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReferencePa
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package hypercomputeclustercluster
 
-
 type HypercomputeclusterClusterOrchestratorSlurm struct {
 	// login_nodes block.
 	//
@@ -9,11 +8,11 @@ type HypercomputeclusterClusterOrchestratorSlurm struct {
 	// node_sets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#node_sets HypercomputeclusterCluster#node_sets}
-	NodeSets interface{} `field:"required" json:"nodeSets" yaml:"nodeSets"`
+	NodeSets any `field:"required" json:"nodeSets" yaml:"nodeSets"`
 	// partitions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#partitions HypercomputeclusterCluster#partitions}
-	Partitions interface{} `field:"required" json:"partitions" yaml:"partitions"`
+	Partitions any `field:"required" json:"partitions" yaml:"partitions"`
 	// Default partition to use for submitted jobs that do not explicitly specify a partition.
 	//
 	// Required if and only if there is more than one partition, in
@@ -30,4 +29,3 @@ type HypercomputeclusterClusterOrchestratorSlurm struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#prolog_bash_scripts HypercomputeclusterCluster#prolog_bash_scripts}
 	PrologBashScripts *[]*string `field:"optional" json:"prologBashScripts" yaml:"prologBashScripts"`
 }
-

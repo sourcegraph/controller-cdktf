@@ -6,9 +6,9 @@ import (
 
 type ComputeFirewallConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeFirewallConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -38,11 +38,11 @@ type ComputeFirewallConfig struct {
 	// allow block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall#allow ComputeFirewall#allow}
-	Allow interface{} `field:"optional" json:"allow" yaml:"allow"`
+	Allow any `field:"optional" json:"allow" yaml:"allow"`
 	// deny block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall#deny ComputeFirewall#deny}
-	Deny interface{} `field:"optional" json:"deny" yaml:"deny"`
+	Deny any `field:"optional" json:"deny" yaml:"deny"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall#description ComputeFirewall#description}
@@ -65,13 +65,13 @@ type ComputeFirewallConfig struct {
 	// Denotes whether the firewall rule is disabled, i.e not applied to the network it is associated with. When set to true, the firewall rule is not enforced and the network behaves as if it did not exist. If this is unspecified, the firewall rule will be enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall#disabled ComputeFirewall#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// This field denotes whether to enable logging for a particular firewall rule.
 	//
 	// If logging is enabled, logs will be exported to Stackdriver.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall#enable_logging ComputeFirewall#enable_logging}
-	EnableLogging interface{} `field:"optional" json:"enableLogging" yaml:"enableLogging"`
+	EnableLogging any `field:"optional" json:"enableLogging" yaml:"enableLogging"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall#id ComputeFirewall#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -161,4 +161,3 @@ type ComputeFirewallConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_firewall#timeouts ComputeFirewall#timeouts}
 	Timeouts *ComputeFirewallTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

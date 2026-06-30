@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataFusionInstanceIamMemberConditionOutputReferenceParameters(te
 
 	return nil
 }
-

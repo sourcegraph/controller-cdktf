@@ -12,9 +12,9 @@ type AppEngineFlexibleAppVersionDeploymentZipOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type AppEngineFlexibleAppVersionDeploymentZipOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type AppEngineFlexibleAppVersionDeploymentZipOutputReference interface {
 	ResetFilesCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) Terr
 	return returns
 }
 
-
 func NewAppEngineFlexibleAppVersionDeploymentZipOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppEngineFlexibleAppVersionDeploymentZipOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewAppEngineFlexibleAppVersionDeploymentZipOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentZipOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewAppEngineFlexibleAppVersionDeploymentZipOutputReference_Override(a AppEn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentZipOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetFilesCount(val *float64) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) SetFilesCount(val *float64) {
 	if err := j.validateSetFilesCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetFi
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetInternalValue(val *AppEngineFlexibleAppVersionDeploymentZip) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) SetInternalValue(val *AppEngineFlexibleAppVersionDeploymentZip) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetSourceUrl(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) SetSourceUrl(val *string) {
 	if err := j.validateSetSourceUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetSo
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) Comp
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetL
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) Inte
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) Rese
 	)
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentZipOutputReference) ToSt
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) validateAddMoveTargetParamete
 	return nil
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) validateMoveFromIdParameters(
 	return nil
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateIapWebBackendServiceIamBinding_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateIapWebBackendServiceIamBinding_IsConstructParameters(x interface{}) error {
+func validateIapWebBackendServiceIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateIapWebBackendServiceIamBinding_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateIapWebBackendServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateIapWebBackendServiceIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateIapWebBackendServiceIamBinding_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateIapWebBackendServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateIapWebBackendServiceIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateIapWebBackendServiceIamBinding_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewIapWebBackendServiceIamBindingParameters(scope constructs.Constr
 
 	return nil
 }
-

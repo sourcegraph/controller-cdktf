@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeysKeysPrimaryOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleKmsCryptoKeysKeysPrimaryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleKmsCryptoKeysKeysPrimaryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleKmsCryptoKeysKeysPrimaryOutputReferenceParameters(terr
 
 	return nil
 }
-

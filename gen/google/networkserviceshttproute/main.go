@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRoute",
-		reflect.TypeOf((*NetworkServicesHttpRoute)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRoute](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRoute{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,23 +95,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteConfig",
-		reflect.TypeOf((*NetworkServicesHttpRouteConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRules",
-		reflect.TypeOf((*NetworkServicesHttpRouteRules)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRules](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesAction",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesAction)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionCorsPolicy",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionCorsPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionCorsPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentialsInput", GoGetter: "AllowCredentialsInput"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,11 +167,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionDestinations",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionDestinations)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionDestinations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionDestinationsList",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionDestinationsList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionDestinationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionDestinationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -193,7 +193,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionDestinationsOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionDestinationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionDestinationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionDestinationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,15 +231,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionFaultInjectionPolicy",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionFaultInjectionPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionFaultInjectionPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbortOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbortOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbortOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbortOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,11 +277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -319,7 +319,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abort", GoGetter: "Abort"},
 			_jsii_.MemberProperty{JsiiProperty: "abortInput", GoGetter: "AbortInput"},
@@ -351,7 +351,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -359,7 +359,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -422,7 +422,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlRewrite", GoGetter: "UrlRewrite"},
 			_jsii_.MemberProperty{JsiiProperty: "urlRewriteInput", GoGetter: "UrlRewriteInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -430,11 +430,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRedirect",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRedirect)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRedirect](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRedirectOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRedirectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRedirectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -479,7 +479,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionRedirectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -487,11 +487,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRequestHeaderModifier",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRequestHeaderModifier)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRequestHeaderModifier](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRequestHeaderModifierOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRequestHeaderModifierOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRequestHeaderModifierOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
 			_jsii_.MemberProperty{JsiiProperty: "addInput", GoGetter: "AddInput"},
@@ -524,7 +524,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionRequestHeaderModifierOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -532,15 +532,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRequestMirrorPolicy",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRequestMirrorPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRequestMirrorPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -570,7 +570,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -578,7 +578,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -606,7 +606,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -614,11 +614,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionResponseHeaderModifier",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionResponseHeaderModifier)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionResponseHeaderModifier](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
 			_jsii_.MemberProperty{JsiiProperty: "addInput", GoGetter: "AddInput"},
@@ -651,7 +651,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -659,11 +659,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRetryPolicy",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRetryPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRetryPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionRetryPolicyOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionRetryPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionRetryPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -696,7 +696,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionRetryPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -704,11 +704,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionUrlRewrite",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionUrlRewrite)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionUrlRewrite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesActionUrlRewriteOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesActionUrlRewriteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesActionUrlRewriteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -738,7 +738,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesActionUrlRewriteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -746,7 +746,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesList",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -760,7 +760,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -768,15 +768,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatches",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatches)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatches](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesHeaders",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesHeaders)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesHeaders](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesHeadersList",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesHeadersList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesHeadersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -790,7 +790,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -798,7 +798,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesHeadersOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesHeadersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesHeadersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -847,7 +847,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -855,11 +855,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesHeadersRangeMatch",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesHeadersRangeMatch)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesHeadersRangeMatch](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesHeadersRangeMatchOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesHeadersRangeMatchOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesHeadersRangeMatchOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -887,7 +887,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersRangeMatchOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -895,7 +895,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesList",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -909,7 +909,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesMatchesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -917,7 +917,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -961,7 +961,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesMatchesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -969,11 +969,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesQueryParameters",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesQueryParameters)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesQueryParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesQueryParametersList",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesQueryParametersList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesQueryParametersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -987,7 +987,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesMatchesQueryParametersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -995,7 +995,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesMatchesQueryParametersOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesMatchesQueryParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesMatchesQueryParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1031,7 +1031,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesMatchesQueryParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1039,7 +1039,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteRulesOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -1071,7 +1071,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1079,11 +1079,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeouts",
-		reflect.TypeOf((*NetworkServicesHttpRouteTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesHttpRoute.NetworkServicesHttpRouteTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkServicesHttpRouteTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesHttpRouteTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1116,7 +1116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesHttpRouteTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleet",
-		reflect.TypeOf((*GkeHubFleet)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleet](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFleet{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,19 +83,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetConfig",
-		reflect.TypeOf((*GkeHubFleetConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfig",
-		reflect.TypeOf((*GkeHubFleetDefaultClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetDefaultClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig",
-		reflect.TypeOf((*GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference",
-		reflect.TypeOf((*GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,11 +134,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindings",
-		reflect.TypeOf((*GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindings)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList",
-		reflect.TypeOf((*GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -160,7 +160,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsOutputReference",
-		reflect.TypeOf((*GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,7 +195,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference",
-		reflect.TypeOf((*GkeHubFleetDefaultClusterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetDefaultClusterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "binaryAuthorizationConfig", GoGetter: "BinaryAuthorizationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "binaryAuthorizationConfigInput", GoGetter: "BinaryAuthorizationConfigInput"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,11 +235,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigSecurityPostureConfig",
-		reflect.TypeOf((*GkeHubFleetDefaultClusterConfigSecurityPostureConfig)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetDefaultClusterConfigSecurityPostureConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference",
-		reflect.TypeOf((*GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vulnerabilityMode", GoGetter: "VulnerabilityMode"},
 			_jsii_.MemberProperty{JsiiProperty: "vulnerabilityModeInput", GoGetter: "VulnerabilityModeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,11 +277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetState",
-		reflect.TypeOf((*GkeHubFleetState)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetState](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetStateList",
-		reflect.TypeOf((*GkeHubFleetStateList)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetStateList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFleetStateList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -302,7 +302,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetStateOutputReference",
-		reflect.TypeOf((*GkeHubFleetStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -327,7 +327,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFleetStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -335,11 +335,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetTimeouts",
-		reflect.TypeOf((*GkeHubFleetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.gkeHubFleet.GkeHubFleetTimeoutsOutputReference",
-		reflect.TypeOf((*GkeHubFleetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GkeHubFleetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -372,7 +372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GkeHubFleetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

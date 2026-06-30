@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigGvnicOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewContainerNodePoolNodeConfigGvnicOutputReferenceParameters(terraf
 
 	return nil
 }
-

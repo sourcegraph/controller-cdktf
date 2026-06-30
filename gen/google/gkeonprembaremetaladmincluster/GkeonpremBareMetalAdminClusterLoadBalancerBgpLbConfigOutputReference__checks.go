@@ -90,7 +90,7 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputReference) validatePutAddressPoolsParameters(value interface{}) error {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputReference) validatePutAddressPoolsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputReference) validatePutBgpPeerConfigsParameters(value interface{}) error {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputReference) validatePutBgpPeerConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -279,4 +279,3 @@ func validateNewGkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigOutputRefer
 
 	return nil
 }
-

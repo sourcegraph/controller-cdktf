@@ -106,7 +106,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllSpannerExcludedObjectsSchemasTable
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllSpannerExcludedObjectsSchemasTablesColumnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllSpannerExcludedObjectsSchemasTablesColumnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllSpannerExcludedObjectsSchemasTable
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllSpannerExcludedObjectsSchemasTablesColumnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllSpannerExcludedObjectsSchemasTablesColumnsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDatastreamStreamBackfillAllSpannerExcludedObjectsSchemasTablesCo
 
 	return nil
 }
-

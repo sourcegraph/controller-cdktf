@@ -12,9 +12,9 @@ type LoggingMetricMetricDescriptorLabelsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type LoggingMetricMetricDescriptorLabelsOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -49,7 +49,7 @@ type LoggingMetricMetricDescriptorLabelsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type LoggingMetricMetricDescriptorLabelsOutputReference interface {
 	ResetValueType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) ValueType
 	return returns
 }
 
-
 func NewLoggingMetricMetricDescriptorLabelsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoggingMetricMetricDescriptorLabelsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewLoggingMetricMetricDescriptorLabelsOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewLoggingMetricMetricDescriptorLabelsOutputReference_Override(l LoggingMet
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetDescrip
 	)
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetKey(val
 	)
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference)SetValueType(val *string) {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) SetValueType(val *string) {
 	if err := j.validateSetValueTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) ComputeFq
 	return returns
 }
 
-func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetBoolea
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetListAt
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetNumber
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetNumber
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetNumber
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetString
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) GetString
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) Interpola
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) ResetValu
 	)
 }
 
-func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) ToString(
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDnsPolicyAlternativeNameServerConfigTargetNameServersOutputRefer
 
 	return nil
 }
-

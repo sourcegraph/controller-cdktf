@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionCertFingerprintOutp
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPrivatecaCertificateCertificateDescriptionCertFingerprintOutputR
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeImageIamMemberConditionOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeImageIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewComputeImageIamMemberConditionOutputReferenceParameters(terrafor
 
 	return nil
 }
-

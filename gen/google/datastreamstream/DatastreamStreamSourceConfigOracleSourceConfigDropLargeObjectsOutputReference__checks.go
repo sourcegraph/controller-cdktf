@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObject
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOu
 
 	return nil
 }
-

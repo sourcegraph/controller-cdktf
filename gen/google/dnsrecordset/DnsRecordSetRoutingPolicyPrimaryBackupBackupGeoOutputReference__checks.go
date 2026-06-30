@@ -109,7 +109,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReferencePa
 
 	return nil
 }
-

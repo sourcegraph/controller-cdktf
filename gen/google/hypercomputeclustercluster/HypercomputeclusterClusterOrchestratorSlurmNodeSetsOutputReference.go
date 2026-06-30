@@ -12,9 +12,9 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,8 +35,8 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	MaxDynamicNodeCount() *string
 	SetMaxDynamicNodeCount(val *string)
 	MaxDynamicNodeCountInput() *string
@@ -44,7 +44,7 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 	SetStaticNodeCount(val *string)
 	StaticNodeCountInput() *string
 	StorageConfigs() HypercomputeclusterClusterOrchestratorSlurmNodeSetsStorageConfigsList
-	StorageConfigsInput() interface{}
+	StorageConfigsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -56,7 +56,7 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutComputeInstance(value *HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstance)
-	PutStorageConfigs(value interface{})
+	PutStorageConfigs(value any)
 	ResetComputeId()
 	ResetComputeInstance()
 	ResetMaxDynamicNodeCount()
@@ -86,7 +86,7 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 	ResetStorageConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReferenc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) StorageConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) StorageConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"storageConfigsInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	return returns
 }
 
-
 func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetComputeId(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) SetComputeId(val *string) {
 	if err := j.validateSetComputeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetId(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetMaxDynamicNodeCount(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) SetMaxDynamicNodeCount(val *string) {
 	if err := j.validateSetMaxDynamicNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetStaticNodeCount(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) SetStaticNodeCount(val *string) {
 	if err := j.validateSetStaticNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,16 +428,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -609,18 +608,18 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.InvokeVoid(
 		h,
 		"putComputeInstance",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) PutStorageConfigs(value interface{}) {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) PutStorageConfigs(value any) {
 	if err := h.validatePutStorageConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putStorageConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 
 	return returns
 }
-

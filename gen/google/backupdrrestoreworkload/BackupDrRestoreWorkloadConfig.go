@@ -6,9 +6,9 @@ import (
 
 type BackupDrRestoreWorkloadConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BackupDrRestoreWorkloadConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. The ID of the backup to restore from.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#backup_id BackupDrRestoreWorkload#backup_id}
@@ -53,7 +53,7 @@ type BackupDrRestoreWorkloadConfig struct {
 	// If false, only the restore record is removed from the state, leaving the resource active.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#delete_restored_instance BackupDrRestoreWorkload#delete_restored_instance}
-	DeleteRestoredInstance interface{} `field:"optional" json:"deleteRestoredInstance" yaml:"deleteRestoredInstance"`
+	DeleteRestoredInstance any `field:"optional" json:"deleteRestoredInstance" yaml:"deleteRestoredInstance"`
 	// disk_restore_properties block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#disk_restore_properties BackupDrRestoreWorkload#disk_restore_properties}
@@ -88,4 +88,3 @@ type BackupDrRestoreWorkloadConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#timeouts BackupDrRestoreWorkload#timeouts}
 	Timeouts *BackupDrRestoreWorkloadTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

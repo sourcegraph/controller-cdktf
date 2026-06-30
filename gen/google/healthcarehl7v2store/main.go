@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store",
-		reflect.TypeOf((*HealthcareHl7V2Store)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2Store](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareHl7V2Store{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig",
-		reflect.TypeOf((*HealthcareHl7V2StoreConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfig",
-		reflect.TypeOf((*HealthcareHl7V2StoreNotificationConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreNotificationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigOutputReference",
-		reflect.TypeOf((*HealthcareHl7V2StoreNotificationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreNotificationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareHl7V2StoreNotificationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs",
-		reflect.TypeOf((*HealthcareHl7V2StoreNotificationConfigs)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreNotificationConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList",
-		reflect.TypeOf((*HealthcareHl7V2StoreNotificationConfigsList)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreNotificationConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -161,7 +161,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference",
-		reflect.TypeOf((*HealthcareHl7V2StoreNotificationConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreNotificationConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -198,11 +198,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfig",
-		reflect.TypeOf((*HealthcareHl7V2StoreParserConfig)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreParserConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference",
-		reflect.TypeOf((*HealthcareHl7V2StoreParserConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreParserConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowNullHeader", GoGetter: "AllowNullHeader"},
 			_jsii_.MemberProperty{JsiiProperty: "allowNullHeaderInput", GoGetter: "AllowNullHeaderInput"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -246,11 +246,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts",
-		reflect.TypeOf((*HealthcareHl7V2StoreTimeouts)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference",
-		reflect.TypeOf((*HealthcareHl7V2StoreTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[HealthcareHl7V2StoreTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -283,7 +283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

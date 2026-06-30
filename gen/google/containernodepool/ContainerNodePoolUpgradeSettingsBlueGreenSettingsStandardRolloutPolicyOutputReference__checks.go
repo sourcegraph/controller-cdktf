@@ -122,7 +122,7 @@ func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRoll
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRollout
 
 	return nil
 }
-

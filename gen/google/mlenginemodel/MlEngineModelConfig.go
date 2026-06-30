@@ -6,9 +6,9 @@ import (
 
 type MlEngineModelConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type MlEngineModelConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name specified for the model.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#name MlEngineModel#name}
@@ -46,11 +46,11 @@ type MlEngineModelConfig struct {
 	// If true, online prediction nodes send stderr and stdout streams to Stackdriver Logging.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#online_prediction_console_logging MlEngineModel#online_prediction_console_logging}
-	OnlinePredictionConsoleLogging interface{} `field:"optional" json:"onlinePredictionConsoleLogging" yaml:"onlinePredictionConsoleLogging"`
+	OnlinePredictionConsoleLogging any `field:"optional" json:"onlinePredictionConsoleLogging" yaml:"onlinePredictionConsoleLogging"`
 	// If true, online prediction access logs are sent to StackDriver Logging.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#online_prediction_logging MlEngineModel#online_prediction_logging}
-	OnlinePredictionLogging interface{} `field:"optional" json:"onlinePredictionLogging" yaml:"onlinePredictionLogging"`
+	OnlinePredictionLogging any `field:"optional" json:"onlinePredictionLogging" yaml:"onlinePredictionLogging"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#project MlEngineModel#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The list of regions where the model is going to be deployed. Currently only one region per model is supported.
@@ -62,4 +62,3 @@ type MlEngineModelConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ml_engine_model#timeouts MlEngineModel#timeouts}
 	Timeouts *MlEngineModelTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

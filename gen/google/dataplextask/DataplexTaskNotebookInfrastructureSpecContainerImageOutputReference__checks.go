@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecContainerImageOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskNotebookInfrastructureSpecContainerImageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexTaskNotebookInfrastructureSpecContainerImageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDataplexTaskNotebookInfrastructureSpecContainerImageOutputRefere
 
 	return nil
 }
-

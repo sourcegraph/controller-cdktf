@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotAppDataStoreSettingsOutputReferenceParamete
 
 	return nil
 }
-

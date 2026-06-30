@@ -98,7 +98,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) validateSetGkeCl
 	return nil
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDnsResponsePolicyGkeClustersOutputReferenceParameters(terraformR
 
 	return nil
 }
-

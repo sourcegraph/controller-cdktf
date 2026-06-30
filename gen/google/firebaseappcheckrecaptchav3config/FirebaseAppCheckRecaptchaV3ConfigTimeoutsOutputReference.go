@@ -12,9 +12,9 @@ type FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Fqn
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Upd
 	return returns
 }
 
-
 func NewFirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewFirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewFirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference_Override(f Fire
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppCheckRecaptchaV3Config.FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetD
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Com
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Get
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Int
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Res
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) ToS
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package migrationcenterpreferenceset
 
-
 type MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferences struct {
 	// Commitment plan to consider when calculating costs for virtual machine insights and recommendations.
 	//
@@ -19,6 +18,5 @@ type MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferences
 	// node_types block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#node_types MigrationCenterPreferenceSet#node_types}
-	NodeTypes interface{} `field:"optional" json:"nodeTypes" yaml:"nodeTypes"`
+	NodeTypes any `field:"optional" json:"nodeTypes" yaml:"nodeTypes"`
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutp
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validatePutHttpHeadersParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validatePutHttpHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutp
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputR
 
 	return nil
 }
-

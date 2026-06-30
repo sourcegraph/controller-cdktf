@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeNetworkAttachmentConnectionEndpointsOutputRefer
 
 	return nil
 }
-

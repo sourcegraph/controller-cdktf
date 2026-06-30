@@ -36,7 +36,7 @@ type NotebooksRuntimeMetricsList interface {
 	Get(index *float64) NotebooksRuntimeMetricsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_NotebooksRuntimeMetricsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewNotebooksRuntimeMetricsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotebooksRuntimeMetricsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewNotebooksRuntimeMetricsList(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeMetricsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewNotebooksRuntimeMetricsList_Override(n NotebooksRuntimeMetricsList, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeMetricsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeMetricsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeMetricsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_NotebooksRuntimeMetricsList)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeMetricsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotebooksRuntimeMetricsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_NotebooksRuntimeMetricsList)SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeMetricsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NotebooksRuntimeMetricsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (n *jsiiProxy_NotebooksRuntimeMetricsList) AllWithMapKey(mapKeyAttributeNam
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (n *jsiiProxy_NotebooksRuntimeMetricsList) Get(index *float64) NotebooksRun
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeMetricsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotebooksRuntimeMetricsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (n *jsiiProxy_NotebooksRuntimeMetricsList) ToString() *string {
 
 	return returns
 }
-

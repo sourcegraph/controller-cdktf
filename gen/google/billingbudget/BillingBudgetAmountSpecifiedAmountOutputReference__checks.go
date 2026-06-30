@@ -98,7 +98,7 @@ func (b *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBillingBudgetAmountSpecifiedAmountOutputReferenceParameters(terr
 
 	return nil
 }
-

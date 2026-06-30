@@ -114,7 +114,7 @@ func (j *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateSetBackupVau
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateSetInternalV
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateSetScheduledBackupEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateSetScheduledBackupEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewNetappVolumeBackupConfigOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleDataplexGlossaryIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleDataplexGlossaryIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleDataplexGlossaryIamPolicy_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataGoogleDataplexGlossaryIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleDataplexGlossaryIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleDataplexGlossaryIamPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataGoogleDataplexGlossaryIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleDataplexGlossaryIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleDataplexGlossaryIamPolicy_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataGoogleDataplexGlossaryIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleDataplexGlossaryIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleDataplexGlossaryIamPolicy_IsTerraformElementParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataplexGlossaryIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDataplexGlossaryIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleDataplexGlossaryIamPolicyParameters(scope constructs.C
 
 	return nil
 }
-

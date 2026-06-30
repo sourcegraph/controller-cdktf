@@ -1,15 +1,14 @@
 package backupdrrestoreworkload
 
-
 type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces struct {
 	// access_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#access_configs BackupDrRestoreWorkload#access_configs}
-	AccessConfigs interface{} `field:"optional" json:"accessConfigs" yaml:"accessConfigs"`
+	AccessConfigs any `field:"optional" json:"accessConfigs" yaml:"accessConfigs"`
 	// alias_ip_ranges block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#alias_ip_ranges BackupDrRestoreWorkload#alias_ip_ranges}
-	AliasIpRanges interface{} `field:"optional" json:"aliasIpRanges" yaml:"aliasIpRanges"`
+	AliasIpRanges any `field:"optional" json:"aliasIpRanges" yaml:"aliasIpRanges"`
 	// Optional. The prefix length of the primary internal IPv6 range.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#internal_ipv6_prefix_length BackupDrRestoreWorkload#internal_ipv6_prefix_length}
@@ -21,7 +20,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces st
 	// ipv6_access_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#ipv6_access_configs BackupDrRestoreWorkload#ipv6_access_configs}
-	Ipv6AccessConfigs interface{} `field:"optional" json:"ipv6AccessConfigs" yaml:"ipv6AccessConfigs"`
+	Ipv6AccessConfigs any `field:"optional" json:"ipv6AccessConfigs" yaml:"ipv6AccessConfigs"`
 	// Possible values: ["UNSPECIFIED_IPV6_ACCESS_TYPE", "INTERNAL", "EXTERNAL"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#ipv6_access_type BackupDrRestoreWorkload#ipv6_access_type}
@@ -51,4 +50,3 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesNetworkInterfaces st
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_restore_workload#subnetwork BackupDrRestoreWorkload#subnetwork}
 	Subnetwork *string `field:"optional" json:"subnetwork" yaml:"subnetwork"`
 }
-

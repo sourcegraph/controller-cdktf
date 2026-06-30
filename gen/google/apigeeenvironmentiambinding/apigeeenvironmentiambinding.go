@@ -17,15 +17,15 @@ type ApigeeEnvironmentIamBinding interface {
 	Condition() ApigeeEnvironmentIamBindingConditionOutputReference
 	ConditionInput() *ApigeeEnvironmentIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type ApigeeEnvironmentIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type ApigeeEnvironmentIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type ApigeeEnvironmentIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -125,17 +125,17 @@ type ApigeeEnvironmentIamBinding interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApigeeEnvironmentIamBinding
@@ -173,8 +173,8 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding) ConditionInput() *ApigeeEnvironm
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,8 +363,8 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding) TerraformResourceType() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_iam_binding google_apigee_environment_iam_binding} Resource.
 func NewApigeeEnvironmentIamBinding(scope constructs.Construct, id *string, config *ApigeeEnvironmentIamBindingConfig) ApigeeEnvironmentIamBinding {
 	_init_.Initialize()
@@ -445,7 +444,7 @@ func NewApigeeEnvironmentIamBinding(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -458,12 +457,12 @@ func NewApigeeEnvironmentIamBinding_Override(a ApigeeEnvironmentIamBinding, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,7 +473,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -493,7 +492,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetEnvId(val *string) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetEnvId(val *string) {
 	if err := j.validateSetEnvIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -504,7 +503,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetEnvId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -512,7 +511,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetId(val *string) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetOrgId(val *string) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_ApigeeEnvironmentIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func ApigeeEnvironmentIamBinding_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -622,7 +621,7 @@ func ApigeeEnvironmentIamBinding_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApigeeEnvironmentIamBinding_IsConstruct(x interface{}) *bool {
+func ApigeeEnvironmentIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeEnvironmentIamBinding_IsConstructParameters(x); err != nil {
@@ -633,7 +632,7 @@ func ApigeeEnvironmentIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func ApigeeEnvironmentIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApigeeEnvironmentIamBinding_IsTerraformElement(x interface{}) *bool {
+func ApigeeEnvironmentIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeEnvironmentIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -652,7 +651,7 @@ func ApigeeEnvironmentIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func ApigeeEnvironmentIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApigeeEnvironmentIamBinding_IsTerraformResource(x interface{}) *bool {
+func ApigeeEnvironmentIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApigeeEnvironmentIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -671,7 +670,7 @@ func ApigeeEnvironmentIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,31 +695,31 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentIamBinding) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -736,7 +735,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -752,7 +751,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -784,7 +783,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,15 +847,15 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -875,7 +874,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -888,7 +887,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,18 +901,18 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -924,7 +923,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -935,7 +934,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -946,7 +945,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) PutCondition(value *ApigeeEnviro
 	_jsii_.InvokeVoid(
 		a,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -974,8 +973,8 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -987,8 +986,8 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1000,8 +999,8 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1013,8 +1012,8 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1039,8 +1038,8 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1051,4 +1050,3 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

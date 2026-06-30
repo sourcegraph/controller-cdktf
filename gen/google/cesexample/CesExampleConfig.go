@@ -6,9 +6,9 @@ import (
 
 type CesExampleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CesExampleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Resource ID segment making up resource 'name', defining the app the example belongs to.
 	//
 	// It identifies the resource within its parent collection as described in https://google.aip.dev/122.
@@ -61,7 +61,7 @@ type CesExampleConfig struct {
 	// messages block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_example#messages CesExample#messages}
-	Messages interface{} `field:"optional" json:"messages" yaml:"messages"`
+	Messages any `field:"optional" json:"messages" yaml:"messages"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_example#project CesExample#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
@@ -69,4 +69,3 @@ type CesExampleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_example#timeouts CesExample#timeouts}
 	Timeouts *CesExampleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

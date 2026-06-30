@@ -12,9 +12,9 @@ type DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference inte
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,13 +45,13 @@ type DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference inte
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	ValidateOnly() interface{}
-	SetValidateOnly(val interface{})
-	ValidateOnlyInput() interface{}
+	ValidateOnly() any
+	SetValidateOnly(val any)
+	ValidateOnlyInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -76,7 +76,7 @@ type DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference inte
 	ResetValidateOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ type jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputRefe
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) ValidateOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) ValidateOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"validateOnly",
@@ -229,8 +229,8 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) ValidateOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) ValidateOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"validateOnlyInput",
@@ -238,7 +238,6 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	)
 	return returns
 }
-
 
 func NewDataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference {
 	_init_.Initialize()
@@ -250,7 +249,7 @@ func NewDataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference(t
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -262,12 +261,12 @@ func NewDataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference_O
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference)SetInternalValue(val *DataPipelinePipelineWorkloadDataflowFlexTemplateRequest) {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) SetInternalValue(val *DataPipelinePipelineWorkloadDataflowFlexTemplateRequest) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference)SetProjectId(val *string) {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,7 +332,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -344,7 +343,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference)SetValidateOnly(val interface{}) {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) SetValidateOnly(val any) {
 	if err := j.validateSetValidateOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -368,16 +367,16 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	return returns
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	_jsii_.InvokeVoid(
 		d,
 		"putLaunchParameter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -560,16 +559,16 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	)
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -588,4 +587,3 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 
 	return returns
 }
-

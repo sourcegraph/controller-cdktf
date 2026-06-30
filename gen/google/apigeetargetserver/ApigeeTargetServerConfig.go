@@ -6,9 +6,9 @@ import (
 
 type ApigeeTargetServerConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApigeeTargetServerConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Apigee environment group associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_target_server#env_id ApigeeTargetServer#env_id}
@@ -49,7 +49,7 @@ type ApigeeTargetServerConfig struct {
 	// Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_target_server#is_enabled ApigeeTargetServer#is_enabled}
-	IsEnabled interface{} `field:"optional" json:"isEnabled" yaml:"isEnabled"`
+	IsEnabled any `field:"optional" json:"isEnabled" yaml:"isEnabled"`
 	// Immutable. The protocol used by this TargetServer. Possible values: ["HTTP", "HTTP2", "GRPC_TARGET", "GRPC", "EXTERNAL_CALLOUT"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_target_server#protocol ApigeeTargetServer#protocol}
@@ -63,4 +63,3 @@ type ApigeeTargetServerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_target_server#timeouts ApigeeTargetServer#timeouts}
 	Timeouts *ApigeeTargetServerTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

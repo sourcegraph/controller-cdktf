@@ -15,15 +15,15 @@ type HealthcareDicomStoreIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,24 +57,24 @@ type HealthcareDicomStoreIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -92,7 +92,7 @@ type HealthcareDicomStoreIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -104,7 +104,7 @@ type HealthcareDicomStoreIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -115,17 +115,17 @@ type HealthcareDicomStoreIamPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for HealthcareDicomStoreIamPolicy
@@ -143,8 +143,8 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -363,7 +363,6 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) TerraformResourceType() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dicom_store_iam_policy google_healthcare_dicom_store_iam_policy} Resource.
 func NewHealthcareDicomStoreIamPolicy(scope constructs.Construct, id *string, config *HealthcareDicomStoreIamPolicyConfig) HealthcareDicomStoreIamPolicy {
 	_init_.Initialize()
@@ -375,7 +374,7 @@ func NewHealthcareDicomStoreIamPolicy(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareDicomStoreIamPolicy.HealthcareDicomStoreIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -388,12 +387,12 @@ func NewHealthcareDicomStoreIamPolicy_Override(h HealthcareDicomStoreIamPolicy, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareDicomStoreIamPolicy.HealthcareDicomStoreIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -423,7 +422,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetDicomStoreId(val *string) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetDicomStoreId(val *string) {
 	if err := j.validateSetDicomStoreIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetDicomStoreId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -442,7 +441,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -453,7 +452,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,7 +463,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -483,7 +482,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_HealthcareDicomStoreIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func HealthcareDicomStoreIamPolicy_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareDicomStoreIamPolicy.HealthcareDicomStoreIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func HealthcareDicomStoreIamPolicy_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func HealthcareDicomStoreIamPolicy_IsConstruct(x interface{}) *bool {
+func HealthcareDicomStoreIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareDicomStoreIamPolicy_IsConstructParameters(x); err != nil {
@@ -541,7 +540,7 @@ func HealthcareDicomStoreIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareDicomStoreIamPolicy.HealthcareDicomStoreIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func HealthcareDicomStoreIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func HealthcareDicomStoreIamPolicy_IsTerraformElement(x interface{}) *bool {
+func HealthcareDicomStoreIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareDicomStoreIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -560,7 +559,7 @@ func HealthcareDicomStoreIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareDicomStoreIamPolicy.HealthcareDicomStoreIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func HealthcareDicomStoreIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func HealthcareDicomStoreIamPolicy_IsTerraformResource(x interface{}) *bool {
+func HealthcareDicomStoreIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareDicomStoreIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -579,7 +578,7 @@ func HealthcareDicomStoreIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareDicomStoreIamPolicy.HealthcareDicomStoreIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -604,31 +603,31 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		h,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) AddOverride(path *string, value interface{}) {
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) AddOverride(path *string, value any) {
 	if err := h.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -644,7 +643,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,15 +755,15 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -783,7 +782,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		h,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -796,7 +795,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,18 +809,18 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -832,7 +831,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -843,7 +842,7 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		h,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -863,8 +862,8 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ResetOverrideLogicalId() {
 	)
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -876,8 +875,8 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -889,8 +888,8 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -902,8 +901,8 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -928,8 +927,8 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ToString() *string {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -940,4 +939,3 @@ func (h *jsiiProxy_HealthcareDicomStoreIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

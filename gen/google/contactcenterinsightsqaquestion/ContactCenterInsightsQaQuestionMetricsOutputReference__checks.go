@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionMetricsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionMetricsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionMetricsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewContactCenterInsightsQaQuestionMetricsOutputReferenceParameters(
 
 	return nil
 }
-

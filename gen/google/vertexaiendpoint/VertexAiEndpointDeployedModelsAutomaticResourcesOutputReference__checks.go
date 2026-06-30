@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiEndpointDeployedModelsAutomaticResourcesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointDeployedModelsAutomaticResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointDeployedModelsAutomaticResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVertexAiEndpointDeployedModelsAutomaticResourcesOutputReferenceP
 
 	return nil
 }
-

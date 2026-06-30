@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParameters
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkCloudControlDetailsParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewCloudSecurityComplianceFrameworkCloudControlDetailsParametersOut
 
 	return nil
 }
-

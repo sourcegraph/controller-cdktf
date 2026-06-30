@@ -120,7 +120,7 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsO
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsO
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -244,4 +244,3 @@ func validateNewSpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutp
 
 	return nil
 }
-

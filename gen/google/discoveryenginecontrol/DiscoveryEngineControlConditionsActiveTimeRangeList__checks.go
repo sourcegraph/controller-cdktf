@@ -34,7 +34,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsActiveTimeRangeList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDiscoveryEngineControlConditionsActiveTimeRangeListParameters(te
 
 	return nil
 }
-

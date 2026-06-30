@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetEnableInsightsExportParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference) validateSetEnableInsightsExportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewDialogflowCxSecuritySettingsInsightsExportSettingsOutputReferenc
 
 	return nil
 }
-

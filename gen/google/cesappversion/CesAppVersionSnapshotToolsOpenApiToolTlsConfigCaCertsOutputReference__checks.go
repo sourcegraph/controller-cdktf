@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputRefer
 
 	return nil
 }
-

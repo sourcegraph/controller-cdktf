@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeNetworkFirewallPolicyWithRulesRuleListParameters(terrafor
 
 	return nil
 }
-

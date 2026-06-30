@@ -15,9 +15,9 @@ type CesAppDefaultChannelProfileOutputReference interface {
 	ChannelTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,12 +28,12 @@ type CesAppDefaultChannelProfileOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableBargeInControl() interface{}
-	SetDisableBargeInControl(val interface{})
-	DisableBargeInControlInput() interface{}
-	DisableDtmf() interface{}
-	SetDisableDtmf(val interface{})
-	DisableDtmfInput() interface{}
+	DisableBargeInControl() any
+	SetDisableBargeInControl(val any)
+	DisableBargeInControlInput() any
+	DisableDtmf() any
+	SetDisableDtmf(val any)
+	DisableDtmfInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CesAppDefaultChannelProfile
@@ -56,7 +56,7 @@ type CesAppDefaultChannelProfileOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type CesAppDefaultChannelProfileOutputReference interface {
 	ResetWebWidgetConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,8 +120,8 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) ChannelTypeInput(
 	return returns
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) CreationStack() *
 	return returns
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableBargeInControl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableBargeInControl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableBargeInControl",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableBargeInCon
 	return returns
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableBargeInControlInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableBargeInControlInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableBargeInControlInput",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableBargeInCon
 	return returns
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableDtmf() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableDtmf() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDtmf",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableDtmf() int
 	return returns
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableDtmfInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) DisableDtmfInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableDtmfInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) WebWidgetConfigIn
 	return returns
 }
 
-
 func NewCesAppDefaultChannelProfileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesAppDefaultChannelProfileOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewCesAppDefaultChannelProfileOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewCesAppDefaultChannelProfileOutputReference_Override(c CesAppDefaultChann
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetChannelType(val *string) {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) SetChannelType(val *string) {
 	if err := j.validateSetChannelTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetChannelType(val
 	)
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetDisableBargeInControl(val interface{}) {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) SetDisableBargeInControl(val any) {
 	if err := j.validateSetDisableBargeInControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetDisableBargeInC
 	)
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetDisableDtmf(val interface{}) {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) SetDisableDtmf(val any) {
 	if err := j.validateSetDisableDtmfParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetDisableDtmf(val
 	)
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetInternalValue(val *CesAppDefaultChannelProfile) {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) SetInternalValue(val *CesAppDefaultChannelProfile) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetProfileId(val *string) {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) SetProfileId(val *string) {
 	if err := j.validateSetProfileIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetProfileId(val *
 	)
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,16 +429,16 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -535,7 +534,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -567,7 +566,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) PutPersonaPropert
 	_jsii_.InvokeVoid(
 		c,
 		"putPersonaProperty",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -621,7 +620,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) PutWebWidgetConfi
 	_jsii_.InvokeVoid(
 		c,
 		"putWebWidgetConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -673,16 +672,16 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) ResetWebWidgetCon
 	)
 }
 
-func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) ToString() *strin
 
 	return returns
 }
-

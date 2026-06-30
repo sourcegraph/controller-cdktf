@@ -15,11 +15,11 @@ type DataGoogleStorageControlOrganizationIntelligenceConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,19 +52,19 @@ type DataGoogleStorageControlOrganizationIntelligenceConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TrialConfig() DataGoogleStorageControlOrganizationIntelligenceConfigTrialConfigList
 	UpdateTime() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,18 +90,18 @@ type DataGoogleStorageControlOrganizationIntelligenceConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleStorageControlOrganizationIntelligenceConfig
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Const
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Provi
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -299,8 +299,8 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -339,7 +339,6 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Updat
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Data Source.
 func NewDataGoogleStorageControlOrganizationIntelligenceConfig(scope constructs.Construct, id *string, config *DataGoogleStorageControlOrganizationIntelligenceConfigConfig) DataGoogleStorageControlOrganizationIntelligenceConfig {
 	_init_.Initialize()
@@ -351,7 +350,7 @@ func NewDataGoogleStorageControlOrganizationIntelligenceConfig(scope constructs.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleStorageControlOrganizationIntelligenceConfig.DataGoogleStorageControlOrganizationIntelligenceConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -364,12 +363,12 @@ func NewDataGoogleStorageControlOrganizationIntelligenceConfig_Override(d DataGo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleStorageControlOrganizationIntelligenceConfig.DataGoogleStorageControlOrganizationIntelligenceConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetCou
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetDep
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -396,7 +395,7 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetFor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetId(
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetLif
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetNam
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -449,7 +448,7 @@ func DataGoogleStorageControlOrganizationIntelligenceConfig_GenerateConfigForImp
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageControlOrganizationIntelligenceConfig.DataGoogleStorageControlOrganizationIntelligenceConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func DataGoogleStorageControlOrganizationIntelligenceConfig_GenerateConfigForImp
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleStorageControlOrganizationIntelligenceConfig_IsConstruct(x interface{}) *bool {
+func DataGoogleStorageControlOrganizationIntelligenceConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsConstructParameters(x); err != nil {
@@ -484,7 +483,7 @@ func DataGoogleStorageControlOrganizationIntelligenceConfig_IsConstruct(x interf
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageControlOrganizationIntelligenceConfig.DataGoogleStorageControlOrganizationIntelligenceConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func DataGoogleStorageControlOrganizationIntelligenceConfig_IsConstruct(x interf
 }
 
 // Experimental.
-func DataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformDataSourceParameters(x); err != nil {
@@ -503,7 +502,7 @@ func DataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformDataSourc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageControlOrganizationIntelligenceConfig.DataGoogleStorageControlOrganizationIntelligenceConfig",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func DataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformDataSourc
 }
 
 // Experimental.
-func DataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformElement(x interface{}) *bool {
+func DataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformElementParameters(x); err != nil {
@@ -522,7 +521,7 @@ func DataGoogleStorageControlOrganizationIntelligenceConfig_IsTerraformElement(x
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageControlOrganizationIntelligenceConfig.DataGoogleStorageControlOrganizationIntelligenceConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -540,27 +539,27 @@ func DataGoogleStorageControlOrganizationIntelligenceConfig_TfResourceType() *st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetLi
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -640,7 +639,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -672,7 +671,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -704,7 +703,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Inter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Overr
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -738,8 +737,8 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Reset
 	)
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -751,8 +750,8 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Synth
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -764,8 +763,8 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Synth
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -777,8 +776,8 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ToHcl
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -803,8 +802,8 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ToStr
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -815,4 +814,3 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) ToTer
 
 	return returns
 }
-

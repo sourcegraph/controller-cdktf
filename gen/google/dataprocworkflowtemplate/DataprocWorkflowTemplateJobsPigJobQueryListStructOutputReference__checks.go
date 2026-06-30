@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsPigJobQueryListStructOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference
 
 	return nil
 }
-

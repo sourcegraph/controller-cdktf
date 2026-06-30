@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAccel
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAccel
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceleratorsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkstationsWorkstationConfigHostGceInstanceBoostConfigsAccelera
 
 	return nil
 }
-

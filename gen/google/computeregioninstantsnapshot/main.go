@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshot",
-		reflect.TypeOf((*ComputeRegionInstantSnapshot)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionInstantSnapshot](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionInstantSnapshot{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshotConfig",
-		reflect.TypeOf((*ComputeRegionInstantSnapshotConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionInstantSnapshotConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshotParams",
-		reflect.TypeOf((*ComputeRegionInstantSnapshotParams)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionInstantSnapshotParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshotParamsOutputReference",
-		reflect.TypeOf((*ComputeRegionInstantSnapshotParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionInstantSnapshotParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionInstantSnapshotParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,11 +143,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshotResourceStatus",
-		reflect.TypeOf((*ComputeRegionInstantSnapshotResourceStatus)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionInstantSnapshotResourceStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshotResourceStatusList",
-		reflect.TypeOf((*ComputeRegionInstantSnapshotResourceStatusList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionInstantSnapshotResourceStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionInstantSnapshotResourceStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -168,7 +168,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshotResourceStatusOutputReference",
-		reflect.TypeOf((*ComputeRegionInstantSnapshotResourceStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionInstantSnapshotResourceStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionInstantSnapshotResourceStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -201,11 +201,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshotTimeouts",
-		reflect.TypeOf((*ComputeRegionInstantSnapshotTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionInstantSnapshotTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionInstantSnapshot.ComputeRegionInstantSnapshotTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeRegionInstantSnapshotTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionInstantSnapshotTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionInstantSnapshotTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

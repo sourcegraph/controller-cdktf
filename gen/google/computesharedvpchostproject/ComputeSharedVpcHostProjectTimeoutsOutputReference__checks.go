@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeSharedVpcHostProjectTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSharedVpcHostProjectTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSharedVpcHostProjectTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeSharedVpcHostProjectTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSharedVpcHostProjectTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSharedVpcHostProjectTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeSharedVpcHostProjectTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

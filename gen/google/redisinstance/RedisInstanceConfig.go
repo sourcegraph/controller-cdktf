@@ -6,9 +6,9 @@ import (
 
 type RedisInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type RedisInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Redis memory size in GiB.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_instance#memory_size_gb RedisInstance#memory_size_gb}
@@ -41,7 +41,7 @@ type RedisInstanceConfig struct {
 	// Default value is "false" meaning AUTH is disabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_instance#auth_enabled RedisInstance#auth_enabled}
-	AuthEnabled interface{} `field:"optional" json:"authEnabled" yaml:"authEnabled"`
+	AuthEnabled any `field:"optional" json:"authEnabled" yaml:"authEnabled"`
 	// The full name of the Google Compute Engine network to which the instance is connected.
 	//
 	// If left unspecified, the default network
@@ -69,7 +69,7 @@ type RedisInstanceConfig struct {
 	// When the field is set to false, deleting the instance is allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_instance#deletion_protection RedisInstance#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// An arbitrary and optional user-provided name for the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_instance#display_name RedisInstance#display_name}
@@ -182,4 +182,3 @@ type RedisInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/redis_instance#transit_encryption_mode RedisInstance#transit_encryption_mode}
 	TransitEncryptionMode *string `field:"optional" json:"transitEncryptionMode" yaml:"transitEncryptionMode"`
 }
-

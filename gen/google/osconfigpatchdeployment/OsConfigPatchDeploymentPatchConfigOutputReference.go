@@ -14,9 +14,9 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	AptInput() *OsConfigPatchDeploymentPatchConfigApt
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,9 +33,9 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	GooInput() *OsConfigPatchDeploymentPatchConfigGoo
 	InternalValue() *OsConfigPatchDeploymentPatchConfig
 	SetInternalValue(val *OsConfigPatchDeploymentPatchConfig)
-	MigInstancesAllowed() interface{}
-	SetMigInstancesAllowed(val interface{})
-	MigInstancesAllowedInput() interface{}
+	MigInstancesAllowed() any
+	SetMigInstancesAllowed(val any)
+	MigInstancesAllowedInput() any
 	PostStep() OsConfigPatchDeploymentPatchConfigPostStepOutputReference
 	PostStepInput() *OsConfigPatchDeploymentPatchConfigPostStep
 	PreStep() OsConfigPatchDeploymentPatchConfigPreStepOutputReference
@@ -43,9 +43,9 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	RebootConfig() *string
 	SetRebootConfig(val *string)
 	RebootConfigInput() *string
-	SkipUnpatchableVms() interface{}
-	SetSkipUnpatchableVms(val interface{})
-	SkipUnpatchableVmsInput() interface{}
+	SkipUnpatchableVms() any
+	SetSkipUnpatchableVms(val any)
+	SkipUnpatchableVmsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,7 +63,7 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	ResetZypper()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -136,8 +136,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) AptInput()
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) MigInstancesAllowed() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) MigInstancesAllowed() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"migInstancesAllowed",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) MigInstanc
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) MigInstancesAllowedInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) MigInstancesAllowedInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"migInstancesAllowedInput",
@@ -286,8 +286,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) RebootConf
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SkipUnpatchableVms() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SkipUnpatchableVms() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipUnpatchableVms",
@@ -296,8 +296,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SkipUnpatc
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SkipUnpatchableVmsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SkipUnpatchableVmsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"skipUnpatchableVmsInput",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ZypperInpu
 	return returns
 }
 
-
 func NewOsConfigPatchDeploymentPatchConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewOsConfigPatchDeploymentPatchConfigOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewOsConfigPatchDeploymentPatchConfigOutputReference_Override(o OsConfigPat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetInternalValue(val *OsConfigPatchDeploymentPatchConfig) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SetInternalValue(val *OsConfigPatchDeploymentPatchConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetMigInstancesAllowed(val interface{}) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SetMigInstancesAllowed(val any) {
 	if err := j.validateSetMigInstancesAllowedParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetMigInsta
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetRebootConfig(val *string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SetRebootConfig(val *string) {
 	if err := j.validateSetRebootConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetRebootCo
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetSkipUnpatchableVms(val interface{}) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SetSkipUnpatchableVms(val any) {
 	if err := j.validateSetSkipUnpatchableVmsParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetSkipUnpa
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,16 +514,16 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ComputeFqn
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetListAtt
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetNumberA
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetNumberL
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetNumberM
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetStringA
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetStringM
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) Interpolat
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) PutApt(val
 	_jsii_.InvokeVoid(
 		o,
 		"putApt",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -706,7 +705,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) PutGoo(val
 	_jsii_.InvokeVoid(
 		o,
 		"putGoo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -717,7 +716,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) PutPostSte
 	_jsii_.InvokeVoid(
 		o,
 		"putPostStep",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -728,7 +727,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) PutPreStep
 	_jsii_.InvokeVoid(
 		o,
 		"putPreStep",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -739,7 +738,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) PutWindows
 	_jsii_.InvokeVoid(
 		o,
 		"putWindowsUpdate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,7 +749,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) PutYum(val
 	_jsii_.InvokeVoid(
 		o,
 		"putYum",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -761,7 +760,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) PutZypper(
 	_jsii_.InvokeVoid(
 		o,
 		"putZypper",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -845,16 +844,16 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ResetZyppe
 	)
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ToString()
 
 	return returns
 }
-

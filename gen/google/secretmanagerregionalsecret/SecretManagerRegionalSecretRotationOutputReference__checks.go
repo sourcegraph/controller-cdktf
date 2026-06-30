@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSecretManagerRegionalSecretRotationOutputReferenceParameters(ter
 
 	return nil
 }
-

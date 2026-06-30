@@ -36,7 +36,7 @@ type GkeonpremVmwareAdminClusterStatusConditionsList interface {
 	Get(index *float64) GkeonpremVmwareAdminClusterStatusConditionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList) WrapsSet() *
 	return returns
 }
 
-
 func NewGkeonpremVmwareAdminClusterStatusConditionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterStatusConditionsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewGkeonpremVmwareAdminClusterStatusConditionsList(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewGkeonpremVmwareAdminClusterStatusConditionsList_Override(g GkeonpremVmwa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList) AllWithMapKe
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList) Get(index *f
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterStatusConditionsList) ToString() *
 
 	return returns
 }
-

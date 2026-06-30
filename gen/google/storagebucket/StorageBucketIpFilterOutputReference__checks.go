@@ -101,7 +101,7 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validatePutPublicNetwor
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validatePutVpcNetworkSourcesParameters(value interface{}) error {
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validatePutVpcNetworkSourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetAllowAllServiceAgentAccessParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetAllowAllServiceAgentAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetAllowAllServ
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetAllowCrossOrgVpcsParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetAllowCrossOrgVpcsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -180,7 +180,7 @@ func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetAllowCrossOr
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -288,4 +288,3 @@ func validateNewStorageBucketIpFilterOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

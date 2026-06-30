@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryDatasetDefaultEncryptionConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatasetDefaultEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDatasetDefaultEncryptionConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBigqueryDatasetDefaultEncryptionConfigurationOutputReferencePara
 
 	return nil
 }
-

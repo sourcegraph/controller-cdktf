@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewContainerClusterClusterAutoscalingResourceLimitsOutputReferenceP
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package dialogflowcxpage
 
-
 type DialogflowCxPageFormParameters struct {
 	// advanced_settings block.
 	//
@@ -27,19 +26,18 @@ type DialogflowCxPageFormParameters struct {
 	// Indicates whether the parameter represents a list of values.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_page#is_list DialogflowCxPage#is_list}
-	IsList interface{} `field:"optional" json:"isList" yaml:"isList"`
+	IsList any `field:"optional" json:"isList" yaml:"isList"`
 	// Indicates whether the parameter content should be redacted in log.
 	//
 	// If redaction is enabled, the parameter content will be replaced by parameter name during logging. Note: the parameter content is subject to redaction if either parameter level redaction or entity type level redaction is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_page#redact DialogflowCxPage#redact}
-	Redact interface{} `field:"optional" json:"redact" yaml:"redact"`
+	Redact any `field:"optional" json:"redact" yaml:"redact"`
 	// Indicates whether the parameter is required.
 	//
 	// Optional parameters will not trigger prompts; however, they are filled if the user specifies them.
 	// Required parameters must be filled before form filling concludes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_page#required DialogflowCxPage#required}
-	Required interface{} `field:"optional" json:"required" yaml:"required"`
+	Required any `field:"optional" json:"required" yaml:"required"`
 }
-

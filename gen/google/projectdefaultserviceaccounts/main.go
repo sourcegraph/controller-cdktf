@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
-		reflect.TypeOf((*ProjectDefaultServiceAccounts)(nil)).Elem(),
+		reflect.TypeFor[ProjectDefaultServiceAccounts](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProjectDefaultServiceAccounts{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccountsConfig",
-		reflect.TypeOf((*ProjectDefaultServiceAccountsConfig)(nil)).Elem(),
+		reflect.TypeFor[ProjectDefaultServiceAccountsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccountsTimeouts",
-		reflect.TypeOf((*ProjectDefaultServiceAccountsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ProjectDefaultServiceAccountsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccountsTimeoutsOutputReference",
-		reflect.TypeOf((*ProjectDefaultServiceAccountsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ProjectDefaultServiceAccountsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ProjectDefaultServiceAccountsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

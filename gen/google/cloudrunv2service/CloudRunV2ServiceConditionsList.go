@@ -36,7 +36,7 @@ type CloudRunV2ServiceConditionsList interface {
 	Get(index *float64) CloudRunV2ServiceConditionsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_CloudRunV2ServiceConditionsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewCloudRunV2ServiceConditionsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudRunV2ServiceConditionsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewCloudRunV2ServiceConditionsList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewCloudRunV2ServiceConditionsList_Override(c CloudRunV2ServiceConditionsLi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceConditionsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceConditionsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudRunV2ServiceConditionsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_CloudRunV2ServiceConditionsList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceConditionsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunV2ServiceConditionsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_CloudRunV2ServiceConditionsList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceConditionsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CloudRunV2ServiceConditionsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (c *jsiiProxy_CloudRunV2ServiceConditionsList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (c *jsiiProxy_CloudRunV2ServiceConditionsList) Get(index *float64) CloudRun
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceConditionsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudRunV2ServiceConditionsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (c *jsiiProxy_CloudRunV2ServiceConditionsList) ToString() *string {
 
 	return returns
 }
-

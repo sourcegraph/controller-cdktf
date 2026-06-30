@@ -17,15 +17,15 @@ type ClouddeployCustomTargetTypeIamMember interface {
 	Condition() ClouddeployCustomTargetTypeIamMemberConditionOutputReference
 	ConditionInput() *ClouddeployCustomTargetTypeIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,27 +65,27 @@ type ClouddeployCustomTargetTypeIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ClouddeployCustomTargetTypeIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type ClouddeployCustomTargetTypeIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type ClouddeployCustomTargetTypeIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ClouddeployCustomTargetTypeIamMember
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ConditionInput() *Cloud
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_custom_target_type_iam_member google_clouddeploy_custom_target_type_iam_member} Resource.
 func NewClouddeployCustomTargetTypeIamMember(scope constructs.Construct, id *string, config *ClouddeployCustomTargetTypeIamMemberConfig) ClouddeployCustomTargetTypeIamMember {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewClouddeployCustomTargetTypeIamMember(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamMember.ClouddeployCustomTargetTypeIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewClouddeployCustomTargetTypeIamMember_Override(c ClouddeployCustomTargetT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamMember.ClouddeployCustomTargetTypeIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetId(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetLocation(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetLocation(val *string)
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetMember(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetName(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetProject(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetProvisioners(val *[]i
 	)
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember)SetRole(val *string) {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func ClouddeployCustomTargetTypeIamMember_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamMember.ClouddeployCustomTargetTypeIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func ClouddeployCustomTargetTypeIamMember_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ClouddeployCustomTargetTypeIamMember_IsConstruct(x interface{}) *bool {
+func ClouddeployCustomTargetTypeIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClouddeployCustomTargetTypeIamMember_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func ClouddeployCustomTargetTypeIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamMember.ClouddeployCustomTargetTypeIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func ClouddeployCustomTargetTypeIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ClouddeployCustomTargetTypeIamMember_IsTerraformElement(x interface{}) *bool {
+func ClouddeployCustomTargetTypeIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClouddeployCustomTargetTypeIamMember_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func ClouddeployCustomTargetTypeIamMember_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamMember.ClouddeployCustomTargetTypeIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func ClouddeployCustomTargetTypeIamMember_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func ClouddeployCustomTargetTypeIamMember_IsTerraformResource(x interface{}) *bool {
+func ClouddeployCustomTargetTypeIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateClouddeployCustomTargetTypeIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func ClouddeployCustomTargetTypeIamMember_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.clouddeployCustomTargetTypeIamMember.ClouddeployCustomTargetTypeIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetNumberListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetStringAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -911,7 +910,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) InterpolationForAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) PutCondition(value *Clo
 	_jsii_.InvokeVoid(
 		c,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ResetProject() {
 	)
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1039,8 +1038,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SynthesizeAttributes() 
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1052,8 +1051,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) SynthesizeHclAttributes
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1065,8 +1064,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ToHclTerraform() interf
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1091,8 +1090,8 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1103,4 +1102,3 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMember) ToTerraform() interface
 
 	return returns
 }
-

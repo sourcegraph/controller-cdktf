@@ -17,15 +17,15 @@ type LoggingOrganizationSink interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -36,11 +36,11 @@ type LoggingOrganizationSink interface {
 	Destination() *string
 	SetDestination(val *string)
 	DestinationInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	Exclusions() LoggingOrganizationSinkExclusionsList
-	ExclusionsInput() interface{}
+	ExclusionsInput() any
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -55,12 +55,12 @@ type LoggingOrganizationSink interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IncludeChildren() interface{}
-	SetIncludeChildren(val interface{})
-	IncludeChildrenInput() interface{}
-	InterceptChildren() interface{}
-	SetInterceptChildren(val interface{})
-	InterceptChildrenInput() interface{}
+	IncludeChildren() any
+	SetIncludeChildren(val any)
+	IncludeChildrenInput() any
+	InterceptChildren() any
+	SetInterceptChildren(val any)
+	InterceptChildrenInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -78,15 +78,15 @@ type LoggingOrganizationSink interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WriterIdentity() *string
@@ -94,9 +94,9 @@ type LoggingOrganizationSink interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -114,7 +114,7 @@ type LoggingOrganizationSink interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -126,7 +126,7 @@ type LoggingOrganizationSink interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -134,7 +134,7 @@ type LoggingOrganizationSink interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBigqueryOptions(value *LoggingOrganizationSinkBigqueryOptions)
-	PutExclusions(value interface{})
+	PutExclusions(value any)
 	ResetBigqueryOptions()
 	ResetDescription()
 	ResetDisabled()
@@ -146,17 +146,17 @@ type LoggingOrganizationSink interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LoggingOrganizationSink
@@ -194,8 +194,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) DestinationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) Disabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) Exclusions() LoggingOrganizationSink
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) ExclusionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) ExclusionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"exclusionsInput",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) IncludeChildren() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) IncludeChildren() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeChildren",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) IncludeChildren() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) IncludeChildrenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) IncludeChildrenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeChildrenInput",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) IncludeChildrenInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) InterceptChildren() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) InterceptChildren() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"interceptChildren",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) InterceptChildren() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) InterceptChildrenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) InterceptChildrenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"interceptChildrenInput",
@@ -494,8 +494,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -524,8 +524,8 @@ func (j *jsiiProxy_LoggingOrganizationSink) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingOrganizationSink) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -554,7 +554,6 @@ func (j *jsiiProxy_LoggingOrganizationSink) WriterIdentity() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_organization_sink google_logging_organization_sink} Resource.
 func NewLoggingOrganizationSink(scope constructs.Construct, id *string, config *LoggingOrganizationSinkConfig) LoggingOrganizationSink {
 	_init_.Initialize()
@@ -566,7 +565,7 @@ func NewLoggingOrganizationSink(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -579,12 +578,12 @@ func NewLoggingOrganizationSink_Override(l LoggingOrganizationSink, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetConnection(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetCount(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -614,7 +613,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetDescription(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetDestination(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetDestination(val *string) {
 	if err := j.validateSetDestinationParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetDestination(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetDisabled(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetFilter(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -666,7 +665,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetId(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetIncludeChildren(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetIncludeChildren(val any) {
 	if err := j.validateSetIncludeChildrenParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetIncludeChildren(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetInterceptChildren(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetInterceptChildren(val any) {
 	if err := j.validateSetInterceptChildrenParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetInterceptChildren(val interface{})
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetName(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetOrgId(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetOrgId(val *string) {
 	if err := j.validateSetOrgIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetOrgId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -740,7 +739,7 @@ func (j *jsiiProxy_LoggingOrganizationSink)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSink) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -763,7 +762,7 @@ func LoggingOrganizationSink_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func LoggingOrganizationSink_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LoggingOrganizationSink_IsConstruct(x interface{}) *bool {
+func LoggingOrganizationSink_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingOrganizationSink_IsConstructParameters(x); err != nil {
@@ -798,7 +797,7 @@ func LoggingOrganizationSink_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func LoggingOrganizationSink_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingOrganizationSink_IsTerraformElement(x interface{}) *bool {
+func LoggingOrganizationSink_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingOrganizationSink_IsTerraformElementParameters(x); err != nil {
@@ -817,7 +816,7 @@ func LoggingOrganizationSink_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func LoggingOrganizationSink_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingOrganizationSink_IsTerraformResource(x interface{}) *bool {
+func LoggingOrganizationSink_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingOrganizationSink_IsTerraformResourceParameters(x); err != nil {
@@ -836,7 +835,7 @@ func LoggingOrganizationSink_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -861,31 +860,31 @@ func (l *jsiiProxy_LoggingOrganizationSink) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LoggingOrganizationSink) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingOrganizationSink) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,7 +980,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -997,7 +996,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1013,15 +1012,15 @@ func (l *jsiiProxy_LoggingOrganizationSink) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingOrganizationSink) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1040,7 +1039,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1053,7 +1052,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,18 +1066,18 @@ func (l *jsiiProxy_LoggingOrganizationSink) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LoggingOrganizationSink) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (l *jsiiProxy_LoggingOrganizationSink) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1111,18 +1110,18 @@ func (l *jsiiProxy_LoggingOrganizationSink) PutBigqueryOptions(value *LoggingOrg
 	_jsii_.InvokeVoid(
 		l,
 		"putBigqueryOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) PutExclusions(value interface{}) {
+func (l *jsiiProxy_LoggingOrganizationSink) PutExclusions(value any) {
 	if err := l.validatePutExclusionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putExclusions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1198,8 +1197,8 @@ func (l *jsiiProxy_LoggingOrganizationSink) ResetOverrideLogicalId() {
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingOrganizationSink) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1211,8 +1210,8 @@ func (l *jsiiProxy_LoggingOrganizationSink) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingOrganizationSink) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1224,8 +1223,8 @@ func (l *jsiiProxy_LoggingOrganizationSink) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingOrganizationSink) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1237,8 +1236,8 @@ func (l *jsiiProxy_LoggingOrganizationSink) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingOrganizationSink) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1263,8 +1262,8 @@ func (l *jsiiProxy_LoggingOrganizationSink) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSink) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingOrganizationSink) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1275,4 +1274,3 @@ func (l *jsiiProxy_LoggingOrganizationSink) ToTerraform() interface{} {
 
 	return returns
 }
-

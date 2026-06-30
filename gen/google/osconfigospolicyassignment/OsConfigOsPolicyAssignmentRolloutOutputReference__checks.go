@@ -109,7 +109,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewOsConfigOsPolicyAssignmentRolloutOutputReferenceParameters(terra
 
 	return nil
 }
-

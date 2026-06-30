@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedP
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedP
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhrasesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDialogflowCxGenerativeSettingsGenerativeSafetySettingsBannedPhra
 
 	return nil
 }
-

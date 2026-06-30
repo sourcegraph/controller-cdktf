@@ -12,9 +12,9 @@ type ColabRuntimeTemplateNetworkSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ColabRuntimeTemplateNetworkSpecOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableInternetAccess() interface{}
-	SetEnableInternetAccess(val interface{})
-	EnableInternetAccessInput() interface{}
+	EnableInternetAccess() any
+	SetEnableInternetAccess(val any)
+	EnableInternetAccessInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ColabRuntimeTemplateNetworkSpec
@@ -49,7 +49,7 @@ type ColabRuntimeTemplateNetworkSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ColabRuntimeTemplateNetworkSpecOutputReference interface {
 	ResetSubnetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) CreationStack
 	return returns
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) EnableInternetAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) EnableInternetAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInternetAccess",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) EnableInterne
 	return returns
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) EnableInternetAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) EnableInternetAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInternetAccessInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewColabRuntimeTemplateNetworkSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ColabRuntimeTemplateNetworkSpecOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewColabRuntimeTemplateNetworkSpecOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.colabRuntimeTemplate.ColabRuntimeTemplateNetworkSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewColabRuntimeTemplateNetworkSpecOutputReference_Override(c ColabRuntimeTe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.colabRuntimeTemplate.ColabRuntimeTemplateNetworkSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetEnableInternetAccess(val interface{}) {
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) SetEnableInternetAccess(val any) {
 	if err := j.validateSetEnableInternetAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetEnableInter
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetInternalValue(val *ColabRuntimeTemplateNetworkSpec) {
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) SetInternalValue(val *ColabRuntimeTemplateNetworkSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetNetwork(val
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetSubnetwork(val *string) {
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetSubnetwork(
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetNumberList
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) Interpolation
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) ResetSubnetwo
 	)
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ColabRuntimeTemplateNetworkSpecOutputReference) ToString() *s
 
 	return returns
 }
-

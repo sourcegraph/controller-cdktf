@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeInstanceGroup) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeInstanceGroup) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeInstanceGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ComputeInstanceGroup) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroup) validatePutNamedPortParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceGroup) validatePutNamedPortParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateComputeInstanceGroup_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateComputeInstanceGroup_IsConstructParameters(x interface{}) error {
+func validateComputeInstanceGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateComputeInstanceGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeInstanceGroup_IsTerraformElementParameters(x interface{}) error {
+func validateComputeInstanceGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateComputeInstanceGroup_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateComputeInstanceGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeInstanceGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateComputeInstanceGroup_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_ComputeInstanceGroup) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -432,7 +432,7 @@ func (j *jsiiProxy_ComputeInstanceGroup) validateSetProjectParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewComputeInstanceGroupParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

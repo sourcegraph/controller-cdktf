@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudfunctionsFunctionSecretVolumesVersionsOutputReferenceParame
 
 	return nil
 }
-

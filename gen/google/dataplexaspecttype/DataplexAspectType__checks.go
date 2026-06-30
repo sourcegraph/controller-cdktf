@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataplexAspectType) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAspectType) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataplexAspectType) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataplexAspectType) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAspectType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataplexAspectType) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDataplexAspectType_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDataplexAspectType_IsConstructParameters(x interface{}) error {
+func validateDataplexAspectType_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDataplexAspectType_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataplexAspectType_IsTerraformElementParameters(x interface{}) error {
+func validateDataplexAspectType_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDataplexAspectType_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataplexAspectType_IsTerraformResourceParameters(x interface{}) error {
+func validateDataplexAspectType_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DataplexAspectType) validateSetAspectTypeIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataplexAspectType) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexAspectType) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataplexAspectType) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DataplexAspectType) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexAspectType) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DataplexAspectType) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DataplexAspectType) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataplexAspectType) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -486,4 +486,3 @@ func validateNewDataplexAspectTypeParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

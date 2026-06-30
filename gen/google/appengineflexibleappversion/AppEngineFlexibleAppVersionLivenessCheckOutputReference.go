@@ -15,9 +15,9 @@ type AppEngineFlexibleAppVersionLivenessCheckOutputReference interface {
 	CheckIntervalInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type AppEngineFlexibleAppVersionLivenessCheckOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type AppEngineFlexibleAppVersionLivenessCheckOutputReference interface {
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) Chec
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -313,7 +313,6 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) Time
 	return returns
 }
 
-
 func NewAppEngineFlexibleAppVersionLivenessCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppEngineFlexibleAppVersionLivenessCheckOutputReference {
 	_init_.Initialize()
 
@@ -324,7 +323,7 @@ func NewAppEngineFlexibleAppVersionLivenessCheckOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -336,12 +335,12 @@ func NewAppEngineFlexibleAppVersionLivenessCheckOutputReference_Override(a AppEn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionLivenessCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetCheckInterval(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetCheckInterval(val *string) {
 	if err := j.validateSetCheckIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,7 +351,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetCh
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetFailureThreshold(val *float64) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetFailureThreshold(val *float64) {
 	if err := j.validateSetFailureThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetFa
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetHost(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetHo
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetInitialDelay(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetInitialDelay(val *string) {
 	if err := j.validateSetInitialDelayParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetInternalValue(val *AppEngineFlexibleAppVersionLivenessCheck) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetInternalValue(val *AppEngineFlexibleAppVersionLivenessCheck) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetPa
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetSuccessThreshold(val *float64) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetSuccessThreshold(val *float64) {
 	if err := j.validateSetSuccessThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetSu
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference)SetTimeout(val *string) {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) SetTimeout(val *string) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,16 +485,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) Comp
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetL
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) Inte
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -707,16 +706,16 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) Rese
 	)
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -735,4 +734,3 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) ToSt
 
 	return returns
 }
-

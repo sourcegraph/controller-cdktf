@@ -10,14 +10,14 @@ import (
 
 type BigqueryTableMaterializedViewOutputReference interface {
 	cdktf.ComplexObject
-	AllowNonIncrementalDefinition() interface{}
-	SetAllowNonIncrementalDefinition(val interface{})
-	AllowNonIncrementalDefinitionInput() interface{}
+	AllowNonIncrementalDefinition() any
+	SetAllowNonIncrementalDefinition(val any)
+	AllowNonIncrementalDefinitionInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type BigqueryTableMaterializedViewOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableRefresh() interface{}
-	SetEnableRefresh(val interface{})
-	EnableRefreshInput() interface{}
+	EnableRefresh() any
+	SetEnableRefresh(val any)
+	EnableRefreshInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BigqueryTableMaterializedView
@@ -52,7 +52,7 @@ type BigqueryTableMaterializedViewOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type BigqueryTableMaterializedViewOutputReference interface {
 	ResetRefreshIntervalMs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_BigqueryTableMaterializedViewOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinition() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinition() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNonIncrementalDefinition",
@@ -101,8 +101,8 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) AllowNonIncreme
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinitionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) AllowNonIncrementalDefinitionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowNonIncrementalDefinitionInput",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) AllowNonIncreme
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -141,8 +141,8 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) CreationStack()
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) EnableRefresh() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) EnableRefresh() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableRefresh",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) EnableRefresh()
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) EnableRefreshInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) EnableRefreshInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableRefreshInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewBigqueryTableMaterializedViewOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryTableMaterializedViewOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewBigqueryTableMaterializedViewOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewBigqueryTableMaterializedViewOutputReference_Override(b BigqueryTableMat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetAllowNonIncrementalDefinition(val interface{}) {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) SetAllowNonIncrementalDefinition(val any) {
 	if err := j.validateSetAllowNonIncrementalDefinitionParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetAllowNonIncre
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetEnableRefresh(val interface{}) {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) SetEnableRefresh(val any) {
 	if err := j.validateSetEnableRefreshParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetEnableRefresh
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetInternalValue(val *BigqueryTableMaterializedView) {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) SetInternalValue(val *BigqueryTableMaterializedView) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetQuery(val *string) {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) SetQuery(val *string) {
 	if err := j.validateSetQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetQuery(val *st
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetRefreshIntervalMs(val *float64) {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) SetRefreshIntervalMs(val *float64) {
 	if err := j.validateSetRefreshIntervalMsParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetRefreshInterv
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) ResetRefreshInt
 	)
 }
 
-func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) ToString() *str
 
 	return returns
 }
-

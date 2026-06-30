@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSqlDatabaseInstanceSettingsDatabaseFlagsOutputReferenceParameter
 
 	return nil
 }
-

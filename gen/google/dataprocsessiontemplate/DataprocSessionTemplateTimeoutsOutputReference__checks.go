@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocSessionTemplateTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataprocSessionTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocSessionTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataprocSessionTemplateTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_DataprocSessionTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocSessionTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataprocSessionTemplateTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

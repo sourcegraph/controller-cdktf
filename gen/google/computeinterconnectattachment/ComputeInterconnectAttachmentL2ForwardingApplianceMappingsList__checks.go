@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingApplianceMappingsLis
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingApplianceMappingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingApplianceMappingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInterconnectAttachmentL2ForwardingApplianceMappingsListPa
 
 	return nil
 }
-

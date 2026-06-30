@@ -15,18 +15,18 @@ type NetworkServicesMulticastGroupRange interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConsumerAcceptList() *[]*string
 	SetConsumerAcceptList(val *[]*string)
 	ConsumerAcceptListInput() *[]*string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -80,14 +80,14 @@ type NetworkServicesMulticastGroupRange interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	RequireExplicitAccept() interface{}
-	SetRequireExplicitAccept(val interface{})
-	RequireExplicitAcceptInput() interface{}
+	RawOverrides() any
+	RequireExplicitAccept() any
+	SetRequireExplicitAccept(val any)
+	RequireExplicitAcceptInput() any
 	ReservedInternalRange() *string
 	SetReservedInternalRange(val *string)
 	ReservedInternalRangeInput() *string
@@ -96,20 +96,20 @@ type NetworkServicesMulticastGroupRange interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesMulticastGroupRangeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UniqueId() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -127,7 +127,7 @@ type NetworkServicesMulticastGroupRange interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -139,7 +139,7 @@ type NetworkServicesMulticastGroupRange interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -160,17 +160,17 @@ type NetworkServicesMulticastGroupRange interface {
 	ResetProject()
 	ResetRequireExplicitAccept()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkServicesMulticastGroupRange
@@ -188,8 +188,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Connection() interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) ConsumerAcceptListInput()
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -528,8 +528,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -538,8 +538,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Provisioners() *[]interfa
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -548,8 +548,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) RawOverrides() interface{
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) RequireExplicitAccept() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) RequireExplicitAccept() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireExplicitAccept",
@@ -558,8 +558,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) RequireExplicitAccept() i
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) RequireExplicitAcceptInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) RequireExplicitAcceptInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireExplicitAcceptInput",
@@ -618,8 +618,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) TerraformLabels() cdktf.S
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -648,8 +648,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) Timeouts() NetworkService
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -678,7 +678,6 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_multicast_group_range google_network_services_multicast_group_range} Resource.
 func NewNetworkServicesMulticastGroupRange(scope constructs.Construct, id *string, config *NetworkServicesMulticastGroupRangeConfig) NetworkServicesMulticastGroupRange {
 	_init_.Initialize()
@@ -690,7 +689,7 @@ func NewNetworkServicesMulticastGroupRange(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesMulticastGroupRange.NetworkServicesMulticastGroupRange",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -703,12 +702,12 @@ func NewNetworkServicesMulticastGroupRange_Override(n NetworkServicesMulticastGr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesMulticastGroupRange.NetworkServicesMulticastGroupRange",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetConsumerAcceptList(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetConsumerAcceptList(val *[]*string) {
 	if err := j.validateSetConsumerAcceptListParameters(val); err != nil {
 		panic(err)
 	}
@@ -730,7 +729,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetConsumerAcceptList(val 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -741,7 +740,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -749,7 +748,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetDescription(val *string
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetDistributionScope(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetDistributionScope(val *string) {
 	if err := j.validateSetDistributionScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetDistributionScope(val *
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -779,7 +778,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetId(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,7 +789,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -801,7 +800,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetLabels(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -812,7 +811,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -823,7 +822,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetMulticastDomain(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetMulticastDomain(val *string) {
 	if err := j.validateSetMulticastDomainParameters(val); err != nil {
 		panic(err)
 	}
@@ -834,7 +833,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetMulticastDomain(val *st
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetMulticastGroupRangeId(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetMulticastGroupRangeId(val *string) {
 	if err := j.validateSetMulticastGroupRangeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -845,7 +844,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetMulticastGroupRangeId(v
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetProject(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +855,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -864,7 +863,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetProvider(val cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -875,7 +874,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetProvisioners(val *[]int
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetRequireExplicitAccept(val interface{}) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetRequireExplicitAccept(val any) {
 	if err := j.validateSetRequireExplicitAcceptParameters(val); err != nil {
 		panic(err)
 	}
@@ -886,7 +885,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetRequireExplicitAccept(v
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange)SetReservedInternalRange(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) SetReservedInternalRange(val *string) {
 	if err := j.validateSetReservedInternalRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -909,7 +908,7 @@ func NetworkServicesMulticastGroupRange_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastGroupRange.NetworkServicesMulticastGroupRange",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func NetworkServicesMulticastGroupRange_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkServicesMulticastGroupRange_IsConstruct(x interface{}) *bool {
+func NetworkServicesMulticastGroupRange_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesMulticastGroupRange_IsConstructParameters(x); err != nil {
@@ -944,7 +943,7 @@ func NetworkServicesMulticastGroupRange_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastGroupRange.NetworkServicesMulticastGroupRange",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func NetworkServicesMulticastGroupRange_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkServicesMulticastGroupRange_IsTerraformElement(x interface{}) *bool {
+func NetworkServicesMulticastGroupRange_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesMulticastGroupRange_IsTerraformElementParameters(x); err != nil {
@@ -963,7 +962,7 @@ func NetworkServicesMulticastGroupRange_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastGroupRange.NetworkServicesMulticastGroupRange",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -971,7 +970,7 @@ func NetworkServicesMulticastGroupRange_IsTerraformElement(x interface{}) *bool 
 }
 
 // Experimental.
-func NetworkServicesMulticastGroupRange_IsTerraformResource(x interface{}) *bool {
+func NetworkServicesMulticastGroupRange_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkServicesMulticastGroupRange_IsTerraformResourceParameters(x); err != nil {
@@ -982,7 +981,7 @@ func NetworkServicesMulticastGroupRange_IsTerraformResource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkServicesMulticastGroupRange.NetworkServicesMulticastGroupRange",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1007,31 +1006,31 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) AddMoveTarget(moveTarget 
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRange) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1047,7 +1046,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1063,7 +1062,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1079,7 +1078,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1095,7 +1094,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1111,7 +1110,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1127,7 +1126,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1143,7 +1142,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1159,15 +1158,15 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRange) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1186,7 +1185,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ImportFrom(id *string, pr
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1199,7 +1198,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) InterpolationForAttribute
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1213,18 +1212,18 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRange) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1235,7 +1234,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1246,7 +1245,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1257,7 +1256,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) PutLogConfig(value *Netwo
 	_jsii_.InvokeVoid(
 		n,
 		"putLogConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1268,7 +1267,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) PutTimeouts(value *Networ
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1352,8 +1351,8 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRange) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1365,8 +1364,8 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) SynthesizeAttributes() *m
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRange) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1378,8 +1377,8 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) SynthesizeHclAttributes()
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1391,8 +1390,8 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ToHclTerraform() interfac
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1417,8 +1416,8 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1429,4 +1428,3 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) ToTerraform() interface{}
 
 	return returns
 }
-

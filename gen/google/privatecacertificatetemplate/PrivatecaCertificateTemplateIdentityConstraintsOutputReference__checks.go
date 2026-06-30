@@ -109,7 +109,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateSetAllowSubjectAltNamesPassthroughParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateSetAllowSubjectAltNamesPassthroughParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateSetAllowSubjectPassthroughParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateSetAllowSubjectPassthroughParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -149,7 +149,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -249,4 +249,3 @@ func validateNewPrivatecaCertificateTemplateIdentityConstraintsOutputReferencePa
 
 	return nil
 }
-

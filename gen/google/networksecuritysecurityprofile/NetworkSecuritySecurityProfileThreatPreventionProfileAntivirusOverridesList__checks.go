@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileAntiviru
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOv
 
 	return nil
 }
-

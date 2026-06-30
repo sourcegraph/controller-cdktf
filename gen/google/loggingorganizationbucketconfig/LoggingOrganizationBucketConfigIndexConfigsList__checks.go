@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoggingOrganizationBucketConfigIndexConfigsListParameters(terraf
 
 	return nil
 }
-

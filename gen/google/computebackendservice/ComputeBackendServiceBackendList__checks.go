@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeBackendServiceBackendList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceBackendList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceBackendList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeBackendServiceBackendListParameters(terraformResource cdk
 
 	return nil
 }
-

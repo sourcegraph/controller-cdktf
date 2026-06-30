@@ -12,9 +12,9 @@ type WorkbenchInstanceGceSetupContainerImageOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type WorkbenchInstanceGceSetupContainerImageOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type WorkbenchInstanceGceSetupContainerImageOutputReference interface {
 	ResetTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) Terra
 	return returns
 }
 
-
 func NewWorkbenchInstanceGceSetupContainerImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkbenchInstanceGceSetupContainerImageOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewWorkbenchInstanceGceSetupContainerImageOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupContainerImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewWorkbenchInstanceGceSetupContainerImageOutputReference_Override(w Workbe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupContainerImageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetInternalValue(val *WorkbenchInstanceGceSetupContainerImage) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) SetInternalValue(val *WorkbenchInstanceGceSetupContainerImage) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetRepository(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetRep
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetTag(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) SetTag(val *string) {
 	if err := j.validateSetTagParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetTag
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) Compu
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetBo
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetBo
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetLi
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetNu
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetNu
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetNu
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetSt
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) GetSt
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) Inter
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) Reset
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) ToStr
 
 	return returns
 }
-

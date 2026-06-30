@@ -19,7 +19,7 @@ func (g *jsiiProxy_GkeBackupRestoreChannel) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestoreChannel) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GkeBackupRestoreChannel) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GkeBackupRestoreChannel) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestoreChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GkeBackupRestoreChannel) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGkeBackupRestoreChannel_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateGkeBackupRestoreChannel_IsConstructParameters(x interface{}) error {
+func validateGkeBackupRestoreChannel_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGkeBackupRestoreChannel_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateGkeBackupRestoreChannel_IsTerraformElementParameters(x interface{}) error {
+func validateGkeBackupRestoreChannel_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGkeBackupRestoreChannel_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateGkeBackupRestoreChannel_IsTerraformResourceParameters(x interface{}) error {
+func validateGkeBackupRestoreChannel_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGkeBackupRestoreChannel_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GkeBackupRestoreChannel) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewGkeBackupRestoreChannelParameters(scope constructs.Construct, id
 
 	return nil
 }
-

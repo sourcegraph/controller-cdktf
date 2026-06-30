@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputRef
 
 	return nil
 }
-

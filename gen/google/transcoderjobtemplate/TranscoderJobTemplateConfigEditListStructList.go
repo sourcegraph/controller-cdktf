@@ -17,8 +17,8 @@ type TranscoderJobTemplateConfigEditListStructList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type TranscoderJobTemplateConfigEditListStructList interface {
 	Get(index *float64) TranscoderJobTemplateConfigEditListStructOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewTranscoderJobTemplateConfigEditListStructList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TranscoderJobTemplateConfigEditListStructList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewTranscoderJobTemplateConfigEditListStructList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEditListStructList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewTranscoderJobTemplateConfigEditListStructList_Override(t TranscoderJobTe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEditListStructList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) AllWithMapKey(
 	_jsii_.Invoke(
 		t,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) Get(index *flo
 	_jsii_.Invoke(
 		t,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) ToString() *st
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeIamMemberConditionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewClouddeployCustomTargetTypeIamMemberConditionOutputReferencePara
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (f *jsiiProxy_Folder) validateAddMoveTargetParameters(moveTarget *string) e
 	return nil
 }
 
-func (f *jsiiProxy_Folder) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_Folder) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_Folder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_Folder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_Folder) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateFolder_GenerateConfigForImportParameters(scope constructs.Construct
 	return nil
 }
 
-func validateFolder_IsConstructParameters(x interface{}) error {
+func validateFolder_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateFolder_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateFolder_IsTerraformElementParameters(x interface{}) error {
+func validateFolder_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateFolder_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateFolder_IsTerraformResourceParameters(x interface{}) error {
+func validateFolder_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateFolder_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Folder) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Folder) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_Folder) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_Folder) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Folder) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -345,7 +345,7 @@ func (j *jsiiProxy_Folder) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Folder) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_Folder) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -397,7 +397,7 @@ func (j *jsiiProxy_Folder) validateSetParentParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Folder) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Folder) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -469,4 +469,3 @@ func validateNewFolderParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type FirestoreDocument interface {
 	SetCollection(val *string)
 	CollectionInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Database() *string
 	SetDatabase(val *string)
@@ -68,27 +68,27 @@ type FirestoreDocument interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FirestoreDocumentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type FirestoreDocument interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type FirestoreDocument interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type FirestoreDocument interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FirestoreDocument
@@ -181,8 +181,8 @@ func (j *jsiiProxy_FirestoreDocument) CollectionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreDocument) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreDocument) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_FirestoreDocument) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreDocument) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirestoreDocument) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_FirestoreDocument) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreDocument) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreDocument) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_FirestoreDocument) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreDocument) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FirestoreDocument) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -421,8 +421,8 @@ func (j *jsiiProxy_FirestoreDocument) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreDocument) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreDocument) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_FirestoreDocument) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreDocument) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirestoreDocument) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -471,8 +471,8 @@ func (j *jsiiProxy_FirestoreDocument) Timeouts() FirestoreDocumentTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreDocument) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirestoreDocument) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -491,7 +491,6 @@ func (j *jsiiProxy_FirestoreDocument) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_document google_firestore_document} Resource.
 func NewFirestoreDocument(scope constructs.Construct, id *string, config *FirestoreDocumentConfig) FirestoreDocument {
 	_init_.Initialize()
@@ -503,7 +502,7 @@ func NewFirestoreDocument(scope constructs.Construct, id *string, config *Firest
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -516,12 +515,12 @@ func NewFirestoreDocument_Override(f FirestoreDocument, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetCollection(val *string) {
+func (j *jsiiProxy_FirestoreDocument) SetCollection(val *string) {
 	if err := j.validateSetCollectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_FirestoreDocument)SetCollection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetConnection(val interface{}) {
+func (j *jsiiProxy_FirestoreDocument) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_FirestoreDocument)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetCount(val interface{}) {
+func (j *jsiiProxy_FirestoreDocument) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_FirestoreDocument)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetDatabase(val *string) {
+func (j *jsiiProxy_FirestoreDocument) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_FirestoreDocument)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FirestoreDocument) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -573,7 +572,7 @@ func (j *jsiiProxy_FirestoreDocument)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetDocumentId(val *string) {
+func (j *jsiiProxy_FirestoreDocument) SetDocumentId(val *string) {
 	if err := j.validateSetDocumentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_FirestoreDocument)SetDocumentId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetFields(val *string) {
+func (j *jsiiProxy_FirestoreDocument) SetFields(val *string) {
 	if err := j.validateSetFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_FirestoreDocument)SetFields(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FirestoreDocument) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_FirestoreDocument)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetId(val *string) {
+func (j *jsiiProxy_FirestoreDocument) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_FirestoreDocument)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FirestoreDocument) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_FirestoreDocument)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetProject(val *string) {
+func (j *jsiiProxy_FirestoreDocument) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_FirestoreDocument)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FirestoreDocument) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_FirestoreDocument)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FirestoreDocument) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func FirestoreDocument_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func FirestoreDocument_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FirestoreDocument_IsConstruct(x interface{}) *bool {
+func FirestoreDocument_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirestoreDocument_IsConstructParameters(x); err != nil {
@@ -702,7 +701,7 @@ func FirestoreDocument_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func FirestoreDocument_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FirestoreDocument_IsTerraformElement(x interface{}) *bool {
+func FirestoreDocument_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirestoreDocument_IsTerraformElementParameters(x); err != nil {
@@ -721,7 +720,7 @@ func FirestoreDocument_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func FirestoreDocument_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FirestoreDocument_IsTerraformResource(x interface{}) *bool {
+func FirestoreDocument_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirestoreDocument_IsTerraformResourceParameters(x); err != nil {
@@ -740,7 +739,7 @@ func FirestoreDocument_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -765,31 +764,31 @@ func (f *jsiiProxy_FirestoreDocument) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FirestoreDocument) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FirestoreDocument) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FirestoreDocument) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirestoreDocument) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (f *jsiiProxy_FirestoreDocument) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (f *jsiiProxy_FirestoreDocument) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (f *jsiiProxy_FirestoreDocument) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (f *jsiiProxy_FirestoreDocument) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (f *jsiiProxy_FirestoreDocument) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (f *jsiiProxy_FirestoreDocument) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (f *jsiiProxy_FirestoreDocument) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,15 +916,15 @@ func (f *jsiiProxy_FirestoreDocument) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreDocument) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirestoreDocument) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -944,7 +943,7 @@ func (f *jsiiProxy_FirestoreDocument) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -957,7 +956,7 @@ func (f *jsiiProxy_FirestoreDocument) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,18 +970,18 @@ func (f *jsiiProxy_FirestoreDocument) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FirestoreDocument) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FirestoreDocument) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -993,7 +992,7 @@ func (f *jsiiProxy_FirestoreDocument) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (f *jsiiProxy_FirestoreDocument) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1015,7 +1014,7 @@ func (f *jsiiProxy_FirestoreDocument) PutTimeouts(value *FirestoreDocumentTimeou
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1059,8 +1058,8 @@ func (f *jsiiProxy_FirestoreDocument) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FirestoreDocument) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirestoreDocument) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1072,8 +1071,8 @@ func (f *jsiiProxy_FirestoreDocument) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreDocument) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirestoreDocument) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1085,8 +1084,8 @@ func (f *jsiiProxy_FirestoreDocument) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreDocument) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirestoreDocument) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1098,8 +1097,8 @@ func (f *jsiiProxy_FirestoreDocument) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreDocument) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirestoreDocument) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1124,8 +1123,8 @@ func (f *jsiiProxy_FirestoreDocument) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreDocument) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirestoreDocument) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1136,4 +1135,3 @@ func (f *jsiiProxy_FirestoreDocument) ToTerraform() interface{} {
 
 	return returns
 }
-

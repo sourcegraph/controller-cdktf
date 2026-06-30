@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBigqueryConnectionAwsAccessRoleOutputReferenceParameters(terrafo
 
 	return nil
 }
-

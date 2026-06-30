@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationToken",
-		reflect.TypeOf((*DataGoogleSiteVerificationToken)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSiteVerificationToken](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "verificationMethod", GoGetter: "VerificationMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationMethodInput", GoGetter: "VerificationMethodInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSiteVerificationToken{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,15 +67,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenConfig",
-		reflect.TypeOf((*DataGoogleSiteVerificationTokenConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSiteVerificationTokenConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenTimeouts",
-		reflect.TypeOf((*DataGoogleSiteVerificationTokenTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSiteVerificationTokenTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenTimeoutsOutputReference",
-		reflect.TypeOf((*DataGoogleSiteVerificationTokenTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleSiteVerificationTokenTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleSiteVerificationTokenTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

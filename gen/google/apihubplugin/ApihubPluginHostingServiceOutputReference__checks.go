@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApihubPluginHostingServiceOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginHostingServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApihubPluginHostingServiceOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

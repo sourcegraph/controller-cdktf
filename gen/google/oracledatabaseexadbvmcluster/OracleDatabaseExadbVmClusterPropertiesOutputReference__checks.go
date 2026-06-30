@@ -147,7 +147,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -319,4 +319,3 @@ func validateNewOracleDatabaseExadbVmClusterPropertiesOutputReferenceParameters(
 
 	return nil
 }
-

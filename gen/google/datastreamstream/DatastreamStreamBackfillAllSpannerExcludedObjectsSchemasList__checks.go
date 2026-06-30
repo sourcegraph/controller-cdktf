@@ -34,7 +34,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllSpannerExcludedObjectsSchemasList)
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllSpannerExcludedObjectsSchemasList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllSpannerExcludedObjectsSchemasList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDatastreamStreamBackfillAllSpannerExcludedObjectsSchemasListPara
 
 	return nil
 }
-

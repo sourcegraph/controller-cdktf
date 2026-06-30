@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServ
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServ
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigOutputReference) validateSetEnablePrivateServiceConnectParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfigOutputReference) validateSetEnablePrivateServiceConnectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewVertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateService
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWin
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindow
 
 	return nil
 }
-

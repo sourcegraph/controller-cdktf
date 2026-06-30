@@ -34,7 +34,7 @@ func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsList) va
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsListParamet
 
 	return nil
 }
-

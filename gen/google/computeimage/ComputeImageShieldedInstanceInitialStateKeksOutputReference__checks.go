@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeImageShieldedInstanceInitialStateKeksOutputReferenceParam
 
 	return nil
 }
-

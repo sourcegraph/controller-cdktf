@@ -120,7 +120,7 @@ func (o *jsiiProxy_OrganizationPolicyListPolicyOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationPolicyListPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationPolicyListPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_OrganizationPolicyListPolicyOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationPolicyListPolicyOutputReference) validateSetInheritFromParentParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationPolicyListPolicyOutputReference) validateSetInheritFromParentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -248,4 +248,3 @@ func validateNewOrganizationPolicyListPolicyOutputReferenceParameters(terraformR
 
 	return nil
 }
-

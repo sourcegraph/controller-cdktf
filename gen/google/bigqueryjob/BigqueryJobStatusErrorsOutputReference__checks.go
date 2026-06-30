@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryJobStatusErrorsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobStatusErrorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobStatusErrorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewBigqueryJobStatusErrorsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

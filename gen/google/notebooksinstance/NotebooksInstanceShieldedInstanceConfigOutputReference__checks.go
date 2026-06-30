@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewNotebooksInstanceShieldedInstanceConfigOutputReferenceParameters
 
 	return nil
 }
-

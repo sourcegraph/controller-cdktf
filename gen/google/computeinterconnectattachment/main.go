@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment",
-		reflect.TypeOf((*ComputeInterconnectAttachment)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vlanTag8021Q", GoGetter: "VlanTag8021Q"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanTag8021QInput", GoGetter: "VlanTag8021QInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -156,23 +156,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentConfig",
-		reflect.TypeOf((*ComputeInterconnectAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2Forwarding",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2Forwarding)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2Forwarding](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2ForwardingApplianceMappings",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2ForwardingApplianceMappings)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2ForwardingApplianceMappings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappings",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappings)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappingsList",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappingsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -194,7 +194,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappingsOutputReference",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentL2ForwardingApplianceMappingsInnerVlanToApplianceMappingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,7 +232,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2ForwardingApplianceMappingsList",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2ForwardingApplianceMappingsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2ForwardingApplianceMappingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentL2ForwardingApplianceMappingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -254,7 +254,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applianceIpAddress", GoGetter: "ApplianceIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "applianceIpAddressInput", GoGetter: "ApplianceIpAddressInput"},
@@ -291,7 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vlanId", GoGetter: "VlanId"},
 			_jsii_.MemberProperty{JsiiProperty: "vlanIdInput", GoGetter: "VlanIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -299,11 +299,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2ForwardingGeneveHeader",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2ForwardingGeneveHeader)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2ForwardingGeneveHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -330,7 +330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vni", GoGetter: "Vni"},
 			_jsii_.MemberProperty{JsiiProperty: "vniInput", GoGetter: "VniInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -338,7 +338,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentL2ForwardingOutputReference",
-		reflect.TypeOf((*ComputeInterconnectAttachmentL2ForwardingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentL2ForwardingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applianceMappings", GoGetter: "ApplianceMappings"},
 			_jsii_.MemberProperty{JsiiProperty: "applianceMappingsInput", GoGetter: "ApplianceMappingsInput"},
@@ -379,7 +379,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tunnelEndpointIpAddress", GoGetter: "TunnelEndpointIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelEndpointIpAddressInput", GoGetter: "TunnelEndpointIpAddressInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -387,11 +387,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentParams",
-		reflect.TypeOf((*ComputeInterconnectAttachmentParams)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentParamsOutputReference",
-		reflect.TypeOf((*ComputeInterconnectAttachmentParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -418,7 +418,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -426,11 +426,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfo",
-		reflect.TypeOf((*ComputeInterconnectAttachmentPrivateInterconnectInfo)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentPrivateInterconnectInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoList",
-		reflect.TypeOf((*ComputeInterconnectAttachmentPrivateInterconnectInfoList)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentPrivateInterconnectInfoList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -443,7 +443,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -451,7 +451,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference",
-		reflect.TypeOf((*ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -476,7 +476,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -484,11 +484,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeouts",
-		reflect.TypeOf((*ComputeInterconnectAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeInterconnectAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInterconnectAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -521,7 +521,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInterconnectAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

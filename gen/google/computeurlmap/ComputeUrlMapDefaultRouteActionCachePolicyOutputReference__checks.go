@@ -134,7 +134,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) validatePutNegativeCachingPolicyParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) validatePutNegativeCachingPolicyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -200,7 +200,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -273,7 +273,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) validateSetNegativeCachingParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) validateSetNegativeCachingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) validateSetRequestCoalescingParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyOutputReference) validateSetRequestCoalescingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -340,4 +340,3 @@ func validateNewComputeUrlMapDefaultRouteActionCachePolicyOutputReferenceParamet
 
 	return nil
 }
-

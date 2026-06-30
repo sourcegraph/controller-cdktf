@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterBinaryAuthorizationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterBinaryAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterBinaryAuthorizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterBinaryAuthorizationOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterBinaryAuthorizationOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterBinaryAuthorizationOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewContainerClusterBinaryAuthorizationOutputReferenceParameters(ter
 
 	return nil
 }
-

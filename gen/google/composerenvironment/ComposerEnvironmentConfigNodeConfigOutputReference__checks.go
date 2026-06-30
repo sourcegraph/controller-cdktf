@@ -109,7 +109,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,7 +198,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetEnableIpMasqAgentParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetEnableIpMasqAgentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -309,4 +309,3 @@ func validateNewComposerEnvironmentConfigNodeConfigOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	// The host that will be used in the redirect response instead of the one that was supplied in the request.
 	//
@@ -16,7 +15,7 @@ type ComputeUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	// Setting this true for TargetHttpsProxy is not permitted. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
-	HttpsRedirect interface{} `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
+	HttpsRedirect any `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
 	// The path that will be used in the redirect response instead of the one that was supplied in the request.
 	//
 	// Only one of pathRedirect or prefixRedirect must be
@@ -48,6 +47,5 @@ type ComputeUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	// original URL is retained. Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
-	StripQuery interface{} `field:"optional" json:"stripQuery" yaml:"stripQuery"`
+	StripQuery any `field:"optional" json:"stripQuery" yaml:"stripQuery"`
 }
-

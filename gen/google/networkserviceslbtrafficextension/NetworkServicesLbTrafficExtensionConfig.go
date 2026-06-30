@@ -6,9 +6,9 @@ import (
 
 type NetworkServicesLbTrafficExtensionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type NetworkServicesLbTrafficExtensionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// extension_chains block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_traffic_extension#extension_chains NetworkServicesLbTrafficExtension#extension_chains}
-	ExtensionChains interface{} `field:"required" json:"extensionChains" yaml:"extensionChains"`
+	ExtensionChains any `field:"required" json:"extensionChains" yaml:"extensionChains"`
 	// A list of references to the forwarding rules to which this service extension is attached to.
 	//
 	// At least one forwarding rule is required. There can be only one LBTrafficExtension resource per forwarding rule.
@@ -67,4 +67,3 @@ type NetworkServicesLbTrafficExtensionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_traffic_extension#timeouts NetworkServicesLbTrafficExtension#timeouts}
 	Timeouts *NetworkServicesLbTrafficExtensionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

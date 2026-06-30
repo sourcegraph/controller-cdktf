@@ -109,7 +109,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewContainerAwsNodePoolUpdateSettingsOutputReferenceParameters(terr
 
 	return nil
 }
-

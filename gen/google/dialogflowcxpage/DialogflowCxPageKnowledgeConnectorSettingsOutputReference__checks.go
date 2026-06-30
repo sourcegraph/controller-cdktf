@@ -90,7 +90,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) validatePutDataStoreConnectionsParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) validatePutDataStoreConnectionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -276,4 +276,3 @@ func validateNewDialogflowCxPageKnowledgeConnectorSettingsOutputReferenceParamet
 
 	return nil
 }
-

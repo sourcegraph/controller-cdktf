@@ -12,9 +12,9 @@ type WorkbenchInstanceGceSetupDataDisksOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type WorkbenchInstanceGceSetupDataDisksOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type WorkbenchInstanceGceSetupDataDisksOutputReference interface {
 	ResetKmsKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) TerraformR
 	return returns
 }
 
-
 func NewWorkbenchInstanceGceSetupDataDisksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkbenchInstanceGceSetupDataDisksOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewWorkbenchInstanceGceSetupDataDisksOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewWorkbenchInstanceGceSetupDataDisksOutputReference_Override(w WorkbenchIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetDiskEncryption(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) SetDiskEncryption(val *string) {
 	if err := j.validateSetDiskEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetDiskEncr
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetDiskSizeGb(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) SetDiskSizeGb(val *string) {
 	if err := j.validateSetDiskSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetDiskSize
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetDiskType(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) SetDiskType(val *string) {
 	if err := j.validateSetDiskTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetDiskType
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetInternalValue(val *WorkbenchInstanceGceSetupDataDisks) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) SetInternalValue(val *WorkbenchInstanceGceSetupDataDisks) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetKmsKey(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetKmsKey(v
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) ComputeFqn
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetBoolean
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetBoolean
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetListAtt
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetNumberA
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetNumberL
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetNumberM
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetStringA
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) GetStringM
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) Interpolat
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) ResetKmsKe
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) ToString()
 
 	return returns
 }
-

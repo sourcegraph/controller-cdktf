@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeDisk) validateAddMoveTargetParameters(moveTarget *stri
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDisk) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeDisk) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeDisk) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeDisk) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (c *jsiiProxy_ComputeDisk) validatePutDiskEncryptionKeyParameters(value *Co
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDisk) validatePutGuestOsFeaturesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeDisk) validatePutGuestOsFeaturesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateComputeDisk_GenerateConfigForImportParameters(scope constructs.Cons
 	return nil
 }
 
-func validateComputeDisk_IsConstructParameters(x interface{}) error {
+func validateComputeDisk_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -325,7 +325,7 @@ func validateComputeDisk_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeDisk_IsTerraformElementParameters(x interface{}) error {
+func validateComputeDisk_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -333,7 +333,7 @@ func validateComputeDisk_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeDisk_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeDisk_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -357,7 +357,7 @@ func (j *jsiiProxy_ComputeDisk) validateSetArchitectureParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDisk) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDisk) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -390,7 +390,7 @@ func (j *jsiiProxy_ComputeDisk) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDisk) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDisk) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -447,7 +447,7 @@ func (j *jsiiProxy_ComputeDisk) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDisk) validateSetCreateSnapshotBeforeDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDisk) validateSetCreateSnapshotBeforeDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -483,7 +483,7 @@ func (j *jsiiProxy_ComputeDisk) validateSetDescriptionParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDisk) validateSetEnableConfidentialComputeParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDisk) validateSetEnableConfidentialComputeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -583,7 +583,7 @@ func (j *jsiiProxy_ComputeDisk) validateSetProvisionedThroughputParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDisk) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeDisk) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -711,4 +711,3 @@ func validateNewComputeDiskParameters(scope constructs.Construct, id *string, co
 
 	return nil
 }
-

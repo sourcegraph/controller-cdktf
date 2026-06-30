@@ -12,9 +12,9 @@ type TagsLocationTagBindingTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type TagsLocationTagBindingTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type TagsLocationTagBindingTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type TagsLocationTagBindingTimeoutsOutputReference interface {
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewTagsLocationTagBindingTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TagsLocationTagBindingTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewTagsLocationTagBindingTimeoutsOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewTagsLocationTagBindingTimeoutsOutputReference_Override(t TagsLocationTag
 
 	_jsii_.Create(
 		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetCreate(val *
 	)
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetDelete(val *
 	)
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) InterpolationF
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) ResetDelete() 
 	)
 }
 
-func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) ToString() *st
 
 	return returns
 }
-

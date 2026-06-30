@@ -19,7 +19,7 @@ func (k *jsiiProxy_KmsCryptoKey) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (k *jsiiProxy_KmsCryptoKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (k *jsiiProxy_KmsCryptoKey) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (k *jsiiProxy_KmsCryptoKey) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateKmsCryptoKey_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateKmsCryptoKey_IsConstructParameters(x interface{}) error {
+func validateKmsCryptoKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateKmsCryptoKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateKmsCryptoKey_IsTerraformElementParameters(x interface{}) error {
+func validateKmsCryptoKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateKmsCryptoKey_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateKmsCryptoKey_IsTerraformResourceParameters(x interface{}) error {
+func validateKmsCryptoKey_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateKmsCryptoKey_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKey) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKey) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_KmsCryptoKey) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_KmsCryptoKey) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKey) validateSetImportOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKey) validateSetImportOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -432,7 +432,7 @@ func (j *jsiiProxy_KmsCryptoKey) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKey) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_KmsCryptoKey) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -494,7 +494,7 @@ func (j *jsiiProxy_KmsCryptoKey) validateSetRotationPeriodParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKey) validateSetSkipInitialVersionCreationParameters(val interface{}) error {
+func (j *jsiiProxy_KmsCryptoKey) validateSetSkipInitialVersionCreationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -532,4 +532,3 @@ func validateNewKmsCryptoKeyParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

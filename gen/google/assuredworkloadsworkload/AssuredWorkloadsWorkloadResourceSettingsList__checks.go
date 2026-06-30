@@ -34,7 +34,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAssuredWorkloadsWorkloadResourceSettingsListParameters(terraform
 
 	return nil
 }
-

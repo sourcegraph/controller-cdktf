@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecWorkloadidentityOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecWorkloadidentityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecWorkloadidentityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleGkeHubFeatureSpecWorkloadidentityOutputReferenceParame
 
 	return nil
 }
-

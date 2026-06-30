@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppEngineDomainMappingSslSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineDomainMappingSslSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineDomainMappingSslSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAppEngineDomainMappingSslSettingsOutputReferenceParameters(terra
 
 	return nil
 }
-

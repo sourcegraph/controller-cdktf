@@ -98,7 +98,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergCatalogTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergCatalogTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBiglakeIcebergCatalogTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

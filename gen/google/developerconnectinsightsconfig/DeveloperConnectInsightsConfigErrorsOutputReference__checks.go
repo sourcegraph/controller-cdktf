@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigErrorsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigErrorsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigErrorsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeveloperConnectInsightsConfigErrorsOutputReferenceParameters(te
 
 	return nil
 }
-

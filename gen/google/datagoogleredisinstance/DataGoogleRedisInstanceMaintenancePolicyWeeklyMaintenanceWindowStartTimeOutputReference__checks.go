@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWind
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowS
 
 	return nil
 }
-

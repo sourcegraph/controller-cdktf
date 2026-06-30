@@ -109,7 +109,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewHypercomputeclusterClusterOrchestratorOutputReferenceParameters(
 
 	return nil
 }
-

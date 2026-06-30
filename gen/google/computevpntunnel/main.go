@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnel",
-		reflect.TypeOf((*ComputeVpnTunnel)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayInterface", GoGetter: "VpnGatewayInterface"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayInterfaceInput", GoGetter: "VpnGatewayInterfaceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeVpnTunnel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -140,11 +140,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite",
-		reflect.TypeOf((*ComputeVpnTunnelCipherSuite)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelCipherSuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference",
-		reflect.TypeOf((*ComputeVpnTunnelCipherSuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelCipherSuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeVpnTunnelCipherSuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -184,11 +184,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1",
-		reflect.TypeOf((*ComputeVpnTunnelCipherSuitePhase1)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelCipherSuitePhase1](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference",
-		reflect.TypeOf((*ComputeVpnTunnelCipherSuitePhase1OutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelCipherSuitePhase1OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeVpnTunnelCipherSuitePhase1OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -232,11 +232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2",
-		reflect.TypeOf((*ComputeVpnTunnelCipherSuitePhase2)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelCipherSuitePhase2](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference",
-		reflect.TypeOf((*ComputeVpnTunnelCipherSuitePhase2OutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelCipherSuitePhase2OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,15 +277,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig",
-		reflect.TypeOf((*ComputeVpnTunnelConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelParams",
-		reflect.TypeOf((*ComputeVpnTunnelParams)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference",
-		reflect.TypeOf((*ComputeVpnTunnelParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeVpnTunnelParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -320,11 +320,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts",
-		reflect.TypeOf((*ComputeVpnTunnelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeVpnTunnelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeVpnTunnelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -357,7 +357,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeVpnTunnelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

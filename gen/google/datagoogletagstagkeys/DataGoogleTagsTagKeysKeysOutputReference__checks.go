@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleTagsTagKeysKeysOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

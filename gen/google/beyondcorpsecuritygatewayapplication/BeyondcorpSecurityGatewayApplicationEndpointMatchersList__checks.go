@@ -34,7 +34,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersList) val
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBeyondcorpSecurityGatewayApplicationEndpointMatchersListParamete
 
 	return nil
 }
-

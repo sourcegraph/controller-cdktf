@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeProjectDefaultNetworkTierTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeProjectDefaultNetworkTierTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeProjectDefaultNetworkTierTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeProjectDefaultNetworkTierTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeProjectDefaultNetworkTierTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeProjectDefaultNetworkTierTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewComputeProjectDefaultNetworkTierTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

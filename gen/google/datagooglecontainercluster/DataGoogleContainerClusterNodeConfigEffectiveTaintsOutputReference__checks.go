@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReferen
 
 	return nil
 }
-

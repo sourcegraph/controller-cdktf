@@ -34,7 +34,7 @@ func (m *jsiiProxy_ManagedKafkaAclAclEntriesList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaAclAclEntriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaAclAclEntriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewManagedKafkaAclAclEntriesListParameters(terraformResource cdktf.
 
 	return nil
 }
-

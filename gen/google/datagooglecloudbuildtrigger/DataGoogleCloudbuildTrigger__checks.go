@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleCloudbuildTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTrigger) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleCloudbuildTrigger_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateDataGoogleCloudbuildTrigger_IsConstructParameters(x interface{}) error {
+func validateDataGoogleCloudbuildTrigger_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleCloudbuildTrigger_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateDataGoogleCloudbuildTrigger_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleCloudbuildTrigger_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleCloudbuildTrigger_IsTerraformDataSourceParameters(x inter
 	return nil
 }
 
-func validateDataGoogleCloudbuildTrigger_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleCloudbuildTrigger_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleCloudbuildTrigger_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTrigger) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleCloudbuildTriggerParameters(scope constructs.Construct
 
 	return nil
 }
-

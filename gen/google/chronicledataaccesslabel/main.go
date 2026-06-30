@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabel",
-		reflect.TypeOf((*ChronicleDataAccessLabel)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessLabel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "udmQueryInput", GoGetter: "UdmQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessLabel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelConfig",
-		reflect.TypeOf((*ChronicleDataAccessLabelConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessLabelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeouts",
-		reflect.TypeOf((*ChronicleDataAccessLabelTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessLabelTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleDataAccessLabel.ChronicleDataAccessLabelTimeoutsOutputReference",
-		reflect.TypeOf((*ChronicleDataAccessLabelTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleDataAccessLabelTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleDataAccessLabelTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

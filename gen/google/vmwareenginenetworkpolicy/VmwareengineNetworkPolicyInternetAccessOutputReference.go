@@ -12,9 +12,9 @@ type VmwareengineNetworkPolicyInternetAccessOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type VmwareengineNetworkPolicyInternetAccessOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *VmwareengineNetworkPolicyInternetAccess
@@ -44,7 +44,7 @@ type VmwareengineNetworkPolicyInternetAccessOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,7 +68,7 @@ type VmwareengineNetworkPolicyInternetAccessOutputReference interface {
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,8 +81,8 @@ type jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -111,8 +111,8 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Creat
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -121,8 +121,8 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -181,7 +181,6 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Terra
 	return returns
 }
 
-
 func NewVmwareengineNetworkPolicyInternetAccessOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VmwareengineNetworkPolicyInternetAccessOutputReference {
 	_init_.Initialize()
 
@@ -192,7 +191,7 @@ func NewVmwareengineNetworkPolicyInternetAccessOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyInternetAccessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -204,12 +203,12 @@ func NewVmwareengineNetworkPolicyInternetAccessOutputReference_Override(v Vmware
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyInternetAccessOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetInternalValue(val *VmwareengineNetworkPolicyInternetAccess) {
+func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) SetInternalValue(val *VmwareengineNetworkPolicyInternetAccess) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,16 +287,16 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Compu
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -313,7 +312,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetBo
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetBo
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -345,7 +344,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetLi
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetNu
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetNu
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetNu
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetSt
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) GetSt
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Inter
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -469,16 +468,16 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Reset
 	)
 }
 
-func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -497,4 +496,3 @@ func (v *jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference) ToStr
 
 	return returns
 }
-

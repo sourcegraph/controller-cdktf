@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeReservationShareSettingsProjectMapListParameters(terrafor
 
 	return nil
 }
-

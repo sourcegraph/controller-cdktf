@@ -12,9 +12,9 @@ type GkeonpremBareMetalClusterClusterOperationsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type GkeonpremBareMetalClusterClusterOperationsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableApplicationLogs() interface{}
-	SetEnableApplicationLogs(val interface{})
-	EnableApplicationLogsInput() interface{}
+	EnableApplicationLogs() any
+	SetEnableApplicationLogs(val any)
+	EnableApplicationLogsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GkeonpremBareMetalClusterClusterOperations
@@ -43,7 +43,7 @@ type GkeonpremBareMetalClusterClusterOperationsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type GkeonpremBareMetalClusterClusterOperationsOutputReference interface {
 	ResetEnableApplicationLogs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -110,8 +110,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Cr
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) EnableApplicationLogs() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) EnableApplicationLogs() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableApplicationLogs",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) EnableApplicationLogsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) EnableApplicationLogsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableApplicationLogsInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Te
 	return returns
 }
 
-
 func NewGkeonpremBareMetalClusterClusterOperationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremBareMetalClusterClusterOperationsOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewGkeonpremBareMetalClusterClusterOperationsOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterClusterOperationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewGkeonpremBareMetalClusterClusterOperationsOutputReference_Override(g Gke
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremBareMetalCluster.GkeonpremBareMetalClusterClusterOperationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)SetEnableApplicationLogs(val interface{}) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) SetEnableApplicationLogs(val any) {
 	if err := j.validateSetEnableApplicationLogsParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)SetInternalValue(val *GkeonpremBareMetalClusterClusterOperations) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) SetInternalValue(val *GkeonpremBareMetalClusterClusterOperations) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Co
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Ge
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) In
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterClusterOperationsOutputReference) To
 
 	return returns
 }
-

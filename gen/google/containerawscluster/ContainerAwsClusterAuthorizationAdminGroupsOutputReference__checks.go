@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationAdminGroupsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminGroupsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminGroupsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminGroupsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewContainerAwsClusterAuthorizationAdminGroupsOutputReferenceParame
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateHealthcareDatasetIamPolicy_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateHealthcareDatasetIamPolicy_IsConstructParameters(x interface{}) error {
+func validateHealthcareDatasetIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateHealthcareDatasetIamPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateHealthcareDatasetIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateHealthcareDatasetIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateHealthcareDatasetIamPolicy_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateHealthcareDatasetIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateHealthcareDatasetIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateHealthcareDatasetIamPolicy_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetPolicyDataParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewHealthcareDatasetIamPolicyParameters(scope constructs.Construct,
 
 	return nil
 }
-

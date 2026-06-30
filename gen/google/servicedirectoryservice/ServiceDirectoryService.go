@@ -15,15 +15,15 @@ type ServiceDirectoryService interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,29 +57,29 @@ type ServiceDirectoryService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceId() *string
 	SetServiceId(val *string)
 	ServiceIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ServiceDirectoryServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type ServiceDirectoryService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type ServiceDirectoryService interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type ServiceDirectoryService interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ServiceDirectoryService
@@ -151,8 +151,8 @@ func (j *jsiiProxy_ServiceDirectoryService) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDirectoryService) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceDirectoryService) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ServiceDirectoryService) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDirectoryService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceDirectoryService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ServiceDirectoryService) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDirectoryService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceDirectoryService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_ServiceDirectoryService) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDirectoryService) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ServiceDirectoryService) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_ServiceDirectoryService) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDirectoryService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceDirectoryService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_ServiceDirectoryService) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDirectoryService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceDirectoryService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -401,8 +401,8 @@ func (j *jsiiProxy_ServiceDirectoryService) Timeouts() ServiceDirectoryServiceTi
 	return returns
 }
 
-func (j *jsiiProxy_ServiceDirectoryService) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceDirectoryService) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_ServiceDirectoryService) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_directory_service google_service_directory_service} Resource.
 func NewServiceDirectoryService(scope constructs.Construct, id *string, config *ServiceDirectoryServiceConfig) ServiceDirectoryService {
@@ -423,7 +422,7 @@ func NewServiceDirectoryService(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.serviceDirectoryService.ServiceDirectoryService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewServiceDirectoryService_Override(s ServiceDirectoryService, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.serviceDirectoryService.ServiceDirectoryService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetConnection(val interface{}) {
+func (j *jsiiProxy_ServiceDirectoryService) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetCount(val interface{}) {
+func (j *jsiiProxy_ServiceDirectoryService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServiceDirectoryService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServiceDirectoryService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetId(val *string) {
+func (j *jsiiProxy_ServiceDirectoryService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServiceDirectoryService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_ServiceDirectoryService) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetMetadata(val *map[string]*string) 
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetNamespace(val *string) {
+func (j *jsiiProxy_ServiceDirectoryService) SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServiceDirectoryService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServiceDirectoryService) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_ServiceDirectoryService)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceDirectoryService)SetServiceId(val *string) {
+func (j *jsiiProxy_ServiceDirectoryService) SetServiceId(val *string) {
 	if err := j.validateSetServiceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func ServiceDirectoryService_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceDirectoryService.ServiceDirectoryService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func ServiceDirectoryService_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServiceDirectoryService_IsConstruct(x interface{}) *bool {
+func ServiceDirectoryService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceDirectoryService_IsConstructParameters(x); err != nil {
@@ -600,7 +599,7 @@ func ServiceDirectoryService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceDirectoryService.ServiceDirectoryService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func ServiceDirectoryService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceDirectoryService_IsTerraformElement(x interface{}) *bool {
+func ServiceDirectoryService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceDirectoryService_IsTerraformElementParameters(x); err != nil {
@@ -619,7 +618,7 @@ func ServiceDirectoryService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceDirectoryService.ServiceDirectoryService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func ServiceDirectoryService_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceDirectoryService_IsTerraformResource(x interface{}) *bool {
+func ServiceDirectoryService_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceDirectoryService_IsTerraformResourceParameters(x); err != nil {
@@ -638,7 +637,7 @@ func ServiceDirectoryService_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceDirectoryService.ServiceDirectoryService",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -663,31 +662,31 @@ func (s *jsiiProxy_ServiceDirectoryService) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServiceDirectoryService) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ServiceDirectoryService) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServiceDirectoryService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceDirectoryService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (s *jsiiProxy_ServiceDirectoryService) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (s *jsiiProxy_ServiceDirectoryService) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (s *jsiiProxy_ServiceDirectoryService) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (s *jsiiProxy_ServiceDirectoryService) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (s *jsiiProxy_ServiceDirectoryService) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (s *jsiiProxy_ServiceDirectoryService) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (s *jsiiProxy_ServiceDirectoryService) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,15 +814,15 @@ func (s *jsiiProxy_ServiceDirectoryService) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDirectoryService) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceDirectoryService) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -842,7 +841,7 @@ func (s *jsiiProxy_ServiceDirectoryService) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -855,7 +854,7 @@ func (s *jsiiProxy_ServiceDirectoryService) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,18 +868,18 @@ func (s *jsiiProxy_ServiceDirectoryService) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ServiceDirectoryService) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ServiceDirectoryService) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -891,7 +890,7 @@ func (s *jsiiProxy_ServiceDirectoryService) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -902,7 +901,7 @@ func (s *jsiiProxy_ServiceDirectoryService) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -913,7 +912,7 @@ func (s *jsiiProxy_ServiceDirectoryService) PutTimeouts(value *ServiceDirectoryS
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,8 +948,8 @@ func (s *jsiiProxy_ServiceDirectoryService) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_ServiceDirectoryService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceDirectoryService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -962,8 +961,8 @@ func (s *jsiiProxy_ServiceDirectoryService) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDirectoryService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceDirectoryService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -975,8 +974,8 @@ func (s *jsiiProxy_ServiceDirectoryService) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDirectoryService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceDirectoryService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -988,8 +987,8 @@ func (s *jsiiProxy_ServiceDirectoryService) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDirectoryService) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceDirectoryService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1014,8 +1013,8 @@ func (s *jsiiProxy_ServiceDirectoryService) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceDirectoryService) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceDirectoryService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1026,4 +1025,3 @@ func (s *jsiiProxy_ServiceDirectoryService) ToTerraform() interface{} {
 
 	return returns
 }
-

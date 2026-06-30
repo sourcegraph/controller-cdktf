@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuild",
-		reflect.TypeOf((*FirebaseAppHostingBuild)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuild](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingBuild{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,15 +103,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildConfig",
-		reflect.TypeOf((*FirebaseAppHostingBuildConfig)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildError",
-		reflect.TypeOf((*FirebaseAppHostingBuildError)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildError](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildErrorList",
-		reflect.TypeOf((*FirebaseAppHostingBuildErrorList)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildErrorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingBuildErrorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildErrorOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingBuildErrorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildErrorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,7 +159,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingBuildErrorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -167,19 +167,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSource",
-		reflect.TypeOf((*FirebaseAppHostingBuildSource)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebase",
-		reflect.TypeOf((*FirebaseAppHostingBuildSourceCodebase)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildSourceCodebase](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebaseAuthor",
-		reflect.TypeOf((*FirebaseAppHostingBuildSourceCodebaseAuthor)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildSourceCodebaseAuthor](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebaseAuthorList",
-		reflect.TypeOf((*FirebaseAppHostingBuildSourceCodebaseAuthorList)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildSourceCodebaseAuthorList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -200,7 +200,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebaseAuthorOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingBuildSourceCodebaseAuthorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildSourceCodebaseAuthorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,7 +235,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceCodebaseOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingBuildSourceCodebaseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildSourceCodebaseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "author", GoGetter: "Author"},
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -271,7 +271,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingBuildSourceCodebaseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -279,11 +279,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceContainer",
-		reflect.TypeOf((*FirebaseAppHostingBuildSourceContainer)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildSourceContainer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceContainerOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingBuildSourceContainerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildSourceContainerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -309,7 +309,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingBuildSourceContainerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -317,7 +317,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildSourceOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingBuildSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codebase", GoGetter: "Codebase"},
 			_jsii_.MemberProperty{JsiiProperty: "codebaseInput", GoGetter: "CodebaseInput"},
@@ -349,7 +349,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingBuildSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -357,11 +357,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildTimeouts",
-		reflect.TypeOf((*FirebaseAppHostingBuildTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildTimeoutsOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingBuildTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingBuildTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -394,7 +394,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

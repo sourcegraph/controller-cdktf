@@ -1,6 +1,5 @@
 package datapipelinepipeline
 
-
 type DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameter struct {
 	// The job name to use for the created job.
 	//
@@ -42,6 +41,5 @@ type DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameter stru
 	// When set, the job name should be the same as the running job.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_pipeline_pipeline#update DataPipelinePipeline#update}
-	Update interface{} `field:"optional" json:"update" yaml:"update"`
+	Update any `field:"optional" json:"update" yaml:"update"`
 }
-

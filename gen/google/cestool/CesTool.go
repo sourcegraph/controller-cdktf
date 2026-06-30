@@ -20,15 +20,15 @@ type CesTool interface {
 	ClientFunction() CesToolClientFunctionOutputReference
 	ClientFunctionInput() *CesToolClientFunction
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataStoreTool() CesToolDataStoreToolOutputReference
 	DataStoreToolInput() *CesToolDataStoreTool
@@ -74,22 +74,22 @@ type CesTool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PythonFunction() CesToolPythonFunctionOutputReference
 	PythonFunctionInput() *CesToolPythonFunction
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SystemTool() CesToolSystemToolList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CesToolTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	ToolId() *string
 	SetToolId(val *string)
 	ToolIdInput() *string
@@ -98,9 +98,9 @@ type CesTool interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -118,7 +118,7 @@ type CesTool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -130,7 +130,7 @@ type CesTool interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -153,17 +153,17 @@ type CesTool interface {
 	ResetProject()
 	ResetPythonFunction()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CesTool
@@ -221,8 +221,8 @@ func (j *jsiiProxy_CesTool) ClientFunctionInput() *CesToolClientFunction {
 	return returns
 }
 
-func (j *jsiiProxy_CesTool) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesTool) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -231,8 +231,8 @@ func (j *jsiiProxy_CesTool) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesTool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesTool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -241,8 +241,8 @@ func (j *jsiiProxy_CesTool) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesTool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesTool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -501,8 +501,8 @@ func (j *jsiiProxy_CesTool) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CesTool) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CesTool) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -531,8 +531,8 @@ func (j *jsiiProxy_CesTool) PythonFunctionInput() *CesToolPythonFunction {
 	return returns
 }
 
-func (j *jsiiProxy_CesTool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesTool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -561,8 +561,8 @@ func (j *jsiiProxy_CesTool) TerraformGeneratorMetadata() *cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_CesTool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesTool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -591,8 +591,8 @@ func (j *jsiiProxy_CesTool) Timeouts() CesToolTimeoutsOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_CesTool) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesTool) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -631,7 +631,6 @@ func (j *jsiiProxy_CesTool) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool google_ces_tool} Resource.
 func NewCesTool(scope constructs.Construct, id *string, config *CesToolConfig) CesTool {
 	_init_.Initialize()
@@ -643,7 +642,7 @@ func NewCesTool(scope constructs.Construct, id *string, config *CesToolConfig) C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesTool.CesTool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -656,12 +655,12 @@ func NewCesTool_Override(c CesTool, scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesTool.CesTool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetApp(val *string) {
+func (j *jsiiProxy_CesTool) SetApp(val *string) {
 	if err := j.validateSetAppParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_CesTool)SetApp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetConnection(val interface{}) {
+func (j *jsiiProxy_CesTool) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_CesTool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetCount(val interface{}) {
+func (j *jsiiProxy_CesTool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_CesTool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CesTool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -702,7 +701,7 @@ func (j *jsiiProxy_CesTool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetExecutionType(val *string) {
+func (j *jsiiProxy_CesTool) SetExecutionType(val *string) {
 	if err := j.validateSetExecutionTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func (j *jsiiProxy_CesTool)SetExecutionType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CesTool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -721,7 +720,7 @@ func (j *jsiiProxy_CesTool)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetId(val *string) {
+func (j *jsiiProxy_CesTool) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_CesTool)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CesTool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_CesTool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetLocation(val *string) {
+func (j *jsiiProxy_CesTool) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -754,7 +753,7 @@ func (j *jsiiProxy_CesTool)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetProject(val *string) {
+func (j *jsiiProxy_CesTool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -765,7 +764,7 @@ func (j *jsiiProxy_CesTool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CesTool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -773,7 +772,7 @@ func (j *jsiiProxy_CesTool)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CesTool) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -784,7 +783,7 @@ func (j *jsiiProxy_CesTool)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesTool)SetToolId(val *string) {
+func (j *jsiiProxy_CesTool) SetToolId(val *string) {
 	if err := j.validateSetToolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func CesTool_GenerateConfigForImport(scope constructs.Construct, importToId *str
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesTool.CesTool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func CesTool_GenerateConfigForImport(scope constructs.Construct, importToId *str
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CesTool_IsConstruct(x interface{}) *bool {
+func CesTool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesTool_IsConstructParameters(x); err != nil {
@@ -842,7 +841,7 @@ func CesTool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesTool.CesTool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -850,7 +849,7 @@ func CesTool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CesTool_IsTerraformElement(x interface{}) *bool {
+func CesTool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesTool_IsTerraformElementParameters(x); err != nil {
@@ -861,7 +860,7 @@ func CesTool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesTool.CesTool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func CesTool_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CesTool_IsTerraformResource(x interface{}) *bool {
+func CesTool_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesTool_IsTerraformResourceParameters(x); err != nil {
@@ -880,7 +879,7 @@ func CesTool_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesTool.CesTool",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -905,31 +904,31 @@ func (c *jsiiProxy_CesTool) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CesTool) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CesTool) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CesTool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesTool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (c *jsiiProxy_CesTool) GetBooleanAttribute(terraformAttribute *string) cdkt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (c *jsiiProxy_CesTool) GetBooleanMapAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (c *jsiiProxy_CesTool) GetListAttribute(terraformAttribute *string) *[]*str
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (c *jsiiProxy_CesTool) GetNumberAttribute(terraformAttribute *string) *floa
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func (c *jsiiProxy_CesTool) GetNumberListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1025,7 +1024,7 @@ func (c *jsiiProxy_CesTool) GetNumberMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1041,7 +1040,7 @@ func (c *jsiiProxy_CesTool) GetStringAttribute(terraformAttribute *string) *stri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1057,15 +1056,15 @@ func (c *jsiiProxy_CesTool) GetStringMapAttribute(terraformAttribute *string) *m
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesTool) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesTool) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1084,7 +1083,7 @@ func (c *jsiiProxy_CesTool) ImportFrom(id *string, provider cdktf.TerraformProvi
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1097,7 +1096,7 @@ func (c *jsiiProxy_CesTool) InterpolationForAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1111,18 +1110,18 @@ func (c *jsiiProxy_CesTool) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CesTool) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CesTool) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (c *jsiiProxy_CesTool) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1144,7 +1143,7 @@ func (c *jsiiProxy_CesTool) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1155,7 +1154,7 @@ func (c *jsiiProxy_CesTool) PutClientFunction(value *CesToolClientFunction) {
 	_jsii_.InvokeVoid(
 		c,
 		"putClientFunction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1166,7 +1165,7 @@ func (c *jsiiProxy_CesTool) PutDataStoreTool(value *CesToolDataStoreTool) {
 	_jsii_.InvokeVoid(
 		c,
 		"putDataStoreTool",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1177,7 +1176,7 @@ func (c *jsiiProxy_CesTool) PutGoogleSearchTool(value *CesToolGoogleSearchTool) 
 	_jsii_.InvokeVoid(
 		c,
 		"putGoogleSearchTool",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1188,7 +1187,7 @@ func (c *jsiiProxy_CesTool) PutPythonFunction(value *CesToolPythonFunction) {
 	_jsii_.InvokeVoid(
 		c,
 		"putPythonFunction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1199,7 +1198,7 @@ func (c *jsiiProxy_CesTool) PutTimeouts(value *CesToolTimeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1275,8 +1274,8 @@ func (c *jsiiProxy_CesTool) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CesTool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesTool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1288,8 +1287,8 @@ func (c *jsiiProxy_CesTool) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CesTool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesTool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1301,8 +1300,8 @@ func (c *jsiiProxy_CesTool) SynthesizeHclAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CesTool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesTool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1314,8 +1313,8 @@ func (c *jsiiProxy_CesTool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CesTool) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesTool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1340,8 +1339,8 @@ func (c *jsiiProxy_CesTool) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CesTool) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesTool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1352,4 +1351,3 @@ func (c *jsiiProxy_CesTool) ToTerraform() interface{} {
 
 	return returns
 }
-

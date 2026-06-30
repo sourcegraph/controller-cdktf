@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentGroupAttachmentsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachmentGroupAttachmentsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachmentGroupAttachmentsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInterconnectAttachmentGroupAttachmentsListParameters(terr
 
 	return nil
 }
-

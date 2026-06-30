@@ -18,21 +18,21 @@ type StorageBatchOperationsJob interface {
 	CdktfStack() cdktf.TerraformStack
 	CompleteTime() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DeleteObject() StorageBatchOperationsJobDeleteObjectOutputReference
 	DeleteObjectInput() *StorageBatchOperationsJobDeleteObject
-	DeleteProtection() interface{}
-	SetDeleteProtection(val interface{})
-	DeleteProtectionInput() interface{}
+	DeleteProtection() any
+	SetDeleteProtection(val any)
+	DeleteProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,15 +65,15 @@ type StorageBatchOperationsJob interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PutMetadata() StorageBatchOperationsJobPutMetadataOutputReference
 	PutMetadataInput() *StorageBatchOperationsJobPutMetadata
 	PutObjectHold() StorageBatchOperationsJobPutObjectHoldOutputReference
 	PutObjectHoldInput() *StorageBatchOperationsJobPutObjectHold
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RewriteObject() StorageBatchOperationsJobRewriteObjectOutputReference
 	RewriteObjectInput() *StorageBatchOperationsJobRewriteObject
 	ScheduleTime() *string
@@ -81,19 +81,19 @@ type StorageBatchOperationsJob interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() StorageBatchOperationsJobTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -111,7 +111,7 @@ type StorageBatchOperationsJob interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -123,7 +123,7 @@ type StorageBatchOperationsJob interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -149,17 +149,17 @@ type StorageBatchOperationsJob interface {
 	ResetPutObjectHold()
 	ResetRewriteObject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for StorageBatchOperationsJob
@@ -207,8 +207,8 @@ func (j *jsiiProxy_StorageBatchOperationsJob) CompleteTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBatchOperationsJob) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_StorageBatchOperationsJob) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageBatchOperationsJob) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_StorageBatchOperationsJob) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBatchOperationsJob) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_StorageBatchOperationsJob) DeleteObjectInput() *StorageBatchO
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) DeleteProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBatchOperationsJob) DeleteProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteProtection",
@@ -277,8 +277,8 @@ func (j *jsiiProxy_StorageBatchOperationsJob) DeleteProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) DeleteProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBatchOperationsJob) DeleteProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deleteProtectionInput",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_StorageBatchOperationsJob) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_StorageBatchOperationsJob) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_StorageBatchOperationsJob) PutObjectHoldInput() *StorageBatch
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBatchOperationsJob) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_StorageBatchOperationsJob) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_StorageBatchOperationsJob) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_StorageBatchOperationsJob) Timeouts() StorageBatchOperationsJ
 	return returns
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_StorageBatchOperationsJob) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -577,7 +577,6 @@ func (j *jsiiProxy_StorageBatchOperationsJob) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job} Resource.
 func NewStorageBatchOperationsJob(scope constructs.Construct, id *string, config *StorageBatchOperationsJobConfig) StorageBatchOperationsJob {
 	_init_.Initialize()
@@ -589,7 +588,7 @@ func NewStorageBatchOperationsJob(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -602,12 +601,12 @@ func NewStorageBatchOperationsJob_Override(s StorageBatchOperationsJob, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetConnection(val interface{}) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetCount(val interface{}) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetDeleteProtection(val interface{}) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetDeleteProtection(val any) {
 	if err := j.validateSetDeleteProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetDeleteProtection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -648,7 +647,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -656,7 +655,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetId(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetJobId(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetJobId(val *string) {
 	if err := j.validateSetJobIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetJobId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetProject(val *string) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -708,7 +707,7 @@ func (j *jsiiProxy_StorageBatchOperationsJob)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJob)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_StorageBatchOperationsJob) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func StorageBatchOperationsJob_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func StorageBatchOperationsJob_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func StorageBatchOperationsJob_IsConstruct(x interface{}) *bool {
+func StorageBatchOperationsJob_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageBatchOperationsJob_IsConstructParameters(x); err != nil {
@@ -766,7 +765,7 @@ func StorageBatchOperationsJob_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func StorageBatchOperationsJob_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageBatchOperationsJob_IsTerraformElement(x interface{}) *bool {
+func StorageBatchOperationsJob_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageBatchOperationsJob_IsTerraformElementParameters(x); err != nil {
@@ -785,7 +784,7 @@ func StorageBatchOperationsJob_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func StorageBatchOperationsJob_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func StorageBatchOperationsJob_IsTerraformResource(x interface{}) *bool {
+func StorageBatchOperationsJob_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateStorageBatchOperationsJob_IsTerraformResourceParameters(x); err != nil {
@@ -804,7 +803,7 @@ func StorageBatchOperationsJob_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -829,31 +828,31 @@ func (s *jsiiProxy_StorageBatchOperationsJob) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJob) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_StorageBatchOperationsJob) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_StorageBatchOperationsJob) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,7 +964,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -981,15 +980,15 @@ func (s *jsiiProxy_StorageBatchOperationsJob) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJob) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageBatchOperationsJob) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1008,7 +1007,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,18 +1034,18 @@ func (s *jsiiProxy_StorageBatchOperationsJob) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJob) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_StorageBatchOperationsJob) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1057,7 +1056,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1068,7 +1067,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1079,7 +1078,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) PutBucketList(value *StorageBatchO
 	_jsii_.InvokeVoid(
 		s,
 		"putBucketList",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1090,7 +1089,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) PutDeleteObject(value *StorageBatc
 	_jsii_.InvokeVoid(
 		s,
 		"putDeleteObject",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1101,7 +1100,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) PutPutMetadata(value *StorageBatch
 	_jsii_.InvokeVoid(
 		s,
 		"putPutMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) PutPutObjectHold(value *StorageBat
 	_jsii_.InvokeVoid(
 		s,
 		"putPutObjectHold",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1123,7 +1122,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) PutRewriteObject(value *StorageBat
 	_jsii_.InvokeVoid(
 		s,
 		"putRewriteObject",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1134,7 +1133,7 @@ func (s *jsiiProxy_StorageBatchOperationsJob) PutTimeouts(value *StorageBatchOpe
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1226,8 +1225,8 @@ func (s *jsiiProxy_StorageBatchOperationsJob) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJob) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageBatchOperationsJob) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1239,8 +1238,8 @@ func (s *jsiiProxy_StorageBatchOperationsJob) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJob) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_StorageBatchOperationsJob) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1252,8 +1251,8 @@ func (s *jsiiProxy_StorageBatchOperationsJob) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJob) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageBatchOperationsJob) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1265,8 +1264,8 @@ func (s *jsiiProxy_StorageBatchOperationsJob) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJob) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageBatchOperationsJob) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1291,8 +1290,8 @@ func (s *jsiiProxy_StorageBatchOperationsJob) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJob) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_StorageBatchOperationsJob) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1303,4 +1302,3 @@ func (s *jsiiProxy_StorageBatchOperationsJob) ToTerraform() interface{} {
 
 	return returns
 }
-

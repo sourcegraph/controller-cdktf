@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorA
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggr
 
 	return nil
 }
-

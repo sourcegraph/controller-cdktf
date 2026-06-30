@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeNodeTemplateNodeTypeFlexibilityOutputReferenceParameters(
 
 	return nil
 }
-

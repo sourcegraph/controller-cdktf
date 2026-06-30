@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetappActiveDirectory) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetappActiveDirectory) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetappActiveDirectory) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (n *jsiiProxy_NetappActiveDirectory) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetappActiveDirectory) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetappActiveDirectory_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateNetappActiveDirectory_IsConstructParameters(x interface{}) error {
+func validateNetappActiveDirectory_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetappActiveDirectory_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNetappActiveDirectory_IsTerraformElementParameters(x interface{}) error {
+func validateNetappActiveDirectory_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetappActiveDirectory_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateNetappActiveDirectory_IsTerraformResourceParameters(x interface{}) error {
+func validateNetappActiveDirectory_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_NetappActiveDirectory) validateSetAdministratorsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) validateSetAesEncryptionParameters(val interface{}) error {
+func (j *jsiiProxy_NetappActiveDirectory) validateSetAesEncryptionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_NetappActiveDirectory) validateSetBackupOperatorsParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetappActiveDirectory) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_NetappActiveDirectory) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetappActiveDirectory) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -405,7 +405,7 @@ func (j *jsiiProxy_NetappActiveDirectory) validateSetDomainParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) validateSetEncryptDcConnectionsParameters(val interface{}) error {
+func (j *jsiiProxy_NetappActiveDirectory) validateSetEncryptDcConnectionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_NetappActiveDirectory) validateSetLabelsParameters(val *map[s
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) validateSetLdapSigningParameters(val interface{}) error {
+func (j *jsiiProxy_NetappActiveDirectory) validateSetLdapSigningParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -509,7 +509,7 @@ func (j *jsiiProxy_NetappActiveDirectory) validateSetNetBiosPrefixParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) validateSetNfsUsersWithLdapParameters(val interface{}) error {
+func (j *jsiiProxy_NetappActiveDirectory) validateSetNfsUsersWithLdapParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -553,7 +553,7 @@ func (j *jsiiProxy_NetappActiveDirectory) validateSetProjectParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetappActiveDirectory) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -641,4 +641,3 @@ func validateNewNetappActiveDirectoryParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

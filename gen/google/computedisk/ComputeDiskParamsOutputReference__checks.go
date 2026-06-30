@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeDiskParamsOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeDiskParamsOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

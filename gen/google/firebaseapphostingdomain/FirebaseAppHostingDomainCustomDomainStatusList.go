@@ -36,7 +36,7 @@ type FirebaseAppHostingDomainCustomDomainStatusList interface {
 	Get(index *float64) FirebaseAppHostingDomainCustomDomainStatusOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList) WrapsSet() *b
 	return returns
 }
 
-
 func NewFirebaseAppHostingDomainCustomDomainStatusList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseAppHostingDomainCustomDomainStatusList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewFirebaseAppHostingDomainCustomDomainStatusList(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainCustomDomainStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewFirebaseAppHostingDomainCustomDomainStatusList_Override(f FirebaseAppHos
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingDomain.FirebaseAppHostingDomainCustomDomainStatusList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList) AllWithMapKey
 	_jsii_.Invoke(
 		f,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList) Get(index *fl
 	_jsii_.Invoke(
 		f,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusList) ToString() *s
 
 	return returns
 }
-

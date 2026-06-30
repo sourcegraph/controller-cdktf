@@ -29,27 +29,27 @@ type CloudRunV2Service interface {
 	ClientVersionInput() *string
 	Conditions() CloudRunV2ServiceConditionsList
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Creator() *string
 	CustomAudiences() *[]*string
 	SetCustomAudiences(val *[]*string)
 	CustomAudiencesInput() *[]*string
-	DefaultUriDisabled() interface{}
-	SetDefaultUriDisabled(val interface{})
-	DefaultUriDisabledInput() interface{}
+	DefaultUriDisabled() any
+	SetDefaultUriDisabled(val any)
+	DefaultUriDisabledInput() any
 	DeleteTime() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,18 +70,18 @@ type CloudRunV2Service interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Generation() *string
-	IapEnabled() interface{}
-	SetIapEnabled(val interface{})
-	IapEnabledInput() interface{}
+	IapEnabled() any
+	SetIapEnabled(val any)
+	IapEnabledInput() any
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
 	Ingress() *string
 	SetIngress(val *string)
 	IngressInput() *string
-	InvokerIamDisabled() interface{}
-	SetInvokerIamDisabled(val interface{})
-	InvokerIamDisabledInput() interface{}
+	InvokerIamDisabled() any
+	SetInvokerIamDisabled(val any)
+	InvokerIamDisabledInput() any
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -114,11 +114,11 @@ type CloudRunV2Service interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	Scaling() CloudRunV2ServiceScalingOutputReference
 	ScalingInput() *CloudRunV2ServiceScaling
@@ -129,13 +129,13 @@ type CloudRunV2Service interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudRunV2ServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Traffic() CloudRunV2ServiceTrafficList
-	TrafficInput() interface{}
+	TrafficInput() any
 	TrafficStatuses() CloudRunV2ServiceTrafficStatusesList
 	Uid() *string
 	UpdateTime() *string
@@ -145,9 +145,9 @@ type CloudRunV2Service interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -165,7 +165,7 @@ type CloudRunV2Service interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -177,7 +177,7 @@ type CloudRunV2Service interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -190,7 +190,7 @@ type CloudRunV2Service interface {
 	PutScaling(value *CloudRunV2ServiceScaling)
 	PutTemplate(value *CloudRunV2ServiceTemplate)
 	PutTimeouts(value *CloudRunV2ServiceTimeouts)
-	PutTraffic(value interface{})
+	PutTraffic(value any)
 	ResetAnnotations()
 	ResetBinaryAuthorization()
 	ResetBuildConfig()
@@ -214,17 +214,17 @@ type CloudRunV2Service interface {
 	ResetScaling()
 	ResetTimeouts()
 	ResetTraffic()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudRunV2Service
@@ -352,8 +352,8 @@ func (j *jsiiProxy_CloudRunV2Service) Conditions() CloudRunV2ServiceConditionsLi
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_CloudRunV2Service) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudRunV2Service) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_CloudRunV2Service) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_CloudRunV2Service) CustomAudiencesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) DefaultUriDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) DefaultUriDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultUriDisabled",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_CloudRunV2Service) DefaultUriDisabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) DefaultUriDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) DefaultUriDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"defaultUriDisabledInput",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_CloudRunV2Service) DeleteTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_CloudRunV2Service) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -582,8 +582,8 @@ func (j *jsiiProxy_CloudRunV2Service) Generation() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) IapEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) IapEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"iapEnabled",
@@ -592,8 +592,8 @@ func (j *jsiiProxy_CloudRunV2Service) IapEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) IapEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) IapEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"iapEnabledInput",
@@ -642,8 +642,8 @@ func (j *jsiiProxy_CloudRunV2Service) IngressInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) InvokerIamDisabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) InvokerIamDisabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invokerIamDisabled",
@@ -652,8 +652,8 @@ func (j *jsiiProxy_CloudRunV2Service) InvokerIamDisabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) InvokerIamDisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) InvokerIamDisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invokerIamDisabledInput",
@@ -852,8 +852,8 @@ func (j *jsiiProxy_CloudRunV2Service) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudRunV2Service) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -862,8 +862,8 @@ func (j *jsiiProxy_CloudRunV2Service) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -952,8 +952,8 @@ func (j *jsiiProxy_CloudRunV2Service) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudRunV2Service) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -982,8 +982,8 @@ func (j *jsiiProxy_CloudRunV2Service) Timeouts() CloudRunV2ServiceTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1002,8 +1002,8 @@ func (j *jsiiProxy_CloudRunV2Service) Traffic() CloudRunV2ServiceTrafficList {
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2Service) TrafficInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2Service) TrafficInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"trafficInput",
@@ -1062,7 +1062,6 @@ func (j *jsiiProxy_CloudRunV2Service) Urls() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) CloudRunV2Service {
 	_init_.Initialize()
@@ -1074,7 +1073,7 @@ func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2Service",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1087,12 +1086,12 @@ func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2Service",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_CloudRunV2Service) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1103,7 +1102,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetAnnotations(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetClient(val *string) {
+func (j *jsiiProxy_CloudRunV2Service) SetClient(val *string) {
 	if err := j.validateSetClientParameters(val); err != nil {
 		panic(err)
 	}
@@ -1114,7 +1113,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetClient(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetClientVersion(val *string) {
+func (j *jsiiProxy_CloudRunV2Service) SetClientVersion(val *string) {
 	if err := j.validateSetClientVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1125,7 +1124,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetClientVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudRunV2Service) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1136,7 +1135,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudRunV2Service) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1147,7 +1146,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetCustomAudiences(val *[]*string) {
+func (j *jsiiProxy_CloudRunV2Service) SetCustomAudiences(val *[]*string) {
 	if err := j.validateSetCustomAudiencesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1158,7 +1157,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetCustomAudiences(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetDefaultUriDisabled(val interface{}) {
+func (j *jsiiProxy_CloudRunV2Service) SetDefaultUriDisabled(val any) {
 	if err := j.validateSetDefaultUriDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1169,7 +1168,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetDefaultUriDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_CloudRunV2Service) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1180,7 +1179,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetDeletionProtection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudRunV2Service) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1188,7 +1187,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetDescription(val *string) {
+func (j *jsiiProxy_CloudRunV2Service) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1199,7 +1198,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudRunV2Service) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1207,7 +1206,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetIapEnabled(val interface{}) {
+func (j *jsiiProxy_CloudRunV2Service) SetIapEnabled(val any) {
 	if err := j.validateSetIapEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1218,7 +1217,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetIapEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetId(val *string) {
+func (j *jsiiProxy_CloudRunV2Service) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1229,7 +1228,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetIngress(val *string) {
+func (j *jsiiProxy_CloudRunV2Service) SetIngress(val *string) {
 	if err := j.validateSetIngressParameters(val); err != nil {
 		panic(err)
 	}
@@ -1240,7 +1239,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetIngress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetInvokerIamDisabled(val interface{}) {
+func (j *jsiiProxy_CloudRunV2Service) SetInvokerIamDisabled(val any) {
 	if err := j.validateSetInvokerIamDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1251,7 +1250,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetInvokerIamDisabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_CloudRunV2Service) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1262,7 +1261,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetLaunchStage(val *string) {
+func (j *jsiiProxy_CloudRunV2Service) SetLaunchStage(val *string) {
 	if err := j.validateSetLaunchStageParameters(val); err != nil {
 		panic(err)
 	}
@@ -1273,7 +1272,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetLaunchStage(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudRunV2Service) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1284,7 +1283,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetLocation(val *string) {
+func (j *jsiiProxy_CloudRunV2Service) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1295,7 +1294,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetName(val *string) {
+func (j *jsiiProxy_CloudRunV2Service) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1306,7 +1305,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetProject(val *string) {
+func (j *jsiiProxy_CloudRunV2Service) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1317,7 +1316,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudRunV2Service) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1325,7 +1324,7 @@ func (j *jsiiProxy_CloudRunV2Service)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2Service)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudRunV2Service) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1348,7 +1347,7 @@ func CloudRunV2Service_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2Service",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1372,7 +1371,7 @@ func CloudRunV2Service_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudRunV2Service_IsConstruct(x interface{}) *bool {
+func CloudRunV2Service_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudRunV2Service_IsConstructParameters(x); err != nil {
@@ -1383,7 +1382,7 @@ func CloudRunV2Service_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2Service",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1391,7 +1390,7 @@ func CloudRunV2Service_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudRunV2Service_IsTerraformElement(x interface{}) *bool {
+func CloudRunV2Service_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudRunV2Service_IsTerraformElementParameters(x); err != nil {
@@ -1402,7 +1401,7 @@ func CloudRunV2Service_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2Service",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1410,7 +1409,7 @@ func CloudRunV2Service_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudRunV2Service_IsTerraformResource(x interface{}) *bool {
+func CloudRunV2Service_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudRunV2Service_IsTerraformResourceParameters(x); err != nil {
@@ -1421,7 +1420,7 @@ func CloudRunV2Service_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2Service",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1446,31 +1445,31 @@ func (c *jsiiProxy_CloudRunV2Service) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2Service) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudRunV2Service) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2Service) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudRunV2Service) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1486,7 +1485,7 @@ func (c *jsiiProxy_CloudRunV2Service) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1502,7 +1501,7 @@ func (c *jsiiProxy_CloudRunV2Service) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1518,7 +1517,7 @@ func (c *jsiiProxy_CloudRunV2Service) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1534,7 +1533,7 @@ func (c *jsiiProxy_CloudRunV2Service) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1550,7 +1549,7 @@ func (c *jsiiProxy_CloudRunV2Service) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1566,7 +1565,7 @@ func (c *jsiiProxy_CloudRunV2Service) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1582,7 +1581,7 @@ func (c *jsiiProxy_CloudRunV2Service) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1598,15 +1597,15 @@ func (c *jsiiProxy_CloudRunV2Service) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2Service) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudRunV2Service) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1625,7 +1624,7 @@ func (c *jsiiProxy_CloudRunV2Service) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1638,7 +1637,7 @@ func (c *jsiiProxy_CloudRunV2Service) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1652,18 +1651,18 @@ func (c *jsiiProxy_CloudRunV2Service) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2Service) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudRunV2Service) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1674,7 +1673,7 @@ func (c *jsiiProxy_CloudRunV2Service) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1685,7 +1684,7 @@ func (c *jsiiProxy_CloudRunV2Service) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1696,7 +1695,7 @@ func (c *jsiiProxy_CloudRunV2Service) PutBinaryAuthorization(value *CloudRunV2Se
 	_jsii_.InvokeVoid(
 		c,
 		"putBinaryAuthorization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1707,7 +1706,7 @@ func (c *jsiiProxy_CloudRunV2Service) PutBuildConfig(value *CloudRunV2ServiceBui
 	_jsii_.InvokeVoid(
 		c,
 		"putBuildConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1718,7 +1717,7 @@ func (c *jsiiProxy_CloudRunV2Service) PutMultiRegionSettings(value *CloudRunV2Se
 	_jsii_.InvokeVoid(
 		c,
 		"putMultiRegionSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1729,7 +1728,7 @@ func (c *jsiiProxy_CloudRunV2Service) PutScaling(value *CloudRunV2ServiceScaling
 	_jsii_.InvokeVoid(
 		c,
 		"putScaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1740,7 +1739,7 @@ func (c *jsiiProxy_CloudRunV2Service) PutTemplate(value *CloudRunV2ServiceTempla
 	_jsii_.InvokeVoid(
 		c,
 		"putTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1751,18 +1750,18 @@ func (c *jsiiProxy_CloudRunV2Service) PutTimeouts(value *CloudRunV2ServiceTimeou
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2Service) PutTraffic(value interface{}) {
+func (c *jsiiProxy_CloudRunV2Service) PutTraffic(value any) {
 	if err := c.validatePutTrafficParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTraffic",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1934,8 +1933,8 @@ func (c *jsiiProxy_CloudRunV2Service) ResetTraffic() {
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2Service) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudRunV2Service) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1947,8 +1946,8 @@ func (c *jsiiProxy_CloudRunV2Service) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2Service) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudRunV2Service) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1960,8 +1959,8 @@ func (c *jsiiProxy_CloudRunV2Service) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2Service) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudRunV2Service) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1973,8 +1972,8 @@ func (c *jsiiProxy_CloudRunV2Service) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2Service) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudRunV2Service) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1999,8 +1998,8 @@ func (c *jsiiProxy_CloudRunV2Service) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2Service) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudRunV2Service) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2011,4 +2010,3 @@ func (c *jsiiProxy_CloudRunV2Service) ToTerraform() interface{} {
 
 	return returns
 }
-

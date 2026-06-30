@@ -130,7 +130,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOut
 
 	return nil
 }
-

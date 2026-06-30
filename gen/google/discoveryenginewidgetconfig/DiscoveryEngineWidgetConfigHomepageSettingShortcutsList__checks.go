@@ -34,7 +34,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDiscoveryEngineWidgetConfigHomepageSettingShortcutsListParameter
 
 	return nil
 }
-

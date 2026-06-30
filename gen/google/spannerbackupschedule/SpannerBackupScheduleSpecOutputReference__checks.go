@@ -109,7 +109,7 @@ func (s *jsiiProxy_SpannerBackupScheduleSpecOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerBackupScheduleSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewSpannerBackupScheduleSpecOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

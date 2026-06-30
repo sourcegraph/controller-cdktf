@@ -109,7 +109,7 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference) validateSetCriticalParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference) validateSetCriticalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewPrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageManagedFolderTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_StorageManagedFolderTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageManagedFolderTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_StorageManagedFolderTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_StorageManagedFolderTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageManagedFolderTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStorageManagedFolderTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

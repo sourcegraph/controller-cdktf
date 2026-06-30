@@ -19,7 +19,7 @@ func (v *jsiiProxy_VmwareengineCluster) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VmwareengineCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VmwareengineCluster) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VmwareengineCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (v *jsiiProxy_VmwareengineCluster) validatePutAutoscalingSettingsParameters
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineCluster) validatePutDatastoreMountConfigParameters(value interface{}) error {
+func (v *jsiiProxy_VmwareengineCluster) validatePutDatastoreMountConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (v *jsiiProxy_VmwareengineCluster) validatePutDatastoreMountConfigParameter
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineCluster) validatePutNodeTypeConfigsParameters(value interface{}) error {
+func (v *jsiiProxy_VmwareengineCluster) validatePutNodeTypeConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -304,7 +304,7 @@ func validateVmwareengineCluster_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateVmwareengineCluster_IsConstructParameters(x interface{}) error {
+func validateVmwareengineCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -312,7 +312,7 @@ func validateVmwareengineCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateVmwareengineCluster_IsTerraformElementParameters(x interface{}) error {
+func validateVmwareengineCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func validateVmwareengineCluster_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateVmwareengineCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateVmwareengineCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func validateVmwareengineCluster_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_VmwareengineCluster) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -450,7 +450,7 @@ func (j *jsiiProxy_VmwareengineCluster) validateSetParentParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VmwareengineCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -514,4 +514,3 @@ func validateNewVmwareengineClusterParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

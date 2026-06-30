@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdO
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutp
 
 	return nil
 }
-

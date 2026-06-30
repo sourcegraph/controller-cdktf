@@ -142,7 +142,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -207,7 +207,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReferen
 
 	return nil
 }
-

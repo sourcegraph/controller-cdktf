@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreOptimizedOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreOptimizedOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreOptimizedOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewVertexAiFeatureOnlineStoreOptimizedOutputReferenceParameters(ter
 
 	return nil
 }
-

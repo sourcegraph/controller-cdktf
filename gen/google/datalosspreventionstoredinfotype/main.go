@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
-		reflect.TypeOf((*DataLossPreventionStoredInfoType)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoType](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoType{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,19 +92,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeConfig",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeConfig)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionary",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionary)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeDictionary](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePath",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionaryCloudStoragePath)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeDictionaryCloudStoragePath](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,7 +138,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionaryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeDictionaryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudStoragePath", GoGetter: "CloudStoragePath"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudStoragePathInput", GoGetter: "CloudStoragePathInput"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wordList", GoGetter: "WordList"},
 			_jsii_.MemberProperty{JsiiProperty: "wordListInput", GoGetter: "WordListInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -178,11 +178,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryWordListStruct",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionaryWordListStruct)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeDictionaryWordListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -208,7 +208,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "words", GoGetter: "Words"},
 			_jsii_.MemberProperty{JsiiProperty: "wordsInput", GoGetter: "WordsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -216,19 +216,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionary",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionary)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionary](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -254,7 +254,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldFieldOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -262,7 +262,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -292,7 +292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -300,11 +300,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -334,7 +334,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -342,11 +342,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -372,7 +372,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -380,11 +380,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -410,7 +410,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -418,7 +418,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigQueryField", GoGetter: "BigQueryField"},
 			_jsii_.MemberProperty{JsiiProperty: "bigQueryFieldInput", GoGetter: "BigQueryFieldInput"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -461,11 +461,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeRegex",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeRegex)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeRegex](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeRegexOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeRegexOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeRegexOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -494,7 +494,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -502,11 +502,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeTimeouts",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeTimeoutsOutputReference",
-		reflect.TypeOf((*DataLossPreventionStoredInfoTypeTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataLossPreventionStoredInfoTypeTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -539,7 +539,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataLossPreventionStoredInfoTypeTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

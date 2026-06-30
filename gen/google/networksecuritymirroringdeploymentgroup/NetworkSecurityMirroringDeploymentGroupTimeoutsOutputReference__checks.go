@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroupTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroupTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroupTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkSecurityMirroringDeploymentGroupTimeoutsOutputReferencePa
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigLinkOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfigLinkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfigLinkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStorageInsightsDatasetConfigLinkOutputReferenceParameters(terraf
 
 	return nil
 }
-

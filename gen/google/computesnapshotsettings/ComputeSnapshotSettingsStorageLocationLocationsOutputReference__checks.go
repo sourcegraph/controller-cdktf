@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeSnapshotSettingsStorageLocationLocationsOutputReferencePa
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencySche
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleRedisClusterAutomatedBackupConfigFixedFrequencySchedul
 
 	return nil
 }
-

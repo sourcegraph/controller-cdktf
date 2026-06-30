@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocClusterIamMemberConditionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataprocClusterIamMemberConditionOutputReferenceParameters(terra
 
 	return nil
 }
-

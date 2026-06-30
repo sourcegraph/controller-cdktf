@@ -12,9 +12,9 @@ type NotebooksInstanceShieldedInstanceConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,15 +25,15 @@ type NotebooksInstanceShieldedInstanceConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableIntegrityMonitoring() interface{}
-	SetEnableIntegrityMonitoring(val interface{})
-	EnableIntegrityMonitoringInput() interface{}
-	EnableSecureBoot() interface{}
-	SetEnableSecureBoot(val interface{})
-	EnableSecureBootInput() interface{}
-	EnableVtpm() interface{}
-	SetEnableVtpm(val interface{})
-	EnableVtpmInput() interface{}
+	EnableIntegrityMonitoring() any
+	SetEnableIntegrityMonitoring(val any)
+	EnableIntegrityMonitoringInput() any
+	EnableSecureBoot() any
+	SetEnableSecureBoot(val any)
+	EnableSecureBootInput() any
+	EnableVtpm() any
+	SetEnableVtpm(val any)
+	EnableVtpmInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *NotebooksInstanceShieldedInstanceConfig
@@ -49,7 +49,7 @@ type NotebooksInstanceShieldedInstanceConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type NotebooksInstanceShieldedInstanceConfigOutputReference interface {
 	ResetEnableVtpm()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Creat
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntegrityMonitoring",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableIntegrityMonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableIntegrityMonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntegrityMonitoringInput",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableSecureBoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableSecureBoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSecureBoot",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableSecureBootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableSecureBootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSecureBootInput",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableVtpm() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableVtpm() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVtpm",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Enabl
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableVtpmInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) EnableVtpmInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVtpmInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Terra
 	return returns
 }
 
-
 func NewNotebooksInstanceShieldedInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotebooksInstanceShieldedInstanceConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewNotebooksInstanceShieldedInstanceConfigOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewNotebooksInstanceShieldedInstanceConfigOutputReference_Override(n Notebo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetEnableIntegrityMonitoring(val interface{}) {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) SetEnableIntegrityMonitoring(val any) {
 	if err := j.validateSetEnableIntegrityMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetEnableSecureBoot(val interface{}) {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) SetEnableSecureBoot(val any) {
 	if err := j.validateSetEnableSecureBootParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetEnableVtpm(val interface{}) {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) SetEnableVtpm(val any) {
 	if err := j.validateSetEnableVtpmParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetEna
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetInternalValue(val *NotebooksInstanceShieldedInstanceConfig) {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) SetInternalValue(val *NotebooksInstanceShieldedInstanceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Compu
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetBo
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetBo
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetLi
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetSt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) GetSt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Inter
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Reset
 	)
 }
 
-func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (n *jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference) ToStr
 
 	return returns
 }
-

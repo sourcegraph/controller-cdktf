@@ -90,7 +90,7 @@ func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsOutputReference) validatePutAutoscalingPoliciesParameters(value interface{}) error {
+func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsOutputReference) validatePutAutoscalingPoliciesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterAutoscalingSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineClusterAutoscalingSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewVmwareengineClusterAutoscalingSettingsOutputReferenceParameters(
 
 	return nil
 }
-

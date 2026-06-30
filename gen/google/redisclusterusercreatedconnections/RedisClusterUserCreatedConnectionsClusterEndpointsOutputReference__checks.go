@@ -90,7 +90,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputRefer
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validatePutConnectionsParameters(value interface{}) error {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validatePutConnectionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -194,7 +194,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -253,4 +253,3 @@ func validateNewRedisClusterUserCreatedConnectionsClusterEndpointsOutputReferenc
 
 	return nil
 }
-

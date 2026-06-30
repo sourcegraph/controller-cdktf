@@ -109,7 +109,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) validateSetDescr
 	return nil
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewIamAccessBoundaryPolicyRulesOutputReferenceParameters(terraformR
 
 	return nil
 }
-

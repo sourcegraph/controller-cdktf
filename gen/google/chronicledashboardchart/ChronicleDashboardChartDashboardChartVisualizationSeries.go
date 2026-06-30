@@ -1,6 +1,5 @@
 package chronicledashboardchart
 
-
 type ChronicleDashboardChartDashboardChartVisualizationSeries struct {
 	// area_style block.
 	//
@@ -51,10 +50,9 @@ type ChronicleDashboardChartDashboardChartVisualizationSeries struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#series_unique_value ChronicleDashboardChart#series_unique_value}.
 	SeriesUniqueValue *string `field:"optional" json:"seriesUniqueValue" yaml:"seriesUniqueValue"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#show_background ChronicleDashboardChart#show_background}.
-	ShowBackground interface{} `field:"optional" json:"showBackground" yaml:"showBackground"`
+	ShowBackground any `field:"optional" json:"showBackground" yaml:"showBackground"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#show_symbol ChronicleDashboardChart#show_symbol}.
-	ShowSymbol interface{} `field:"optional" json:"showSymbol" yaml:"showSymbol"`
+	ShowSymbol any `field:"optional" json:"showSymbol" yaml:"showSymbol"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_dashboard_chart#stack ChronicleDashboardChart#stack}.
 	Stack *string `field:"optional" json:"stack" yaml:"stack"`
 }
-

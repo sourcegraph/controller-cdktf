@@ -90,7 +90,7 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference) validatePutStartTimesParameters(value interface{}) error {
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference) validatePutStartTimesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference
 
 	return nil
 }
-

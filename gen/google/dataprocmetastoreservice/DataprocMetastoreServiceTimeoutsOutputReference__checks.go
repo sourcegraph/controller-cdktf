@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataprocMetastoreServiceTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

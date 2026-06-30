@@ -12,9 +12,9 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	ResetTpuTopology()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) TypeInput() 
 	return returns
 }
 
-
 func NewContainerNodePoolPlacementPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolPlacementPolicyOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewContainerNodePoolPlacementPolicyOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewContainerNodePoolPlacementPolicyOutputReference_Override(c ContainerNode
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetInternalValue(val *ContainerNodePoolPlacementPolicy) {
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) SetInternalValue(val *ContainerNodePoolPlacementPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetPolicyName(val *string) {
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) SetPolicyName(val *string) {
 	if err := j.validateSetPolicyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetPolicyName
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTpuTopology(val *string) {
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) SetTpuTopology(val *string) {
 	if err := j.validateSetTpuTopologyParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTpuTopolog
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ResetTpuTopo
 	)
 }
 
-func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ToString() *
 
 	return returns
 }
-

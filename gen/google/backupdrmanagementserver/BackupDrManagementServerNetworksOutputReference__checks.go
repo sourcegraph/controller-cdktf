@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrManagementServerNetworksOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrManagementServerNetworksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBackupDrManagementServerNetworksOutputReferenceParameters(terraf
 
 	return nil
 }
-

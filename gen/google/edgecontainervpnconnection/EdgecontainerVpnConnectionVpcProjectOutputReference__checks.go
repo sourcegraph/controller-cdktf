@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnectionVpcProjectOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnectionVpcProjectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerVpnConnectionVpcProjectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEdgecontainerVpnConnectionVpcProjectOutputReferenceParameters(te
 
 	return nil
 }
-

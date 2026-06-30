@@ -12,9 +12,9 @@ type BackupDrRestoreWorkloadTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type BackupDrRestoreWorkloadTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type BackupDrRestoreWorkloadTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type BackupDrRestoreWorkloadTimeoutsOutputReference interface {
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewBackupDrRestoreWorkloadTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BackupDrRestoreWorkloadTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewBackupDrRestoreWorkloadTimeoutsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewBackupDrRestoreWorkloadTimeoutsOutputReference_Override(b BackupDrRestor
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetCreate(val 
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetDelete(val 
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) Interpolation
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) ResetDelete()
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTimeoutsOutputReference) ToString() *s
 
 	return returns
 }
-

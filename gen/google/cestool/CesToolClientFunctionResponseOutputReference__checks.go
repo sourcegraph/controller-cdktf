@@ -114,7 +114,7 @@ func (j *jsiiProxy_CesToolClientFunctionResponseOutputReference) validateSetAnyO
 	return nil
 }
 
-func (j *jsiiProxy_CesToolClientFunctionResponseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolClientFunctionResponseOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -259,7 +259,7 @@ func (j *jsiiProxy_CesToolClientFunctionResponseOutputReference) validateSetMinI
 	return nil
 }
 
-func (j *jsiiProxy_CesToolClientFunctionResponseOutputReference) validateSetNullableParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolClientFunctionResponseOutputReference) validateSetNullableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func (j *jsiiProxy_CesToolClientFunctionResponseOutputReference) validateSetType
 	return nil
 }
 
-func (j *jsiiProxy_CesToolClientFunctionResponseOutputReference) validateSetUniqueItemsParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolClientFunctionResponseOutputReference) validateSetUniqueItemsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -374,4 +374,3 @@ func validateNewCesToolClientFunctionResponseOutputReferenceParameters(terraform
 
 	return nil
 }
-

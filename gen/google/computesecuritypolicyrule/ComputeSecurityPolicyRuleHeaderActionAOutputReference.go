@@ -12,9 +12,9 @@ type ComputeSecurityPolicyRuleHeaderActionAOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type ComputeSecurityPolicyRuleHeaderActionAOutputReference interface {
 	InternalValue() *ComputeSecurityPolicyRuleHeaderActionA
 	SetInternalValue(val *ComputeSecurityPolicyRuleHeaderActionA)
 	RequestHeadersToAdds() ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList
-	RequestHeadersToAddsInput() interface{}
+	RequestHeadersToAddsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,7 +42,7 @@ type ComputeSecurityPolicyRuleHeaderActionAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,11 +63,11 @@ type ComputeSecurityPolicyRuleHeaderActionAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRequestHeadersToAdds(value interface{})
+	PutRequestHeadersToAdds(value any)
 	ResetRequestHeadersToAdds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) Reques
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) RequestHeadersToAddsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) RequestHeadersToAddsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requestHeadersToAddsInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) Terraf
 	return returns
 }
 
-
 func NewComputeSecurityPolicyRuleHeaderActionAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeSecurityPolicyRuleHeaderActionAOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewComputeSecurityPolicyRuleHeaderActionAOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewComputeSecurityPolicyRuleHeaderActionAOutputReference_Override(c Compute
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference)SetInternalValue(val *ComputeSecurityPolicyRuleHeaderActionA) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) SetInternalValue(val *ComputeSecurityPolicyRuleHeaderActionA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) Comput
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetBoo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetBoo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetLis
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetStr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) GetStr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,21 +431,21 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) Interp
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) PutRequestHeadersToAdds(value interface{}) {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) PutRequestHeadersToAdds(value any) {
 	if err := c.validatePutRequestHeadersToAddsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRequestHeadersToAdds",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) ResetR
 	)
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionAOutputReference) ToStri
 
 	return returns
 }
-

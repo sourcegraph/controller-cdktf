@@ -98,7 +98,7 @@ func (c *jsiiProxy_CertificateManagerCertificateMapGclbTargetsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateMapGclbTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerCertificateMapGclbTargetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCertificateManagerCertificateMapGclbTargetsOutputReferenceParame
 
 	return nil
 }
-

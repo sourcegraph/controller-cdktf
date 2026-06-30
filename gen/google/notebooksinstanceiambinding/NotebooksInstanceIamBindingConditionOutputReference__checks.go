@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotebooksInstanceIamBindingConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksInstanceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewNotebooksInstanceIamBindingConditionOutputReferenceParameters(te
 
 	return nil
 }
-

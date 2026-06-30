@@ -90,7 +90,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutp
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference) validatePutConditionalValuesParameters(value interface{}) error {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference) validatePutConditionalValuesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutp
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutp
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -288,4 +288,3 @@ func validateNewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputR
 
 	return nil
 }
-

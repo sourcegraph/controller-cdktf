@@ -1,6 +1,5 @@
 package edgecontainercluster
 
-
 type EdgecontainerClusterMaintenancePolicy struct {
 	// window block.
 	//
@@ -9,6 +8,5 @@ type EdgecontainerClusterMaintenancePolicy struct {
 	// maintenance_exclusions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_cluster#maintenance_exclusions EdgecontainerCluster#maintenance_exclusions}
-	MaintenanceExclusions interface{} `field:"optional" json:"maintenanceExclusions" yaml:"maintenanceExclusions"`
+	MaintenanceExclusions any `field:"optional" json:"maintenanceExclusions" yaml:"maintenanceExclusions"`
 }
-

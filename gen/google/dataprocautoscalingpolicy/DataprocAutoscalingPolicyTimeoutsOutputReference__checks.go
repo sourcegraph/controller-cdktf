@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocAutoscalingPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataprocAutoscalingPolicyTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocAutoscalingPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataprocAutoscalingPolicyTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

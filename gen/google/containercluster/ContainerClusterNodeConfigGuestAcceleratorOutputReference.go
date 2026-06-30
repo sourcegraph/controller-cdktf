@@ -12,9 +12,9 @@ type ContainerClusterNodeConfigGuestAcceleratorOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,8 +37,8 @@ type ContainerClusterNodeConfigGuestAcceleratorOutputReference interface {
 	GpuPartitionSizeInput() *string
 	GpuSharingConfig() ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference
 	GpuSharingConfigInput() *ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -53,7 +53,7 @@ type ContainerClusterNodeConfigGuestAcceleratorOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type ContainerClusterNodeConfigGuestAcceleratorOutputReference interface {
 	ResetGpuSharingConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ type jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Gp
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -264,7 +264,6 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Ty
 	return returns
 }
 
-
 func NewContainerClusterNodeConfigGuestAcceleratorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigGuestAcceleratorOutputReference {
 	_init_.Initialize()
 
@@ -275,7 +274,7 @@ func NewContainerClusterNodeConfigGuestAcceleratorOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -287,12 +286,12 @@ func NewContainerClusterNodeConfigGuestAcceleratorOutputReference_Override(c Con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)SetCount(val *float64) {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) SetCount(val *float64) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)SetGpuPartitionSize(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) SetGpuPartitionSize(val *string) {
 	if err := j.validateSetGpuPartitionSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference)SetType(val *string) {
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,16 +392,16 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Co
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Ge
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) In
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putGpuDriverInstallationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -584,7 +583,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Pu
 	_jsii_.InvokeVoid(
 		c,
 		"putGpuSharingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -612,16 +611,16 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Re
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -640,4 +639,3 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) To
 
 	return returns
 }
-

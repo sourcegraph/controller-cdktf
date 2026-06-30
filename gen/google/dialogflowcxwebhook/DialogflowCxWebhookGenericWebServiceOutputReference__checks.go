@@ -101,7 +101,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validatePutSecretVersionsForRequestHeadersParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validatePutSecretVersionsForRequestHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -323,4 +323,3 @@ func validateNewDialogflowCxWebhookGenericWebServiceOutputReferenceParameters(te
 
 	return nil
 }
-

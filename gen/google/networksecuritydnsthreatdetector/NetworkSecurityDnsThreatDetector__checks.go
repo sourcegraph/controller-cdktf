@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkSecurityDnsThreatDetector) validateAddMoveTargetParame
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityDnsThreatDetector) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityDnsThreatDetector) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkSecurityDnsThreatDetector) validateMoveFromIdParameter
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityDnsThreatDetector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkSecurityDnsThreatDetector) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkSecurityDnsThreatDetector_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateNetworkSecurityDnsThreatDetector_IsConstructParameters(x interface{}) error {
+func validateNetworkSecurityDnsThreatDetector_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkSecurityDnsThreatDetector_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateNetworkSecurityDnsThreatDetector_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkSecurityDnsThreatDetector_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkSecurityDnsThreatDetector_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateNetworkSecurityDnsThreatDetector_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkSecurityDnsThreatDetector_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkSecurityDnsThreatDetector_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityDnsThreatDetector) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityDnsThreatDetector) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkSecurityDnsThreatDetector) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityDnsThreatDetector) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityDnsThreatDetector) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_NetworkSecurityDnsThreatDetector) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityDnsThreatDetector) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkSecurityDnsThreatDetector) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewNetworkSecurityDnsThreatDetectorParameters(scope constructs.Cons
 
 	return nil
 }
-

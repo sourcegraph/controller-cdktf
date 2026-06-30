@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddeployDeployPolicySelectorsTargetOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeployPolicySelectorsTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeployPolicySelectorsTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewClouddeployDeployPolicySelectorsTargetOutputReferenceParameters(
 
 	return nil
 }
-

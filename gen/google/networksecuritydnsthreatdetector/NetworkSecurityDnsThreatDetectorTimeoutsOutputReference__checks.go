@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecurityDnsThreatDetectorTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityDnsThreatDetectorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityDnsThreatDetectorTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkSecurityDnsThreatDetectorTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityDnsThreatDetectorTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityDnsThreatDetectorTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkSecurityDnsThreatDetectorTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

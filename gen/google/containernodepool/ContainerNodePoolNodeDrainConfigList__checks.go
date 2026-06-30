@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerNodePoolNodeDrainConfigListParameters(terraformResource
 
 	return nil
 }
-

@@ -1,13 +1,12 @@
 package computeregioninstancetemplate
 
-
 type ComputeRegionInstanceTemplateScheduling struct {
 	// Specifies whether the instance should be automatically restarted if it is terminated by Compute Engine (not terminated by a user).
 	//
 	// This defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#automatic_restart ComputeRegionInstanceTemplate#automatic_restart}
-	AutomaticRestart interface{} `field:"optional" json:"automaticRestart" yaml:"automaticRestart"`
+	AutomaticRestart any `field:"optional" json:"automaticRestart" yaml:"automaticRestart"`
 	// Specifies the availability domain, which this instance should be scheduled on.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#availability_domain ComputeRegionInstanceTemplate#availability_domain}
@@ -19,7 +18,7 @@ type ComputeRegionInstanceTemplateScheduling struct {
 	// local_ssd_recovery_timeout block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#local_ssd_recovery_timeout ComputeRegionInstanceTemplate#local_ssd_recovery_timeout}
-	LocalSsdRecoveryTimeout interface{} `field:"optional" json:"localSsdRecoveryTimeout" yaml:"localSsdRecoveryTimeout"`
+	LocalSsdRecoveryTimeout any `field:"optional" json:"localSsdRecoveryTimeout" yaml:"localSsdRecoveryTimeout"`
 	// max_run_duration block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#max_run_duration ComputeRegionInstanceTemplate#max_run_duration}
@@ -31,7 +30,7 @@ type ComputeRegionInstanceTemplateScheduling struct {
 	// node_affinities block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#node_affinities ComputeRegionInstanceTemplate#node_affinities}
-	NodeAffinities interface{} `field:"optional" json:"nodeAffinities" yaml:"nodeAffinities"`
+	NodeAffinities any `field:"optional" json:"nodeAffinities" yaml:"nodeAffinities"`
 	// Defines the maintenance behavior for this instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#on_host_maintenance ComputeRegionInstanceTemplate#on_host_maintenance}
@@ -43,7 +42,7 @@ type ComputeRegionInstanceTemplateScheduling struct {
 	// Allows instance to be preempted. This defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#preemptible ComputeRegionInstanceTemplate#preemptible}
-	Preemptible interface{} `field:"optional" json:"preemptible" yaml:"preemptible"`
+	Preemptible any `field:"optional" json:"preemptible" yaml:"preemptible"`
 	// Whether the instance is spot. If this is set as SPOT.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#provisioning_model ComputeRegionInstanceTemplate#provisioning_model}
@@ -56,4 +55,3 @@ type ComputeRegionInstanceTemplateScheduling struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_instance_template#termination_time ComputeRegionInstanceTemplate#termination_time}
 	TerminationTime *string `field:"optional" json:"terminationTime" yaml:"terminationTime"`
 }
-

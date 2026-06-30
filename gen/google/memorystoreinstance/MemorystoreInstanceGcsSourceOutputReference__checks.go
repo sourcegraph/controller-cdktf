@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorystoreInstanceGcsSourceOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -13,9 +13,9 @@ type RedisClusterManagedServerCaCaCertsOutputReference interface {
 	Certificates() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type RedisClusterManagedServerCaCaCertsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -64,7 +64,7 @@ type RedisClusterManagedServerCaCaCertsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) Certificat
 	return returns
 }
 
-func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,7 +157,6 @@ func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) TerraformR
 	return returns
 }
 
-
 func NewRedisClusterManagedServerCaCaCertsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RedisClusterManagedServerCaCaCertsOutputReference {
 	_init_.Initialize()
 
@@ -168,7 +167,7 @@ func NewRedisClusterManagedServerCaCaCertsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisClusterManagedServerCaCaCertsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -180,12 +179,12 @@ func NewRedisClusterManagedServerCaCaCertsOutputReference_Override(r RedisCluste
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisClusterManagedServerCaCaCertsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference)SetInternalValue(val *RedisClusterManagedServerCaCaCerts) {
+func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) SetInternalValue(val *RedisClusterManagedServerCaCaCerts) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,16 +252,16 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) ComputeFqn
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -278,7 +277,7 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -310,7 +309,7 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetStringA
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) GetStringM
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,23 +418,23 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) Interpolat
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -454,4 +453,3 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) ToString()
 
 	return returns
 }
-

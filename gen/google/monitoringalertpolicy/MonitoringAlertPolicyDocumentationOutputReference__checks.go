@@ -90,7 +90,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validateIn
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validatePutLinksParameters(value interface{}) error {
+func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validatePutLinksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewMonitoringAlertPolicyDocumentationOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (t *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewTagsTagKeyIamBindingConditionOutputReferenceParameters(terraform
 
 	return nil
 }
-

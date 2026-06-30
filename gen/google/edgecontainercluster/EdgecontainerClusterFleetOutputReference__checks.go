@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerClusterFleetOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEdgecontainerClusterFleetOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

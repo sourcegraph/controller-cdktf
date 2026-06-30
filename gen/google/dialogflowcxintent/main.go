@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
-		reflect.TypeOf((*DialogflowCxIntent)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntent](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trainingPhrases", GoGetter: "TrainingPhrases"},
 			_jsii_.MemberProperty{JsiiProperty: "trainingPhrasesInput", GoGetter: "TrainingPhrasesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxIntent{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,15 +105,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig",
-		reflect.TypeOf((*DialogflowCxIntentConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters",
-		reflect.TypeOf((*DialogflowCxIntentParameters)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList",
-		reflect.TypeOf((*DialogflowCxIntentParametersList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentParametersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxIntentParametersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -135,7 +135,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference",
-		reflect.TypeOf((*DialogflowCxIntentParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxIntentParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,11 +177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts",
-		reflect.TypeOf((*DialogflowCxIntentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowCxIntentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxIntentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,11 +222,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases",
-		reflect.TypeOf((*DialogflowCxIntentTrainingPhrases)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentTrainingPhrases](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList",
-		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentTrainingPhrasesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxIntentTrainingPhrasesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -248,7 +248,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference",
-		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentTrainingPhrasesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -279,7 +279,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -287,11 +287,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts",
-		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesParts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentTrainingPhrasesParts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList",
-		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesPartsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentTrainingPhrasesPartsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -305,7 +305,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -313,7 +313,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference",
-		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesPartsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxIntentTrainingPhrasesPartsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -342,7 +342,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxIntentTrainingPhrasesPartsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

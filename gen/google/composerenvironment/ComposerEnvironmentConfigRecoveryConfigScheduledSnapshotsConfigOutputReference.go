@@ -12,9 +12,9 @@ type ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputRefere
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputRefere
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig
@@ -52,7 +52,7 @@ type ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputRefere
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputRefere
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOu
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -121,8 +121,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	return returns
 }
 
-
 func NewComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)SetInternalValue(val *ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig) {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) SetInternalValue(val *ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)SetSnapshotCreationSchedule(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) SetSnapshotCreationSchedule(val *string) {
 	if err := j.validateSetSnapshotCreationScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)SetSnapshotLocation(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) SetSnapshotLocation(val *string) {
 	if err := j.validateSetSnapshotLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference)SetTimeZone(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) SetTimeZone(val *string) {
 	if err := j.validateSetTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 	)
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (c *jsiiProxy_ComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConf
 
 	return returns
 }
-

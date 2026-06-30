@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersion",
-		reflect.TypeOf((*DialogflowCxToolVersion)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionConfig",
-		reflect.TypeOf((*DialogflowCxToolVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionTimeouts",
-		reflect.TypeOf((*DialogflowCxToolVersionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,19 +124,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionTool",
-		reflect.TypeOf((*DialogflowCxToolVersionTool)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionTool](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolDataStoreSpec",
-		reflect.TypeOf((*DialogflowCxToolVersionToolDataStoreSpec)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolDataStoreSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolDataStoreSpecDataStoreConnections",
-		reflect.TypeOf((*DialogflowCxToolVersionToolDataStoreSpecDataStoreConnections)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolDataStoreSpecDataStoreConnections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList",
-		reflect.TypeOf((*DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -158,7 +158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -191,7 +191,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -199,11 +199,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolDataStoreSpecFallbackPrompt",
-		reflect.TypeOf((*DialogflowCxToolVersionToolDataStoreSpecFallbackPrompt)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolDataStoreSpecFallbackPrompt](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,7 +235,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolDataStoreSpecOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolDataStoreSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolDataStoreSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -265,7 +265,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -273,11 +273,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolFunctionSpec",
-		reflect.TypeOf((*DialogflowCxToolVersionToolFunctionSpec)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolFunctionSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolFunctionSpecOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolFunctionSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolFunctionSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolFunctionSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -315,19 +315,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpec",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpec)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthentication",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthentication)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthentication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationApiKeyConfig",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthenticationApiKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthenticationApiKeyConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyInput", GoGetter: "ApiKeyInput"},
@@ -361,7 +361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationApiKeyConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -369,11 +369,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfig",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -403,7 +403,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenInput", GoGetter: "TokenInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -411,11 +411,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfig",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
@@ -454,7 +454,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenEndpointInput", GoGetter: "TokenEndpointInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -462,7 +462,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyConfig", GoGetter: "ApiKeyConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyConfigInput", GoGetter: "ApiKeyConfigInput"},
@@ -502,7 +502,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -510,11 +510,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfig",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -541,7 +541,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -549,7 +549,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationInput", GoGetter: "AuthenticationInput"},
@@ -587,7 +587,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsConfigInput", GoGetter: "TlsConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -595,11 +595,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecServiceDirectoryConfig",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecServiceDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecServiceDirectoryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecServiceDirectoryConfigOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecServiceDirectoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecServiceDirectoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -625,7 +625,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecServiceDirectoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -633,15 +633,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecTlsConfig",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecTlsConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecTlsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCerts",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCerts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCerts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -655,7 +655,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -663,7 +663,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
 			_jsii_.MemberProperty{JsiiProperty: "certInput", GoGetter: "CertInput"},
@@ -691,7 +691,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -699,7 +699,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecTlsConfigOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOpenApiSpecTlsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOpenApiSpecTlsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCerts", GoGetter: "CaCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertsInput", GoGetter: "CaCertsInput"},
@@ -726,7 +726,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecTlsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -734,7 +734,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOutputReference",
-		reflect.TypeOf((*DialogflowCxToolVersionToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxToolVersionToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -776,7 +776,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolType", GoGetter: "ToolType"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxToolVersionToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDialogflowEnvironmentFulfillmentGenericWebServiceOutputReference
 
 	return nil
 }
-

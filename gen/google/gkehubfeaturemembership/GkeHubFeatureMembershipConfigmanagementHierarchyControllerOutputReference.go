@@ -12,9 +12,9 @@ type GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference i
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,15 +25,15 @@ type GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference i
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
-	EnableHierarchicalResourceQuota() interface{}
-	SetEnableHierarchicalResourceQuota(val interface{})
-	EnableHierarchicalResourceQuotaInput() interface{}
-	EnablePodTreeLabels() interface{}
-	SetEnablePodTreeLabels(val interface{})
-	EnablePodTreeLabelsInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
+	EnableHierarchicalResourceQuota() any
+	SetEnableHierarchicalResourceQuota(val any)
+	EnableHierarchicalResourceQuotaInput() any
+	EnablePodTreeLabels() any
+	SetEnablePodTreeLabels(val any)
+	EnablePodTreeLabelsInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GkeHubFeatureMembershipConfigmanagementHierarchyController
@@ -49,7 +49,7 @@ type GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference i
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference i
 	ResetEnablePodTreeLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputR
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnableHierarchicalResourceQuota() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnableHierarchicalResourceQuota() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHierarchicalResourceQuota",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnableHierarchicalResourceQuotaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnableHierarchicalResourceQuotaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHierarchicalResourceQuotaInput",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnablePodTreeLabels() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnablePodTreeLabels() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePodTreeLabels",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnablePodTreeLabelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) EnablePodTreeLabelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePodTreeLabelsInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return returns
 }
 
-
 func NewGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReferenc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference)SetEnableHierarchicalResourceQuota(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) SetEnableHierarchicalResourceQuota(val any) {
 	if err := j.validateSetEnableHierarchicalResourceQuotaParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference)SetEnablePodTreeLabels(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) SetEnablePodTreeLabels(val any) {
 	if err := j.validateSetEnablePodTreeLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference)SetInternalValue(val *GkeHubFeatureMembershipConfigmanagementHierarchyController) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) SetInternalValue(val *GkeHubFeatureMembershipConfigmanagementHierarchyController) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 	)
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
 
 	return returns
 }
-

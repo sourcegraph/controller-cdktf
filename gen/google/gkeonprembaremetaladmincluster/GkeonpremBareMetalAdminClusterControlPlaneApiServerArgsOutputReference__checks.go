@@ -106,7 +106,7 @@ func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutput
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutput
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputRef
 
 	return nil
 }
-

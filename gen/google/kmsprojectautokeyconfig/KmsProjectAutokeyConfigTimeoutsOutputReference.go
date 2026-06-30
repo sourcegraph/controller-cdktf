@@ -12,9 +12,9 @@ type KmsProjectAutokeyConfigTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type KmsProjectAutokeyConfigTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type KmsProjectAutokeyConfigTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type KmsProjectAutokeyConfigTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) UpdateInput()
 	return returns
 }
 
-
 func NewKmsProjectAutokeyConfigTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KmsProjectAutokeyConfigTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewKmsProjectAutokeyConfigTimeoutsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsProjectAutokeyConfig.KmsProjectAutokeyConfigTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewKmsProjectAutokeyConfigTimeoutsOutputReference_Override(k KmsProjectAuto
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsProjectAutokeyConfig.KmsProjectAutokeyConfigTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetCreate(val 
 	)
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetDelete(val 
 	)
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) Interpolation
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) ResetUpdate()
 	)
 }
 
-func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) ToString() *s
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSpannerDatabaseEncryptionConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

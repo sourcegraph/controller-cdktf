@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePerio
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOu
 
 	return nil
 }
-

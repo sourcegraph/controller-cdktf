@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstantSnapshotIamBinding.ComputeInstantSnapshotIamBinding",
-		reflect.TypeOf((*ComputeInstantSnapshotIamBinding)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstantSnapshotIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstantSnapshotIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstantSnapshotIamBinding.ComputeInstantSnapshotIamBindingCondition",
-		reflect.TypeOf((*ComputeInstantSnapshotIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstantSnapshotIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstantSnapshotIamBinding.ComputeInstantSnapshotIamBindingConditionOutputReference",
-		reflect.TypeOf((*ComputeInstantSnapshotIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstantSnapshotIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeInstantSnapshotIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstantSnapshotIamBinding.ComputeInstantSnapshotIamBindingConfig",
-		reflect.TypeOf((*ComputeInstantSnapshotIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeInstantSnapshotIamBindingConfig](),
 	)
 }

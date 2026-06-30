@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccV2OrganizationSourceIamPolicy.SccV2OrganizationSourceIamPolicy",
-		reflect.TypeOf((*SccV2OrganizationSourceIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[SccV2OrganizationSourceIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccV2OrganizationSourceIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -71,6 +71,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccV2OrganizationSourceIamPolicy.SccV2OrganizationSourceIamPolicyConfig",
-		reflect.TypeOf((*SccV2OrganizationSourceIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[SccV2OrganizationSourceIamPolicyConfig](),
 	)
 }

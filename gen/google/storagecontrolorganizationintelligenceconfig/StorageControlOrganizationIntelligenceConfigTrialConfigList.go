@@ -36,7 +36,7 @@ type StorageControlOrganizationIntelligenceConfigTrialConfigList interface {
 	Get(index *float64) StorageControlOrganizationIntelligenceConfigTrialConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList) 
 	return returns
 }
 
-
 func NewStorageControlOrganizationIntelligenceConfigTrialConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageControlOrganizationIntelligenceConfigTrialConfigList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewStorageControlOrganizationIntelligenceConfigTrialConfigList(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTrialConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewStorageControlOrganizationIntelligenceConfigTrialConfigList_Override(s S
 
 	_jsii_.Create(
 		"@cdktf/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTrialConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList)S
 	)
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList)S
 	)
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList) 
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList) 
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTrialConfigList) 
 
 	return returns
 }
-

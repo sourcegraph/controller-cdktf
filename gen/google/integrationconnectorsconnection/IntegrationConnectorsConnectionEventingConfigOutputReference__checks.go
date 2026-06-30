@@ -90,7 +90,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference)
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference) validatePutAdditionalVariableParameters(value interface{}) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference) validatePutAdditionalVariableParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -216,7 +216,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference) validateSetEnrichmentEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionEventingConfigOutputReference) validateSetEnrichmentEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,4 +271,3 @@ func validateNewIntegrationConnectorsConnectionEventingConfigOutputReferencePara
 
 	return nil
 }
-

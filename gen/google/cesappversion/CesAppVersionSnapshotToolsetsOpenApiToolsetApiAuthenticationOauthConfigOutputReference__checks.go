@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationO
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOaut
 
 	return nil
 }
-

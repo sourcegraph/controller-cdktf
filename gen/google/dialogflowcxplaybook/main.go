@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybook",
-		reflect.TypeOf((*DialogflowCxPlaybook)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybook](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxPlaybook{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -95,15 +95,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookConfig",
-		reflect.TypeOf((*DialogflowCxPlaybookConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookInstruction",
-		reflect.TypeOf((*DialogflowCxPlaybookInstruction)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookInstruction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookInstructionOutputReference",
-		reflect.TypeOf((*DialogflowCxPlaybookInstructionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookInstructionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxPlaybookInstructionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookInstructionSteps",
-		reflect.TypeOf((*DialogflowCxPlaybookInstructionSteps)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookInstructionSteps](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookInstructionStepsList",
-		reflect.TypeOf((*DialogflowCxPlaybookInstructionStepsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookInstructionStepsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxPlaybookInstructionStepsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -168,7 +168,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookInstructionStepsOutputReference",
-		reflect.TypeOf((*DialogflowCxPlaybookInstructionStepsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookInstructionStepsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxPlaybookInstructionStepsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,11 +206,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookLlmModelSettings",
-		reflect.TypeOf((*DialogflowCxPlaybookLlmModelSettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookLlmModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookLlmModelSettingsOutputReference",
-		reflect.TypeOf((*DialogflowCxPlaybookLlmModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookLlmModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxPlaybookLlmModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,11 +248,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookTimeouts",
-		reflect.TypeOf((*DialogflowCxPlaybookTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxPlaybook.DialogflowCxPlaybookTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowCxPlaybookTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxPlaybookTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxPlaybookTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

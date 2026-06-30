@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputRe
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateAddMoveTarg
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateMoveFromIdP
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateContactCenterInsightsQaScorecardRevision_GenerateConfigForImportPar
 	return nil
 }
 
-func validateContactCenterInsightsQaScorecardRevision_IsConstructParameters(x interface{}) error {
+func validateContactCenterInsightsQaScorecardRevision_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateContactCenterInsightsQaScorecardRevision_IsConstructParameters(x in
 	return nil
 }
 
-func validateContactCenterInsightsQaScorecardRevision_IsTerraformElementParameters(x interface{}) error {
+func validateContactCenterInsightsQaScorecardRevision_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateContactCenterInsightsQaScorecardRevision_IsTerraformElementParamete
 	return nil
 }
 
-func validateContactCenterInsightsQaScorecardRevision_IsTerraformResourceParameters(x interface{}) error {
+func validateContactCenterInsightsQaScorecardRevision_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateContactCenterInsightsQaScorecardRevision_IsTerraformResourceParamet
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateSetConnecti
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateSetProjectP
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevision) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewContactCenterInsightsQaScorecardRevisionParameters(scope constru
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) va
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) va
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSccManagementOrganizationEventThreatDetectionCustomModule_GenerateC
 	return nil
 }
 
-func validateSccManagementOrganizationEventThreatDetectionCustomModule_IsConstructParameters(x interface{}) error {
+func validateSccManagementOrganizationEventThreatDetectionCustomModule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSccManagementOrganizationEventThreatDetectionCustomModule_IsConstru
 	return nil
 }
 
-func validateSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformElementParameters(x interface{}) error {
+func validateSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSccManagementOrganizationEventThreatDetectionCustomModule_IsTerrafo
 	return nil
 }
 
-func validateSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformResourceParameters(x interface{}) error {
+func validateSccManagementOrganizationEventThreatDetectionCustomModule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) va
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) va
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) va
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewSccManagementOrganizationEventThreatDetectionCustomModuleParamet
 
 	return nil
 }
-

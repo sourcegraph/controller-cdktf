@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyDdosProtectionConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyDdosProtectionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyDdosProtectionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionSecurityPolicyDdosProtectionConfigOutputReferencePa
 
 	return nil
 }
-

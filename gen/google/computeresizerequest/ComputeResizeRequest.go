@@ -15,15 +15,15 @@ type ComputeResizeRequest interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -63,11 +63,11 @@ type ComputeResizeRequest interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RequestedRunDuration() ComputeResizeRequestRequestedRunDurationOutputReference
 	RequestedRunDurationInput() *ComputeResizeRequestRequestedRunDuration
 	ResizeBy() *float64
@@ -78,11 +78,11 @@ type ComputeResizeRequest interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeResizeRequestTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -90,9 +90,9 @@ type ComputeResizeRequest interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type ComputeResizeRequest interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type ComputeResizeRequest interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type ComputeResizeRequest interface {
 	ResetRequestedRunDuration()
 	ResetTimeouts()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeResizeRequest
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ComputeResizeRequest) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResizeRequest) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeResizeRequest) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ComputeResizeRequest) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResizeRequest) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeResizeRequest) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ComputeResizeRequest) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResizeRequest) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeResizeRequest) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_ComputeResizeRequest) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResizeRequest) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeResizeRequest) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_ComputeResizeRequest) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResizeRequest) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeResizeRequest) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_ComputeResizeRequest) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResizeRequest) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeResizeRequest) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_ComputeResizeRequest) Timeouts() ComputeResizeRequestTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResizeRequest) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeResizeRequest) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -528,7 +528,6 @@ func (j *jsiiProxy_ComputeResizeRequest) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
 func NewComputeResizeRequest(scope constructs.Construct, id *string, config *ComputeResizeRequestConfig) ComputeResizeRequest {
 	_init_.Initialize()
@@ -540,7 +539,7 @@ func NewComputeResizeRequest(scope constructs.Construct, id *string, config *Com
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -553,12 +552,12 @@ func NewComputeResizeRequest_Override(c ComputeResizeRequest, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeResizeRequest) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeResizeRequest) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeResizeRequest) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeResizeRequest) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeResizeRequest) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -607,7 +606,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetId(val *string) {
+func (j *jsiiProxy_ComputeResizeRequest) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetInstanceGroupManager(val *string) {
+func (j *jsiiProxy_ComputeResizeRequest) SetInstanceGroupManager(val *string) {
 	if err := j.validateSetInstanceGroupManagerParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetInstanceGroupManager(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeResizeRequest) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetName(val *string) {
+func (j *jsiiProxy_ComputeResizeRequest) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetProject(val *string) {
+func (j *jsiiProxy_ComputeResizeRequest) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeResizeRequest) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -670,7 +669,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeResizeRequest) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetResizeBy(val *float64) {
+func (j *jsiiProxy_ComputeResizeRequest) SetResizeBy(val *float64) {
 	if err := j.validateSetResizeByParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_ComputeResizeRequest)SetResizeBy(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequest)SetZone(val *string) {
+func (j *jsiiProxy_ComputeResizeRequest) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func ComputeResizeRequest_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequest",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func ComputeResizeRequest_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeResizeRequest_IsConstruct(x interface{}) *bool {
+func ComputeResizeRequest_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeResizeRequest_IsConstructParameters(x); err != nil {
@@ -750,7 +749,7 @@ func ComputeResizeRequest_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequest",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func ComputeResizeRequest_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeResizeRequest_IsTerraformElement(x interface{}) *bool {
+func ComputeResizeRequest_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeResizeRequest_IsTerraformElementParameters(x); err != nil {
@@ -769,7 +768,7 @@ func ComputeResizeRequest_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequest",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func ComputeResizeRequest_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeResizeRequest_IsTerraformResource(x interface{}) *bool {
+func ComputeResizeRequest_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeResizeRequest_IsTerraformResourceParameters(x); err != nil {
@@ -788,7 +787,7 @@ func ComputeResizeRequest_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequest",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -813,31 +812,31 @@ func (c *jsiiProxy_ComputeResizeRequest) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeResizeRequest) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeResizeRequest) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeResizeRequest) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeResizeRequest) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (c *jsiiProxy_ComputeResizeRequest) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (c *jsiiProxy_ComputeResizeRequest) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (c *jsiiProxy_ComputeResizeRequest) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (c *jsiiProxy_ComputeResizeRequest) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (c *jsiiProxy_ComputeResizeRequest) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (c *jsiiProxy_ComputeResizeRequest) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (c *jsiiProxy_ComputeResizeRequest) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,15 +964,15 @@ func (c *jsiiProxy_ComputeResizeRequest) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResizeRequest) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeResizeRequest) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -992,7 +991,7 @@ func (c *jsiiProxy_ComputeResizeRequest) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (c *jsiiProxy_ComputeResizeRequest) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,18 +1018,18 @@ func (c *jsiiProxy_ComputeResizeRequest) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeResizeRequest) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeResizeRequest) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (c *jsiiProxy_ComputeResizeRequest) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (c *jsiiProxy_ComputeResizeRequest) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (c *jsiiProxy_ComputeResizeRequest) PutRequestedRunDuration(value *ComputeR
 	_jsii_.InvokeVoid(
 		c,
 		"putRequestedRunDuration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (c *jsiiProxy_ComputeResizeRequest) PutTimeouts(value *ComputeResizeRequest
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1134,8 +1133,8 @@ func (c *jsiiProxy_ComputeResizeRequest) ResetZone() {
 	)
 }
 
-func (c *jsiiProxy_ComputeResizeRequest) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeResizeRequest) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1147,8 +1146,8 @@ func (c *jsiiProxy_ComputeResizeRequest) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResizeRequest) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeResizeRequest) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1160,8 +1159,8 @@ func (c *jsiiProxy_ComputeResizeRequest) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResizeRequest) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeResizeRequest) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1173,8 +1172,8 @@ func (c *jsiiProxy_ComputeResizeRequest) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResizeRequest) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeResizeRequest) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1199,8 +1198,8 @@ func (c *jsiiProxy_ComputeResizeRequest) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResizeRequest) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeResizeRequest) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1211,4 +1210,3 @@ func (c *jsiiProxy_ComputeResizeRequest) ToTerraform() interface{} {
 
 	return returns
 }
-

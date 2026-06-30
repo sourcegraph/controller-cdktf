@@ -18,9 +18,9 @@ type DialogflowCxSecuritySettingsAudioExportSettingsOutputReference interface {
 	AudioFormatInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,9 +31,9 @@ type DialogflowCxSecuritySettingsAudioExportSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableAudioRedaction() interface{}
-	SetEnableAudioRedaction(val interface{})
-	EnableAudioRedactionInput() interface{}
+	EnableAudioRedaction() any
+	SetEnableAudioRedaction(val any)
+	EnableAudioRedactionInput() any
 	// Experimental.
 	Fqn() *string
 	GcsBucket() *string
@@ -52,7 +52,7 @@ type DialogflowCxSecuritySettingsAudioExportSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type DialogflowCxSecuritySettingsAudioExportSettingsOutputReference interface {
 	ResetGcsBucket()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) EnableAudioRedaction() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) EnableAudioRedaction() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAudioRedaction",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) EnableAudioRedactionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) EnableAudioRedactionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableAudioRedactionInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	return returns
 }
 
-
 func NewDialogflowCxSecuritySettingsAudioExportSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxSecuritySettingsAudioExportSettingsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDialogflowCxSecuritySettingsAudioExportSettingsOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsAudioExportSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDialogflowCxSecuritySettingsAudioExportSettingsOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsAudioExportSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)SetAudioExportPattern(val *string) {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) SetAudioExportPattern(val *string) {
 	if err := j.validateSetAudioExportPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)SetAudioFormat(val *string) {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) SetAudioFormat(val *string) {
 	if err := j.validateSetAudioFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)SetEnableAudioRedaction(val interface{}) {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) SetEnableAudioRedaction(val any) {
 	if err := j.validateSetEnableAudioRedactionParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)SetGcsBucket(val *string) {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) SetGcsBucket(val *string) {
 	if err := j.validateSetGcsBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)SetInternalValue(val *DialogflowCxSecuritySettingsAudioExportSettings) {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) SetInternalValue(val *DialogflowCxSecuritySettingsAudioExportSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 
 	return returns
 }
-

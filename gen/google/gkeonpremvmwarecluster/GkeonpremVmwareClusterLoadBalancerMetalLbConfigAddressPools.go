@@ -1,6 +1,5 @@
 package gkeonpremvmwarecluster
 
-
 type GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPools struct {
 	// The addresses that are part of this pool.
 	//
@@ -17,10 +16,9 @@ type GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPools struct {
 	// If true, avoid using IPs ending in .0 or .255. This avoids buggy consumer devices mistakenly dropping IPv4 traffic for those special IP addresses.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_cluster#avoid_buggy_ips GkeonpremVmwareCluster#avoid_buggy_ips}
-	AvoidBuggyIps interface{} `field:"optional" json:"avoidBuggyIps" yaml:"avoidBuggyIps"`
+	AvoidBuggyIps any `field:"optional" json:"avoidBuggyIps" yaml:"avoidBuggyIps"`
 	// If true, prevent IP addresses from being automatically assigned.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_cluster#manual_assign GkeonpremVmwareCluster#manual_assign}
-	ManualAssign interface{} `field:"optional" json:"manualAssign" yaml:"manualAssign"`
+	ManualAssign any `field:"optional" json:"manualAssign" yaml:"manualAssign"`
 }
-

@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test}.
 type NetworkManagementConnectivityTest interface {
 	cdktf.TerraformResource
-	BypassFirewallChecks() interface{}
-	SetBypassFirewallChecks(val interface{})
-	BypassFirewallChecksInput() interface{}
+	BypassFirewallChecks() any
+	SetBypassFirewallChecks(val any)
+	BypassFirewallChecksInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -71,35 +71,35 @@ type NetworkManagementConnectivityTest interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RelatedProjects() *[]*string
 	SetRelatedProjects(val *[]*string)
 	RelatedProjectsInput() *[]*string
-	RoundTrip() interface{}
-	SetRoundTrip(val interface{})
-	RoundTripInput() interface{}
+	RoundTrip() any
+	SetRoundTrip(val any)
+	RoundTripInput() any
 	Source() NetworkManagementConnectivityTestSourceOutputReference
 	SourceInput() *NetworkManagementConnectivityTestSource
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkManagementConnectivityTestTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type NetworkManagementConnectivityTest interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type NetworkManagementConnectivityTest interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -151,17 +151,17 @@ type NetworkManagementConnectivityTest interface {
 	ResetRelatedProjects()
 	ResetRoundTrip()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkManagementConnectivityTest
@@ -169,8 +169,8 @@ type jsiiProxy_NetworkManagementConnectivityTest struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) BypassFirewallChecks() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) BypassFirewallChecks() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bypassFirewallChecks",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) BypassFirewallChecks() int
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) BypassFirewallChecksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) BypassFirewallChecksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bypassFirewallChecksInput",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,8 +449,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -489,8 +489,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) RelatedProjectsInput() *[]
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) RoundTrip() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) RoundTrip() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"roundTrip",
@@ -499,8 +499,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) RoundTrip() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) RoundTripInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) RoundTripInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"roundTripInput",
@@ -549,8 +549,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) TerraformLabels() cdktf.St
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -579,8 +579,8 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) Timeouts() NetworkManageme
 	return returns
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkManagementConnectivityTest) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -588,7 +588,6 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) TimeoutsInput() interface{
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
 func NewNetworkManagementConnectivityTest(scope constructs.Construct, id *string, config *NetworkManagementConnectivityTestConfig) NetworkManagementConnectivityTest {
@@ -601,7 +600,7 @@ func NewNetworkManagementConnectivityTest(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -614,12 +613,12 @@ func NewNetworkManagementConnectivityTest_Override(n NetworkManagementConnectivi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetBypassFirewallChecks(val interface{}) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetBypassFirewallChecks(val any) {
 	if err := j.validateSetBypassFirewallChecksParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetBypassFirewallChecks(val
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -660,7 +659,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetDescription(val *string)
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -679,7 +678,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetId(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetLabels(val *map[string]*
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetName(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetProject(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetProtocol(val *string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetProtocol(val *string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetProvisioners(val *[]inte
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetRelatedProjects(val *[]*string) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetRelatedProjects(val *[]*string) {
 	if err := j.validateSetRelatedProjectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetRelatedProjects(val *[]*
 	)
 }
 
-func (j *jsiiProxy_NetworkManagementConnectivityTest)SetRoundTrip(val interface{}) {
+func (j *jsiiProxy_NetworkManagementConnectivityTest) SetRoundTrip(val any) {
 	if err := j.validateSetRoundTripParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func NetworkManagementConnectivityTest_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func NetworkManagementConnectivityTest_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkManagementConnectivityTest_IsConstruct(x interface{}) *bool {
+func NetworkManagementConnectivityTest_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkManagementConnectivityTest_IsConstructParameters(x); err != nil {
@@ -833,7 +832,7 @@ func NetworkManagementConnectivityTest_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func NetworkManagementConnectivityTest_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkManagementConnectivityTest_IsTerraformElement(x interface{}) *bool {
+func NetworkManagementConnectivityTest_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkManagementConnectivityTest_IsTerraformElementParameters(x); err != nil {
@@ -852,7 +851,7 @@ func NetworkManagementConnectivityTest_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -860,7 +859,7 @@ func NetworkManagementConnectivityTest_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkManagementConnectivityTest_IsTerraformResource(x interface{}) *bool {
+func NetworkManagementConnectivityTest_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkManagementConnectivityTest_IsTerraformResourceParameters(x); err != nil {
@@ -871,7 +870,7 @@ func NetworkManagementConnectivityTest_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -896,31 +895,31 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkManagementConnectivityTest) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkManagementConnectivityTest) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,7 +951,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -968,7 +967,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) GetListAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -984,7 +983,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,7 +999,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1016,7 +1015,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1032,7 +1031,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1048,15 +1047,15 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkManagementConnectivityTest) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1075,7 +1074,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1088,7 +1087,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) InterpolationForAttribute(
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1102,18 +1101,18 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkManagementConnectivityTest) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1124,7 +1123,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) PutDestination(value *Netw
 	_jsii_.InvokeVoid(
 		n,
 		"putDestination",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1157,7 +1156,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) PutSource(value *NetworkMa
 	_jsii_.InvokeVoid(
 		n,
 		"putSource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) PutTimeouts(value *Network
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1252,8 +1251,8 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkManagementConnectivityTest) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1265,8 +1264,8 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkManagementConnectivityTest) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1278,8 +1277,8 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkManagementConnectivityTest) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1291,8 +1290,8 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) ToHclTerraform() interface
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkManagementConnectivityTest) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1317,8 +1316,8 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTest) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkManagementConnectivityTest) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1329,4 +1328,3 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) ToTerraform() interface{} 
 
 	return returns
 }
-

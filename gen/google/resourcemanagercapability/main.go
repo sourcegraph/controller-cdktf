@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapability",
-		reflect.TypeOf((*ResourceManagerCapability)(nil)).Elem(),
+		reflect.TypeFor[ResourceManagerCapability](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceManagerCapability{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapabilityConfig",
-		reflect.TypeOf((*ResourceManagerCapabilityConfig)(nil)).Elem(),
+		reflect.TypeFor[ResourceManagerCapabilityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeouts",
-		reflect.TypeOf((*ResourceManagerCapabilityTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ResourceManagerCapabilityTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapabilityTimeoutsOutputReference",
-		reflect.TypeOf((*ResourceManagerCapabilityTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ResourceManagerCapabilityTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ResourceManagerCapabilityTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

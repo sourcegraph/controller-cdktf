@@ -1,6 +1,5 @@
 package gkeonprembaremetaladmincluster
 
-
 type GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigAddressPools struct {
 	// The addresses that are part of this pool.
 	//
@@ -9,12 +8,11 @@ type GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigAddressPools struct {
 	// This avoids buggy consumer devices mistakenly dropping IPv4 traffic for those special IP addresses.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_admin_cluster#avoid_buggy_ips GkeonpremBareMetalAdminCluster#avoid_buggy_ips}
-	AvoidBuggyIps interface{} `field:"optional" json:"avoidBuggyIps" yaml:"avoidBuggyIps"`
+	AvoidBuggyIps any `field:"optional" json:"avoidBuggyIps" yaml:"avoidBuggyIps"`
 	// If true, prevent IP addresses from being automatically assigned.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_admin_cluster#manual_assign GkeonpremBareMetalAdminCluster#manual_assign}
-	ManualAssign interface{} `field:"optional" json:"manualAssign" yaml:"manualAssign"`
+	ManualAssign any `field:"optional" json:"manualAssign" yaml:"manualAssign"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_admin_cluster#pool GkeonpremBareMetalAdminCluster#pool}.
 	Pool *string `field:"optional" json:"pool" yaml:"pool"`
 }
-

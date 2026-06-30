@@ -15,15 +15,15 @@ type ProjectIamMemberRemove interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,27 +56,27 @@ type ProjectIamMemberRemove interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,7 +94,7 @@ type ProjectIamMemberRemove interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -106,7 +106,7 @@ type ProjectIamMemberRemove interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -117,17 +117,17 @@ type ProjectIamMemberRemove interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ProjectIamMemberRemove
@@ -145,8 +145,8 @@ func (j *jsiiProxy_ProjectIamMemberRemove) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectIamMemberRemove) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_ProjectIamMemberRemove) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectIamMemberRemove) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_ProjectIamMemberRemove) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectIamMemberRemove) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_ProjectIamMemberRemove) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ProjectIamMemberRemove) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -315,8 +315,8 @@ func (j *jsiiProxy_ProjectIamMemberRemove) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectIamMemberRemove) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_ProjectIamMemberRemove) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectIamMemberRemove) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_ProjectIamMemberRemove) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_iam_member_remove google_project_iam_member_remove} Resource.
 func NewProjectIamMemberRemove(scope constructs.Construct, id *string, config *ProjectIamMemberRemoveConfig) ProjectIamMemberRemove {
 	_init_.Initialize()
@@ -387,7 +386,7 @@ func NewProjectIamMemberRemove(scope constructs.Construct, id *string, config *P
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectIamMemberRemove.ProjectIamMemberRemove",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -400,12 +399,12 @@ func NewProjectIamMemberRemove_Override(p ProjectIamMemberRemove, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectIamMemberRemove.ProjectIamMemberRemove",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetCount(val interface{}) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -435,7 +434,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetId(val *string) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetMember(val *string) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetProject(val *string) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -495,7 +494,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_ProjectIamMemberRemove)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMemberRemove)SetRole(val *string) {
+func (j *jsiiProxy_ProjectIamMemberRemove) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func ProjectIamMemberRemove_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectIamMemberRemove.ProjectIamMemberRemove",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func ProjectIamMemberRemove_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProjectIamMemberRemove_IsConstruct(x interface{}) *bool {
+func ProjectIamMemberRemove_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectIamMemberRemove_IsConstructParameters(x); err != nil {
@@ -564,7 +563,7 @@ func ProjectIamMemberRemove_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectIamMemberRemove.ProjectIamMemberRemove",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func ProjectIamMemberRemove_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectIamMemberRemove_IsTerraformElement(x interface{}) *bool {
+func ProjectIamMemberRemove_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectIamMemberRemove_IsTerraformElementParameters(x); err != nil {
@@ -583,7 +582,7 @@ func ProjectIamMemberRemove_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectIamMemberRemove.ProjectIamMemberRemove",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func ProjectIamMemberRemove_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectIamMemberRemove_IsTerraformResource(x interface{}) *bool {
+func ProjectIamMemberRemove_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectIamMemberRemove_IsTerraformResourceParameters(x); err != nil {
@@ -602,7 +601,7 @@ func ProjectIamMemberRemove_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectIamMemberRemove.ProjectIamMemberRemove",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -627,31 +626,31 @@ func (p *jsiiProxy_ProjectIamMemberRemove) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ProjectIamMemberRemove) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ProjectIamMemberRemove) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProjectIamMemberRemove) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProjectIamMemberRemove) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,15 +778,15 @@ func (p *jsiiProxy_ProjectIamMemberRemove) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectIamMemberRemove) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectIamMemberRemove) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -806,7 +805,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -819,7 +818,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,18 +832,18 @@ func (p *jsiiProxy_ProjectIamMemberRemove) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ProjectIamMemberRemove) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ProjectIamMemberRemove) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -855,7 +854,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -866,7 +865,7 @@ func (p *jsiiProxy_ProjectIamMemberRemove) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -886,8 +885,8 @@ func (p *jsiiProxy_ProjectIamMemberRemove) ResetOverrideLogicalId() {
 	)
 }
 
-func (p *jsiiProxy_ProjectIamMemberRemove) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectIamMemberRemove) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -899,8 +898,8 @@ func (p *jsiiProxy_ProjectIamMemberRemove) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (p *jsiiProxy_ProjectIamMemberRemove) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectIamMemberRemove) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -912,8 +911,8 @@ func (p *jsiiProxy_ProjectIamMemberRemove) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (p *jsiiProxy_ProjectIamMemberRemove) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectIamMemberRemove) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -925,8 +924,8 @@ func (p *jsiiProxy_ProjectIamMemberRemove) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectIamMemberRemove) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectIamMemberRemove) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -951,8 +950,8 @@ func (p *jsiiProxy_ProjectIamMemberRemove) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectIamMemberRemove) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectIamMemberRemove) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -963,4 +962,3 @@ func (p *jsiiProxy_ProjectIamMemberRemove) ToTerraform() interface{} {
 
 	return returns
 }
-

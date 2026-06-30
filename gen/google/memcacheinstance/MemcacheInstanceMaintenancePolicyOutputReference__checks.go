@@ -90,7 +90,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validateInt
 	return nil
 }
 
-func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validatePutWeeklyMaintenanceWindowParameters(value interface{}) error {
+func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validatePutWeeklyMaintenanceWindowParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewMemcacheInstanceMaintenancePolicyOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference interfac
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,11 +27,11 @@ type DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IgnoreDiacritics() interface{}
-	SetIgnoreDiacritics(val interface{})
-	IgnoreDiacriticsInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IgnoreDiacritics() any
+	SetIgnoreDiacritics(val any)
+	IgnoreDiacriticsInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	MatchType() *string
 	SetMatchType(val *string)
 	MatchTypeInput() *string
@@ -49,7 +49,7 @@ type DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference interfac
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference interfac
 	ResetMatchType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReferenc
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) IgnoreDiacritics() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) IgnoreDiacritics() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreDiacritics",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) IgnoreDiacriticsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) IgnoreDiacriticsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreDiacriticsInput",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return returns
 }
 
-
 func NewDiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewDiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference(terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewDiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference_Overr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference)SetIgnoreDiacritics(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) SetIgnoreDiacritics(val any) {
 	if err := j.validateSetIgnoreDiacriticsParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference)SetMatchType(val *string) {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) SetMatchType(val *string) {
 	if err := j.validateSetMatchTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference)SetPhrase(val *string) {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) SetPhrase(val *string) {
 	if err := j.validateSetPhraseParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (d *jsiiProxy_DiscoveryEngineAssistantCustomerPolicyBannedPhrasesOutputRefe
 
 	return returns
 }
-

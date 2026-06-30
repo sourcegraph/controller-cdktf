@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector",
-		reflect.TypeOf((*DiscoveryEngineDataConnector)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnector](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionConfig", GoGetter: "ActionConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "actionConfigInput", GoGetter: "ActionConfigInput"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnector{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -140,11 +140,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfig",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorActionConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorActionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfigOutputReference",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorActionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorActionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionParams", GoGetter: "ActionParams"},
 			_jsii_.MemberProperty{JsiiProperty: "actionParamsInput", GoGetter: "ActionParamsInput"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -183,11 +183,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfig",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorBapConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorBapConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfigOutputReference",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorBapConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorBapConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorBapConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,19 +225,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigs",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigs)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorDestinationConfigs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinations",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsDestinations)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorDestinationConfigsDestinations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinationsList",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsDestinationsList)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorDestinationConfigsDestinationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -251,7 +251,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -259,7 +259,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -289,7 +289,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -297,7 +297,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsList",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsList)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorDestinationConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -319,7 +319,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsOutputReference",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorDestinationConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -353,7 +353,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -361,11 +361,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntities",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorEntities)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorEntities](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntitiesList",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorEntitiesList)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorEntitiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -379,7 +379,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorEntitiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -387,7 +387,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntitiesOutputReference",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorEntitiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorEntitiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -421,7 +421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorEntitiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -429,11 +429,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrors",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorErrors)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorErrors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrorsList",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorErrorsList)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorErrorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -446,7 +446,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorErrorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -454,7 +454,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrorsOutputReference",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorErrorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorErrorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -480,7 +480,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorErrorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -488,11 +488,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeoutsOutputReference",
-		reflect.TypeOf((*DiscoveryEngineDataConnectorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineDataConnectorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -525,7 +525,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineDataConnectorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

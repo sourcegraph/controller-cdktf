@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNetworkConnectivityPolicyBasedRouteFilterOutputReferenceParamete
 
 	return nil
 }
-

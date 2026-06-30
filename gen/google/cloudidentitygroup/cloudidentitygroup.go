@@ -16,15 +16,15 @@ type CloudIdentityGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -70,27 +70,27 @@ type CloudIdentityGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CloudIdentityGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type CloudIdentityGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type CloudIdentityGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -137,17 +137,17 @@ type CloudIdentityGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudIdentityGroup
@@ -175,8 +175,8 @@ func (j *jsiiProxy_CloudIdentityGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudIdentityGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudIdentityGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_CloudIdentityGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudIdentityGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudIdentityGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_CloudIdentityGroup) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_CloudIdentityGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudIdentityGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_CloudIdentityGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudIdentityGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudIdentityGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -445,8 +445,8 @@ func (j *jsiiProxy_CloudIdentityGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudIdentityGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudIdentityGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_CloudIdentityGroup) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_CloudIdentityGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudIdentityGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_CloudIdentityGroup) Timeouts() CloudIdentityGroupTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_CloudIdentityGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudIdentityGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -515,7 +515,6 @@ func (j *jsiiProxy_CloudIdentityGroup) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_identity_group google_cloud_identity_group} Resource.
 func NewCloudIdentityGroup(scope constructs.Construct, id *string, config *CloudIdentityGroupConfig) CloudIdentityGroup {
 	_init_.Initialize()
@@ -527,7 +526,7 @@ func NewCloudIdentityGroup(scope constructs.Construct, id *string, config *Cloud
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -540,12 +539,12 @@ func NewCloudIdentityGroup_Override(c CloudIdentityGroup, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudIdentityGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudIdentityGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudIdentityGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetDescription(val *string) {
+func (j *jsiiProxy_CloudIdentityGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetDisplayName(val *string) {
+func (j *jsiiProxy_CloudIdentityGroup) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudIdentityGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -605,7 +604,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetId(val *string) {
+func (j *jsiiProxy_CloudIdentityGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetInitialGroupConfig(val *string) {
+func (j *jsiiProxy_CloudIdentityGroup) SetInitialGroupConfig(val *string) {
 	if err := j.validateSetInitialGroupConfigParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetInitialGroupConfig(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_CloudIdentityGroup) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudIdentityGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetParent(val *string) {
+func (j *jsiiProxy_CloudIdentityGroup) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudIdentityGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_CloudIdentityGroup)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdentityGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudIdentityGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func CloudIdentityGroup_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func CloudIdentityGroup_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudIdentityGroup_IsConstruct(x interface{}) *bool {
+func CloudIdentityGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudIdentityGroup_IsConstructParameters(x); err != nil {
@@ -726,7 +725,7 @@ func CloudIdentityGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func CloudIdentityGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudIdentityGroup_IsTerraformElement(x interface{}) *bool {
+func CloudIdentityGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudIdentityGroup_IsTerraformElementParameters(x); err != nil {
@@ -745,7 +744,7 @@ func CloudIdentityGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func CloudIdentityGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudIdentityGroup_IsTerraformResource(x interface{}) *bool {
+func CloudIdentityGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudIdentityGroup_IsTerraformResourceParameters(x); err != nil {
@@ -764,7 +763,7 @@ func CloudIdentityGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -789,31 +788,31 @@ func (c *jsiiProxy_CloudIdentityGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudIdentityGroup) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudIdentityGroup) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudIdentityGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudIdentityGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (c *jsiiProxy_CloudIdentityGroup) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (c *jsiiProxy_CloudIdentityGroup) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (c *jsiiProxy_CloudIdentityGroup) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (c *jsiiProxy_CloudIdentityGroup) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (c *jsiiProxy_CloudIdentityGroup) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (c *jsiiProxy_CloudIdentityGroup) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (c *jsiiProxy_CloudIdentityGroup) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,15 +940,15 @@ func (c *jsiiProxy_CloudIdentityGroup) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudIdentityGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudIdentityGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -968,7 +967,7 @@ func (c *jsiiProxy_CloudIdentityGroup) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -981,7 +980,7 @@ func (c *jsiiProxy_CloudIdentityGroup) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,18 +994,18 @@ func (c *jsiiProxy_CloudIdentityGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudIdentityGroup) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudIdentityGroup) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (c *jsiiProxy_CloudIdentityGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (c *jsiiProxy_CloudIdentityGroup) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (c *jsiiProxy_CloudIdentityGroup) PutGroupKey(value *CloudIdentityGroupGrou
 	_jsii_.InvokeVoid(
 		c,
 		"putGroupKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (c *jsiiProxy_CloudIdentityGroup) PutTimeouts(value *CloudIdentityGroupTime
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1102,8 +1101,8 @@ func (c *jsiiProxy_CloudIdentityGroup) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CloudIdentityGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudIdentityGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1115,8 +1114,8 @@ func (c *jsiiProxy_CloudIdentityGroup) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (c *jsiiProxy_CloudIdentityGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudIdentityGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1128,8 +1127,8 @@ func (c *jsiiProxy_CloudIdentityGroup) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (c *jsiiProxy_CloudIdentityGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudIdentityGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1141,8 +1140,8 @@ func (c *jsiiProxy_CloudIdentityGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudIdentityGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudIdentityGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1167,8 +1166,8 @@ func (c *jsiiProxy_CloudIdentityGroup) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudIdentityGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudIdentityGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1179,4 +1178,3 @@ func (c *jsiiProxy_CloudIdentityGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -18,17 +18,17 @@ type HypercomputeclusterCluster interface {
 	SetClusterId(val *string)
 	ClusterIdInput() *string
 	ComputeResources() HypercomputeclusterClusterComputeResourcesList
-	ComputeResourcesInput() interface{}
+	ComputeResourcesInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -61,7 +61,7 @@ type HypercomputeclusterCluster interface {
 	LocationInput() *string
 	Name() *string
 	NetworkResources() HypercomputeclusterClusterNetworkResourcesList
-	NetworkResourcesInput() interface{}
+	NetworkResourcesInput() any
 	// The tree node.
 	Node() constructs.Node
 	Orchestrator() HypercomputeclusterClusterOrchestratorOutputReference
@@ -74,31 +74,31 @@ type HypercomputeclusterCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	StorageResources() HypercomputeclusterClusterStorageResourcesList
-	StorageResourcesInput() interface{}
+	StorageResourcesInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() HypercomputeclusterClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -116,7 +116,7 @@ type HypercomputeclusterCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -128,17 +128,17 @@ type HypercomputeclusterCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutComputeResources(value interface{})
-	PutNetworkResources(value interface{})
+	PutComputeResources(value any)
+	PutNetworkResources(value any)
 	PutOrchestrator(value *HypercomputeclusterClusterOrchestrator)
-	PutStorageResources(value interface{})
+	PutStorageResources(value any)
 	PutTimeouts(value *HypercomputeclusterClusterTimeouts)
 	ResetComputeResources()
 	ResetDescription()
@@ -152,17 +152,17 @@ type HypercomputeclusterCluster interface {
 	ResetProject()
 	ResetStorageResources()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for HypercomputeclusterCluster
@@ -210,8 +210,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) ComputeResources() Hypercomputecl
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) ComputeResourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) ComputeResourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"computeResourcesInput",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) ComputeResourcesInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -420,8 +420,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) NetworkResources() Hypercomputecl
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) NetworkResourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) NetworkResourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"networkResourcesInput",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -530,8 +530,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) StorageResources() Hypercomputecl
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) StorageResourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) StorageResourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"storageResourcesInput",
@@ -560,8 +560,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -590,8 +590,8 @@ func (j *jsiiProxy_HypercomputeclusterCluster) Timeouts() HypercomputeclusterClu
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HypercomputeclusterCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -610,7 +610,6 @@ func (j *jsiiProxy_HypercomputeclusterCluster) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster google_hypercomputecluster_cluster} Resource.
 func NewHypercomputeclusterCluster(scope constructs.Construct, id *string, config *HypercomputeclusterClusterConfig) HypercomputeclusterCluster {
 	_init_.Initialize()
@@ -622,7 +621,7 @@ func NewHypercomputeclusterCluster(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -635,12 +634,12 @@ func NewHypercomputeclusterCluster_Override(h HypercomputeclusterCluster, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetClusterId(val *string) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -681,7 +680,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetDescription(val *string) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -700,7 +699,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetId(val *string) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetLabels(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetLocation(val *string) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetProject(val *string) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -763,7 +762,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_HypercomputeclusterCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func HypercomputeclusterCluster_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func HypercomputeclusterCluster_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func HypercomputeclusterCluster_IsConstruct(x interface{}) *bool {
+func HypercomputeclusterCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHypercomputeclusterCluster_IsConstructParameters(x); err != nil {
@@ -821,7 +820,7 @@ func HypercomputeclusterCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func HypercomputeclusterCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func HypercomputeclusterCluster_IsTerraformElement(x interface{}) *bool {
+func HypercomputeclusterCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHypercomputeclusterCluster_IsTerraformElementParameters(x); err != nil {
@@ -840,7 +839,7 @@ func HypercomputeclusterCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func HypercomputeclusterCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func HypercomputeclusterCluster_IsTerraformResource(x interface{}) *bool {
+func HypercomputeclusterCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHypercomputeclusterCluster_IsTerraformResourceParameters(x); err != nil {
@@ -859,7 +858,7 @@ func HypercomputeclusterCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -884,31 +883,31 @@ func (h *jsiiProxy_HypercomputeclusterCluster) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		h,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) AddOverride(path *string, value interface{}) {
+func (h *jsiiProxy_HypercomputeclusterCluster) AddOverride(path *string, value any) {
 	if err := h.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HypercomputeclusterCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -924,7 +923,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,7 +939,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,15 +1035,15 @@ func (h *jsiiProxy_HypercomputeclusterCluster) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HypercomputeclusterCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1063,7 +1062,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		h,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1090,18 +1089,18 @@ func (h *jsiiProxy_HypercomputeclusterCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) MoveTo(moveTarget *string, index interface{}) {
+func (h *jsiiProxy_HypercomputeclusterCluster) MoveTo(moveTarget *string, index any) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1112,7 +1111,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1123,29 +1122,29 @@ func (h *jsiiProxy_HypercomputeclusterCluster) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		h,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) PutComputeResources(value interface{}) {
+func (h *jsiiProxy_HypercomputeclusterCluster) PutComputeResources(value any) {
 	if err := h.validatePutComputeResourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putComputeResources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) PutNetworkResources(value interface{}) {
+func (h *jsiiProxy_HypercomputeclusterCluster) PutNetworkResources(value any) {
 	if err := h.validatePutNetworkResourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putNetworkResources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1156,18 +1155,18 @@ func (h *jsiiProxy_HypercomputeclusterCluster) PutOrchestrator(value *Hypercompu
 	_jsii_.InvokeVoid(
 		h,
 		"putOrchestrator",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) PutStorageResources(value interface{}) {
+func (h *jsiiProxy_HypercomputeclusterCluster) PutStorageResources(value any) {
 	if err := h.validatePutStorageResourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"putStorageResources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1178,7 +1177,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) PutTimeouts(value *Hypercomputecl
 	_jsii_.InvokeVoid(
 		h,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1262,8 +1261,8 @@ func (h *jsiiProxy_HypercomputeclusterCluster) ResetTimeouts() {
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HypercomputeclusterCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1275,8 +1274,8 @@ func (h *jsiiProxy_HypercomputeclusterCluster) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HypercomputeclusterCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1288,8 +1287,8 @@ func (h *jsiiProxy_HypercomputeclusterCluster) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HypercomputeclusterCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1301,8 +1300,8 @@ func (h *jsiiProxy_HypercomputeclusterCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HypercomputeclusterCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1327,8 +1326,8 @@ func (h *jsiiProxy_HypercomputeclusterCluster) ToString() *string {
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HypercomputeclusterCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1339,4 +1338,3 @@ func (h *jsiiProxy_HypercomputeclusterCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

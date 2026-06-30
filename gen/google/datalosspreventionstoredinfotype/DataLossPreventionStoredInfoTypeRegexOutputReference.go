@@ -12,9 +12,9 @@ type DataLossPreventionStoredInfoTypeRegexOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type DataLossPreventionStoredInfoTypeRegexOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type DataLossPreventionStoredInfoTypeRegexOutputReference interface {
 	ResetGroupIndexes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) Terrafo
 	return returns
 }
 
-
 func NewDataLossPreventionStoredInfoTypeRegexOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLossPreventionStoredInfoTypeRegexOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewDataLossPreventionStoredInfoTypeRegexOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeRegexOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewDataLossPreventionStoredInfoTypeRegexOutputReference_Override(d DataLoss
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeRegexOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetGroupIndexes(val *[]*float64) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) SetGroupIndexes(val *[]*float64) {
 	if err := j.validateSetGroupIndexesParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetGroup
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetInternalValue(val *DataLossPreventionStoredInfoTypeRegex) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) SetInternalValue(val *DataLossPreventionStoredInfoTypeRegex) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetPattern(val *string) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) SetPattern(val *string) {
 	if err := j.validateSetPatternParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetPatte
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) Compute
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetBool
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetBool
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetList
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetNumb
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetNumb
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetNumb
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetStri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) GetStri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) Interpo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) ResetGr
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) ToStrin
 
 	return returns
 }
-

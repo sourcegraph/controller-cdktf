@@ -15,15 +15,15 @@ type MigrationCenterGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -71,28 +71,28 @@ type MigrationCenterGroup interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MigrationCenterGroupTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type MigrationCenterGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type MigrationCenterGroup interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type MigrationCenterGroup interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MigrationCenterGroup
@@ -167,8 +167,8 @@ func (j *jsiiProxy_MigrationCenterGroup) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MigrationCenterGroup) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MigrationCenterGroup) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_MigrationCenterGroup) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MigrationCenterGroup) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MigrationCenterGroup) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_MigrationCenterGroup) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_MigrationCenterGroup) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MigrationCenterGroup) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_MigrationCenterGroup) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MigrationCenterGroup) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MigrationCenterGroup) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_MigrationCenterGroup) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MigrationCenterGroup) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MigrationCenterGroup) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_MigrationCenterGroup) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_MigrationCenterGroup) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MigrationCenterGroup) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_MigrationCenterGroup) Timeouts() MigrationCenterGroupTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_MigrationCenterGroup) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MigrationCenterGroup) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -527,7 +527,6 @@ func (j *jsiiProxy_MigrationCenterGroup) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_group google_migration_center_group} Resource.
 func NewMigrationCenterGroup(scope constructs.Construct, id *string, config *MigrationCenterGroupConfig) MigrationCenterGroup {
 	_init_.Initialize()
@@ -539,7 +538,7 @@ func NewMigrationCenterGroup(scope constructs.Construct, id *string, config *Mig
 
 	_jsii_.Create(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -552,12 +551,12 @@ func NewMigrationCenterGroup_Override(m MigrationCenterGroup, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroup",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetConnection(val interface{}) {
+func (j *jsiiProxy_MigrationCenterGroup) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetCount(val interface{}) {
+func (j *jsiiProxy_MigrationCenterGroup) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MigrationCenterGroup) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -587,7 +586,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetDescription(val *string) {
+func (j *jsiiProxy_MigrationCenterGroup) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetDisplayName(val *string) {
+func (j *jsiiProxy_MigrationCenterGroup) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MigrationCenterGroup) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -617,7 +616,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetGroupId(val *string) {
+func (j *jsiiProxy_MigrationCenterGroup) SetGroupId(val *string) {
 	if err := j.validateSetGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetId(val *string) {
+func (j *jsiiProxy_MigrationCenterGroup) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_MigrationCenterGroup) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MigrationCenterGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetLocation(val *string) {
+func (j *jsiiProxy_MigrationCenterGroup) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetProject(val *string) {
+func (j *jsiiProxy_MigrationCenterGroup) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MigrationCenterGroup) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -691,7 +690,7 @@ func (j *jsiiProxy_MigrationCenterGroup)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterGroup)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MigrationCenterGroup) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func MigrationCenterGroup_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroup",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func MigrationCenterGroup_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MigrationCenterGroup_IsConstruct(x interface{}) *bool {
+func MigrationCenterGroup_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMigrationCenterGroup_IsConstructParameters(x); err != nil {
@@ -749,7 +748,7 @@ func MigrationCenterGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroup",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func MigrationCenterGroup_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MigrationCenterGroup_IsTerraformElement(x interface{}) *bool {
+func MigrationCenterGroup_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMigrationCenterGroup_IsTerraformElementParameters(x); err != nil {
@@ -768,7 +767,7 @@ func MigrationCenterGroup_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroup",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func MigrationCenterGroup_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MigrationCenterGroup_IsTerraformResource(x interface{}) *bool {
+func MigrationCenterGroup_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMigrationCenterGroup_IsTerraformResourceParameters(x); err != nil {
@@ -787,7 +786,7 @@ func MigrationCenterGroup_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroup",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,31 +811,31 @@ func (m *jsiiProxy_MigrationCenterGroup) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MigrationCenterGroup) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MigrationCenterGroup) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MigrationCenterGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MigrationCenterGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (m *jsiiProxy_MigrationCenterGroup) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (m *jsiiProxy_MigrationCenterGroup) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (m *jsiiProxy_MigrationCenterGroup) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (m *jsiiProxy_MigrationCenterGroup) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (m *jsiiProxy_MigrationCenterGroup) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (m *jsiiProxy_MigrationCenterGroup) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (m *jsiiProxy_MigrationCenterGroup) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,15 +963,15 @@ func (m *jsiiProxy_MigrationCenterGroup) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MigrationCenterGroup) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MigrationCenterGroup) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -991,7 +990,7 @@ func (m *jsiiProxy_MigrationCenterGroup) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (m *jsiiProxy_MigrationCenterGroup) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,18 +1017,18 @@ func (m *jsiiProxy_MigrationCenterGroup) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MigrationCenterGroup) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MigrationCenterGroup) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (m *jsiiProxy_MigrationCenterGroup) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (m *jsiiProxy_MigrationCenterGroup) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (m *jsiiProxy_MigrationCenterGroup) PutTimeouts(value *MigrationCenterGroup
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1122,8 +1121,8 @@ func (m *jsiiProxy_MigrationCenterGroup) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_MigrationCenterGroup) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MigrationCenterGroup) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1135,8 +1134,8 @@ func (m *jsiiProxy_MigrationCenterGroup) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (m *jsiiProxy_MigrationCenterGroup) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MigrationCenterGroup) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1148,8 +1147,8 @@ func (m *jsiiProxy_MigrationCenterGroup) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (m *jsiiProxy_MigrationCenterGroup) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MigrationCenterGroup) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1161,8 +1160,8 @@ func (m *jsiiProxy_MigrationCenterGroup) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MigrationCenterGroup) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MigrationCenterGroup) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1187,8 +1186,8 @@ func (m *jsiiProxy_MigrationCenterGroup) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MigrationCenterGroup) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MigrationCenterGroup) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1199,4 +1198,3 @@ func (m *jsiiProxy_MigrationCenterGroup) ToTerraform() interface{} {
 
 	return returns
 }
-

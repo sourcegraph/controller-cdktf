@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleRedisInstancePersistenceConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstancePersistenceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleRedisInstancePersistenceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleRedisInstancePersistenceConfigOutputReferenceParameter
 
 	return nil
 }
-

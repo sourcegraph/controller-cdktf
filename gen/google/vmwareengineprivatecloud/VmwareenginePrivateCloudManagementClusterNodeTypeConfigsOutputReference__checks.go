@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputRe
 
 	return nil
 }
-

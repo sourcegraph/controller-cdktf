@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeReservationShareSettingsProjectMapOutputReferenceParamete
 
 	return nil
 }
-

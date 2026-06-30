@@ -90,7 +90,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutput
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference) validatePutFacetFieldParameters(value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference) validatePutFacetFieldParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutput
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference) validatePutFieldsUiComponentsMapParameters(value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference) validatePutFieldsUiComponentsMapParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutput
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutput
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -292,4 +292,3 @@ func validateNewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputRef
 
 	return nil
 }
-

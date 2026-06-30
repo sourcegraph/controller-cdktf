@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleBackupDrBackup.DataGoogleBackupDrBackup",
-		reflect.TypeOf((*DataGoogleBackupDrBackup)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBackupDrBackup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "backups", GoGetter: "Backups"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleBackupDrBackup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,11 +67,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleBackupDrBackup.DataGoogleBackupDrBackupBackups",
-		reflect.TypeOf((*DataGoogleBackupDrBackupBackups)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBackupDrBackupBackups](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleBackupDrBackup.DataGoogleBackupDrBackupBackupsList",
-		reflect.TypeOf((*DataGoogleBackupDrBackupBackupsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBackupDrBackupBackupsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleBackupDrBackupBackupsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -92,7 +92,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleBackupDrBackup.DataGoogleBackupDrBackupBackupsOutputReference",
-		reflect.TypeOf((*DataGoogleBackupDrBackupBackupsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBackupDrBackupBackupsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupId", GoGetter: "BackupId"},
 			_jsii_.MemberProperty{JsiiProperty: "backupVaultId", GoGetter: "BackupVaultId"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleBackupDrBackupBackupsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,6 +130,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleBackupDrBackup.DataGoogleBackupDrBackupConfig",
-		reflect.TypeOf((*DataGoogleBackupDrBackupConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBackupDrBackupConfig](),
 	)
 }

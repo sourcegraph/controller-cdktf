@@ -101,7 +101,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) validatePutEnforceOnKeyConfigsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) validatePutEnforceOnKeyConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -302,4 +302,3 @@ func validateNewComputeSecurityPolicyRuleRateLimitOptionsAOutputReferenceParamet
 
 	return nil
 }
-

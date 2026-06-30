@@ -1,6 +1,5 @@
 package pubsubtopic
 
-
 type PubsubTopicMessageStoragePolicy struct {
 	// A list of IDs of GCP regions where messages that are published to the topic may be persisted in storage.
 	//
@@ -19,6 +18,5 @@ type PubsubTopicMessageStoragePolicy struct {
 	// attached to this topic in any region that is not in 'allowedPersistenceRegions'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic#enforce_in_transit PubsubTopic#enforce_in_transit}
-	EnforceInTransit interface{} `field:"optional" json:"enforceInTransit" yaml:"enforceInTransit"`
+	EnforceInTransit any `field:"optional" json:"enforceInTransit" yaml:"enforceInTransit"`
 }
-

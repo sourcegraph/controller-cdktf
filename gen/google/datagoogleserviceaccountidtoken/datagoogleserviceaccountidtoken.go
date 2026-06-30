@@ -15,11 +15,11 @@ type DataGoogleServiceAccountIdToken interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Delegates() *[]*string
 	SetDelegates(val *[]*string)
 	DelegatesInput() *[]*string
@@ -39,9 +39,9 @@ type DataGoogleServiceAccountIdToken interface {
 	SetId(val *string)
 	IdInput() *string
 	IdToken() *string
-	IncludeEmail() interface{}
-	SetIncludeEmail(val interface{})
-	IncludeEmailInput() interface{}
+	IncludeEmail() any
+	SetIncludeEmail(val any)
+	IncludeEmailInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -53,7 +53,7 @@ type DataGoogleServiceAccountIdToken interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TargetAudience() *string
 	SetTargetAudience(val *string)
 	TargetAudienceInput() *string
@@ -63,13 +63,13 @@ type DataGoogleServiceAccountIdToken interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,18 +98,18 @@ type DataGoogleServiceAccountIdToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTargetServiceAccount()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleServiceAccountIdToken
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken) IdToken() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken) IncludeEmail() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) IncludeEmail() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeEmail",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken) IncludeEmail() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken) IncludeEmailInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) IncludeEmailInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeEmailInput",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -367,7 +367,6 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/service_account_id_token google_service_account_id_token} Data Source.
 func NewDataGoogleServiceAccountIdToken(scope constructs.Construct, id *string, config *DataGoogleServiceAccountIdTokenConfig) DataGoogleServiceAccountIdToken {
 	_init_.Initialize()
@@ -379,7 +378,7 @@ func NewDataGoogleServiceAccountIdToken(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -392,12 +391,12 @@ func NewDataGoogleServiceAccountIdToken_Override(d DataGoogleServiceAccountIdTok
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetDelegates(val *[]*string) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetDelegates(val *[]*string) {
 	if err := j.validateSetDelegatesParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetDelegates(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -427,7 +426,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -435,7 +434,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +445,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetIncludeEmail(val interface{}) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetIncludeEmail(val any) {
 	if err := j.validateSetIncludeEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetIncludeEmail(val interface
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -476,7 +475,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetTargetAudience(val *string) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetTargetAudience(val *string) {
 	if err := j.validateSetTargetAudienceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetTargetAudience(val *string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken)SetTargetServiceAccount(val *string) {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) SetTargetServiceAccount(val *string) {
 	if err := j.validateSetTargetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func DataGoogleServiceAccountIdToken_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func DataGoogleServiceAccountIdToken_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleServiceAccountIdToken_IsConstruct(x interface{}) *bool {
+func DataGoogleServiceAccountIdToken_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleServiceAccountIdToken_IsConstructParameters(x); err != nil {
@@ -545,7 +544,7 @@ func DataGoogleServiceAccountIdToken_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -553,7 +552,7 @@ func DataGoogleServiceAccountIdToken_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleServiceAccountIdToken_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleServiceAccountIdToken_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleServiceAccountIdToken_IsTerraformDataSourceParameters(x); err != nil {
@@ -564,7 +563,7 @@ func DataGoogleServiceAccountIdToken_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func DataGoogleServiceAccountIdToken_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataGoogleServiceAccountIdToken_IsTerraformElement(x interface{}) *bool {
+func DataGoogleServiceAccountIdToken_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleServiceAccountIdToken_IsTerraformElementParameters(x); err != nil {
@@ -583,7 +582,7 @@ func DataGoogleServiceAccountIdToken_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -601,27 +600,27 @@ func DataGoogleServiceAccountIdToken_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceAccountIdToken) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleServiceAccountIdToken) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -823,8 +822,8 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ResetTargetServiceAccount() 
 	)
 }
 
-func (d *jsiiProxy_DataGoogleServiceAccountIdToken) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleServiceAccountIdToken) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -836,8 +835,8 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceAccountIdToken) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleServiceAccountIdToken) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -849,8 +848,8 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -862,8 +861,8 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -888,8 +887,8 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -900,4 +899,3 @@ func (d *jsiiProxy_DataGoogleServiceAccountIdToken) ToTerraform() interface{} {
 
 	return returns
 }
-

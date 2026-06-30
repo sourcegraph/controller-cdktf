@@ -12,9 +12,9 @@ type NetworkSecurityAuthzPolicyHttpRulesFromOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type NetworkSecurityAuthzPolicyHttpRulesFromOutputReference interface {
 	InternalValue() *NetworkSecurityAuthzPolicyHttpRulesFrom
 	SetInternalValue(val *NetworkSecurityAuthzPolicyHttpRulesFrom)
 	NotSources() NetworkSecurityAuthzPolicyHttpRulesFromNotSourcesList
-	NotSourcesInput() interface{}
+	NotSourcesInput() any
 	Sources() NetworkSecurityAuthzPolicyHttpRulesFromSourcesList
-	SourcesInput() interface{}
+	SourcesInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type NetworkSecurityAuthzPolicyHttpRulesFromOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type NetworkSecurityAuthzPolicyHttpRulesFromOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutNotSources(value interface{})
-	PutSources(value interface{})
+	PutNotSources(value any)
+	PutSources(value any)
 	ResetNotSources()
 	ResetSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) NotSo
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) NotSourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) NotSourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"notSourcesInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) Sourc
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) SourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) SourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"sourcesInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) Terra
 	return returns
 }
 
-
 func NewNetworkSecurityAuthzPolicyHttpRulesFromOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkSecurityAuthzPolicyHttpRulesFromOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewNetworkSecurityAuthzPolicyHttpRulesFromOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesFromOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewNetworkSecurityAuthzPolicyHttpRulesFromOutputReference_Override(n Networ
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityAuthzPolicy.NetworkSecurityAuthzPolicyHttpRulesFromOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference)SetInternalValue(val *NetworkSecurityAuthzPolicyHttpRulesFrom) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) SetInternalValue(val *NetworkSecurityAuthzPolicyHttpRulesFrom) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) Compu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetBo
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetBo
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetLi
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetNu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetSt
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) GetSt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) Inter
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) PutNotSources(value interface{}) {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) PutNotSources(value any) {
 	if err := n.validatePutNotSourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putNotSources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) PutSources(value interface{}) {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) PutSources(value any) {
 	if err := n.validatePutSourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"putSources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) Reset
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesFromOutputReference) ToStr
 
 	return returns
 }
-

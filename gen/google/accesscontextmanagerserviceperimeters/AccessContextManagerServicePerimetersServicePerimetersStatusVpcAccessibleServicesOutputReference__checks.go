@@ -106,7 +106,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusV
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusV
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesOutputReference) validateSetEnableRestrictionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesOutputReference) validateSetEnableRestrictionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewAccessContextManagerServicePerimetersServicePerimetersStatusVpcA
 
 	return nil
 }
-

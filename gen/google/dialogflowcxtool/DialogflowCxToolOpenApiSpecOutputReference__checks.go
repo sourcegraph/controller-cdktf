@@ -131,7 +131,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -239,4 +239,3 @@ func validateNewDialogflowCxToolOpenApiSpecOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

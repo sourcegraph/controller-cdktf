@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketO
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketOutp
 
 	return nil
 }
-

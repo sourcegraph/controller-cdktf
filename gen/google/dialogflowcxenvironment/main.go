@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
-		reflect.TypeOf((*DialogflowCxEnvironment)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEnvironment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionConfigs", GoGetter: "VersionConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "versionConfigsInput", GoGetter: "VersionConfigsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEnvironment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentConfig",
-		reflect.TypeOf((*DialogflowCxEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeouts",
-		reflect.TypeOf((*DialogflowCxEnvironmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEnvironmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowCxEnvironmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEnvironmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEnvironmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,11 +130,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigs",
-		reflect.TypeOf((*DialogflowCxEnvironmentVersionConfigs)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEnvironmentVersionConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList",
-		reflect.TypeOf((*DialogflowCxEnvironmentVersionConfigsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEnvironmentVersionConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -148,7 +148,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEnvironmentVersionConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -156,7 +156,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference",
-		reflect.TypeOf((*DialogflowCxEnvironmentVersionConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxEnvironmentVersionConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxEnvironmentVersionConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

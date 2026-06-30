@@ -109,7 +109,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksRenderOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksRenderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksRenderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewClouddeployCustomTargetTypeTasksRenderOutputReferenceParameters(
 
 	return nil
 }
-

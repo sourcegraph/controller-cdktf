@@ -6,9 +6,9 @@ import (
 
 type ComputeGlobalForwardingRuleConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource;
 	//
 	// provided by the client when the resource is created.
@@ -166,7 +166,7 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// metadata_filters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_global_forwarding_rule#metadata_filters ComputeGlobalForwardingRule#metadata_filters}
-	MetadataFilters interface{} `field:"optional" json:"metadataFilters" yaml:"metadataFilters"`
+	MetadataFilters any `field:"optional" json:"metadataFilters" yaml:"metadataFilters"`
 	// This field is not used for external load balancing.
 	//
 	// For Internal TCP/UDP Load Balancing, this field identifies the network that
@@ -197,7 +197,7 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// Non-PSC forwarding rules do not use this field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_global_forwarding_rule#no_automate_dns_zone ComputeGlobalForwardingRule#no_automate_dns_zone}
-	NoAutomateDnsZone interface{} `field:"optional" json:"noAutomateDnsZone" yaml:"noAutomateDnsZone"`
+	NoAutomateDnsZone any `field:"optional" json:"noAutomateDnsZone" yaml:"noAutomateDnsZone"`
 	// The 'portRange' field has the following limitations: * It requires that the forwarding rule 'IPProtocol' be TCP, UDP, or SCTP, and * It's applicable only to the following products: external passthrough Network Load Balancers, internal and external proxy Network Load Balancers, internal and external Application Load Balancers, external protocol forwarding, and Classic VPN.
 	//
 	// * Some products have restrictions on what ports can be used. See
@@ -237,4 +237,3 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_global_forwarding_rule#timeouts ComputeGlobalForwardingRule#timeouts}
 	Timeouts *ComputeGlobalForwardingRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

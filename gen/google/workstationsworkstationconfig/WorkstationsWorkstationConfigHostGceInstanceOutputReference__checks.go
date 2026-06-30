@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) 
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutAcceleratorsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutAcceleratorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) 
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutBoostConfigsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validatePutBoostConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -190,7 +190,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -255,7 +255,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisablePublicIpAddressesParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisablePublicIpAddressesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisableSshParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisableSshParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetEnableNestedVirtualizationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -398,4 +398,3 @@ func validateNewWorkstationsWorkstationConfigHostGceInstanceOutputReferenceParam
 
 	return nil
 }
-

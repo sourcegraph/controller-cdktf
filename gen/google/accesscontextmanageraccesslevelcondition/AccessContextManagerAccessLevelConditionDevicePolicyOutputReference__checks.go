@@ -90,7 +90,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validatePutOsConstraintsParameters(value interface{}) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validatePutOsConstraintsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,7 +218,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireAdminApprovalParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireAdminApprovalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,7 +238,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireCorpOwnedParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireCorpOwnedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireScreenLockParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateSetRequireScreenLockParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -305,4 +305,3 @@ func validateNewAccessContextManagerAccessLevelConditionDevicePolicyOutputRefere
 
 	return nil
 }
-

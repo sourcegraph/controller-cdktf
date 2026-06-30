@@ -19,7 +19,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicy) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (p *jsiiProxy_ProjectOrganizationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_ProjectOrganizationPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicy) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (p *jsiiProxy_ProjectOrganizationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_ProjectOrganizationPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateProjectOrganizationPolicy_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateProjectOrganizationPolicy_IsConstructParameters(x interface{}) error {
+func validateProjectOrganizationPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateProjectOrganizationPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateProjectOrganizationPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateProjectOrganizationPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateProjectOrganizationPolicy_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateProjectOrganizationPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateProjectOrganizationPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateProjectOrganizationPolicy_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -329,7 +329,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetConstraintParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -410,7 +410,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -482,4 +482,3 @@ func validateNewProjectOrganizationPolicyParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewComputeVpnTunnelCipherSuitePhase2OutputReferenceParameters(terra
 
 	return nil
 }
-

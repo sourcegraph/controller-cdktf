@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubSubscriptionIamBindingConditionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPubsubSubscriptionIamBindingConditionOutputReferenceParameters(t
 
 	return nil
 }
-

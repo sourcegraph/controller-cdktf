@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapWebRegionBackendServiceIamBinding.IapWebRegionBackendServiceIamBinding",
-		reflect.TypeOf((*IapWebRegionBackendServiceIamBinding)(nil)).Elem(),
+		reflect.TypeFor[IapWebRegionBackendServiceIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webRegionBackendService", GoGetter: "WebRegionBackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "webRegionBackendServiceInput", GoGetter: "WebRegionBackendServiceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapWebRegionBackendServiceIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapWebRegionBackendServiceIamBinding.IapWebRegionBackendServiceIamBindingCondition",
-		reflect.TypeOf((*IapWebRegionBackendServiceIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[IapWebRegionBackendServiceIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapWebRegionBackendServiceIamBinding.IapWebRegionBackendServiceIamBindingConditionOutputReference",
-		reflect.TypeOf((*IapWebRegionBackendServiceIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapWebRegionBackendServiceIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapWebRegionBackendServiceIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapWebRegionBackendServiceIamBinding.IapWebRegionBackendServiceIamBindingConfig",
-		reflect.TypeOf((*IapWebRegionBackendServiceIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[IapWebRegionBackendServiceIamBindingConfig](),
 	)
 }

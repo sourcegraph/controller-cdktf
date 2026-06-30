@@ -90,7 +90,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOut
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) validatePutFeatureGroupsParameters(value interface{}) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) validatePutFeatureGroupsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOut
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutput
 
 	return nil
 }
-

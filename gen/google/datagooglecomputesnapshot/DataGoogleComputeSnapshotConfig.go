@@ -6,9 +6,9 @@ import (
 
 type DataGoogleComputeSnapshotConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataGoogleComputeSnapshotConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_snapshot#filter DataGoogleComputeSnapshot#filter}.
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_snapshot#id DataGoogleComputeSnapshot#id}.
@@ -27,7 +27,7 @@ type DataGoogleComputeSnapshotConfig struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_snapshot#most_recent DataGoogleComputeSnapshot#most_recent}.
-	MostRecent interface{} `field:"optional" json:"mostRecent" yaml:"mostRecent"`
+	MostRecent any `field:"optional" json:"mostRecent" yaml:"mostRecent"`
 	// Name of the resource;
 	//
 	// provided by the client when the resource is
@@ -43,4 +43,3 @@ type DataGoogleComputeSnapshotConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_snapshot#project DataGoogleComputeSnapshot#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
-

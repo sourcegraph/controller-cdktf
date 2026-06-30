@@ -34,7 +34,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineStandardAppVersionLibrariesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAppEngineStandardAppVersionLibrariesListParameters(terraformReso
 
 	return nil
 }
-

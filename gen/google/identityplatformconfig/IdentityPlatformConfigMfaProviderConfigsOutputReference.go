@@ -12,9 +12,9 @@ type IdentityPlatformConfigMfaProviderConfigsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type IdentityPlatformConfigMfaProviderConfigsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -45,7 +45,7 @@ type IdentityPlatformConfigMfaProviderConfigsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type IdentityPlatformConfigMfaProviderConfigsOutputReference interface {
 	ResetTotpProviderConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) Totp
 	return returns
 }
 
-
 func NewIdentityPlatformConfigMfaProviderConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IdentityPlatformConfigMfaProviderConfigsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewIdentityPlatformConfigMfaProviderConfigsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigMfaProviderConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewIdentityPlatformConfigMfaProviderConfigsOutputReference_Override(i Ident
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigMfaProviderConfigsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetState(val *string) {
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetSt
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) Comp
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetB
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetB
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetL
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetS
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) GetS
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) Inte
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) PutT
 	_jsii_.InvokeVoid(
 		i,
 		"putTotpProviderConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) Rese
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsOutputReference) ToSt
 
 	return returns
 }
-

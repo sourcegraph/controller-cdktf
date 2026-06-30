@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionApiConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppEngineFlexibleAppVersionApiConfigOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeReservationShareSettingsOutputReference) validateInter
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsOutputReference) validatePutProjectMapParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeReservationShareSettingsOutputReference) validatePutProjectMapParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ComputeReservationShareSettingsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationShareSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeReservationShareSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewComputeReservationShareSettingsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

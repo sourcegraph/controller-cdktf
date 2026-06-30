@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeWireGroup) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeWireGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeWireGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeWireGroup) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (c *jsiiProxy_ComputeWireGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeWireGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ComputeWireGroup) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (c *jsiiProxy_ComputeWireGroup) validatePutEndpointsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeWireGroup) validatePutEndpointsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func validateComputeWireGroup_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateComputeWireGroup_IsConstructParameters(x interface{}) error {
+func validateComputeWireGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func validateComputeWireGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeWireGroup_IsTerraformElementParameters(x interface{}) error {
+func validateComputeWireGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func validateComputeWireGroup_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateComputeWireGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeWireGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -297,7 +297,7 @@ func validateComputeWireGroup_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroup) validateSetAdminEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeWireGroup) validateSetAdminEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func (j *jsiiProxy_ComputeWireGroup) validateSetAdminEnabledParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeWireGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_ComputeWireGroup) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeWireGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -455,7 +455,7 @@ func (j *jsiiProxy_ComputeWireGroup) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeWireGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -519,4 +519,3 @@ func validateNewComputeWireGroupParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

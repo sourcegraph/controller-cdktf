@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfig",
-		reflect.TypeOf((*SccV2FolderNotificationConfig)(nil)).Elem(),
+		reflect.TypeFor[SccV2FolderNotificationConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccV2FolderNotificationConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -85,15 +85,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigConfig",
-		reflect.TypeOf((*SccV2FolderNotificationConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[SccV2FolderNotificationConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigStreamingConfig",
-		reflect.TypeOf((*SccV2FolderNotificationConfigStreamingConfig)(nil)).Elem(),
+		reflect.TypeFor[SccV2FolderNotificationConfigStreamingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigStreamingConfigOutputReference",
-		reflect.TypeOf((*SccV2FolderNotificationConfigStreamingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SccV2FolderNotificationConfigStreamingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccV2FolderNotificationConfigStreamingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,11 +127,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeouts",
-		reflect.TypeOf((*SccV2FolderNotificationConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SccV2FolderNotificationConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccV2FolderNotificationConfig.SccV2FolderNotificationConfigTimeoutsOutputReference",
-		reflect.TypeOf((*SccV2FolderNotificationConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SccV2FolderNotificationConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -164,7 +164,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccV2FolderNotificationConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

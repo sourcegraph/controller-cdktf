@@ -98,7 +98,7 @@ func (s *jsiiProxy_SccNotificationConfigTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_SccNotificationConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccNotificationConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SccNotificationConfigTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_SccNotificationConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SccNotificationConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSccNotificationConfigTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

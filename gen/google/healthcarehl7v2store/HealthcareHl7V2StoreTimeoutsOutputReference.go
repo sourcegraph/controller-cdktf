@@ -12,9 +12,9 @@ type HealthcareHl7V2StoreTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type HealthcareHl7V2StoreTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type HealthcareHl7V2StoreTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type HealthcareHl7V2StoreTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) UpdateInput() *s
 	return returns
 }
 
-
 func NewHealthcareHl7V2StoreTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcareHl7V2StoreTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewHealthcareHl7V2StoreTimeoutsOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewHealthcareHl7V2StoreTimeoutsOutputReference_Override(h HealthcareHl7V2St
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetCreate(val *st
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetDelete(val *st
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := h.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (h *jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference) ToString() *stri
 
 	return returns
 }
-

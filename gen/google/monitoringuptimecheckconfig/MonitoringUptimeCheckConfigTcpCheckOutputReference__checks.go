@@ -109,7 +109,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewMonitoringUptimeCheckConfigTcpCheckOutputReferenceParameters(ter
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy struct {
 	// Names of query string parameters to exclude in cache keys.
 	//
@@ -51,7 +50,7 @@ type ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy struct 
 	// configuration error.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
-	IncludeHost interface{} `field:"optional" json:"includeHost" yaml:"includeHost"`
+	IncludeHost any `field:"optional" json:"includeHost" yaml:"includeHost"`
 	// If true, http and https requests will be cached separately.
 	//
 	// Note: This
@@ -62,7 +61,7 @@ type ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy struct 
 	// configuration error.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
-	IncludeProtocol interface{} `field:"optional" json:"includeProtocol" yaml:"includeProtocol"`
+	IncludeProtocol any `field:"optional" json:"includeProtocol" yaml:"includeProtocol"`
 	// If true, include query string parameters in the cache key according to includedQueryParameters and excludedQueryParameters.
 	//
 	// If neither is
@@ -75,6 +74,5 @@ type ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyCacheKeyPolicy struct 
 	// the cache key.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
-	IncludeQueryString interface{} `field:"optional" json:"includeQueryString" yaml:"includeQueryString"`
+	IncludeQueryString any `field:"optional" json:"includeQueryString" yaml:"includeQueryString"`
 }
-

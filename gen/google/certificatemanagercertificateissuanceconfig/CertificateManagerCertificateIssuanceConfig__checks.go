@@ -19,7 +19,7 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateAddMoveT
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateMoveFrom
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateCertificateManagerCertificateIssuanceConfig_GenerateConfigForImport
 	return nil
 }
 
-func validateCertificateManagerCertificateIssuanceConfig_IsConstructParameters(x interface{}) error {
+func validateCertificateManagerCertificateIssuanceConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateCertificateManagerCertificateIssuanceConfig_IsConstructParameters(x
 	return nil
 }
 
-func validateCertificateManagerCertificateIssuanceConfig_IsTerraformElementParameters(x interface{}) error {
+func validateCertificateManagerCertificateIssuanceConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateCertificateManagerCertificateIssuanceConfig_IsTerraformElementParam
 	return nil
 }
 
-func validateCertificateManagerCertificateIssuanceConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateCertificateManagerCertificateIssuanceConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateCertificateManagerCertificateIssuanceConfig_IsTerraformResourcePara
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetConne
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -428,7 +428,7 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetProje
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewCertificateManagerCertificateIssuanceConfigParameters(scope cons
 
 	return nil
 }
-

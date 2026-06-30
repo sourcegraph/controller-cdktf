@@ -98,7 +98,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAssuredWorkloadsWorkloadResourceSettingsOutputReferenceParameter
 
 	return nil
 }
-

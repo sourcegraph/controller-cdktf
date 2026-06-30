@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatefulInternalIpOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeInstanceGroupManagerStatefulInternalIpOutputRef
 
 	return nil
 }
-

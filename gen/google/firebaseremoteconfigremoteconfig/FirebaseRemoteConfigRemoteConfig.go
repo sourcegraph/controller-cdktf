@@ -15,17 +15,17 @@ type FirebaseRemoteConfigRemoteConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Conditions() FirebaseRemoteConfigRemoteConfigConditionsList
-	ConditionsInput() interface{}
+	ConditionsInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,9 +49,9 @@ type FirebaseRemoteConfigRemoteConfig interface {
 	// The tree node.
 	Node() constructs.Node
 	ParameterGroups() FirebaseRemoteConfigRemoteConfigParameterGroupsList
-	ParameterGroupsInput() interface{}
+	ParameterGroupsInput() any
 	Parameters() FirebaseRemoteConfigRemoteConfigParametersList
-	ParametersInput() interface{}
+	ParametersInput() any
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -60,27 +60,27 @@ type FirebaseRemoteConfigRemoteConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Version() FirebaseRemoteConfigRemoteConfigVersionList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type FirebaseRemoteConfigRemoteConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,16 +110,16 @@ type FirebaseRemoteConfigRemoteConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConditions(value interface{})
-	PutParameterGroups(value interface{})
-	PutParameters(value interface{})
+	PutConditions(value any)
+	PutParameterGroups(value any)
+	PutParameters(value any)
 	PutTimeouts(value *FirebaseRemoteConfigRemoteConfigTimeouts)
 	ResetConditions()
 	ResetId()
@@ -130,17 +130,17 @@ type FirebaseRemoteConfigRemoteConfig interface {
 	ResetParameters()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FirebaseRemoteConfigRemoteConfig
@@ -168,8 +168,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Conditions() FirebaseRemote
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ConditionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ConditionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionsInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ConditionsInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -308,8 +308,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ParameterGroups() FirebaseR
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ParameterGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ParameterGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parameterGroupsInput",
@@ -328,8 +328,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Parameters() FirebaseRemote
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ParametersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ParametersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"parametersInput",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -428,8 +428,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Timeouts() FirebaseRemoteCo
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -448,7 +448,6 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) Version() FirebaseRemoteCon
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_remote_config_remote_config google_firebase_remote_config_remote_config} Resource.
 func NewFirebaseRemoteConfigRemoteConfig(scope constructs.Construct, id *string, config *FirebaseRemoteConfigRemoteConfigConfig) FirebaseRemoteConfigRemoteConfig {
 	_init_.Initialize()
@@ -460,7 +459,7 @@ func NewFirebaseRemoteConfigRemoteConfig(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -473,12 +472,12 @@ func NewFirebaseRemoteConfigRemoteConfig_Override(f FirebaseRemoteConfigRemoteCo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -508,7 +507,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -516,7 +515,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetId(val *string) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetProject(val *string) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -557,7 +556,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func FirebaseRemoteConfigRemoteConfig_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func FirebaseRemoteConfigRemoteConfig_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FirebaseRemoteConfigRemoteConfig_IsConstruct(x interface{}) *bool {
+func FirebaseRemoteConfigRemoteConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseRemoteConfigRemoteConfig_IsConstructParameters(x); err != nil {
@@ -615,7 +614,7 @@ func FirebaseRemoteConfigRemoteConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func FirebaseRemoteConfigRemoteConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaseRemoteConfigRemoteConfig_IsTerraformElement(x interface{}) *bool {
+func FirebaseRemoteConfigRemoteConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseRemoteConfigRemoteConfig_IsTerraformElementParameters(x); err != nil {
@@ -634,7 +633,7 @@ func FirebaseRemoteConfigRemoteConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func FirebaseRemoteConfigRemoteConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FirebaseRemoteConfigRemoteConfig_IsTerraformResource(x interface{}) *bool {
+func FirebaseRemoteConfigRemoteConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseRemoteConfigRemoteConfig_IsTerraformResourceParameters(x); err != nil {
@@ -653,7 +652,7 @@ func FirebaseRemoteConfigRemoteConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -678,31 +677,31 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,15 +829,15 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -857,7 +856,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -870,7 +869,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,18 +883,18 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -906,7 +905,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -917,40 +916,40 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) PutConditions(value interface{}) {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) PutConditions(value any) {
 	if err := f.validatePutConditionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putConditions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) PutParameterGroups(value interface{}) {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) PutParameterGroups(value any) {
 	if err := f.validatePutParameterGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putParameterGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) PutParameters(value interface{}) {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) PutParameters(value any) {
 	if err := f.validatePutParametersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putParameters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -961,7 +960,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) PutTimeouts(value *Firebase
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1021,8 +1020,8 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ResetTimeouts() {
 	)
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1034,8 +1033,8 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SynthesizeAttributes() *map
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1047,8 +1046,8 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1060,8 +1059,8 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ToHclTerraform() interface{
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1086,8 +1085,8 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1098,4 +1097,3 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

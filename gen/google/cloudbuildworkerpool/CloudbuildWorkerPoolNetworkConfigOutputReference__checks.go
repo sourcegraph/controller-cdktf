@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudbuildWorkerPoolNetworkConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

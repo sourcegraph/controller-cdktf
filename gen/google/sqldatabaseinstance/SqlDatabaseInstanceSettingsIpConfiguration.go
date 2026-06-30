@@ -1,6 +1,5 @@
 package sqldatabaseinstance
 
-
 type SqlDatabaseInstanceSettingsIpConfiguration struct {
 	// The name of the allocated ip range for the private ip CloudSQL instance.
 	//
@@ -11,7 +10,7 @@ type SqlDatabaseInstanceSettingsIpConfiguration struct {
 	// authorized_networks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#authorized_networks SqlDatabaseInstance#authorized_networks}
-	AuthorizedNetworks interface{} `field:"optional" json:"authorizedNetworks" yaml:"authorizedNetworks"`
+	AuthorizedNetworks any `field:"optional" json:"authorizedNetworks" yaml:"authorizedNetworks"`
 	// The custom subject alternative names for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#custom_subject_alternative_names SqlDatabaseInstance#custom_subject_alternative_names}
@@ -21,13 +20,13 @@ type SqlDatabaseInstanceSettingsIpConfiguration struct {
 	// SQLSERVER database type is not supported.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#enable_private_path_for_google_cloud_services SqlDatabaseInstance#enable_private_path_for_google_cloud_services}
-	EnablePrivatePathForGoogleCloudServices interface{} `field:"optional" json:"enablePrivatePathForGoogleCloudServices" yaml:"enablePrivatePathForGoogleCloudServices"`
+	EnablePrivatePathForGoogleCloudServices any `field:"optional" json:"enablePrivatePathForGoogleCloudServices" yaml:"enablePrivatePathForGoogleCloudServices"`
 	// Whether this Cloud SQL instance should be assigned a public IPV4 address.
 	//
 	// At least ipv4_enabled must be enabled or a private_network must be configured.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#ipv4_enabled SqlDatabaseInstance#ipv4_enabled}
-	Ipv4Enabled interface{} `field:"optional" json:"ipv4Enabled" yaml:"ipv4Enabled"`
+	Ipv4Enabled any `field:"optional" json:"ipv4Enabled" yaml:"ipv4Enabled"`
 	// The VPC network from which the Cloud SQL instance is accessible for private IP.
 	//
 	// For example, projects/myProject/global/networks/default. Specifying a network enables private IP. At least ipv4_enabled must be enabled or a private_network must be configured. This setting can be updated, but it cannot be removed after it is set.
@@ -37,7 +36,7 @@ type SqlDatabaseInstanceSettingsIpConfiguration struct {
 	// psc_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#psc_config SqlDatabaseInstance#psc_config}
-	PscConfig interface{} `field:"optional" json:"pscConfig" yaml:"pscConfig"`
+	PscConfig any `field:"optional" json:"pscConfig" yaml:"pscConfig"`
 	// Specify how the server certificate's Certificate Authority is hosted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#server_ca_mode SqlDatabaseInstance#server_ca_mode}
@@ -55,4 +54,3 @@ type SqlDatabaseInstanceSettingsIpConfiguration struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#ssl_mode SqlDatabaseInstance#ssl_mode}
 	SslMode *string `field:"optional" json:"sslMode" yaml:"sslMode"`
 }
-

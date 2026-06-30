@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsOutputRefe
 
 	return nil
 }
-

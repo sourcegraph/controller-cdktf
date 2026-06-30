@@ -1,6 +1,5 @@
 package dialogflowcxgenerativesettings
 
-
 type DialogflowCxGenerativeSettingsKnowledgeConnectorSettings struct {
 	// Name of the virtual agent. Used for LLM prompt. Can be left empty.
 	//
@@ -29,6 +28,5 @@ type DialogflowCxGenerativeSettingsKnowledgeConnectorSettings struct {
 	// Per default the feature is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_generative_settings#disable_data_store_fallback DialogflowCxGenerativeSettings#disable_data_store_fallback}
-	DisableDataStoreFallback interface{} `field:"optional" json:"disableDataStoreFallback" yaml:"disableDataStoreFallback"`
+	DisableDataStoreFallback any `field:"optional" json:"disableDataStoreFallback" yaml:"disableDataStoreFallback"`
 }
-

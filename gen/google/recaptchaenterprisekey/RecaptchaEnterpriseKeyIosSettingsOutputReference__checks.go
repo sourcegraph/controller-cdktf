@@ -98,7 +98,7 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyIosSettingsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyIosSettingsOutputReference) validateSetAllowAllBundleIdsParameters(val interface{}) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyIosSettingsOutputReference) validateSetAllowAllBundleIdsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -126,7 +126,7 @@ func (j *jsiiProxy_RecaptchaEnterpriseKeyIosSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_RecaptchaEnterpriseKeyIosSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RecaptchaEnterpriseKeyIosSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,4 +226,3 @@ func validateNewRecaptchaEnterpriseKeyIosSettingsOutputReferenceParameters(terra
 
 	return nil
 }
-

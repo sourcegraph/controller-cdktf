@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeInstantSnapshot) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstantSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeInstantSnapshot) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeInstantSnapshot) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstantSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeInstantSnapshot) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateComputeInstantSnapshot_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateComputeInstantSnapshot_IsConstructParameters(x interface{}) error {
+func validateComputeInstantSnapshot_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateComputeInstantSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeInstantSnapshot_IsTerraformElementParameters(x interface{}) error {
+func validateComputeInstantSnapshot_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateComputeInstantSnapshot_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateComputeInstantSnapshot_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeInstantSnapshot_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateComputeInstantSnapshot_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstantSnapshot) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstantSnapshot) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ComputeInstantSnapshot) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstantSnapshot) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstantSnapshot) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ComputeInstantSnapshot) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstantSnapshot) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeInstantSnapshot) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -484,4 +484,3 @@ func validateNewComputeInstantSnapshotParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

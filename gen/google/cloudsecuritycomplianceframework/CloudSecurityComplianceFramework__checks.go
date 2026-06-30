@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) validateAddMoveTargetParame
 	return nil
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudSecurityComplianceFramework) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) validateMoveFromIdParameter
 	return nil
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudSecurityComplianceFramework) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFramework) validateOverrideLogicalIdPa
 	return nil
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFramework) validatePutCloudControlDetailsParameters(value interface{}) error {
+func (c *jsiiProxy_CloudSecurityComplianceFramework) validatePutCloudControlDetailsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateCloudSecurityComplianceFramework_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateCloudSecurityComplianceFramework_IsConstructParameters(x interface{}) error {
+func validateCloudSecurityComplianceFramework_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateCloudSecurityComplianceFramework_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateCloudSecurityComplianceFramework_IsTerraformElementParameters(x interface{}) error {
+func validateCloudSecurityComplianceFramework_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateCloudSecurityComplianceFramework_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateCloudSecurityComplianceFramework_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudSecurityComplianceFramework_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateCloudSecurityComplianceFramework_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -432,7 +432,7 @@ func (j *jsiiProxy_CloudSecurityComplianceFramework) validateSetOrganizationPara
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFramework) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFramework) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewCloudSecurityComplianceFrameworkParameters(scope constructs.Cons
 
 	return nil
 }
-

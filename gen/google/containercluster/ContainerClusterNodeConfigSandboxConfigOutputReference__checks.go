@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigSandboxConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigSandboxConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigSandboxConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterNodeConfigSandboxConfigOutputReferenceParameters
 
 	return nil
 }
-

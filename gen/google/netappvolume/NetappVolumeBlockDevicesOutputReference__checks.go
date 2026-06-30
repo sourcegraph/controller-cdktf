@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) validateSetHostGroup
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeBlockDevicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewNetappVolumeBlockDevicesOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOut
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference) validatePutHttpHeadersParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference) validatePutHttpHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOut
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutput
 
 	return nil
 }
-

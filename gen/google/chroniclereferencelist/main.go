@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceList",
-		reflect.TypeOf((*ChronicleReferenceList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleReferenceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListConfig",
-		reflect.TypeOf((*ChronicleReferenceListConfig)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListEntries",
-		reflect.TypeOf((*ChronicleReferenceListEntries)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListEntries](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListEntriesList",
-		reflect.TypeOf((*ChronicleReferenceListEntriesList)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListEntriesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleReferenceListEntriesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListEntriesOutputReference",
-		reflect.TypeOf((*ChronicleReferenceListEntriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListEntriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleReferenceListEntriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,11 +157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfo",
-		reflect.TypeOf((*ChronicleReferenceListScopeInfo)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListScopeInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference",
-		reflect.TypeOf((*ChronicleReferenceListScopeInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListScopeInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleReferenceListScopeInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,11 +197,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope",
-		reflect.TypeOf((*ChronicleReferenceListScopeInfoReferenceListScope)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListScopeInfoReferenceListScope](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference",
-		reflect.TypeOf((*ChronicleReferenceListScopeInfoReferenceListScopeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListScopeInfoReferenceListScopeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -228,7 +228,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleReferenceListScopeInfoReferenceListScopeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -236,11 +236,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts",
-		reflect.TypeOf((*ChronicleReferenceListTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.chronicleReferenceList.ChronicleReferenceListTimeoutsOutputReference",
-		reflect.TypeOf((*ChronicleReferenceListTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ChronicleReferenceListTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -273,7 +273,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ChronicleReferenceListTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

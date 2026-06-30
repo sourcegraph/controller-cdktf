@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgent",
-		reflect.TypeOf((*CesAgent)(nil)).Elem(),
+		reflect.TypeFor[CesAgent](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgent{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -140,11 +140,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentAfterAgentCallbacks",
-		reflect.TypeOf((*CesAgentAfterAgentCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAgentAfterAgentCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentAfterAgentCallbacksList",
-		reflect.TypeOf((*CesAgentAfterAgentCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAgentAfterAgentCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -158,7 +158,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentAfterAgentCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -166,7 +166,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentAfterAgentCallbacksOutputReference",
-		reflect.TypeOf((*CesAgentAfterAgentCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentAfterAgentCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -198,7 +198,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentAfterAgentCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -206,11 +206,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentAfterModelCallbacks",
-		reflect.TypeOf((*CesAgentAfterModelCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAgentAfterModelCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentAfterModelCallbacksList",
-		reflect.TypeOf((*CesAgentAfterModelCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAgentAfterModelCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -224,7 +224,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentAfterModelCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -232,7 +232,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentAfterModelCallbacksOutputReference",
-		reflect.TypeOf((*CesAgentAfterModelCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentAfterModelCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -264,7 +264,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentAfterModelCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -272,11 +272,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentAfterToolCallbacks",
-		reflect.TypeOf((*CesAgentAfterToolCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAgentAfterToolCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentAfterToolCallbacksList",
-		reflect.TypeOf((*CesAgentAfterToolCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAgentAfterToolCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -290,7 +290,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentAfterToolCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -298,7 +298,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentAfterToolCallbacksOutputReference",
-		reflect.TypeOf((*CesAgentAfterToolCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentAfterToolCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -330,7 +330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentAfterToolCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -338,11 +338,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeAgentCallbacks",
-		reflect.TypeOf((*CesAgentBeforeAgentCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAgentBeforeAgentCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeAgentCallbacksList",
-		reflect.TypeOf((*CesAgentBeforeAgentCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAgentBeforeAgentCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentBeforeAgentCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -364,7 +364,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeAgentCallbacksOutputReference",
-		reflect.TypeOf((*CesAgentBeforeAgentCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentBeforeAgentCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -396,7 +396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentBeforeAgentCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -404,11 +404,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeModelCallbacks",
-		reflect.TypeOf((*CesAgentBeforeModelCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAgentBeforeModelCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeModelCallbacksList",
-		reflect.TypeOf((*CesAgentBeforeModelCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAgentBeforeModelCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -422,7 +422,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentBeforeModelCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -430,7 +430,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeModelCallbacksOutputReference",
-		reflect.TypeOf((*CesAgentBeforeModelCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentBeforeModelCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -462,7 +462,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentBeforeModelCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -470,11 +470,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeToolCallbacks",
-		reflect.TypeOf((*CesAgentBeforeToolCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAgentBeforeToolCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeToolCallbacksList",
-		reflect.TypeOf((*CesAgentBeforeToolCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAgentBeforeToolCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -488,7 +488,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentBeforeToolCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -496,7 +496,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentBeforeToolCallbacksOutputReference",
-		reflect.TypeOf((*CesAgentBeforeToolCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentBeforeToolCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -528,7 +528,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentBeforeToolCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -536,15 +536,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentConfig",
-		reflect.TypeOf((*CesAgentConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAgentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentLlmAgent",
-		reflect.TypeOf((*CesAgentLlmAgent)(nil)).Elem(),
+		reflect.TypeFor[CesAgentLlmAgent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentLlmAgentOutputReference",
-		reflect.TypeOf((*CesAgentLlmAgentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentLlmAgentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -568,7 +568,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentLlmAgentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -576,11 +576,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentModelSettings",
-		reflect.TypeOf((*CesAgentModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAgentModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentModelSettingsOutputReference",
-		reflect.TypeOf((*CesAgentModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -610,7 +610,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -618,11 +618,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentRemoteDialogflowAgent",
-		reflect.TypeOf((*CesAgentRemoteDialogflowAgent)(nil)).Elem(),
+		reflect.TypeFor[CesAgentRemoteDialogflowAgent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentRemoteDialogflowAgentOutputReference",
-		reflect.TypeOf((*CesAgentRemoteDialogflowAgentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentRemoteDialogflowAgentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agent", GoGetter: "Agent"},
 			_jsii_.MemberProperty{JsiiProperty: "agentInput", GoGetter: "AgentInput"},
@@ -662,7 +662,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentRemoteDialogflowAgentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -670,11 +670,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentTimeouts",
-		reflect.TypeOf((*CesAgentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CesAgentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentTimeoutsOutputReference",
-		reflect.TypeOf((*CesAgentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -707,7 +707,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -715,11 +715,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAgent.CesAgentToolsets",
-		reflect.TypeOf((*CesAgentToolsets)(nil)).Elem(),
+		reflect.TypeFor[CesAgentToolsets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentToolsetsList",
-		reflect.TypeOf((*CesAgentToolsetsList)(nil)).Elem(),
+		reflect.TypeFor[CesAgentToolsetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -733,7 +733,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentToolsetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -741,7 +741,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAgent.CesAgentToolsetsOutputReference",
-		reflect.TypeOf((*CesAgentToolsetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAgentToolsetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolsetInput", GoGetter: "ToolsetInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAgentToolsetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

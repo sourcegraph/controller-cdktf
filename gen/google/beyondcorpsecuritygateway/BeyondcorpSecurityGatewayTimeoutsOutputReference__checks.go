@@ -98,7 +98,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBeyondcorpSecurityGatewayTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

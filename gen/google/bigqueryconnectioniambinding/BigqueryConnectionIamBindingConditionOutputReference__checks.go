@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryConnectionIamBindingConditionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryConnectionIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBigqueryConnectionIamBindingConditionOutputReferenceParameters(t
 
 	return nil
 }
-

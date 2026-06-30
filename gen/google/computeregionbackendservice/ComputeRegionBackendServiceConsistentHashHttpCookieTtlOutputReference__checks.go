@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieTtlOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieTtlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieTtlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRegionBackendServiceConsistentHashHttpCookieTtlOutputRefe
 
 	return nil
 }
-

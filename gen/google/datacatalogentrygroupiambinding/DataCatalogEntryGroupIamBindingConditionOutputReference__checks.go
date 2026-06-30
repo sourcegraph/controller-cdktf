@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupIamBindingConditionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogEntryGroupIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataCatalogEntryGroupIamBindingConditionOutputReferenceParameter
 
 	return nil
 }
-

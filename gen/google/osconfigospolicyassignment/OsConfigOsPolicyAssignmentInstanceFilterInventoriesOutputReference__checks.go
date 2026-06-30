@@ -98,7 +98,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewOsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReferen
 
 	return nil
 }
-

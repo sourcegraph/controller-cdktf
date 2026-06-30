@@ -1,6 +1,5 @@
 package networkserviceshttproute
 
-
 type NetworkServicesHttpRouteRulesMatchesHeaders struct {
 	// The value of the header should match exactly the content of exactMatch.
 	//
@@ -13,7 +12,7 @@ type NetworkServicesHttpRouteRulesMatchesHeaders struct {
 	// If specified, the match result will be inverted before checking. Default value is set to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#invert_match NetworkServicesHttpRoute#invert_match}
-	InvertMatch interface{} `field:"optional" json:"invertMatch" yaml:"invertMatch"`
+	InvertMatch any `field:"optional" json:"invertMatch" yaml:"invertMatch"`
 	// The value of the header must start with the contents of prefixMatch.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#prefix_match NetworkServicesHttpRoute#prefix_match}
@@ -21,7 +20,7 @@ type NetworkServicesHttpRouteRulesMatchesHeaders struct {
 	// A header with headerName must exist. The match takes place whether or not the header has a value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#present_match NetworkServicesHttpRoute#present_match}
-	PresentMatch interface{} `field:"optional" json:"presentMatch" yaml:"presentMatch"`
+	PresentMatch any `field:"optional" json:"presentMatch" yaml:"presentMatch"`
 	// range_match block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#range_match NetworkServicesHttpRoute#range_match}
@@ -35,4 +34,3 @@ type NetworkServicesHttpRouteRulesMatchesHeaders struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#suffix_match NetworkServicesHttpRoute#suffix_match}
 	SuffixMatch *string `field:"optional" json:"suffixMatch" yaml:"suffixMatch"`
 }
-

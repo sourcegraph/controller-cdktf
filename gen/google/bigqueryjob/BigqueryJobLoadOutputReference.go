@@ -10,20 +10,20 @@ import (
 
 type BigqueryJobLoadOutputReference interface {
 	cdktf.ComplexObject
-	AllowJaggedRows() interface{}
-	SetAllowJaggedRows(val interface{})
-	AllowJaggedRowsInput() interface{}
-	AllowQuotedNewlines() interface{}
-	SetAllowQuotedNewlines(val interface{})
-	AllowQuotedNewlinesInput() interface{}
-	Autodetect() interface{}
-	SetAutodetect(val interface{})
-	AutodetectInput() interface{}
+	AllowJaggedRows() any
+	SetAllowJaggedRows(val any)
+	AllowJaggedRowsInput() any
+	AllowQuotedNewlines() any
+	SetAllowQuotedNewlines(val any)
+	AllowQuotedNewlinesInput() any
+	Autodetect() any
+	SetAutodetect(val any)
+	AutodetectInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,9 +49,9 @@ type BigqueryJobLoadOutputReference interface {
 	FieldDelimiterInput() *string
 	// Experimental.
 	Fqn() *string
-	IgnoreUnknownValues() interface{}
-	SetIgnoreUnknownValues(val interface{})
-	IgnoreUnknownValuesInput() interface{}
+	IgnoreUnknownValues() any
+	SetIgnoreUnknownValues(val any)
+	IgnoreUnknownValuesInput() any
 	InternalValue() *BigqueryJobLoad
 	SetInternalValue(val *BigqueryJobLoad)
 	JsonExtension() *string
@@ -99,7 +99,7 @@ type BigqueryJobLoadOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -145,7 +145,7 @@ type BigqueryJobLoadOutputReference interface {
 	ResetWriteDisposition()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -158,8 +158,8 @@ type jsiiProxy_BigqueryJobLoadOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowJaggedRows() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowJaggedRows() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowJaggedRows",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowJaggedRows() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowJaggedRowsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowJaggedRowsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowJaggedRowsInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowJaggedRowsInput() interf
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowQuotedNewlines() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowQuotedNewlines() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowQuotedNewlines",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowQuotedNewlines() interfa
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowQuotedNewlinesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowQuotedNewlinesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowQuotedNewlinesInput",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) AllowQuotedNewlinesInput() in
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) Autodetect() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) Autodetect() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autodetect",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) Autodetect() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) AutodetectInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) AutodetectInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autodetectInput",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) AutodetectInput() interface{}
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) IgnoreUnknownValues() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) IgnoreUnknownValues() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreUnknownValues",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) IgnoreUnknownValues() interfa
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference) IgnoreUnknownValuesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) IgnoreUnknownValuesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreUnknownValuesInput",
@@ -648,7 +648,6 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) WriteDispositionInput() *stri
 	return returns
 }
 
-
 func NewBigqueryJobLoadOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryJobLoadOutputReference {
 	_init_.Initialize()
 
@@ -659,7 +658,7 @@ func NewBigqueryJobLoadOutputReference(terraformResource cdktf.IInterpolatingPar
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -671,12 +670,12 @@ func NewBigqueryJobLoadOutputReference_Override(b BigqueryJobLoadOutputReference
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetAllowJaggedRows(val interface{}) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetAllowJaggedRows(val any) {
 	if err := j.validateSetAllowJaggedRowsParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetAllowJaggedRows(val interfa
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetAllowQuotedNewlines(val interface{}) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetAllowQuotedNewlines(val any) {
 	if err := j.validateSetAllowQuotedNewlinesParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetAllowQuotedNewlines(val int
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetAutodetect(val interface{}) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetAutodetect(val any) {
 	if err := j.validateSetAutodetectParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetAutodetect(val interface{})
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetComplexObjectIndex(val inte
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetComplexObjectIsFromSet(val 
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetCreateDisposition(val *string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetCreateDisposition(val *string) {
 	if err := j.validateSetCreateDispositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetCreateDisposition(val *stri
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetEncoding(val *string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetEncoding(val *string) {
 	if err := j.validateSetEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetEncoding(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetFieldDelimiter(val *string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetFieldDelimiter(val *string) {
 	if err := j.validateSetFieldDelimiterParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetFieldDelimiter(val *string)
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetIgnoreUnknownValues(val interface{}) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetIgnoreUnknownValues(val any) {
 	if err := j.validateSetIgnoreUnknownValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetIgnoreUnknownValues(val int
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetInternalValue(val *BigqueryJobLoad) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetInternalValue(val *BigqueryJobLoad) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetInternalValue(val *Bigquery
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetJsonExtension(val *string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetJsonExtension(val *string) {
 	if err := j.validateSetJsonExtensionParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetJsonExtension(val *string) 
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetMaxBadRecords(val *float64) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetMaxBadRecords(val *float64) {
 	if err := j.validateSetMaxBadRecordsParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetMaxBadRecords(val *float64)
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetNullMarker(val *string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetNullMarker(val *string) {
 	if err := j.validateSetNullMarkerParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetNullMarker(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetProjectionFields(val *[]*string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetProjectionFields(val *[]*string) {
 	if err := j.validateSetProjectionFieldsParameters(val); err != nil {
 		panic(err)
 	}
@@ -830,7 +829,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetProjectionFields(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetQuote(val *string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetQuote(val *string) {
 	if err := j.validateSetQuoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -841,7 +840,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetQuote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetSchemaUpdateOptions(val *[]*string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetSchemaUpdateOptions(val *[]*string) {
 	if err := j.validateSetSchemaUpdateOptionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -852,7 +851,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetSchemaUpdateOptions(val *[]
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetSkipLeadingRows(val *float64) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetSkipLeadingRows(val *float64) {
 	if err := j.validateSetSkipLeadingRowsParameters(val); err != nil {
 		panic(err)
 	}
@@ -863,7 +862,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetSkipLeadingRows(val *float6
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetSourceFormat(val *string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetSourceFormat(val *string) {
 	if err := j.validateSetSourceFormatParameters(val); err != nil {
 		panic(err)
 	}
@@ -874,7 +873,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetSourceFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetSourceUris(val *[]*string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetSourceUris(val *[]*string) {
 	if err := j.validateSetSourceUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,7 +884,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetSourceUris(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -896,7 +895,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -907,7 +906,7 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobLoadOutputReference)SetWriteDisposition(val *string) {
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) SetWriteDisposition(val *string) {
 	if err := j.validateSetWriteDispositionParameters(val); err != nil {
 		panic(err)
 	}
@@ -931,16 +930,16 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -972,7 +971,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,7 +1096,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) InterpolationForAttribute(pro
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1111,7 +1110,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) PutDestinationEncryptionConfi
 	_jsii_.InvokeVoid(
 		b,
 		"putDestinationEncryptionConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) PutDestinationTable(value *Bi
 	_jsii_.InvokeVoid(
 		b,
 		"putDestinationTable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1133,7 +1132,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) PutParquetOptions(value *Bigq
 	_jsii_.InvokeVoid(
 		b,
 		"putParquetOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1144,7 +1143,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) PutTimePartitioning(value *Bi
 	_jsii_.InvokeVoid(
 		b,
 		"putTimePartitioning",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1300,16 +1299,16 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) ResetWriteDisposition() {
 	)
 }
 
-func (b *jsiiProxy_BigqueryJobLoadOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryJobLoadOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1328,4 +1327,3 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) ToString() *string {
 
 	return returns
 }
-

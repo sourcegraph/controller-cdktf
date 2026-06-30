@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataprocAutoscalingPolicySecondaryWorkerConfigOutputReferencePar
 
 	return nil
 }
-

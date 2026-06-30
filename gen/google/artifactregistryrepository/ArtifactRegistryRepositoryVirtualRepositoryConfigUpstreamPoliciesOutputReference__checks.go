@@ -98,7 +98,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoli
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoli
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicie
 
 	return nil
 }
-

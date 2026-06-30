@@ -34,7 +34,7 @@ func (v *jsiiProxy_VmwareengineExternalAccessRuleDestinationIpRangesList) valida
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRuleDestinationIpRangesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineExternalAccessRuleDestinationIpRangesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewVmwareengineExternalAccessRuleDestinationIpRangesListParameters(
 
 	return nil
 }
-

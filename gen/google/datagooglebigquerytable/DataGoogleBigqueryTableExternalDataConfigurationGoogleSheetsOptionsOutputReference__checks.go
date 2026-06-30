@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationGoogleSheetsO
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBigqueryTableExternalDataConfigurationGoogleSheetsOpti
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoggingLogScope) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (l *jsiiProxy_LoggingLogScope) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoggingLogScope) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoggingLogScope) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (l *jsiiProxy_LoggingLogScope) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoggingLogScope) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateLoggingLogScope_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateLoggingLogScope_IsConstructParameters(x interface{}) error {
+func validateLoggingLogScope_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateLoggingLogScope_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLoggingLogScope_IsTerraformElementParameters(x interface{}) error {
+func validateLoggingLogScope_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateLoggingLogScope_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLoggingLogScope_IsTerraformResourceParameters(x interface{}) error {
+func validateLoggingLogScope_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateLoggingLogScope_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLogScope) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingLogScope) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_LoggingLogScope) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLogScope) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingLogScope) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_LoggingLogScope) validateSetParentParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLogScope) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoggingLogScope) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewLoggingLogScopeParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

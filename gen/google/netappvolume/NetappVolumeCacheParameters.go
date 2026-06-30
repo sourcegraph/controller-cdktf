@@ -1,6 +1,5 @@
 package netappvolume
 
-
 type NetappVolumeCacheParameters struct {
 	// cache_config block.
 	//
@@ -9,7 +8,7 @@ type NetappVolumeCacheParameters struct {
 	// Optional. Field indicating whether cache volume as global file lock enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#enable_global_file_lock NetappVolume#enable_global_file_lock}
-	EnableGlobalFileLock interface{} `field:"optional" json:"enableGlobalFileLock" yaml:"enableGlobalFileLock"`
+	EnableGlobalFileLock any `field:"optional" json:"enableGlobalFileLock" yaml:"enableGlobalFileLock"`
 	// Required. Name of the origin volume's ONTAP cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
@@ -33,4 +32,3 @@ type NetappVolumeCacheParameters struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
 	PeerVolumeName *string `field:"optional" json:"peerVolumeName" yaml:"peerVolumeName"`
 }
-

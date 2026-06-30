@@ -15,9 +15,9 @@ type DataFusionInstanceAcceleratorsOutputReference interface {
 	AcceleratorTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type DataFusionInstanceAcceleratorsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -46,7 +46,7 @@ type DataFusionInstanceAcceleratorsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type DataFusionInstanceAcceleratorsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) AcceleratorTyp
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewDataFusionInstanceAcceleratorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataFusionInstanceAcceleratorsOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewDataFusionInstanceAcceleratorsOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewDataFusionInstanceAcceleratorsOutputReference_Override(d DataFusionInsta
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetAcceleratorType(val *string) {
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) SetAcceleratorType(val *string) {
 	if err := j.validateSetAcceleratorTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetAcceleratorT
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetState(val *string) {
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetState(val *s
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) InterpolationF
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsOutputReference) ToString() *st
 
 	return returns
 }
-

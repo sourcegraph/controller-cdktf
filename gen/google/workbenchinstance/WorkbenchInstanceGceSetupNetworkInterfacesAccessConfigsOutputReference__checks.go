@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutput
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutput
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewWorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputRef
 
 	return nil
 }
-

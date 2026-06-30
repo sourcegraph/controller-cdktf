@@ -98,7 +98,7 @@ func (m *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaClusterRebalanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewManagedKafkaClusterRebalanceConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

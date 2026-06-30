@@ -12,9 +12,9 @@ type ComputePacketMirroringMirroredResourcesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,11 +28,11 @@ type ComputePacketMirroringMirroredResourcesOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Instances() ComputePacketMirroringMirroredResourcesInstancesList
-	InstancesInput() interface{}
+	InstancesInput() any
 	InternalValue() *ComputePacketMirroringMirroredResources
 	SetInternalValue(val *ComputePacketMirroringMirroredResources)
 	Subnetworks() ComputePacketMirroringMirroredResourcesSubnetworksList
-	SubnetworksInput() interface{}
+	SubnetworksInput() any
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -47,7 +47,7 @@ type ComputePacketMirroringMirroredResourcesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -68,14 +68,14 @@ type ComputePacketMirroringMirroredResourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutInstances(value interface{})
-	PutSubnetworks(value interface{})
+	PutInstances(value any)
+	PutSubnetworks(value any)
 	ResetInstances()
 	ResetSubnetworks()
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) Insta
 	return returns
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) InstancesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) InstancesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"instancesInput",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) Subne
 	return returns
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) SubnetworksInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) SubnetworksInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"subnetworksInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) Terra
 	return returns
 }
 
-
 func NewComputePacketMirroringMirroredResourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputePacketMirroringMirroredResourcesOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewComputePacketMirroringMirroredResourcesOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewComputePacketMirroringMirroredResourcesOutputReference_Override(c Comput
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetInternalValue(val *ComputePacketMirroringMirroredResources) {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) SetInternalValue(val *ComputePacketMirroringMirroredResources) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetTags(val *[]*string) {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetTag
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,16 +324,16 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) Compu
 	return returns
 }
 
-func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetLi
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,7 +429,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -446,7 +445,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -462,7 +461,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,32 +490,32 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) Inter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) PutInstances(value interface{}) {
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) PutInstances(value any) {
 	if err := c.validatePutInstancesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putInstances",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) PutSubnetworks(value interface{}) {
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) PutSubnetworks(value any) {
 	if err := c.validatePutSubnetworksParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSubnetworks",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesOutputReference) ToStr
 
 	return returns
 }
-

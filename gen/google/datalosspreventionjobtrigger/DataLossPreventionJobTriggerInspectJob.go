@@ -1,6 +1,5 @@
 package datalosspreventionjobtrigger
 
-
 type DataLossPreventionJobTriggerInspectJob struct {
 	// storage_config block.
 	//
@@ -9,7 +8,7 @@ type DataLossPreventionJobTriggerInspectJob struct {
 	// actions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_job_trigger#actions DataLossPreventionJobTrigger#actions}
-	Actions interface{} `field:"optional" json:"actions" yaml:"actions"`
+	Actions any `field:"optional" json:"actions" yaml:"actions"`
 	// inspect_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_job_trigger#inspect_config DataLossPreventionJobTrigger#inspect_config}
@@ -19,4 +18,3 @@ type DataLossPreventionJobTriggerInspectJob struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_job_trigger#inspect_template_name DataLossPreventionJobTrigger#inspect_template_name}
 	InspectTemplateName *string `field:"optional" json:"inspectTemplateName" yaml:"inspectTemplateName"`
 }
-

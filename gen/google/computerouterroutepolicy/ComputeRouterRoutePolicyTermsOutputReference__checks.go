@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) validateInterpo
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) validatePutActionsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) validatePutActionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (c *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -272,4 +272,3 @@ func validateNewComputeRouterRoutePolicyTermsOutputReferenceParameters(terraform
 
 	return nil
 }
-

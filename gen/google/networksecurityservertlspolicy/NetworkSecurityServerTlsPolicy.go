@@ -12,21 +12,21 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_server_tls_policy google_network_security_server_tls_policy}.
 type NetworkSecurityServerTlsPolicy interface {
 	cdktf.TerraformResource
-	AllowOpen() interface{}
-	SetAllowOpen(val interface{})
-	AllowOpenInput() interface{}
+	AllowOpen() any
+	SetAllowOpen(val any)
+	AllowOpenInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -72,30 +72,30 @@ type NetworkSecurityServerTlsPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServerCertificate() NetworkSecurityServerTlsPolicyServerCertificateOutputReference
 	ServerCertificateInput() *NetworkSecurityServerTlsPolicyServerCertificate
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetworkSecurityServerTlsPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -113,7 +113,7 @@ type NetworkSecurityServerTlsPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -125,7 +125,7 @@ type NetworkSecurityServerTlsPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type NetworkSecurityServerTlsPolicy interface {
 	ResetProject()
 	ResetServerCertificate()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkSecurityServerTlsPolicy
@@ -165,8 +165,8 @@ type jsiiProxy_NetworkSecurityServerTlsPolicy struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) AllowOpen() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) AllowOpen() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowOpen",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) AllowOpen() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) AllowOpenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) AllowOpenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowOpenInput",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -205,8 +205,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -455,8 +455,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) TerraformLabels() cdktf.Strin
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -545,8 +545,8 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) Timeouts() NetworkSecuritySer
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -565,7 +565,6 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_server_tls_policy google_network_security_server_tls_policy} Resource.
 func NewNetworkSecurityServerTlsPolicy(scope constructs.Construct, id *string, config *NetworkSecurityServerTlsPolicyConfig) NetworkSecurityServerTlsPolicy {
 	_init_.Initialize()
@@ -577,7 +576,7 @@ func NewNetworkSecurityServerTlsPolicy(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -590,12 +589,12 @@ func NewNetworkSecurityServerTlsPolicy_Override(n NetworkSecurityServerTlsPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetAllowOpen(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetAllowOpen(val any) {
 	if err := j.validateSetAllowOpenParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetAllowOpen(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -636,7 +635,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetDescription(val *string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -655,7 +654,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetId(val *string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetLabels(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetName(val *string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetProject(val *string) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -729,7 +728,7 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -752,7 +751,7 @@ func NetworkSecurityServerTlsPolicy_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func NetworkSecurityServerTlsPolicy_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkSecurityServerTlsPolicy_IsConstruct(x interface{}) *bool {
+func NetworkSecurityServerTlsPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkSecurityServerTlsPolicy_IsConstructParameters(x); err != nil {
@@ -787,7 +786,7 @@ func NetworkSecurityServerTlsPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func NetworkSecurityServerTlsPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkSecurityServerTlsPolicy_IsTerraformElement(x interface{}) *bool {
+func NetworkSecurityServerTlsPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkSecurityServerTlsPolicy_IsTerraformElementParameters(x); err != nil {
@@ -806,7 +805,7 @@ func NetworkSecurityServerTlsPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func NetworkSecurityServerTlsPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkSecurityServerTlsPolicy_IsTerraformResource(x interface{}) *bool {
+func NetworkSecurityServerTlsPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkSecurityServerTlsPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -825,7 +824,7 @@ func NetworkSecurityServerTlsPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkSecurityServerTlsPolicy.NetworkSecurityServerTlsPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -850,31 +849,31 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,7 +953,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -970,7 +969,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -986,7 +985,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1002,15 +1001,15 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1029,7 +1028,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1042,7 +1041,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1056,18 +1055,18 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) PutMtlsPolicy(value *NetworkS
 	_jsii_.InvokeVoid(
 		n,
 		"putMtlsPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) PutServerCertificate(value *N
 	_jsii_.InvokeVoid(
 		n,
 		"putServerCertificate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1122,7 +1121,7 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) PutTimeouts(value *NetworkSec
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1206,8 +1205,8 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1219,8 +1218,8 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1232,8 +1231,8 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1245,8 +1244,8 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1271,8 +1270,8 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1283,4 +1282,3 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

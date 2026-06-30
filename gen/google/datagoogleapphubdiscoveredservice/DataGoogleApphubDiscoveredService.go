@@ -15,11 +15,11 @@ type DataGoogleApphubDiscoveredService interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,7 +53,7 @@ type DataGoogleApphubDiscoveredService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceProperties() DataGoogleApphubDiscoveredServiceServicePropertiesList
 	ServiceReference() DataGoogleApphubDiscoveredServiceServiceReferenceList
 	ServiceUri() *string
@@ -62,13 +62,13 @@ type DataGoogleApphubDiscoveredService interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataGoogleApphubDiscoveredService interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleApphubDiscoveredService
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -364,7 +364,6 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService) TerraformResourceType() *s
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/apphub_discovered_service google_apphub_discovered_service} Data Source.
 func NewDataGoogleApphubDiscoveredService(scope constructs.Construct, id *string, config *DataGoogleApphubDiscoveredServiceConfig) DataGoogleApphubDiscoveredService {
 	_init_.Initialize()
@@ -376,7 +375,7 @@ func NewDataGoogleApphubDiscoveredService(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -389,12 +388,12 @@ func NewDataGoogleApphubDiscoveredService_Override(d DataGoogleApphubDiscoveredS
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -473,7 +472,7 @@ func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleApphubDiscoveredService)SetServiceUri(val *string) {
+func (j *jsiiProxy_DataGoogleApphubDiscoveredService) SetServiceUri(val *string) {
 	if err := j.validateSetServiceUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,7 +495,7 @@ func DataGoogleApphubDiscoveredService_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func DataGoogleApphubDiscoveredService_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleApphubDiscoveredService_IsConstruct(x interface{}) *bool {
+func DataGoogleApphubDiscoveredService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleApphubDiscoveredService_IsConstructParameters(x); err != nil {
@@ -531,7 +530,7 @@ func DataGoogleApphubDiscoveredService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func DataGoogleApphubDiscoveredService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleApphubDiscoveredService_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleApphubDiscoveredService_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleApphubDiscoveredService_IsTerraformDataSourceParameters(x); err != nil {
@@ -550,7 +549,7 @@ func DataGoogleApphubDiscoveredService_IsTerraformDataSource(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredService",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -558,7 +557,7 @@ func DataGoogleApphubDiscoveredService_IsTerraformDataSource(x interface{}) *boo
 }
 
 // Experimental.
-func DataGoogleApphubDiscoveredService_IsTerraformElement(x interface{}) *bool {
+func DataGoogleApphubDiscoveredService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleApphubDiscoveredService_IsTerraformElementParameters(x); err != nil {
@@ -569,7 +568,7 @@ func DataGoogleApphubDiscoveredService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleApphubDiscoveredService.DataGoogleApphubDiscoveredService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -587,27 +586,27 @@ func DataGoogleApphubDiscoveredService_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredService) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleApphubDiscoveredService) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) InterpolationForAttribute(
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleApphubDiscoveredService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleApphubDiscoveredService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -819,8 +818,8 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -832,8 +831,8 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ToHclTerraform() interface
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -858,8 +857,8 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -870,4 +869,3 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredService) ToTerraform() interface{} 
 
 	return returns
 }
-

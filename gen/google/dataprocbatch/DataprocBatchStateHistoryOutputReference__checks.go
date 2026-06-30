@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocBatchStateHistoryOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchStateHistoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocBatchStateHistoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocBatchStateHistoryOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

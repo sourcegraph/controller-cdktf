@@ -90,7 +90,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validateInterpol
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutAdBreaksParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutAdBreaksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutAdBre
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutEditListParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutEditListParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutEditL
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutElementaryStreamsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutElementaryStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutEleme
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutEncryptionsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutEncryptionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutEncry
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutInputsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutInputsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutInput
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutManifestsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutManifestsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -276,7 +276,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutManif
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutMuxStreamsParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutMuxStreamsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -318,7 +318,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutOutpu
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutOverlaysParameters(value interface{}) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validatePutOverlaysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -368,7 +368,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -468,4 +468,3 @@ func validateNewTranscoderJobTemplateConfigAOutputReferenceParameters(terraformR
 
 	return nil
 }
-

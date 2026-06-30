@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClu
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewRedisClusterCrossClusterReplicationConfigMembershipPrimaryCluste
 
 	return nil
 }
-

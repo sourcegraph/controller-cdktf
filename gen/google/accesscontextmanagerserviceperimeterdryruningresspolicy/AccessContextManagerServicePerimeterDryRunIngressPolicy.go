@@ -16,15 +16,15 @@ type AccessContextManagerServicePerimeterDryRunIngressPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,19 +59,19 @@ type AccessContextManagerServicePerimeterDryRunIngressPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AccessContextManagerServicePerimeterDryRunIngressPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -79,9 +79,9 @@ type AccessContextManagerServicePerimeterDryRunIngressPolicy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type AccessContextManagerServicePerimeterDryRunIngressPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type AccessContextManagerServicePerimeterDryRunIngressPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type AccessContextManagerServicePerimeterDryRunIngressPolicy interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	ResetTitle()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AccessContextManagerServicePerimeterDryRunIngressPolicy
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Cdkt
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Conn
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Cons
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Prov
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Prov
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Terr
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Time
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -447,7 +447,6 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Titl
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_service_perimeter_dry_run_ingress_policy google_access_context_manager_service_perimeter_dry_run_ingress_policy} Resource.
 func NewAccessContextManagerServicePerimeterDryRunIngressPolicy(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterDryRunIngressPolicyConfig) AccessContextManagerServicePerimeterDryRunIngressPolicy {
 	_init_.Initialize()
@@ -459,7 +458,7 @@ func NewAccessContextManagerServicePerimeterDryRunIngressPolicy(scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunIngressPolicy.AccessContextManagerServicePerimeterDryRunIngressPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -472,12 +471,12 @@ func NewAccessContextManagerServicePerimeterDryRunIngressPolicy_Override(a Acces
 
 	_jsii_.Create(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunIngressPolicy.AccessContextManagerServicePerimeterDryRunIngressPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetCo
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetCo
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetDe
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -515,7 +514,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetFo
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetId(val *string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetId
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetLi
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetPerimeter(val *string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetPerimeter(val *string) {
 	if err := j.validateSetPerimeterParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetPe
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -556,7 +555,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetPr
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetPr
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy)SetTitle(val *string) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func AccessContextManagerServicePerimeterDryRunIngressPolicy_GenerateConfigForIm
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunIngressPolicy.AccessContextManagerServicePerimeterDryRunIngressPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func AccessContextManagerServicePerimeterDryRunIngressPolicy_GenerateConfigForIm
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsConstruct(x interface{}) *bool {
+func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsConstructParameters(x); err != nil {
@@ -625,7 +624,7 @@ func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsConstruct(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunIngressPolicy.AccessContextManagerServicePerimeterDryRunIngressPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsConstruct(x inter
 }
 
 // Experimental.
-func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformElement(x interface{}) *bool {
+func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformElementParameters(x); err != nil {
@@ -644,7 +643,7 @@ func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformElement(
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunIngressPolicy.AccessContextManagerServicePerimeterDryRunIngressPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformElement(
 }
 
 // Experimental.
-func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformResource(x interface{}) *bool {
+func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -663,7 +662,7 @@ func AccessContextManagerServicePerimeterDryRunIngressPolicy_IsTerraformResource
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunIngressPolicy.AccessContextManagerServicePerimeterDryRunIngressPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -688,31 +687,31 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) AddM
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetB
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetL
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetN
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,15 +839,15 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) GetS
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -867,7 +866,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Impo
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -880,7 +879,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Inte
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -894,18 +893,18 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Move
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -916,7 +915,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Move
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -927,7 +926,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Over
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -938,7 +937,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) PutI
 	_jsii_.InvokeVoid(
 		a,
 		"putIngressFrom",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -949,7 +948,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) PutI
 	_jsii_.InvokeVoid(
 		a,
 		"putIngressTo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -960,7 +959,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) PutT
 	_jsii_.InvokeVoid(
 		a,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1012,8 +1011,8 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Rese
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1025,8 +1024,8 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Synt
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1038,8 +1037,8 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Synt
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1051,8 +1050,8 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ToHc
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1077,8 +1076,8 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ToSt
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1089,4 +1088,3 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) ToTe
 
 	return returns
 }
-

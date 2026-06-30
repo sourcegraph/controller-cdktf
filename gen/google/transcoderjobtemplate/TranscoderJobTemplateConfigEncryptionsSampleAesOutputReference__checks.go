@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSampleAesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewTranscoderJobTemplateConfigEncryptionsSampleAesOutputReferencePa
 
 	return nil
 }
-

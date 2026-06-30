@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference) validateSetAagConfigDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference) validateSetAagConfigDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewGkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReferencePara
 
 	return nil
 }
-

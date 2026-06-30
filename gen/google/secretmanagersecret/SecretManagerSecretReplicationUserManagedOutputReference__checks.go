@@ -90,7 +90,7 @@ func (s *jsiiProxy_SecretManagerSecretReplicationUserManagedOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecretReplicationUserManagedOutputReference) validatePutReplicasParameters(value interface{}) error {
+func (s *jsiiProxy_SecretManagerSecretReplicationUserManagedOutputReference) validatePutReplicasParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_SecretManagerSecretReplicationUserManagedOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretReplicationUserManagedOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecretReplicationUserManagedOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewSecretManagerSecretReplicationUserManagedOutputReferenceParamete
 
 	return nil
 }
-

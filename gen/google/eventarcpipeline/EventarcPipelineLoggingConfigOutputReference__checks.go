@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcPipelineLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEventarcPipelineLoggingConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

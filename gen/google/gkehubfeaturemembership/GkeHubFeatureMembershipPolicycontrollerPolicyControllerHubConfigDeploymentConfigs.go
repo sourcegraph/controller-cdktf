@@ -1,6 +1,5 @@
 package gkehubfeaturemembership
 
-
 type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigs struct {
 	// The name for the key in the map for which this object is mapped to in the API.
 	//
@@ -17,10 +16,9 @@ type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentC
 	// pod_tolerations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature_membership#pod_tolerations GkeHubFeatureMembership#pod_tolerations}
-	PodTolerations interface{} `field:"optional" json:"podTolerations" yaml:"podTolerations"`
+	PodTolerations any `field:"optional" json:"podTolerations" yaml:"podTolerations"`
 	// Pod replica count.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_feature_membership#replica_count GkeHubFeatureMembership#replica_count}
 	ReplicaCount *float64 `field:"optional" json:"replicaCount" yaml:"replicaCount"`
 }
-

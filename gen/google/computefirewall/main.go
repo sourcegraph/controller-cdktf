@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewall",
-		reflect.TypeOf((*ComputeFirewall)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewall](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewall{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -126,11 +126,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallAllow",
-		reflect.TypeOf((*ComputeFirewallAllow)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallAllow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallAllowList",
-		reflect.TypeOf((*ComputeFirewallAllowList)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallAllowList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewallAllowList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallAllowOutputReference",
-		reflect.TypeOf((*ComputeFirewallAllowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallAllowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewallAllowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,15 +189,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallConfig",
-		reflect.TypeOf((*ComputeFirewallConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallDeny",
-		reflect.TypeOf((*ComputeFirewallDeny)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallDeny](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallDenyList",
-		reflect.TypeOf((*ComputeFirewallDenyList)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallDenyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewallDenyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -219,7 +219,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallDenyOutputReference",
-		reflect.TypeOf((*ComputeFirewallDenyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallDenyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -248,7 +248,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewallDenyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -256,11 +256,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallLogConfig",
-		reflect.TypeOf((*ComputeFirewallLogConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallLogConfigOutputReference",
-		reflect.TypeOf((*ComputeFirewallLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -286,7 +286,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewallLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -294,11 +294,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallParams",
-		reflect.TypeOf((*ComputeFirewallParams)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallParamsOutputReference",
-		reflect.TypeOf((*ComputeFirewallParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -325,7 +325,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewallParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -333,11 +333,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallTimeouts",
-		reflect.TypeOf((*ComputeFirewallTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeFirewall.ComputeFirewallTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeFirewallTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeFirewallTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -370,7 +370,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeFirewallTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

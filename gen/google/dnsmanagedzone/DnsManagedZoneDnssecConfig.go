@@ -1,11 +1,10 @@
 package dnsmanagedzone
 
-
 type DnsManagedZoneDnssecConfig struct {
 	// default_key_specs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_managed_zone#default_key_specs DnsManagedZone#default_key_specs}
-	DefaultKeySpecs interface{} `field:"optional" json:"defaultKeySpecs" yaml:"defaultKeySpecs"`
+	DefaultKeySpecs any `field:"optional" json:"defaultKeySpecs" yaml:"defaultKeySpecs"`
 	// Identifies what kind of resource this is.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_managed_zone#kind DnsManagedZone#kind}
@@ -21,4 +20,3 @@ type DnsManagedZoneDnssecConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dns_managed_zone#state DnsManagedZone#state}
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
-

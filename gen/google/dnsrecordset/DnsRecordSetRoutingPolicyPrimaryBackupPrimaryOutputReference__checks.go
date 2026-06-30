@@ -90,7 +90,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference) validatePutInternalLoadBalancersParameters(value interface{}) error {
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference) validatePutInternalLoadBalancersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReferencePara
 
 	return nil
 }
-

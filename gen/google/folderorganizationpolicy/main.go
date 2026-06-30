@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy",
-		reflect.TypeOf((*FolderOrganizationPolicy)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderOrganizationPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,11 +89,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyBooleanPolicy",
-		reflect.TypeOf((*FolderOrganizationPolicyBooleanPolicy)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyBooleanPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyBooleanPolicyOutputReference",
-		reflect.TypeOf((*FolderOrganizationPolicyBooleanPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyBooleanPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -119,7 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderOrganizationPolicyBooleanPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -127,19 +127,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig",
-		reflect.TypeOf((*FolderOrganizationPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicy",
-		reflect.TypeOf((*FolderOrganizationPolicyListPolicy)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyListPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyAllow",
-		reflect.TypeOf((*FolderOrganizationPolicyListPolicyAllow)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyListPolicyAllow](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyAllowOutputReference",
-		reflect.TypeOf((*FolderOrganizationPolicyListPolicyAllowOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyListPolicyAllowOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
 			_jsii_.MemberProperty{JsiiProperty: "allInput", GoGetter: "AllInput"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderOrganizationPolicyListPolicyAllowOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -177,11 +177,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDeny",
-		reflect.TypeOf((*FolderOrganizationPolicyListPolicyDeny)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyListPolicyDeny](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDenyOutputReference",
-		reflect.TypeOf((*FolderOrganizationPolicyListPolicyDenyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyListPolicyDenyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "all", GoGetter: "All"},
 			_jsii_.MemberProperty{JsiiProperty: "allInput", GoGetter: "AllInput"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -219,7 +219,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyOutputReference",
-		reflect.TypeOf((*FolderOrganizationPolicyListPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyListPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
 			_jsii_.MemberProperty{JsiiProperty: "allowInput", GoGetter: "AllowInput"},
@@ -257,7 +257,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderOrganizationPolicyListPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -265,11 +265,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicy",
-		reflect.TypeOf((*FolderOrganizationPolicyRestorePolicy)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyRestorePolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicyOutputReference",
-		reflect.TypeOf((*FolderOrganizationPolicyRestorePolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyRestorePolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -303,11 +303,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts",
-		reflect.TypeOf((*FolderOrganizationPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*FolderOrganizationPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FolderOrganizationPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -343,7 +343,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderOrganizationPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

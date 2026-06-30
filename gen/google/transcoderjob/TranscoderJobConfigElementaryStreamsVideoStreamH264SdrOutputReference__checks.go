@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputR
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewTranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputRefe
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
-		reflect.TypeOf((*ComputeTargetHttpProxy)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetHttpProxy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlMap", GoGetter: "UrlMap"},
 			_jsii_.MemberProperty{JsiiProperty: "urlMapInput", GoGetter: "UrlMapInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeTargetHttpProxy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxyConfig",
-		reflect.TypeOf((*ComputeTargetHttpProxyConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetHttpProxyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxyTimeouts",
-		reflect.TypeOf((*ComputeTargetHttpProxyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetHttpProxyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxyTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeTargetHttpProxyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeTargetHttpProxyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeTargetHttpProxyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

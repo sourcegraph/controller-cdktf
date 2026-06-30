@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey",
-		reflect.TypeOf((*OsLoginSshPublicKey)(nil)).Elem(),
+		reflect.TypeFor[OsLoginSshPublicKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OsLoginSshPublicKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig",
-		reflect.TypeOf((*OsLoginSshPublicKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[OsLoginSshPublicKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts",
-		reflect.TypeOf((*OsLoginSshPublicKeyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[OsLoginSshPublicKeyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeoutsOutputReference",
-		reflect.TypeOf((*OsLoginSshPublicKeyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[OsLoginSshPublicKeyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

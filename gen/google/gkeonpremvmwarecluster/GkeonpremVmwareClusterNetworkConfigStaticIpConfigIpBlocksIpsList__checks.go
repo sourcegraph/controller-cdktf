@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsL
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsList
 
 	return nil
 }
-

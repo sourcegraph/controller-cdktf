@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeploymentManagerDeploymentTargetConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTargetConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentManagerDeploymentTargetConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeploymentManagerDeploymentTargetConfigOutputReferenceParameters
 
 	return nil
 }
-

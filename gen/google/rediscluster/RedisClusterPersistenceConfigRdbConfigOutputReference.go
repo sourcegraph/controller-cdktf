@@ -12,9 +12,9 @@ type RedisClusterPersistenceConfigRdbConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type RedisClusterPersistenceConfigRdbConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type RedisClusterPersistenceConfigRdbConfigOutputReference interface {
 	ResetRdbSnapshotStartTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) Terraf
 	return returns
 }
 
-
 func NewRedisClusterPersistenceConfigRdbConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RedisClusterPersistenceConfigRdbConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewRedisClusterPersistenceConfigRdbConfigOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisClusterPersistenceConfigRdbConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewRedisClusterPersistenceConfigRdbConfigOutputReference_Override(r RedisCl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisClusterPersistenceConfigRdbConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetInternalValue(val *RedisClusterPersistenceConfigRdbConfig) {
+func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) SetInternalValue(val *RedisClusterPersistenceConfigRdbConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetRdbSnapshotPeriod(val *string) {
+func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) SetRdbSnapshotPeriod(val *string) {
 	if err := j.validateSetRdbSnapshotPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetRdbS
 	)
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetRdbSnapshotStartTime(val *string) {
+func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) SetRdbSnapshotStartTime(val *string) {
 	if err := j.validateSetRdbSnapshotStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetRdbS
 	)
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) Comput
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetBoo
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetLis
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetNum
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) GetStr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) Interp
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) ResetR
 	)
 }
 
-func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigRdbConfigOutputReference) ToStri
 
 	return returns
 }
-

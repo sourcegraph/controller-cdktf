@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiIndexEndpointTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewVertexAiIndexEndpointTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

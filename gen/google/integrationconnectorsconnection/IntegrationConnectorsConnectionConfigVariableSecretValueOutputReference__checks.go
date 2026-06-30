@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableSecretValueOutpu
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIntegrationConnectorsConnectionConfigVariableSecretValueOutputRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivat
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewVertexAiEndpointWithModelGardenDeploymentEndpointConfigPrivateSe
 
 	return nil
 }
-

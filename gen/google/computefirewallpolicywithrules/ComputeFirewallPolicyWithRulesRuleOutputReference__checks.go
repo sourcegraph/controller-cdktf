@@ -101,7 +101,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validatePutTargetSecureTagParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validatePutTargetSecureTagParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -148,7 +148,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,7 +229,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetEnableLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetEnableLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -349,7 +349,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetTlsInspectParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateSetTlsInspectParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -388,4 +388,3 @@ func validateNewComputeFirewallPolicyWithRulesRuleOutputReferenceParameters(terr
 
 	return nil
 }
-

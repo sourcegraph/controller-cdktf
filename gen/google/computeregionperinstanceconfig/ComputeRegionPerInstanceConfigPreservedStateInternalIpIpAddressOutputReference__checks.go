@@ -106,7 +106,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddre
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressO
 
 	return nil
 }
-

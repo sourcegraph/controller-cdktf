@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemcacheInstanceNodeConfigOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_MemcacheInstanceNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemcacheInstanceNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMemcacheInstanceNodeConfigOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

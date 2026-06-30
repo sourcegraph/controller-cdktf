@@ -12,9 +12,9 @@ type IamProjectsPolicyBindingConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type IamProjectsPolicyBindingConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type IamProjectsPolicyBindingConditionOutputReference interface {
 	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_IamProjectsPolicyBindingConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) TitleInput(
 	return returns
 }
 
-
 func NewIamProjectsPolicyBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IamProjectsPolicyBindingConditionOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewIamProjectsPolicyBindingConditionOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewIamProjectsPolicyBindingConditionOutputReference_Override(i IamProjectsP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetDescripti
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetExpressio
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetInternalValue(val *IamProjectsPolicyBindingCondition) {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) SetInternalValue(val *IamProjectsPolicyBindingCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetLocation(
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) ComputeFqn(
 	return returns
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetListAttr
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetStringAt
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) GetStringMa
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) Interpolati
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) ResetTitle(
 	)
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) ToString() 
 
 	return returns
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateAddMoveTargetParamete
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateMoveFromIdParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateComputeRegionPerInstanceConfig_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateComputeRegionPerInstanceConfig_IsConstructParameters(x interface{}) error {
+func validateComputeRegionPerInstanceConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateComputeRegionPerInstanceConfig_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateComputeRegionPerInstanceConfig_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionPerInstanceConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateComputeRegionPerInstanceConfig_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateComputeRegionPerInstanceConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionPerInstanceConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateComputeRegionPerInstanceConfig_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -466,7 +466,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetRegionInstanceGrou
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetRemoveInstanceOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetRemoveInstanceOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -486,7 +486,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetRemoveInstanceOnDe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetRemoveInstanceStateOnDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) validateSetRemoveInstanceStateOnDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -524,4 +524,3 @@ func validateNewComputeRegionPerInstanceConfigParameters(scope constructs.Constr
 
 	return nil
 }
-

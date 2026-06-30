@@ -28,17 +28,17 @@ type ContainerAzureCluster interface {
 	SetClient(val *string)
 	ClientInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ControlPlane() ContainerAzureClusterControlPlaneOutputReference
 	ControlPlaneInput() *ContainerAzureClusterControlPlane
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -85,11 +85,11 @@ type ContainerAzureCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	ResourceGroupId() *string
 	SetResourceGroupId(val *string)
@@ -98,11 +98,11 @@ type ContainerAzureCluster interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ContainerAzureClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Uid() *string
 	UpdateTime() *string
 	WorkloadIdentityConfig() ContainerAzureClusterWorkloadIdentityConfigList
@@ -110,9 +110,9 @@ type ContainerAzureCluster interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -130,7 +130,7 @@ type ContainerAzureCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -142,7 +142,7 @@ type ContainerAzureCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -165,17 +165,17 @@ type ContainerAzureCluster interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ContainerAzureCluster
@@ -293,8 +293,8 @@ func (j *jsiiProxy_ContainerAzureCluster) ClientInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAzureCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_ContainerAzureCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerAzureCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_ContainerAzureCluster) ControlPlaneInput() *ContainerAzureClu
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAzureCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -593,8 +593,8 @@ func (j *jsiiProxy_ContainerAzureCluster) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ContainerAzureCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -603,8 +603,8 @@ func (j *jsiiProxy_ContainerAzureCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAzureCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -663,8 +663,8 @@ func (j *jsiiProxy_ContainerAzureCluster) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerAzureCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -693,8 +693,8 @@ func (j *jsiiProxy_ContainerAzureCluster) Timeouts() ContainerAzureClusterTimeou
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAzureCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -733,7 +733,6 @@ func (j *jsiiProxy_ContainerAzureCluster) WorkloadIdentityConfig() ContainerAzur
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
 func NewContainerAzureCluster(scope constructs.Construct, id *string, config *ContainerAzureClusterConfig) ContainerAzureCluster {
 	_init_.Initialize()
@@ -745,7 +744,7 @@ func NewContainerAzureCluster(scope constructs.Construct, id *string, config *Co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -758,12 +757,12 @@ func NewContainerAzureCluster_Override(c ContainerAzureCluster, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetAnnotations(val *map[string]*string) {
 	if err := j.validateSetAnnotationsParameters(val); err != nil {
 		panic(err)
 	}
@@ -774,7 +773,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetAnnotations(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetAzureRegion(val *string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetAzureRegion(val *string) {
 	if err := j.validateSetAzureRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -785,7 +784,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetAzureRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetClient(val *string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetClient(val *string) {
 	if err := j.validateSetClientParameters(val); err != nil {
 		panic(err)
 	}
@@ -796,7 +795,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetClient(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_ContainerAzureCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_ContainerAzureCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -826,7 +825,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetDescription(val *string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ContainerAzureCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -845,7 +844,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetId(val *string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -856,7 +855,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ContainerAzureCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -867,7 +866,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetLocation(val *string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -878,7 +877,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetName(val *string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -889,7 +888,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetProject(val *string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -900,7 +899,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ContainerAzureCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -908,7 +907,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ContainerAzureCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -919,7 +918,7 @@ func (j *jsiiProxy_ContainerAzureCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetResourceGroupId(val *string) {
+func (j *jsiiProxy_ContainerAzureCluster) SetResourceGroupId(val *string) {
 	if err := j.validateSetResourceGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -942,7 +941,7 @@ func ContainerAzureCluster_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -966,7 +965,7 @@ func ContainerAzureCluster_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ContainerAzureCluster_IsConstruct(x interface{}) *bool {
+func ContainerAzureCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAzureCluster_IsConstructParameters(x); err != nil {
@@ -977,7 +976,7 @@ func ContainerAzureCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -985,7 +984,7 @@ func ContainerAzureCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerAzureCluster_IsTerraformElement(x interface{}) *bool {
+func ContainerAzureCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAzureCluster_IsTerraformElementParameters(x); err != nil {
@@ -996,7 +995,7 @@ func ContainerAzureCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func ContainerAzureCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerAzureCluster_IsTerraformResource(x interface{}) *bool {
+func ContainerAzureCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAzureCluster_IsTerraformResourceParameters(x); err != nil {
@@ -1015,7 +1014,7 @@ func ContainerAzureCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAzureCluster.ContainerAzureCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1040,31 +1039,31 @@ func (c *jsiiProxy_ContainerAzureCluster) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ContainerAzureCluster) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ContainerAzureCluster) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ContainerAzureCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAzureCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,7 +1079,7 @@ func (c *jsiiProxy_ContainerAzureCluster) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1096,7 +1095,7 @@ func (c *jsiiProxy_ContainerAzureCluster) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1112,7 +1111,7 @@ func (c *jsiiProxy_ContainerAzureCluster) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1128,7 +1127,7 @@ func (c *jsiiProxy_ContainerAzureCluster) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1144,7 +1143,7 @@ func (c *jsiiProxy_ContainerAzureCluster) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1160,7 +1159,7 @@ func (c *jsiiProxy_ContainerAzureCluster) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1176,7 +1175,7 @@ func (c *jsiiProxy_ContainerAzureCluster) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1192,15 +1191,15 @@ func (c *jsiiProxy_ContainerAzureCluster) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAzureCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1219,7 +1218,7 @@ func (c *jsiiProxy_ContainerAzureCluster) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1232,7 +1231,7 @@ func (c *jsiiProxy_ContainerAzureCluster) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1246,18 +1245,18 @@ func (c *jsiiProxy_ContainerAzureCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ContainerAzureCluster) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ContainerAzureCluster) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1268,7 +1267,7 @@ func (c *jsiiProxy_ContainerAzureCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1279,7 +1278,7 @@ func (c *jsiiProxy_ContainerAzureCluster) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1290,7 +1289,7 @@ func (c *jsiiProxy_ContainerAzureCluster) PutAuthorization(value *ContainerAzure
 	_jsii_.InvokeVoid(
 		c,
 		"putAuthorization",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1301,7 +1300,7 @@ func (c *jsiiProxy_ContainerAzureCluster) PutAzureServicesAuthentication(value *
 	_jsii_.InvokeVoid(
 		c,
 		"putAzureServicesAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1312,7 +1311,7 @@ func (c *jsiiProxy_ContainerAzureCluster) PutControlPlane(value *ContainerAzureC
 	_jsii_.InvokeVoid(
 		c,
 		"putControlPlane",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1323,7 +1322,7 @@ func (c *jsiiProxy_ContainerAzureCluster) PutFleet(value *ContainerAzureClusterF
 	_jsii_.InvokeVoid(
 		c,
 		"putFleet",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1334,7 +1333,7 @@ func (c *jsiiProxy_ContainerAzureCluster) PutNetworking(value *ContainerAzureClu
 	_jsii_.InvokeVoid(
 		c,
 		"putNetworking",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1345,7 +1344,7 @@ func (c *jsiiProxy_ContainerAzureCluster) PutTimeouts(value *ContainerAzureClust
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1413,8 +1412,8 @@ func (c *jsiiProxy_ContainerAzureCluster) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ContainerAzureCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerAzureCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1426,8 +1425,8 @@ func (c *jsiiProxy_ContainerAzureCluster) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerAzureCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1439,8 +1438,8 @@ func (c *jsiiProxy_ContainerAzureCluster) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAzureCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1452,8 +1451,8 @@ func (c *jsiiProxy_ContainerAzureCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAzureCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1478,8 +1477,8 @@ func (c *jsiiProxy_ContainerAzureCluster) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAzureCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1490,4 +1489,3 @@ func (c *jsiiProxy_ContainerAzureCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

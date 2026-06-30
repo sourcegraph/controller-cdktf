@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateSetAllowNullHeaderParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateSetAllowNullHeaderParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateSetA
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewHealthcareHl7V2StoreParserConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

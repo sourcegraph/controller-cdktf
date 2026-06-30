@@ -34,7 +34,7 @@ func (b *jsiiProxy_BigtableGcPolicyMaxVersionList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicyMaxVersionList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicyMaxVersionList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBigtableGcPolicyMaxVersionListParameters(terraformResource cdktf
 
 	return nil
 }
-

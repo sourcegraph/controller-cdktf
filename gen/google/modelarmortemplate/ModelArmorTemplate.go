@@ -15,15 +15,15 @@ type ModelArmorTemplate interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -64,11 +64,11 @@ type ModelArmorTemplate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	TemplateId() *string
 	SetTemplateId(val *string)
 	TemplateIdInput() *string
@@ -78,19 +78,19 @@ type ModelArmorTemplate interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ModelArmorTemplateTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type ModelArmorTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type ModelArmorTemplate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type ModelArmorTemplate interface {
 	ResetProject()
 	ResetTemplateMetadata()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ModelArmorTemplate
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ModelArmorTemplate) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorTemplate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorTemplate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ModelArmorTemplate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorTemplate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ModelArmorTemplate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ModelArmorTemplate) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorTemplate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorTemplate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_ModelArmorTemplate) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorTemplate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ModelArmorTemplate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_ModelArmorTemplate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorTemplate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorTemplate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -476,8 +476,8 @@ func (j *jsiiProxy_ModelArmorTemplate) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorTemplate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ModelArmorTemplate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -506,8 +506,8 @@ func (j *jsiiProxy_ModelArmorTemplate) Timeouts() ModelArmorTemplateTimeoutsOutp
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorTemplate) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ModelArmorTemplate) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -526,7 +526,6 @@ func (j *jsiiProxy_ModelArmorTemplate) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/model_armor_template google_model_armor_template} Resource.
 func NewModelArmorTemplate(scope constructs.Construct, id *string, config *ModelArmorTemplateConfig) ModelArmorTemplate {
 	_init_.Initialize()
@@ -538,7 +537,7 @@ func NewModelArmorTemplate(scope constructs.Construct, id *string, config *Model
 
 	_jsii_.Create(
 		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -551,12 +550,12 @@ func NewModelArmorTemplate_Override(m ModelArmorTemplate, scope constructs.Const
 
 	_jsii_.Create(
 		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetConnection(val interface{}) {
+func (j *jsiiProxy_ModelArmorTemplate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetCount(val interface{}) {
+func (j *jsiiProxy_ModelArmorTemplate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ModelArmorTemplate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -586,7 +585,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ModelArmorTemplate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetId(val *string) {
+func (j *jsiiProxy_ModelArmorTemplate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ModelArmorTemplate) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ModelArmorTemplate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetLocation(val *string) {
+func (j *jsiiProxy_ModelArmorTemplate) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetProject(val *string) {
+func (j *jsiiProxy_ModelArmorTemplate) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ModelArmorTemplate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ModelArmorTemplate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_ModelArmorTemplate)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplate)SetTemplateId(val *string) {
+func (j *jsiiProxy_ModelArmorTemplate) SetTemplateId(val *string) {
 	if err := j.validateSetTemplateIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func ModelArmorTemplate_GenerateConfigForImport(scope constructs.Construct, impo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func ModelArmorTemplate_GenerateConfigForImport(scope constructs.Construct, impo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ModelArmorTemplate_IsConstruct(x interface{}) *bool {
+func ModelArmorTemplate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateModelArmorTemplate_IsConstructParameters(x); err != nil {
@@ -726,7 +725,7 @@ func ModelArmorTemplate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func ModelArmorTemplate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ModelArmorTemplate_IsTerraformElement(x interface{}) *bool {
+func ModelArmorTemplate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateModelArmorTemplate_IsTerraformElementParameters(x); err != nil {
@@ -745,7 +744,7 @@ func ModelArmorTemplate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func ModelArmorTemplate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ModelArmorTemplate_IsTerraformResource(x interface{}) *bool {
+func ModelArmorTemplate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateModelArmorTemplate_IsTerraformResourceParameters(x); err != nil {
@@ -764,7 +763,7 @@ func ModelArmorTemplate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -789,31 +788,31 @@ func (m *jsiiProxy_ModelArmorTemplate) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_ModelArmorTemplate) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_ModelArmorTemplate) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_ModelArmorTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_ModelArmorTemplate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (m *jsiiProxy_ModelArmorTemplate) GetBooleanAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (m *jsiiProxy_ModelArmorTemplate) GetBooleanMapAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (m *jsiiProxy_ModelArmorTemplate) GetListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (m *jsiiProxy_ModelArmorTemplate) GetNumberAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (m *jsiiProxy_ModelArmorTemplate) GetNumberListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (m *jsiiProxy_ModelArmorTemplate) GetNumberMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (m *jsiiProxy_ModelArmorTemplate) GetStringAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,15 +940,15 @@ func (m *jsiiProxy_ModelArmorTemplate) GetStringMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplate) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ModelArmorTemplate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -968,7 +967,7 @@ func (m *jsiiProxy_ModelArmorTemplate) ImportFrom(id *string, provider cdktf.Ter
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -981,7 +980,7 @@ func (m *jsiiProxy_ModelArmorTemplate) InterpolationForAttribute(terraformAttrib
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,18 +994,18 @@ func (m *jsiiProxy_ModelArmorTemplate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_ModelArmorTemplate) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_ModelArmorTemplate) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (m *jsiiProxy_ModelArmorTemplate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (m *jsiiProxy_ModelArmorTemplate) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (m *jsiiProxy_ModelArmorTemplate) PutFilterConfig(value *ModelArmorTemplate
 	_jsii_.InvokeVoid(
 		m,
 		"putFilterConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (m *jsiiProxy_ModelArmorTemplate) PutTemplateMetadata(value *ModelArmorTemp
 	_jsii_.InvokeVoid(
 		m,
 		"putTemplateMetadata",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1061,7 +1060,7 @@ func (m *jsiiProxy_ModelArmorTemplate) PutTimeouts(value *ModelArmorTemplateTime
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1113,8 +1112,8 @@ func (m *jsiiProxy_ModelArmorTemplate) ResetTimeouts() {
 	)
 }
 
-func (m *jsiiProxy_ModelArmorTemplate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_ModelArmorTemplate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1126,8 +1125,8 @@ func (m *jsiiProxy_ModelArmorTemplate) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_ModelArmorTemplate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1139,8 +1138,8 @@ func (m *jsiiProxy_ModelArmorTemplate) SynthesizeHclAttributes() *map[string]int
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ModelArmorTemplate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1152,8 +1151,8 @@ func (m *jsiiProxy_ModelArmorTemplate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplate) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ModelArmorTemplate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1178,8 +1177,8 @@ func (m *jsiiProxy_ModelArmorTemplate) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplate) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_ModelArmorTemplate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1190,4 +1189,3 @@ func (m *jsiiProxy_ModelArmorTemplate) ToTerraform() interface{} {
 
 	return returns
 }
-

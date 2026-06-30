@@ -17,15 +17,15 @@ type SecureSourceManagerRepositoryIamBinding interface {
 	Condition() SecureSourceManagerRepositoryIamBindingConditionOutputReference
 	ConditionInput() *SecureSourceManagerRepositoryIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type SecureSourceManagerRepositoryIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryId() *string
 	SetRepositoryId(val *string)
 	RepositoryIdInput() *string
@@ -76,16 +76,16 @@ type SecureSourceManagerRepositoryIamBinding interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type SecureSourceManagerRepositoryIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type SecureSourceManagerRepositoryIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type SecureSourceManagerRepositoryIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecureSourceManagerRepositoryIamBinding
@@ -178,8 +178,8 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ConditionInput() *Se
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) Connection() interfa
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) Provider() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) Provisioners() *[]in
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) TerraformGeneratorMe
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) TerraformResourceTyp
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding} Resource.
 func NewSecureSourceManagerRepositoryIamBinding(scope constructs.Construct, id *string, config *SecureSourceManagerRepositoryIamBindingConfig) SecureSourceManagerRepositoryIamBinding {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewSecureSourceManagerRepositoryIamBinding(scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewSecureSourceManagerRepositoryIamBinding_Override(s SecureSourceManagerRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetCount(val interfac
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetDependsOn(val *[]*
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetForEach(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetId(val *string) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetLifecycle(val *cdk
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetLocation(val *string) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetLocation(val *stri
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetMembers(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetProject(val *strin
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetProvider(val cdktf
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetProvisioners(val *
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetRepositoryId(val *string) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetRepositoryId(val *string) {
 	if err := j.validateSetRepositoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetRepositoryId(val *
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func SecureSourceManagerRepositoryIamBinding_GenerateConfigForImport(scope const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func SecureSourceManagerRepositoryIamBinding_GenerateConfigForImport(scope const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecureSourceManagerRepositoryIamBinding_IsConstruct(x interface{}) *bool {
+func SecureSourceManagerRepositoryIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecureSourceManagerRepositoryIamBinding_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func SecureSourceManagerRepositoryIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func SecureSourceManagerRepositoryIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecureSourceManagerRepositoryIamBinding_IsTerraformElement(x interface{}) *bool {
+func SecureSourceManagerRepositoryIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecureSourceManagerRepositoryIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func SecureSourceManagerRepositoryIamBinding_IsTerraformElement(x interface{}) *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func SecureSourceManagerRepositoryIamBinding_IsTerraformElement(x interface{}) *
 }
 
 // Experimental.
-func SecureSourceManagerRepositoryIamBinding_IsTerraformResource(x interface{}) *bool {
+func SecureSourceManagerRepositoryIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecureSourceManagerRepositoryIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func SecureSourceManagerRepositoryIamBinding_IsTerraformResource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerRepositoryIamBinding.SecureSourceManagerRepositoryIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) AddMoveTarget(moveTa
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetBooleanAttribute(
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetListAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetNumberAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetNumberListAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetNumberMapAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetStringAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) GetStringMapAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -911,7 +910,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ImportFrom(id *strin
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) InterpolationForAttr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) MoveFromId(id *strin
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) MoveToId(id *string)
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) OverrideLogicalId(ne
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) PutCondition(value *
 	_jsii_.InvokeVoid(
 		s,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ResetProject() {
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1039,8 +1038,8 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SynthesizeAttributes
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1052,8 +1051,8 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) SynthesizeHclAttribu
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1065,8 +1064,8 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ToHclTerraform() int
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1091,8 +1090,8 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1103,4 +1102,3 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryIamBinding) ToTerraform() interf
 
 	return returns
 }
-

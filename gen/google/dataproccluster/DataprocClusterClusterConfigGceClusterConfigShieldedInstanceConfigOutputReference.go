@@ -12,9 +12,9 @@ type DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputRef
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,15 +25,15 @@ type DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputRef
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableIntegrityMonitoring() interface{}
-	SetEnableIntegrityMonitoring(val interface{})
-	EnableIntegrityMonitoringInput() interface{}
-	EnableSecureBoot() interface{}
-	SetEnableSecureBoot(val interface{})
-	EnableSecureBootInput() interface{}
-	EnableVtpm() interface{}
-	SetEnableVtpm(val interface{})
-	EnableVtpmInput() interface{}
+	EnableIntegrityMonitoring() any
+	SetEnableIntegrityMonitoring(val any)
+	EnableIntegrityMonitoringInput() any
+	EnableSecureBoot() any
+	SetEnableSecureBoot(val any)
+	EnableSecureBootInput() any
+	EnableVtpm() any
+	SetEnableVtpm(val any)
+	EnableVtpmInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig
@@ -49,7 +49,7 @@ type DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputRef
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputRef
 	ResetEnableVtpm()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfi
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableIntegrityMonitoring() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntegrityMonitoring",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableIntegrityMonitoringInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableIntegrityMonitoringInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableIntegrityMonitoringInput",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableSecureBoot() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableSecureBoot() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSecureBoot",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableSecureBootInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableSecureBootInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableSecureBootInput",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableVtpm() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableVtpm() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVtpm",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableVtpmInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) EnableVtpmInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableVtpmInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	return returns
 }
 
-
 func NewDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutput
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutput
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetEnableIntegrityMonitoring(val interface{}) {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetEnableIntegrityMonitoring(val any) {
 	if err := j.validateSetEnableIntegrityMonitoringParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetEnableSecureBoot(val interface{}) {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetEnableSecureBoot(val any) {
 	if err := j.validateSetEnableSecureBootParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetEnableVtpm(val interface{}) {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetEnableVtpm(val any) {
 	if err := j.validateSetEnableVtpmParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetInternalValue(val *DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig) {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetInternalValue(val *DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 	)
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigShieldedInstanceC
 
 	return returns
 }
-

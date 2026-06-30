@@ -98,7 +98,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAdBreaksOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewTranscoderJobTemplateConfigAdBreaksOutputReferenceParameters(ter
 
 	return nil
 }
-

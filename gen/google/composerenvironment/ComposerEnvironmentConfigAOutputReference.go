@@ -13,9 +13,9 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	AirflowUri() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,12 +31,12 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	DatabaseConfigInput() *ComposerEnvironmentConfigDatabaseConfig
 	DataRetentionConfig() ComposerEnvironmentConfigDataRetentionConfigOutputReference
 	DataRetentionConfigInput() *ComposerEnvironmentConfigDataRetentionConfig
-	EnablePrivateBuildsOnly() interface{}
-	SetEnablePrivateBuildsOnly(val interface{})
-	EnablePrivateBuildsOnlyInput() interface{}
-	EnablePrivateEnvironment() interface{}
-	SetEnablePrivateEnvironment(val interface{})
-	EnablePrivateEnvironmentInput() interface{}
+	EnablePrivateBuildsOnly() any
+	SetEnablePrivateBuildsOnly(val any)
+	EnablePrivateBuildsOnlyInput() any
+	EnablePrivateEnvironment() any
+	SetEnablePrivateEnvironment(val any)
+	EnablePrivateEnvironmentInput() any
 	EncryptionConfig() ComposerEnvironmentConfigEncryptionConfigOutputReference
 	EncryptionConfigInput() *ComposerEnvironmentConfigEncryptionConfig
 	EnvironmentSize() *string
@@ -82,7 +82,7 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -134,7 +134,7 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	ResetWorkloadsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) AirflowUri() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) DataRetentionConfi
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateBuildsOnly() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateBuildsOnly() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateBuildsOnly",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateBuild
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateBuildsOnlyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateBuildsOnlyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateBuildsOnlyInput",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateBuild
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateEnvironment() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateEnvironment() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateEnvironment",
@@ -267,8 +267,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateEnvir
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateEnvironmentInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateEnvironmentInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateEnvironmentInput",
@@ -587,7 +587,6 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) WorkloadsConfigInp
 	return returns
 }
 
-
 func NewComposerEnvironmentConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigAOutputReference {
 	_init_.Initialize()
 
@@ -598,7 +597,7 @@ func NewComposerEnvironmentConfigAOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -610,12 +609,12 @@ func NewComposerEnvironmentConfigAOutputReference_Override(c ComposerEnvironment
 
 	_jsii_.Create(
 		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigAOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetEnablePrivateBuildsOnly(val interface{}) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetEnablePrivateBuildsOnly(val any) {
 	if err := j.validateSetEnablePrivateBuildsOnlyParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetEnablePrivateBui
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetEnablePrivateEnvironment(val interface{}) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetEnablePrivateEnvironment(val any) {
 	if err := j.validateSetEnablePrivateEnvironmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -659,7 +658,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetEnablePrivateEnv
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetEnvironmentSize(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetEnvironmentSize(val *string) {
 	if err := j.validateSetEnvironmentSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -670,7 +669,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetEnvironmentSize(
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetInternalValue(val *ComposerEnvironmentConfigA) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetInternalValue(val *ComposerEnvironmentConfigA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -681,7 +680,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetNodeCount(val *float64) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetNodeCount(val *float64) {
 	if err := j.validateSetNodeCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -692,7 +691,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetNodeCount(val *f
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetResilienceMode(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetResilienceMode(val *string) {
 	if err := j.validateSetResilienceModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetResilienceMode(v
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,16 +737,16 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutDatabaseConfig(
 	_jsii_.InvokeVoid(
 		c,
 		"putDatabaseConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -929,7 +928,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutDataRetentionCo
 	_jsii_.InvokeVoid(
 		c,
 		"putDataRetentionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,7 +939,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutEncryptionConfi
 	_jsii_.InvokeVoid(
 		c,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -951,7 +950,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutMaintenanceWind
 	_jsii_.InvokeVoid(
 		c,
 		"putMaintenanceWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -962,7 +961,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutMasterAuthorize
 	_jsii_.InvokeVoid(
 		c,
 		"putMasterAuthorizedNetworksConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -973,7 +972,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutNodeConfig(valu
 	_jsii_.InvokeVoid(
 		c,
 		"putNodeConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -984,7 +983,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutPrivateEnvironm
 	_jsii_.InvokeVoid(
 		c,
 		"putPrivateEnvironmentConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -995,7 +994,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutRecoveryConfig(
 	_jsii_.InvokeVoid(
 		c,
 		"putRecoveryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutSoftwareConfig(
 	_jsii_.InvokeVoid(
 		c,
 		"putSoftwareConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutWebServerConfig
 	_jsii_.InvokeVoid(
 		c,
 		"putWebServerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutWebServerNetwor
 	_jsii_.InvokeVoid(
 		c,
 		"putWebServerNetworkAccessControl",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutWorkloadsConfig
 	_jsii_.InvokeVoid(
 		c,
 		"putWorkloadsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1179,16 +1178,16 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetWorkloadsConf
 	)
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1207,4 +1206,3 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ToString() *string
 
 	return returns
 }
-

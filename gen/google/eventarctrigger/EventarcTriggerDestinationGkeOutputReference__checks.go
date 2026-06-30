@@ -106,7 +106,7 @@ func (j *jsiiProxy_EventarcTriggerDestinationGkeOutputReference) validateSetClus
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerDestinationGkeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcTriggerDestinationGkeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEventarcTriggerDestinationGkeOutputReferenceParameters(terraform
 
 	return nil
 }
-

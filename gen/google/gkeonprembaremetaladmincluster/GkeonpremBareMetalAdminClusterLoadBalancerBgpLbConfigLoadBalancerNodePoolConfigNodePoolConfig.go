@@ -1,6 +1,5 @@
 package gkeonprembaremetaladmincluster
 
-
 type GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolConfigNodePoolConfig struct {
 	// kubelet_config block.
 	//
@@ -17,7 +16,7 @@ type GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolCo
 	// node_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_admin_cluster#node_configs GkeonpremBareMetalAdminCluster#node_configs}
-	NodeConfigs interface{} `field:"optional" json:"nodeConfigs" yaml:"nodeConfigs"`
+	NodeConfigs any `field:"optional" json:"nodeConfigs" yaml:"nodeConfigs"`
 	// The available Operating Systems to be run in a Node.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_admin_cluster#operating_system GkeonpremBareMetalAdminCluster#operating_system}
@@ -25,6 +24,5 @@ type GkeonpremBareMetalAdminClusterLoadBalancerBgpLbConfigLoadBalancerNodePoolCo
 	// taints block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_bare_metal_admin_cluster#taints GkeonpremBareMetalAdminCluster#taints}
-	Taints interface{} `field:"optional" json:"taints" yaml:"taints"`
+	Taints any `field:"optional" json:"taints" yaml:"taints"`
 }
-

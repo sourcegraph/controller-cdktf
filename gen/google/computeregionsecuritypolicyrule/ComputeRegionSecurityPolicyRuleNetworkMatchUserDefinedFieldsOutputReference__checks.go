@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsO
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsO
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutp
 
 	return nil
 }
-

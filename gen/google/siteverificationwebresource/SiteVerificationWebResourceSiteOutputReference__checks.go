@@ -98,7 +98,7 @@ func (s *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SiteVerificationWebResourceSiteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSiteVerificationWebResourceSiteOutputReferenceParameters(terrafo
 
 	return nil
 }
-

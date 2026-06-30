@@ -17,8 +17,8 @@ type ApphubServiceAttributesDeveloperOwnersList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ApphubServiceAttributesDeveloperOwnersList interface {
 	Get(index *float64) ApphubServiceAttributesDeveloperOwnersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) WrapsSet() *bool 
 	return returns
 }
 
-
 func NewApphubServiceAttributesDeveloperOwnersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceAttributesDeveloperOwnersList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewApphubServiceAttributesDeveloperOwnersList(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apphubService.ApphubServiceAttributesDeveloperOwnersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewApphubServiceAttributesDeveloperOwnersList_Override(a ApphubServiceAttri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apphubService.ApphubServiceAttributesDeveloperOwnersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (a *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) AllWithMapKey(map
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (a *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) Get(index *float6
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (a *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) ToString() *strin
 
 	return returns
 }
-

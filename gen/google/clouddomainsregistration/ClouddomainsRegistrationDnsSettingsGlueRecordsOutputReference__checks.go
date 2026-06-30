@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewClouddomainsRegistrationDnsSettingsGlueRecordsOutputReferencePar
 
 	return nil
 }
-

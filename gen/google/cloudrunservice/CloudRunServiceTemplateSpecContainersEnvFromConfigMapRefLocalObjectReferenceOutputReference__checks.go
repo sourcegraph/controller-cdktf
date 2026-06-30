@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocal
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObj
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package hypercomputeclustercluster
 
-
 type HypercomputeclusterClusterStorageResourcesConfigNewFilestore struct {
 	// file_shares block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#file_shares HypercomputeclusterCluster#file_shares}
-	FileShares interface{} `field:"required" json:"fileShares" yaml:"fileShares"`
+	FileShares any `field:"required" json:"fileShares" yaml:"fileShares"`
 	// Name of the Filestore instance to create, in the format 'projects/{project}/locations/{location}/instances/{instance}'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#filestore HypercomputeclusterCluster#filestore}
@@ -29,4 +28,3 @@ type HypercomputeclusterClusterStorageResourcesConfigNewFilestore struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#protocol HypercomputeclusterCluster#protocol}
 	Protocol *string `field:"optional" json:"protocol" yaml:"protocol"`
 }
-

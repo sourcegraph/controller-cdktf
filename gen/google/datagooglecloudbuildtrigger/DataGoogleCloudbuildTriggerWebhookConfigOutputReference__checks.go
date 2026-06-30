@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerWebhookConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTriggerWebhookConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerWebhookConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudbuildTriggerWebhookConfigOutputReferenceParameter
 
 	return nil
 }
-

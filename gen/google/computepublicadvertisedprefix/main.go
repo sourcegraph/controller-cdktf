@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix",
-		reflect.TypeOf((*ComputePublicAdvertisedPrefix)(nil)).Elem(),
+		reflect.TypeFor[ComputePublicAdvertisedPrefix](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputePublicAdvertisedPrefix{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig",
-		reflect.TypeOf((*ComputePublicAdvertisedPrefixConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputePublicAdvertisedPrefixConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts",
-		reflect.TypeOf((*ComputePublicAdvertisedPrefixTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputePublicAdvertisedPrefixTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeoutsOutputReference",
-		reflect.TypeOf((*ComputePublicAdvertisedPrefixTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputePublicAdvertisedPrefixTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputePublicAdvertisedPrefixTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

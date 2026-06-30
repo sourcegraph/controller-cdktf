@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUp
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstr
 
 	return nil
 }
-

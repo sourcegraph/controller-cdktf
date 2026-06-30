@@ -98,7 +98,7 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStar
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDa
 
 	return nil
 }
-

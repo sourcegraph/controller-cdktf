@@ -12,9 +12,9 @@ type SccOrganizationCustomModuleCustomConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type SccOrganizationCustomModuleCustomConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type SccOrganizationCustomModuleCustomConfigOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -286,7 +286,6 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) Terra
 	return returns
 }
 
-
 func NewSccOrganizationCustomModuleCustomConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SccOrganizationCustomModuleCustomConfigOutputReference {
 	_init_.Initialize()
 
@@ -297,7 +296,7 @@ func NewSccOrganizationCustomModuleCustomConfigOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccOrganizationCustomModule.SccOrganizationCustomModuleCustomConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -309,12 +308,12 @@ func NewSccOrganizationCustomModuleCustomConfigOutputReference_Override(s SccOrg
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccOrganizationCustomModule.SccOrganizationCustomModuleCustomConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetDes
 	)
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetInternalValue(val *SccOrganizationCustomModuleCustomConfig) {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) SetInternalValue(val *SccOrganizationCustomModuleCustomConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetRecommendation(val *string) {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) SetRecommendation(val *string) {
 	if err := j.validateSetRecommendationParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetRec
 	)
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetSeverity(val *string) {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) SetSeverity(val *string) {
 	if err := j.validateSetSeverityParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetSev
 	)
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,16 +414,16 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) Compu
 	return returns
 }
 
-func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -440,7 +439,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetBo
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,7 +455,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetBo
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -472,7 +471,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetLi
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -488,7 +487,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -520,7 +519,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetSt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) GetSt
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) Inter
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) PutCu
 	_jsii_.InvokeVoid(
 		s,
 		"putCustomOutput",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -606,7 +605,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) PutPr
 	_jsii_.InvokeVoid(
 		s,
 		"putPredicate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -617,7 +616,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) PutRe
 	_jsii_.InvokeVoid(
 		s,
 		"putResourceSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -637,16 +636,16 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) Reset
 	)
 }
 
-func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -665,4 +664,3 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigOutputReference) ToStr
 
 	return returns
 }
-

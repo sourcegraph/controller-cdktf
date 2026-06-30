@@ -1,6 +1,5 @@
 package datastreamstream
 
-
 type DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases struct {
 	// Database name.
 	//
@@ -9,6 +8,5 @@ type DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases struct {
 	// mysql_tables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#mysql_tables DatastreamStream#mysql_tables}
-	MysqlTables interface{} `field:"optional" json:"mysqlTables" yaml:"mysqlTables"`
+	MysqlTables any `field:"optional" json:"mysqlTables" yaml:"mysqlTables"`
 }
-

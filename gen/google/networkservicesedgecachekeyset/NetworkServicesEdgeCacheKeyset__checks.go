@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateAddMoveTargetParamete
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateMoveFromIdParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validatePutPublicKeyParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validatePutPublicKeyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validatePutTimeoutsParameters
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validatePutValidationSharedKeysParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validatePutValidationSharedKeysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -293,7 +293,7 @@ func validateNetworkServicesEdgeCacheKeyset_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateNetworkServicesEdgeCacheKeyset_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesEdgeCacheKeyset_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func validateNetworkServicesEdgeCacheKeyset_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateNetworkServicesEdgeCacheKeyset_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesEdgeCacheKeyset_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func validateNetworkServicesEdgeCacheKeyset_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateNetworkServicesEdgeCacheKeyset_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesEdgeCacheKeyset_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -317,7 +317,7 @@ func validateNetworkServicesEdgeCacheKeyset_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -455,7 +455,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -519,4 +519,3 @@ func validateNewNetworkServicesEdgeCacheKeysetParameters(scope constructs.Constr
 
 	return nil
 }
-

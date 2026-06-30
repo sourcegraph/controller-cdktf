@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateInterpolati
 	return nil
 }
 
-func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validatePutInterconnectsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validatePutInterconnectsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateSetEndpoint
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -261,4 +261,3 @@ func validateNewComputeWireGroupEndpointsOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

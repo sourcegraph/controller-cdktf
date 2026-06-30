@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetBoolValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetBoolValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -215,7 +215,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetNaValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetNaValueParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -294,4 +294,3 @@ func validateNewContactCenterInsightsQaQuestionAnswerChoicesOutputReferenceParam
 
 	return nil
 }
-

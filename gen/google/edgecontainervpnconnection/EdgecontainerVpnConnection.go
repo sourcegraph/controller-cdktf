@@ -18,15 +18,15 @@ type EdgecontainerVpnConnection interface {
 	SetCluster(val *string)
 	ClusterInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -34,9 +34,9 @@ type EdgecontainerVpnConnection interface {
 	SetDependsOn(val *[]*string)
 	Details() EdgecontainerVpnConnectionDetailsList
 	EffectiveLabels() cdktf.StringMap
-	EnableHighAvailability() interface{}
-	SetEnableHighAvailability(val interface{})
-	EnableHighAvailabilityInput() interface{}
+	EnableHighAvailability() any
+	SetEnableHighAvailability(val any)
+	EnableHighAvailabilityInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -74,11 +74,11 @@ type EdgecontainerVpnConnection interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Router() *string
 	SetRouter(val *string)
 	RouterInput() *string
@@ -86,11 +86,11 @@ type EdgecontainerVpnConnection interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() EdgecontainerVpnConnectionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	Vpc() *string
 	SetVpc(val *string)
@@ -101,9 +101,9 @@ type EdgecontainerVpnConnection interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -121,7 +121,7 @@ type EdgecontainerVpnConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -133,7 +133,7 @@ type EdgecontainerVpnConnection interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -154,17 +154,17 @@ type EdgecontainerVpnConnection interface {
 	ResetTimeouts()
 	ResetVpc()
 	ResetVpcProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for EdgecontainerVpnConnection
@@ -202,8 +202,8 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) ClusterInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerVpnConnection) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EdgecontainerVpnConnection) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerVpnConnection) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -272,8 +272,8 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) EffectiveLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) EnableHighAvailability() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerVpnConnection) EnableHighAvailability() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHighAvailability",
@@ -282,8 +282,8 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) EnableHighAvailability() interfac
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) EnableHighAvailabilityInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerVpnConnection) EnableHighAvailabilityInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableHighAvailabilityInput",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_EdgecontainerVpnConnection) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerVpnConnection) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -532,8 +532,8 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) TerraformLabels() cdktf.StringMap
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_EdgecontainerVpnConnection) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -562,8 +562,8 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) Timeouts() EdgecontainerVpnConnec
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EdgecontainerVpnConnection) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -622,7 +622,6 @@ func (j *jsiiProxy_EdgecontainerVpnConnection) VpcProjectInput() *EdgecontainerV
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection google_edgecontainer_vpn_connection} Resource.
 func NewEdgecontainerVpnConnection(scope constructs.Construct, id *string, config *EdgecontainerVpnConnectionConfig) EdgecontainerVpnConnection {
 	_init_.Initialize()
@@ -634,7 +633,7 @@ func NewEdgecontainerVpnConnection(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -647,12 +646,12 @@ func NewEdgecontainerVpnConnection_Override(e EdgecontainerVpnConnection, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetCluster(val *string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetCluster(val *string) {
 	if err := j.validateSetClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetCluster(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetConnection(val interface{}) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetCount(val interface{}) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -693,7 +692,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetEnableHighAvailability(val interface{}) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetEnableHighAvailability(val any) {
 	if err := j.validateSetEnableHighAvailabilityParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetEnableHighAvailability(val inte
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetId(val *string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetLabels(val *map[string]*string)
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetLocation(val *string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetName(val *string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetNatGatewayIp(val *string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetNatGatewayIp(val *string) {
 	if err := j.validateSetNatGatewayIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -778,7 +777,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetNatGatewayIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetProject(val *string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -789,7 +788,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -797,7 +796,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetRouter(val *string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetRouter(val *string) {
 	if err := j.validateSetRouterParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetRouter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnection)SetVpc(val *string) {
+func (j *jsiiProxy_EdgecontainerVpnConnection) SetVpc(val *string) {
 	if err := j.validateSetVpcParameters(val); err != nil {
 		panic(err)
 	}
@@ -842,7 +841,7 @@ func EdgecontainerVpnConnection_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -866,7 +865,7 @@ func EdgecontainerVpnConnection_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func EdgecontainerVpnConnection_IsConstruct(x interface{}) *bool {
+func EdgecontainerVpnConnection_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEdgecontainerVpnConnection_IsConstructParameters(x); err != nil {
@@ -877,7 +876,7 @@ func EdgecontainerVpnConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func EdgecontainerVpnConnection_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func EdgecontainerVpnConnection_IsTerraformElement(x interface{}) *bool {
+func EdgecontainerVpnConnection_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEdgecontainerVpnConnection_IsTerraformElementParameters(x); err != nil {
@@ -896,7 +895,7 @@ func EdgecontainerVpnConnection_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func EdgecontainerVpnConnection_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func EdgecontainerVpnConnection_IsTerraformResource(x interface{}) *bool {
+func EdgecontainerVpnConnection_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateEdgecontainerVpnConnection_IsTerraformResourceParameters(x); err != nil {
@@ -915,7 +914,7 @@ func EdgecontainerVpnConnection_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -940,31 +939,31 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		e,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnection) AddOverride(path *string, value interface{}) {
+func (e *jsiiProxy_EdgecontainerVpnConnection) AddOverride(path *string, value any) {
 	if err := e.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (e *jsiiProxy_EdgecontainerVpnConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -980,7 +979,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		e,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -996,7 +995,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1012,7 +1011,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		e,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1044,7 +1043,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		e,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1060,7 +1059,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1076,7 +1075,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		e,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1092,15 +1091,15 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		e,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnection) HasResourceMove() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerVpnConnection) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1119,7 +1118,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		e,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1132,7 +1131,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1146,18 +1145,18 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnection) MoveTo(moveTarget *string, index interface{}) {
+func (e *jsiiProxy_EdgecontainerVpnConnection) MoveTo(moveTarget *string, index any) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		e,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1168,7 +1167,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		e,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1179,7 +1178,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1190,7 +1189,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) PutTimeouts(value *EdgecontainerV
 	_jsii_.InvokeVoid(
 		e,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1201,7 +1200,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) PutVpcProject(value *Edgecontaine
 	_jsii_.InvokeVoid(
 		e,
 		"putVpcProject",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1285,8 +1284,8 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) ResetVpcProject() {
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnection) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EdgecontainerVpnConnection) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1298,8 +1297,8 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnection) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (e *jsiiProxy_EdgecontainerVpnConnection) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		e,
@@ -1311,8 +1310,8 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnection) ToHclTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerVpnConnection) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1324,8 +1323,8 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnection) ToMetadata() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerVpnConnection) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1350,8 +1349,8 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) ToString() *string {
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnection) ToTerraform() interface{} {
-	var returns interface{}
+func (e *jsiiProxy_EdgecontainerVpnConnection) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		e,
@@ -1362,4 +1361,3 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) ToTerraform() interface{} {
 
 	return returns
 }
-

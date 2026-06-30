@@ -15,9 +15,9 @@ type DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference interface {
 	CloudKnowledgeGraphTypesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,12 +28,12 @@ type DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableCloudKnowledgeGraph() interface{}
-	SetEnableCloudKnowledgeGraph(val interface{})
-	EnableCloudKnowledgeGraphInput() interface{}
-	EnablePrivateKnowledgeGraph() interface{}
-	SetEnablePrivateKnowledgeGraph(val interface{})
-	EnablePrivateKnowledgeGraphInput() interface{}
+	EnableCloudKnowledgeGraph() any
+	SetEnableCloudKnowledgeGraph(val any)
+	EnableCloudKnowledgeGraphInput() any
+	EnablePrivateKnowledgeGraph() any
+	SetEnablePrivateKnowledgeGraph(val any)
+	EnablePrivateKnowledgeGraphInput() any
 	FeatureConfig() DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference
 	FeatureConfigInput() *DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfig
 	// Experimental.
@@ -51,7 +51,7 @@ type DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference interface {
 	ResetFeatureConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) EnableCloudKnowledgeGraph() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) EnableCloudKnowledgeGraph() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCloudKnowledgeGraph",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) EnableCloudKnowledgeGraphInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) EnableCloudKnowledgeGraphInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableCloudKnowledgeGraphInput",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) EnablePrivateKnowledgeGraph() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) EnablePrivateKnowledgeGraph() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateKnowledgeGraph",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) EnablePrivateKnowledgeGraphInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) EnablePrivateKnowledgeGraphInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateKnowledgeGraphInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return returns
 }
 
-
 func NewDiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineSearchEngine.DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference)SetCloudKnowledgeGraphTypes(val *[]*string) {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) SetCloudKnowledgeGraphTypes(val *[]*string) {
 	if err := j.validateSetCloudKnowledgeGraphTypesParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference)SetEnableCloudKnowledgeGraph(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) SetEnableCloudKnowledgeGraph(val any) {
 	if err := j.validateSetEnableCloudKnowledgeGraphParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference)SetEnablePrivateKnowledgeGraph(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) SetEnablePrivateKnowledgeGraph(val any) {
 	if err := j.validateSetEnablePrivateKnowledgeGraphParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference)SetInternalValue(val *DiscoveryEngineSearchEngineKnowledgeGraphConfig) {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) SetInternalValue(val *DiscoveryEngineSearchEngineKnowledgeGraphConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,16 +370,16 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -551,7 +550,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"putFeatureConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigOutputReferenc
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) validateInte
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) validatePutAccessRulesParameters(value interface{}) error {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) validatePutAccessRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewLustreInstanceAccessRulesOptionsOutputReferenceParameters(terraf
 
 	return nil
 }
-

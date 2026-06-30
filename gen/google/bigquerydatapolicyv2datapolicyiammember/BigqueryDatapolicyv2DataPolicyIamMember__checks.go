@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateAddMoveTarge
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateMoveFromIdPa
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBigqueryDatapolicyv2DataPolicyIamMember_GenerateConfigForImportPara
 	return nil
 }
 
-func validateBigqueryDatapolicyv2DataPolicyIamMember_IsConstructParameters(x interface{}) error {
+func validateBigqueryDatapolicyv2DataPolicyIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBigqueryDatapolicyv2DataPolicyIamMember_IsConstructParameters(x int
 	return nil
 }
 
-func validateBigqueryDatapolicyv2DataPolicyIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateBigqueryDatapolicyv2DataPolicyIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBigqueryDatapolicyv2DataPolicyIamMember_IsTerraformElementParameter
 	return nil
 }
 
-func validateBigqueryDatapolicyv2DataPolicyIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateBigqueryDatapolicyv2DataPolicyIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateBigqueryDatapolicyv2DataPolicyIamMember_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewBigqueryDatapolicyv2DataPolicyIamMemberParameters(scope construc
 
 	return nil
 }
-

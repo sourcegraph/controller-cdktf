@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocGdcSparkApplicationTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplicationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocGdcSparkApplicationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplicationTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataprocGdcSparkApplicationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocGdcSparkApplicationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataprocGdcSparkApplicationTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

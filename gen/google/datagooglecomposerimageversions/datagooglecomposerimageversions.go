@@ -15,11 +15,11 @@ type DataGoogleComposerImageVersions interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,20 +50,20 @@ type DataGoogleComposerImageVersions interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,18 +91,18 @@ type DataGoogleComposerImageVersions interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComposerImageVersions
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComposerImageVersions) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComposerImageVersions) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -260,8 +260,8 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComposerImageVersions) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComposerImageVersions) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -320,7 +320,6 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/composer_image_versions google_composer_image_versions} Data Source.
 func NewDataGoogleComposerImageVersions(scope constructs.Construct, id *string, config *DataGoogleComposerImageVersionsConfig) DataGoogleComposerImageVersions {
 	_init_.Initialize()
@@ -332,7 +331,7 @@ func NewDataGoogleComposerImageVersions(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -345,12 +344,12 @@ func NewDataGoogleComposerImageVersions_Override(d DataGoogleComposerImageVersio
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComposerImageVersions) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComposerImageVersions) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -369,7 +368,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComposerImageVersions) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleComposerImageVersions) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComposerImageVersions) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComposerImageVersions) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComposerImageVersions) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions)SetRegion(val *string) {
+func (j *jsiiProxy_DataGoogleComposerImageVersions) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func DataGoogleComposerImageVersions_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func DataGoogleComposerImageVersions_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComposerImageVersions_IsConstruct(x interface{}) *bool {
+func DataGoogleComposerImageVersions_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComposerImageVersions_IsConstructParameters(x); err != nil {
@@ -476,7 +475,7 @@ func DataGoogleComposerImageVersions_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func DataGoogleComposerImageVersions_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComposerImageVersions_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComposerImageVersions_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComposerImageVersions_IsTerraformDataSourceParameters(x); err != nil {
@@ -495,7 +494,7 @@ func DataGoogleComposerImageVersions_IsTerraformDataSource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func DataGoogleComposerImageVersions_IsTerraformDataSource(x interface{}) *bool 
 }
 
 // Experimental.
-func DataGoogleComposerImageVersions_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComposerImageVersions_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComposerImageVersions_IsTerraformElementParameters(x); err != nil {
@@ -514,7 +513,7 @@ func DataGoogleComposerImageVersions_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -532,27 +531,27 @@ func DataGoogleComposerImageVersions_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComposerImageVersions) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComposerImageVersions) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComposerImageVersions) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComposerImageVersions) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -746,8 +745,8 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComposerImageVersions) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComposerImageVersions) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComposerImageVersions) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComposerImageVersions) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -772,8 +771,8 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComposerImageVersions) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComposerImageVersions) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -785,8 +784,8 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) ToHclTerraform() interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComposerImageVersions) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComposerImageVersions) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -811,8 +810,8 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComposerImageVersions) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComposerImageVersions) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -823,4 +822,3 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) ToTerraform() interface{} {
 
 	return returns
 }
-

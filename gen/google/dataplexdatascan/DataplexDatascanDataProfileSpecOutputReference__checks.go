@@ -131,7 +131,7 @@ func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateSetCatalogPublishingEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateSetCatalogPublishingEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateSetCa
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -267,4 +267,3 @@ func validateNewDataplexDatascanDataProfileSpecOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkstationsWorkstationCluster) validateAddMoveTargetParamete
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkstationsWorkstationCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkstationsWorkstationCluster) validateMoveFromIdParameters(
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkstationsWorkstationCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateWorkstationsWorkstationCluster_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateWorkstationsWorkstationCluster_IsConstructParameters(x interface{}) error {
+func validateWorkstationsWorkstationCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateWorkstationsWorkstationCluster_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateWorkstationsWorkstationCluster_IsTerraformElementParameters(x interface{}) error {
+func validateWorkstationsWorkstationCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateWorkstationsWorkstationCluster_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateWorkstationsWorkstationCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkstationsWorkstationCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -285,7 +285,7 @@ func (j *jsiiProxy_WorkstationsWorkstationCluster) validateSetAnnotationsParamet
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -318,7 +318,7 @@ func (j *jsiiProxy_WorkstationsWorkstationCluster) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_WorkstationsWorkstationCluster) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -519,4 +519,3 @@ func validateNewWorkstationsWorkstationClusterParameters(scope constructs.Constr
 
 	return nil
 }
-

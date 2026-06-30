@@ -29,15 +29,15 @@ type CloudfunctionsFunction interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -111,11 +111,11 @@ type CloudfunctionsFunction interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -123,9 +123,9 @@ type CloudfunctionsFunction interface {
 	SetRuntime(val *string)
 	RuntimeInput() *string
 	SecretEnvironmentVariables() CloudfunctionsFunctionSecretEnvironmentVariablesList
-	SecretEnvironmentVariablesInput() interface{}
+	SecretEnvironmentVariablesInput() any
 	SecretVolumes() CloudfunctionsFunctionSecretVolumesList
-	SecretVolumesInput() interface{}
+	SecretVolumesInput() any
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
@@ -142,17 +142,17 @@ type CloudfunctionsFunction interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeout() *float64
 	SetTimeout(val *float64)
 	TimeoutInput() *float64
 	Timeouts() CloudfunctionsFunctionTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	TriggerHttp() interface{}
-	SetTriggerHttp(val interface{})
-	TriggerHttpInput() interface{}
+	TimeoutsInput() any
+	TriggerHttp() any
+	SetTriggerHttp(val any)
+	TriggerHttpInput() any
 	VersionId() *string
 	VpcConnector() *string
 	SetVpcConnector(val *string)
@@ -164,9 +164,9 @@ type CloudfunctionsFunction interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -184,7 +184,7 @@ type CloudfunctionsFunction interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -196,7 +196,7 @@ type CloudfunctionsFunction interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -206,8 +206,8 @@ type CloudfunctionsFunction interface {
 	PutAutomaticUpdatePolicy(value *CloudfunctionsFunctionAutomaticUpdatePolicy)
 	PutEventTrigger(value *CloudfunctionsFunctionEventTrigger)
 	PutOnDeployUpdatePolicy(value *CloudfunctionsFunctionOnDeployUpdatePolicy)
-	PutSecretEnvironmentVariables(value interface{})
-	PutSecretVolumes(value interface{})
+	PutSecretEnvironmentVariables(value any)
+	PutSecretVolumes(value any)
 	PutSourceRepository(value *CloudfunctionsFunctionSourceRepository)
 	PutTimeouts(value *CloudfunctionsFunctionTimeouts)
 	ResetAutomaticUpdatePolicy()
@@ -246,17 +246,17 @@ type CloudfunctionsFunction interface {
 	ResetTriggerHttp()
 	ResetVpcConnector()
 	ResetVpcConnectorEgressSettings()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CloudfunctionsFunction
@@ -374,8 +374,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -824,8 +824,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -834,8 +834,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -894,8 +894,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) SecretEnvironmentVariables() Cloudfun
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) SecretEnvironmentVariablesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) SecretEnvironmentVariablesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretEnvironmentVariablesInput",
@@ -914,8 +914,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) SecretVolumes() CloudfunctionsFunctio
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) SecretVolumesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) SecretVolumesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretVolumesInput",
@@ -1034,8 +1034,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1084,8 +1084,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) Timeouts() CloudfunctionsFunctionTime
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1094,8 +1094,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) TriggerHttp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) TriggerHttp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"triggerHttp",
@@ -1104,8 +1104,8 @@ func (j *jsiiProxy_CloudfunctionsFunction) TriggerHttp() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction) TriggerHttpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudfunctionsFunction) TriggerHttpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"triggerHttpInput",
@@ -1164,7 +1164,6 @@ func (j *jsiiProxy_CloudfunctionsFunction) VpcConnectorInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions_function google_cloudfunctions_function} Resource.
 func NewCloudfunctionsFunction(scope constructs.Construct, id *string, config *CloudfunctionsFunctionConfig) CloudfunctionsFunction {
 	_init_.Initialize()
@@ -1176,7 +1175,7 @@ func NewCloudfunctionsFunction(scope constructs.Construct, id *string, config *C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1189,12 +1188,12 @@ func NewCloudfunctionsFunction_Override(c CloudfunctionsFunction, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunction",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetAvailableMemoryMb(val *float64) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetAvailableMemoryMb(val *float64) {
 	if err := j.validateSetAvailableMemoryMbParameters(val); err != nil {
 		panic(err)
 	}
@@ -1205,7 +1204,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetAvailableMemoryMb(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetBuildEnvironmentVariables(val *map[string]*string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetBuildEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetBuildEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1216,7 +1215,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetBuildEnvironmentVariables(val *map[
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetBuildServiceAccount(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetBuildServiceAccount(val *string) {
 	if err := j.validateSetBuildServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1227,7 +1226,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetBuildServiceAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetBuildWorkerPool(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetBuildWorkerPool(val *string) {
 	if err := j.validateSetBuildWorkerPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -1238,7 +1237,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetBuildWorkerPool(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1249,7 +1248,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetCount(val interface{}) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1260,7 +1259,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1268,7 +1267,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetDescription(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1279,7 +1278,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetDockerRegistry(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetDockerRegistry(val *string) {
 	if err := j.validateSetDockerRegistryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1290,7 +1289,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetDockerRegistry(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetDockerRepository(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetDockerRepository(val *string) {
 	if err := j.validateSetDockerRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -1301,7 +1300,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetDockerRepository(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetEntryPoint(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetEntryPoint(val *string) {
 	if err := j.validateSetEntryPointParameters(val); err != nil {
 		panic(err)
 	}
@@ -1312,7 +1311,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetEntryPoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetEnvironmentVariables(val *map[string]*string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetEnvironmentVariables(val *map[string]*string) {
 	if err := j.validateSetEnvironmentVariablesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1323,7 +1322,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetEnvironmentVariables(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1331,7 +1330,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetHttpsTriggerSecurityLevel(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetHttpsTriggerSecurityLevel(val *string) {
 	if err := j.validateSetHttpsTriggerSecurityLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -1342,7 +1341,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetHttpsTriggerSecurityLevel(val *stri
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetHttpsTriggerUrl(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetHttpsTriggerUrl(val *string) {
 	if err := j.validateSetHttpsTriggerUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -1353,7 +1352,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetHttpsTriggerUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetId(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1364,7 +1363,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetIngressSettings(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetIngressSettings(val *string) {
 	if err := j.validateSetIngressSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1375,7 +1374,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetIngressSettings(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1386,7 +1385,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetKmsKeyName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1397,7 +1396,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1408,7 +1407,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetMaxInstances(val *float64) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetMaxInstances(val *float64) {
 	if err := j.validateSetMaxInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1419,7 +1418,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetMaxInstances(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetMinInstances(val *float64) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetMinInstances(val *float64) {
 	if err := j.validateSetMinInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1430,7 +1429,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetMinInstances(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetName(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1441,7 +1440,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetProject(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1452,7 +1451,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1460,7 +1459,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1471,7 +1470,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetRegion(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1482,7 +1481,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetRuntime(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetRuntime(val *string) {
 	if err := j.validateSetRuntimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1493,7 +1492,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetRuntime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -1504,7 +1503,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetServiceAccountEmail(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetSourceArchiveBucket(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetSourceArchiveBucket(val *string) {
 	if err := j.validateSetSourceArchiveBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -1515,7 +1514,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetSourceArchiveBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetSourceArchiveObject(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetSourceArchiveObject(val *string) {
 	if err := j.validateSetSourceArchiveObjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1526,7 +1525,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetSourceArchiveObject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetTimeout(val *float64) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetTimeout(val *float64) {
 	if err := j.validateSetTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -1537,7 +1536,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetTriggerHttp(val interface{}) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetTriggerHttp(val any) {
 	if err := j.validateSetTriggerHttpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1548,7 +1547,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetTriggerHttp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetVpcConnector(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetVpcConnector(val *string) {
 	if err := j.validateSetVpcConnectorParameters(val); err != nil {
 		panic(err)
 	}
@@ -1559,7 +1558,7 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetVpcConnector(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunction)SetVpcConnectorEgressSettings(val *string) {
+func (j *jsiiProxy_CloudfunctionsFunction) SetVpcConnectorEgressSettings(val *string) {
 	if err := j.validateSetVpcConnectorEgressSettingsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1582,7 +1581,7 @@ func CloudfunctionsFunction_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunction",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1606,7 +1605,7 @@ func CloudfunctionsFunction_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CloudfunctionsFunction_IsConstruct(x interface{}) *bool {
+func CloudfunctionsFunction_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfunctionsFunction_IsConstructParameters(x); err != nil {
@@ -1617,7 +1616,7 @@ func CloudfunctionsFunction_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunction",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1625,7 +1624,7 @@ func CloudfunctionsFunction_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudfunctionsFunction_IsTerraformElement(x interface{}) *bool {
+func CloudfunctionsFunction_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfunctionsFunction_IsTerraformElementParameters(x); err != nil {
@@ -1636,7 +1635,7 @@ func CloudfunctionsFunction_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunction",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1644,7 +1643,7 @@ func CloudfunctionsFunction_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CloudfunctionsFunction_IsTerraformResource(x interface{}) *bool {
+func CloudfunctionsFunction_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCloudfunctionsFunction_IsTerraformResourceParameters(x); err != nil {
@@ -1655,7 +1654,7 @@ func CloudfunctionsFunction_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunction",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1680,31 +1679,31 @@ func (c *jsiiProxy_CloudfunctionsFunction) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CloudfunctionsFunction) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudfunctionsFunction) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1720,7 +1719,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1736,7 +1735,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1752,7 +1751,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1768,7 +1767,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1784,7 +1783,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1800,7 +1799,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1816,7 +1815,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1832,15 +1831,15 @@ func (c *jsiiProxy_CloudfunctionsFunction) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfunctionsFunction) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1859,7 +1858,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1872,7 +1871,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1886,18 +1885,18 @@ func (c *jsiiProxy_CloudfunctionsFunction) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CloudfunctionsFunction) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1908,7 +1907,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1919,7 +1918,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1930,7 +1929,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) PutAutomaticUpdatePolicy(value *Cloud
 	_jsii_.InvokeVoid(
 		c,
 		"putAutomaticUpdatePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1941,7 +1940,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) PutEventTrigger(value *Cloudfunctions
 	_jsii_.InvokeVoid(
 		c,
 		"putEventTrigger",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1952,29 +1951,29 @@ func (c *jsiiProxy_CloudfunctionsFunction) PutOnDeployUpdatePolicy(value *Cloudf
 	_jsii_.InvokeVoid(
 		c,
 		"putOnDeployUpdatePolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) PutSecretEnvironmentVariables(value interface{}) {
+func (c *jsiiProxy_CloudfunctionsFunction) PutSecretEnvironmentVariables(value any) {
 	if err := c.validatePutSecretEnvironmentVariablesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSecretEnvironmentVariables",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) PutSecretVolumes(value interface{}) {
+func (c *jsiiProxy_CloudfunctionsFunction) PutSecretVolumes(value any) {
 	if err := c.validatePutSecretVolumesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSecretVolumes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1985,7 +1984,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) PutSourceRepository(value *Cloudfunct
 	_jsii_.InvokeVoid(
 		c,
 		"putSourceRepository",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1996,7 +1995,7 @@ func (c *jsiiProxy_CloudfunctionsFunction) PutTimeouts(value *CloudfunctionsFunc
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2272,8 +2271,8 @@ func (c *jsiiProxy_CloudfunctionsFunction) ResetVpcConnectorEgressSettings() {
 	)
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfunctionsFunction) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -2285,8 +2284,8 @@ func (c *jsiiProxy_CloudfunctionsFunction) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CloudfunctionsFunction) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -2298,8 +2297,8 @@ func (c *jsiiProxy_CloudfunctionsFunction) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfunctionsFunction) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2311,8 +2310,8 @@ func (c *jsiiProxy_CloudfunctionsFunction) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfunctionsFunction) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2337,8 +2336,8 @@ func (c *jsiiProxy_CloudfunctionsFunction) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CloudfunctionsFunction) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CloudfunctionsFunction) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -2349,4 +2348,3 @@ func (c *jsiiProxy_CloudfunctionsFunction) ToTerraform() interface{} {
 
 	return returns
 }
-

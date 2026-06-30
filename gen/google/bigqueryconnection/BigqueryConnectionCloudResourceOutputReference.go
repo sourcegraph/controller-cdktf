@@ -12,9 +12,9 @@ type BigqueryConnectionCloudResourceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -41,7 +41,7 @@ type BigqueryConnectionCloudResourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -64,7 +64,7 @@ type BigqueryConnectionCloudResourceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,8 +77,8 @@ type jsiiProxy_BigqueryConnectionCloudResourceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -157,7 +157,6 @@ func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) TerraformReso
 	return returns
 }
 
-
 func NewBigqueryConnectionCloudResourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionCloudResourceOutputReference {
 	_init_.Initialize()
 
@@ -168,7 +167,7 @@ func NewBigqueryConnectionCloudResourceOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudResourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -180,12 +179,12 @@ func NewBigqueryConnectionCloudResourceOutputReference_Override(b BigqueryConnec
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudResourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -196,7 +195,7 @@ func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetInternalValue(val *BigqueryConnectionCloudResource) {
+func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) SetInternalValue(val *BigqueryConnectionCloudResource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,16 +252,16 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -278,7 +277,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -294,7 +293,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -310,7 +309,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetNumberList
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,23 +418,23 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) Interpolation
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -454,4 +453,3 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) ToString() *s
 
 	return returns
 }
-

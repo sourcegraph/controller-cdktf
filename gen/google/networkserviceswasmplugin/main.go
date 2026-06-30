@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPlugin",
-		reflect.TypeOf((*NetworkServicesWasmPlugin)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPlugin](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versions", GoGetter: "Versions"},
 			_jsii_.MemberProperty{JsiiProperty: "versionsInput", GoGetter: "VersionsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesWasmPlugin{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -96,15 +96,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginConfig",
-		reflect.TypeOf((*NetworkServicesWasmPluginConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginLogConfig",
-		reflect.TypeOf((*NetworkServicesWasmPluginLogConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginLogConfigOutputReference",
-		reflect.TypeOf((*NetworkServicesWasmPluginLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginTimeouts",
-		reflect.TypeOf((*NetworkServicesWasmPluginTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkServicesWasmPluginTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesWasmPluginTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -190,11 +190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginUsedBy",
-		reflect.TypeOf((*NetworkServicesWasmPluginUsedBy)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginUsedBy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginUsedByList",
-		reflect.TypeOf((*NetworkServicesWasmPluginUsedByList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginUsedByList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -207,7 +207,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesWasmPluginUsedByList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -215,7 +215,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginUsedByOutputReference",
-		reflect.TypeOf((*NetworkServicesWasmPluginUsedByOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginUsedByOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -240,7 +240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesWasmPluginUsedByOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -248,11 +248,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginVersions",
-		reflect.TypeOf((*NetworkServicesWasmPluginVersions)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginVersions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginVersionsList",
-		reflect.TypeOf((*NetworkServicesWasmPluginVersionsList)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginVersionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -266,7 +266,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesWasmPluginVersionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -274,7 +274,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginVersionsOutputReference",
-		reflect.TypeOf((*NetworkServicesWasmPluginVersionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkServicesWasmPluginVersionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionName", GoGetter: "VersionName"},
 			_jsii_.MemberProperty{JsiiProperty: "versionNameInput", GoGetter: "VersionNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkServicesWasmPluginVersionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

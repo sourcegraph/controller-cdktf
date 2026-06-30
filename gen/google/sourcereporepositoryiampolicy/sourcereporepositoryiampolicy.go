@@ -15,15 +15,15 @@ type SourcerepoRepositoryIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,27 +57,27 @@ type SourcerepoRepositoryIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Repository() *string
 	SetRepository(val *string)
 	RepositoryInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type SourcerepoRepositoryIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type SourcerepoRepositoryIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type SourcerepoRepositoryIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SourcerepoRepositoryIamPolicy
@@ -147,8 +147,8 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) TerraformResourceType() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sourcerepo_repository_iam_policy google_sourcerepo_repository_iam_policy} Resource.
 func NewSourcerepoRepositoryIamPolicy(scope constructs.Construct, id *string, config *SourcerepoRepositoryIamPolicyConfig) SourcerepoRepositoryIamPolicy {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewSourcerepoRepositoryIamPolicy(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewSourcerepoRepositoryIamPolicy_Override(s SourcerepoRepositoryIamPolicy, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +517,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetProvisioners(val *[]interfac
 	)
 }
 
-func (j *jsiiProxy_SourcerepoRepositoryIamPolicy)SetRepository(val *string) {
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) SetRepository(val *string) {
 	if err := j.validateSetRepositoryParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func SourcerepoRepositoryIamPolicy_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func SourcerepoRepositoryIamPolicy_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SourcerepoRepositoryIamPolicy_IsConstruct(x interface{}) *bool {
+func SourcerepoRepositoryIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSourcerepoRepositoryIamPolicy_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func SourcerepoRepositoryIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func SourcerepoRepositoryIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SourcerepoRepositoryIamPolicy_IsTerraformElement(x interface{}) *bool {
+func SourcerepoRepositoryIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSourcerepoRepositoryIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func SourcerepoRepositoryIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func SourcerepoRepositoryIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SourcerepoRepositoryIamPolicy_IsTerraformResource(x interface{}) *bool {
+func SourcerepoRepositoryIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSourcerepoRepositoryIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func SourcerepoRepositoryIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -818,7 +817,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -906,8 +905,8 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ResetProject() {
 	)
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -919,8 +918,8 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -932,8 +931,8 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -945,8 +944,8 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -971,8 +970,8 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -983,4 +982,3 @@ func (s *jsiiProxy_SourcerepoRepositoryIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

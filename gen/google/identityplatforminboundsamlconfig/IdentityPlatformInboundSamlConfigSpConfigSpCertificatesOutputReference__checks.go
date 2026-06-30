@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfigSpConfigSpCertificatesOutput
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigSpConfigSpCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigSpConfigSpCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIdentityPlatformInboundSamlConfigSpConfigSpCertificatesOutputRef
 
 	return nil
 }
-

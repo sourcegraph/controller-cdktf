@@ -34,7 +34,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPool
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsLi
 
 	return nil
 }
-

@@ -131,7 +131,7 @@ func (l *jsiiProxy_LoggingMetricBucketOptionsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetricBucketOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingMetricBucketOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewLoggingMetricBucketOptionsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

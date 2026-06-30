@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigLis
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerClusterIpAllocationPolicyAdditionalIpRangesConfigListPa
 
 	return nil
 }
-

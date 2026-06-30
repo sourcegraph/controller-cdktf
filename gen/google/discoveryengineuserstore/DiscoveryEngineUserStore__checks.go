@@ -19,7 +19,7 @@ func (d *jsiiProxy_DiscoveryEngineUserStore) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineUserStore) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineUserStore) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DiscoveryEngineUserStore) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineUserStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineUserStore) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDiscoveryEngineUserStore_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDiscoveryEngineUserStore_IsConstructParameters(x interface{}) error {
+func validateDiscoveryEngineUserStore_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDiscoveryEngineUserStore_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDiscoveryEngineUserStore_IsTerraformElementParameters(x interface{}) error {
+func validateDiscoveryEngineUserStore_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDiscoveryEngineUserStore_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateDiscoveryEngineUserStore_IsTerraformResourceParameters(x interface{}) error {
+func validateDiscoveryEngineUserStore_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDiscoveryEngineUserStore_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetDefaultLicenseConfigPara
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetEnableExpiredLicenseAutoUpdateParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetEnableExpiredLicenseAutoUpdateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -373,7 +373,7 @@ func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetEnableExpiredLicenseAuto
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetEnableLicenseAutoRegisterParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetEnableLicenseAutoRegisterParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineUserStore) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -497,4 +497,3 @@ func validateNewDiscoveryEngineUserStoreParameters(scope constructs.Construct, i
 
 	return nil
 }
-

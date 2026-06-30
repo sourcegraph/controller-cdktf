@@ -14,9 +14,9 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	CloudrunConfigInput() *ContainerClusterAddonsConfigCloudrunConfig
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -54,7 +54,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	ParallelstoreCsiDriverConfig() ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference
 	ParallelstoreCsiDriverConfigInput() *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig
 	RayOperatorConfig() ContainerClusterAddonsConfigRayOperatorConfigList
-	RayOperatorConfigInput() interface{}
+	RayOperatorConfigInput() any
 	SliceControllerConfig() ContainerClusterAddonsConfigSliceControllerConfigOutputReference
 	SliceControllerConfigInput() *ContainerClusterAddonsConfigSliceControllerConfig
 	StatefulHaConfig() ContainerClusterAddonsConfigStatefulHaConfigOutputReference
@@ -70,7 +70,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	PutLustreCsiDriverConfig(value *ContainerClusterAddonsConfigLustreCsiDriverConfig)
 	PutNetworkPolicyConfig(value *ContainerClusterAddonsConfigNetworkPolicyConfig)
 	PutParallelstoreCsiDriverConfig(value *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig)
-	PutRayOperatorConfig(value interface{})
+	PutRayOperatorConfig(value any)
 	PutSliceControllerConfig(value *ContainerClusterAddonsConfigSliceControllerConfig)
 	PutStatefulHaConfig(value *ContainerClusterAddonsConfigStatefulHaConfig)
 	ResetCloudrunConfig()
@@ -123,7 +123,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	ResetStatefulHaConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) CloudrunConfigIn
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) RayOperatorConfi
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) RayOperatorConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) RayOperatorConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rayOperatorConfigInput",
@@ -506,7 +506,6 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewContainerClusterAddonsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigOutputReference {
 	_init_.Initialize()
 
@@ -517,7 +516,7 @@ func NewContainerClusterAddonsConfigOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewContainerClusterAddonsConfigOutputReference_Override(c ContainerClusterA
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference)SetInternalValue(val *ContainerClusterAddonsConfig) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) SetInternalValue(val *ContainerClusterAddonsConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,16 +601,16 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -768,7 +767,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutCloudrunConfi
 	_jsii_.InvokeVoid(
 		c,
 		"putCloudrunConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -793,7 +792,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutConfigConnect
 	_jsii_.InvokeVoid(
 		c,
 		"putConfigConnectorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -804,7 +803,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutDnsCacheConfi
 	_jsii_.InvokeVoid(
 		c,
 		"putDnsCacheConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -815,7 +814,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutGcePersistent
 	_jsii_.InvokeVoid(
 		c,
 		"putGcePersistentDiskCsiDriverConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -826,7 +825,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutGcpFilestoreC
 	_jsii_.InvokeVoid(
 		c,
 		"putGcpFilestoreCsiDriverConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -837,7 +836,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutGcsFuseCsiDri
 	_jsii_.InvokeVoid(
 		c,
 		"putGcsFuseCsiDriverConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -848,7 +847,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutGkeBackupAgen
 	_jsii_.InvokeVoid(
 		c,
 		"putGkeBackupAgentConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -859,7 +858,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutHorizontalPod
 	_jsii_.InvokeVoid(
 		c,
 		"putHorizontalPodAutoscaling",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -870,7 +869,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutHttpLoadBalan
 	_jsii_.InvokeVoid(
 		c,
 		"putHttpLoadBalancing",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -881,7 +880,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutLustreCsiDriv
 	_jsii_.InvokeVoid(
 		c,
 		"putLustreCsiDriverConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -892,7 +891,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutNetworkPolicy
 	_jsii_.InvokeVoid(
 		c,
 		"putNetworkPolicyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -903,18 +902,18 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutParallelstore
 	_jsii_.InvokeVoid(
 		c,
 		"putParallelstoreCsiDriverConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutRayOperatorConfig(value interface{}) {
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutRayOperatorConfig(value any) {
 	if err := c.validatePutRayOperatorConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRayOperatorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -925,7 +924,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutSliceControll
 	_jsii_.InvokeVoid(
 		c,
 		"putSliceControllerConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -936,7 +935,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutStatefulHaCon
 	_jsii_.InvokeVoid(
 		c,
 		"putStatefulHaConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1060,16 +1059,16 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetStatefulHaC
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1088,4 +1087,3 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ToString() *stri
 
 	return returns
 }
-

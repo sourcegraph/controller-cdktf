@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleLustreInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleLustreInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleLustreInstance_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDataGoogleLustreInstance_IsConstructParameters(x interface{}) error {
+func validateDataGoogleLustreInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleLustreInstance_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDataGoogleLustreInstance_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleLustreInstance_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleLustreInstance_IsTerraformDataSourceParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleLustreInstance_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleLustreInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleLustreInstance_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLustreInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleLustreInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleLustreInstanceParameters(scope constructs.Construct, i
 
 	return nil
 }
-

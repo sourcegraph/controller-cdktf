@@ -15,9 +15,9 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	Clone() DataGoogleSqlDatabaseInstancesInstancesCloneList
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -74,7 +74,7 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Clone
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -520,7 +520,6 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Terra
 	return returns
 }
 
-
 func NewDataGoogleSqlDatabaseInstancesInstancesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleSqlDatabaseInstancesInstancesOutputReference {
 	_init_.Initialize()
 
@@ -531,7 +530,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -543,12 +542,12 @@ func NewDataGoogleSqlDatabaseInstancesInstancesOutputReference_Override(d DataGo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference)SetInternalValue(val *DataGoogleSqlDatabaseInstancesInstances) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) SetInternalValue(val *DataGoogleSqlDatabaseInstancesInstances) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,16 +615,16 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Compu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetLi
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -721,7 +720,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,23 +781,23 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Inter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -817,4 +816,3 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) ToStr
 
 	return returns
 }
-

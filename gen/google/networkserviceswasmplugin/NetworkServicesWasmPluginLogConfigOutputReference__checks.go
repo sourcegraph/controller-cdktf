@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) validateSetEnableParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) validateSetEnableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewNetworkServicesWasmPluginLogConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

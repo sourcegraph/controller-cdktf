@@ -109,7 +109,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigPythonReposit
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package hypercomputeclustercluster
 
-
 type HypercomputeclusterClusterOrchestratorSlurmLoginNodes struct {
 	// Number of login node instances to create.
 	//
@@ -21,11 +20,11 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodes struct {
 	// Whether [OS Login](https://cloud.google.com/compute/docs/oslogin) should be enabled on login node instances.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#enable_os_login HypercomputeclusterCluster#enable_os_login}
-	EnableOsLogin interface{} `field:"optional" json:"enableOsLogin" yaml:"enableOsLogin"`
+	EnableOsLogin any `field:"optional" json:"enableOsLogin" yaml:"enableOsLogin"`
 	// Whether login node instances should be assigned [external IP addresses](https://cloud.google.com/compute/docs/ip-addresses#externaladdresses).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#enable_public_ips HypercomputeclusterCluster#enable_public_ips}
-	EnablePublicIps interface{} `field:"optional" json:"enablePublicIps" yaml:"enablePublicIps"`
+	EnablePublicIps any `field:"optional" json:"enablePublicIps" yaml:"enablePublicIps"`
 	// [Labels](https://cloud.google.com/compute/docs/labeling-resources) that should be applied to each login node instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#labels HypercomputeclusterCluster#labels}
@@ -37,6 +36,5 @@ type HypercomputeclusterClusterOrchestratorSlurmLoginNodes struct {
 	// storage_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#storage_configs HypercomputeclusterCluster#storage_configs}
-	StorageConfigs interface{} `field:"optional" json:"storageConfigs" yaml:"storageConfigs"`
+	StorageConfigs any `field:"optional" json:"storageConfigs" yaml:"storageConfigs"`
 }
-

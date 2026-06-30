@@ -12,17 +12,17 @@ type ContainerAwsNodePoolKubeletConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CpuCfsQuota() interface{}
-	SetCpuCfsQuota(val interface{})
-	CpuCfsQuotaInput() interface{}
+	CpuCfsQuota() any
+	SetCpuCfsQuota(val any)
+	CpuCfsQuotaInput() any
 	CpuCfsQuotaPeriod() *string
 	SetCpuCfsQuotaPeriod(val *string)
 	CpuCfsQuotaPeriodInput() *string
@@ -52,7 +52,7 @@ type ContainerAwsNodePoolKubeletConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ContainerAwsNodePoolKubeletConfigOutputReference interface {
 	ResetPodPidsLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) ComplexObje
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) CpuCfsQuota() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) CpuCfsQuota() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cpuCfsQuota",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) CpuCfsQuota
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) CpuCfsQuotaInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) CpuCfsQuotaInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"cpuCfsQuotaInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewContainerAwsNodePoolKubeletConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAwsNodePoolKubeletConfigOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewContainerAwsNodePoolKubeletConfigOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolKubeletConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewContainerAwsNodePoolKubeletConfigOutputReference_Override(c ContainerAws
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolKubeletConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetCpuCfsQuota(val interface{}) {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) SetCpuCfsQuota(val any) {
 	if err := j.validateSetCpuCfsQuotaParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetCpuCfsQuo
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetCpuCfsQuotaPeriod(val *string) {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) SetCpuCfsQuotaPeriod(val *string) {
 	if err := j.validateSetCpuCfsQuotaPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetCpuCfsQuo
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetCpuManagerPolicy(val *string) {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) SetCpuManagerPolicy(val *string) {
 	if err := j.validateSetCpuManagerPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetCpuManage
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetInternalValue(val *ContainerAwsNodePoolKubeletConfig) {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) SetInternalValue(val *ContainerAwsNodePoolKubeletConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetPodPidsLimit(val *float64) {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) SetPodPidsLimit(val *float64) {
 	if err := j.validateSetPodPidsLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetPodPidsLi
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) ComputeFqn(
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetListAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetStringAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) GetStringMa
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) Interpolati
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) ResetPodPid
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) ToString() 
 
 	return returns
 }
-

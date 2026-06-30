@@ -98,7 +98,7 @@ func (e *jsiiProxy_EssentialContactsContactTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_EssentialContactsContactTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EssentialContactsContactTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_EssentialContactsContactTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_EssentialContactsContactTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EssentialContactsContactTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewEssentialContactsContactTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

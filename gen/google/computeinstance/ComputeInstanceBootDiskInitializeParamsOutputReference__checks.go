@@ -128,7 +128,7 @@ func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetEnableConfidentialComputeParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetEnableConfidentialComputeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -336,4 +336,3 @@ func validateNewComputeInstanceBootDiskInitializeParamsOutputReferenceParameters
 
 	return nil
 }
-

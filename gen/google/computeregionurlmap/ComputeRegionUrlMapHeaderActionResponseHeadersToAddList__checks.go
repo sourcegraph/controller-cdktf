@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionResponseHeadersToAddList) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionResponseHeadersToAddList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionResponseHeadersToAddList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionUrlMapHeaderActionResponseHeadersToAddListParameter
 
 	return nil
 }
-

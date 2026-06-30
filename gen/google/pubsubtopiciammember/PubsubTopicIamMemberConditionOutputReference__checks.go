@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubTopicIamMemberConditionOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewPubsubTopicIamMemberConditionOutputReferenceParameters(terraform
 
 	return nil
 }
-

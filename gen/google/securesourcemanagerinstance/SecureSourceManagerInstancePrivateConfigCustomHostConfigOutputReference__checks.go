@@ -106,7 +106,7 @@ func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigCustomHostConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSecureSourceManagerInstancePrivateConfigCustomHostConfigOutputRe
 
 	return nil
 }
-

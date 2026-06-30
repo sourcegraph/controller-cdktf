@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOut
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutput
 
 	return nil
 }
-

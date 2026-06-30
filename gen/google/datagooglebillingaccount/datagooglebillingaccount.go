@@ -18,11 +18,11 @@ type DataGoogleBillingAccount interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CurrencyCode() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -46,32 +46,32 @@ type DataGoogleBillingAccount interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	LookupProjects() interface{}
-	SetLookupProjects(val interface{})
-	LookupProjectsInput() interface{}
+	LookupProjects() any
+	SetLookupProjects(val any)
+	LookupProjectsInput() any
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
-	Open() interface{}
-	SetOpen(val interface{})
-	OpenInput() interface{}
+	Open() any
+	SetOpen(val any)
+	OpenInput() any
 	ProjectIds() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,18 +101,18 @@ type DataGoogleBillingAccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleBillingAccount
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataGoogleBillingAccount) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBillingAccount) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataGoogleBillingAccount) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBillingAccount) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_DataGoogleBillingAccount) Lifecycle() *cdktf.TerraformResourc
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) LookupProjects() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBillingAccount) LookupProjects() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lookupProjects",
@@ -280,8 +280,8 @@ func (j *jsiiProxy_DataGoogleBillingAccount) LookupProjects() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) LookupProjectsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBillingAccount) LookupProjectsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lookupProjectsInput",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_DataGoogleBillingAccount) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) Open() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBillingAccount) Open() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"open",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_DataGoogleBillingAccount) Open() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) OpenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBillingAccount) OpenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"openInput",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_DataGoogleBillingAccount) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleBillingAccount) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_DataGoogleBillingAccount) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleBillingAccount) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -390,7 +390,6 @@ func (j *jsiiProxy_DataGoogleBillingAccount) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/billing_account google_billing_account} Data Source.
 func NewDataGoogleBillingAccount(scope constructs.Construct, id *string, config *DataGoogleBillingAccountConfig) DataGoogleBillingAccount {
 	_init_.Initialize()
@@ -402,7 +401,7 @@ func NewDataGoogleBillingAccount(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -415,12 +414,12 @@ func NewDataGoogleBillingAccount_Override(d DataGoogleBillingAccount, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetBillingAccount(val *string) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetBillingAccount(val *string) {
 	if err := j.validateSetBillingAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,7 +430,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetBillingAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,7 +441,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetDisplayName(val *string) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetLookupProjects(val interface{}) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetLookupProjects(val any) {
 	if err := j.validateSetLookupProjectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetLookupProjects(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetOpen(val interface{}) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetOpen(val any) {
 	if err := j.validateSetOpenParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetOpen(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleBillingAccount) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -533,7 +532,7 @@ func DataGoogleBillingAccount_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func DataGoogleBillingAccount_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleBillingAccount_IsConstruct(x interface{}) *bool {
+func DataGoogleBillingAccount_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBillingAccount_IsConstructParameters(x); err != nil {
@@ -568,7 +567,7 @@ func DataGoogleBillingAccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func DataGoogleBillingAccount_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleBillingAccount_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleBillingAccount_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBillingAccount_IsTerraformDataSourceParameters(x); err != nil {
@@ -587,7 +586,7 @@ func DataGoogleBillingAccount_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func DataGoogleBillingAccount_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleBillingAccount_IsTerraformElement(x interface{}) *bool {
+func DataGoogleBillingAccount_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleBillingAccount_IsTerraformElementParameters(x); err != nil {
@@ -606,7 +605,7 @@ func DataGoogleBillingAccount_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleBillingAccount.DataGoogleBillingAccount",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -624,27 +623,27 @@ func DataGoogleBillingAccount_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBillingAccount) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleBillingAccount) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBillingAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleBillingAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -676,7 +675,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (d *jsiiProxy_DataGoogleBillingAccount) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -854,8 +853,8 @@ func (d *jsiiProxy_DataGoogleBillingAccount) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleBillingAccount) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBillingAccount) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -867,8 +866,8 @@ func (d *jsiiProxy_DataGoogleBillingAccount) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBillingAccount) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleBillingAccount) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -880,8 +879,8 @@ func (d *jsiiProxy_DataGoogleBillingAccount) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBillingAccount) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBillingAccount) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -893,8 +892,8 @@ func (d *jsiiProxy_DataGoogleBillingAccount) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBillingAccount) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBillingAccount) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -919,8 +918,8 @@ func (d *jsiiProxy_DataGoogleBillingAccount) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBillingAccount) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleBillingAccount) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -931,4 +930,3 @@ func (d *jsiiProxy_DataGoogleBillingAccount) ToTerraform() interface{} {
 
 	return returns
 }
-

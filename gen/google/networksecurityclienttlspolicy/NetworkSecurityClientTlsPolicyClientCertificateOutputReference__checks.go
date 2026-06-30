@@ -120,7 +120,7 @@ func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewNetworkSecurityClientTlsPolicyClientCertificateOutputReferencePa
 
 	return nil
 }
-

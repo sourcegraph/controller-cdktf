@@ -10,14 +10,14 @@ import (
 
 type CesGuardrailLlmPromptSecurityCustomPolicyOutputReference interface {
 	cdktf.ComplexObject
-	AllowShortUtterance() interface{}
-	SetAllowShortUtterance(val interface{})
-	AllowShortUtteranceInput() interface{}
+	AllowShortUtterance() any
+	SetAllowShortUtterance(val any)
+	AllowShortUtteranceInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type CesGuardrailLlmPromptSecurityCustomPolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	FailOpen() interface{}
-	SetFailOpen(val interface{})
-	FailOpenInput() interface{}
+	FailOpen() any
+	SetFailOpen(val any)
+	FailOpenInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CesGuardrailLlmPromptSecurityCustomPolicy
@@ -57,7 +57,7 @@ type CesGuardrailLlmPromptSecurityCustomPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -85,7 +85,7 @@ type CesGuardrailLlmPromptSecurityCustomPolicyOutputReference interface {
 	ResetModelSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,8 +98,8 @@ type jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) AllowShortUtterance() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) AllowShortUtterance() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowShortUtterance",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) All
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) AllowShortUtteranceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) AllowShortUtteranceInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowShortUtteranceInput",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) All
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) FailOpen() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) FailOpen() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failOpen",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Fai
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) FailOpenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) FailOpenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failOpenInput",
@@ -288,7 +288,6 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Ter
 	return returns
 }
 
-
 func NewCesGuardrailLlmPromptSecurityCustomPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesGuardrailLlmPromptSecurityCustomPolicyOutputReference {
 	_init_.Initialize()
 
@@ -299,7 +298,7 @@ func NewCesGuardrailLlmPromptSecurityCustomPolicyOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurityCustomPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -311,12 +310,12 @@ func NewCesGuardrailLlmPromptSecurityCustomPolicyOutputReference_Override(c CesG
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurityCustomPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetAllowShortUtterance(val interface{}) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetAllowShortUtterance(val any) {
 	if err := j.validateSetAllowShortUtteranceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetA
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetFailOpen(val interface{}) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetFailOpen(val any) {
 	if err := j.validateSetFailOpenParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetF
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetInternalValue(val *CesGuardrailLlmPromptSecurityCustomPolicy) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetInternalValue(val *CesGuardrailLlmPromptSecurityCustomPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetMaxConversationMessages(val *float64) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetMaxConversationMessages(val *float64) {
 	if err := j.validateSetMaxConversationMessagesParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetM
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetPolicyScope(val *string) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetPolicyScope(val *string) {
 	if err := j.validateSetPolicyScopeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetP
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetPrompt(val *string) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetPrompt(val *string) {
 	if err := j.validateSetPromptParameters(val); err != nil {
 		panic(err)
 	}
@@ -404,7 +403,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetP
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -415,7 +414,7 @@ func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,16 +438,16 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Com
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Int
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Put
 	_jsii_.InvokeVoid(
 		c,
 		"putModelSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -655,16 +654,16 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -683,4 +682,3 @@ func (c *jsiiProxy_CesGuardrailLlmPromptSecurityCustomPolicyOutputReference) ToS
 
 	return returns
 }
-

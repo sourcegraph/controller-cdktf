@@ -17,15 +17,15 @@ type NetworkConnectivityHubIamMember interface {
 	Condition() NetworkConnectivityHubIamMemberConditionOutputReference
 	ConditionInput() *NetworkConnectivityHubIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type NetworkConnectivityHubIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type NetworkConnectivityHubIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type NetworkConnectivityHubIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type NetworkConnectivityHubIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkConnectivityHubIamMember
@@ -174,8 +174,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember) ConditionInput() *NetworkCon
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_hub_iam_member google_network_connectivity_hub_iam_member} Resource.
 func NewNetworkConnectivityHubIamMember(scope constructs.Construct, id *string, config *NetworkConnectivityHubIamMemberConfig) NetworkConnectivityHubIamMember {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewNetworkConnectivityHubIamMember(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewNetworkConnectivityHubIamMember_Override(n NetworkConnectivityHubIamMemb
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetHub(val *string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetHub(val *string) {
 	if err := j.validateSetHubParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetHub(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetId(val *string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetMember(val *string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetProject(val *string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMember)SetRole(val *string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func NetworkConnectivityHubIamMember_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func NetworkConnectivityHubIamMember_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkConnectivityHubIamMember_IsConstruct(x interface{}) *bool {
+func NetworkConnectivityHubIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityHubIamMember_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func NetworkConnectivityHubIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func NetworkConnectivityHubIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkConnectivityHubIamMember_IsTerraformElement(x interface{}) *bool {
+func NetworkConnectivityHubIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityHubIamMember_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func NetworkConnectivityHubIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func NetworkConnectivityHubIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkConnectivityHubIamMember_IsTerraformResource(x interface{}) *bool {
+func NetworkConnectivityHubIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityHubIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func NetworkConnectivityHubIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -876,7 +875,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) PutCondition(value *NetworkC
 	_jsii_.InvokeVoid(
 		n,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) ResetProject() {
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -996,8 +995,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1009,8 +1008,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1022,8 +1021,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) ToHclTerraform() interface{}
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1048,8 +1047,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1060,4 +1059,3 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

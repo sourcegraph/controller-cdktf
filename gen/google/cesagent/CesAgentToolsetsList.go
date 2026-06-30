@@ -17,8 +17,8 @@ type CesAgentToolsetsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type CesAgentToolsetsList interface {
 	Get(index *float64) CesAgentToolsetsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_CesAgentToolsetsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CesAgentToolsetsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAgentToolsetsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_CesAgentToolsetsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewCesAgentToolsetsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAgentToolsetsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewCesAgentToolsetsList(terraformResource cdktf.IInterpolatingParent, terra
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAgent.CesAgentToolsetsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewCesAgentToolsetsList_Override(c CesAgentToolsetsList, terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesAgent.CesAgentToolsetsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesAgentToolsetsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CesAgentToolsetsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_CesAgentToolsetsList)SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesAgentToolsetsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesAgentToolsetsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_CesAgentToolsetsList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesAgentToolsetsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAgentToolsetsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_CesAgentToolsetsList)SetTerraformResource(val cdktf.IInterpol
 	)
 }
 
-func (j *jsiiProxy_CesAgentToolsetsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CesAgentToolsetsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (c *jsiiProxy_CesAgentToolsetsList) AllWithMapKey(mapKeyAttributeName *stri
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (c *jsiiProxy_CesAgentToolsetsList) Get(index *float64) CesAgentToolsetsOut
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesAgentToolsetsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesAgentToolsetsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (c *jsiiProxy_CesAgentToolsetsList) ToString() *string {
 
 	return returns
 }
-

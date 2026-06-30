@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeUrlMapHeaderActionOutputReference) validateInterpolati
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapHeaderActionOutputReference) validatePutRequestHeadersToAddParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeUrlMapHeaderActionOutputReference) validatePutRequestHeadersToAddParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (c *jsiiProxy_ComputeUrlMapHeaderActionOutputReference) validatePutRequestH
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapHeaderActionOutputReference) validatePutResponseHeadersToAddParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeUrlMapHeaderActionOutputReference) validatePutResponseHeadersToAddParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (c *jsiiProxy_ComputeUrlMapHeaderActionOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapHeaderActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -276,4 +276,3 @@ func validateNewComputeUrlMapHeaderActionOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

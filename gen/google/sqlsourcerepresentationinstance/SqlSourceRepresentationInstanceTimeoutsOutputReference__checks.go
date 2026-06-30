@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlSourceRepresentationInstanceTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_SqlSourceRepresentationInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlSourceRepresentationInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SqlSourceRepresentationInstanceTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_SqlSourceRepresentationInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SqlSourceRepresentationInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSqlSourceRepresentationInstanceTimeoutsOutputReferenceParameters
 
 	return nil
 }
-

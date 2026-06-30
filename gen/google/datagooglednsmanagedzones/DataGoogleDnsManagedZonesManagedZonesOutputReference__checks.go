@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleDnsManagedZonesManagedZonesOutputReferenceParameters(t
 
 	return nil
 }
-

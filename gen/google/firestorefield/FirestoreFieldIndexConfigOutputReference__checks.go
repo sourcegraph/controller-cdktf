@@ -90,7 +90,7 @@ func (f *jsiiProxy_FirestoreFieldIndexConfigOutputReference) validateInterpolati
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreFieldIndexConfigOutputReference) validatePutIndexesParameters(value interface{}) error {
+func (f *jsiiProxy_FirestoreFieldIndexConfigOutputReference) validatePutIndexesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (f *jsiiProxy_FirestoreFieldIndexConfigOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreFieldIndexConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreFieldIndexConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewFirestoreFieldIndexConfigOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

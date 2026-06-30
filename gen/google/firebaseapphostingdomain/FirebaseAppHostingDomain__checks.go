@@ -19,7 +19,7 @@ func (f *jsiiProxy_FirebaseAppHostingDomain) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingDomain) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_FirebaseAppHostingDomain) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (f *jsiiProxy_FirebaseAppHostingDomain) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (f *jsiiProxy_FirebaseAppHostingDomain) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateFirebaseAppHostingDomain_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateFirebaseAppHostingDomain_IsConstructParameters(x interface{}) error {
+func validateFirebaseAppHostingDomain_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateFirebaseAppHostingDomain_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateFirebaseAppHostingDomain_IsTerraformElementParameters(x interface{}) error {
+func validateFirebaseAppHostingDomain_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateFirebaseAppHostingDomain_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateFirebaseAppHostingDomain_IsTerraformResourceParameters(x interface{}) error {
+func validateFirebaseAppHostingDomain_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_FirebaseAppHostingDomain) validateSetBackendParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDomain) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingDomain) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_FirebaseAppHostingDomain) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDomain) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingDomain) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_FirebaseAppHostingDomain) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDomain) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_FirebaseAppHostingDomain) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -468,4 +468,3 @@ func validateNewFirebaseAppHostingDomainParameters(scope constructs.Construct, i
 
 	return nil
 }
-

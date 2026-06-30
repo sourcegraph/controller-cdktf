@@ -6,9 +6,9 @@ import (
 
 type BigqueryDatasetConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type BigqueryDatasetConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A unique ID for this dataset, without the project name.
 	//
 	// The ID
@@ -30,7 +30,7 @@ type BigqueryDatasetConfig struct {
 	// access block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_dataset#access BigqueryDataset#access}
-	Access interface{} `field:"optional" json:"access" yaml:"access"`
+	Access any `field:"optional" json:"access" yaml:"access"`
 	// Defines the default collation specification of future tables created in the dataset.
 	//
 	// If a table is created in this dataset without table-level
@@ -86,7 +86,7 @@ type BigqueryDatasetConfig struct {
 	// destroying the resource will fail if tables are present.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_dataset#delete_contents_on_destroy BigqueryDataset#delete_contents_on_destroy}
-	DeleteContentsOnDestroy interface{} `field:"optional" json:"deleteContentsOnDestroy" yaml:"deleteContentsOnDestroy"`
+	DeleteContentsOnDestroy any `field:"optional" json:"deleteContentsOnDestroy" yaml:"deleteContentsOnDestroy"`
 	// A user-friendly description of the dataset.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_dataset#description BigqueryDataset#description}
@@ -114,7 +114,7 @@ type BigqueryDatasetConfig struct {
 	// case-sensitive. This field does not affect routine references.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_dataset#is_case_insensitive BigqueryDataset#is_case_insensitive}
-	IsCaseInsensitive interface{} `field:"optional" json:"isCaseInsensitive" yaml:"isCaseInsensitive"`
+	IsCaseInsensitive any `field:"optional" json:"isCaseInsensitive" yaml:"isCaseInsensitive"`
 	// The labels associated with this dataset. You can use these to organize and group your datasets.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
@@ -166,4 +166,3 @@ type BigqueryDatasetConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_dataset#timeouts BigqueryDataset#timeouts}
 	Timeouts *BigqueryDatasetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

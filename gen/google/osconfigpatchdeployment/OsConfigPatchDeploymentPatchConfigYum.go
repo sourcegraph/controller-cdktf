@@ -1,6 +1,5 @@
 package osconfigpatchdeployment
 
-
 type OsConfigPatchDeploymentPatchConfigYum struct {
 	// List of packages to exclude from update. These packages will be excluded.
 	//
@@ -17,10 +16,9 @@ type OsConfigPatchDeploymentPatchConfigYum struct {
 	// Will cause patch to run yum update-minimal instead.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_patch_deployment#minimal OsConfigPatchDeployment#minimal}
-	Minimal interface{} `field:"optional" json:"minimal" yaml:"minimal"`
+	Minimal any `field:"optional" json:"minimal" yaml:"minimal"`
 	// Adds the --security flag to yum update. Not supported on all platforms.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_patch_deployment#security OsConfigPatchDeployment#security}
-	Security interface{} `field:"optional" json:"security" yaml:"security"`
+	Security any `field:"optional" json:"security" yaml:"security"`
 }
-

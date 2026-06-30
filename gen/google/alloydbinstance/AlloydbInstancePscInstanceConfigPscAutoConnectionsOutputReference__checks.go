@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReferenc
 
 	return nil
 }
-

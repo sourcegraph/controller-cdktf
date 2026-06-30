@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptions
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptions
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateSetRequirePartitionFilterParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateSetRequirePartitionFilterParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewBigqueryTableExternalDataConfigurationHivePartitioningOptionsOut
 
 	return nil
 }
-

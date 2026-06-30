@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerClusterMaintenancePolicyDisruptionBudgetOutputReference
 
 	return nil
 }
-

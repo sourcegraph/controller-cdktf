@@ -6,9 +6,9 @@ import (
 
 type DiscoveryEngineControlConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DiscoveryEngineControlConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique id of the control.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_control#control_id DiscoveryEngineControl#control_id}
@@ -53,7 +53,7 @@ type DiscoveryEngineControlConfig struct {
 	// conditions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_control#conditions DiscoveryEngineControl#conditions}
-	Conditions interface{} `field:"optional" json:"conditions" yaml:"conditions"`
+	Conditions any `field:"optional" json:"conditions" yaml:"conditions"`
 	// filter_action block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_control#filter_action DiscoveryEngineControl#filter_action}
@@ -86,4 +86,3 @@ type DiscoveryEngineControlConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_control#use_cases DiscoveryEngineControl#use_cases}
 	UseCases *[]*string `field:"optional" json:"useCases" yaml:"useCases"`
 }
-

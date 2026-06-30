@@ -98,7 +98,7 @@ func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFilestoreInstancePerformanceConfigFixedIopsOutputReferenceParame
 
 	return nil
 }
-

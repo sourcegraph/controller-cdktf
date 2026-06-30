@@ -106,7 +106,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceFeder
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStorageTransferJobTransferSpecAzureBlobStorageDataSourceFederate
 
 	return nil
 }
-

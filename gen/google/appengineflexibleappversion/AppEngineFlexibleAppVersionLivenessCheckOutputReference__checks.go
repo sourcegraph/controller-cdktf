@@ -106,7 +106,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewAppEngineFlexibleAppVersionLivenessCheckOutputReferenceParameter
 
 	return nil
 }
-

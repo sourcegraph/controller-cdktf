@@ -14,9 +14,9 @@ type TranscoderJobConfigEncryptionsDrmSystemsOutputReference interface {
 	ClearkeyInput() *TranscoderJobConfigEncryptionsDrmSystemsClearkey
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type TranscoderJobConfigEncryptionsDrmSystemsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type TranscoderJobConfigEncryptionsDrmSystemsOutputReference interface {
 	ResetWidevine()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) Clea
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) Wide
 	return returns
 }
 
-
 func NewTranscoderJobConfigEncryptionsDrmSystemsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TranscoderJobConfigEncryptionsDrmSystemsOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewTranscoderJobConfigEncryptionsDrmSystemsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewTranscoderJobConfigEncryptionsDrmSystemsOutputReference_Override(t Trans
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference)SetInternalValue(val *TranscoderJobConfigEncryptionsDrmSystems) {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) SetInternalValue(val *TranscoderJobConfigEncryptionsDrmSystems) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,16 +337,16 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) Comp
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetB
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetB
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetL
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetN
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetN
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetN
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetS
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) GetS
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) Inte
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) PutC
 	_jsii_.InvokeVoid(
 		t,
 		"putClearkey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -529,7 +528,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) PutF
 	_jsii_.InvokeVoid(
 		t,
 		"putFairplay",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -540,7 +539,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) PutP
 	_jsii_.InvokeVoid(
 		t,
 		"putPlayready",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) PutW
 	_jsii_.InvokeVoid(
 		t,
 		"putWidevine",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) Rese
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsOutputReference) ToSt
 
 	return returns
 }
-

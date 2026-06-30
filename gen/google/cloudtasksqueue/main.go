@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueue",
-		reflect.TypeOf((*CloudTasksQueue)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueue](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueue{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,11 +99,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverride",
-		reflect.TypeOf((*CloudTasksQueueAppEngineRoutingOverride)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueAppEngineRoutingOverride](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverrideOutputReference",
-		reflect.TypeOf((*CloudTasksQueueAppEngineRoutingOverrideOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueAppEngineRoutingOverrideOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueAppEngineRoutingOverrideOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,23 +145,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueConfig",
-		reflect.TypeOf((*CloudTasksQueueConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTarget",
-		reflect.TypeOf((*CloudTasksQueueHttpTarget)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTarget](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetHeaderOverrides",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetHeaderOverrides)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetHeaderOverrides](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetHeaderOverridesHeader",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetHeaderOverridesHeader)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetHeaderOverridesHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetHeaderOverridesHeaderOutputReference",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetHeaderOverridesHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetHeaderOverridesHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -189,7 +189,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -197,7 +197,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetHeaderOverridesList",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetHeaderOverridesList)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetHeaderOverridesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -219,7 +219,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetHeaderOverridesOutputReference",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetHeaderOverridesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetHeaderOverridesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -254,11 +254,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetOauthToken",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetOauthToken)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetOauthToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetOauthTokenOutputReference",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetOauthTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetOauthTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -287,7 +287,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueHttpTargetOauthTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -295,11 +295,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetOidcToken",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetOidcToken)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetOidcToken](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetOidcTokenOutputReference",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetOidcTokenOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetOidcTokenOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
 			_jsii_.MemberProperty{JsiiProperty: "audienceInput", GoGetter: "AudienceInput"},
@@ -328,7 +328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueHttpTargetOidcTokenOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -336,7 +336,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetOutputReference",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -379,7 +379,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uriOverride", GoGetter: "UriOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "uriOverrideInput", GoGetter: "UriOverrideInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueHttpTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -387,11 +387,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetUriOverride",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetUriOverride)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetUriOverride](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetUriOverrideOutputReference",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetUriOverrideOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetUriOverrideOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -435,7 +435,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uriOverrideEnforceMode", GoGetter: "UriOverrideEnforceMode"},
 			_jsii_.MemberProperty{JsiiProperty: "uriOverrideEnforceModeInput", GoGetter: "UriOverrideEnforceModeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueHttpTargetUriOverrideOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -443,11 +443,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetUriOverridePathOverride",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetUriOverridePathOverride)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetUriOverridePathOverride](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -474,7 +474,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -482,11 +482,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetUriOverrideQueryOverride",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetUriOverrideQueryOverride)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetUriOverrideQueryOverride](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetUriOverrideQueryOverrideOutputReference",
-		reflect.TypeOf((*CloudTasksQueueHttpTargetUriOverrideQueryOverrideOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueHttpTargetUriOverrideQueryOverrideOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -513,7 +513,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueHttpTargetUriOverrideQueryOverrideOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -521,11 +521,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRateLimits",
-		reflect.TypeOf((*CloudTasksQueueRateLimits)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueRateLimits](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRateLimitsOutputReference",
-		reflect.TypeOf((*CloudTasksQueueRateLimitsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueRateLimitsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -556,7 +556,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueRateLimitsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -564,11 +564,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRetryConfig",
-		reflect.TypeOf((*CloudTasksQueueRetryConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueRetryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueRetryConfigOutputReference",
-		reflect.TypeOf((*CloudTasksQueueRetryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueRetryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -607,7 +607,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueRetryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -615,11 +615,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfig",
-		reflect.TypeOf((*CloudTasksQueueStackdriverLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueStackdriverLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfigOutputReference",
-		reflect.TypeOf((*CloudTasksQueueStackdriverLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueStackdriverLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -645,7 +645,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueStackdriverLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -653,11 +653,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueTimeouts",
-		reflect.TypeOf((*CloudTasksQueueTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueTimeoutsOutputReference",
-		reflect.TypeOf((*CloudTasksQueueTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudTasksQueueTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -690,7 +690,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudTasksQueueTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

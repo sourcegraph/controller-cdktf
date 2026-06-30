@@ -36,7 +36,7 @@ type ComputeInstanceGroupManagerStatusAllInstancesConfigList interface {
 	Get(index *float64) ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList) Wrap
 	return returns
 }
 
-
 func NewComputeInstanceGroupManagerStatusAllInstancesConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatusAllInstancesConfigList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewComputeInstanceGroupManagerStatusAllInstancesConfigList(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewComputeInstanceGroupManagerStatusAllInstancesConfigList_Override(c Compu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList)SetTe
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList)SetTe
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList) AllW
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList) Get(
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatusAllInstancesConfigList) ToSt
 
 	return returns
 }
-

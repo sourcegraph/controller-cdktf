@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleArtifactRegistryVersionsVersionsOutputReferenceParamet
 
 	return nil
 }
-

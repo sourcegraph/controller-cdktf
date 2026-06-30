@@ -6,9 +6,9 @@ import (
 
 type DiscoveryEngineDataConnectorConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DiscoveryEngineDataConnectorConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name of the Collection.
 	//
 	// Should be human readable, used to display collections in the Console
@@ -115,7 +115,7 @@ type DiscoveryEngineDataConnectorConfig struct {
 	// Indicates whether full syncs are paused for this connector.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#auto_run_disabled DiscoveryEngineDataConnector#auto_run_disabled}
-	AutoRunDisabled interface{} `field:"optional" json:"autoRunDisabled" yaml:"autoRunDisabled"`
+	AutoRunDisabled any `field:"optional" json:"autoRunDisabled" yaml:"autoRunDisabled"`
 	// bap_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#bap_config DiscoveryEngineDataConnector#bap_config}
@@ -131,11 +131,11 @@ type DiscoveryEngineDataConnectorConfig struct {
 	// destination_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#destination_configs DiscoveryEngineDataConnector#destination_configs}
-	DestinationConfigs interface{} `field:"optional" json:"destinationConfigs" yaml:"destinationConfigs"`
+	DestinationConfigs any `field:"optional" json:"destinationConfigs" yaml:"destinationConfigs"`
 	// entities block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#entities DiscoveryEngineDataConnector#entities}
-	Entities interface{} `field:"optional" json:"entities" yaml:"entities"`
+	Entities any `field:"optional" json:"entities" yaml:"entities"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#id DiscoveryEngineDataConnector#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -155,7 +155,7 @@ type DiscoveryEngineDataConnectorConfig struct {
 	// Indicates whether incremental syncs are paused for this connector.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#incremental_sync_disabled DiscoveryEngineDataConnector#incremental_sync_disabled}
-	IncrementalSyncDisabled interface{} `field:"optional" json:"incrementalSyncDisabled" yaml:"incrementalSyncDisabled"`
+	IncrementalSyncDisabled any `field:"optional" json:"incrementalSyncDisabled" yaml:"incrementalSyncDisabled"`
 	// Params needed to access the source in the format of json string.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#json_params DiscoveryEngineDataConnector#json_params}
@@ -178,7 +178,7 @@ type DiscoveryEngineDataConnectorConfig struct {
 	// Whether customer has enabled static IP addresses for this connector.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#static_ip_enabled DiscoveryEngineDataConnector#static_ip_enabled}
-	StaticIpEnabled interface{} `field:"optional" json:"staticIpEnabled" yaml:"staticIpEnabled"`
+	StaticIpEnabled any `field:"optional" json:"staticIpEnabled" yaml:"staticIpEnabled"`
 	// The data synchronization mode supported by the data connector. The possible value can be: 'PERIODIC', 'STREAMING'.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#sync_mode DiscoveryEngineDataConnector#sync_mode}
@@ -188,4 +188,3 @@ type DiscoveryEngineDataConnectorConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_data_connector#timeouts DiscoveryEngineDataConnector#timeouts}
 	Timeouts *DiscoveryEngineDataConnectorTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

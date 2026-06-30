@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloud) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleVmwareenginePrivateCloud_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataGoogleVmwareenginePrivateCloud_IsConstructParameters(x interface{}) error {
+func validateDataGoogleVmwareenginePrivateCloud_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleVmwareenginePrivateCloud_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleVmwareenginePrivateCloud_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleVmwareenginePrivateCloud_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleVmwareenginePrivateCloud_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataGoogleVmwareenginePrivateCloud_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleVmwareenginePrivateCloud_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleVmwareenginePrivateCloud_IsTerraformElementParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleVmwareenginePrivateCloudParameters(scope constructs.Co
 
 	return nil
 }
-

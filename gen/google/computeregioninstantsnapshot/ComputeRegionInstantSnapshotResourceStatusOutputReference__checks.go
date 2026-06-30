@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionInstantSnapshotResourceStatusOutputReferenceParamet
 
 	return nil
 }
-

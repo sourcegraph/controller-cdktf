@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputR
 
 	return nil
 }
-

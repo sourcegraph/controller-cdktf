@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerNamedPortList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerNamedPortList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerNamedPortList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionInstanceGroupManagerNamedPortListParameters(terrafo
 
 	return nil
 }
-

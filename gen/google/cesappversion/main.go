@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersion",
-		reflect.TypeOf((*CesAppVersion)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,23 +88,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionConfig",
-		reflect.TypeOf((*CesAppVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshot",
-		reflect.TypeOf((*CesAppVersionSnapshot)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshot](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgents",
-		reflect.TypeOf((*CesAppVersionSnapshotAgents)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgents](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacks",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsAfterAgentCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsAfterAgentCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacksList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsAfterAgentCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsAfterAgentCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsAfterAgentCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacks",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsAfterModelCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsAfterModelCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacksList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsAfterModelCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsAfterModelCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -177,7 +177,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsAfterModelCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -185,7 +185,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -212,7 +212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -220,11 +220,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacks",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsAfterToolCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsAfterToolCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsAfterToolCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsAfterToolCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -237,7 +237,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -245,7 +245,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -272,7 +272,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -280,11 +280,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacks",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsBeforeAgentCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsBeforeAgentCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacksList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsBeforeAgentCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsBeforeAgentCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsBeforeAgentCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -305,7 +305,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -332,7 +332,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -340,11 +340,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacks",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsBeforeModelCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsBeforeModelCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacksList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsBeforeModelCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsBeforeModelCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -357,7 +357,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsBeforeModelCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -365,7 +365,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -400,11 +400,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacks",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsBeforeToolCallbacks)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsBeforeToolCallbacks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacksList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsBeforeToolCallbacksList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsBeforeToolCallbacksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -417,7 +417,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsBeforeToolCallbacksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -425,7 +425,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -452,7 +452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -460,7 +460,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -473,7 +473,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -481,11 +481,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsLlmAgent",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsLlmAgent)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsLlmAgent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsLlmAgentList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsLlmAgentList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsLlmAgentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -498,7 +498,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsLlmAgentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -506,7 +506,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsLlmAgentOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsLlmAgentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsLlmAgentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -530,7 +530,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsLlmAgentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -538,11 +538,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsModelSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsModelSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsModelSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsModelSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -555,7 +555,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsModelSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -563,7 +563,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsModelSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -589,7 +589,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -597,7 +597,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "afterAgentCallbacks", GoGetter: "AfterAgentCallbacks"},
 			_jsii_.MemberProperty{JsiiProperty: "afterModelCallbacks", GoGetter: "AfterModelCallbacks"},
@@ -642,7 +642,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -650,11 +650,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgent",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsRemoteDialogflowAgent)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsRemoteDialogflowAgent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsRemoteDialogflowAgentList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsRemoteDialogflowAgentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -667,7 +667,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsRemoteDialogflowAgentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -675,7 +675,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agent", GoGetter: "Agent"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -704,7 +704,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -712,11 +712,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsToolsets",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsToolsets)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsToolsets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsToolsetsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsToolsetsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsToolsetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -729,7 +729,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsToolsetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -737,7 +737,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsToolsetsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAgentsToolsetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAgentsToolsetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -763,7 +763,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolset", GoGetter: "Toolset"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAgentsToolsetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -771,19 +771,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotApp",
-		reflect.TypeOf((*CesAppVersionSnapshotApp)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotApp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -796,7 +796,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -804,7 +804,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -831,7 +831,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeGainDb", GoGetter: "VolumeGainDb"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigAmbientSoundConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -839,11 +839,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -856,7 +856,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -864,7 +864,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bargeInAwareness", GoGetter: "BargeInAwareness"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -889,7 +889,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -897,7 +897,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -910,7 +910,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -918,7 +918,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ambientSoundConfig", GoGetter: "AmbientSoundConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "bargeInConfig", GoGetter: "BargeInConfig"},
@@ -946,7 +946,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -954,11 +954,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigs",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigs)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -971,7 +971,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -979,7 +979,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1006,7 +1006,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "voice", GoGetter: "Voice"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1014,11 +1014,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppClientCertificateSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAppClientCertificateSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppClientCertificateSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppClientCertificateSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppClientCertificateSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppClientCertificateSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1031,7 +1031,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppClientCertificateSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1039,7 +1039,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppClientCertificateSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppClientCertificateSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppClientCertificateSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1066,7 +1066,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsCertificate", GoGetter: "TlsCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppClientCertificateSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1074,15 +1074,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDataStoreSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDataStoreSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDataStoreSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDataStoreSettingsEngines",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDataStoreSettingsEngines)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDataStoreSettingsEngines](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDataStoreSettingsEnginesList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDataStoreSettingsEnginesList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDataStoreSettingsEnginesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1095,7 +1095,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1103,7 +1103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1129,7 +1129,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1137,7 +1137,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDataStoreSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDataStoreSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDataStoreSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1150,7 +1150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1158,7 +1158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDataStoreSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDataStoreSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDataStoreSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1183,7 +1183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1191,11 +1191,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfile",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDefaultChannelProfile)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDefaultChannelProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDefaultChannelProfileList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDefaultChannelProfileList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1208,7 +1208,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1216,7 +1216,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDefaultChannelProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDefaultChannelProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelType", GoGetter: "ChannelType"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1246,7 +1246,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetConfig", GoGetter: "WebWidgetConfig"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1254,11 +1254,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfilePersonaProperty",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDefaultChannelProfilePersonaProperty)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDefaultChannelProfilePersonaProperty](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1271,7 +1271,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1279,7 +1279,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1304,7 +1304,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1312,11 +1312,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1329,7 +1329,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1337,7 +1337,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1364,7 +1364,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetTitle", GoGetter: "WebWidgetTitle"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1372,19 +1372,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholds",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholds)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholds](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1397,7 +1397,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1405,7 +1405,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1430,7 +1430,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolInvocationParameterCorrectnessThreshold", GoGetter: "ToolInvocationParameterCorrectnessThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1438,7 +1438,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1451,7 +1451,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1459,7 +1459,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1485,7 +1485,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "turnLevelMetricsThresholds", GoGetter: "TurnLevelMetricsThresholds"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1493,11 +1493,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1510,7 +1510,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1518,7 +1518,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1544,7 +1544,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1552,7 +1552,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1565,7 +1565,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1573,7 +1573,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1598,7 +1598,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1606,11 +1606,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLanguageSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLanguageSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLanguageSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLanguageSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLanguageSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLanguageSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1623,7 +1623,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLanguageSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1631,7 +1631,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLanguageSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLanguageSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLanguageSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1659,7 +1659,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLanguageSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1667,7 +1667,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1680,7 +1680,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1688,15 +1688,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1709,7 +1709,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1717,7 +1717,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1743,7 +1743,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1751,11 +1751,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1768,7 +1768,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1776,7 +1776,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1803,7 +1803,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1811,11 +1811,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1828,7 +1828,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1836,7 +1836,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1861,7 +1861,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1869,11 +1869,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1886,7 +1886,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1894,7 +1894,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1919,7 +1919,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1927,7 +1927,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1940,7 +1940,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1948,7 +1948,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioRecordingConfig", GoGetter: "AudioRecordingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryExportSettings", GoGetter: "BigqueryExportSettings"},
@@ -1977,7 +1977,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1985,11 +1985,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsRedactionConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsRedactionConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsRedactionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsRedactionConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsRedactionConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsRedactionConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2002,7 +2002,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsRedactionConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2010,7 +2010,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsRedactionConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppLoggingSettingsRedactionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppLoggingSettingsRedactionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2037,7 +2037,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppLoggingSettingsRedactionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2045,11 +2045,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppModelSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAppModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppModelSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppModelSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppModelSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2062,7 +2062,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppModelSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2070,7 +2070,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppModelSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2096,7 +2096,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2104,7 +2104,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioProcessingConfig", GoGetter: "AudioProcessingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "clientCertificateSettings", GoGetter: "ClientCertificateSettings"},
@@ -2149,7 +2149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "variableDeclarations", GoGetter: "VariableDeclarations"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2157,11 +2157,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppTimeZoneSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotAppTimeZoneSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppTimeZoneSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppTimeZoneSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppTimeZoneSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppTimeZoneSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2174,7 +2174,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppTimeZoneSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2182,7 +2182,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppTimeZoneSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppTimeZoneSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppTimeZoneSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2207,7 +2207,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZone", GoGetter: "TimeZone"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppTimeZoneSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2215,11 +2215,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppVariableDeclarations",
-		reflect.TypeOf((*CesAppVersionSnapshotAppVariableDeclarations)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppVariableDeclarations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppVariableDeclarationsList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppVariableDeclarationsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppVariableDeclarationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2232,7 +2232,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2240,7 +2240,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppVariableDeclarationsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppVariableDeclarationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppVariableDeclarationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2267,7 +2267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2275,11 +2275,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppVariableDeclarationsSchema",
-		reflect.TypeOf((*CesAppVersionSnapshotAppVariableDeclarationsSchema)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppVariableDeclarationsSchema](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppVariableDeclarationsSchemaList",
-		reflect.TypeOf((*CesAppVersionSnapshotAppVariableDeclarationsSchemaList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppVariableDeclarationsSchemaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2292,7 +2292,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsSchemaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2300,7 +2300,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotAppVariableDeclarationsSchemaOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotAppVariableDeclarationsSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotAppVariableDeclarationsSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalProperties", GoGetter: "AdditionalProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "anyOf", GoGetter: "AnyOf"},
@@ -2338,7 +2338,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueItems", GoGetter: "UniqueItems"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotAppVariableDeclarationsSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2346,11 +2346,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamples",
-		reflect.TypeOf((*CesAppVersionSnapshotExamples)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamples](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesList",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2363,7 +2363,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2371,19 +2371,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessages",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessages)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessages](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunks",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunks)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunks](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksAgentTransfer",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksAgentTransfer)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksAgentTransfer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksAgentTransferList",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksAgentTransferList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksAgentTransferList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2396,7 +2396,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksAgentTransferList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2404,7 +2404,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksAgentTransferOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksAgentTransferOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksAgentTransferOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2430,7 +2430,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksAgentTransferOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2438,11 +2438,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksImage",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksImage)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksImageList",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksImageList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksImageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2455,7 +2455,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksImageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2463,7 +2463,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksImageOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2489,7 +2489,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2497,7 +2497,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksList",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2510,7 +2510,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2518,7 +2518,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentTransfer", GoGetter: "AgentTransfer"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2548,7 +2548,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedVariables", GoGetter: "UpdatedVariables"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2556,11 +2556,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCall",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolCall)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolCall](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCallList",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolCallList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolCallList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2573,7 +2573,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2581,7 +2581,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2610,7 +2610,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolsetTool", GoGetter: "ToolsetTool"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2618,11 +2618,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetTool",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetTool)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetTool](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetToolList",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetToolList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetToolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2635,7 +2635,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetToolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2643,7 +2643,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetToolOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2669,7 +2669,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolset", GoGetter: "Toolset"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2677,11 +2677,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolResponse",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolResponse)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolResponseList",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolResponseList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolResponseList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2694,7 +2694,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolResponseList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2702,7 +2702,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolResponseOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2731,7 +2731,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolsetTool", GoGetter: "ToolsetTool"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2739,11 +2739,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetTool",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetTool)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetTool](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolList",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2756,7 +2756,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2764,7 +2764,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2790,7 +2790,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolset", GoGetter: "Toolset"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2798,7 +2798,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesList",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2811,7 +2811,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2819,7 +2819,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesMessagesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesMessagesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "chunks", GoGetter: "Chunks"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2845,7 +2845,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2853,7 +2853,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotExamplesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotExamplesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2886,7 +2886,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotExamplesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2894,19 +2894,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrails",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrails)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrails](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsAction",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsAction)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsAction](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionGenerativeAnswer",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionGenerativeAnswer)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionGenerativeAnswer](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionGenerativeAnswerList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionGenerativeAnswerList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionGenerativeAnswerList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2919,7 +2919,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionGenerativeAnswerList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2927,7 +2927,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2952,7 +2952,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionGenerativeAnswerOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2960,7 +2960,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2973,7 +2973,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2981,7 +2981,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3008,7 +3008,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "transferAgent", GoGetter: "TransferAgent"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3016,11 +3016,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionRespondImmediately",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionRespondImmediately)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionRespondImmediately](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionRespondImmediatelyList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionRespondImmediatelyList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionRespondImmediatelyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3033,7 +3033,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3041,7 +3041,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3066,7 +3066,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3074,11 +3074,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponses",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponses)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponsesList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponsesList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponsesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3091,7 +3091,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponsesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3099,7 +3099,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponsesOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponsesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponsesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3125,7 +3125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "text", GoGetter: "Text"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyResponsesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3133,11 +3133,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionTransferAgent",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionTransferAgent)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionTransferAgent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionTransferAgentList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionTransferAgentList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionTransferAgentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3150,7 +3150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionTransferAgentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3158,7 +3158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsActionTransferAgentOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsActionTransferAgentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsActionTransferAgentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agent", GoGetter: "Agent"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3183,7 +3183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsActionTransferAgentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3191,15 +3191,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallback",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallback)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallback](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallback",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallback)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3212,7 +3212,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3220,7 +3220,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3247,7 +3247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3255,11 +3255,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallback",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallback)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3272,7 +3272,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3280,7 +3280,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3307,7 +3307,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3315,11 +3315,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallback",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallback)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3332,7 +3332,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3340,7 +3340,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3367,7 +3367,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3375,11 +3375,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallback",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallback)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallback](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3392,7 +3392,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3400,7 +3400,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3427,7 +3427,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3435,7 +3435,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3448,7 +3448,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3456,7 +3456,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsCodeCallbackOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsCodeCallbackOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "afterAgentCallback", GoGetter: "AfterAgentCallback"},
 			_jsii_.MemberProperty{JsiiProperty: "afterModelCallback", GoGetter: "AfterModelCallback"},
@@ -3484,7 +3484,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsCodeCallbackOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3492,11 +3492,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsContentFilter",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsContentFilter)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsContentFilter](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsContentFilterList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsContentFilterList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsContentFilterList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3509,7 +3509,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsContentFilterList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3517,7 +3517,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsContentFilterOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsContentFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsContentFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bannedContents", GoGetter: "BannedContents"},
 			_jsii_.MemberProperty{JsiiProperty: "bannedContentsInAgentResponse", GoGetter: "BannedContentsInAgentResponse"},
@@ -3546,7 +3546,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsContentFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3554,7 +3554,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3567,7 +3567,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3575,11 +3575,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPolicy",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPolicy)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPolicyList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPolicyList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3592,7 +3592,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3600,11 +3600,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPolicyModelSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPolicyModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPolicyModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPolicyModelSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPolicyModelSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPolicyModelSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3617,7 +3617,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPolicyModelSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3625,7 +3625,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPolicyModelSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPolicyModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPolicyModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3651,7 +3651,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPolicyModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3659,7 +3659,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPolicyOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3688,7 +3688,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3696,15 +3696,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurity",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurity)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurity](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicy",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicy)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3717,7 +3717,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3725,11 +3725,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3742,7 +3742,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3750,7 +3750,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3776,7 +3776,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3784,7 +3784,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3813,7 +3813,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3821,11 +3821,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3838,7 +3838,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3846,7 +3846,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3871,7 +3871,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityDefaultSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3879,7 +3879,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3892,7 +3892,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3900,7 +3900,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3926,7 +3926,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3934,11 +3934,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsModelSafety",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsModelSafety)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsModelSafety](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsModelSafetyList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsModelSafetyList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsModelSafetyList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3951,7 +3951,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsModelSafetyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -3959,7 +3959,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsModelSafetyOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsModelSafetyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsModelSafetyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3984,7 +3984,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsModelSafetyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -3992,11 +3992,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsModelSafetySafetySettings",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsModelSafetySafetySettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsModelSafetySafetySettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsModelSafetySafetySettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsModelSafetySafetySettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsModelSafetySafetySettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4009,7 +4009,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsModelSafetySafetySettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4017,7 +4017,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsModelSafetySafetySettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsModelSafetySafetySettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsModelSafetySafetySettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4043,7 +4043,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "threshold", GoGetter: "Threshold"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsModelSafetySafetySettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4051,7 +4051,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotGuardrailsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotGuardrailsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "codeCallback", GoGetter: "CodeCallback"},
@@ -4088,7 +4088,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotGuardrailsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4096,7 +4096,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotList",
-		reflect.TypeOf((*CesAppVersionSnapshotList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4109,7 +4109,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4117,7 +4117,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agents", GoGetter: "Agents"},
 			_jsii_.MemberProperty{JsiiProperty: "app", GoGetter: "App"},
@@ -4147,7 +4147,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolsets", GoGetter: "Toolsets"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4155,15 +4155,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotTools",
-		reflect.TypeOf((*CesAppVersionSnapshotTools)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotTools](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunction",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsClientFunction)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsClientFunction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsClientFunctionList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsClientFunctionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4176,7 +4176,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsClientFunctionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4184,7 +4184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsClientFunctionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsClientFunctionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4212,7 +4212,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsClientFunctionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4220,11 +4220,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionParameters",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsClientFunctionParameters)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsClientFunctionParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionParametersList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsClientFunctionParametersList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsClientFunctionParametersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4237,7 +4237,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4245,7 +4245,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionParametersOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsClientFunctionParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsClientFunctionParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalProperties", GoGetter: "AdditionalProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "anyOf", GoGetter: "AnyOf"},
@@ -4283,7 +4283,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueItems", GoGetter: "UniqueItems"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsClientFunctionParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4291,11 +4291,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionResponse",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsClientFunctionResponse)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsClientFunctionResponse](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionResponseList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsClientFunctionResponseList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsClientFunctionResponseList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4308,7 +4308,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsClientFunctionResponseList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4316,7 +4316,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsClientFunctionResponseOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsClientFunctionResponseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsClientFunctionResponseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalProperties", GoGetter: "AdditionalProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "anyOf", GoGetter: "AnyOf"},
@@ -4354,7 +4354,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueItems", GoGetter: "UniqueItems"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsClientFunctionResponseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4362,15 +4362,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreTool",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreTool)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreTool](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecs",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecs)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4383,7 +4383,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4391,7 +4391,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4417,7 +4417,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4425,23 +4425,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpec",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpec)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecs",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecs)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPoints",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPoints)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPoints](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4454,7 +4454,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4462,7 +4462,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeValue", GoGetter: "AttributeValue"},
 			_jsii_.MemberProperty{JsiiProperty: "boostAmount", GoGetter: "BoostAmount"},
@@ -4488,7 +4488,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4496,7 +4496,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4509,7 +4509,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4517,7 +4517,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeType", GoGetter: "AttributeType"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4545,7 +4545,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4553,7 +4553,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4566,7 +4566,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4574,7 +4574,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boost", GoGetter: "Boost"},
 			_jsii_.MemberProperty{JsiiProperty: "boostControlSpec", GoGetter: "BoostControlSpec"},
@@ -4601,7 +4601,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4609,7 +4609,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4622,7 +4622,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4630,7 +4630,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4655,7 +4655,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4663,23 +4663,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSource",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSource)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSource](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSources",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSources)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSources](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStore",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStore)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStore](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4692,7 +4692,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4700,7 +4700,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "collection", GoGetter: "Collection"},
 			_jsii_.MemberProperty{JsiiProperty: "collectionDisplayName", GoGetter: "CollectionDisplayName"},
@@ -4727,7 +4727,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreConnectorConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4735,7 +4735,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4748,7 +4748,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4756,7 +4756,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4786,7 +4786,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesDataStoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4794,7 +4794,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4807,7 +4807,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4815,7 +4815,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4841,7 +4841,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolEngineSourceDataStoreSourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4849,7 +4849,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4862,7 +4862,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolEngineSourceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4870,7 +4870,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolEngineSourceOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolEngineSourceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolEngineSourceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4897,7 +4897,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolEngineSourceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4905,7 +4905,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4918,7 +4918,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4926,15 +4926,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigs",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigs)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4947,7 +4947,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -4955,7 +4955,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4981,7 +4981,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsGroundingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -4989,7 +4989,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5002,7 +5002,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5010,7 +5010,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5038,7 +5038,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5046,11 +5046,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5063,7 +5063,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5071,11 +5071,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5088,7 +5088,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5096,7 +5096,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5122,7 +5122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5130,7 +5130,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5157,7 +5157,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsRewriterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5165,11 +5165,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5182,7 +5182,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5190,11 +5190,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettings",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5207,7 +5207,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5215,7 +5215,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5241,7 +5241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5249,7 +5249,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5276,7 +5276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolModalityConfigsSummarizationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5284,7 +5284,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsDataStoreToolOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsDataStoreToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsDataStoreToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boostSpecs", GoGetter: "BoostSpecs"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5314,7 +5314,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5322,11 +5322,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsGoogleSearchTool",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsGoogleSearchTool)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsGoogleSearchTool](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsGoogleSearchToolList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsGoogleSearchToolList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsGoogleSearchToolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5339,7 +5339,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsGoogleSearchToolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5347,7 +5347,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsGoogleSearchToolOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsGoogleSearchToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsGoogleSearchToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5374,7 +5374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsGoogleSearchToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5382,7 +5382,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5395,7 +5395,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5403,19 +5403,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiTool",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiTool)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiTool](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthentication",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthentication)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthentication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5428,7 +5428,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5436,7 +5436,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKeySecretVersion", GoGetter: "ApiKeySecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5463,7 +5463,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5471,7 +5471,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5484,7 +5484,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5492,11 +5492,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5509,7 +5509,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5517,7 +5517,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientSecretVersion", GoGetter: "ClientSecretVersion"},
@@ -5546,7 +5546,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenEndpoint", GoGetter: "TokenEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5554,7 +5554,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyConfig", GoGetter: "ApiKeyConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5582,7 +5582,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5590,11 +5590,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5607,7 +5607,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5615,7 +5615,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5640,7 +5640,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5648,11 +5648,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5665,7 +5665,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5673,7 +5673,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5697,7 +5697,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5705,7 +5705,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5718,7 +5718,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5726,7 +5726,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiAuthentication", GoGetter: "ApiAuthentication"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5758,7 +5758,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5766,11 +5766,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5783,7 +5783,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5791,7 +5791,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -5816,7 +5816,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5824,15 +5824,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolTlsConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolTlsConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolTlsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5845,7 +5845,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5853,7 +5853,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5879,7 +5879,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5887,7 +5887,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolTlsConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolTlsConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolTlsConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5900,7 +5900,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -5908,7 +5908,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCerts", GoGetter: "CaCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5933,7 +5933,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5941,7 +5941,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientFunction", GoGetter: "ClientFunction"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5978,7 +5978,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -5986,11 +5986,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsPythonFunction",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsPythonFunction)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsPythonFunction](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsPythonFunctionList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsPythonFunctionList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsPythonFunctionList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6003,7 +6003,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsPythonFunctionList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6011,7 +6011,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsPythonFunctionOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsPythonFunctionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsPythonFunctionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6038,7 +6038,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsPythonFunctionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6046,11 +6046,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsSystemTool",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsSystemTool)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsSystemTool](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsSystemToolList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsSystemToolList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsSystemToolList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6063,7 +6063,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsSystemToolList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6071,7 +6071,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsSystemToolOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsSystemToolOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsSystemToolOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6097,7 +6097,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsSystemToolOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6105,11 +6105,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsets",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsets)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6122,7 +6122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6130,19 +6130,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolset",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolset)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolset](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthentication",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthentication)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthentication](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6155,7 +6155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6163,7 +6163,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKeySecretVersion", GoGetter: "ApiKeySecretVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6190,7 +6190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6198,11 +6198,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6215,7 +6215,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6223,7 +6223,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6248,7 +6248,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "token", GoGetter: "Token"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6256,7 +6256,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6269,7 +6269,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6277,11 +6277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6294,7 +6294,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6302,7 +6302,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
 			_jsii_.MemberProperty{JsiiProperty: "clientSecretVersion", GoGetter: "ClientSecretVersion"},
@@ -6331,7 +6331,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tokenEndpoint", GoGetter: "TokenEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOauthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6339,7 +6339,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiKeyConfig", GoGetter: "ApiKeyConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "bearerTokenConfig", GoGetter: "BearerTokenConfig"},
@@ -6368,7 +6368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6376,11 +6376,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6393,7 +6393,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6401,7 +6401,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6426,7 +6426,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAccountAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6434,11 +6434,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6451,7 +6451,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6459,7 +6459,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6483,7 +6483,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6491,7 +6491,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6504,7 +6504,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6512,7 +6512,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiAuthentication", GoGetter: "ApiAuthentication"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6542,7 +6542,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6550,11 +6550,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6567,7 +6567,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6575,7 +6575,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6600,7 +6600,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetServiceDirectoryConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6608,15 +6608,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfig",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCerts",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCerts)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCerts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6629,7 +6629,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6637,7 +6637,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6663,7 +6663,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigCaCertsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6671,7 +6671,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigList",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6684,7 +6684,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -6692,7 +6692,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCerts", GoGetter: "CaCerts"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6717,7 +6717,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetTlsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6725,7 +6725,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsetsOutputReference",
-		reflect.TypeOf((*CesAppVersionSnapshotToolsetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionSnapshotToolsetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6757,7 +6757,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionSnapshotToolsetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -6765,11 +6765,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionTimeouts",
-		reflect.TypeOf((*CesAppVersionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesAppVersion.CesAppVersionTimeoutsOutputReference",
-		reflect.TypeOf((*CesAppVersionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVersionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -6799,7 +6799,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVersionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

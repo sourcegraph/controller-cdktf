@@ -1,6 +1,5 @@
 package datastreamstream
 
-
 type DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables struct {
 	// Table name.
 	//
@@ -9,6 +8,5 @@ type DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMy
 	// mysql_columns block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#mysql_columns DatastreamStream#mysql_columns}
-	MysqlColumns interface{} `field:"optional" json:"mysqlColumns" yaml:"mysqlColumns"`
+	MysqlColumns any `field:"optional" json:"mysqlColumns" yaml:"mysqlColumns"`
 }
-

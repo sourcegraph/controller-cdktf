@@ -15,11 +15,11 @@ type DataGoogleDataplexDataQualityRules interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataScanId() *string
 	SetDataScanId(val *string)
 	DataScanIdInput() *string
@@ -55,18 +55,18 @@ type DataGoogleDataplexDataQualityRules interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rules() DataGoogleDataplexDataQualityRulesRulesList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataGoogleDataplexDataQualityRules interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleDataplexDataQualityRules
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) CdktfStack() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) Provider() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) TerraformGeneratorMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -343,7 +343,6 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) TerraformResourceType() *
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/dataplex_data_quality_rules google_dataplex_data_quality_rules} Data Source.
 func NewDataGoogleDataplexDataQualityRules(scope constructs.Construct, id *string, config *DataGoogleDataplexDataQualityRulesConfig) DataGoogleDataplexDataQualityRules {
 	_init_.Initialize()
@@ -355,7 +354,7 @@ func NewDataGoogleDataplexDataQualityRules(scope constructs.Construct, id *strin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleDataplexDataQualityRules.DataGoogleDataplexDataQualityRules",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -368,12 +367,12 @@ func NewDataGoogleDataplexDataQualityRules_Override(d DataGoogleDataplexDataQual
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleDataplexDataQualityRules.DataGoogleDataplexDataQualityRules",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetCount(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetDataScanId(val *string) {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) SetDataScanId(val *string) {
 	if err := j.validateSetDataScanIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetDataScanId(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRules)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -475,7 +474,7 @@ func DataGoogleDataplexDataQualityRules_GenerateConfigForImport(scope constructs
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataplexDataQualityRules.DataGoogleDataplexDataQualityRules",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func DataGoogleDataplexDataQualityRules_GenerateConfigForImport(scope constructs
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleDataplexDataQualityRules_IsConstruct(x interface{}) *bool {
+func DataGoogleDataplexDataQualityRules_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataplexDataQualityRules_IsConstructParameters(x); err != nil {
@@ -510,7 +509,7 @@ func DataGoogleDataplexDataQualityRules_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataplexDataQualityRules.DataGoogleDataplexDataQualityRules",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func DataGoogleDataplexDataQualityRules_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleDataplexDataQualityRules_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleDataplexDataQualityRules_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataplexDataQualityRules_IsTerraformDataSourceParameters(x); err != nil {
@@ -529,7 +528,7 @@ func DataGoogleDataplexDataQualityRules_IsTerraformDataSource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataplexDataQualityRules.DataGoogleDataplexDataQualityRules",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func DataGoogleDataplexDataQualityRules_IsTerraformDataSource(x interface{}) *bo
 }
 
 // Experimental.
-func DataGoogleDataplexDataQualityRules_IsTerraformElement(x interface{}) *bool {
+func DataGoogleDataplexDataQualityRules_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataplexDataQualityRules_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func DataGoogleDataplexDataQualityRules_IsTerraformElement(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataplexDataQualityRules.DataGoogleDataplexDataQualityRules",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -566,27 +565,27 @@ func DataGoogleDataplexDataQualityRules_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) InterpolationForAttribute
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) OverrideLogicalId(newLogi
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -780,8 +779,8 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) SynthesizeAttributes() *m
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) SynthesizeHclAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -819,8 +818,8 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ToHclTerraform() interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -857,4 +856,3 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRules) ToTerraform() interface{}
 
 	return returns
 }
-

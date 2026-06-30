@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeFirewallParamsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeFirewallParamsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

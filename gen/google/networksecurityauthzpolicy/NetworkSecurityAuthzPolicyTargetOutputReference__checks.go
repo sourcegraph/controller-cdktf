@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyTargetOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetworkSecurityAuthzPolicyTargetOutputReferenceParameters(terraf
 
 	return nil
 }
-

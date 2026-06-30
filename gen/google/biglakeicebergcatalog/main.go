@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalog",
-		reflect.TypeOf((*BiglakeIcebergCatalog)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergCatalog](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergCatalog{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -87,15 +87,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogConfig",
-		reflect.TypeOf((*BiglakeIcebergCatalogConfig)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergCatalogConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogReplicas",
-		reflect.TypeOf((*BiglakeIcebergCatalogReplicas)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergCatalogReplicas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogReplicasList",
-		reflect.TypeOf((*BiglakeIcebergCatalogReplicasList)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergCatalogReplicasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergCatalogReplicasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -116,7 +116,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogReplicasOutputReference",
-		reflect.TypeOf((*BiglakeIcebergCatalogReplicasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergCatalogReplicasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergCatalogReplicasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogTimeouts",
-		reflect.TypeOf((*BiglakeIcebergCatalogTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergCatalogTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergCatalog.BiglakeIcebergCatalogTimeoutsOutputReference",
-		reflect.TypeOf((*BiglakeIcebergCatalogTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergCatalogTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergCatalogTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

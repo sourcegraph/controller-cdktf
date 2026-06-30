@@ -6,9 +6,9 @@ import (
 
 type ProjectServiceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,13 +18,13 @@ type ProjectServiceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#service ProjectService#service}.
 	Service *string `field:"required" json:"service" yaml:"service"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_dependent_services ProjectService#disable_dependent_services}.
-	DisableDependentServices interface{} `field:"optional" json:"disableDependentServices" yaml:"disableDependentServices"`
+	DisableDependentServices any `field:"optional" json:"disableDependentServices" yaml:"disableDependentServices"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_on_destroy ProjectService#disable_on_destroy}.
-	DisableOnDestroy interface{} `field:"optional" json:"disableOnDestroy" yaml:"disableOnDestroy"`
+	DisableOnDestroy any `field:"optional" json:"disableOnDestroy" yaml:"disableOnDestroy"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#id ProjectService#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -37,4 +37,3 @@ type ProjectServiceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#timeouts ProjectService#timeouts}
 	Timeouts *ProjectServiceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

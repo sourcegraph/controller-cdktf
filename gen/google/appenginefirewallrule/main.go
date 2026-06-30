@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRule",
-		reflect.TypeOf((*AppEngineFirewallRule)(nil)).Elem(),
+		reflect.TypeFor[AppEngineFirewallRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
 			_jsii_.MemberProperty{JsiiProperty: "actionInput", GoGetter: "ActionInput"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppEngineFirewallRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRuleConfig",
-		reflect.TypeOf((*AppEngineFirewallRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[AppEngineFirewallRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRuleTimeouts",
-		reflect.TypeOf((*AppEngineFirewallRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AppEngineFirewallRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRuleTimeoutsOutputReference",
-		reflect.TypeOf((*AppEngineFirewallRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AppEngineFirewallRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

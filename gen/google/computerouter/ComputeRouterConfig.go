@@ -6,9 +6,9 @@ import (
 
 type ComputeRouterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeRouterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// The name must be 1-63 characters long, and
@@ -41,7 +41,7 @@ type ComputeRouterConfig struct {
 	// Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router#encrypted_interconnect_router ComputeRouter#encrypted_interconnect_router}
-	EncryptedInterconnectRouter interface{} `field:"optional" json:"encryptedInterconnectRouter" yaml:"encryptedInterconnectRouter"`
+	EncryptedInterconnectRouter any `field:"optional" json:"encryptedInterconnectRouter" yaml:"encryptedInterconnectRouter"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router#id ComputeRouter#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -70,4 +70,3 @@ type ComputeRouterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_router#timeouts ComputeRouter#timeouts}
 	Timeouts *ComputeRouterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

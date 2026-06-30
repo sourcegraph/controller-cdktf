@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsOutputReference) validatePutSecretManagerParameters(value interface{}) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsOutputReference) validatePutSecretManagerParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewCloudbuildTriggerBuildAvailableSecretsOutputReferenceParameters(
 
 	return nil
 }
-

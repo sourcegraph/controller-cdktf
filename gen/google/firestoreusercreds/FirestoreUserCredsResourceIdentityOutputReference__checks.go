@@ -98,7 +98,7 @@ func (f *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewFirestoreUserCredsResourceIdentityOutputReferenceParameters(terr
 
 	return nil
 }
-

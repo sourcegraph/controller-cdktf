@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleIapWebCloudRunServiceIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleIapWebCloudRunServiceIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleIapWebCloudRunServiceIamPolicy_GenerateConfigForImportPar
 	return nil
 }
 
-func validateDataGoogleIapWebCloudRunServiceIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleIapWebCloudRunServiceIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleIapWebCloudRunServiceIamPolicy_IsConstructParameters(x in
 	return nil
 }
 
-func validateDataGoogleIapWebCloudRunServiceIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleIapWebCloudRunServiceIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleIapWebCloudRunServiceIamPolicy_IsTerraformDataSourceParam
 	return nil
 }
 
-func validateDataGoogleIapWebCloudRunServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleIapWebCloudRunServiceIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleIapWebCloudRunServiceIamPolicy) validateSetCloudRun
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIapWebCloudRunServiceIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleIapWebCloudRunServiceIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleIapWebCloudRunServiceIamPolicyParameters(scope constru
 
 	return nil
 }
-

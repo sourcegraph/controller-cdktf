@@ -18,19 +18,19 @@ type OracleDatabaseExadbVmCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -84,27 +84,27 @@ type OracleDatabaseExadbVmCluster interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OracleDatabaseExadbVmClusterTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type OracleDatabaseExadbVmCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,7 +134,7 @@ type OracleDatabaseExadbVmCluster interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -152,17 +152,17 @@ type OracleDatabaseExadbVmCluster interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OracleDatabaseExadbVmCluster
@@ -200,8 +200,8 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -220,8 +220,8 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) CreateTime() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) DeletionProtection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -550,8 +550,8 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -560,8 +560,8 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -590,8 +590,8 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -620,8 +620,8 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) Timeouts() OracleDatabaseExadbV
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -629,7 +629,6 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_exadb_vm_cluster google_oracle_database_exadb_vm_cluster} Resource.
 func NewOracleDatabaseExadbVmCluster(scope constructs.Construct, id *string, config *OracleDatabaseExadbVmClusterConfig) OracleDatabaseExadbVmCluster {
@@ -642,7 +641,7 @@ func NewOracleDatabaseExadbVmCluster(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -655,12 +654,12 @@ func NewOracleDatabaseExadbVmCluster_Override(o OracleDatabaseExadbVmCluster, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetBackupOdbSubnet(val *string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetBackupOdbSubnet(val *string) {
 	if err := j.validateSetBackupOdbSubnetParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetBackupOdbSubnet(val *string) 
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetConnection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -682,7 +681,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetDeletionProtection(val interf
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -712,7 +711,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetDisplayName(val *string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetExadbVmClusterId(val *string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetExadbVmClusterId(val *string) {
 	if err := j.validateSetExadbVmClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetExadbVmClusterId(val *string)
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -742,7 +741,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetId(val *string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetLabels(val *map[string]*strin
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetLocation(val *string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetOdbNetwork(val *string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetOdbNetwork(val *string) {
 	if err := j.validateSetOdbNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -797,7 +796,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetOdbNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetOdbSubnet(val *string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetOdbSubnet(val *string) {
 	if err := j.validateSetOdbSubnetParameters(val); err != nil {
 		panic(err)
 	}
@@ -808,7 +807,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetOdbSubnet(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetProject(val *string) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -819,7 +818,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -827,7 +826,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -850,7 +849,7 @@ func OracleDatabaseExadbVmCluster_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func OracleDatabaseExadbVmCluster_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OracleDatabaseExadbVmCluster_IsConstruct(x interface{}) *bool {
+func OracleDatabaseExadbVmCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseExadbVmCluster_IsConstructParameters(x); err != nil {
@@ -885,7 +884,7 @@ func OracleDatabaseExadbVmCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func OracleDatabaseExadbVmCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseExadbVmCluster_IsTerraformElement(x interface{}) *bool {
+func OracleDatabaseExadbVmCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseExadbVmCluster_IsTerraformElementParameters(x); err != nil {
@@ -904,7 +903,7 @@ func OracleDatabaseExadbVmCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func OracleDatabaseExadbVmCluster_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OracleDatabaseExadbVmCluster_IsTerraformResource(x interface{}) *bool {
+func OracleDatabaseExadbVmCluster_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOracleDatabaseExadbVmCluster_IsTerraformResourceParameters(x); err != nil {
@@ -923,7 +922,7 @@ func OracleDatabaseExadbVmCluster_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -948,31 +947,31 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -988,7 +987,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1004,7 +1003,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,7 +1019,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1036,7 +1035,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1052,7 +1051,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1068,7 +1067,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1084,7 +1083,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1100,15 +1099,15 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1127,7 +1126,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1140,7 +1139,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1154,18 +1153,18 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1176,7 +1175,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1187,7 +1186,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1198,7 +1197,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) PutProperties(value *OracleData
 	_jsii_.InvokeVoid(
 		o,
 		"putProperties",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1209,7 +1208,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) PutTimeouts(value *OracleDataba
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1269,8 +1268,8 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1282,8 +1281,8 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1295,8 +1294,8 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1308,8 +1307,8 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1334,8 +1333,8 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1346,4 +1345,3 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

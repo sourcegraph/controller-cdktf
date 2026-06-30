@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeRegexOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataLossPreventionStoredInfoTypeRegexOutputReferenceParameters(t
 
 	return nil
 }
-

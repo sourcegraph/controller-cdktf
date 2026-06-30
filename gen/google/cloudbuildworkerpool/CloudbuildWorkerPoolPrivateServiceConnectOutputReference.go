@@ -12,9 +12,9 @@ type CloudbuildWorkerPoolPrivateServiceConnectOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,9 +32,9 @@ type CloudbuildWorkerPoolPrivateServiceConnectOutputReference interface {
 	NetworkAttachment() *string
 	SetNetworkAttachment(val *string)
 	NetworkAttachmentInput() *string
-	RouteAllTraffic() interface{}
-	SetRouteAllTraffic(val interface{})
-	RouteAllTrafficInput() interface{}
+	RouteAllTraffic() any
+	SetRouteAllTraffic(val any)
+	RouteAllTrafficInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type CloudbuildWorkerPoolPrivateServiceConnectOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type CloudbuildWorkerPoolPrivateServiceConnectOutputReference interface {
 	ResetRouteAllTraffic()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Net
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) RouteAllTraffic() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) RouteAllTraffic() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"routeAllTraffic",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Rou
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) RouteAllTrafficInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) RouteAllTrafficInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"routeAllTrafficInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Ter
 	return returns
 }
 
-
 func NewCloudbuildWorkerPoolPrivateServiceConnectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudbuildWorkerPoolPrivateServiceConnectOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewCloudbuildWorkerPoolPrivateServiceConnectOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewCloudbuildWorkerPoolPrivateServiceConnectOutputReference_Override(c Clou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnectOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetInternalValue(val *CloudbuildWorkerPoolPrivateServiceConnect) {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) SetInternalValue(val *CloudbuildWorkerPoolPrivateServiceConnect) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetNetworkAttachment(val *string) {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) SetNetworkAttachment(val *string) {
 	if err := j.validateSetNetworkAttachmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetN
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetRouteAllTraffic(val interface{}) {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) SetRouteAllTraffic(val any) {
 	if err := j.validateSetRouteAllTrafficParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Com
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Int
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) ToS
 
 	return returns
 }
-

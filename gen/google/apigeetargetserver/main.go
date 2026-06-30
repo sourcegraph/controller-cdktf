@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServer",
-		reflect.TypeOf((*ApigeeTargetServer)(nil)).Elem(),
+		reflect.TypeFor[ApigeeTargetServer](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeTargetServer{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,19 +89,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServerConfig",
-		reflect.TypeOf((*ApigeeTargetServerConfig)(nil)).Elem(),
+		reflect.TypeFor[ApigeeTargetServerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfo",
-		reflect.TypeOf((*ApigeeTargetServerSSlInfo)(nil)).Elem(),
+		reflect.TypeFor[ApigeeTargetServerSSlInfo](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfoCommonName",
-		reflect.TypeOf((*ApigeeTargetServerSSlInfoCommonName)(nil)).Elem(),
+		reflect.TypeFor[ApigeeTargetServerSSlInfoCommonName](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfoCommonNameOutputReference",
-		reflect.TypeOf((*ApigeeTargetServerSSlInfoCommonNameOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeTargetServerSSlInfoCommonNameOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wildcardMatch", GoGetter: "WildcardMatch"},
 			_jsii_.MemberProperty{JsiiProperty: "wildcardMatchInput", GoGetter: "WildcardMatchInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeTargetServerSSlInfoCommonNameOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -139,7 +139,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServerSSlInfoOutputReference",
-		reflect.TypeOf((*ApigeeTargetServerSSlInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeTargetServerSSlInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ciphers", GoGetter: "Ciphers"},
 			_jsii_.MemberProperty{JsiiProperty: "ciphersInput", GoGetter: "CiphersInput"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trustStore", GoGetter: "TrustStore"},
 			_jsii_.MemberProperty{JsiiProperty: "trustStoreInput", GoGetter: "TrustStoreInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeTargetServerSSlInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -201,11 +201,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServerTimeouts",
-		reflect.TypeOf((*ApigeeTargetServerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ApigeeTargetServerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apigeeTargetServer.ApigeeTargetServerTimeoutsOutputReference",
-		reflect.TypeOf((*ApigeeTargetServerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApigeeTargetServerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -238,7 +238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApigeeTargetServerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

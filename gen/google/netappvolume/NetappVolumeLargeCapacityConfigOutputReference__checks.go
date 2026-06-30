@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappVolumeLargeCapacityConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeLargeCapacityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeLargeCapacityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetappVolumeLargeCapacityConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

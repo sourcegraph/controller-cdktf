@@ -106,7 +106,7 @@ func (j *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigLivePerso
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDialogflowConversationProfileHumanAgentHandoffConfigLivePersonCo
 
 	return nil
 }
-

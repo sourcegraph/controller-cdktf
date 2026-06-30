@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIamWorkloadIdentityPoolTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

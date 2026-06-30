@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthCheckTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionHealthCheckTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRegionHealthCheckTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

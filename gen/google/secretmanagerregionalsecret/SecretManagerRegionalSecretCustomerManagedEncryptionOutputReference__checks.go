@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretCustomerManagedEncryptionOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSecretManagerRegionalSecretCustomerManagedEncryptionOutputRefere
 
 	return nil
 }
-

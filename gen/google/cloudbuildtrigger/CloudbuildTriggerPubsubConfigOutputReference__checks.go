@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudbuildTriggerPubsubConfigOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeReservationBlockPhysicalTopologyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeReservationBlockPhysicalTopologyOutputReference
 
 	return nil
 }
-

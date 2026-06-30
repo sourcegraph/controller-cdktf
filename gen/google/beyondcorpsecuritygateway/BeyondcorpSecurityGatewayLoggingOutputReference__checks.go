@@ -98,7 +98,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayLoggingOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayLoggingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayLoggingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewBeyondcorpSecurityGatewayLoggingOutputReferenceParameters(terraf
 
 	return nil
 }
-

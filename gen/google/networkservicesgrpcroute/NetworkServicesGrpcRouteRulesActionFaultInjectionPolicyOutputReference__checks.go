@@ -120,7 +120,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutput
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputRef
 
 	return nil
 }
-

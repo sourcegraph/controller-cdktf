@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradePostConditionsOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradePostConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradePostConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleGkeHubFeatureSpecClusterupgradePostConditionsOutputRef
 
 	return nil
 }
-

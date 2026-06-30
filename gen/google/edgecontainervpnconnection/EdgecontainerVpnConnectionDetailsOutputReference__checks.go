@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerVpnConnectionDetailsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEdgecontainerVpnConnectionDetailsOutputReferenceParameters(terra
 
 	return nil
 }
-

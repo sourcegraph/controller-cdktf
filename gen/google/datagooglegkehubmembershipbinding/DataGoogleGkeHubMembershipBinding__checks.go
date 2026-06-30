@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleGkeHubMembershipBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleGkeHubMembershipBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleGkeHubMembershipBinding_GenerateConfigForImportParameters
 	return nil
 }
 
-func validateDataGoogleGkeHubMembershipBinding_IsConstructParameters(x interface{}) error {
+func validateDataGoogleGkeHubMembershipBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleGkeHubMembershipBinding_IsConstructParameters(x interface
 	return nil
 }
 
-func validateDataGoogleGkeHubMembershipBinding_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleGkeHubMembershipBinding_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleGkeHubMembershipBinding_IsTerraformDataSourceParameters(x
 	return nil
 }
 
-func validateDataGoogleGkeHubMembershipBinding_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleGkeHubMembershipBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleGkeHubMembershipBinding_IsTerraformElementParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubMembershipBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleGkeHubMembershipBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,4 +274,3 @@ func validateNewDataGoogleGkeHubMembershipBindingParameters(scope constructs.Con
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocJobHiveConfigOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobHiveConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocJobHiveConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataprocJobHiveConfigOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobHiveConfigOutputReference) validateSetContinueOnFailureParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocJobHiveConfigOutputReference) validateSetContinueOnFailureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewDataprocJobHiveConfigOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

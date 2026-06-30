@@ -1,6 +1,5 @@
 package storagebucket
 
-
 type StorageBucketLifecycleRuleCondition struct {
 	// Minimum age of an object in days to satisfy this condition.
 	//
@@ -47,28 +46,27 @@ type StorageBucketLifecycleRuleCondition struct {
 	// This field is only useful for setting 0 value to the age field. It can be used alone or together with age.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket#send_age_if_zero StorageBucket#send_age_if_zero}
-	SendAgeIfZero interface{} `field:"optional" json:"sendAgeIfZero" yaml:"sendAgeIfZero"`
+	SendAgeIfZero any `field:"optional" json:"sendAgeIfZero" yaml:"sendAgeIfZero"`
 	// While set true, days_since_custom_time value will be sent in the request even for zero value of the field.
 	//
 	// This field is only useful for setting 0 value to the days_since_custom_time field. It can be used alone or together with days_since_custom_time.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket#send_days_since_custom_time_if_zero StorageBucket#send_days_since_custom_time_if_zero}
-	SendDaysSinceCustomTimeIfZero interface{} `field:"optional" json:"sendDaysSinceCustomTimeIfZero" yaml:"sendDaysSinceCustomTimeIfZero"`
+	SendDaysSinceCustomTimeIfZero any `field:"optional" json:"sendDaysSinceCustomTimeIfZero" yaml:"sendDaysSinceCustomTimeIfZero"`
 	// While set true, days_since_noncurrent_time value will be sent in the request even for zero value of the field.
 	//
 	// This field is only useful for setting 0 value to the days_since_noncurrent_time field. It can be used alone or together with days_since_noncurrent_time.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket#send_days_since_noncurrent_time_if_zero StorageBucket#send_days_since_noncurrent_time_if_zero}
-	SendDaysSinceNoncurrentTimeIfZero interface{} `field:"optional" json:"sendDaysSinceNoncurrentTimeIfZero" yaml:"sendDaysSinceNoncurrentTimeIfZero"`
+	SendDaysSinceNoncurrentTimeIfZero any `field:"optional" json:"sendDaysSinceNoncurrentTimeIfZero" yaml:"sendDaysSinceNoncurrentTimeIfZero"`
 	// While set true, num_newer_versions value will be sent in the request even for zero value of the field.
 	//
 	// This field is only useful for setting 0 value to the num_newer_versions field. It can be used alone or together with num_newer_versions.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket#send_num_newer_versions_if_zero StorageBucket#send_num_newer_versions_if_zero}
-	SendNumNewerVersionsIfZero interface{} `field:"optional" json:"sendNumNewerVersionsIfZero" yaml:"sendNumNewerVersionsIfZero"`
+	SendNumNewerVersionsIfZero any `field:"optional" json:"sendNumNewerVersionsIfZero" yaml:"sendNumNewerVersionsIfZero"`
 	// Match to live and/or archived objects. Unversioned buckets have only live objects. Supported values include: "LIVE", "ARCHIVED", "ANY".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket#with_state StorageBucket#with_state}
 	WithState *string `field:"optional" json:"withState" yaml:"withState"`
 }
-

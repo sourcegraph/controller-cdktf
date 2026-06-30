@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
-		reflect.TypeOf((*DataGoogleIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "auditConfig", GoGetter: "AuditConfig"},
@@ -57,7 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -65,15 +65,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig",
-		reflect.TypeOf((*DataGoogleIamPolicyAuditConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyAuditConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs",
-		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigs)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyAuditConfigAuditLogConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsList",
-		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyAuditConfigAuditLogConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIamPolicyAuditConfigAuditLogConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -95,7 +95,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference",
-		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
-		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyAuditConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIamPolicyAuditConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -154,7 +154,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
-		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyAuditConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditLogConfigs", GoGetter: "AuditLogConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "auditLogConfigsInput", GoGetter: "AuditLogConfigsInput"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -191,15 +191,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding",
-		reflect.TypeOf((*DataGoogleIamPolicyBinding)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyBinding](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition",
-		reflect.TypeOf((*DataGoogleIamPolicyBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
-		reflect.TypeOf((*DataGoogleIamPolicyBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -238,7 +238,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
-		reflect.TypeOf((*DataGoogleIamPolicyBindingList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyBindingList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -252,7 +252,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIamPolicyBindingList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -260,7 +260,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
-		reflect.TypeOf((*DataGoogleIamPolicyBindingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyBindingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -292,7 +292,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIamPolicyBindingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -300,6 +300,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig",
-		reflect.TypeOf((*DataGoogleIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIamPolicyConfig](),
 	)
 }

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudget",
-		reflect.TypeOf((*BillingBudget)(nil)).Elem(),
+		reflect.TypeFor[BillingBudget](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudget{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,11 +92,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAllUpdatesRule",
-		reflect.TypeOf((*BillingBudgetAllUpdatesRule)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetAllUpdatesRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference",
-		reflect.TypeOf((*BillingBudgetAllUpdatesRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetAllUpdatesRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -143,11 +143,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAmount",
-		reflect.TypeOf((*BillingBudgetAmount)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetAmount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAmountOutputReference",
-		reflect.TypeOf((*BillingBudgetAmountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetAmountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -178,7 +178,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetAmountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -186,11 +186,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmount",
-		reflect.TypeOf((*BillingBudgetAmountSpecifiedAmount)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetAmountSpecifiedAmount](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmountOutputReference",
-		reflect.TypeOf((*BillingBudgetAmountSpecifiedAmountOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetAmountSpecifiedAmountOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -223,7 +223,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "units", GoGetter: "Units"},
 			_jsii_.MemberProperty{JsiiProperty: "unitsInput", GoGetter: "UnitsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -231,19 +231,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilter",
-		reflect.TypeOf((*BillingBudgetBudgetFilter)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetBudgetFilter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriod",
-		reflect.TypeOf((*BillingBudgetBudgetFilterCustomPeriod)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetBudgetFilterCustomPeriod](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDate",
-		reflect.TypeOf((*BillingBudgetBudgetFilterCustomPeriodEndDate)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetBudgetFilterCustomPeriodEndDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference",
-		reflect.TypeOf((*BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -273,7 +273,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -281,7 +281,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodOutputReference",
-		reflect.TypeOf((*BillingBudgetBudgetFilterCustomPeriodOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetBudgetFilterCustomPeriodOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -312,7 +312,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -320,11 +320,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDate",
-		reflect.TypeOf((*BillingBudgetBudgetFilterCustomPeriodStartDate)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetBudgetFilterCustomPeriodStartDate](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference",
-		reflect.TypeOf((*BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -354,7 +354,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 			_jsii_.MemberProperty{JsiiProperty: "yearInput", GoGetter: "YearInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -362,7 +362,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetBudgetFilterOutputReference",
-		reflect.TypeOf((*BillingBudgetBudgetFilterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetBudgetFilterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "calendarPeriod", GoGetter: "CalendarPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "calendarPeriodInput", GoGetter: "CalendarPeriodInput"},
@@ -414,7 +414,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetBudgetFilterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -422,15 +422,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetConfig",
-		reflect.TypeOf((*BillingBudgetConfig)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetThresholdRules",
-		reflect.TypeOf((*BillingBudgetThresholdRules)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetThresholdRules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetThresholdRulesList",
-		reflect.TypeOf((*BillingBudgetThresholdRulesList)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetThresholdRulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -444,7 +444,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetThresholdRulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -452,7 +452,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference",
-		reflect.TypeOf((*BillingBudgetThresholdRulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetThresholdRulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -481,7 +481,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdPercentInput", GoGetter: "ThresholdPercentInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetThresholdRulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -489,11 +489,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.billingBudget.BillingBudgetTimeouts",
-		reflect.TypeOf((*BillingBudgetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference",
-		reflect.TypeOf((*BillingBudgetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BillingBudgetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -526,7 +526,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BillingBudgetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

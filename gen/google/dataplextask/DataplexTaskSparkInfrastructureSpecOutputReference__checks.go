@@ -131,7 +131,7 @@ func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewDataplexTaskSparkInfrastructureSpecOutputReferenceParameters(ter
 
 	return nil
 }
-

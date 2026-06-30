@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapTestList) validateResolveParameters(_conte
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapTestList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapTestList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionUrlMapTestListParameters(terraformResource cdktf.II
 
 	return nil
 }
-

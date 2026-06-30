@@ -1,6 +1,5 @@
 package computeregionurlmap
 
-
 type ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	// The host that will be used in the redirect response instead of the one that was supplied in the request.
 	//
@@ -17,7 +16,7 @@ type ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	// permitted. The default is set to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#https_redirect ComputeRegionUrlMap#https_redirect}
-	HttpsRedirect interface{} `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
+	HttpsRedirect any `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
 	// The path that will be used in the redirect response instead of the one that was supplied in the request.
 	//
 	// pathRedirect cannot be supplied
@@ -58,6 +57,5 @@ type ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect struct {
 	// portion of the original URL is retained. The default value is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#strip_query ComputeRegionUrlMap#strip_query}
-	StripQuery interface{} `field:"optional" json:"stripQuery" yaml:"stripQuery"`
+	StripQuery any `field:"optional" json:"stripQuery" yaml:"stripQuery"`
 }
-

@@ -6,9 +6,9 @@ import (
 
 type CesAppConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CesAppConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID to use for the app, which will become the final component of the app's resource name.
 	//
 	// If not provided, a unique ID will be
@@ -96,7 +96,7 @@ type CesAppConfig struct {
 	// Whether the app is pinned in the app list.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#pinned CesApp#pinned}
-	Pinned interface{} `field:"optional" json:"pinned" yaml:"pinned"`
+	Pinned any `field:"optional" json:"pinned" yaml:"pinned"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#project CesApp#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The root agent is the entry point of the app. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'.
@@ -114,6 +114,5 @@ type CesAppConfig struct {
 	// variable_declarations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
-	VariableDeclarations interface{} `field:"optional" json:"variableDeclarations" yaml:"variableDeclarations"`
+	VariableDeclarations any `field:"optional" json:"variableDeclarations" yaml:"variableDeclarations"`
 }
-

@@ -34,7 +34,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOrganizationIamAuditConfigAuditLogConfigListParameters(terraform
 
 	return nil
 }
-

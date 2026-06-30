@@ -90,7 +90,7 @@ func (s *jsiiProxy_StorageBucketObjectContextsOutputReference) validateInterpola
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketObjectContextsOutputReference) validatePutCustomParameters(value interface{}) error {
+func (s *jsiiProxy_StorageBucketObjectContextsOutputReference) validatePutCustomParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (s *jsiiProxy_StorageBucketObjectContextsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObjectContextsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketObjectContextsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewStorageBucketObjectContextsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

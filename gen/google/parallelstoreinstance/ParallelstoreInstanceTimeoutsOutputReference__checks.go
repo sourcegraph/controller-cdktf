@@ -98,7 +98,7 @@ func (p *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewParallelstoreInstanceTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

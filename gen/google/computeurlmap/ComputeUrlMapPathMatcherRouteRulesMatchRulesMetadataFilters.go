@@ -1,11 +1,10 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters struct {
 	// filter_labels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#filter_labels ComputeUrlMap#filter_labels}
-	FilterLabels interface{} `field:"required" json:"filterLabels" yaml:"filterLabels"`
+	FilterLabels any `field:"required" json:"filterLabels" yaml:"filterLabels"`
 	// Specifies how individual filterLabel matches within the list of filterLabels contribute towards the overall metadataFilter match.
 	//
 	// Supported values are:
@@ -17,4 +16,3 @@ type ComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#filter_match_criteria ComputeUrlMap#filter_match_criteria}
 	FilterMatchCriteria *string `field:"required" json:"filterMatchCriteria" yaml:"filterMatchCriteria"`
 }
-

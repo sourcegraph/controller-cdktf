@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretVersion) validateAddMoveTargetPara
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretVersion) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecretManagerRegionalSecretVersion) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretVersion) validateMoveFromIdParamet
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecretManagerRegionalSecretVersion) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateSecretManagerRegionalSecretVersion_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateSecretManagerRegionalSecretVersion_IsConstructParameters(x interface{}) error {
+func validateSecretManagerRegionalSecretVersion_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateSecretManagerRegionalSecretVersion_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateSecretManagerRegionalSecretVersion_IsTerraformElementParameters(x interface{}) error {
+func validateSecretManagerRegionalSecretVersion_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateSecretManagerRegionalSecretVersion_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateSecretManagerRegionalSecretVersion_IsTerraformResourceParameters(x interface{}) error {
+func validateSecretManagerRegionalSecretVersion_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateSecretManagerRegionalSecretVersion_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetDeletionPolicy
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -381,7 +381,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetIsSecretDataBase64Parameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetIsSecretDataBase64Parameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -409,7 +409,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetLifecycleParam
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecretManagerRegionalSecretVersion) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -489,4 +489,3 @@ func validateNewSecretManagerRegionalSecretVersionParameters(scope constructs.Co
 
 	return nil
 }
-

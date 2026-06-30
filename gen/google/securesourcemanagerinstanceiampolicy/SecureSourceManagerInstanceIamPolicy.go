@@ -15,15 +15,15 @@ type SecureSourceManagerInstanceIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,24 +63,24 @@ type SecureSourceManagerInstanceIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type SecureSourceManagerInstanceIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type SecureSourceManagerInstanceIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type SecureSourceManagerInstanceIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecureSourceManagerInstanceIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy} Resource.
 func NewSecureSourceManagerInstanceIamPolicy(scope constructs.Construct, id *string, config *SecureSourceManagerInstanceIamPolicyConfig) SecureSourceManagerInstanceIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewSecureSourceManagerInstanceIamPolicy(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamPolicy.SecureSourceManagerInstanceIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewSecureSourceManagerInstanceIamPolicy_Override(s SecureSourceManagerInsta
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamPolicy.SecureSourceManagerInstanceIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetInstanceId(val *string) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetInstanceId(val *string) {
 	if err := j.validateSetInstanceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetInstanceId(val *strin
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetLocation(val *string)
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetPolicyData(val *strin
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -553,7 +552,7 @@ func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func SecureSourceManagerInstanceIamPolicy_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamPolicy.SecureSourceManagerInstanceIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func SecureSourceManagerInstanceIamPolicy_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecureSourceManagerInstanceIamPolicy_IsConstruct(x interface{}) *bool {
+func SecureSourceManagerInstanceIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecureSourceManagerInstanceIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func SecureSourceManagerInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamPolicy.SecureSourceManagerInstanceIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func SecureSourceManagerInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecureSourceManagerInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
+func SecureSourceManagerInstanceIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecureSourceManagerInstanceIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func SecureSourceManagerInstanceIamPolicy_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamPolicy.SecureSourceManagerInstanceIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func SecureSourceManagerInstanceIamPolicy_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func SecureSourceManagerInstanceIamPolicy_IsTerraformResource(x interface{}) *bool {
+func SecureSourceManagerInstanceIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecureSourceManagerInstanceIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func SecureSourceManagerInstanceIamPolicy_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamPolicy.SecureSourceManagerInstanceIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetListAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetNumberListAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetStringAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -853,7 +852,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) InterpolationForAttribu
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ResetProject() {
 	)
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -962,8 +961,8 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SynthesizeAttributes() 
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -975,8 +974,8 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) SynthesizeHclAttributes
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -988,8 +987,8 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ToHclTerraform() interf
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1014,8 +1013,8 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1026,4 +1025,3 @@ func (s *jsiiProxy_SecureSourceManagerInstanceIamPolicy) ToTerraform() interface
 
 	return returns
 }
-

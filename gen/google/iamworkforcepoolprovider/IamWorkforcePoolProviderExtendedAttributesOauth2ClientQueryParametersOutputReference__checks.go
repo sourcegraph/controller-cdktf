@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryPa
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParam
 
 	return nil
 }
-

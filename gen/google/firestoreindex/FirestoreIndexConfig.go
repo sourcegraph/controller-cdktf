@@ -6,9 +6,9 @@ import (
 
 type FirestoreIndexConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type FirestoreIndexConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The collection being indexed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index#collection FirestoreIndex#collection}
@@ -26,7 +26,7 @@ type FirestoreIndexConfig struct {
 	// fields block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index#fields FirestoreIndex#fields}
-	Fields interface{} `field:"required" json:"fields" yaml:"fields"`
+	Fields any `field:"required" json:"fields" yaml:"fields"`
 	// The API scope at which a query is run. Default value: "ANY_API" Possible values: ["ANY_API", "DATASTORE_MODE_API", "MONGODB_COMPATIBLE_API"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index#api_scope FirestoreIndex#api_scope}
@@ -57,7 +57,7 @@ type FirestoreIndexConfig struct {
 	// Whether the index is multikey. By default, the index is not multikey. For non-multikey indexes, none of the paths in the index definition reach or traverse an array, except via an explicit array index. For multikey indexes, at most one of the paths in the index definition reach or traverse an array, except via an explicit array index. Violations will result in errors. Note this field only applies to indexes with MONGODB_COMPATIBLE_API ApiScope.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index#multikey FirestoreIndex#multikey}
-	Multikey interface{} `field:"optional" json:"multikey" yaml:"multikey"`
+	Multikey any `field:"optional" json:"multikey" yaml:"multikey"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index#project FirestoreIndex#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP", "COLLECTION_RECURSIVE"].
@@ -67,7 +67,7 @@ type FirestoreIndexConfig struct {
 	// Whether to skip waiting for the index to be created.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index#skip_wait FirestoreIndex#skip_wait}
-	SkipWait interface{} `field:"optional" json:"skipWait" yaml:"skipWait"`
+	SkipWait any `field:"optional" json:"skipWait" yaml:"skipWait"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index#timeouts FirestoreIndex#timeouts}
@@ -75,6 +75,5 @@ type FirestoreIndexConfig struct {
 	// Whether it is an unique index. Unique index ensures all values for the indexed field(s) are unique across documents.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firestore_index#unique FirestoreIndex#unique}
-	Unique interface{} `field:"optional" json:"unique" yaml:"unique"`
+	Unique any `field:"optional" json:"unique" yaml:"unique"`
 }
-

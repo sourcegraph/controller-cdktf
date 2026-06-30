@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCloudTasksQueueIamPolicy_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateCloudTasksQueueIamPolicy_IsConstructParameters(x interface{}) error {
+func validateCloudTasksQueueIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCloudTasksQueueIamPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateCloudTasksQueueIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateCloudTasksQueueIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCloudTasksQueueIamPolicy_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateCloudTasksQueueIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudTasksQueueIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateCloudTasksQueueIamPolicy_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_CloudTasksQueueIamPolicy) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -382,7 +382,7 @@ func (j *jsiiProxy_CloudTasksQueueIamPolicy) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -446,4 +446,3 @@ func validateNewCloudTasksQueueIamPolicyParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewSqlDatabaseInstanceReplicationClusterOutputReferenceParameters(t
 
 	return nil
 }
-

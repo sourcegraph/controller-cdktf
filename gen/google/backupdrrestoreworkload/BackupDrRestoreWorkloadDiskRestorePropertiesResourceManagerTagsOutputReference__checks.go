@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTa
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTa
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsO
 
 	return nil
 }
-

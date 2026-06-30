@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputR
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputR
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateSetReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateSetReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewWorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputRefe
 
 	return nil
 }
-

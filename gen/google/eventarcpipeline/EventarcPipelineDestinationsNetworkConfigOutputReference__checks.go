@@ -98,7 +98,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsNetworkConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcPipelineDestinationsNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEventarcPipelineDestinationsNetworkConfigOutputReferenceParamete
 
 	return nil
 }
-

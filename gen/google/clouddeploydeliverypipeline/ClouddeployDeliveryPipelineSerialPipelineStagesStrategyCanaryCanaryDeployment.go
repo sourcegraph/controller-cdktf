@@ -1,6 +1,5 @@
 package clouddeploydeliverypipeline
 
-
 type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeployment struct {
 	// Required.
 	//
@@ -23,10 +22,9 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeployme
 	// Whether to run verify tests after each percentage deployment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#verify ClouddeployDeliveryPipeline#verify}
-	Verify interface{} `field:"optional" json:"verify" yaml:"verify"`
+	Verify any `field:"optional" json:"verify" yaml:"verify"`
 	// verify_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#verify_config ClouddeployDeliveryPipeline#verify_config}
 	VerifyConfig *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeploymentVerifyConfig `field:"optional" json:"verifyConfig" yaml:"verifyConfig"`
 }
-

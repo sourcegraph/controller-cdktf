@@ -12,9 +12,9 @@ type ComputeRouterParamsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type ComputeRouterParamsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ComputeRouterParamsOutputReference interface {
 	ResetResourceManagerTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ComputeRouterParamsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRouterParamsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRouterParamsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_ComputeRouterParamsOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-
 func NewComputeRouterParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRouterParamsOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewComputeRouterParamsOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRouter.ComputeRouterParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewComputeRouterParamsOutputReference_Override(c ComputeRouterParamsOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRouter.ComputeRouterParamsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRouterParamsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRouterParamsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetInternalValue(val *ComputeRouterParams) {
+func (j *jsiiProxy_ComputeRouterParamsOutputReference) SetInternalValue(val *ComputeRouterParams) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetInternalValue(val *Comp
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetResourceManagerTags(val *map[string]*string) {
+func (j *jsiiProxy_ComputeRouterParamsOutputReference) SetResourceManagerTags(val *map[string]*string) {
 	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetResourceManagerTags(val
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRouterParamsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRouterParamsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) ResetResourceManagerTags(
 	)
 }
 
-func (c *jsiiProxy_ComputeRouterParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRouterParamsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (c *jsiiProxy_ComputeRouterParamsOutputReference) ToString() *string {
 
 	return returns
 }
-

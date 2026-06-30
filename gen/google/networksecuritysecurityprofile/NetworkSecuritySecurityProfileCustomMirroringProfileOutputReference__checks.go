@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileCustomMirroringProfileOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetworkSecuritySecurityProfileCustomMirroringProfileOutputRefere
 
 	return nil
 }
-

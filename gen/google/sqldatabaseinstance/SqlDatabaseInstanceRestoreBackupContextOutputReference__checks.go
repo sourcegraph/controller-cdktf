@@ -106,7 +106,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSqlDatabaseInstanceRestoreBackupContextOutputReferenceParameters
 
 	return nil
 }
-

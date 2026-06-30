@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateInstanceEncryptionKeyOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateInstanceEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateInstanceEncryptionKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeInstanceFromTemplateInstanceEncryptionKeyOutputReferenceP
 
 	return nil
 }
-

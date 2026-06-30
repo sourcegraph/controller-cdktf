@@ -12,9 +12,9 @@ type LoggingOrganizationSinkExclusionsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,16 +28,16 @@ type LoggingOrganizationSinkExclusionsOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -52,7 +52,7 @@ type LoggingOrganizationSinkExclusionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -77,7 +77,7 @@ type LoggingOrganizationSinkExclusionsOutputReference interface {
 	ResetDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ type jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) Description
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) Disabled() 
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -240,7 +240,6 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) TerraformRe
 	return returns
 }
 
-
 func NewLoggingOrganizationSinkExclusionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoggingOrganizationSinkExclusionsOutputReference {
 	_init_.Initialize()
 
@@ -251,7 +250,7 @@ func NewLoggingOrganizationSinkExclusionsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -263,12 +262,12 @@ func NewLoggingOrganizationSinkExclusionsOutputReference_Override(l LoggingOrgan
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetDescripti
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetDisabled(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetDisabled(
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetFilter(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetFilter(va
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetName(val 
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) Interpolati
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -569,16 +568,16 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) ResetDisabl
 	)
 }
 
-func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -597,4 +596,3 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) ToString() 
 
 	return returns
 }
-

@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validateInterpolationForAtt
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validatePutHeadersParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validatePutHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapTestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,7 +226,7 @@ func (j *jsiiProxy_ComputeUrlMapTestOutputReference) validateSetHostParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapTestOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -301,4 +301,3 @@ func validateNewComputeUrlMapTestOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

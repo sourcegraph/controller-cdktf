@@ -1,11 +1,10 @@
 package spannerinstance
 
-
 type SpannerInstanceAutoscalingConfig struct {
 	// asymmetric_autoscaling_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance#asymmetric_autoscaling_options SpannerInstance#asymmetric_autoscaling_options}
-	AsymmetricAutoscalingOptions interface{} `field:"optional" json:"asymmetricAutoscalingOptions" yaml:"asymmetricAutoscalingOptions"`
+	AsymmetricAutoscalingOptions any `field:"optional" json:"asymmetricAutoscalingOptions" yaml:"asymmetricAutoscalingOptions"`
 	// autoscaling_limits block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance#autoscaling_limits SpannerInstance#autoscaling_limits}
@@ -15,4 +14,3 @@ type SpannerInstanceAutoscalingConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_instance#autoscaling_targets SpannerInstance#autoscaling_targets}
 	AutoscalingTargets *SpannerInstanceAutoscalingConfigAutoscalingTargets `field:"optional" json:"autoscalingTargets" yaml:"autoscalingTargets"`
 }
-

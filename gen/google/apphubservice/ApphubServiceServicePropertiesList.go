@@ -36,7 +36,7 @@ type ApphubServiceServicePropertiesList interface {
 	Get(index *float64) ApphubServiceServicePropertiesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewApphubServiceServicePropertiesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubServiceServicePropertiesList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewApphubServiceServicePropertiesList(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apphubService.ApphubServiceServicePropertiesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewApphubServiceServicePropertiesList_Override(a ApphubServiceServiceProper
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apphubService.ApphubServiceServicePropertiesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApphubServiceServicePropertiesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApphubServiceServicePropertiesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_ApphubServiceServicePropertiesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApphubServiceServicePropertiesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesList)SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_ApphubServiceServicePropertiesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ApphubServiceServicePropertiesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (a *jsiiProxy_ApphubServiceServicePropertiesList) AllWithMapKey(mapKeyAttri
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (a *jsiiProxy_ApphubServiceServicePropertiesList) Get(index *float64) Apphu
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApphubServiceServicePropertiesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApphubServiceServicePropertiesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (a *jsiiProxy_ApphubServiceServicePropertiesList) ToString() *string {
 
 	return returns
 }
-

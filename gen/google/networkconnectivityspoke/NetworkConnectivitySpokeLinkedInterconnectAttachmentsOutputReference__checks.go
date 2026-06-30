@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) validateSetSiteToSiteDataTransferParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference) validateSetSiteToSiteDataTransferParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewNetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputRefer
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataFusionInstanceAcceleratorsList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstanceAcceleratorsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstanceAcceleratorsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataFusionInstanceAcceleratorsListParameters(terraformResource c
 
 	return nil
 }
-

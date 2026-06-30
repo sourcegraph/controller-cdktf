@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetappVolumeReplication) validateAddMoveTargetParameters(move
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeReplication) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetappVolumeReplication) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetappVolumeReplication) validateMoveFromIdParameters(id *str
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeReplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetappVolumeReplication) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateNetappVolumeReplication_GenerateConfigForImportParameters(scope con
 	return nil
 }
 
-func validateNetappVolumeReplication_IsConstructParameters(x interface{}) error {
+func validateNetappVolumeReplication_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateNetappVolumeReplication_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func validateNetappVolumeReplication_IsTerraformElementParameters(x interface{}) error {
+func validateNetappVolumeReplication_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateNetappVolumeReplication_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
-func validateNetappVolumeReplication_IsTerraformResourceParameters(x interface{}) error {
+func validateNetappVolumeReplication_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateNetappVolumeReplication_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplication) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeReplication) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_NetappVolumeReplication) validateSetConnectionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplication) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeReplication) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -356,7 +356,7 @@ func (j *jsiiProxy_NetappVolumeReplication) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplication) validateSetDeleteDestinationVolumeParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeReplication) validateSetDeleteDestinationVolumeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -384,7 +384,7 @@ func (j *jsiiProxy_NetappVolumeReplication) validateSetDescriptionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplication) validateSetForceStoppingParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeReplication) validateSetForceStoppingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -452,7 +452,7 @@ func (j *jsiiProxy_NetappVolumeReplication) validateSetProjectParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplication) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetappVolumeReplication) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -498,7 +498,7 @@ func (j *jsiiProxy_NetappVolumeReplication) validateSetProvisionersParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplication) validateSetReplicationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeReplication) validateSetReplicationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -534,7 +534,7 @@ func (j *jsiiProxy_NetappVolumeReplication) validateSetVolumeNameParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplication) validateSetWaitForMirrorParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeReplication) validateSetWaitForMirrorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -572,4 +572,3 @@ func validateNewNetappVolumeReplicationParameters(scope constructs.Construct, id
 
 	return nil
 }
-

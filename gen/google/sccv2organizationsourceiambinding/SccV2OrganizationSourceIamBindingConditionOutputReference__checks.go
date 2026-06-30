@@ -98,7 +98,7 @@ func (s *jsiiProxy_SccV2OrganizationSourceIamBindingConditionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SccV2OrganizationSourceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccV2OrganizationSourceIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSccV2OrganizationSourceIamBindingConditionOutputReferenceParamet
 
 	return nil
 }
-

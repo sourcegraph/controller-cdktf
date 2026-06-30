@@ -90,7 +90,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeO
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validatePutExcludedGroupKindsParameters(value interface{}) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validatePutExcludedGroupKindsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeO
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validatePutSelectedGroupKindsParameters(value interface{}) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validatePutSelectedGroupKindsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeO
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateSetAllGroupKindsParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateSetAllGroupKindsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -180,7 +180,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeO
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,7 +253,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeO
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateSetNoGroupKindsParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateSetNoGroupKindsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -300,4 +300,3 @@ func validateNewGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutp
 
 	return nil
 }
-

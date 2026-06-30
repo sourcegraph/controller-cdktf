@@ -12,9 +12,9 @@ type ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference interfa
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,9 +30,9 @@ type ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference interfa
 	InternalValue() *ChronicleDashboardChartDashboardChartDrillDownConfig
 	SetInternalValue(val *ChronicleDashboardChartDashboardChartDrillDownConfig)
 	LeftDrillDowns() ChronicleDashboardChartDashboardChartDrillDownConfigLeftDrillDownsList
-	LeftDrillDownsInput() interface{}
+	LeftDrillDownsInput() any
 	RightDrillDowns() ChronicleDashboardChartDashboardChartDrillDownConfigRightDrillDownsList
-	RightDrillDownsInput() interface{}
+	RightDrillDownsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,7 +44,7 @@ type ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,13 +65,13 @@ type ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLeftDrillDowns(value interface{})
-	PutRightDrillDowns(value interface{})
+	PutLeftDrillDowns(value any)
+	PutRightDrillDowns(value any)
 	ResetLeftDrillDowns()
 	ResetRightDrillDowns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) LeftDrillDownsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) LeftDrillDownsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"leftDrillDownsInput",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) RightDrillDownsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) RightDrillDownsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rightDrillDownsInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	return returns
 }
 
-
 func NewChronicleDashboardChartDashboardChartDrillDownConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewChronicleDashboardChartDashboardChartDrillDownConfigOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewChronicleDashboardChartDashboardChartDrillDownConfigOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference)SetInternalValue(val *ChronicleDashboardChartDashboardChartDrillDownConfig) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) SetInternalValue(val *ChronicleDashboardChartDashboardChartDrillDownConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,16 +289,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -315,7 +314,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -331,7 +330,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -347,7 +346,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -456,32 +455,32 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) PutLeftDrillDowns(value interface{}) {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) PutLeftDrillDowns(value any) {
 	if err := c.validatePutLeftDrillDownsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putLeftDrillDowns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) PutRightDrillDowns(value interface{}) {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) PutRightDrillDowns(value any) {
 	if err := c.validatePutRightDrillDownsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRightDrillDowns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartDrillDownConfigOutputRef
 
 	return returns
 }
-

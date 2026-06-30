@@ -15,15 +15,15 @@ type PubsubLiteReservation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,32 +56,32 @@ type PubsubLiteReservation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ThroughputCapacity() *float64
 	SetThroughputCapacity(val *float64)
 	ThroughputCapacityInput() *float64
 	Timeouts() PubsubLiteReservationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type PubsubLiteReservation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,7 +111,7 @@ type PubsubLiteReservation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type PubsubLiteReservation interface {
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PubsubLiteReservation
@@ -154,8 +154,8 @@ func (j *jsiiProxy_PubsubLiteReservation) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubLiteReservation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubLiteReservation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_PubsubLiteReservation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubLiteReservation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubLiteReservation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_PubsubLiteReservation) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_PubsubLiteReservation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubLiteReservation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_PubsubLiteReservation) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubLiteReservation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PubsubLiteReservation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -324,8 +324,8 @@ func (j *jsiiProxy_PubsubLiteReservation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubLiteReservation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubLiteReservation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_PubsubLiteReservation) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_PubsubLiteReservation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubLiteReservation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_PubsubLiteReservation) Timeouts() PubsubLiteReservationTimeou
 	return returns
 }
 
-func (j *jsiiProxy_PubsubLiteReservation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubLiteReservation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -423,7 +423,6 @@ func (j *jsiiProxy_PubsubLiteReservation) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_lite_reservation google_pubsub_lite_reservation} Resource.
 func NewPubsubLiteReservation(scope constructs.Construct, id *string, config *PubsubLiteReservationConfig) PubsubLiteReservation {
@@ -436,7 +435,7 @@ func NewPubsubLiteReservation(scope constructs.Construct, id *string, config *Pu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -449,12 +448,12 @@ func NewPubsubLiteReservation_Override(p PubsubLiteReservation, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetConnection(val interface{}) {
+func (j *jsiiProxy_PubsubLiteReservation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetCount(val interface{}) {
+func (j *jsiiProxy_PubsubLiteReservation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PubsubLiteReservation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -484,7 +483,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PubsubLiteReservation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -492,7 +491,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetId(val *string) {
+func (j *jsiiProxy_PubsubLiteReservation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,7 +502,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PubsubLiteReservation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetName(val *string) {
+func (j *jsiiProxy_PubsubLiteReservation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetProject(val *string) {
+func (j *jsiiProxy_PubsubLiteReservation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PubsubLiteReservation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -544,7 +543,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PubsubLiteReservation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetRegion(val *string) {
+func (j *jsiiProxy_PubsubLiteReservation) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_PubsubLiteReservation)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservation)SetThroughputCapacity(val *float64) {
+func (j *jsiiProxy_PubsubLiteReservation) SetThroughputCapacity(val *float64) {
 	if err := j.validateSetThroughputCapacityParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func PubsubLiteReservation_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func PubsubLiteReservation_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PubsubLiteReservation_IsConstruct(x interface{}) *bool {
+func PubsubLiteReservation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubLiteReservation_IsConstructParameters(x); err != nil {
@@ -624,7 +623,7 @@ func PubsubLiteReservation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func PubsubLiteReservation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubLiteReservation_IsTerraformElement(x interface{}) *bool {
+func PubsubLiteReservation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubLiteReservation_IsTerraformElementParameters(x); err != nil {
@@ -643,7 +642,7 @@ func PubsubLiteReservation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func PubsubLiteReservation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubLiteReservation_IsTerraformResource(x interface{}) *bool {
+func PubsubLiteReservation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubLiteReservation_IsTerraformResourceParameters(x); err != nil {
@@ -662,7 +661,7 @@ func PubsubLiteReservation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -687,31 +686,31 @@ func (p *jsiiProxy_PubsubLiteReservation) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PubsubLiteReservation) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PubsubLiteReservation) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PubsubLiteReservation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubLiteReservation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (p *jsiiProxy_PubsubLiteReservation) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (p *jsiiProxy_PubsubLiteReservation) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (p *jsiiProxy_PubsubLiteReservation) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (p *jsiiProxy_PubsubLiteReservation) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (p *jsiiProxy_PubsubLiteReservation) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (p *jsiiProxy_PubsubLiteReservation) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (p *jsiiProxy_PubsubLiteReservation) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,15 +838,15 @@ func (p *jsiiProxy_PubsubLiteReservation) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubLiteReservation) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubLiteReservation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -866,7 +865,7 @@ func (p *jsiiProxy_PubsubLiteReservation) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -879,7 +878,7 @@ func (p *jsiiProxy_PubsubLiteReservation) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,18 +892,18 @@ func (p *jsiiProxy_PubsubLiteReservation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PubsubLiteReservation) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PubsubLiteReservation) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -915,7 +914,7 @@ func (p *jsiiProxy_PubsubLiteReservation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -926,7 +925,7 @@ func (p *jsiiProxy_PubsubLiteReservation) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -937,7 +936,7 @@ func (p *jsiiProxy_PubsubLiteReservation) PutTimeouts(value *PubsubLiteReservati
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -981,8 +980,8 @@ func (p *jsiiProxy_PubsubLiteReservation) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_PubsubLiteReservation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubLiteReservation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -994,8 +993,8 @@ func (p *jsiiProxy_PubsubLiteReservation) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (p *jsiiProxy_PubsubLiteReservation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubLiteReservation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1007,8 +1006,8 @@ func (p *jsiiProxy_PubsubLiteReservation) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (p *jsiiProxy_PubsubLiteReservation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubLiteReservation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1020,8 +1019,8 @@ func (p *jsiiProxy_PubsubLiteReservation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubLiteReservation) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubLiteReservation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1046,8 +1045,8 @@ func (p *jsiiProxy_PubsubLiteReservation) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubLiteReservation) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubLiteReservation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1058,4 +1057,3 @@ func (p *jsiiProxy_PubsubLiteReservation) ToTerraform() interface{} {
 
 	return returns
 }
-

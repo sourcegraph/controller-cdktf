@@ -6,9 +6,9 @@ import (
 
 type NetworkServicesHttpRouteConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NetworkServicesHttpRouteConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Set of hosts that should match against the HTTP host header to select a HttpRoute to process the request.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#hostnames NetworkServicesHttpRoute#hostnames}
@@ -30,7 +30,7 @@ type NetworkServicesHttpRouteConfig struct {
 	// rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#rules NetworkServicesHttpRoute#rules}
-	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
+	Rules any `field:"required" json:"rules" yaml:"rules"`
 	// A free-text description of the resource. Max length 1024 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#description NetworkServicesHttpRoute#description}
@@ -71,4 +71,3 @@ type NetworkServicesHttpRouteConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_http_route#timeouts NetworkServicesHttpRoute#timeouts}
 	Timeouts *NetworkServicesHttpRouteTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -1,6 +1,5 @@
 package workstationsworkstationconfig
 
-
 type WorkstationsWorkstationConfigEphemeralDirectoriesGcePd struct {
 	// Type of the disk to use. Defaults to '"pd-standard"'.
 	//
@@ -11,7 +10,7 @@ type WorkstationsWorkstationConfigEphemeralDirectoriesGcePd struct {
 	// If true, the disk may be shared by multiple VMs and 'sourceSnapshot' must be set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#read_only WorkstationsWorkstationConfigA#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 	// Name of the disk image to use as the source for the disk.
 	//
 	// Must be empty 'sourceSnapshot' is set.
@@ -28,4 +27,3 @@ type WorkstationsWorkstationConfigEphemeralDirectoriesGcePd struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#source_snapshot WorkstationsWorkstationConfigA#source_snapshot}
 	SourceSnapshot *string `field:"optional" json:"sourceSnapshot" yaml:"sourceSnapshot"`
 }
-

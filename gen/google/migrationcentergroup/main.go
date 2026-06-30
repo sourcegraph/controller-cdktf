@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroup",
-		reflect.TypeOf((*MigrationCenterGroup)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroupConfig",
-		reflect.TypeOf((*MigrationCenterGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroupTimeouts",
-		reflect.TypeOf((*MigrationCenterGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.migrationCenterGroup.MigrationCenterGroupTimeoutsOutputReference",
-		reflect.TypeOf((*MigrationCenterGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MigrationCenterGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MigrationCenterGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

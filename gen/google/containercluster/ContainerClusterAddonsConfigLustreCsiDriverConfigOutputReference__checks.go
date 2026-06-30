@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetDisableMultiNicParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetDisableMultiNicParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetEnableLegacyLustrePortParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) validateSetEnableLegacyLustrePortParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
 
 	return nil
 }
-

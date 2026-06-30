@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolse
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetToolOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotExamplesMessagesChunksToolResponseToolsetTo
 
 	return nil
 }
-

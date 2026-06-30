@@ -18,15 +18,15 @@ type ComputeOrganizationSecurityPolicyAssociation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,26 +66,26 @@ type ComputeOrganizationSecurityPolicyAssociation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ComputeOrganizationSecurityPolicyAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type ComputeOrganizationSecurityPolicyAssociation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type ComputeOrganizationSecurityPolicyAssociation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeOrganizationSecurityPolicyAssociation
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) CdktfStack() cd
 	return returns
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Connection() in
 	return returns
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ConstructNodeMe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Provider() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Provisioners() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) TerraformGenera
 	return returns
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) Timeouts() Comp
 	return returns
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) TimeoutsInput()
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
 func NewComputeOrganizationSecurityPolicyAssociation(scope constructs.Construct, id *string, config *ComputeOrganizationSecurityPolicyAssociationConfig) ComputeOrganizationSecurityPolicyAssociation {
@@ -470,7 +469,7 @@ func NewComputeOrganizationSecurityPolicyAssociation(scope constructs.Construct,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewComputeOrganizationSecurityPolicyAssociation_Override(c ComputeOrganizat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetAttachmentId(val *string) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetAttachmentId(val *string) {
 	if err := j.validateSetAttachmentIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetAttachmentId(
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetConnection(va
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetCount(val int
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetDependsOn(val
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetExcludedFolders(val *[]*string) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetExcludedFolders(val *[]*string) {
 	if err := j.validateSetExcludedFoldersParameters(val); err != nil {
 		panic(err)
 	}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetExcludedFolde
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetExcludedProjects(val *[]*string) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetExcludedProjects(val *[]*string) {
 	if err := j.validateSetExcludedProjectsParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetExcludedProje
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetForEach(val c
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetId(val *string) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetId(val *strin
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetLifecycle(val
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetName(val *string) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetName(val *str
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetPolicyId(val *string) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetPolicyId(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetProvider(val 
 	)
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func ComputeOrganizationSecurityPolicyAssociation_GenerateConfigForImport(scope 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func ComputeOrganizationSecurityPolicyAssociation_GenerateConfigForImport(scope 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeOrganizationSecurityPolicyAssociation_IsConstruct(x interface{}) *bool {
+func ComputeOrganizationSecurityPolicyAssociation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeOrganizationSecurityPolicyAssociation_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func ComputeOrganizationSecurityPolicyAssociation_IsConstruct(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func ComputeOrganizationSecurityPolicyAssociation_IsConstruct(x interface{}) *bo
 }
 
 // Experimental.
-func ComputeOrganizationSecurityPolicyAssociation_IsTerraformElement(x interface{}) *bool {
+func ComputeOrganizationSecurityPolicyAssociation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeOrganizationSecurityPolicyAssociation_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func ComputeOrganizationSecurityPolicyAssociation_IsTerraformElement(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func ComputeOrganizationSecurityPolicyAssociation_IsTerraformElement(x interface
 }
 
 // Experimental.
-func ComputeOrganizationSecurityPolicyAssociation_IsTerraformResource(x interface{}) *bool {
+func ComputeOrganizationSecurityPolicyAssociation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeOrganizationSecurityPolicyAssociation_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func ComputeOrganizationSecurityPolicyAssociation_IsTerraformResource(x interfac
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) AddMoveTarget(m
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetBooleanAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetBooleanMapAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetListAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetNumberAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetNumberListAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetNumberMapAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetStringAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) GetStringMapAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -911,7 +910,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ImportFrom(id *
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) InterpolationFo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) MoveFromId(id *
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) MoveToId(id *st
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) OverrideLogical
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) PutTimeouts(val
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ResetTimeouts()
 	)
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1039,8 +1038,8 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SynthesizeAttri
 	return returns
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1052,8 +1051,8 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) SynthesizeHclAt
 	return returns
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1065,8 +1064,8 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ToHclTerraform(
 	return returns
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1091,8 +1090,8 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ToString() *str
 	return returns
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1103,4 +1102,3 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociation) ToTerraform() i
 
 	return returns
 }
-

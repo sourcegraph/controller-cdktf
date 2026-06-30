@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetCertSignParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetCertSignParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetContentCommitmentParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetContentCommitmentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetCrlSignParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetCrlSignParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetDataEnciphermentParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetDataEnciphermentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetDecipherOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetDecipherOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetDigitalSignatureParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetDigitalSignatureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetEncipherOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetEncipherOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetKeyAgreementParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetKeyAgreementParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetKeyEnciphermentParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference) validateSetKeyEnciphermentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -378,4 +378,3 @@ func validateNewPrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputRe
 
 	return nil
 }
-

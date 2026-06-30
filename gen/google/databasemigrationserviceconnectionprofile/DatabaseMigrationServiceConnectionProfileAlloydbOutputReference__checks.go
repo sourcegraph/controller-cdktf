@@ -117,7 +117,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewDatabaseMigrationServiceConnectionProfileAlloydbOutputReferenceP
 
 	return nil
 }
-

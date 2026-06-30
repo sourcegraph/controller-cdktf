@@ -1,6 +1,5 @@
 package clouddeploytarget
 
-
 type ClouddeployTargetAssociatedEntities struct {
 	// The name for the key in the map for which this object is mapped to in the API.
 	//
@@ -9,10 +8,9 @@ type ClouddeployTargetAssociatedEntities struct {
 	// anthos_clusters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#anthos_clusters ClouddeployTarget#anthos_clusters}
-	AnthosClusters interface{} `field:"optional" json:"anthosClusters" yaml:"anthosClusters"`
+	AnthosClusters any `field:"optional" json:"anthosClusters" yaml:"anthosClusters"`
 	// gke_clusters block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_target#gke_clusters ClouddeployTarget#gke_clusters}
-	GkeClusters interface{} `field:"optional" json:"gkeClusters" yaml:"gkeClusters"`
+	GkeClusters any `field:"optional" json:"gkeClusters" yaml:"gkeClusters"`
 }
-

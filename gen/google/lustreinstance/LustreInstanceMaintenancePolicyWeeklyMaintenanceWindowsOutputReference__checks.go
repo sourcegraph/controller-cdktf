@@ -109,7 +109,7 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutput
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputRef
 
 	return nil
 }
-

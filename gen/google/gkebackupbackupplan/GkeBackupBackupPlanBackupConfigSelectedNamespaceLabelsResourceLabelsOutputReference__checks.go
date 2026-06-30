@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsResourc
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsResourceLabelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsResourceLabelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsResourc
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsResourceLabelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsResourceLabelsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGkeBackupBackupPlanBackupConfigSelectedNamespaceLabelsResourceLa
 
 	return nil
 }
-

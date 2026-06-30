@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapTunnelDestGroupIamMemberConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelDestGroupIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelDestGroupIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapTunnelDestGroupIamMemberConditionOutputReferenceParameters(te
 
 	return nil
 }
-

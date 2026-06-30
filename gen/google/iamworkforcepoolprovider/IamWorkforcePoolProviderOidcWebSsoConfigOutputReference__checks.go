@@ -114,7 +114,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcWebSsoConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderOidcWebSsoConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcWebSsoConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIamWorkforcePoolProviderOidcWebSsoConfigOutputReferenceParameter
 
 	return nil
 }
-

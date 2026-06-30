@@ -142,7 +142,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDatastreamStreamSourceConfigMysqlSourceConfigOutputReferencePara
 
 	return nil
 }
-

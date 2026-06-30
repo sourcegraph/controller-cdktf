@@ -19,7 +19,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateAddMoveTargetParameter
 	return nil
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_ProjectDefaultServiceAccounts) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateProjectDefaultServiceAccounts_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateProjectDefaultServiceAccounts_IsConstructParameters(x interface{}) error {
+func validateProjectDefaultServiceAccounts_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateProjectDefaultServiceAccounts_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateProjectDefaultServiceAccounts_IsTerraformElementParameters(x interface{}) error {
+func validateProjectDefaultServiceAccounts_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateProjectDefaultServiceAccounts_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateProjectDefaultServiceAccounts_IsTerraformResourceParameters(x interface{}) error {
+func validateProjectDefaultServiceAccounts_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetActionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -377,7 +377,7 @@ func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewProjectDefaultServiceAccountsParameters(scope constructs.Constru
 
 	return nil
 }
-

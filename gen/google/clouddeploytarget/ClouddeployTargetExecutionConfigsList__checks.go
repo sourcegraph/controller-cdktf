@@ -34,7 +34,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewClouddeployTargetExecutionConfigsListParameters(terraformResourc
 
 	return nil
 }
-

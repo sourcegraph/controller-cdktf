@@ -15,11 +15,11 @@ type DataGoogleComputeRegionSslPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	CustomFeatures() *[]*string
 	// Experimental.
@@ -59,7 +59,7 @@ type DataGoogleComputeRegionSslPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -67,13 +67,13 @@ type DataGoogleComputeRegionSslPolicy interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,18 +101,18 @@ type DataGoogleComputeRegionSslPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComputeRegionSslPolicy
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -420,7 +420,6 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_ssl_policy google_compute_region_ssl_policy} Data Source.
 func NewDataGoogleComputeRegionSslPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeRegionSslPolicyConfig) DataGoogleComputeRegionSslPolicy {
 	_init_.Initialize()
@@ -432,7 +431,7 @@ func NewDataGoogleComputeRegionSslPolicy(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -445,12 +444,12 @@ func NewDataGoogleComputeRegionSslPolicy_Override(d DataGoogleComputeRegionSslPo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +468,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +476,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy)SetRegion(val *string) {
+func (j *jsiiProxy_DataGoogleComputeRegionSslPolicy) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -552,7 +551,7 @@ func DataGoogleComputeRegionSslPolicy_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func DataGoogleComputeRegionSslPolicy_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComputeRegionSslPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleComputeRegionSslPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeRegionSslPolicy_IsConstructParameters(x); err != nil {
@@ -587,7 +586,7 @@ func DataGoogleComputeRegionSslPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func DataGoogleComputeRegionSslPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeRegionSslPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComputeRegionSslPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeRegionSslPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -606,7 +605,7 @@ func DataGoogleComputeRegionSslPolicy_IsTerraformDataSource(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func DataGoogleComputeRegionSslPolicy_IsTerraformDataSource(x interface{}) *bool
 }
 
 // Experimental.
-func DataGoogleComputeRegionSslPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComputeRegionSslPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeRegionSslPolicy_IsTerraformElementParameters(x); err != nil {
@@ -625,7 +624,7 @@ func DataGoogleComputeRegionSslPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeRegionSslPolicy.DataGoogleComputeRegionSslPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -643,27 +642,27 @@ func DataGoogleComputeRegionSslPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -857,8 +856,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -870,8 +869,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -883,8 +882,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -896,8 +895,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -922,8 +921,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -934,4 +933,3 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

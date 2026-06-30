@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeImageParamsOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeImageParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeImageParamsOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

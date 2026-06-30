@@ -34,7 +34,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceLis
 
 	return nil
 }
-

@@ -150,7 +150,7 @@ func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -266,4 +266,3 @@ func validateNewMigrationCenterPreferenceSetVirtualMachinePreferencesOutputRefer
 
 	return nil
 }
-

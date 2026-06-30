@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfig",
-		reflect.TypeOf((*DiscoveryEngineAclConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineAclConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineAclConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,19 +78,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig",
-		reflect.TypeOf((*DiscoveryEngineAclConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineAclConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfig",
-		reflect.TypeOf((*DiscoveryEngineAclConfigIdpConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineAclConfigIdpConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfigExternalIdpConfig",
-		reflect.TypeOf((*DiscoveryEngineAclConfigIdpConfigExternalIdpConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineAclConfigIdpConfigExternalIdpConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference",
-		reflect.TypeOf((*DiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolName", GoGetter: "WorkforcePoolName"},
 			_jsii_.MemberProperty{JsiiProperty: "workforcePoolNameInput", GoGetter: "WorkforcePoolNameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,7 +125,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfigOutputReference",
-		reflect.TypeOf((*DiscoveryEngineAclConfigIdpConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineAclConfigIdpConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -156,7 +156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineAclConfigIdpConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -164,11 +164,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts",
-		reflect.TypeOf((*DiscoveryEngineAclConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineAclConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeoutsOutputReference",
-		reflect.TypeOf((*DiscoveryEngineAclConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineAclConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineAclConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

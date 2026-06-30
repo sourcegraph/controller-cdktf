@@ -12,9 +12,9 @@ type BigqueryTableEncryptionConfigurationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type BigqueryTableEncryptionConfigurationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type BigqueryTableEncryptionConfigurationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -180,7 +180,6 @@ func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) Terrafor
 	return returns
 }
 
-
 func NewBigqueryTableEncryptionConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryTableEncryptionConfigurationOutputReference {
 	_init_.Initialize()
 
@@ -191,7 +190,7 @@ func NewBigqueryTableEncryptionConfigurationOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -203,12 +202,12 @@ func NewBigqueryTableEncryptionConfigurationOutputReference_Override(b BigqueryT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetInternalValue(val *BigqueryTableEncryptionConfiguration) {
+func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) SetInternalValue(val *BigqueryTableEncryptionConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetKmsKey
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -263,7 +262,7 @@ func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,16 +286,16 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) ComputeF
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -312,7 +311,7 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetBoole
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -328,7 +327,7 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetBoole
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -344,7 +343,7 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetListA
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -360,7 +359,7 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetNumbe
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -376,7 +375,7 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetNumbe
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -392,7 +391,7 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetNumbe
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -408,7 +407,7 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetStrin
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -424,7 +423,7 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) GetStrin
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,23 +452,23 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) Interpol
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -488,4 +487,3 @@ func (b *jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference) ToString
 
 	return returns
 }
-

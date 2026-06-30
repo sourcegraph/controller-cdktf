@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsO
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutp
 
 	return nil
 }
-

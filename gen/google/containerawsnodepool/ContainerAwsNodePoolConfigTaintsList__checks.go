@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerAwsNodePoolConfigTaintsListParameters(terraformResource
 
 	return nil
 }
-

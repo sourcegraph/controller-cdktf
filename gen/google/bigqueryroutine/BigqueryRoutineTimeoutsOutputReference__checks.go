@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryRoutineTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryRoutineTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryRoutineTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BigqueryRoutineTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryRoutineTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryRoutineTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBigqueryRoutineTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

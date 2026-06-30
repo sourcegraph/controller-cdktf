@@ -90,7 +90,7 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference) va
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference) validatePutIdpCertificatesParameters(value interface{}) error {
+func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference) validatePutIdpCertificatesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -210,7 +210,7 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference) validateSetSignRequestParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigOutputReference) validateSetSignRequestParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewIdentityPlatformInboundSamlConfigIdpConfigOutputReferenceParamet
 
 	return nil
 }
-

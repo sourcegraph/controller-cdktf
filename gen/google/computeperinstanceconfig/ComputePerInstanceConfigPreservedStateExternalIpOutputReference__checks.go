@@ -117,7 +117,7 @@ func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -190,7 +190,7 @@ func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewComputePerInstanceConfigPreservedStateExternalIpOutputReferenceP
 
 	return nil
 }
-

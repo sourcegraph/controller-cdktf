@@ -34,7 +34,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBackupDrBackupPlanBackupRulesListParameters(terraformResource cd
 
 	return nil
 }
-

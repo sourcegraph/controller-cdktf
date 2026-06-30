@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigConfidentialInsta
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigConfidentialInsta
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) validateSetEnableConfidentialComputeParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference) validateSetEnableConfidentialComputeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewDataprocClusterClusterConfigGceClusterConfigConfidentialInstance
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateAddM
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateMove
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateOver
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validatePutServicesParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validatePutServicesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateNetworkConnectivityMulticloudDataTransferConfig_GenerateConfigForIm
 	return nil
 }
 
-func validateNetworkConnectivityMulticloudDataTransferConfig_IsConstructParameters(x interface{}) error {
+func validateNetworkConnectivityMulticloudDataTransferConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateNetworkConnectivityMulticloudDataTransferConfig_IsConstructParamete
 	return nil
 }
 
-func validateNetworkConnectivityMulticloudDataTransferConfig_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkConnectivityMulticloudDataTransferConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateNetworkConnectivityMulticloudDataTransferConfig_IsTerraformElementP
 	return nil
 }
 
-func validateNetworkConnectivityMulticloudDataTransferConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkConnectivityMulticloudDataTransferConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateNetworkConnectivityMulticloudDataTransferConfig_IsTerraformResource
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -432,7 +432,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetP
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewNetworkConnectivityMulticloudDataTransferConfigParameters(scope 
 
 	return nil
 }
-

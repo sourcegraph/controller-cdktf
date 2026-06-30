@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutp
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputR
 
 	return nil
 }
-

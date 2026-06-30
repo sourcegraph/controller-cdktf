@@ -12,9 +12,9 @@ type ComputeRegionBackendServiceCustomMetricsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type ComputeRegionBackendServiceCustomMetricsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DryRun() interface{}
-	SetDryRun(val interface{})
-	DryRunInput() interface{}
+	DryRun() any
+	SetDryRun(val any)
+	DryRunInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -46,7 +46,7 @@ type ComputeRegionBackendServiceCustomMetricsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type ComputeRegionBackendServiceCustomMetricsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) Crea
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) DryRun() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) DryRun() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dryRun",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) DryR
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) DryRunInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) DryRunInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dryRunInput",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) Fqn(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) Terr
 	return returns
 }
 
-
 func NewComputeRegionBackendServiceCustomMetricsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeRegionBackendServiceCustomMetricsOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewComputeRegionBackendServiceCustomMetricsOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCustomMetricsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewComputeRegionBackendServiceCustomMetricsOutputReference_Override(c Compu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCustomMetricsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetDryRun(val interface{}) {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) SetDryRun(val any) {
 	if err := j.validateSetDryRunParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetDr
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetNa
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) Comp
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetL
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) Inte
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsOutputReference) ToSt
 
 	return returns
 }
-

@@ -15,15 +15,15 @@ type ChronicleDataTableRow interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	DataTableId() *string
 	SetDataTableId(val *string)
@@ -65,22 +65,22 @@ type ChronicleDataTableRow interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RowTimeToLive() *string
 	SetRowTimeToLive(val *string)
 	RowTimeToLiveInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ChronicleDataTableRowTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	Values() *[]*string
 	SetValues(val *[]*string)
@@ -89,9 +89,9 @@ type ChronicleDataTableRow interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type ChronicleDataTableRow interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type ChronicleDataTableRow interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type ChronicleDataTableRow interface {
 	ResetProject()
 	ResetRowTimeToLive()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ChronicleDataTableRow
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ChronicleDataTableRow) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableRow) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ChronicleDataTableRow) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChronicleDataTableRow) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ChronicleDataTableRow) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableRow) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_ChronicleDataTableRow) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ChronicleDataTableRow) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_ChronicleDataTableRow) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableRow) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -444,8 +444,8 @@ func (j *jsiiProxy_ChronicleDataTableRow) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ChronicleDataTableRow) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_ChronicleDataTableRow) Timeouts() ChronicleDataTableRowTimeou
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ChronicleDataTableRow) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -514,7 +514,6 @@ func (j *jsiiProxy_ChronicleDataTableRow) ValuesInput() *[]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_data_table_row google_chronicle_data_table_row} Resource.
 func NewChronicleDataTableRow(scope constructs.Construct, id *string, config *ChronicleDataTableRowConfig) ChronicleDataTableRow {
 	_init_.Initialize()
@@ -526,7 +525,7 @@ func NewChronicleDataTableRow(scope constructs.Construct, id *string, config *Ch
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDataTableRow.ChronicleDataTableRow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -539,12 +538,12 @@ func NewChronicleDataTableRow_Override(c ChronicleDataTableRow, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.chronicleDataTableRow.ChronicleDataTableRow",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetConnection(val interface{}) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetCount(val interface{}) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetDataTableId(val *string) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetDataTableId(val *string) {
 	if err := j.validateSetDataTableIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetDataTableId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -585,7 +584,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -593,7 +592,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetId(val *string) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetInstance(val *string) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetLocation(val *string) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -637,7 +636,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetProject(val *string) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -648,7 +647,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -656,7 +655,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetRowTimeToLive(val *string) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetRowTimeToLive(val *string) {
 	if err := j.validateSetRowTimeToLiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_ChronicleDataTableRow)SetRowTimeToLive(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ChronicleDataTableRow)SetValues(val *[]*string) {
+func (j *jsiiProxy_ChronicleDataTableRow) SetValues(val *[]*string) {
 	if err := j.validateSetValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func ChronicleDataTableRow_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.chronicleDataTableRow.ChronicleDataTableRow",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func ChronicleDataTableRow_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ChronicleDataTableRow_IsConstruct(x interface{}) *bool {
+func ChronicleDataTableRow_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChronicleDataTableRow_IsConstructParameters(x); err != nil {
@@ -736,7 +735,7 @@ func ChronicleDataTableRow_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.chronicleDataTableRow.ChronicleDataTableRow",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func ChronicleDataTableRow_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ChronicleDataTableRow_IsTerraformElement(x interface{}) *bool {
+func ChronicleDataTableRow_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChronicleDataTableRow_IsTerraformElementParameters(x); err != nil {
@@ -755,7 +754,7 @@ func ChronicleDataTableRow_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.chronicleDataTableRow.ChronicleDataTableRow",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -763,7 +762,7 @@ func ChronicleDataTableRow_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ChronicleDataTableRow_IsTerraformResource(x interface{}) *bool {
+func ChronicleDataTableRow_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateChronicleDataTableRow_IsTerraformResourceParameters(x); err != nil {
@@ -774,7 +773,7 @@ func ChronicleDataTableRow_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.chronicleDataTableRow.ChronicleDataTableRow",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -799,31 +798,31 @@ func (c *jsiiProxy_ChronicleDataTableRow) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDataTableRow) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ChronicleDataTableRow) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDataTableRow) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ChronicleDataTableRow) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,15 +950,15 @@ func (c *jsiiProxy_ChronicleDataTableRow) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDataTableRow) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChronicleDataTableRow) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -978,7 +977,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -991,7 +990,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1005,18 +1004,18 @@ func (c *jsiiProxy_ChronicleDataTableRow) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ChronicleDataTableRow) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ChronicleDataTableRow) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1027,7 +1026,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1038,7 +1037,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1049,7 +1048,7 @@ func (c *jsiiProxy_ChronicleDataTableRow) PutTimeouts(value *ChronicleDataTableR
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1093,8 +1092,8 @@ func (c *jsiiProxy_ChronicleDataTableRow) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ChronicleDataTableRow) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChronicleDataTableRow) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1106,8 +1105,8 @@ func (c *jsiiProxy_ChronicleDataTableRow) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDataTableRow) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ChronicleDataTableRow) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1119,8 +1118,8 @@ func (c *jsiiProxy_ChronicleDataTableRow) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDataTableRow) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChronicleDataTableRow) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1132,8 +1131,8 @@ func (c *jsiiProxy_ChronicleDataTableRow) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDataTableRow) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChronicleDataTableRow) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1158,8 +1157,8 @@ func (c *jsiiProxy_ChronicleDataTableRow) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDataTableRow) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ChronicleDataTableRow) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1170,4 +1169,3 @@ func (c *jsiiProxy_ChronicleDataTableRow) ToTerraform() interface{} {
 
 	return returns
 }
-

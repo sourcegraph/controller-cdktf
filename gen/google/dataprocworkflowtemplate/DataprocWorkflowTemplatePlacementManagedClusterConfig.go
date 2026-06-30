@@ -1,6 +1,5 @@
 package dataprocworkflowtemplate
 
-
 type DataprocWorkflowTemplatePlacementManagedClusterConfig struct {
 	// autoscaling_config block.
 	//
@@ -21,7 +20,7 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfig struct {
 	// initialization_actions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#initialization_actions DataprocWorkflowTemplate#initialization_actions}
-	InitializationActions interface{} `field:"optional" json:"initializationActions" yaml:"initializationActions"`
+	InitializationActions any `field:"optional" json:"initializationActions" yaml:"initializationActions"`
 	// lifecycle_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#lifecycle_config DataprocWorkflowTemplate#lifecycle_config}
@@ -59,4 +58,3 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_workflow_template#worker_config DataprocWorkflowTemplate#worker_config}
 	WorkerConfig *DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig `field:"optional" json:"workerConfig" yaml:"workerConfig"`
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceTimeoutsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRegionBackendServiceTimeoutsOutputReferenceParameters(ter
 
 	return nil
 }
-

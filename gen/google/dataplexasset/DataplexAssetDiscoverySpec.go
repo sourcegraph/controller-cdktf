@@ -1,11 +1,10 @@
 package dataplexasset
 
-
 type DataplexAssetDiscoverySpec struct {
 	// Required. Whether discovery is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_asset#enabled DataplexAsset#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// csv_options block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_asset#csv_options DataplexAsset#csv_options}
@@ -33,4 +32,3 @@ type DataplexAssetDiscoverySpec struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_asset#schedule DataplexAsset#schedule}
 	Schedule *string `field:"optional" json:"schedule" yaml:"schedule"`
 }
-

@@ -18,15 +18,15 @@ type DocumentAiWarehouseLocation interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseType() *string
 	SetDatabaseType(val *string)
 	DatabaseTypeInput() *string
@@ -68,26 +68,26 @@ type DocumentAiWarehouseLocation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DocumentAiWarehouseLocationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type DocumentAiWarehouseLocation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type DocumentAiWarehouseLocation interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type DocumentAiWarehouseLocation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DocumentAiWarehouseLocation
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocumentAiWarehouseLocation) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DocumentAiWarehouseLocation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocumentAiWarehouseLocation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -400,8 +400,8 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DocumentAiWarehouseLocation) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocumentAiWarehouseLocation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DocumentAiWarehouseLocation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation) Timeouts() DocumentAiWarehouseLo
 	return returns
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DocumentAiWarehouseLocation) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -469,7 +469,6 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/document_ai_warehouse_location google_document_ai_warehouse_location} Resource.
 func NewDocumentAiWarehouseLocation(scope constructs.Construct, id *string, config *DocumentAiWarehouseLocationConfig) DocumentAiWarehouseLocation {
@@ -482,7 +481,7 @@ func NewDocumentAiWarehouseLocation(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -495,12 +494,12 @@ func NewDocumentAiWarehouseLocation_Override(d DocumentAiWarehouseLocation, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetAccessControlMode(val *string) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetAccessControlMode(val *string) {
 	if err := j.validateSetAccessControlModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetAccessControlMode(val *string)
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetConnection(val interface{}) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetCount(val interface{}) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetDatabaseType(val *string) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetDatabaseType(val *string) {
 	if err := j.validateSetDatabaseTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetDatabaseType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetDocumentCreatorDefaultRole(val *string) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetDocumentCreatorDefaultRole(val *string) {
 	if err := j.validateSetDocumentCreatorDefaultRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetDocumentCreatorDefaultRole(val
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -571,7 +570,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetId(val *string) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetKmsKey(val *string) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetLocation(val *string) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetProjectNumber(val *string) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetProjectNumber(val *string) {
 	if err := j.validateSetProjectNumberParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetProjectNumber(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_DocumentAiWarehouseLocation)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseLocation)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DocumentAiWarehouseLocation) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func DocumentAiWarehouseLocation_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func DocumentAiWarehouseLocation_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DocumentAiWarehouseLocation_IsConstruct(x interface{}) *bool {
+func DocumentAiWarehouseLocation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocumentAiWarehouseLocation_IsConstructParameters(x); err != nil {
@@ -692,7 +691,7 @@ func DocumentAiWarehouseLocation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func DocumentAiWarehouseLocation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DocumentAiWarehouseLocation_IsTerraformElement(x interface{}) *bool {
+func DocumentAiWarehouseLocation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocumentAiWarehouseLocation_IsTerraformElementParameters(x); err != nil {
@@ -711,7 +710,7 @@ func DocumentAiWarehouseLocation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func DocumentAiWarehouseLocation_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DocumentAiWarehouseLocation_IsTerraformResource(x interface{}) *bool {
+func DocumentAiWarehouseLocation_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDocumentAiWarehouseLocation_IsTerraformResourceParameters(x); err != nil {
@@ -730,7 +729,7 @@ func DocumentAiWarehouseLocation_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,31 +754,31 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DocumentAiWarehouseLocation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DocumentAiWarehouseLocation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,15 +906,15 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocation) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocumentAiWarehouseLocation) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -934,7 +933,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -947,7 +946,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,18 +960,18 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocation) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DocumentAiWarehouseLocation) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -983,7 +982,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -994,7 +993,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) PutTimeouts(value *DocumentAiWar
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1049,8 +1048,8 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DocumentAiWarehouseLocation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1062,8 +1061,8 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DocumentAiWarehouseLocation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1075,8 +1074,8 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocumentAiWarehouseLocation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1088,8 +1087,8 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocumentAiWarehouseLocation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1114,8 +1113,8 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DocumentAiWarehouseLocation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1126,4 +1125,3 @@ func (d *jsiiProxy_DocumentAiWarehouseLocation) ToTerraform() interface{} {
 
 	return returns
 }
-

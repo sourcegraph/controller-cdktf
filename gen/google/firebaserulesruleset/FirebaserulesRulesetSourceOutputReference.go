@@ -12,9 +12,9 @@ type FirebaserulesRulesetSourceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type FirebaserulesRulesetSourceOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Files() FirebaserulesRulesetSourceFilesList
-	FilesInput() interface{}
+	FilesInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *FirebaserulesRulesetSource
@@ -45,7 +45,7 @@ type FirebaserulesRulesetSourceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,11 +66,11 @@ type FirebaserulesRulesetSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFiles(value interface{})
+	PutFiles(value any)
 	ResetLanguage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_FirebaserulesRulesetSourceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) Files() Firebaseru
 	return returns
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) FilesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) FilesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"filesInput",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewFirebaserulesRulesetSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirebaserulesRulesetSourceOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewFirebaserulesRulesetSourceOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewFirebaserulesRulesetSourceOutputReference_Override(f FirebaserulesRulese
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetInternalValue(val *FirebaserulesRulesetSource) {
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) SetInternalValue(val *FirebaserulesRulesetSource) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetLanguage(val *string) {
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) SetLanguage(val *string) {
 	if err := j.validateSetLanguageParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetLanguage(val *st
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,16 +299,16 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -325,7 +324,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -341,7 +340,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -357,7 +356,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,21 +465,21 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) PutFiles(value interface{}) {
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) PutFiles(value any) {
 	if err := f.validatePutFilesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"putFiles",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -492,16 +491,16 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) ResetLanguage() {
 	)
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) ToString() *string
 
 	return returns
 }
-

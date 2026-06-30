@@ -122,7 +122,7 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationC
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode
 
 	return nil
 }
-

@@ -36,7 +36,7 @@ type VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList interface {
 	Get(index *float64) VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecLi
 	return returns
 }
 
-
 func NewVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList(terrafor
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList_Override
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecLi
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecLi
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecLi
 	_jsii_.Invoke(
 		v,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecLi
 	_jsii_.Invoke(
 		v,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (v *jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecLi
 
 	return returns
 }
-

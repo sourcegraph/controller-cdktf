@@ -109,7 +109,7 @@ func (d *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConf
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConf
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -273,4 +273,3 @@ func validateNewDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigs
 
 	return nil
 }
-

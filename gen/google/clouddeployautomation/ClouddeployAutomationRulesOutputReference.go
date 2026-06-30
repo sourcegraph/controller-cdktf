@@ -14,9 +14,9 @@ type ClouddeployAutomationRulesOutputReference interface {
 	AdvanceRolloutRuleInput() *ClouddeployAutomationRulesAdvanceRolloutRule
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,8 +29,8 @@ type ClouddeployAutomationRulesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	PromoteReleaseRule() ClouddeployAutomationRulesPromoteReleaseRuleOutputReference
 	PromoteReleaseRuleInput() *ClouddeployAutomationRulesPromoteReleaseRule
 	RepairRolloutRule() ClouddeployAutomationRulesRepairRolloutRuleOutputReference
@@ -48,7 +48,7 @@ type ClouddeployAutomationRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ClouddeployAutomationRulesOutputReference interface {
 	ResetTimedPromoteReleaseRule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) AdvanceRolloutRule
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) TimedPromoteReleas
 	return returns
 }
 
-
 func NewClouddeployAutomationRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClouddeployAutomationRulesOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewClouddeployAutomationRulesOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewClouddeployAutomationRulesOutputReference_Override(c ClouddeployAutomati
 
 	_jsii_.Create(
 		"@cdktf/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddeployAutomationRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,16 +337,16 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -363,7 +362,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -379,7 +378,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) PutAdvanceRolloutR
 	_jsii_.InvokeVoid(
 		c,
 		"putAdvanceRolloutRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -529,7 +528,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) PutPromoteReleaseR
 	_jsii_.InvokeVoid(
 		c,
 		"putPromoteReleaseRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -540,7 +539,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) PutRepairRolloutRu
 	_jsii_.InvokeVoid(
 		c,
 		"putRepairRolloutRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) PutTimedPromoteRel
 	_jsii_.InvokeVoid(
 		c,
 		"putTimedPromoteReleaseRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) ResetTimedPromoteR
 	)
 }
 
-func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) ToString() *string
 
 	return returns
 }
-

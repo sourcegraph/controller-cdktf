@@ -6,9 +6,9 @@ import (
 
 type ApigeeDeveloperAppConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApigeeDeveloperAppConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Callback URL used by OAuth 2.0 authorization servers to communicate authorization codes back to developer apps.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#callback_url ApigeeDeveloperApp#callback_url}
@@ -49,7 +49,7 @@ type ApigeeDeveloperAppConfig struct {
 	// attributes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#attributes ApigeeDeveloperApp#attributes}
-	Attributes interface{} `field:"optional" json:"attributes" yaml:"attributes"`
+	Attributes any `field:"optional" json:"attributes" yaml:"attributes"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#id ApigeeDeveloperApp#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -78,4 +78,3 @@ type ApigeeDeveloperAppConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_developer_app#timeouts ApigeeDeveloperApp#timeouts}
 	Timeouts *ApigeeDeveloperAppTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -15,20 +15,20 @@ type BigtableInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Cluster() BigtableInstanceClusterList
-	ClusterInput() interface{}
+	ClusterInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
-	DeletionProtection() interface{}
-	SetDeletionProtection(val interface{})
-	DeletionProtectionInput() interface{}
+	SetCount(val any)
+	DeletionProtection() any
+	SetDeletionProtection(val any)
+	DeletionProtectionInput() any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -37,9 +37,9 @@ type BigtableInstance interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EffectiveLabels() cdktf.StringMap
-	ForceDestroy() interface{}
-	SetForceDestroy(val interface{})
-	ForceDestroyInput() interface{}
+	ForceDestroy() any
+	SetForceDestroy(val any)
+	ForceDestroyInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -74,11 +74,11 @@ type BigtableInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -86,18 +86,18 @@ type BigtableInstance interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BigtableInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type BigtableInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,14 +127,14 @@ type BigtableInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCluster(value interface{})
+	PutCluster(value any)
 	PutTimeouts(value *BigtableInstanceTimeouts)
 	ResetCluster()
 	ResetDeletionProtection()
@@ -149,17 +149,17 @@ type BigtableInstance interface {
 	ResetProject()
 	ResetTags()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BigtableInstance
@@ -187,8 +187,8 @@ func (j *jsiiProxy_BigtableInstance) Cluster() BigtableInstanceClusterList {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) ClusterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstance) ClusterInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clusterInput",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_BigtableInstance) ClusterInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_BigtableInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_BigtableInstance) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_BigtableInstance) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) DeletionProtection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstance) DeletionProtection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_BigtableInstance) DeletionProtection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) DeletionProtectionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstance) DeletionProtectionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionInput",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_BigtableInstance) EffectiveLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) ForceDestroy() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstance) ForceDestroy() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroy",
@@ -297,8 +297,8 @@ func (j *jsiiProxy_BigtableInstance) ForceDestroy() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) ForceDestroyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstance) ForceDestroyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"forceDestroyInput",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_BigtableInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BigtableInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_BigtableInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_BigtableInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_BigtableInstance) Timeouts() BigtableInstanceTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -566,7 +566,6 @@ func (j *jsiiProxy_BigtableInstance) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_instance google_bigtable_instance} Resource.
 func NewBigtableInstance(scope constructs.Construct, id *string, config *BigtableInstanceConfig) BigtableInstance {
@@ -579,7 +578,7 @@ func NewBigtableInstance(scope constructs.Construct, id *string, config *Bigtabl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -592,12 +591,12 @@ func NewBigtableInstance_Override(b BigtableInstance, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_BigtableInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_BigtableInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_BigtableInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_BigtableInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetDeletionProtection(val interface{}) {
+func (j *jsiiProxy_BigtableInstance) SetDeletionProtection(val any) {
 	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_BigtableInstance)SetDeletionProtection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BigtableInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -638,7 +637,7 @@ func (j *jsiiProxy_BigtableInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetDisplayName(val *string) {
+func (j *jsiiProxy_BigtableInstance) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_BigtableInstance)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetForceDestroy(val interface{}) {
+func (j *jsiiProxy_BigtableInstance) SetForceDestroy(val any) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_BigtableInstance)SetForceDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BigtableInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -668,7 +667,7 @@ func (j *jsiiProxy_BigtableInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetId(val *string) {
+func (j *jsiiProxy_BigtableInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_BigtableInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetInstanceType(val *string) {
+func (j *jsiiProxy_BigtableInstance) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_BigtableInstance)SetInstanceType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_BigtableInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_BigtableInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BigtableInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_BigtableInstance)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetName(val *string) {
+func (j *jsiiProxy_BigtableInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_BigtableInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetProject(val *string) {
+func (j *jsiiProxy_BigtableInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_BigtableInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BigtableInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -742,7 +741,7 @@ func (j *jsiiProxy_BigtableInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BigtableInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_BigtableInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableInstance)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_BigtableInstance) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func BigtableInstance_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func BigtableInstance_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BigtableInstance_IsConstruct(x interface{}) *bool {
+func BigtableInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableInstance_IsConstructParameters(x); err != nil {
@@ -811,7 +810,7 @@ func BigtableInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func BigtableInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableInstance_IsTerraformElement(x interface{}) *bool {
+func BigtableInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableInstance_IsTerraformElementParameters(x); err != nil {
@@ -830,7 +829,7 @@ func BigtableInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func BigtableInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableInstance_IsTerraformResource(x interface{}) *bool {
+func BigtableInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableInstance_IsTerraformResourceParameters(x); err != nil {
@@ -849,7 +848,7 @@ func BigtableInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -874,31 +873,31 @@ func (b *jsiiProxy_BigtableInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BigtableInstance) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BigtableInstance) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BigtableInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigtableInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (b *jsiiProxy_BigtableInstance) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (b *jsiiProxy_BigtableInstance) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (b *jsiiProxy_BigtableInstance) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (b *jsiiProxy_BigtableInstance) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (b *jsiiProxy_BigtableInstance) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (b *jsiiProxy_BigtableInstance) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (b *jsiiProxy_BigtableInstance) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,15 +1025,15 @@ func (b *jsiiProxy_BigtableInstance) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigtableInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1053,7 +1052,7 @@ func (b *jsiiProxy_BigtableInstance) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (b *jsiiProxy_BigtableInstance) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,18 +1079,18 @@ func (b *jsiiProxy_BigtableInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BigtableInstance) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BigtableInstance) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (b *jsiiProxy_BigtableInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1113,18 +1112,18 @@ func (b *jsiiProxy_BigtableInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (b *jsiiProxy_BigtableInstance) PutCluster(value interface{}) {
+func (b *jsiiProxy_BigtableInstance) PutCluster(value any) {
 	if err := b.validatePutClusterParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putCluster",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1135,7 +1134,7 @@ func (b *jsiiProxy_BigtableInstance) PutTimeouts(value *BigtableInstanceTimeouts
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1227,8 +1226,8 @@ func (b *jsiiProxy_BigtableInstance) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BigtableInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1240,8 +1239,8 @@ func (b *jsiiProxy_BigtableInstance) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (b *jsiiProxy_BigtableInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1253,8 +1252,8 @@ func (b *jsiiProxy_BigtableInstance) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (b *jsiiProxy_BigtableInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1266,8 +1265,8 @@ func (b *jsiiProxy_BigtableInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1292,8 +1291,8 @@ func (b *jsiiProxy_BigtableInstance) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1304,4 +1303,3 @@ func (b *jsiiProxy_BigtableInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

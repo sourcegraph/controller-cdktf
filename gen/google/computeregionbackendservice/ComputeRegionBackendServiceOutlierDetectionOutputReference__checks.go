@@ -120,7 +120,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -292,4 +292,3 @@ func validateNewComputeRegionBackendServiceOutlierDetectionOutputReferenceParame
 
 	return nil
 }
-

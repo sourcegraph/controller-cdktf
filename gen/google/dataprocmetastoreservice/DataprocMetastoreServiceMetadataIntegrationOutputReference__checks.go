@@ -109,7 +109,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDataprocMetastoreServiceMetadataIntegrationOutputReferenceParame
 
 	return nil
 }
-

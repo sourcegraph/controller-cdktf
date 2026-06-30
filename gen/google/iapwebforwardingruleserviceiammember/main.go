@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMember",
-		reflect.TypeOf((*IapWebForwardingRuleServiceIamMember)(nil)).Elem(),
+		reflect.TypeFor[IapWebForwardingRuleServiceIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapWebForwardingRuleServiceIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,11 +78,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberCondition",
-		reflect.TypeOf((*IapWebForwardingRuleServiceIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[IapWebForwardingRuleServiceIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConditionOutputReference",
-		reflect.TypeOf((*IapWebForwardingRuleServiceIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapWebForwardingRuleServiceIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -113,7 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapWebForwardingRuleServiceIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -121,6 +121,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapWebForwardingRuleServiceIamMember.IapWebForwardingRuleServiceIamMemberConfig",
-		reflect.TypeOf((*IapWebForwardingRuleServiceIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[IapWebForwardingRuleServiceIamMemberConfig](),
 	)
 }

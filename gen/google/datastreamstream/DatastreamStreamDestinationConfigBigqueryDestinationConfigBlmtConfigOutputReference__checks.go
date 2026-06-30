@@ -106,7 +106,7 @@ func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigBlm
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtCo
 
 	return nil
 }
-

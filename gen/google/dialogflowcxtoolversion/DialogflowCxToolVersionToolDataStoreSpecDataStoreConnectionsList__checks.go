@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsL
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList
 
 	return nil
 }
-

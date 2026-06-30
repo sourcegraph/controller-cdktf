@@ -19,7 +19,7 @@ func (p *jsiiProxy_PubsubLiteTopic) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopic) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PubsubLiteTopic) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PubsubLiteTopic) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PubsubLiteTopic) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validatePubsubLiteTopic_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validatePubsubLiteTopic_IsConstructParameters(x interface{}) error {
+func validatePubsubLiteTopic_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validatePubsubLiteTopic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validatePubsubLiteTopic_IsTerraformElementParameters(x interface{}) error {
+func validatePubsubLiteTopic_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validatePubsubLiteTopic_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validatePubsubLiteTopic_IsTerraformResourceParameters(x interface{}) error {
+func validatePubsubLiteTopic_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validatePubsubLiteTopic_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopic) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteTopic) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_PubsubLiteTopic) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopic) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteTopic) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -410,7 +410,7 @@ func (j *jsiiProxy_PubsubLiteTopic) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopic) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PubsubLiteTopic) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -490,4 +490,3 @@ func validateNewPubsubLiteTopicParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

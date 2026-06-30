@@ -6,9 +6,9 @@ import (
 
 type ComputeServiceAttachmentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeServiceAttachmentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The connection preference to use for this service attachment. Valid values include "ACCEPT_AUTOMATIC", "ACCEPT_MANUAL".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_service_attachment#connection_preference ComputeServiceAttachment#connection_preference}
@@ -26,7 +26,7 @@ type ComputeServiceAttachmentConfig struct {
 	// If true, enable the proxy protocol which is for supplying client TCP/IP address data in TCP connections that traverse proxies on their way to destination servers.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_service_attachment#enable_proxy_protocol ComputeServiceAttachment#enable_proxy_protocol}
-	EnableProxyProtocol interface{} `field:"required" json:"enableProxyProtocol" yaml:"enableProxyProtocol"`
+	EnableProxyProtocol any `field:"required" json:"enableProxyProtocol" yaml:"enableProxyProtocol"`
 	// Name of the resource.
 	//
 	// The name must be 1-63 characters long, and
@@ -49,7 +49,7 @@ type ComputeServiceAttachmentConfig struct {
 	// consumer_accept_lists block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_service_attachment#consumer_accept_lists ComputeServiceAttachment#consumer_accept_lists}
-	ConsumerAcceptLists interface{} `field:"optional" json:"consumerAcceptLists" yaml:"consumerAcceptLists"`
+	ConsumerAcceptLists any `field:"optional" json:"consumerAcceptLists" yaml:"consumerAcceptLists"`
 	// An array of projects that are not allowed to connect to this service attachment.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_service_attachment#consumer_reject_lists ComputeServiceAttachment#consumer_reject_lists}
@@ -90,7 +90,7 @@ type ComputeServiceAttachmentConfig struct {
 	// If true, update will affect both PENDING and ACCEPTED/REJECTED PSC endpoints. For example, an ACCEPTED PSC endpoint will be moved to REJECTED if its project is added to the reject list.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_service_attachment#reconcile_connections ComputeServiceAttachment#reconcile_connections}
-	ReconcileConnections interface{} `field:"optional" json:"reconcileConnections" yaml:"reconcileConnections"`
+	ReconcileConnections any `field:"optional" json:"reconcileConnections" yaml:"reconcileConnections"`
 	// URL of the region where the resource resides.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_service_attachment#region ComputeServiceAttachment#region}
@@ -102,17 +102,16 @@ type ComputeServiceAttachmentConfig struct {
 	// Defaults to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_service_attachment#send_propagated_connection_limit_if_zero ComputeServiceAttachment#send_propagated_connection_limit_if_zero}
-	SendPropagatedConnectionLimitIfZero interface{} `field:"optional" json:"sendPropagatedConnectionLimitIfZero" yaml:"sendPropagatedConnectionLimitIfZero"`
+	SendPropagatedConnectionLimitIfZero any `field:"optional" json:"sendPropagatedConnectionLimitIfZero" yaml:"sendPropagatedConnectionLimitIfZero"`
 	// NOTE: This field is temporarily non-functional due to an underlying API issue.
 	//
 	// Any value provided here will be ignored until the API issue is resolved, expected around 2026-03.
 	// [If true, show NAT IPs of all connected endpoints.]
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_service_attachment#show_nat_ips ComputeServiceAttachment#show_nat_ips}
-	ShowNatIps interface{} `field:"optional" json:"showNatIps" yaml:"showNatIps"`
+	ShowNatIps any `field:"optional" json:"showNatIps" yaml:"showNatIps"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_service_attachment#timeouts ComputeServiceAttachment#timeouts}
 	Timeouts *ComputeServiceAttachmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

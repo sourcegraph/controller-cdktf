@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolStatusOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeonpremVmwareNodePoolStatusOutputReferenceParameters(terraform
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMemorystoreInstanceZoneDistributionConfigOutputReferenceParamete
 
 	return nil
 }
-

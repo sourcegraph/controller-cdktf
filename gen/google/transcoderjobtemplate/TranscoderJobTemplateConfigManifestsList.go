@@ -17,8 +17,8 @@ type TranscoderJobTemplateConfigManifestsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type TranscoderJobTemplateConfigManifestsList interface {
 	Get(index *float64) TranscoderJobTemplateConfigManifestsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewTranscoderJobTemplateConfigManifestsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TranscoderJobTemplateConfigManifestsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewTranscoderJobTemplateConfigManifestsList(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigManifestsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewTranscoderJobTemplateConfigManifestsList_Override(t TranscoderJobTemplat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigManifestsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigManifestsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigManifestsList) AllWithMapKey(mapKe
 	_jsii_.Invoke(
 		t,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigManifestsList) Get(index *float64)
 	_jsii_.Invoke(
 		t,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigManifestsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TranscoderJobTemplateConfigManifestsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigManifestsList) ToString() *string 
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastore",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastore)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastore](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVmwareengineDatastore{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,19 +70,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreConfig",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreNfsDatastore",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreNfsDatastore)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreNfsDatastore](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileService",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileService)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceList",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -103,7 +103,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -137,7 +137,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreNfsDatastoreList",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreNfsDatastoreList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreNfsDatastoreList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -158,7 +158,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreNfsDatastoreOutputReference",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreNfsDatastoreOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreNfsDatastoreOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thirdPartyFileService", GoGetter: "ThirdPartyFileService"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,11 +192,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileService",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileService)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceList",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -209,7 +209,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -217,7 +217,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleVmwareengineDatastore.DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference",
-		reflect.TypeOf((*DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

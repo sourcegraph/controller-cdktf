@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeFirewallDenyList) validateResolveParameters(_context c
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallDenyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallDenyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeFirewallDenyListParameters(terraformResource cdktf.IInter
 
 	return nil
 }
-

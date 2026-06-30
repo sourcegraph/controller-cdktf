@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) validateSetEnableFailureEmailParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) validateSetEnableFailureEmailParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewBigqueryDataTransferConfigEmailPreferencesOutputReferenceParamet
 
 	return nil
 }
-

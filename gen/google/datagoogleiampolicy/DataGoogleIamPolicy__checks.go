@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_DataGoogleIamPolicy) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamPolicy) validatePutAuditConfigParameters(value interface{}) error {
+func (d *jsiiProxy_DataGoogleIamPolicy) validatePutAuditConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -142,7 +142,7 @@ func (d *jsiiProxy_DataGoogleIamPolicy) validatePutAuditConfigParameters(value i
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamPolicy) validatePutBindingParameters(value interface{}) error {
+func (d *jsiiProxy_DataGoogleIamPolicy) validatePutBindingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -189,7 +189,7 @@ func validateDataGoogleIamPolicy_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateDataGoogleIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -197,7 +197,7 @@ func validateDataGoogleIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataGoogleIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -205,7 +205,7 @@ func validateDataGoogleIamPolicy_IsTerraformDataSourceParameters(x interface{}) 
 	return nil
 }
 
-func validateDataGoogleIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -213,7 +213,7 @@ func validateDataGoogleIamPolicy_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -301,4 +301,3 @@ func validateNewDataGoogleIamPolicyParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

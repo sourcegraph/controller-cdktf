@@ -12,9 +12,9 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	FewShotExamples() DialogflowGeneratorSummarizationContextFewShotExamplesList
-	FewShotExamplesInput() interface{}
+	FewShotExamplesInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DialogflowGeneratorSummarizationContext
@@ -35,7 +35,7 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 	SetOutputLanguageCode(val *string)
 	OutputLanguageCodeInput() *string
 	SummarizationSections() DialogflowGeneratorSummarizationContextSummarizationSectionsList
-	SummarizationSectionsInput() interface{}
+	SummarizationSectionsInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -50,7 +50,7 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,15 +71,15 @@ type DialogflowGeneratorSummarizationContextOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutFewShotExamples(value interface{})
-	PutSummarizationSections(value interface{})
+	PutFewShotExamples(value any)
+	PutSummarizationSections(value any)
 	ResetFewShotExamples()
 	ResetOutputLanguageCode()
 	ResetSummarizationSections()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) FewSh
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) FewShotExamplesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) FewShotExamplesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fewShotExamplesInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Summa
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) SummarizationSectionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) SummarizationSectionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"summarizationSectionsInput",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Versi
 	return returns
 }
 
-
 func NewDialogflowGeneratorSummarizationContextOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorSummarizationContextOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewDialogflowGeneratorSummarizationContextOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewDialogflowGeneratorSummarizationContextOutputReference_Override(d Dialog
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetInternalValue(val *DialogflowGeneratorSummarizationContext) {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) SetInternalValue(val *DialogflowGeneratorSummarizationContext) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetOutputLanguageCode(val *string) {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) SetOutputLanguageCode(val *string) {
 	if err := j.validateSetOutputLanguageCodeParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetOut
 	)
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,16 +359,16 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Compu
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetBo
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetLi
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetNu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) GetSt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,32 +525,32 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Inter
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) PutFewShotExamples(value interface{}) {
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) PutFewShotExamples(value any) {
 	if err := d.validatePutFewShotExamplesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFewShotExamples",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) PutSummarizationSections(value interface{}) {
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) PutSummarizationSections(value any) {
 	if err := d.validatePutSummarizationSectionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSummarizationSections",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -587,16 +586,16 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextOutputReference) ToStr
 
 	return returns
 }
-

@@ -1,6 +1,5 @@
 package vertexaideploymentresourcepool
 
-
 type VertexAiDeploymentResourcePoolDedicatedResources struct {
 	// machine_spec block.
 	//
@@ -15,7 +14,7 @@ type VertexAiDeploymentResourcePoolDedicatedResources struct {
 	// autoscaling_metric_specs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_deployment_resource_pool#autoscaling_metric_specs VertexAiDeploymentResourcePool#autoscaling_metric_specs}
-	AutoscalingMetricSpecs interface{} `field:"optional" json:"autoscalingMetricSpecs" yaml:"autoscalingMetricSpecs"`
+	AutoscalingMetricSpecs any `field:"optional" json:"autoscalingMetricSpecs" yaml:"autoscalingMetricSpecs"`
 	// The maximum number of replicas this DeployedModel may be deployed on when the traffic against it increases.
 	//
 	// If the requested value is too large, the deployment will error, but if deployment succeeds then the ability to scale the model to that many replicas is guaranteed (barring service outages). If traffic against the DeployedModel increases beyond what its replicas at maximum may handle, a portion of the traffic will be dropped. If this value is not provided, will use min_replica_count as the default value. The value of this field impacts the charge against Vertex CPU and GPU quotas. Specifically, you will be charged for max_replica_count * number of cores in the selected machine type) and (max_replica_count * number of GPUs per replica in the selected machine type).
@@ -23,4 +22,3 @@ type VertexAiDeploymentResourcePoolDedicatedResources struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_deployment_resource_pool#max_replica_count VertexAiDeploymentResourcePool#max_replica_count}
 	MaxReplicaCount *float64 `field:"optional" json:"maxReplicaCount" yaml:"maxReplicaCount"`
 }
-

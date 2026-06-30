@@ -1,10 +1,8 @@
 package clouddeployautomation
 
-
 type ClouddeployAutomationSelector struct {
 	// targets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_automation#targets ClouddeployAutomation#targets}
-	Targets interface{} `field:"required" json:"targets" yaml:"targets"`
+	Targets any `field:"required" json:"targets" yaml:"targets"`
 }
-

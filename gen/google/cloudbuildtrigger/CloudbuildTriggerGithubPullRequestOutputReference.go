@@ -18,9 +18,9 @@ type CloudbuildTriggerGithubPullRequestOutputReference interface {
 	CommentControlInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -35,9 +35,9 @@ type CloudbuildTriggerGithubPullRequestOutputReference interface {
 	Fqn() *string
 	InternalValue() *CloudbuildTriggerGithubPullRequest
 	SetInternalValue(val *CloudbuildTriggerGithubPullRequest)
-	InvertRegex() interface{}
-	SetInvertRegex(val interface{})
-	InvertRegexInput() interface{}
+	InvertRegex() any
+	SetInvertRegex(val any)
+	InvertRegexInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type CloudbuildTriggerGithubPullRequestOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type CloudbuildTriggerGithubPullRequestOutputReference interface {
 	ResetInvertRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -127,8 +127,8 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) CommentCon
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) InvertRegex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) InvertRegex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegex",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) InvertRege
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) InvertRegexInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) InvertRegexInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"invertRegexInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) TerraformR
 	return returns
 }
 
-
 func NewCloudbuildTriggerGithubPullRequestOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudbuildTriggerGithubPullRequestOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewCloudbuildTriggerGithubPullRequestOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewCloudbuildTriggerGithubPullRequestOutputReference_Override(c CloudbuildT
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetBranch(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) SetBranch(val *string) {
 	if err := j.validateSetBranchParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetBranch(v
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetCommentControl(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) SetCommentControl(val *string) {
 	if err := j.validateSetCommentControlParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetCommentC
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetInternalValue(val *CloudbuildTriggerGithubPullRequest) {
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) SetInternalValue(val *CloudbuildTriggerGithubPullRequest) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetInvertRegex(val interface{}) {
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) SetInvertRegex(val any) {
 	if err := j.validateSetInvertRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetInvertRe
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) ResetInver
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference) ToString()
 
 	return returns
 }
-

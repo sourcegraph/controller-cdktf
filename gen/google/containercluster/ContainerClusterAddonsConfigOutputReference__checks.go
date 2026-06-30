@@ -222,7 +222,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutParal
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutRayOperatorConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutRayOperatorConfigParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -383,4 +383,3 @@ func validateNewContainerClusterAddonsConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-

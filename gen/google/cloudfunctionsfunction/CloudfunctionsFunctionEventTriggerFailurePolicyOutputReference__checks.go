@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionEventTriggerFailurePolicyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionEventTriggerFailurePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionEventTriggerFailurePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionEventTriggerFailurePolicyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionEventTriggerFailurePolicyOutputReference) validateSetRetryParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionEventTriggerFailurePolicyOutputReference) validateSetRetryParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewCloudfunctionsFunctionEventTriggerFailurePolicyOutputReferencePa
 
 	return nil
 }
-

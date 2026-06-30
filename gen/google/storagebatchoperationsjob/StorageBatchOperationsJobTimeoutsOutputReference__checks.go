@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobTimeoutsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBatchOperationsJobTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBatchOperationsJobTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStorageBatchOperationsJobTimeoutsOutputReferenceParameters(terra
 
 	return nil
 }
-

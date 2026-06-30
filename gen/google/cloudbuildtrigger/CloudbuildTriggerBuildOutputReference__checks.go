@@ -123,7 +123,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildOutputReference) validatePutOptionsPara
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildOutputReference) validatePutSecretParameters(value interface{}) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildOutputReference) validatePutSecretParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -165,7 +165,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildOutputReference) validatePutSourceParam
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildOutputReference) validatePutStepParameters(value interface{}) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildOutputReference) validatePutStepParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -352,4 +352,3 @@ func validateNewCloudbuildTriggerBuildOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

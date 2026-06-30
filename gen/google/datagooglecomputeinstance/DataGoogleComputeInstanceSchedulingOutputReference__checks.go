@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeInstanceSchedulingOutputReferenceParameters(ter
 
 	return nil
 }
-

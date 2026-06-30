@@ -14,9 +14,9 @@ type BigqueryConnectionAzureOutputReference interface {
 	ClientId() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type BigqueryConnectionAzureOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type BigqueryConnectionAzureOutputReference interface {
 	ResetFederatedApplicationClientId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) ClientId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -248,7 +248,6 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) TerraformResource() c
 	return returns
 }
 
-
 func NewBigqueryConnectionAzureOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionAzureOutputReference {
 	_init_.Initialize()
 
@@ -259,7 +258,7 @@ func NewBigqueryConnectionAzureOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAzureOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -271,12 +270,12 @@ func NewBigqueryConnectionAzureOutputReference_Override(b BigqueryConnectionAzur
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAzureOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetCustomerTenantId(val *string) {
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) SetCustomerTenantId(val *string) {
 	if err := j.validateSetCustomerTenantIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetCustomerTenantId(va
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetFederatedApplicationClientId(val *string) {
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) SetFederatedApplicationClientId(val *string) {
 	if err := j.validateSetFederatedApplicationClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -320,7 +319,7 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetFederatedApplicatio
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetInternalValue(val *BigqueryConnectionAzure) {
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) SetInternalValue(val *BigqueryConnectionAzure) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -331,7 +330,7 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -342,7 +341,7 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -366,16 +365,16 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -532,7 +531,7 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -547,16 +546,16 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) ResetFederatedApplica
 	)
 }
 
-func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -575,4 +574,3 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) ToString() *string {
 
 	return returns
 }
-

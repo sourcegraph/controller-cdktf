@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticatio
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMonitoringUptimeCheckConfigHttpCheckServiceAgentAuthenticationOu
 
 	return nil
 }
-

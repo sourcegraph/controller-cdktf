@@ -1,6 +1,5 @@
 package computeregionbackendservice
 
-
 type ComputeRegionBackendServiceFailoverPolicy struct {
 	// On failover or failback, this field indicates whether connection drain will be honored.
 	//
@@ -13,7 +12,7 @@ type ComputeRegionBackendServiceFailoverPolicy struct {
 	// The default is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#disable_connection_drain_on_failover ComputeRegionBackendService#disable_connection_drain_on_failover}
-	DisableConnectionDrainOnFailover interface{} `field:"optional" json:"disableConnectionDrainOnFailover" yaml:"disableConnectionDrainOnFailover"`
+	DisableConnectionDrainOnFailover any `field:"optional" json:"disableConnectionDrainOnFailover" yaml:"disableConnectionDrainOnFailover"`
 	// This option is used only when no healthy VMs are detected in the primary and backup instance groups.
 	//
 	// When set to true, traffic is dropped. When
@@ -21,7 +20,7 @@ type ComputeRegionBackendServiceFailoverPolicy struct {
 	// The default is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#drop_traffic_if_unhealthy ComputeRegionBackendService#drop_traffic_if_unhealthy}
-	DropTrafficIfUnhealthy interface{} `field:"optional" json:"dropTrafficIfUnhealthy" yaml:"dropTrafficIfUnhealthy"`
+	DropTrafficIfUnhealthy any `field:"optional" json:"dropTrafficIfUnhealthy" yaml:"dropTrafficIfUnhealthy"`
 	// The value of the field must be in [0, 1].
 	//
 	// If the ratio of the healthy
@@ -36,4 +35,3 @@ type ComputeRegionBackendServiceFailoverPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_backend_service#failover_ratio ComputeRegionBackendService#failover_ratio}
 	FailoverRatio *float64 `field:"optional" json:"failoverRatio" yaml:"failoverRatio"`
 }
-

@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateAddMove
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateMoveFro
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateNetworkServicesMulticastGroupRangeActivation_GenerateConfigForImpor
 	return nil
 }
 
-func validateNetworkServicesMulticastGroupRangeActivation_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesMulticastGroupRangeActivation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateNetworkServicesMulticastGroupRangeActivation_IsConstructParameters(
 	return nil
 }
 
-func validateNetworkServicesMulticastGroupRangeActivation_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesMulticastGroupRangeActivation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateNetworkServicesMulticastGroupRangeActivation_IsTerraformElementPara
 	return nil
 }
 
-func validateNetworkServicesMulticastGroupRangeActivation_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesMulticastGroupRangeActivation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateNetworkServicesMulticastGroupRangeActivation_IsTerraformResourcePar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateSetConn
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -428,7 +428,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateSetProj
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -492,4 +492,3 @@ func validateNewNetworkServicesMulticastGroupRangeActivationParameters(scope con
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierMon
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifierOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifierOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDatastreamStreamRuleSetsObjectFilterSourceObjectIdentifierMongod
 
 	return nil
 }
-

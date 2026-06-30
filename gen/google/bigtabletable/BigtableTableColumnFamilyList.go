@@ -17,8 +17,8 @@ type BigtableTableColumnFamilyList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type BigtableTableColumnFamilyList interface {
 	Get(index *float64) BigtableTableColumnFamilyOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_BigtableTableColumnFamilyList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableTableColumnFamilyList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_BigtableTableColumnFamilyList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewBigtableTableColumnFamilyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigtableTableColumnFamilyList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewBigtableTableColumnFamilyList(terraformResource cdktf.IInterpolatingPare
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableTable.BigtableTableColumnFamilyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewBigtableTableColumnFamilyList_Override(b BigtableTableColumnFamilyList, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableTable.BigtableTableColumnFamilyList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigtableTableColumnFamilyList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyList)SetInternalValue(val interface{
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigtableTableColumnFamilyList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyList)SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigtableTableColumnFamilyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyList)SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BigtableTableColumnFamilyList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyList) AllWithMapKey(mapKeyAttributeN
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (b *jsiiProxy_BigtableTableColumnFamilyList) Get(index *float64) BigtableTa
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigtableTableColumnFamilyList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigtableTableColumnFamilyList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (b *jsiiProxy_BigtableTableColumnFamilyList) ToString() *string {
 
 	return returns
 }
-

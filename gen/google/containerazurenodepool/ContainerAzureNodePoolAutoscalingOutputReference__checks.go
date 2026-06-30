@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerAzureNodePoolAutoscalingOutputReferenceParameters(terra
 
 	return nil
 }
-

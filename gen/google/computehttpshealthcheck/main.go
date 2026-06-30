@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeHttpsHealthCheck.ComputeHttpsHealthCheck",
-		reflect.TypeOf((*ComputeHttpsHealthCheck)(nil)).Elem(),
+		reflect.TypeFor[ComputeHttpsHealthCheck](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThreshold", GoGetter: "UnhealthyThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "unhealthyThresholdInput", GoGetter: "UnhealthyThresholdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeHttpsHealthCheck{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,15 +99,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeHttpsHealthCheck.ComputeHttpsHealthCheckConfig",
-		reflect.TypeOf((*ComputeHttpsHealthCheckConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeHttpsHealthCheckConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeHttpsHealthCheck.ComputeHttpsHealthCheckTimeouts",
-		reflect.TypeOf((*ComputeHttpsHealthCheckTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeHttpsHealthCheckTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeHttpsHealthCheck.ComputeHttpsHealthCheckTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeHttpsHealthCheckTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeHttpsHealthCheckTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeHttpsHealthCheckTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

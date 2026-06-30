@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigO
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigO
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetDisablePrivateKgAutoCompleteParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetDisablePrivateKgAutoCompleteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigO
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetDisablePrivateKgEnrichmentParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetDisablePrivateKgEnrichmentParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigO
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetDisablePrivateKgQueryUiChipsParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetDisablePrivateKgQueryUiChipsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -223,7 +223,7 @@ func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigO
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetDisablePrivateKgQueryUnderstandingParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetDisablePrivateKgQueryUnderstandingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutp
 
 	return nil
 }
-

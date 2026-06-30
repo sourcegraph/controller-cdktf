@@ -12,9 +12,9 @@ type FirebaseAppHostingBuildTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type FirebaseAppHostingBuildTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type FirebaseAppHostingBuildTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type FirebaseAppHostingBuildTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) UpdateInput()
 	return returns
 }
 
-
 func NewFirebaseAppHostingBuildTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirebaseAppHostingBuildTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewFirebaseAppHostingBuildTimeoutsOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewFirebaseAppHostingBuildTimeoutsOutputReference_Override(f FirebaseAppHos
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppHostingBuild.FirebaseAppHostingBuildTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetCreate(val 
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetDelete(val 
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetNumberList
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) Interpolation
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) ResetUpdate()
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (f *jsiiProxy_FirebaseAppHostingBuildTimeoutsOutputReference) ToString() *s
 
 	return returns
 }
-

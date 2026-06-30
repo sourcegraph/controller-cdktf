@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWin
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewEdgecontainerClusterMaintenancePolicyWindowRecurringWindowWindow
 
 	return nil
 }
-

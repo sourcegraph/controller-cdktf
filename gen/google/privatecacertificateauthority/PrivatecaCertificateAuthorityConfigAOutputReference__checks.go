@@ -131,7 +131,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -231,4 +231,3 @@ func validateNewPrivatecaCertificateAuthorityConfigAOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterNatRulesOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterNatRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRouterNatRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRouterNatRulesOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type DialogflowCxFlowTransitionRoutesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type DialogflowCxFlowTransitionRoutesOutputReference interface {
 	Intent() *string
 	SetIntent(val *string)
 	IntentInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	TargetFlow() *string
 	SetTargetFlow(val *string)
@@ -55,7 +55,7 @@ type DialogflowCxFlowTransitionRoutesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -84,7 +84,7 @@ type DialogflowCxFlowTransitionRoutesOutputReference interface {
 	ResetTriggerFulfillment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,8 +97,8 @@ type jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) IntentInput(
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -277,7 +277,6 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) TriggerFulfi
 	return returns
 }
 
-
 func NewDialogflowCxFlowTransitionRoutesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DialogflowCxFlowTransitionRoutesOutputReference {
 	_init_.Initialize()
 
@@ -288,7 +287,7 @@ func NewDialogflowCxFlowTransitionRoutesOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -300,12 +299,12 @@ func NewDialogflowCxFlowTransitionRoutesOutputReference_Override(d DialogflowCxF
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetCondition(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) SetCondition(val *string) {
 	if err := j.validateSetConditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetCondition(
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetIntent(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) SetIntent(val *string) {
 	if err := j.validateSetIntentParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetIntent(val
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetTargetFlow(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) SetTargetFlow(val *string) {
 	if err := j.validateSetTargetFlowParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetTargetFlow
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetTargetPage(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) SetTargetPage(val *string) {
 	if err := j.validateSetTargetPageParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetTargetPage
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) ComputeFqn()
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetListAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) GetStringMap
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) PutTriggerFu
 	_jsii_.InvokeVoid(
 		d,
 		"putTriggerFulfillment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -641,16 +640,16 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) ResetTrigger
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -669,4 +668,3 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) ToString() *
 
 	return returns
 }
-

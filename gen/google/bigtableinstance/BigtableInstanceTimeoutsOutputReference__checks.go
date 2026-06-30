@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) validateSetCreatePar
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBigtableInstanceTimeoutsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

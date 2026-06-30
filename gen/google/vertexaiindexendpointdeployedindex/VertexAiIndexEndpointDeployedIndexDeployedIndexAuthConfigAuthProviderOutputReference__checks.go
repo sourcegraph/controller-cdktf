@@ -114,7 +114,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuth
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewVertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthPro
 
 	return nil
 }
-

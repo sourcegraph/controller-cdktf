@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexTaskIamPolicy.DataplexTaskIamPolicy",
-		reflect.TypeOf((*DataplexTaskIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataplexTaskIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexTaskIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,6 +77,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexTaskIamPolicy.DataplexTaskIamPolicyConfig",
-		reflect.TypeOf((*DataplexTaskIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataplexTaskIamPolicyConfig](),
 	)
 }

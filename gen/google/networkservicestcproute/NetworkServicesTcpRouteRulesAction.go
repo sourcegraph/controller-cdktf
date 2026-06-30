@@ -1,11 +1,10 @@
 package networkservicestcproute
 
-
 type NetworkServicesTcpRouteRulesAction struct {
 	// destinations block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#destinations NetworkServicesTcpRoute#destinations}
-	Destinations interface{} `field:"optional" json:"destinations" yaml:"destinations"`
+	Destinations any `field:"optional" json:"destinations" yaml:"destinations"`
 	// Specifies the idle timeout for the selected route.
 	//
 	// The idle timeout is defined as the period in which there are no bytes sent or received on either the upstream or downstream connection. If not set, the default idle timeout is 30 seconds. If set to 0s, the timeout will be disabled.
@@ -17,6 +16,5 @@ type NetworkServicesTcpRouteRulesAction struct {
 	// If true, Router will use the destination IP and port of the original connection as the destination of the request.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_tcp_route#original_destination NetworkServicesTcpRoute#original_destination}
-	OriginalDestination interface{} `field:"optional" json:"originalDestination" yaml:"originalDestination"`
+	OriginalDestination any `field:"optional" json:"originalDestination" yaml:"originalDestination"`
 }
-

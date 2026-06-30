@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderScimTenantTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderScimTenantTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderScimTenantTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IamWorkforcePoolProviderScimTenantTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolProviderScimTenantTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolProviderScimTenantTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIamWorkforcePoolProviderScimTenantTimeoutsOutputReferenceParamet
 
 	return nil
 }
-

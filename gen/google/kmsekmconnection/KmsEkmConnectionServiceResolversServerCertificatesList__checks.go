@@ -34,7 +34,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) valid
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewKmsEkmConnectionServiceResolversServerCertificatesListParameters
 
 	return nil
 }
-

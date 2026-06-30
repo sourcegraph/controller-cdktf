@@ -12,9 +12,9 @@ type BigtableTableColumnFamilyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type BigtableTableColumnFamilyOutputReference interface {
 	FamilyInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type BigtableTableColumnFamilyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type BigtableTableColumnFamilyOutputReference interface {
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_BigtableTableColumnFamilyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -143,8 +143,8 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) TypeInput() *string
 	return returns
 }
 
-
 func NewBigtableTableColumnFamilyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigtableTableColumnFamilyOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewBigtableTableColumnFamilyOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewBigtableTableColumnFamilyOutputReference_Override(b BigtableTableColumnF
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetFamily(val *string) {
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) SetFamily(val *string) {
 	if err := j.validateSetFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetFamily(val *strin
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetType(val *string) {
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) ResetType() {
 	)
 }
 
-func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) ToString() *string 
 
 	return returns
 }
-

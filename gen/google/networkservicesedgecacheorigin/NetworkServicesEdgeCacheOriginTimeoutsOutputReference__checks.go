@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheOriginTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkServicesEdgeCacheOriginTimeoutsOutputReferenceParameters(
 
 	return nil
 }
-

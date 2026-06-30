@@ -1,6 +1,5 @@
 package datastreamstream
 
-
 type DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns struct {
 	// Column collation.
 	//
@@ -17,7 +16,7 @@ type DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMy
 	// Whether or not the column can accept a null value.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#nullable DatastreamStream#nullable}
-	Nullable interface{} `field:"optional" json:"nullable" yaml:"nullable"`
+	Nullable any `field:"optional" json:"nullable" yaml:"nullable"`
 	// The ordinal position of the column in the table.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#ordinal_position DatastreamStream#ordinal_position}
@@ -25,6 +24,5 @@ type DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMy
 	// Whether or not the column represents a primary key.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#primary_key DatastreamStream#primary_key}
-	PrimaryKey interface{} `field:"optional" json:"primaryKey" yaml:"primaryKey"`
+	PrimaryKey any `field:"optional" json:"primaryKey" yaml:"primaryKey"`
 }
-

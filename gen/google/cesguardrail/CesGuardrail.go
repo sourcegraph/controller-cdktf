@@ -22,17 +22,17 @@ type CesGuardrail interface {
 	CodeCallback() CesGuardrailCodeCallbackOutputReference
 	CodeCallbackInput() *CesGuardrailCodeCallback
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContentFilter() CesGuardrailContentFilterOutputReference
 	ContentFilterInput() *CesGuardrailContentFilter
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -44,9 +44,9 @@ type CesGuardrail interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -86,27 +86,27 @@ type CesGuardrail interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CesGuardrailTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -124,7 +124,7 @@ type CesGuardrail interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -136,7 +136,7 @@ type CesGuardrail interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -164,17 +164,17 @@ type CesGuardrail interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CesGuardrail
@@ -252,8 +252,8 @@ func (j *jsiiProxy_CesGuardrail) CodeCallbackInput() *CesGuardrailCodeCallback {
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrail) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrail) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -262,8 +262,8 @@ func (j *jsiiProxy_CesGuardrail) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrail) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesGuardrail) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -292,8 +292,8 @@ func (j *jsiiProxy_CesGuardrail) ContentFilterInput() *CesGuardrailContentFilter
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrail) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrail) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -362,8 +362,8 @@ func (j *jsiiProxy_CesGuardrail) DisplayNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrail) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrail) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -372,8 +372,8 @@ func (j *jsiiProxy_CesGuardrail) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrail) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrail) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -602,8 +602,8 @@ func (j *jsiiProxy_CesGuardrail) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrail) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CesGuardrail) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -612,8 +612,8 @@ func (j *jsiiProxy_CesGuardrail) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrail) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrail) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -632,8 +632,8 @@ func (j *jsiiProxy_CesGuardrail) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrail) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CesGuardrail) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -662,8 +662,8 @@ func (j *jsiiProxy_CesGuardrail) Timeouts() CesGuardrailTimeoutsOutputReference 
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrail) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesGuardrail) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -682,7 +682,6 @@ func (j *jsiiProxy_CesGuardrail) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_guardrail google_ces_guardrail} Resource.
 func NewCesGuardrail(scope constructs.Construct, id *string, config *CesGuardrailConfig) CesGuardrail {
 	_init_.Initialize()
@@ -694,7 +693,7 @@ func NewCesGuardrail(scope constructs.Construct, id *string, config *CesGuardrai
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrail",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -707,12 +706,12 @@ func NewCesGuardrail_Override(c CesGuardrail, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrail",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetApp(val *string) {
+func (j *jsiiProxy_CesGuardrail) SetApp(val *string) {
 	if err := j.validateSetAppParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_CesGuardrail)SetApp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetConnection(val interface{}) {
+func (j *jsiiProxy_CesGuardrail) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_CesGuardrail)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetCount(val interface{}) {
+func (j *jsiiProxy_CesGuardrail) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_CesGuardrail)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CesGuardrail) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_CesGuardrail)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetDescription(val *string) {
+func (j *jsiiProxy_CesGuardrail) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -764,7 +763,7 @@ func (j *jsiiProxy_CesGuardrail)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetDisplayName(val *string) {
+func (j *jsiiProxy_CesGuardrail) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -775,7 +774,7 @@ func (j *jsiiProxy_CesGuardrail)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetEnabled(val interface{}) {
+func (j *jsiiProxy_CesGuardrail) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -786,7 +785,7 @@ func (j *jsiiProxy_CesGuardrail)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CesGuardrail) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -794,7 +793,7 @@ func (j *jsiiProxy_CesGuardrail)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetGuardrailId(val *string) {
+func (j *jsiiProxy_CesGuardrail) SetGuardrailId(val *string) {
 	if err := j.validateSetGuardrailIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -805,7 +804,7 @@ func (j *jsiiProxy_CesGuardrail)SetGuardrailId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetId(val *string) {
+func (j *jsiiProxy_CesGuardrail) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -816,7 +815,7 @@ func (j *jsiiProxy_CesGuardrail)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CesGuardrail) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -827,7 +826,7 @@ func (j *jsiiProxy_CesGuardrail)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetLocation(val *string) {
+func (j *jsiiProxy_CesGuardrail) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -838,7 +837,7 @@ func (j *jsiiProxy_CesGuardrail)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetProject(val *string) {
+func (j *jsiiProxy_CesGuardrail) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -849,7 +848,7 @@ func (j *jsiiProxy_CesGuardrail)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CesGuardrail) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -857,7 +856,7 @@ func (j *jsiiProxy_CesGuardrail)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CesGuardrail)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CesGuardrail) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func CesGuardrail_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrail",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func CesGuardrail_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CesGuardrail_IsConstruct(x interface{}) *bool {
+func CesGuardrail_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesGuardrail_IsConstructParameters(x); err != nil {
@@ -915,7 +914,7 @@ func CesGuardrail_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrail",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -923,7 +922,7 @@ func CesGuardrail_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CesGuardrail_IsTerraformElement(x interface{}) *bool {
+func CesGuardrail_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesGuardrail_IsTerraformElementParameters(x); err != nil {
@@ -934,7 +933,7 @@ func CesGuardrail_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrail",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -942,7 +941,7 @@ func CesGuardrail_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CesGuardrail_IsTerraformResource(x interface{}) *bool {
+func CesGuardrail_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCesGuardrail_IsTerraformResourceParameters(x); err != nil {
@@ -953,7 +952,7 @@ func CesGuardrail_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cesGuardrail.CesGuardrail",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -978,31 +977,31 @@ func (c *jsiiProxy_CesGuardrail) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CesGuardrail) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CesGuardrail) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CesGuardrail) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesGuardrail) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,7 +1017,7 @@ func (c *jsiiProxy_CesGuardrail) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1034,7 +1033,7 @@ func (c *jsiiProxy_CesGuardrail) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1050,7 +1049,7 @@ func (c *jsiiProxy_CesGuardrail) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1066,7 +1065,7 @@ func (c *jsiiProxy_CesGuardrail) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1082,7 +1081,7 @@ func (c *jsiiProxy_CesGuardrail) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1098,7 +1097,7 @@ func (c *jsiiProxy_CesGuardrail) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1114,7 +1113,7 @@ func (c *jsiiProxy_CesGuardrail) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1130,15 +1129,15 @@ func (c *jsiiProxy_CesGuardrail) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrail) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesGuardrail) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1157,7 +1156,7 @@ func (c *jsiiProxy_CesGuardrail) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1170,7 +1169,7 @@ func (c *jsiiProxy_CesGuardrail) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1184,18 +1183,18 @@ func (c *jsiiProxy_CesGuardrail) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CesGuardrail) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CesGuardrail) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1206,7 +1205,7 @@ func (c *jsiiProxy_CesGuardrail) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1217,7 +1216,7 @@ func (c *jsiiProxy_CesGuardrail) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1228,7 +1227,7 @@ func (c *jsiiProxy_CesGuardrail) PutAction(value *CesGuardrailAction) {
 	_jsii_.InvokeVoid(
 		c,
 		"putAction",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1239,7 +1238,7 @@ func (c *jsiiProxy_CesGuardrail) PutCodeCallback(value *CesGuardrailCodeCallback
 	_jsii_.InvokeVoid(
 		c,
 		"putCodeCallback",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1250,7 +1249,7 @@ func (c *jsiiProxy_CesGuardrail) PutContentFilter(value *CesGuardrailContentFilt
 	_jsii_.InvokeVoid(
 		c,
 		"putContentFilter",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1261,7 +1260,7 @@ func (c *jsiiProxy_CesGuardrail) PutLlmPolicy(value *CesGuardrailLlmPolicy) {
 	_jsii_.InvokeVoid(
 		c,
 		"putLlmPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1272,7 +1271,7 @@ func (c *jsiiProxy_CesGuardrail) PutLlmPromptSecurity(value *CesGuardrailLlmProm
 	_jsii_.InvokeVoid(
 		c,
 		"putLlmPromptSecurity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1283,7 +1282,7 @@ func (c *jsiiProxy_CesGuardrail) PutModelSafety(value *CesGuardrailModelSafety) 
 	_jsii_.InvokeVoid(
 		c,
 		"putModelSafety",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1294,7 +1293,7 @@ func (c *jsiiProxy_CesGuardrail) PutTimeouts(value *CesGuardrailTimeouts) {
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1394,8 +1393,8 @@ func (c *jsiiProxy_CesGuardrail) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_CesGuardrail) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesGuardrail) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1407,8 +1406,8 @@ func (c *jsiiProxy_CesGuardrail) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrail) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CesGuardrail) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1420,8 +1419,8 @@ func (c *jsiiProxy_CesGuardrail) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrail) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesGuardrail) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1433,8 +1432,8 @@ func (c *jsiiProxy_CesGuardrail) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrail) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesGuardrail) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1459,8 +1458,8 @@ func (c *jsiiProxy_CesGuardrail) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrail) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CesGuardrail) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1471,4 +1470,3 @@ func (c *jsiiProxy_CesGuardrail) ToTerraform() interface{} {
 
 	return returns
 }
-

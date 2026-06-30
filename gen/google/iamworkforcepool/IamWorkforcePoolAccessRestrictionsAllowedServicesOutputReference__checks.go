@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIamWorkforcePoolAccessRestrictionsAllowedServicesOutputReference
 
 	return nil
 }
-

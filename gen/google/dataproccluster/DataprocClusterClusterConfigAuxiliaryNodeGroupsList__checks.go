@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigAuxiliaryNodeGroupsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataprocClusterClusterConfigAuxiliaryNodeGroupsListParameters(te
 
 	return nil
 }
-

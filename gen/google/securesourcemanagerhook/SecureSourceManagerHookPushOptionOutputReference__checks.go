@@ -106,7 +106,7 @@ func (j *jsiiProxy_SecureSourceManagerHookPushOptionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SecureSourceManagerHookPushOptionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecureSourceManagerHookPushOptionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSecureSourceManagerHookPushOptionOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package cloudbuildworkerpool
 
-
 type CloudbuildWorkerPoolWorkerConfig struct {
 	// Size of the disk attached to the worker, in GB.
 	//
@@ -13,7 +12,7 @@ type CloudbuildWorkerPoolWorkerConfig struct {
 	// See [Worker pool config file](https://cloud.google.com/build/docs/private-pools/worker-pool-config-file-schema). If left blank, Cloud Build will set this to false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#enable_nested_virtualization CloudbuildWorkerPool#enable_nested_virtualization}
-	EnableNestedVirtualization interface{} `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
+	EnableNestedVirtualization any `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
 	// Machine type of a worker, such as `n1-standard-1`.
 	//
 	// See [Worker pool config file](https://cloud.google.com/cloud-build/docs/custom-workers/worker-pool-config-file). If left blank, Cloud Build will use `n1-standard-1`.
@@ -23,6 +22,5 @@ type CloudbuildWorkerPoolWorkerConfig struct {
 	// If true, workers are created without any public address, which prevents network egress to public IPs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudbuild_worker_pool#no_external_ip CloudbuildWorkerPool#no_external_ip}
-	NoExternalIp interface{} `field:"optional" json:"noExternalIp" yaml:"noExternalIp"`
+	NoExternalIp any `field:"optional" json:"noExternalIp" yaml:"noExternalIp"`
 }
-

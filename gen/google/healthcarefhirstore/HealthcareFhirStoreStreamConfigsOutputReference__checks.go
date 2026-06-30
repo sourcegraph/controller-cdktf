@@ -109,7 +109,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewHealthcareFhirStoreStreamConfigsOutputReferenceParameters(terraf
 
 	return nil
 }
-

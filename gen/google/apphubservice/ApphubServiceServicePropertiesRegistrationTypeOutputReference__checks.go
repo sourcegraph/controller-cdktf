@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApphubServiceServicePropertiesRegistrationTypeOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceServicePropertiesRegistrationTypeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubServiceServicePropertiesRegistrationTypeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApphubServiceServicePropertiesRegistrationTypeOutputReferencePar
 
 	return nil
 }
-

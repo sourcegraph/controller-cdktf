@@ -17,8 +17,8 @@ type BigqueryTableTableConstraintsForeignKeysList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type BigqueryTableTableConstraintsForeignKeysList interface {
 	Get(index *float64) BigqueryTableTableConstraintsForeignKeysOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) WrapsSet() *boo
 	return returns
 }
 
-
 func NewBigqueryTableTableConstraintsForeignKeysList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigqueryTableTableConstraintsForeignKeysList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewBigqueryTableTableConstraintsForeignKeysList(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewBigqueryTableTableConstraintsForeignKeysList_Override(b BigqueryTableTab
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) AllWithMapKey(m
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) Get(index *floa
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsForeignKeysList) ToString() *str
 
 	return returns
 }
-

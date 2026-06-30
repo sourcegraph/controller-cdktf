@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudIdentityGroupGroupKeyOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_CloudIdentityGroupGroupKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudIdentityGroupGroupKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudIdentityGroupGroupKeyOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

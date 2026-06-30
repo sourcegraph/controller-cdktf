@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleFolderOrganizationPolicy_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataGoogleFolderOrganizationPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleFolderOrganizationPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleFolderOrganizationPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleFolderOrganizationPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleFolderOrganizationPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleFolderOrganizationPolicy_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataGoogleFolderOrganizationPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleFolderOrganizationPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) validateSetConstraintPara
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleFolderOrganizationPolicyParameters(scope constructs.Co
 
 	return nil
 }
-

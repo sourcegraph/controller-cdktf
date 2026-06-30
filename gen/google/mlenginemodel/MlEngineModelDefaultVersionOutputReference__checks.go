@@ -98,7 +98,7 @@ func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMlEngineModelDefaultVersionOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package apphubservice
 
-
 type ApphubServiceAttributes struct {
 	// business_owners block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#business_owners ApphubService#business_owners}
-	BusinessOwners interface{} `field:"optional" json:"businessOwners" yaml:"businessOwners"`
+	BusinessOwners any `field:"optional" json:"businessOwners" yaml:"businessOwners"`
 	// criticality block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#criticality ApphubService#criticality}
@@ -13,7 +12,7 @@ type ApphubServiceAttributes struct {
 	// developer_owners block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#developer_owners ApphubService#developer_owners}
-	DeveloperOwners interface{} `field:"optional" json:"developerOwners" yaml:"developerOwners"`
+	DeveloperOwners any `field:"optional" json:"developerOwners" yaml:"developerOwners"`
 	// environment block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#environment ApphubService#environment}
@@ -21,6 +20,5 @@ type ApphubServiceAttributes struct {
 	// operator_owners block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apphub_service#operator_owners ApphubService#operator_owners}
-	OperatorOwners interface{} `field:"optional" json:"operatorOwners" yaml:"operatorOwners"`
+	OperatorOwners any `field:"optional" json:"operatorOwners" yaml:"operatorOwners"`
 }
-

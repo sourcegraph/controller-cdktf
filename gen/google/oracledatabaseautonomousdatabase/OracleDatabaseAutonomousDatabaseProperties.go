@@ -1,6 +1,5 @@
 package oracledatabaseautonomousdatabase
 
-
 type OracleDatabaseAutonomousDatabaseProperties struct {
 	// Possible values:  DB_WORKLOAD_UNSPECIFIED OLTP DW AJD APEX.
 	//
@@ -33,7 +32,7 @@ type OracleDatabaseAutonomousDatabaseProperties struct {
 	// customer_contacts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#customer_contacts OracleDatabaseAutonomousDatabase#customer_contacts}
-	CustomerContacts interface{} `field:"optional" json:"customerContacts" yaml:"customerContacts"`
+	CustomerContacts any `field:"optional" json:"customerContacts" yaml:"customerContacts"`
 	// The size of the data stored in the database, in gigabytes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#data_storage_size_gb OracleDatabaseAutonomousDatabase#data_storage_size_gb}
@@ -53,11 +52,11 @@ type OracleDatabaseAutonomousDatabaseProperties struct {
 	// This field indicates if auto scaling is enabled for the Autonomous Database CPU core count.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#is_auto_scaling_enabled OracleDatabaseAutonomousDatabase#is_auto_scaling_enabled}
-	IsAutoScalingEnabled interface{} `field:"optional" json:"isAutoScalingEnabled" yaml:"isAutoScalingEnabled"`
+	IsAutoScalingEnabled any `field:"optional" json:"isAutoScalingEnabled" yaml:"isAutoScalingEnabled"`
 	// This field indicates if auto scaling is enabled for the Autonomous Database storage.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#is_storage_auto_scaling_enabled OracleDatabaseAutonomousDatabase#is_storage_auto_scaling_enabled}
-	IsStorageAutoScalingEnabled interface{} `field:"optional" json:"isStorageAutoScalingEnabled" yaml:"isStorageAutoScalingEnabled"`
+	IsStorageAutoScalingEnabled any `field:"optional" json:"isStorageAutoScalingEnabled" yaml:"isStorageAutoScalingEnabled"`
 	// The maintenance schedule of the Autonomous Database.   Possible values:  MAINTENANCE_SCHEDULE_TYPE_UNSPECIFIED EARLY REGULAR.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#maintenance_schedule_type OracleDatabaseAutonomousDatabase#maintenance_schedule_type}
@@ -65,7 +64,7 @@ type OracleDatabaseAutonomousDatabaseProperties struct {
 	// This field specifies if the Autonomous Database requires mTLS connections.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#mtls_connection_required OracleDatabaseAutonomousDatabase#mtls_connection_required}
-	MtlsConnectionRequired interface{} `field:"optional" json:"mtlsConnectionRequired" yaml:"mtlsConnectionRequired"`
+	MtlsConnectionRequired any `field:"optional" json:"mtlsConnectionRequired" yaml:"mtlsConnectionRequired"`
 	// The national character set for the Autonomous Database. The default is AL16UTF16.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#n_character_set OracleDatabaseAutonomousDatabase#n_character_set}
@@ -91,4 +90,3 @@ type OracleDatabaseAutonomousDatabaseProperties struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_autonomous_database#vault_id OracleDatabaseAutonomousDatabase#vault_id}
 	VaultId *string `field:"optional" json:"vaultId" yaml:"vaultId"`
 }
-

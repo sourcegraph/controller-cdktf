@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerAnalysisNoteRelatedUrlOutputReferenceParameters(terrafo
 
 	return nil
 }
-

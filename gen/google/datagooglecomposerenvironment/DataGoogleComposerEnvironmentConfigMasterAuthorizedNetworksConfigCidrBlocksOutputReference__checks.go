@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigMasterAuthorizedNetworksCo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfi
 
 	return nil
 }
-

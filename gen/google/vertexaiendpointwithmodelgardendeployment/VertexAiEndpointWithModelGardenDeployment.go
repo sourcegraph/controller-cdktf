@@ -15,15 +15,15 @@ type VertexAiEndpointWithModelGardenDeployment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,29 +68,29 @@ type VertexAiEndpointWithModelGardenDeployment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	PublisherModelName() *string
 	SetPublisherModelName(val *string)
 	PublisherModelNameInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() VertexAiEndpointWithModelGardenDeploymentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type VertexAiEndpointWithModelGardenDeployment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type VertexAiEndpointWithModelGardenDeployment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type VertexAiEndpointWithModelGardenDeployment interface {
 	ResetProject()
 	ResetPublisherModelName()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for VertexAiEndpointWithModelGardenDeployment
@@ -170,8 +170,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) CdktfStack() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) Connection() inter
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) PublisherModelName
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -490,8 +490,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) TerraformGenerator
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) Timeouts() VertexA
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -529,7 +529,6 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) TimeoutsInput() in
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment google_vertex_ai_endpoint_with_model_garden_deployment} Resource.
 func NewVertexAiEndpointWithModelGardenDeployment(scope constructs.Construct, id *string, config *VertexAiEndpointWithModelGardenDeploymentConfig) VertexAiEndpointWithModelGardenDeployment {
@@ -542,7 +541,7 @@ func NewVertexAiEndpointWithModelGardenDeployment(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -555,12 +554,12 @@ func NewVertexAiEndpointWithModelGardenDeployment_Override(v VertexAiEndpointWit
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetConnection(val interface{}) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetCount(val interface{}) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -598,7 +597,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetHuggingFaceModelId(val *string) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetHuggingFaceModelId(val *string) {
 	if err := j.validateSetHuggingFaceModelIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetHuggingFaceModel
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetId(val *string) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetLocation(val *string) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetLocation(val *st
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetProject(val *string) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetProject(val *str
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -661,7 +660,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetProvisioners(val
 	)
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment)SetPublisherModelName(val *string) {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SetPublisherModelName(val *string) {
 	if err := j.validateSetPublisherModelNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func VertexAiEndpointWithModelGardenDeployment_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func VertexAiEndpointWithModelGardenDeployment_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func VertexAiEndpointWithModelGardenDeployment_IsConstruct(x interface{}) *bool {
+func VertexAiEndpointWithModelGardenDeployment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiEndpointWithModelGardenDeployment_IsConstructParameters(x); err != nil {
@@ -730,7 +729,7 @@ func VertexAiEndpointWithModelGardenDeployment_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func VertexAiEndpointWithModelGardenDeployment_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func VertexAiEndpointWithModelGardenDeployment_IsTerraformElement(x interface{}) *bool {
+func VertexAiEndpointWithModelGardenDeployment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiEndpointWithModelGardenDeployment_IsTerraformElementParameters(x); err != nil {
@@ -749,7 +748,7 @@ func VertexAiEndpointWithModelGardenDeployment_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func VertexAiEndpointWithModelGardenDeployment_IsTerraformElement(x interface{})
 }
 
 // Experimental.
-func VertexAiEndpointWithModelGardenDeployment_IsTerraformResource(x interface{}) *bool {
+func VertexAiEndpointWithModelGardenDeployment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateVertexAiEndpointWithModelGardenDeployment_IsTerraformResourceParameters(x); err != nil {
@@ -768,7 +767,7 @@ func VertexAiEndpointWithModelGardenDeployment_IsTerraformResource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,31 +792,31 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) AddMoveTarget(move
 	_jsii_.InvokeVoid(
 		v,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) AddOverride(path *string, value interface{}) {
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) AddOverride(path *string, value any) {
 	if err := v.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetBooleanAttribut
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetBooleanMapAttri
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetListAttribute(t
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetNumberAttribute
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetNumberListAttri
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetNumberMapAttrib
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetStringAttribute
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,15 +944,15 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) GetStringMapAttrib
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) HasResourceMove() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -972,7 +971,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ImportFrom(id *str
 	_jsii_.InvokeVoid(
 		v,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -985,7 +984,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) InterpolationForAt
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,18 +998,18 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) MoveFromId(id *str
 	_jsii_.InvokeVoid(
 		v,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) MoveTo(moveTarget *string, index interface{}) {
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) MoveTo(moveTarget *string, index any) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		v,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) MoveToId(id *strin
 	_jsii_.InvokeVoid(
 		v,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1032,7 +1031,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) PutDeployConfig(va
 	_jsii_.InvokeVoid(
 		v,
 		"putDeployConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) PutEndpointConfig(
 	_jsii_.InvokeVoid(
 		v,
 		"putEndpointConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) PutModelConfig(val
 	_jsii_.InvokeVoid(
 		v,
 		"putModelConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) PutTimeouts(value 
 	_jsii_.InvokeVoid(
 		v,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1152,8 +1151,8 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ResetTimeouts() {
 	)
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1165,8 +1164,8 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SynthesizeAttribut
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
@@ -1178,8 +1177,8 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) SynthesizeHclAttri
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1191,8 +1190,8 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ToHclTerraform() i
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ToMetadata() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1217,8 +1216,8 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ToString() *string
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ToTerraform() interface{} {
-	var returns interface{}
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		v,
@@ -1229,4 +1228,3 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) ToTerraform() inte
 
 	return returns
 }
-

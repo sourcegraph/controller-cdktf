@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference) validateSetEnableVtpmParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewComputeRegionInstanceTemplateShieldedInstanceConfigOutputReferen
 
 	return nil
 }
-

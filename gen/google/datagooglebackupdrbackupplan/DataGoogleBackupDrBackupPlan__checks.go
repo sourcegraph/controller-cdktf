@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupPlan) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleBackupDrBackupPlan) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleBackupDrBackupPlan_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateDataGoogleBackupDrBackupPlan_IsConstructParameters(x interface{}) error {
+func validateDataGoogleBackupDrBackupPlan_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleBackupDrBackupPlan_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateDataGoogleBackupDrBackupPlan_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleBackupDrBackupPlan_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleBackupDrBackupPlan_IsTerraformDataSourceParameters(x inte
 	return nil
 }
 
-func validateDataGoogleBackupDrBackupPlan_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleBackupDrBackupPlan_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) validateSetBackupPlanIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBackupDrBackupPlan) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleBackupDrBackupPlanParameters(scope constructs.Construc
 
 	return nil
 }
-

@@ -90,7 +90,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateInte
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validatePutFamilySubsetsParameters(value interface{}) error {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validatePutFamilySubsetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewBigtableAuthorizedViewSubsetViewOutputReferenceParameters(terraf
 
 	return nil
 }
-

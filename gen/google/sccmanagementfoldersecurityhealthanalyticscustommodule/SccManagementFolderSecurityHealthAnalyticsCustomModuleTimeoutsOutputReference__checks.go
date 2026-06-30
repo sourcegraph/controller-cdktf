@@ -98,7 +98,7 @@ func (s *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleTimeout
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleTimeout
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOu
 
 	return nil
 }
-

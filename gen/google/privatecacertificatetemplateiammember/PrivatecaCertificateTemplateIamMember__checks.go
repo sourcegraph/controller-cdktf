@@ -19,7 +19,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateAddMoveTargetP
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateMoveFromIdPara
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validatePrivatecaCertificateTemplateIamMember_GenerateConfigForImportParame
 	return nil
 }
 
-func validatePrivatecaCertificateTemplateIamMember_IsConstructParameters(x interface{}) error {
+func validatePrivatecaCertificateTemplateIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validatePrivatecaCertificateTemplateIamMember_IsConstructParameters(x inter
 	return nil
 }
 
-func validatePrivatecaCertificateTemplateIamMember_IsTerraformElementParameters(x interface{}) error {
+func validatePrivatecaCertificateTemplateIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validatePrivatecaCertificateTemplateIamMember_IsTerraformElementParameters(
 	return nil
 }
 
-func validatePrivatecaCertificateTemplateIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validatePrivatecaCertificateTemplateIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetCertificate
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetConnectionP
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetProjectPara
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewPrivatecaCertificateTemplateIamMemberParameters(scope constructs
 
 	return nil
 }
-

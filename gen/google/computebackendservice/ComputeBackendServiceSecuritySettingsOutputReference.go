@@ -17,9 +17,9 @@ type ComputeBackendServiceSecuritySettingsOutputReference interface {
 	ClientTlsPolicyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -48,7 +48,7 @@ type ComputeBackendServiceSecuritySettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ComputeBackendServiceSecuritySettingsOutputReference interface {
 	ResetSubjectAltNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) ClientT
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) Terrafo
 	return returns
 }
 
-
 func NewComputeBackendServiceSecuritySettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceSecuritySettingsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewComputeBackendServiceSecuritySettingsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewComputeBackendServiceSecuritySettingsOutputReference_Override(c ComputeB
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetClientTlsPolicy(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) SetClientTlsPolicy(val *string) {
 	if err := j.validateSetClientTlsPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetClien
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetInternalValue(val *ComputeBackendServiceSecuritySettings) {
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) SetInternalValue(val *ComputeBackendServiceSecuritySettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetSubjectAltNames(val *[]*string) {
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) SetSubjectAltNames(val *[]*string) {
 	if err := j.validateSetSubjectAltNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetSubje
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,16 +335,16 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) Compute
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetList
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) Interpo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -516,7 +515,7 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) PutAwsV
 	_jsii_.InvokeVoid(
 		c,
 		"putAwsV4Authentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) ResetSu
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) ToStrin
 
 	return returns
 }
-

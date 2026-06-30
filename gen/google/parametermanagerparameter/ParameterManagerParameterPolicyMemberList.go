@@ -36,7 +36,7 @@ type ParameterManagerParameterPolicyMemberList interface {
 	Get(index *float64) ParameterManagerParameterPolicyMemberOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ParameterManagerParameterPolicyMemberList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewParameterManagerParameterPolicyMemberList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ParameterManagerParameterPolicyMemberList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewParameterManagerParameterPolicyMemberList(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.parameterManagerParameter.ParameterManagerParameterPolicyMemberList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewParameterManagerParameterPolicyMemberList_Override(p ParameterManagerPar
 
 	_jsii_.Create(
 		"@cdktf/provider-google.parameterManagerParameter.ParameterManagerParameterPolicyMemberList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterPolicyMemberList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ParameterManagerParameterPolicyMemberList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ParameterManagerParameterPolicyMemberList)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterPolicyMemberList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ParameterManagerParameterPolicyMemberList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ParameterManagerParameterPolicyMemberList)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ParameterManagerParameterPolicyMemberList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ParameterManagerParameterPolicyMemberList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (p *jsiiProxy_ParameterManagerParameterPolicyMemberList) AllWithMapKey(mapK
 	_jsii_.Invoke(
 		p,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (p *jsiiProxy_ParameterManagerParameterPolicyMemberList) Get(index *float64
 	_jsii_.Invoke(
 		p,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ParameterManagerParameterPolicyMemberList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_ParameterManagerParameterPolicyMemberList) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (p *jsiiProxy_ParameterManagerParameterPolicyMemberList) ToString() *string
 
 	return returns
 }
-

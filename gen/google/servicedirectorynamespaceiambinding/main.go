@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBinding",
-		reflect.TypeOf((*ServiceDirectoryNamespaceIamBinding)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryNamespaceIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDirectoryNamespaceIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,11 +75,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition",
-		reflect.TypeOf((*ServiceDirectoryNamespaceIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryNamespaceIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConditionOutputReference",
-		reflect.TypeOf((*ServiceDirectoryNamespaceIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryNamespaceIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ServiceDirectoryNamespaceIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,6 +118,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig",
-		reflect.TypeOf((*ServiceDirectoryNamespaceIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[ServiceDirectoryNamespaceIamBindingConfig](),
 	)
 }

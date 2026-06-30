@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesGuardrailCodeCallbackAfterAgentCallbackOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailCodeCallbackAfterAgentCallbackOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailCodeCallbackAfterAgentCallbackOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CesGuardrailCodeCallbackAfterAgentCallbackOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailCodeCallbackAfterAgentCallbackOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CesGuardrailCodeCallbackAfterAgentCallbackOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCesGuardrailCodeCallbackAfterAgentCallbackOutputReferenceParamet
 
 	return nil
 }
-

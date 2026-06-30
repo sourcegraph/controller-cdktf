@@ -34,7 +34,7 @@ func (t *jsiiProxy_TranscoderJobConfigManifestsList) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigManifestsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TranscoderJobConfigManifestsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewTranscoderJobConfigManifestsListParameters(terraformResource cdk
 
 	return nil
 }
-

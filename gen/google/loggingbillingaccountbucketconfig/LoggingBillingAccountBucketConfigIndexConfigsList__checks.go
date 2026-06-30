@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoggingBillingAccountBucketConfigIndexConfigsListParameters(terr
 
 	return nil
 }
-

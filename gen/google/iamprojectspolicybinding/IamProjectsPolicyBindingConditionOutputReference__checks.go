@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIamProjectsPolicyBindingConditionOutputReferenceParameters(terra
 
 	return nil
 }
-

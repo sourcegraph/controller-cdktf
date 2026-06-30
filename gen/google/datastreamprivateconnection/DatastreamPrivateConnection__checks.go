@@ -19,7 +19,7 @@ func (d *jsiiProxy_DatastreamPrivateConnection) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamPrivateConnection) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DatastreamPrivateConnection) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DatastreamPrivateConnection) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamPrivateConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DatastreamPrivateConnection) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateDatastreamPrivateConnection_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateDatastreamPrivateConnection_IsConstructParameters(x interface{}) error {
+func validateDatastreamPrivateConnection_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateDatastreamPrivateConnection_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateDatastreamPrivateConnection_IsTerraformElementParameters(x interface{}) error {
+func validateDatastreamPrivateConnection_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateDatastreamPrivateConnection_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateDatastreamPrivateConnection_IsTerraformResourceParameters(x interface{}) error {
+func validateDatastreamPrivateConnection_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateDatastreamPrivateConnection_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamPrivateConnection) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamPrivateConnection) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DatastreamPrivateConnection) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamPrivateConnection) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamPrivateConnection) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DatastreamPrivateConnection) validateSetCountParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamPrivateConnection) validateSetCreateWithoutValidationParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamPrivateConnection) validateSetCreateWithoutValidationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DatastreamPrivateConnection) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamPrivateConnection) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DatastreamPrivateConnection) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -515,4 +515,3 @@ func validateNewDatastreamPrivateConnectionParameters(scope constructs.Construct
 
 	return nil
 }
-

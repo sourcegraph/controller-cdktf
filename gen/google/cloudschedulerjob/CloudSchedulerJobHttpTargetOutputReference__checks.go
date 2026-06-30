@@ -128,7 +128,7 @@ func (j *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateSetBodyPa
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -252,4 +252,3 @@ func validateNewCloudSchedulerJobHttpTargetOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

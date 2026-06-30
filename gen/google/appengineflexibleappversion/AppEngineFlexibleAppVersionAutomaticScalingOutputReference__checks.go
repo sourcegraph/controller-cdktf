@@ -142,7 +142,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionAutomaticScalingOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionAutomaticScalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionAutomaticScalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -306,4 +306,3 @@ func validateNewAppEngineFlexibleAppVersionAutomaticScalingOutputReferenceParame
 
 	return nil
 }
-

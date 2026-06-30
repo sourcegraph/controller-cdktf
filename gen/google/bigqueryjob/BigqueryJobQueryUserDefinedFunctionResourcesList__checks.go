@@ -34,7 +34,7 @@ func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBigqueryJobQueryUserDefinedFunctionResourcesListParameters(terra
 
 	return nil
 }
-

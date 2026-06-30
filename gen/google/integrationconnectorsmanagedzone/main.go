@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZone",
-		reflect.TypeOf((*IntegrationConnectorsManagedZone)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsManagedZone](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsManagedZone{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneConfig",
-		reflect.TypeOf((*IntegrationConnectorsManagedZoneConfig)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsManagedZoneConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeouts",
-		reflect.TypeOf((*IntegrationConnectorsManagedZoneTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsManagedZoneTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.integrationConnectorsManagedZone.IntegrationConnectorsManagedZoneTimeoutsOutputReference",
-		reflect.TypeOf((*IntegrationConnectorsManagedZoneTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IntegrationConnectorsManagedZoneTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

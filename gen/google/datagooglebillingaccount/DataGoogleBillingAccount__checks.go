@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleBillingAccount) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleBillingAccount) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleBillingAccount_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateDataGoogleBillingAccount_IsConstructParameters(x interface{}) error {
+func validateDataGoogleBillingAccount_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleBillingAccount_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateDataGoogleBillingAccount_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleBillingAccount_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleBillingAccount_IsTerraformDataSourceParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleBillingAccount_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleBillingAccount_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount) validateSetBillingAccountParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBillingAccount) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) validateSetLookupProjectsParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBillingAccount) validateSetLookupProjectsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -260,7 +260,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount) validateSetLookupProjectsParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBillingAccount) validateSetOpenParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBillingAccount) validateSetOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,4 +295,3 @@ func validateNewDataGoogleBillingAccountParameters(scope constructs.Construct, i
 
 	return nil
 }
-

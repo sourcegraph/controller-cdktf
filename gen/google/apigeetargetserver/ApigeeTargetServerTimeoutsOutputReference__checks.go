@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeTargetServerTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ApigeeTargetServerTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeTargetServerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeTargetServerTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApigeeTargetServerTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

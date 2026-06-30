@@ -6,9 +6,9 @@ import (
 
 type IntegrationConnectorsConnectionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type IntegrationConnectorsConnectionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// connectorVersion of the Connector.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#connector_version IntegrationConnectorsConnection#connector_version}
@@ -38,7 +38,7 @@ type IntegrationConnectorsConnectionConfig struct {
 	// config_variable block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#config_variable IntegrationConnectorsConnection#config_variable}
-	ConfigVariable interface{} `field:"optional" json:"configVariable" yaml:"configVariable"`
+	ConfigVariable any `field:"optional" json:"configVariable" yaml:"configVariable"`
 	// An arbitrary description for the Connection.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#description IntegrationConnectorsConnection#description}
@@ -46,7 +46,7 @@ type IntegrationConnectorsConnectionConfig struct {
 	// destination_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#destination_config IntegrationConnectorsConnection#destination_config}
-	DestinationConfig interface{} `field:"optional" json:"destinationConfig" yaml:"destinationConfig"`
+	DestinationConfig any `field:"optional" json:"destinationConfig" yaml:"destinationConfig"`
 	// eventing_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#eventing_config IntegrationConnectorsConnection#eventing_config}
@@ -92,10 +92,9 @@ type IntegrationConnectorsConnectionConfig struct {
 	// Suspended indicates if a user has suspended a connection or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#suspended IntegrationConnectorsConnection#suspended}
-	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
+	Suspended any `field:"optional" json:"suspended" yaml:"suspended"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/integration_connectors_connection#timeouts IntegrationConnectorsConnection#timeouts}
 	Timeouts *IntegrationConnectorsConnectionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

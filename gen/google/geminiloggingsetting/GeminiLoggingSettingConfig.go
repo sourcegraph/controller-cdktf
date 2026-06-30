@@ -6,9 +6,9 @@ import (
 
 type GeminiLoggingSettingConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type GeminiLoggingSettingConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_logging_setting#location GeminiLoggingSetting#location}
@@ -42,11 +42,11 @@ type GeminiLoggingSettingConfig struct {
 	// Whether to log metadata.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_logging_setting#log_metadata GeminiLoggingSetting#log_metadata}
-	LogMetadata interface{} `field:"optional" json:"logMetadata" yaml:"logMetadata"`
+	LogMetadata any `field:"optional" json:"logMetadata" yaml:"logMetadata"`
 	// Whether to log prompts and responses.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_logging_setting#log_prompts_and_responses GeminiLoggingSetting#log_prompts_and_responses}
-	LogPromptsAndResponses interface{} `field:"optional" json:"logPromptsAndResponses" yaml:"logPromptsAndResponses"`
+	LogPromptsAndResponses any `field:"optional" json:"logPromptsAndResponses" yaml:"logPromptsAndResponses"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_logging_setting#project GeminiLoggingSetting#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
@@ -54,4 +54,3 @@ type GeminiLoggingSettingConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gemini_logging_setting#timeouts GeminiLoggingSetting#timeouts}
 	Timeouts *GeminiLoggingSettingTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

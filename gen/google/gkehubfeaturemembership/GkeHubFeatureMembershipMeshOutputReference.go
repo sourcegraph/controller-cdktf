@@ -12,9 +12,9 @@ type GkeHubFeatureMembershipMeshOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type GkeHubFeatureMembershipMeshOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type GkeHubFeatureMembershipMeshOutputReference interface {
 	ResetManagement()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_GkeHubFeatureMembershipMeshOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewGkeHubFeatureMembershipMeshOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeHubFeatureMembershipMeshOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewGkeHubFeatureMembershipMeshOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipMeshOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewGkeHubFeatureMembershipMeshOutputReference_Override(g GkeHubFeatureMembe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubFeatureMembership.GkeHubFeatureMembershipMeshOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetControlPlane(val *string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) SetControlPlane(val *string) {
 	if err := j.validateSetControlPlaneParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetControlPlane(va
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetInternalValue(val *GkeHubFeatureMembershipMesh) {
+func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) SetInternalValue(val *GkeHubFeatureMembershipMesh) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetManagement(val *string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) SetManagement(val *string) {
 	if err := j.validateSetManagementParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetManagement(val 
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) ResetManagement()
 	)
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (g *jsiiProxy_GkeHubFeatureMembershipMeshOutputReference) ToString() *strin
 
 	return returns
 }
-

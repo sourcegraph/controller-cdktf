@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataLossPreventionDiscoveryConfigTargetsListParameters(terraform
 
 	return nil
 }
-

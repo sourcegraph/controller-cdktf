@@ -15,15 +15,15 @@ type IapTunnelInstanceIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,15 +60,15 @@ type IapTunnelInstanceIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Zone() *string
@@ -78,9 +78,9 @@ type IapTunnelInstanceIamPolicy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type IapTunnelInstanceIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type IapTunnelInstanceIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type IapTunnelInstanceIamPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IapTunnelInstanceIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy) CdktfStack() cdktf.TerraformStack
 	return returns
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_tunnel_instance_iam_policy google_iap_tunnel_instance_iam_policy} Resource.
 func NewIapTunnelInstanceIamPolicy(scope constructs.Construct, id *string, config *IapTunnelInstanceIamPolicyConfig) IapTunnelInstanceIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewIapTunnelInstanceIamPolicy(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapTunnelInstanceIamPolicy.IapTunnelInstanceIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewIapTunnelInstanceIamPolicy_Override(i IapTunnelInstanceIamPolicy, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapTunnelInstanceIamPolicy.IapTunnelInstanceIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetInstance(val *string) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_IapTunnelInstanceIamPolicy)SetZone(val *string) {
+func (j *jsiiProxy_IapTunnelInstanceIamPolicy) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func IapTunnelInstanceIamPolicy_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapTunnelInstanceIamPolicy.IapTunnelInstanceIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func IapTunnelInstanceIamPolicy_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IapTunnelInstanceIamPolicy_IsConstruct(x interface{}) *bool {
+func IapTunnelInstanceIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapTunnelInstanceIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func IapTunnelInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapTunnelInstanceIamPolicy.IapTunnelInstanceIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func IapTunnelInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IapTunnelInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
+func IapTunnelInstanceIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapTunnelInstanceIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func IapTunnelInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapTunnelInstanceIamPolicy.IapTunnelInstanceIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func IapTunnelInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IapTunnelInstanceIamPolicy_IsTerraformResource(x interface{}) *bool {
+func IapTunnelInstanceIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapTunnelInstanceIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func IapTunnelInstanceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapTunnelInstanceIamPolicy.IapTunnelInstanceIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IapTunnelInstanceIamPolicy) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IapTunnelInstanceIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -853,7 +852,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IapTunnelInstanceIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ResetZone() {
 	)
 }
 
-func (i *jsiiProxy_IapTunnelInstanceIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -962,8 +961,8 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (i *jsiiProxy_IapTunnelInstanceIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -975,8 +974,8 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -988,8 +987,8 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1014,8 +1013,8 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1026,4 +1025,3 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

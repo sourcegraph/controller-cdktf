@@ -1,11 +1,10 @@
 package containercluster
 
-
 type ContainerClusterIpAllocationPolicy struct {
 	// additional_ip_ranges_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#additional_ip_ranges_config ContainerCluster#additional_ip_ranges_config}
-	AdditionalIpRangesConfig interface{} `field:"optional" json:"additionalIpRangesConfig" yaml:"additionalIpRangesConfig"`
+	AdditionalIpRangesConfig any `field:"optional" json:"additionalIpRangesConfig" yaml:"additionalIpRangesConfig"`
 	// additional_pod_ranges_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#additional_pod_ranges_config ContainerCluster#additional_pod_ranges_config}
@@ -53,4 +52,3 @@ type ContainerClusterIpAllocationPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#stack_type ContainerCluster#stack_type}
 	StackType *string `field:"optional" json:"stackType" yaml:"stackType"`
 }
-

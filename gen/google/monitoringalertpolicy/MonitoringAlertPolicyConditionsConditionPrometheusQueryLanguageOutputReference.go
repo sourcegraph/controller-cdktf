@@ -15,9 +15,9 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 	AlertRuleInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableMetricValidation() interface{}
-	SetDisableMetricValidation(val interface{})
-	DisableMetricValidationInput() interface{}
+	DisableMetricValidation() any
+	SetDisableMetricValidation(val any)
+	DisableMetricValidationInput() any
 	Duration() *string
 	SetDuration(val *string)
 	DurationInput() *string
@@ -61,7 +61,7 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 	ResetRuleGroup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -123,8 +123,8 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -153,8 +153,8 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) DisableMetricValidation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) DisableMetricValidation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableMetricValidation",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) DisableMetricValidationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) DisableMetricValidationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableMetricValidationInput",
@@ -313,7 +313,6 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return returns
 }
 
-
 func NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference {
 	_init_.Initialize()
 
@@ -324,7 +323,7 @@ func NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -336,12 +335,12 @@ func NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetAlertRule(val *string) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetAlertRule(val *string) {
 	if err := j.validateSetAlertRuleParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,7 +351,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetDisableMetricValidation(val interface{}) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetDisableMetricValidation(val any) {
 	if err := j.validateSetDisableMetricValidationParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetDuration(val *string) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetDuration(val *string) {
 	if err := j.validateSetDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetEvaluationInterval(val *string) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetEvaluationInterval(val *string) {
 	if err := j.validateSetEvaluationIntervalParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetInternalValue(val *MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetInternalValue(val *MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetQuery(val *string) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetQuery(val *string) {
 	if err := j.validateSetQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetRuleGroup(val *string) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetRuleGroup(val *string) {
 	if err := j.validateSetRuleGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,16 +485,16 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -707,16 +706,16 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -735,4 +734,3 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 
 	return returns
 }
-

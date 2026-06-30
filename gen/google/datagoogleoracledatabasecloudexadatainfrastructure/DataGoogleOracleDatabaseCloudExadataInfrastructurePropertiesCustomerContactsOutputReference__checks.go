@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesC
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCust
 
 	return nil
 }
-

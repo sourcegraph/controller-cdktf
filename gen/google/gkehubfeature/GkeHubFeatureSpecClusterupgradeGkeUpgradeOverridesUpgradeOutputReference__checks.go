@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutp
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputR
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableViewOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableViewOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableViewOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBigqueryTableViewOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

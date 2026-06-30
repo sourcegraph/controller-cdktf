@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBigqueryAnalyticsHubDataExchangeTimeoutsOutputReferenceParameter
 
 	return nil
 }
-

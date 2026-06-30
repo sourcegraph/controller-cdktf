@@ -131,7 +131,7 @@ func (s *jsiiProxy_StorageTransferJobScheduleOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferJobScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferJobScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -239,4 +239,3 @@ func validateNewStorageTransferJobScheduleOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

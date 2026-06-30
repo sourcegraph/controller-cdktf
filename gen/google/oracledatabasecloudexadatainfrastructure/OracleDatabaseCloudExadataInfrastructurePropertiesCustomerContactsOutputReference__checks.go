@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesCustomerCon
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesCustomerCon
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContac
 
 	return nil
 }
-

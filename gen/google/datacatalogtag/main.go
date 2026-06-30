@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTag",
-		reflect.TypeOf((*DataCatalogTag)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTag](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCatalogTag{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagConfig",
-		reflect.TypeOf((*DataCatalogTagConfig)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTagConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagFields",
-		reflect.TypeOf((*DataCatalogTagFields)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTagFields](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagFieldsList",
-		reflect.TypeOf((*DataCatalogTagFieldsList)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTagFieldsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCatalogTagFieldsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -111,7 +111,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference",
-		reflect.TypeOf((*DataCatalogTagFieldsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTagFieldsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boolValue", GoGetter: "BoolValue"},
 			_jsii_.MemberProperty{JsiiProperty: "boolValueInput", GoGetter: "BoolValueInput"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timestampValueInput", GoGetter: "TimestampValueInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCatalogTagFieldsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -162,11 +162,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagTimeouts",
-		reflect.TypeOf((*DataCatalogTagTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTagTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference",
-		reflect.TypeOf((*DataCatalogTagTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataCatalogTagTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataCatalogTagTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

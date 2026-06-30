@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInstanceGroupManagerStatefulDiskListParameters(terraformR
 
 	return nil
 }
-

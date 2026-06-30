@@ -12,9 +12,9 @@ type ComputeExternalVpnGatewayInterfaceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type ComputeExternalVpnGatewayInterfaceOutputReference interface {
 	Id() *float64
 	SetId(val *float64)
 	IdInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
@@ -49,7 +49,7 @@ type ComputeExternalVpnGatewayInterfaceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type ComputeExternalVpnGatewayInterfaceOutputReference interface {
 	ResetIpv6Address()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) IdInput() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) TerraformR
 	return returns
 }
 
-
 func NewComputeExternalVpnGatewayInterfaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeExternalVpnGatewayInterfaceOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewComputeExternalVpnGatewayInterfaceOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewComputeExternalVpnGatewayInterfaceOutputReference_Override(c ComputeExte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetId(val *float64) {
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) SetId(val *float64) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetId(val *
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetIpAddress(val *string) {
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) SetIpAddress(val *string) {
 	if err := j.validateSetIpAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetIpAddres
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetIpv6Address(val *string) {
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) SetIpv6Address(val *string) {
 	if err := j.validateSetIpv6AddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetIpv6Addr
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) ComputeFqn
 	return returns
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetBoolean
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetListAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetNumberA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetNumberL
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetNumberM
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetStringA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) GetStringM
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) Interpolat
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) ResetIpv6A
 	)
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) ToString()
 
 	return returns
 }
-

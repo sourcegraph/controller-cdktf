@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesToolOpenApiToolApiAuthenticationOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_CesToolOpenApiToolApiAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolOpenApiToolApiAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesToolOpenApiToolApiAuthenticationOutputReferenceParameters(ter
 
 	return nil
 }
-

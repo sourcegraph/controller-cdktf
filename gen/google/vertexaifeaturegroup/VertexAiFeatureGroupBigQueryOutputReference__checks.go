@@ -109,7 +109,7 @@ func (v *jsiiProxy_VertexAiFeatureGroupBigQueryOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureGroupBigQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureGroupBigQueryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewVertexAiFeatureGroupBigQueryOutputReferenceParameters(terraformR
 
 	return nil
 }
-

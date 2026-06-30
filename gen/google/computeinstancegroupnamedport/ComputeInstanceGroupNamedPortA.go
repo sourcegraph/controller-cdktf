@@ -15,15 +15,15 @@ type ComputeInstanceGroupNamedPortA interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,19 +62,19 @@ type ComputeInstanceGroupNamedPortA interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeInstanceGroupNamedPortTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
@@ -82,9 +82,9 @@ type ComputeInstanceGroupNamedPortA interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type ComputeInstanceGroupNamedPortA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type ComputeInstanceGroupNamedPortA interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -129,17 +129,17 @@ type ComputeInstanceGroupNamedPortA interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeInstanceGroupNamedPortA
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) Timeouts() ComputeInstanceGro
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -447,7 +447,6 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group_named_port google_compute_instance_group_named_port} Resource.
 func NewComputeInstanceGroupNamedPortA(scope constructs.Construct, id *string, config *ComputeInstanceGroupNamedPortAConfig) ComputeInstanceGroupNamedPortA {
 	_init_.Initialize()
@@ -459,7 +458,7 @@ func NewComputeInstanceGroupNamedPortA(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -472,12 +471,12 @@ func NewComputeInstanceGroupNamedPortA_Override(c ComputeInstanceGroupNamedPortA
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -507,7 +506,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -515,7 +514,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetGroup(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetGroup(val *string) {
 	if err := j.validateSetGroupParameters(val); err != nil {
 		panic(err)
 	}
@@ -526,7 +525,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetGroup(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetId(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetName(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetPort(val *float64) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetPort(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetProject(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupNamedPortA)SetZone(val *string) {
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func ComputeInstanceGroupNamedPortA_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -647,7 +646,7 @@ func ComputeInstanceGroupNamedPortA_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeInstanceGroupNamedPortA_IsConstruct(x interface{}) *bool {
+func ComputeInstanceGroupNamedPortA_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeInstanceGroupNamedPortA_IsConstructParameters(x); err != nil {
@@ -658,7 +657,7 @@ func ComputeInstanceGroupNamedPortA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func ComputeInstanceGroupNamedPortA_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeInstanceGroupNamedPortA_IsTerraformElement(x interface{}) *bool {
+func ComputeInstanceGroupNamedPortA_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeInstanceGroupNamedPortA_IsTerraformElementParameters(x); err != nil {
@@ -677,7 +676,7 @@ func ComputeInstanceGroupNamedPortA_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func ComputeInstanceGroupNamedPortA_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeInstanceGroupNamedPortA_IsTerraformResource(x interface{}) *bool {
+func ComputeInstanceGroupNamedPortA_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeInstanceGroupNamedPortA_IsTerraformResourceParameters(x); err != nil {
@@ -696,7 +695,7 @@ func ComputeInstanceGroupNamedPortA_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -721,31 +720,31 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,15 +872,15 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -900,7 +899,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -913,7 +912,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,18 +926,18 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -949,7 +948,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -960,7 +959,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -971,7 +970,7 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) PutTimeouts(value *ComputeIns
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1015,8 +1014,8 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ResetZone() {
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1028,8 +1027,8 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1041,8 +1040,8 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1054,8 +1053,8 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1080,8 +1079,8 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1092,4 +1091,3 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) ToTerraform() interface{} {
 
 	return returns
 }
-

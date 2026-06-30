@@ -18,9 +18,9 @@ type PrivatecaCertificateAuthorityKeySpecOutputReference interface {
 	CloudKmsKeyVersionInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type PrivatecaCertificateAuthorityKeySpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type PrivatecaCertificateAuthorityKeySpecOutputReference interface {
 	ResetCloudKmsKeyVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) CloudKms
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) Terrafor
 	return returns
 }
 
-
 func NewPrivatecaCertificateAuthorityKeySpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivatecaCertificateAuthorityKeySpecOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewPrivatecaCertificateAuthorityKeySpecOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityKeySpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewPrivatecaCertificateAuthorityKeySpecOutputReference_Override(p Privateca
 
 	_jsii_.Create(
 		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityKeySpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetAlgorithm(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) SetAlgorithm(val *string) {
 	if err := j.validateSetAlgorithmParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetAlgori
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetCloudKmsKeyVersion(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) SetCloudKmsKeyVersion(val *string) {
 	if err := j.validateSetCloudKmsKeyVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetCloudK
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetInternalValue(val *PrivatecaCertificateAuthorityKeySpec) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) SetInternalValue(val *PrivatecaCertificateAuthorityKeySpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) ComputeF
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetBoole
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetListA
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetNumbe
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) GetStrin
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) Interpol
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) ResetClo
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityKeySpecOutputReference) ToString
 
 	return returns
 }
-

@@ -34,7 +34,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterGroupLabelsList) validat
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterGroupLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterGroupLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewOsConfigPatchDeploymentInstanceFilterGroupLabelsListParameters(t
 
 	return nil
 }
-

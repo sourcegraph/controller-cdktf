@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRegionInstantSnapshotTimeoutsOutputReferenceParameters(te
 
 	return nil
 }
-

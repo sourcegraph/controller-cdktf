@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudRunServiceTemplateSpecVolumesListParameters(terraformResour
 
 	return nil
 }
-

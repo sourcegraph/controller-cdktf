@@ -1,11 +1,10 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy struct {
 	// error_response_rule block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
-	ErrorResponseRule interface{} `field:"optional" json:"errorResponseRule" yaml:"errorResponseRule"`
+	ErrorResponseRule any `field:"optional" json:"errorResponseRule" yaml:"errorResponseRule"`
 	// The full or partial URL to the BackendBucket resource that contains the custom error content. Examples are:.
 	//
 	// https://www.googleapis.com/compute/v1/projects/project/global/backendBuckets/myBackendBucket
@@ -18,4 +17,3 @@ type ComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
 	ErrorService *string `field:"optional" json:"errorService" yaml:"errorService"`
 }
-

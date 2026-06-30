@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOf
 
 	return nil
 }
-

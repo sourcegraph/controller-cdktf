@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPool",
-		reflect.TypeOf((*StorageTransferAgentPool)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferAgentPool](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferAgentPool{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit",
-		reflect.TypeOf((*StorageTransferAgentPoolBandwidthLimit)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferAgentPoolBandwidthLimit](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimitOutputReference",
-		reflect.TypeOf((*StorageTransferAgentPoolBandwidthLimitOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferAgentPoolBandwidthLimitOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -119,15 +119,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig",
-		reflect.TypeOf((*StorageTransferAgentPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferAgentPoolConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts",
-		reflect.TypeOf((*StorageTransferAgentPoolTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferAgentPoolTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeoutsOutputReference",
-		reflect.TypeOf((*StorageTransferAgentPoolTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageTransferAgentPoolTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageTransferAgentPoolTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

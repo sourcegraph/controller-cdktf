@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRule",
-		reflect.TypeOf((*ContactCenterInsightsAutoLabelingRule)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAutoLabelingRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
 			_jsii_.MemberProperty{JsiiProperty: "activeInput", GoGetter: "ActiveInput"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsAutoLabelingRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,11 +98,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleConditions",
-		reflect.TypeOf((*ContactCenterInsightsAutoLabelingRuleConditions)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAutoLabelingRuleConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleConditionsList",
-		reflect.TypeOf((*ContactCenterInsightsAutoLabelingRuleConditionsList)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAutoLabelingRuleConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -124,7 +124,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleConditionsOutputReference",
-		reflect.TypeOf((*ContactCenterInsightsAutoLabelingRuleConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAutoLabelingRuleConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -154,7 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsAutoLabelingRuleConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -162,15 +162,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleConfig",
-		reflect.TypeOf((*ContactCenterInsightsAutoLabelingRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAutoLabelingRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleTimeouts",
-		reflect.TypeOf((*ContactCenterInsightsAutoLabelingRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAutoLabelingRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsAutoLabelingRule.ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference",
-		reflect.TypeOf((*ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

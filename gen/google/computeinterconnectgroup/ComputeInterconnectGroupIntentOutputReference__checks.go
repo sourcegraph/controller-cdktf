@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectGroupIntentOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectGroupIntentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectGroupIntentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInterconnectGroupIntentOutputReferenceParameters(terrafor
 
 	return nil
 }
-

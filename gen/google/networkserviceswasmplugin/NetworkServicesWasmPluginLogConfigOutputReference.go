@@ -12,9 +12,9 @@ type NetworkServicesWasmPluginLogConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type NetworkServicesWasmPluginLogConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enable() interface{}
-	SetEnable(val interface{})
-	EnableInput() interface{}
+	Enable() any
+	SetEnable(val any)
+	EnableInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *NetworkServicesWasmPluginLogConfig
@@ -49,7 +49,7 @@ type NetworkServicesWasmPluginLogConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type NetworkServicesWasmPluginLogConfigOutputReference interface {
 	ResetSampleRate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) CreationSt
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) Enable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) Enable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enable",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) Enable() i
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) EnableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) EnableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) TerraformR
 	return returns
 }
 
-
 func NewNetworkServicesWasmPluginLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkServicesWasmPluginLogConfigOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewNetworkServicesWasmPluginLogConfigOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewNetworkServicesWasmPluginLogConfigOutputReference_Override(n NetworkServ
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesWasmPlugin.NetworkServicesWasmPluginLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetEnable(val interface{}) {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) SetEnable(val any) {
 	if err := j.validateSetEnableParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetEnable(v
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetInternalValue(val *NetworkServicesWasmPluginLogConfig) {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) SetInternalValue(val *NetworkServicesWasmPluginLogConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetMinLogLevel(val *string) {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) SetMinLogLevel(val *string) {
 	if err := j.validateSetMinLogLevelParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetMinLogLe
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetSampleRate(val *float64) {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) SetSampleRate(val *float64) {
 	if err := j.validateSetSampleRateParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetSampleRa
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) ComputeFqn
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetBoolean
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetListAtt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetNumberA
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetNumberL
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetNumberM
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetStringA
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) GetStringM
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) Interpolat
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) ResetSampl
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (n *jsiiProxy_NetworkServicesWasmPluginLogConfigOutputReference) ToString()
 
 	return returns
 }
-

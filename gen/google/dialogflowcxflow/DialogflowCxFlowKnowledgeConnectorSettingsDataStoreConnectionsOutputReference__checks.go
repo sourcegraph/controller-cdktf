@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnection
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnection
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOu
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleSecretManagerSecretReplicationUserManagedOutputReferen
 
 	return nil
 }
-

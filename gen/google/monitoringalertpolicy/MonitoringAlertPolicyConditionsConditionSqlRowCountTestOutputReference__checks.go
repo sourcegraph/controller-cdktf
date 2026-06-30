@@ -106,7 +106,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlRowCountTestOutput
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMonitoringAlertPolicyConditionsConditionSqlRowCountTestOutputRef
 
 	return nil
 }
-

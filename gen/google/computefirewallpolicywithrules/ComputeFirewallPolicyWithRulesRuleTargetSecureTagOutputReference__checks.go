@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeFirewallPolicyWithRulesRuleTargetSecureTagOutputReference
 
 	return nil
 }
-

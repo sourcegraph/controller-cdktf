@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleNetworkSecurityAddressGroups_GenerateConfigForImportParam
 	return nil
 }
 
-func validateDataGoogleNetworkSecurityAddressGroups_IsConstructParameters(x interface{}) error {
+func validateDataGoogleNetworkSecurityAddressGroups_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleNetworkSecurityAddressGroups_IsConstructParameters(x inte
 	return nil
 }
 
-func validateDataGoogleNetworkSecurityAddressGroups_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleNetworkSecurityAddressGroups_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleNetworkSecurityAddressGroups_IsTerraformDataSourceParamet
 	return nil
 }
 
-func validateDataGoogleNetworkSecurityAddressGroups_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleNetworkSecurityAddressGroups_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleNetworkSecurityAddressGroups_IsTerraformElementParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroups) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleNetworkSecurityAddressGroupsParameters(scope construct
 
 	return nil
 }
-

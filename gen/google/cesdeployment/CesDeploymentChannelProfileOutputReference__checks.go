@@ -128,7 +128,7 @@ func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) validateSetChanne
 	return nil
 }
 
-func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -193,7 +193,7 @@ func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) validateSetDisableBargeInControlParameters(val interface{}) error {
+func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) validateSetDisableBargeInControlParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -213,7 +213,7 @@ func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) validateSetDisabl
 	return nil
 }
 
-func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) validateSetDisableDtmfParameters(val interface{}) error {
+func (j *jsiiProxy_CesDeploymentChannelProfileOutputReference) validateSetDisableDtmfParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -276,4 +276,3 @@ func validateNewCesDeploymentChannelProfileOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

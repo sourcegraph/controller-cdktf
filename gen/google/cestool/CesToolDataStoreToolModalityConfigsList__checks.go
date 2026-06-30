@@ -34,7 +34,7 @@ func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCesToolDataStoreToolModalityConfigsListParameters(terraformResou
 
 	return nil
 }
-

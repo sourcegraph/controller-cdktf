@@ -19,7 +19,7 @@ func (l *jsiiProxy_LookerInstance) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LookerInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LookerInstance) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LookerInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -341,7 +341,7 @@ func validateLookerInstance_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateLookerInstance_IsConstructParameters(x interface{}) error {
+func validateLookerInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -349,7 +349,7 @@ func validateLookerInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLookerInstance_IsTerraformElementParameters(x interface{}) error {
+func validateLookerInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -357,7 +357,7 @@ func validateLookerInstance_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateLookerInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateLookerInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -365,7 +365,7 @@ func validateLookerInstance_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_LookerInstance) validateSetConsumerNetworkParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetControlledEgressEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstance) validateSetControlledEgressEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -426,7 +426,7 @@ func (j *jsiiProxy_LookerInstance) validateSetControlledEgressEnabledParameters(
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -491,7 +491,7 @@ func (j *jsiiProxy_LookerInstance) validateSetDeletionPolicyParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetFipsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstance) validateSetFipsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -511,7 +511,7 @@ func (j *jsiiProxy_LookerInstance) validateSetFipsEnabledParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetGeminiEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstance) validateSetGeminiEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -563,7 +563,7 @@ func (j *jsiiProxy_LookerInstance) validateSetPlatformEditionParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetPrivateIpEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstance) validateSetPrivateIpEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -591,7 +591,7 @@ func (j *jsiiProxy_LookerInstance) validateSetProjectParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LookerInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -637,7 +637,7 @@ func (j *jsiiProxy_LookerInstance) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetPscEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstance) validateSetPscEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -657,7 +657,7 @@ func (j *jsiiProxy_LookerInstance) validateSetPscEnabledParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstance) validateSetPublicIpEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstance) validateSetPublicIpEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -711,4 +711,3 @@ func validateNewLookerInstanceParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

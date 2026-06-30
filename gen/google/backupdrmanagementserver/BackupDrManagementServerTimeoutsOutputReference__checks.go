@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrManagementServerTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrManagementServerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrManagementServerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BackupDrManagementServerTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrManagementServerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrManagementServerTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBackupDrManagementServerTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

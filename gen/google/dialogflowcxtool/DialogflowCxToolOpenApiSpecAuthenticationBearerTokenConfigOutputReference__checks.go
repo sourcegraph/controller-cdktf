@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutput
 
 	return nil
 }
-

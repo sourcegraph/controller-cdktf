@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPushOutputReference) validateSetBranch
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPushOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerGithubPushOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudbuildTriggerGithubPushOutputReference) validateSetIntern
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGithubPushOutputReference) validateSetInvertRegexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerGithubPushOutputReference) validateSetInvertRegexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCloudbuildTriggerGithubPushOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

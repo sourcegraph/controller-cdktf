@@ -19,7 +19,7 @@ func (c *jsiiProxy_CesApp) validateAddMoveTargetParameters(moveTarget *string) e
 	return nil
 }
 
-func (c *jsiiProxy_CesApp) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CesApp) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CesApp) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CesApp) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func (c *jsiiProxy_CesApp) validatePutTimeZoneSettingsParameters(value *CesAppTi
 	return nil
 }
 
-func (c *jsiiProxy_CesApp) validatePutVariableDeclarationsParameters(value interface{}) error {
+func (c *jsiiProxy_CesApp) validatePutVariableDeclarationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -361,7 +361,7 @@ func validateCesApp_GenerateConfigForImportParameters(scope constructs.Construct
 	return nil
 }
 
-func validateCesApp_IsConstructParameters(x interface{}) error {
+func validateCesApp_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -369,7 +369,7 @@ func validateCesApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCesApp_IsTerraformElementParameters(x interface{}) error {
+func validateCesApp_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -377,7 +377,7 @@ func validateCesApp_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCesApp_IsTerraformResourceParameters(x interface{}) error {
+func validateCesApp_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -393,7 +393,7 @@ func (j *jsiiProxy_CesApp) validateSetAppIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CesApp) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CesApp) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -426,7 +426,7 @@ func (j *jsiiProxy_CesApp) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_CesApp) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CesApp) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -547,7 +547,7 @@ func (j *jsiiProxy_CesApp) validateSetMetadataParameters(val *map[string]*string
 	return nil
 }
 
-func (j *jsiiProxy_CesApp) validateSetPinnedParameters(val interface{}) error {
+func (j *jsiiProxy_CesApp) validateSetPinnedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -575,7 +575,7 @@ func (j *jsiiProxy_CesApp) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CesApp) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CesApp) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -647,4 +647,3 @@ func validateNewCesAppParameters(scope constructs.Construct, id *string, config 
 
 	return nil
 }
-

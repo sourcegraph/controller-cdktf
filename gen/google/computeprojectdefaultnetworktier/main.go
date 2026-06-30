@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
-		reflect.TypeOf((*ComputeProjectDefaultNetworkTier)(nil)).Elem(),
+		reflect.TypeFor[ComputeProjectDefaultNetworkTier](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeProjectDefaultNetworkTier{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierConfig",
-		reflect.TypeOf((*ComputeProjectDefaultNetworkTierConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeProjectDefaultNetworkTierConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeouts",
-		reflect.TypeOf((*ComputeProjectDefaultNetworkTierTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeProjectDefaultNetworkTierTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeProjectDefaultNetworkTierTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeProjectDefaultNetworkTierTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -108,7 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeProjectDefaultNetworkTierTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

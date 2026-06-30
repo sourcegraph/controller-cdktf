@@ -106,7 +106,7 @@ func (j *jsiiProxy_ContainerAzureNodePoolConfigSshConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureNodePoolConfigSshConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAzureNodePoolConfigSshConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerAzureNodePoolConfigSshConfigOutputReferenceParameters(t
 
 	return nil
 }
-

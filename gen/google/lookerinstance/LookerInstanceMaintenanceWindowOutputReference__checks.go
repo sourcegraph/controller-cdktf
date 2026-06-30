@@ -109,7 +109,7 @@ func (l *jsiiProxy_LookerInstanceMaintenanceWindowOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstanceMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstanceMaintenanceWindowOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewLookerInstanceMaintenanceWindowOutputReferenceParameters(terrafo
 
 	return nil
 }
-

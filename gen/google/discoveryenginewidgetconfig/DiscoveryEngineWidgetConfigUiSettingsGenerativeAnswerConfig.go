@@ -1,19 +1,18 @@
 package discoveryenginewidgetconfig
 
-
 type DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig struct {
 	// Whether generated answer contains suggested related questions.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#disable_related_questions DiscoveryEngineWidgetConfig#disable_related_questions}
-	DisableRelatedQuestions interface{} `field:"optional" json:"disableRelatedQuestions" yaml:"disableRelatedQuestions"`
+	DisableRelatedQuestions any `field:"optional" json:"disableRelatedQuestions" yaml:"disableRelatedQuestions"`
 	// Specifies whether to filter out queries that are adversarial.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#ignore_adversarial_query DiscoveryEngineWidgetConfig#ignore_adversarial_query}
-	IgnoreAdversarialQuery interface{} `field:"optional" json:"ignoreAdversarialQuery" yaml:"ignoreAdversarialQuery"`
+	IgnoreAdversarialQuery any `field:"optional" json:"ignoreAdversarialQuery" yaml:"ignoreAdversarialQuery"`
 	// Specifies whether to filter out queries that are not relevant to the content.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#ignore_low_relevant_content DiscoveryEngineWidgetConfig#ignore_low_relevant_content}
-	IgnoreLowRelevantContent interface{} `field:"optional" json:"ignoreLowRelevantContent" yaml:"ignoreLowRelevantContent"`
+	IgnoreLowRelevantContent any `field:"optional" json:"ignoreLowRelevantContent" yaml:"ignoreLowRelevantContent"`
 	// Specifies whether to filter out queries that are not answer-seeking.
 	//
 	// The default value is 'false'. No answer is returned if the search query
@@ -22,7 +21,7 @@ type DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig struct {
 	// non-answer seeking queries and return fallback messages instead.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#ignore_non_answer_seeking_query DiscoveryEngineWidgetConfig#ignore_non_answer_seeking_query}
-	IgnoreNonAnswerSeekingQuery interface{} `field:"optional" json:"ignoreNonAnswerSeekingQuery" yaml:"ignoreNonAnswerSeekingQuery"`
+	IgnoreNonAnswerSeekingQuery any `field:"optional" json:"ignoreNonAnswerSeekingQuery" yaml:"ignoreNonAnswerSeekingQuery"`
 	// Source of image returned in the answer. Possible values: ["ALL_AVAILABLE_SOURCES", "CORPUS_IMAGE_ONLY", "FIGURE_GENERATION_ONLY"].
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#image_source DiscoveryEngineWidgetConfig#image_source}
@@ -51,4 +50,3 @@ type DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_widget_config#result_count DiscoveryEngineWidgetConfig#result_count}
 	ResultCount *float64 `field:"optional" json:"resultCount" yaml:"resultCount"`
 }
-

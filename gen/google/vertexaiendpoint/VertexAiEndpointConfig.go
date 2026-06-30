@@ -6,9 +6,9 @@ import (
 
 type VertexAiEndpointConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type VertexAiEndpointConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required.
 	//
 	// The display name of the Endpoint. The name can be up to 128 characters long and can consist of any UTF-8 characters.
@@ -38,7 +38,7 @@ type VertexAiEndpointConfig struct {
 	// If true, the endpoint will be exposed through a dedicated DNS [Endpoint.dedicated_endpoint_dns]. Your request to the dedicated DNS will be isolated from other users' traffic and will have better performance and reliability. Note: Once you enabled dedicated endpoint, you won't be able to send request to the shared DNS {region}-aiplatform.googleapis.com. The limitation will be removed soon.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint#dedicated_endpoint_enabled VertexAiEndpoint#dedicated_endpoint_enabled}
-	DedicatedEndpointEnabled interface{} `field:"optional" json:"dedicatedEndpointEnabled" yaml:"dedicatedEndpointEnabled"`
+	DedicatedEndpointEnabled any `field:"optional" json:"dedicatedEndpointEnabled" yaml:"dedicatedEndpointEnabled"`
 	// The description of the Endpoint.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint#description VertexAiEndpoint#description}
@@ -95,4 +95,3 @@ type VertexAiEndpointConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_endpoint#traffic_split VertexAiEndpoint#traffic_split}
 	TrafficSplit *string `field:"optional" json:"trafficSplit" yaml:"trafficSplit"`
 }
-

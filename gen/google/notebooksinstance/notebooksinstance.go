@@ -23,17 +23,17 @@ type NotebooksInstance interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContainerImage() NotebooksInstanceContainerImageOutputReference
 	ContainerImageInput() *NotebooksInstanceContainerImage
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	SetCreateTime(val *string)
 	CreateTimeInput() *string
@@ -68,9 +68,9 @@ type NotebooksInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	InstallGpuDriver() interface{}
-	SetInstallGpuDriver(val interface{})
-	InstallGpuDriverInput() interface{}
+	InstallGpuDriver() any
+	SetInstallGpuDriver(val any)
+	InstallGpuDriverInput() any
 	InstanceOwners() *[]*string
 	SetInstanceOwners(val *[]*string)
 	InstanceOwnersInput() *[]*string
@@ -104,15 +104,15 @@ type NotebooksInstance interface {
 	NicTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
-	NoProxyAccess() interface{}
-	SetNoProxyAccess(val interface{})
-	NoProxyAccessInput() interface{}
-	NoPublicIp() interface{}
-	SetNoPublicIp(val interface{})
-	NoPublicIpInput() interface{}
-	NoRemoveDataDisk() interface{}
-	SetNoRemoveDataDisk(val interface{})
-	NoRemoveDataDiskInput() interface{}
+	NoProxyAccess() any
+	SetNoProxyAccess(val any)
+	NoProxyAccessInput() any
+	NoPublicIp() any
+	SetNoPublicIp(val any)
+	NoPublicIpInput() any
+	NoRemoveDataDisk() any
+	SetNoRemoveDataDisk(val any)
+	NoRemoveDataDiskInput() any
 	PostStartupScript() *string
 	SetPostStartupScript(val *string)
 	PostStartupScriptInput() *string
@@ -124,12 +124,12 @@ type NotebooksInstance interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	ProxyUri() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReservationAffinity() NotebooksInstanceReservationAffinityOutputReference
 	ReservationAffinityInput() *NotebooksInstanceReservationAffinity
 	ServiceAccount() *string
@@ -151,11 +151,11 @@ type NotebooksInstance interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NotebooksInstanceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	SetUpdateTime(val *string)
 	UpdateTimeInput() *string
@@ -165,9 +165,9 @@ type NotebooksInstance interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -185,7 +185,7 @@ type NotebooksInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -197,7 +197,7 @@ type NotebooksInstance interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -245,17 +245,17 @@ type NotebooksInstance interface {
 	ResetTimeouts()
 	ResetUpdateTime()
 	ResetVmImage()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NotebooksInstance
@@ -333,8 +333,8 @@ func (j *jsiiProxy_NotebooksInstance) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_NotebooksInstance) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotebooksInstance) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -373,8 +373,8 @@ func (j *jsiiProxy_NotebooksInstance) ContainerImageInput() *NotebooksInstanceCo
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -573,8 +573,8 @@ func (j *jsiiProxy_NotebooksInstance) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) InstallGpuDriver() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) InstallGpuDriver() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installGpuDriver",
@@ -583,8 +583,8 @@ func (j *jsiiProxy_NotebooksInstance) InstallGpuDriver() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) InstallGpuDriverInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) InstallGpuDriverInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"installGpuDriverInput",
@@ -793,8 +793,8 @@ func (j *jsiiProxy_NotebooksInstance) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) NoProxyAccess() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) NoProxyAccess() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noProxyAccess",
@@ -803,8 +803,8 @@ func (j *jsiiProxy_NotebooksInstance) NoProxyAccess() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) NoProxyAccessInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) NoProxyAccessInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noProxyAccessInput",
@@ -813,8 +813,8 @@ func (j *jsiiProxy_NotebooksInstance) NoProxyAccessInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) NoPublicIp() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) NoPublicIp() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noPublicIp",
@@ -823,8 +823,8 @@ func (j *jsiiProxy_NotebooksInstance) NoPublicIp() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) NoPublicIpInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) NoPublicIpInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noPublicIpInput",
@@ -833,8 +833,8 @@ func (j *jsiiProxy_NotebooksInstance) NoPublicIpInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) NoRemoveDataDisk() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) NoRemoveDataDisk() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noRemoveDataDisk",
@@ -843,8 +843,8 @@ func (j *jsiiProxy_NotebooksInstance) NoRemoveDataDisk() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) NoRemoveDataDiskInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) NoRemoveDataDiskInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noRemoveDataDiskInput",
@@ -903,8 +903,8 @@ func (j *jsiiProxy_NotebooksInstance) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NotebooksInstance) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -923,8 +923,8 @@ func (j *jsiiProxy_NotebooksInstance) ProxyUri() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -1083,8 +1083,8 @@ func (j *jsiiProxy_NotebooksInstance) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotebooksInstance) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -1113,8 +1113,8 @@ func (j *jsiiProxy_NotebooksInstance) Timeouts() NotebooksInstanceTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksInstance) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksInstance) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -1163,7 +1163,6 @@ func (j *jsiiProxy_NotebooksInstance) VmImageInput() *NotebooksInstanceVmImage {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_instance google_notebooks_instance} Resource.
 func NewNotebooksInstance(scope constructs.Construct, id *string, config *NotebooksInstanceConfig) NotebooksInstance {
 	_init_.Initialize()
@@ -1175,7 +1174,7 @@ func NewNotebooksInstance(scope constructs.Construct, id *string, config *Notebo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -1188,12 +1187,12 @@ func NewNotebooksInstance_Override(n NotebooksInstance, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstance",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetBootDiskSizeGb(val *float64) {
+func (j *jsiiProxy_NotebooksInstance) SetBootDiskSizeGb(val *float64) {
 	if err := j.validateSetBootDiskSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -1204,7 +1203,7 @@ func (j *jsiiProxy_NotebooksInstance)SetBootDiskSizeGb(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetBootDiskType(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetBootDiskType(val *string) {
 	if err := j.validateSetBootDiskTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1215,7 +1214,7 @@ func (j *jsiiProxy_NotebooksInstance)SetBootDiskType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetConnection(val interface{}) {
+func (j *jsiiProxy_NotebooksInstance) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1226,7 +1225,7 @@ func (j *jsiiProxy_NotebooksInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetCount(val interface{}) {
+func (j *jsiiProxy_NotebooksInstance) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1237,7 +1236,7 @@ func (j *jsiiProxy_NotebooksInstance)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetCreateTime(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetCreateTime(val *string) {
 	if err := j.validateSetCreateTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1248,7 +1247,7 @@ func (j *jsiiProxy_NotebooksInstance)SetCreateTime(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetCustomGpuDriverPath(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetCustomGpuDriverPath(val *string) {
 	if err := j.validateSetCustomGpuDriverPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -1259,7 +1258,7 @@ func (j *jsiiProxy_NotebooksInstance)SetCustomGpuDriverPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetDataDiskSizeGb(val *float64) {
+func (j *jsiiProxy_NotebooksInstance) SetDataDiskSizeGb(val *float64) {
 	if err := j.validateSetDataDiskSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -1270,7 +1269,7 @@ func (j *jsiiProxy_NotebooksInstance)SetDataDiskSizeGb(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetDataDiskType(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetDataDiskType(val *string) {
 	if err := j.validateSetDataDiskTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1281,7 +1280,7 @@ func (j *jsiiProxy_NotebooksInstance)SetDataDiskType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NotebooksInstance) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1289,7 +1288,7 @@ func (j *jsiiProxy_NotebooksInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetDesiredState(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetDesiredState(val *string) {
 	if err := j.validateSetDesiredStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -1300,7 +1299,7 @@ func (j *jsiiProxy_NotebooksInstance)SetDesiredState(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetDiskEncryption(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetDiskEncryption(val *string) {
 	if err := j.validateSetDiskEncryptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1311,7 +1310,7 @@ func (j *jsiiProxy_NotebooksInstance)SetDiskEncryption(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NotebooksInstance) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1319,7 +1318,7 @@ func (j *jsiiProxy_NotebooksInstance)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetId(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1330,7 +1329,7 @@ func (j *jsiiProxy_NotebooksInstance)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetInstallGpuDriver(val interface{}) {
+func (j *jsiiProxy_NotebooksInstance) SetInstallGpuDriver(val any) {
 	if err := j.validateSetInstallGpuDriverParameters(val); err != nil {
 		panic(err)
 	}
@@ -1341,7 +1340,7 @@ func (j *jsiiProxy_NotebooksInstance)SetInstallGpuDriver(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetInstanceOwners(val *[]*string) {
+func (j *jsiiProxy_NotebooksInstance) SetInstanceOwners(val *[]*string) {
 	if err := j.validateSetInstanceOwnersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1352,7 +1351,7 @@ func (j *jsiiProxy_NotebooksInstance)SetInstanceOwners(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetKmsKey(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1363,7 +1362,7 @@ func (j *jsiiProxy_NotebooksInstance)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NotebooksInstance) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1374,7 +1373,7 @@ func (j *jsiiProxy_NotebooksInstance)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NotebooksInstance) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1385,7 +1384,7 @@ func (j *jsiiProxy_NotebooksInstance)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetLocation(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1396,7 +1395,7 @@ func (j *jsiiProxy_NotebooksInstance)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetMachineType(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetMachineType(val *string) {
 	if err := j.validateSetMachineTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1407,7 +1406,7 @@ func (j *jsiiProxy_NotebooksInstance)SetMachineType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetMetadata(val *map[string]*string) {
+func (j *jsiiProxy_NotebooksInstance) SetMetadata(val *map[string]*string) {
 	if err := j.validateSetMetadataParameters(val); err != nil {
 		panic(err)
 	}
@@ -1418,7 +1417,7 @@ func (j *jsiiProxy_NotebooksInstance)SetMetadata(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetName(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -1429,7 +1428,7 @@ func (j *jsiiProxy_NotebooksInstance)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetNetwork(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -1440,7 +1439,7 @@ func (j *jsiiProxy_NotebooksInstance)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetNicType(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetNicType(val *string) {
 	if err := j.validateSetNicTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1451,7 +1450,7 @@ func (j *jsiiProxy_NotebooksInstance)SetNicType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetNoProxyAccess(val interface{}) {
+func (j *jsiiProxy_NotebooksInstance) SetNoProxyAccess(val any) {
 	if err := j.validateSetNoProxyAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1462,7 +1461,7 @@ func (j *jsiiProxy_NotebooksInstance)SetNoProxyAccess(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetNoPublicIp(val interface{}) {
+func (j *jsiiProxy_NotebooksInstance) SetNoPublicIp(val any) {
 	if err := j.validateSetNoPublicIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1473,7 +1472,7 @@ func (j *jsiiProxy_NotebooksInstance)SetNoPublicIp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetNoRemoveDataDisk(val interface{}) {
+func (j *jsiiProxy_NotebooksInstance) SetNoRemoveDataDisk(val any) {
 	if err := j.validateSetNoRemoveDataDiskParameters(val); err != nil {
 		panic(err)
 	}
@@ -1484,7 +1483,7 @@ func (j *jsiiProxy_NotebooksInstance)SetNoRemoveDataDisk(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetPostStartupScript(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetPostStartupScript(val *string) {
 	if err := j.validateSetPostStartupScriptParameters(val); err != nil {
 		panic(err)
 	}
@@ -1495,7 +1494,7 @@ func (j *jsiiProxy_NotebooksInstance)SetPostStartupScript(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetProject(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -1506,7 +1505,7 @@ func (j *jsiiProxy_NotebooksInstance)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NotebooksInstance) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1514,7 +1513,7 @@ func (j *jsiiProxy_NotebooksInstance)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NotebooksInstance) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -1525,7 +1524,7 @@ func (j *jsiiProxy_NotebooksInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetServiceAccount(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetServiceAccount(val *string) {
 	if err := j.validateSetServiceAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -1536,7 +1535,7 @@ func (j *jsiiProxy_NotebooksInstance)SetServiceAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetServiceAccountScopes(val *[]*string) {
+func (j *jsiiProxy_NotebooksInstance) SetServiceAccountScopes(val *[]*string) {
 	if err := j.validateSetServiceAccountScopesParameters(val); err != nil {
 		panic(err)
 	}
@@ -1547,7 +1546,7 @@ func (j *jsiiProxy_NotebooksInstance)SetServiceAccountScopes(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetSubnet(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetSubnet(val *string) {
 	if err := j.validateSetSubnetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1558,7 +1557,7 @@ func (j *jsiiProxy_NotebooksInstance)SetSubnet(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetTags(val *[]*string) {
+func (j *jsiiProxy_NotebooksInstance) SetTags(val *[]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1569,7 +1568,7 @@ func (j *jsiiProxy_NotebooksInstance)SetTags(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksInstance)SetUpdateTime(val *string) {
+func (j *jsiiProxy_NotebooksInstance) SetUpdateTime(val *string) {
 	if err := j.validateSetUpdateTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1592,7 +1591,7 @@ func NotebooksInstance_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstance",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -1616,7 +1615,7 @@ func NotebooksInstance_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotebooksInstance_IsConstruct(x interface{}) *bool {
+func NotebooksInstance_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotebooksInstance_IsConstructParameters(x); err != nil {
@@ -1627,7 +1626,7 @@ func NotebooksInstance_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstance",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1635,7 +1634,7 @@ func NotebooksInstance_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NotebooksInstance_IsTerraformElement(x interface{}) *bool {
+func NotebooksInstance_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotebooksInstance_IsTerraformElementParameters(x); err != nil {
@@ -1646,7 +1645,7 @@ func NotebooksInstance_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstance",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1654,7 +1653,7 @@ func NotebooksInstance_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NotebooksInstance_IsTerraformResource(x interface{}) *bool {
+func NotebooksInstance_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotebooksInstance_IsTerraformResourceParameters(x); err != nil {
@@ -1665,7 +1664,7 @@ func NotebooksInstance_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksInstance.NotebooksInstance",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1690,31 +1689,31 @@ func (n *jsiiProxy_NotebooksInstance) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NotebooksInstance) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NotebooksInstance) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotebooksInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotebooksInstance) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1730,7 +1729,7 @@ func (n *jsiiProxy_NotebooksInstance) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1746,7 +1745,7 @@ func (n *jsiiProxy_NotebooksInstance) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1762,7 +1761,7 @@ func (n *jsiiProxy_NotebooksInstance) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1778,7 +1777,7 @@ func (n *jsiiProxy_NotebooksInstance) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1794,7 +1793,7 @@ func (n *jsiiProxy_NotebooksInstance) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1810,7 +1809,7 @@ func (n *jsiiProxy_NotebooksInstance) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1826,7 +1825,7 @@ func (n *jsiiProxy_NotebooksInstance) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1842,15 +1841,15 @@ func (n *jsiiProxy_NotebooksInstance) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksInstance) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksInstance) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1869,7 +1868,7 @@ func (n *jsiiProxy_NotebooksInstance) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1882,7 +1881,7 @@ func (n *jsiiProxy_NotebooksInstance) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1896,18 +1895,18 @@ func (n *jsiiProxy_NotebooksInstance) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NotebooksInstance) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NotebooksInstance) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1918,7 +1917,7 @@ func (n *jsiiProxy_NotebooksInstance) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1929,7 +1928,7 @@ func (n *jsiiProxy_NotebooksInstance) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1940,7 +1939,7 @@ func (n *jsiiProxy_NotebooksInstance) PutAcceleratorConfig(value *NotebooksInsta
 	_jsii_.InvokeVoid(
 		n,
 		"putAcceleratorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1951,7 +1950,7 @@ func (n *jsiiProxy_NotebooksInstance) PutContainerImage(value *NotebooksInstance
 	_jsii_.InvokeVoid(
 		n,
 		"putContainerImage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1962,7 +1961,7 @@ func (n *jsiiProxy_NotebooksInstance) PutReservationAffinity(value *NotebooksIns
 	_jsii_.InvokeVoid(
 		n,
 		"putReservationAffinity",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1973,7 +1972,7 @@ func (n *jsiiProxy_NotebooksInstance) PutShieldedInstanceConfig(value *Notebooks
 	_jsii_.InvokeVoid(
 		n,
 		"putShieldedInstanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1984,7 +1983,7 @@ func (n *jsiiProxy_NotebooksInstance) PutTimeouts(value *NotebooksInstanceTimeou
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1995,7 +1994,7 @@ func (n *jsiiProxy_NotebooksInstance) PutVmImage(value *NotebooksInstanceVmImage
 	_jsii_.InvokeVoid(
 		n,
 		"putVmImage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -2263,8 +2262,8 @@ func (n *jsiiProxy_NotebooksInstance) ResetVmImage() {
 	)
 }
 
-func (n *jsiiProxy_NotebooksInstance) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotebooksInstance) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -2276,8 +2275,8 @@ func (n *jsiiProxy_NotebooksInstance) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksInstance) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotebooksInstance) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -2289,8 +2288,8 @@ func (n *jsiiProxy_NotebooksInstance) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksInstance) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksInstance) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -2302,8 +2301,8 @@ func (n *jsiiProxy_NotebooksInstance) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksInstance) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksInstance) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -2328,8 +2327,8 @@ func (n *jsiiProxy_NotebooksInstance) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksInstance) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksInstance) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -2340,4 +2339,3 @@ func (n *jsiiProxy_NotebooksInstance) ToTerraform() interface{} {
 
 	return returns
 }
-

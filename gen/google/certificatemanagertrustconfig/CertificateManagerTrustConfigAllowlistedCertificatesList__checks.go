@@ -34,7 +34,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesList) val
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCertificateManagerTrustConfigAllowlistedCertificatesListParamete
 
 	return nil
 }
-

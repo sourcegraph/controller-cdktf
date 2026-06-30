@@ -10,14 +10,14 @@ import (
 
 type AppEngineStandardAppVersionHandlersStaticFilesOutputReference interface {
 	cdktf.ComplexObject
-	ApplicationReadable() interface{}
-	SetApplicationReadable(val interface{})
-	ApplicationReadableInput() interface{}
+	ApplicationReadable() any
+	SetApplicationReadable(val any)
+	ApplicationReadableInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,9 +44,9 @@ type AppEngineStandardAppVersionHandlersStaticFilesOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
-	RequireMatchingFile() interface{}
-	SetRequireMatchingFile(val interface{})
-	RequireMatchingFileInput() interface{}
+	RequireMatchingFile() any
+	SetRequireMatchingFile(val any)
+	RequireMatchingFileInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,7 +61,7 @@ type AppEngineStandardAppVersionHandlersStaticFilesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type AppEngineStandardAppVersionHandlersStaticFilesOutputReference interface {
 	ResetUploadPathRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) ApplicationReadable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) ApplicationReadable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applicationReadable",
@@ -114,8 +114,8 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) ApplicationReadableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) ApplicationReadableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"applicationReadableInput",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -254,8 +254,8 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) RequireMatchingFile() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) RequireMatchingFile() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireMatchingFile",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) RequireMatchingFileInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) RequireMatchingFileInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"requireMatchingFileInput",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-
 func NewAppEngineStandardAppVersionHandlersStaticFilesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppEngineStandardAppVersionHandlersStaticFilesOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewAppEngineStandardAppVersionHandlersStaticFilesOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewAppEngineStandardAppVersionHandlersStaticFilesOutputReference_Override(a
 
 	_jsii_.Create(
 		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetApplicationReadable(val interface{}) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetApplicationReadable(val any) {
 	if err := j.validateSetApplicationReadableParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetExpiration(val *string) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetExpiration(val *string) {
 	if err := j.validateSetExpirationParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetHttpHeaders(val *map[string]*string) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetHttpHeaders(val *map[string]*string) {
 	if err := j.validateSetHttpHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetInternalValue(val *AppEngineStandardAppVersionHandlersStaticFiles) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetInternalValue(val *AppEngineStandardAppVersionHandlersStaticFiles) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetMimeType(val *string) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetMimeType(val *string) {
 	if err := j.validateSetMimeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetRequireMatchingFile(val interface{}) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetRequireMatchingFile(val any) {
 	if err := j.validateSetRequireMatchingFileParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference)SetUploadPathRegex(val *string) {
+func (j *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) SetUploadPathRegex(val *string) {
 	if err := j.validateSetUploadPathRegexParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 	)
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersStaticFilesOutputReference
 
 	return returns
 }
-

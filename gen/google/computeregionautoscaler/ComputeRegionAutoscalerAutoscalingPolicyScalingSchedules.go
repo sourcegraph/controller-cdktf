@@ -1,6 +1,5 @@
 package computeregionautoscaler
 
-
 type ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules struct {
 	// The duration of time intervals (in seconds) for which this scaling schedule will be running.
 	//
@@ -29,7 +28,7 @@ type ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules struct {
 	// If set to true, then a scaling schedule has no effect.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#disabled ComputeRegionAutoscaler#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// The time zone to be used when interpreting the schedule.
 	//
 	// The value of this field must be a time zone name from the tz database: http://en.wikipedia.org/wiki/Tz_database.
@@ -37,4 +36,3 @@ type ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#time_zone ComputeRegionAutoscaler#time_zone}
 	TimeZone *string `field:"optional" json:"timeZone" yaml:"timeZone"`
 }
-

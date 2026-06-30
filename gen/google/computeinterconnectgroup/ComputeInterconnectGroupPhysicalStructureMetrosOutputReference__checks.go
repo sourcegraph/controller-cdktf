@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInterconnectGroupPhysicalStructureMetrosOutputReferencePa
 
 	return nil
 }
-

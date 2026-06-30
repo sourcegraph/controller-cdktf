@@ -6,9 +6,9 @@ import (
 
 type ComputeRegionDiskConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ComputeRegionDiskConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the resource.
 	//
 	// Provided by the client when the resource is
@@ -55,7 +55,7 @@ type ComputeRegionDiskConfig struct {
 	// The name of the snapshot by default will be '{{disk-name}}-YYYYMMDD-HHmm'
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#create_snapshot_before_destroy ComputeRegionDisk#create_snapshot_before_destroy}
-	CreateSnapshotBeforeDestroy interface{} `field:"optional" json:"createSnapshotBeforeDestroy" yaml:"createSnapshotBeforeDestroy"`
+	CreateSnapshotBeforeDestroy any `field:"optional" json:"createSnapshotBeforeDestroy" yaml:"createSnapshotBeforeDestroy"`
 	// This will set a custom name prefix for the snapshot that's created when the disk is deleted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#create_snapshot_before_destroy_prefix ComputeRegionDisk#create_snapshot_before_destroy_prefix}
@@ -71,7 +71,7 @@ type ComputeRegionDiskConfig struct {
 	// guest_os_features block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#guest_os_features ComputeRegionDisk#guest_os_features}
-	GuestOsFeatures interface{} `field:"optional" json:"guestOsFeatures" yaml:"guestOsFeatures"`
+	GuestOsFeatures any `field:"optional" json:"guestOsFeatures" yaml:"guestOsFeatures"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#id ComputeRegionDisk#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -192,4 +192,3 @@ type ComputeRegionDiskConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#type ComputeRegionDisk#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

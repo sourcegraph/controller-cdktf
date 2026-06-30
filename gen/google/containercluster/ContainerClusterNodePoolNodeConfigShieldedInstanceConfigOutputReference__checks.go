@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference) validateSetEnableIntegrityMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference) validateSetEnableSecureBootParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputRe
 
 	return nil
 }
-

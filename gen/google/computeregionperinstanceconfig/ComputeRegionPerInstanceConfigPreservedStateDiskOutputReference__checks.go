@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewComputeRegionPerInstanceConfigPreservedStateDiskOutputReferenceP
 
 	return nil
 }
-

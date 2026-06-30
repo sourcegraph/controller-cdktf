@@ -15,11 +15,11 @@ type DataGoogleAppEngineDefaultServiceAccount interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,18 +53,18 @@ type DataGoogleAppEngineDefaultServiceAccount interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UniqueId() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,18 +91,18 @@ type DataGoogleAppEngineDefaultServiceAccount interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleAppEngineDefaultServiceAccount
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) CdktfStack() cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -290,8 +290,8 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) Provider() cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -310,8 +310,8 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) TerraformGeneratorM
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -340,7 +340,6 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) UniqueId() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/app_engine_default_service_account google_app_engine_default_service_account} Data Source.
 func NewDataGoogleAppEngineDefaultServiceAccount(scope constructs.Construct, id *string, config *DataGoogleAppEngineDefaultServiceAccountConfig) DataGoogleAppEngineDefaultServiceAccount {
 	_init_.Initialize()
@@ -352,7 +351,7 @@ func NewDataGoogleAppEngineDefaultServiceAccount(scope constructs.Construct, id 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleAppEngineDefaultServiceAccount.DataGoogleAppEngineDefaultServiceAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -365,12 +364,12 @@ func NewDataGoogleAppEngineDefaultServiceAccount_Override(d DataGoogleAppEngineD
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleAppEngineDefaultServiceAccount.DataGoogleAppEngineDefaultServiceAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -389,7 +388,7 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetDependsOn(val *[]
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetForEach(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetLifecycle(val *cd
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetProject(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -450,7 +449,7 @@ func DataGoogleAppEngineDefaultServiceAccount_GenerateConfigForImport(scope cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAppEngineDefaultServiceAccount.DataGoogleAppEngineDefaultServiceAccount",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func DataGoogleAppEngineDefaultServiceAccount_GenerateConfigForImport(scope cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleAppEngineDefaultServiceAccount_IsConstruct(x interface{}) *bool {
+func DataGoogleAppEngineDefaultServiceAccount_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleAppEngineDefaultServiceAccount_IsConstructParameters(x); err != nil {
@@ -485,7 +484,7 @@ func DataGoogleAppEngineDefaultServiceAccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAppEngineDefaultServiceAccount.DataGoogleAppEngineDefaultServiceAccount",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func DataGoogleAppEngineDefaultServiceAccount_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleAppEngineDefaultServiceAccount_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleAppEngineDefaultServiceAccount_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleAppEngineDefaultServiceAccount_IsTerraformDataSourceParameters(x); err != nil {
@@ -504,7 +503,7 @@ func DataGoogleAppEngineDefaultServiceAccount_IsTerraformDataSource(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAppEngineDefaultServiceAccount.DataGoogleAppEngineDefaultServiceAccount",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func DataGoogleAppEngineDefaultServiceAccount_IsTerraformDataSource(x interface{
 }
 
 // Experimental.
-func DataGoogleAppEngineDefaultServiceAccount_IsTerraformElement(x interface{}) *bool {
+func DataGoogleAppEngineDefaultServiceAccount_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleAppEngineDefaultServiceAccount_IsTerraformElementParameters(x); err != nil {
@@ -523,7 +522,7 @@ func DataGoogleAppEngineDefaultServiceAccount_IsTerraformElement(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAppEngineDefaultServiceAccount.DataGoogleAppEngineDefaultServiceAccount",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -541,27 +540,27 @@ func DataGoogleAppEngineDefaultServiceAccount_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -705,7 +704,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) OverrideLogicalId(n
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -747,8 +746,8 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -760,8 +759,8 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SynthesizeAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -773,8 +772,8 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) SynthesizeHclAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -786,8 +785,8 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ToHclTerraform() in
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -812,8 +811,8 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ToString() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -824,4 +823,3 @@ func (d *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) ToTerraform() inter
 
 	return returns
 }
-

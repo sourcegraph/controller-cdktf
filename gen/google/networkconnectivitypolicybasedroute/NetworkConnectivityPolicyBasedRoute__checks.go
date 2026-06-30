@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateAddMoveTargetPar
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateMoveFromIdParame
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateNetworkConnectivityPolicyBasedRoute_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateNetworkConnectivityPolicyBasedRoute_IsConstructParameters(x interface{}) error {
+func validateNetworkConnectivityPolicyBasedRoute_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateNetworkConnectivityPolicyBasedRoute_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateNetworkConnectivityPolicyBasedRoute_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkConnectivityPolicyBasedRoute_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateNetworkConnectivityPolicyBasedRoute_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateNetworkConnectivityPolicyBasedRoute_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkConnectivityPolicyBasedRoute_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateNetworkConnectivityPolicyBasedRoute_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -458,7 +458,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRoute) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -522,4 +522,3 @@ func validateNewNetworkConnectivityPolicyBasedRouteParameters(scope constructs.C
 
 	return nil
 }
-

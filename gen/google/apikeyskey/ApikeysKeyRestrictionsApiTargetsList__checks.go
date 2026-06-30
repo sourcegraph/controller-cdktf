@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApikeysKeyRestrictionsApiTargetsListParameters(terraformResource
 
 	return nil
 }
-

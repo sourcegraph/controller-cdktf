@@ -106,7 +106,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterExcludedClo
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStorageControlOrganizationIntelligenceConfigFilterExcludedCloudS
 
 	return nil
 }
-

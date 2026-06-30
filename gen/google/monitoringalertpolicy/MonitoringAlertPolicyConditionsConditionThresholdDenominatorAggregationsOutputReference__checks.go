@@ -106,7 +106,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorA
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorA
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggr
 
 	return nil
 }
-

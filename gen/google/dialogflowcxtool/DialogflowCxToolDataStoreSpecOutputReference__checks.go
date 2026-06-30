@@ -90,7 +90,7 @@ func (d *jsiiProxy_DialogflowCxToolDataStoreSpecOutputReference) validateInterpo
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolDataStoreSpecOutputReference) validatePutDataStoreConnectionsParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowCxToolDataStoreSpecOutputReference) validatePutDataStoreConnectionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (d *jsiiProxy_DialogflowCxToolDataStoreSpecOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolDataStoreSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolDataStoreSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewDialogflowCxToolDataStoreSpecOutputReferenceParameters(terraform
 
 	return nil
 }
-

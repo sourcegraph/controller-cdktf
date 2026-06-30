@@ -1,11 +1,10 @@
 package cloudtasksqueue
 
-
 type CloudTasksQueueHttpTarget struct {
 	// header_overrides block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_tasks_queue#header_overrides CloudTasksQueue#header_overrides}
-	HeaderOverrides interface{} `field:"optional" json:"headerOverrides" yaml:"headerOverrides"`
+	HeaderOverrides any `field:"optional" json:"headerOverrides" yaml:"headerOverrides"`
 	// The HTTP method to use for the request.
 	//
 	// When specified, it overrides HttpRequest for the task.
@@ -26,4 +25,3 @@ type CloudTasksQueueHttpTarget struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_tasks_queue#uri_override CloudTasksQueue#uri_override}
 	UriOverride *CloudTasksQueueHttpTargetUriOverride `field:"optional" json:"uriOverride" yaml:"uriOverride"`
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudbuildBitbucketServerConfigConnectedRepositoriesOutputRefere
 
 	return nil
 }
-

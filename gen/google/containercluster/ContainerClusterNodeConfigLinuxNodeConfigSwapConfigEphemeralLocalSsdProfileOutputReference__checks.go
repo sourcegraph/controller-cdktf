@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralL
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLoca
 
 	return nil
 }
-

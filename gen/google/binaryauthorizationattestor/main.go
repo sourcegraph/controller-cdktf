@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor",
-		reflect.TypeOf((*BinaryAuthorizationAttestor)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestor](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationAttestor{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,11 +79,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNote",
-		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNote)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorAttestationAuthorityNote](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference",
-		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -122,11 +122,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys",
-		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList",
-		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -140,7 +140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -148,7 +148,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference",
-		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "asciiArmoredPgpPublicKey", GoGetter: "AsciiArmoredPgpPublicKey"},
 			_jsii_.MemberProperty{JsiiProperty: "asciiArmoredPgpPublicKeyInput", GoGetter: "AsciiArmoredPgpPublicKeyInput"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,11 +193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey",
-		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference",
-		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -235,15 +235,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig",
-		reflect.TypeOf((*BinaryAuthorizationAttestorConfig)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts",
-		reflect.TypeOf((*BinaryAuthorizationAttestorTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeoutsOutputReference",
-		reflect.TypeOf((*BinaryAuthorizationAttestorTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BinaryAuthorizationAttestorTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BinaryAuthorizationAttestorTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

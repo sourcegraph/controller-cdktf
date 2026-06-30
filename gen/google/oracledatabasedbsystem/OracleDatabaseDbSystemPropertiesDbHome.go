@@ -1,6 +1,5 @@
 package oracledatabasedbsystem
 
-
 type OracleDatabaseDbSystemPropertiesDbHome struct {
 	// database block.
 	//
@@ -17,6 +16,5 @@ type OracleDatabaseDbSystemPropertiesDbHome struct {
 	// Whether unified auditing is enabled for the Database Home.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_db_system#is_unified_auditing_enabled OracleDatabaseDbSystem#is_unified_auditing_enabled}
-	IsUnifiedAuditingEnabled interface{} `field:"optional" json:"isUnifiedAuditingEnabled" yaml:"isUnifiedAuditingEnabled"`
+	IsUnifiedAuditingEnabled any `field:"optional" json:"isUnifiedAuditingEnabled" yaml:"isUnifiedAuditingEnabled"`
 }
-

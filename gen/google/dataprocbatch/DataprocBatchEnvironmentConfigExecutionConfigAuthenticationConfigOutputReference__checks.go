@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigAuthenticationCo
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfi
 
 	return nil
 }
-

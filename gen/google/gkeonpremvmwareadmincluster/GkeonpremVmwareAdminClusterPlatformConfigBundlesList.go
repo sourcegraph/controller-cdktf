@@ -36,7 +36,7 @@ type GkeonpremVmwareAdminClusterPlatformConfigBundlesList interface {
 	Get(index *float64) GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList) WrapsSe
 	return returns
 }
 
-
 func NewGkeonpremVmwareAdminClusterPlatformConfigBundlesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterPlatformConfigBundlesList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewGkeonpremVmwareAdminClusterPlatformConfigBundlesList(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewGkeonpremVmwareAdminClusterPlatformConfigBundlesList_Override(g Gkeonpre
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList) AllWith
 	_jsii_.Invoke(
 		g,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList) Get(ind
 	_jsii_.Invoke(
 		g,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesList) ToStrin
 
 	return returns
 }
-

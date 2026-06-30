@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReferen
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAg
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgent
 
 	return nil
 }
-

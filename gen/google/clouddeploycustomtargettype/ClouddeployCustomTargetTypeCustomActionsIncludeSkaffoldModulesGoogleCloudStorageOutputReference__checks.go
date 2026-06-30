@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGo
 
 	return nil
 }
-

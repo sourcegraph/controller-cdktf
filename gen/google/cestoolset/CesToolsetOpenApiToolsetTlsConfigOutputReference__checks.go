@@ -90,7 +90,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigOutputReference) validateInt
 	return nil
 }
 
-func (c *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigOutputReference) validatePutCaCertsParameters(value interface{}) error {
+func (c *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigOutputReference) validatePutCaCertsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (c *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetTlsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewCesToolsetOpenApiToolsetTlsConfigOutputReferenceParameters(terra
 
 	return nil
 }
-

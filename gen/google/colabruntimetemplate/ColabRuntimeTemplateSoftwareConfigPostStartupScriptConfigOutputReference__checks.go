@@ -98,7 +98,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputR
 
 	return nil
 }
-

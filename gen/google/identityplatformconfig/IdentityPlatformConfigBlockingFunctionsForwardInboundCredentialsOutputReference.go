@@ -10,14 +10,14 @@ import (
 
 type IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference interface {
 	cdktf.ComplexObject
-	AccessToken() interface{}
-	SetAccessToken(val interface{})
-	AccessTokenInput() interface{}
+	AccessToken() any
+	SetAccessToken(val any)
+	AccessTokenInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,14 +30,14 @@ type IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputRefer
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	IdToken() interface{}
-	SetIdToken(val interface{})
-	IdTokenInput() interface{}
+	IdToken() any
+	SetIdToken(val any)
+	IdTokenInput() any
 	InternalValue() *IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials
 	SetInternalValue(val *IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials)
-	RefreshToken() interface{}
-	SetRefreshToken(val interface{})
-	RefreshTokenInput() interface{}
+	RefreshToken() any
+	SetRefreshToken(val any)
+	RefreshTokenInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputRefer
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputRefer
 	ResetRefreshToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsO
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) AccessToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) AccessToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessToken",
@@ -98,8 +98,8 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) AccessTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) AccessTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessTokenInput",
@@ -108,8 +108,8 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) IdToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) IdToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"idToken",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) IdTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) IdTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"idTokenInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) RefreshToken() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) RefreshToken() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"refreshToken",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) RefreshTokenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) RefreshTokenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"refreshTokenInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return returns
 }
 
-
 func NewIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputRe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference)SetAccessToken(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) SetAccessToken(val any) {
 	if err := j.validateSetAccessTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference)SetIdToken(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) SetIdToken(val any) {
 	if err := j.validateSetIdTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference)SetInternalValue(val *IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials) {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) SetInternalValue(val *IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference)SetRefreshToken(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) SetRefreshToken(val any) {
 	if err := j.validateSetRefreshTokenParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 
 	return returns
 }
-

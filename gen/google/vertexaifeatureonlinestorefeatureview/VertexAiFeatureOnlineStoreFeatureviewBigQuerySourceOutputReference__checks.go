@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewVertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReferen
 
 	return nil
 }
-

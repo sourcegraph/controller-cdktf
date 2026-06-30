@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
-		reflect.TypeOf((*IapWebTypeComputeIamMember)(nil)).Elem(),
+		reflect.TypeFor[IapWebTypeComputeIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapWebTypeComputeIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,11 +76,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberCondition",
-		reflect.TypeOf((*IapWebTypeComputeIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[IapWebTypeComputeIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConditionOutputReference",
-		reflect.TypeOf((*IapWebTypeComputeIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapWebTypeComputeIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -119,6 +119,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig",
-		reflect.TypeOf((*IapWebTypeComputeIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[IapWebTypeComputeIamMemberConfig](),
 	)
 }

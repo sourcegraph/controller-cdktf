@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutputReference) validateSetEnableConfidentialComputeParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutputReference) validateSetEnableConfidentialComputeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewComputeRegionInstanceTemplateConfidentialInstanceConfigOutputRef
 
 	return nil
 }
-

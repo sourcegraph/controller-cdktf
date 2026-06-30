@@ -153,7 +153,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -261,4 +261,3 @@ func validateNewMonitoringAlertPolicyConditionsConditionSqlOutputReferenceParame
 
 	return nil
 }
-

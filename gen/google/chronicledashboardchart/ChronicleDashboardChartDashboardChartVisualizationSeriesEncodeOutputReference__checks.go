@@ -98,7 +98,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesEncod
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesEncodeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesEncodeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewChronicleDashboardChartDashboardChartVisualizationSeriesEncodeOu
 
 	return nil
 }
-

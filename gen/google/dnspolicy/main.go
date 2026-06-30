@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicy",
-		reflect.TypeOf((*DnsPolicy)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,11 +94,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig",
-		reflect.TypeOf((*DnsPolicyAlternativeNameServerConfig)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyAlternativeNameServerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference",
-		reflect.TypeOf((*DnsPolicyAlternativeNameServerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyAlternativeNameServerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -125,7 +125,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsPolicyAlternativeNameServerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -133,11 +133,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers",
-		reflect.TypeOf((*DnsPolicyAlternativeNameServerConfigTargetNameServers)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyAlternativeNameServerConfigTargetNameServers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList",
-		reflect.TypeOf((*DnsPolicyAlternativeNameServerConfigTargetNameServersList)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyAlternativeNameServerConfigTargetNameServersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -159,7 +159,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference",
-		reflect.TypeOf((*DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -188,7 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -196,15 +196,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyConfig",
-		reflect.TypeOf((*DnsPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyDns64Config",
-		reflect.TypeOf((*DnsPolicyDns64Config)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyDns64Config](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyDns64ConfigOutputReference",
-		reflect.TypeOf((*DnsPolicyDns64ConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyDns64ConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -231,7 +231,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsPolicyDns64ConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -239,11 +239,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyDns64ConfigScope",
-		reflect.TypeOf((*DnsPolicyDns64ConfigScope)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyDns64ConfigScope](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference",
-		reflect.TypeOf((*DnsPolicyDns64ConfigScopeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyDns64ConfigScopeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allQueries", GoGetter: "AllQueries"},
 			_jsii_.MemberProperty{JsiiProperty: "allQueriesInput", GoGetter: "AllQueriesInput"},
@@ -270,7 +270,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -278,11 +278,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyNetworks",
-		reflect.TypeOf((*DnsPolicyNetworks)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyNetworks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyNetworksList",
-		reflect.TypeOf((*DnsPolicyNetworksList)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyNetworksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsPolicyNetworksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -304,7 +304,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference",
-		reflect.TypeOf((*DnsPolicyNetworksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyNetworksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -330,7 +330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsPolicyNetworksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -338,11 +338,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyTimeouts",
-		reflect.TypeOf((*DnsPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*DnsPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DnsPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -375,7 +375,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DnsPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

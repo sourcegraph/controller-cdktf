@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewIdentityPlatformTenantTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstance",
-		reflect.TypeOf((*FilestoreInstance)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -128,19 +128,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceConfig",
-		reflect.TypeOf((*FilestoreInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices",
-		reflect.TypeOf((*FilestoreInstanceDirectoryServices)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceDirectoryServices](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap",
-		reflect.TypeOf((*FilestoreInstanceDirectoryServicesLdap)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceDirectoryServicesLdap](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference",
-		reflect.TypeOf((*FilestoreInstanceDirectoryServicesLdapOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceDirectoryServicesLdapOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usersOu", GoGetter: "UsersOu"},
 			_jsii_.MemberProperty{JsiiProperty: "usersOuInput", GoGetter: "UsersOuInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceDirectoryServicesLdapOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,7 +182,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference",
-		reflect.TypeOf((*FilestoreInstanceDirectoryServicesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceDirectoryServicesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -210,7 +210,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -218,11 +218,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplication",
-		reflect.TypeOf((*FilestoreInstanceEffectiveReplication)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceEffectiveReplication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationList",
-		reflect.TypeOf((*FilestoreInstanceEffectiveReplicationList)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceEffectiveReplicationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -235,7 +235,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceEffectiveReplicationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -243,7 +243,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationOutputReference",
-		reflect.TypeOf((*FilestoreInstanceEffectiveReplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceEffectiveReplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -277,11 +277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationReplicas",
-		reflect.TypeOf((*FilestoreInstanceEffectiveReplicationReplicas)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceEffectiveReplicationReplicas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationReplicasList",
-		reflect.TypeOf((*FilestoreInstanceEffectiveReplicationReplicasList)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceEffectiveReplicationReplicasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceEffectiveReplicationReplicasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -302,7 +302,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationReplicasOutputReference",
-		reflect.TypeOf((*FilestoreInstanceEffectiveReplicationReplicasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceEffectiveReplicationReplicasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -330,7 +330,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceEffectiveReplicationReplicasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -338,15 +338,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileShares",
-		reflect.TypeOf((*FilestoreInstanceFileShares)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceFileShares](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions",
-		reflect.TypeOf((*FilestoreInstanceFileSharesNfsExportOptions)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceFileSharesNfsExportOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsList",
-		reflect.TypeOf((*FilestoreInstanceFileSharesNfsExportOptionsList)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceFileSharesNfsExportOptionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -360,7 +360,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -368,7 +368,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference",
-		reflect.TypeOf((*FilestoreInstanceFileSharesNfsExportOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceFileSharesNfsExportOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessMode", GoGetter: "AccessMode"},
 			_jsii_.MemberProperty{JsiiProperty: "accessModeInput", GoGetter: "AccessModeInput"},
@@ -410,7 +410,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -418,7 +418,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference",
-		reflect.TypeOf((*FilestoreInstanceFileSharesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceFileSharesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityGb", GoGetter: "CapacityGb"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityGbInput", GoGetter: "CapacityGbInput"},
@@ -456,7 +456,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceFileSharesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -464,11 +464,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceInitialReplication",
-		reflect.TypeOf((*FilestoreInstanceInitialReplication)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceInitialReplication](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceInitialReplicationOutputReference",
-		reflect.TypeOf((*FilestoreInstanceInitialReplicationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceInitialReplicationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -499,7 +499,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceInitialReplicationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -507,11 +507,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceInitialReplicationReplicas",
-		reflect.TypeOf((*FilestoreInstanceInitialReplicationReplicas)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceInitialReplicationReplicas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceInitialReplicationReplicasList",
-		reflect.TypeOf((*FilestoreInstanceInitialReplicationReplicasList)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceInitialReplicationReplicasList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -525,7 +525,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceInitialReplicationReplicasList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -533,7 +533,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceInitialReplicationReplicasOutputReference",
-		reflect.TypeOf((*FilestoreInstanceInitialReplicationReplicasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceInitialReplicationReplicasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -559,7 +559,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceInitialReplicationReplicasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -567,11 +567,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworks",
-		reflect.TypeOf((*FilestoreInstanceNetworks)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceNetworks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksList",
-		reflect.TypeOf((*FilestoreInstanceNetworksList)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceNetworksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -585,7 +585,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceNetworksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -593,7 +593,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference",
-		reflect.TypeOf((*FilestoreInstanceNetworksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceNetworksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -632,7 +632,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceNetworksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -640,11 +640,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig",
-		reflect.TypeOf((*FilestoreInstanceNetworksPscConfig)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceNetworksPscConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference",
-		reflect.TypeOf((*FilestoreInstanceNetworksPscConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceNetworksPscConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -671,7 +671,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceNetworksPscConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -679,15 +679,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstancePerformanceConfig",
-		reflect.TypeOf((*FilestoreInstancePerformanceConfig)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstancePerformanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstancePerformanceConfigFixedIops",
-		reflect.TypeOf((*FilestoreInstancePerformanceConfigFixedIops)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstancePerformanceConfigFixedIops](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstancePerformanceConfigFixedIopsOutputReference",
-		reflect.TypeOf((*FilestoreInstancePerformanceConfigFixedIopsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstancePerformanceConfigFixedIopsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -714,7 +714,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -722,11 +722,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstancePerformanceConfigIopsPerTb",
-		reflect.TypeOf((*FilestoreInstancePerformanceConfigIopsPerTb)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstancePerformanceConfigIopsPerTb](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstancePerformanceConfigIopsPerTbOutputReference",
-		reflect.TypeOf((*FilestoreInstancePerformanceConfigIopsPerTbOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstancePerformanceConfigIopsPerTbOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -753,7 +753,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstancePerformanceConfigIopsPerTbOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -761,7 +761,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstancePerformanceConfigOutputReference",
-		reflect.TypeOf((*FilestoreInstancePerformanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstancePerformanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -793,7 +793,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstancePerformanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -801,11 +801,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceTimeouts",
-		reflect.TypeOf((*FilestoreInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*FilestoreInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FilestoreInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -838,7 +838,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FilestoreInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

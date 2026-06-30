@@ -109,7 +109,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamDenyPolicyRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesOutputReference) validateSetDescriptionPara
 	return nil
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamDenyPolicyRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewIamDenyPolicyRulesOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

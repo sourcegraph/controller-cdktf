@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocMetastoreFederationIamBindingConditionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederationIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederationIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDataprocMetastoreFederationIamBindingConditionOutputReferencePar
 
 	return nil
 }
-

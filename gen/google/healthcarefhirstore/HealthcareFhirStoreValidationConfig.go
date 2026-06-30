@@ -1,31 +1,30 @@
 package healthcarefhirstore
 
-
 type HealthcareFhirStoreValidationConfig struct {
 	// Whether to disable FHIRPath validation for incoming resources.
 	//
 	// The default value is false. Set this to true to disable checking incoming resources for conformance against FHIRPath requirement defined in the FHIR specification. This property only affects resource types that do not have profiles configured for them, any rules in enabled implementation guides will still be enforced.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#disable_fhirpath_validation HealthcareFhirStore#disable_fhirpath_validation}
-	DisableFhirpathValidation interface{} `field:"optional" json:"disableFhirpathValidation" yaml:"disableFhirpathValidation"`
+	DisableFhirpathValidation any `field:"optional" json:"disableFhirpathValidation" yaml:"disableFhirpathValidation"`
 	// Whether to disable profile validation for this FHIR store.
 	//
 	// The default value is false. Set this to true to disable checking incoming resources for conformance against structure definitions in this FHIR store.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#disable_profile_validation HealthcareFhirStore#disable_profile_validation}
-	DisableProfileValidation interface{} `field:"optional" json:"disableProfileValidation" yaml:"disableProfileValidation"`
+	DisableProfileValidation any `field:"optional" json:"disableProfileValidation" yaml:"disableProfileValidation"`
 	// Whether to disable reference type validation for incoming resources.
 	//
 	// The default value is false. Set this to true to disable checking incoming resources for conformance against reference type requirement defined in the FHIR specification. This property only affects resource types that do not have profiles configured for them, any rules in enabled implementation guides will still be enforced.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#disable_reference_type_validation HealthcareFhirStore#disable_reference_type_validation}
-	DisableReferenceTypeValidation interface{} `field:"optional" json:"disableReferenceTypeValidation" yaml:"disableReferenceTypeValidation"`
+	DisableReferenceTypeValidation any `field:"optional" json:"disableReferenceTypeValidation" yaml:"disableReferenceTypeValidation"`
 	// Whether to disable required fields validation for incoming resources.
 	//
 	// The default value is false. Set this to true to disable checking incoming resources for conformance against required fields requirement defined in the FHIR specification. This property only affects resource types that do not have profiles configured for them, any rules in enabled implementation guides will still be enforced.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#disable_required_field_validation HealthcareFhirStore#disable_required_field_validation}
-	DisableRequiredFieldValidation interface{} `field:"optional" json:"disableRequiredFieldValidation" yaml:"disableRequiredFieldValidation"`
+	DisableRequiredFieldValidation any `field:"optional" json:"disableRequiredFieldValidation" yaml:"disableRequiredFieldValidation"`
 	// A list of implementation guide URLs in this FHIR store that are used to configure the profiles to use for validation.
 	//
 	// When a URL cannot be resolved (for example, in a type assertion), the server does not return an error.
@@ -42,4 +41,3 @@ type HealthcareFhirStoreValidationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_fhir_store#enabled_implementation_guides HealthcareFhirStore#enabled_implementation_guides}
 	EnabledImplementationGuides *[]*string `field:"optional" json:"enabledImplementationGuides" yaml:"enabledImplementationGuides"`
 }
-

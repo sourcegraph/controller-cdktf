@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentParamsOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachmentParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachmentParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInterconnectAttachmentParamsOutputReferenceParameters(ter
 
 	return nil
 }
-

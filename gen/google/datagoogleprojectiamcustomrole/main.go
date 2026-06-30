@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRole.DataGoogleProjectIamCustomRole",
-		reflect.TypeOf((*DataGoogleProjectIamCustomRole)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectIamCustomRole](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleProjectIamCustomRole{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,6 +67,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleProjectIamCustomRole.DataGoogleProjectIamCustomRoleConfig",
-		reflect.TypeOf((*DataGoogleProjectIamCustomRoleConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleProjectIamCustomRoleConfig](),
 	)
 }

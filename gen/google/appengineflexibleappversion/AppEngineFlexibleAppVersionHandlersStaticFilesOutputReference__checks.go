@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) validateSetApplicationReadableParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) validateSetApplicationReadableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -223,7 +223,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) validateSetRequireMatchingFileParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference) validateSetRequireMatchingFileParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -278,4 +278,3 @@ func validateNewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReferencePar
 
 	return nil
 }
-

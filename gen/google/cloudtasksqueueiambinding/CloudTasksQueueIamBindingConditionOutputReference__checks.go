@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudTasksQueueIamBindingConditionOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudTasksQueueIamBindingConditionOutputReferenceParameters(terr
 
 	return nil
 }
-

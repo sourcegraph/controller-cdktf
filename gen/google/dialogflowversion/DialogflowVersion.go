@@ -15,15 +15,15 @@ type DialogflowVersion interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,28 +57,28 @@ type DialogflowVersion interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DialogflowVersionTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	VersionNumber() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type DialogflowVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type DialogflowVersion interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type DialogflowVersion interface {
 	ResetOverrideLogicalId()
 	ResetParent()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DialogflowVersion
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DialogflowVersion) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowVersion) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowVersion) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DialogflowVersion) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowVersion) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DialogflowVersion) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DialogflowVersion) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowVersion) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowVersion) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_DialogflowVersion) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowVersion) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DialogflowVersion) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -331,8 +331,8 @@ func (j *jsiiProxy_DialogflowVersion) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowVersion) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowVersion) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_DialogflowVersion) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowVersion) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DialogflowVersion) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_DialogflowVersion) Timeouts() DialogflowVersionTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowVersion) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowVersion) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_DialogflowVersion) VersionNumber() *float64 {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version google_dialogflow_version} Resource.
 func NewDialogflowVersion(scope constructs.Construct, id *string, config *DialogflowVersionConfig) DialogflowVersion {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewDialogflowVersion(scope constructs.Construct, id *string, config *Dialog
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewDialogflowVersion_Override(d DialogflowVersion, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersion",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetConnection(val interface{}) {
+func (j *jsiiProxy_DialogflowVersion) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DialogflowVersion)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetCount(val interface{}) {
+func (j *jsiiProxy_DialogflowVersion) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DialogflowVersion)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DialogflowVersion) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_DialogflowVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetDescription(val *string) {
+func (j *jsiiProxy_DialogflowVersion) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -482,7 +481,7 @@ func (j *jsiiProxy_DialogflowVersion)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DialogflowVersion) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -490,7 +489,7 @@ func (j *jsiiProxy_DialogflowVersion)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetId(val *string) {
+func (j *jsiiProxy_DialogflowVersion) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_DialogflowVersion)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DialogflowVersion) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_DialogflowVersion)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetParent(val *string) {
+func (j *jsiiProxy_DialogflowVersion) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_DialogflowVersion)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DialogflowVersion) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_DialogflowVersion)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowVersion)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DialogflowVersion) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func DialogflowVersion_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersion",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func DialogflowVersion_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DialogflowVersion_IsConstruct(x interface{}) *bool {
+func DialogflowVersion_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowVersion_IsConstructParameters(x); err != nil {
@@ -589,7 +588,7 @@ func DialogflowVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersion",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func DialogflowVersion_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DialogflowVersion_IsTerraformElement(x interface{}) *bool {
+func DialogflowVersion_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowVersion_IsTerraformElementParameters(x); err != nil {
@@ -608,7 +607,7 @@ func DialogflowVersion_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersion",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func DialogflowVersion_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DialogflowVersion_IsTerraformResource(x interface{}) *bool {
+func DialogflowVersion_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowVersion_IsTerraformResourceParameters(x); err != nil {
@@ -627,7 +626,7 @@ func DialogflowVersion_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowVersion.DialogflowVersion",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -652,31 +651,31 @@ func (d *jsiiProxy_DialogflowVersion) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DialogflowVersion) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DialogflowVersion) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowVersion) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -692,7 +691,7 @@ func (d *jsiiProxy_DialogflowVersion) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -708,7 +707,7 @@ func (d *jsiiProxy_DialogflowVersion) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -724,7 +723,7 @@ func (d *jsiiProxy_DialogflowVersion) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func (d *jsiiProxy_DialogflowVersion) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func (d *jsiiProxy_DialogflowVersion) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (d *jsiiProxy_DialogflowVersion) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (d *jsiiProxy_DialogflowVersion) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,15 +803,15 @@ func (d *jsiiProxy_DialogflowVersion) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowVersion) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowVersion) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -831,7 +830,7 @@ func (d *jsiiProxy_DialogflowVersion) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -844,7 +843,7 @@ func (d *jsiiProxy_DialogflowVersion) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,18 +857,18 @@ func (d *jsiiProxy_DialogflowVersion) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DialogflowVersion) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DialogflowVersion) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -880,7 +879,7 @@ func (d *jsiiProxy_DialogflowVersion) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -891,7 +890,7 @@ func (d *jsiiProxy_DialogflowVersion) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -902,7 +901,7 @@ func (d *jsiiProxy_DialogflowVersion) PutTimeouts(value *DialogflowVersionTimeou
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -946,8 +945,8 @@ func (d *jsiiProxy_DialogflowVersion) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DialogflowVersion) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DialogflowVersion) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -959,8 +958,8 @@ func (d *jsiiProxy_DialogflowVersion) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowVersion) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DialogflowVersion) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -972,8 +971,8 @@ func (d *jsiiProxy_DialogflowVersion) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowVersion) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowVersion) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -985,8 +984,8 @@ func (d *jsiiProxy_DialogflowVersion) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowVersion) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowVersion) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1011,8 +1010,8 @@ func (d *jsiiProxy_DialogflowVersion) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowVersion) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowVersion) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1023,4 +1022,3 @@ func (d *jsiiProxy_DialogflowVersion) ToTerraform() interface{} {
 
 	return returns
 }
-

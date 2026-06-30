@@ -109,7 +109,7 @@ func (h *jsiiProxy_HealthcarePipelineJobMappingPipelineJobMappingConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobMappingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcarePipelineJobMappingPipelineJobMappingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewHealthcarePipelineJobMappingPipelineJobMappingConfigOutputRefere
 
 	return nil
 }
-

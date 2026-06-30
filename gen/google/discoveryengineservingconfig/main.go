@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfig",
-		reflect.TypeOf((*DiscoveryEngineServingConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineServingConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineServingConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfigConfig",
-		reflect.TypeOf((*DiscoveryEngineServingConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineServingConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfigTimeouts",
-		reflect.TypeOf((*DiscoveryEngineServingConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineServingConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.discoveryEngineServingConfig.DiscoveryEngineServingConfigTimeoutsOutputReference",
-		reflect.TypeOf((*DiscoveryEngineServingConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DiscoveryEngineServingConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DiscoveryEngineServingConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

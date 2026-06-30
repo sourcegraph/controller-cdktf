@@ -1,6 +1,5 @@
 package iamworkloadidentitypool
 
-
 type IamWorkloadIdentityPoolInlineCertificateIssuanceConfig struct {
 	// A required mapping of a cloud region to the CA pool resource located in that region used for certificate issuance, adhering to these constraints:  * **Key format:** A supported cloud region name equivalent to the location identifier in the corresponding map entry's value.
 	//
@@ -52,6 +51,5 @@ type IamWorkloadIdentityPoolInlineCertificateIssuanceConfig struct {
 	// not be set if you want to use your own CA pools to provision the certificates.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_workload_identity_pool#use_default_shared_ca IamWorkloadIdentityPool#use_default_shared_ca}
-	UseDefaultSharedCa interface{} `field:"optional" json:"useDefaultSharedCa" yaml:"useDefaultSharedCa"`
+	UseDefaultSharedCa any `field:"optional" json:"useDefaultSharedCa" yaml:"useDefaultSharedCa"`
 }
-

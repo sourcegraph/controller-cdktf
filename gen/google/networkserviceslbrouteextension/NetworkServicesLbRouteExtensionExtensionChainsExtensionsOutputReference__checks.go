@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetFailOpenParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetFailOpenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -239,7 +239,7 @@ func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetObservabilityModeParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputReference) validateSetObservabilityModeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -326,4 +326,3 @@ func validateNewNetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputRe
 
 	return nil
 }
-

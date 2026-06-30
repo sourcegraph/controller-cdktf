@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableGcPolicyMaxAgeOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_BigtableGcPolicyMaxAgeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableGcPolicyMaxAgeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBigtableGcPolicyMaxAgeOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

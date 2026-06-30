@@ -34,7 +34,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableTableColumnFamilyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewBigtableTableColumnFamilyListParameters(terraformResource cdktf.
 
 	return nil
 }
-

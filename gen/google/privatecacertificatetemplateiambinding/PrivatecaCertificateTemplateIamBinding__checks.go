@@ -19,7 +19,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateAddMoveTarget
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateMoveFromIdPar
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validatePrivatecaCertificateTemplateIamBinding_GenerateConfigForImportParam
 	return nil
 }
 
-func validatePrivatecaCertificateTemplateIamBinding_IsConstructParameters(x interface{}) error {
+func validatePrivatecaCertificateTemplateIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validatePrivatecaCertificateTemplateIamBinding_IsConstructParameters(x inte
 	return nil
 }
 
-func validatePrivatecaCertificateTemplateIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validatePrivatecaCertificateTemplateIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validatePrivatecaCertificateTemplateIamBinding_IsTerraformElementParameters
 	return nil
 }
 
-func validatePrivatecaCertificateTemplateIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validatePrivatecaCertificateTemplateIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateSetCertificat
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateSetConnection
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateSetProjectPar
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewPrivatecaCertificateTemplateIamBindingParameters(scope construct
 
 	return nil
 }
-

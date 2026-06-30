@@ -90,7 +90,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validatePutEndpointsParameters(value interface{}) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validatePutEndpointsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRefer
 
 	return nil
 }
-

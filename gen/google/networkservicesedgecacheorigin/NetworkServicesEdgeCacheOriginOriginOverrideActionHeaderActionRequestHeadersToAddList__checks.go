@@ -34,7 +34,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActio
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRe
 
 	return nil
 }
-

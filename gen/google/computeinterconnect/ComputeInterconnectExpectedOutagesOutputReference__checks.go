@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectExpectedOutagesOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectExpectedOutagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectExpectedOutagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInterconnectExpectedOutagesOutputReferenceParameters(terr
 
 	return nil
 }
-

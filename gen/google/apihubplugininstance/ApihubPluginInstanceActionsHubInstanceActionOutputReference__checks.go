@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApihubPluginInstanceActionsHubInstanceActionOutputReferenceParam
 
 	return nil
 }
-

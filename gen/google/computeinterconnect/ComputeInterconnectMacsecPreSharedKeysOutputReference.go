@@ -12,9 +12,9 @@ type ComputeInterconnectMacsecPreSharedKeysOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,13 +25,13 @@ type ComputeInterconnectMacsecPreSharedKeysOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	FailOpen() interface{}
-	SetFailOpen(val interface{})
-	FailOpenInput() interface{}
+	FailOpen() any
+	SetFailOpen(val any)
+	FailOpenInput() any
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -49,7 +49,7 @@ type ComputeInterconnectMacsecPreSharedKeysOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type ComputeInterconnectMacsecPreSharedKeysOutputReference interface {
 	ResetStartTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -117,8 +117,8 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) Creati
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) FailOpen() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) FailOpen() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failOpen",
@@ -127,8 +127,8 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) FailOp
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) FailOpenInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) FailOpenInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"failOpenInput",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) Fqn() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) Terraf
 	return returns
 }
 
-
 func NewComputeInterconnectMacsecPreSharedKeysOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeInterconnectMacsecPreSharedKeysOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewComputeInterconnectMacsecPreSharedKeysOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewComputeInterconnectMacsecPreSharedKeysOutputReference_Override(c Compute
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetFailOpen(val interface{}) {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) SetFailOpen(val any) {
 	if err := j.validateSetFailOpenParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetFail
 	)
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetName(val *string) {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetName
 	)
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetStartTime(val *string) {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) SetStartTime(val *string) {
 	if err := j.validateSetStartTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetStar
 	)
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) Comput
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetBoo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetBoo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetLis
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetNum
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetStr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) GetStr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) Interp
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) ResetS
 	)
 }
 
-func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysOutputReference) ToStri
 
 	return returns
 }
-

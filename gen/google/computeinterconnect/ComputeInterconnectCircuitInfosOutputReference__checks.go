@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectCircuitInfosOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectCircuitInfosOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectCircuitInfosOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInterconnectCircuitInfosOutputReferenceParameters(terrafo
 
 	return nil
 }
-

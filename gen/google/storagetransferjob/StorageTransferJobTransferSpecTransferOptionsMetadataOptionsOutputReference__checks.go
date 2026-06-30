@@ -106,7 +106,7 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsMetadataOptionsO
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -270,4 +270,3 @@ func validateNewStorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutp
 
 	return nil
 }
-

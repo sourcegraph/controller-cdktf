@@ -23,15 +23,15 @@ type LoggingBillingAccountBucketConfig interface {
 	CmekSettings() LoggingBillingAccountBucketConfigCmekSettingsOutputReference
 	CmekSettingsInput() *LoggingBillingAccountBucketConfigCmekSettings
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -51,7 +51,7 @@ type LoggingBillingAccountBucketConfig interface {
 	SetId(val *string)
 	IdInput() *string
 	IndexConfigs() LoggingBillingAccountBucketConfigIndexConfigsList
-	IndexConfigsInput() interface{}
+	IndexConfigsInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -68,27 +68,27 @@ type LoggingBillingAccountBucketConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetentionDays() *float64
 	SetRetentionDays(val *float64)
 	RetentionDaysInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type LoggingBillingAccountBucketConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type LoggingBillingAccountBucketConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,7 +126,7 @@ type LoggingBillingAccountBucketConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCmekSettings(value *LoggingBillingAccountBucketConfigCmekSettings)
-	PutIndexConfigs(value interface{})
+	PutIndexConfigs(value any)
 	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
@@ -135,17 +135,17 @@ type LoggingBillingAccountBucketConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionDays()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for LoggingBillingAccountBucketConfig
@@ -223,8 +223,8 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) CmekSettingsInput() *Loggi
 	return returns
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -233,8 +233,8 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -243,8 +243,8 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,8 +343,8 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) IndexConfigs() LoggingBill
 	return returns
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) IndexConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) IndexConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"indexConfigsInput",
@@ -423,8 +423,8 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -493,7 +493,6 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig) TerraformResourceType() *s
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_billing_account_bucket_config google_logging_billing_account_bucket_config} Resource.
 func NewLoggingBillingAccountBucketConfig(scope constructs.Construct, id *string, config *LoggingBillingAccountBucketConfigConfig) LoggingBillingAccountBucketConfig {
 	_init_.Initialize()
@@ -505,7 +504,7 @@ func NewLoggingBillingAccountBucketConfig(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -518,12 +517,12 @@ func NewLoggingBillingAccountBucketConfig_Override(l LoggingBillingAccountBucket
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetBillingAccount(val *string) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetBillingAccount(val *string) {
 	if err := j.validateSetBillingAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetBillingAccount(val *stri
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetBucketId(val *string) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetBucketId(val *string) {
 	if err := j.validateSetBucketIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetBucketId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -567,7 +566,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -575,7 +574,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetDescription(val *string) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetDescription(val *string)
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -594,7 +593,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetId(val *string) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetLocation(val *string) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetProvisioners(val *[]inte
 	)
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfig)SetRetentionDays(val *float64) {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfig) SetRetentionDays(val *float64) {
 	if err := j.validateSetRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func LoggingBillingAccountBucketConfig_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func LoggingBillingAccountBucketConfig_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func LoggingBillingAccountBucketConfig_IsConstruct(x interface{}) *bool {
+func LoggingBillingAccountBucketConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingBillingAccountBucketConfig_IsConstructParameters(x); err != nil {
@@ -704,7 +703,7 @@ func LoggingBillingAccountBucketConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func LoggingBillingAccountBucketConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingBillingAccountBucketConfig_IsTerraformElement(x interface{}) *bool {
+func LoggingBillingAccountBucketConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingBillingAccountBucketConfig_IsTerraformElementParameters(x); err != nil {
@@ -723,7 +722,7 @@ func LoggingBillingAccountBucketConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -731,7 +730,7 @@ func LoggingBillingAccountBucketConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func LoggingBillingAccountBucketConfig_IsTerraformResource(x interface{}) *bool {
+func LoggingBillingAccountBucketConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateLoggingBillingAccountBucketConfig_IsTerraformResourceParameters(x); err != nil {
@@ -742,7 +741,7 @@ func LoggingBillingAccountBucketConfig_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -767,31 +766,31 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		l,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) AddOverride(path *string, value interface{}) {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) AddOverride(path *string, value any) {
 	if err := l.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetListAttribute(terraform
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,15 +918,15 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -946,7 +945,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		l,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -959,7 +958,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) InterpolationForAttribute(
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -973,18 +972,18 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) MoveTo(moveTarget *string, index interface{}) {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) MoveTo(moveTarget *string, index any) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -995,7 +994,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		l,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1017,18 +1016,18 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) PutCmekSettings(value *Log
 	_jsii_.InvokeVoid(
 		l,
 		"putCmekSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) PutIndexConfigs(value interface{}) {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) PutIndexConfigs(value any) {
 	if err := l.validatePutIndexConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
 		"putIndexConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1080,8 +1079,8 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ResetRetentionDays() {
 	)
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1093,8 +1092,8 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
@@ -1106,8 +1105,8 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1119,8 +1118,8 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ToHclTerraform() interface
 	return returns
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1145,8 +1144,8 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ToString() *string {
 	return returns
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		l,
@@ -1157,4 +1156,3 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) ToTerraform() interface{} 
 
 	return returns
 }
-

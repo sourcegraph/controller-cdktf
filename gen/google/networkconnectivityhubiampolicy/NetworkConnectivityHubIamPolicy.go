@@ -15,15 +15,15 @@ type NetworkConnectivityHubIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,24 +60,24 @@ type NetworkConnectivityHubIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type NetworkConnectivityHubIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type NetworkConnectivityHubIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type NetworkConnectivityHubIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetworkConnectivityHubIamPolicy
@@ -147,8 +147,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) CdktfStack() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_connectivity_hub_iam_policy google_network_connectivity_hub_iam_policy} Resource.
 func NewNetworkConnectivityHubIamPolicy(scope constructs.Construct, id *string, config *NetworkConnectivityHubIamPolicyConfig) NetworkConnectivityHubIamPolicy {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewNetworkConnectivityHubIamPolicy(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewNetworkConnectivityHubIamPolicy_Override(n NetworkConnectivityHubIamPoli
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetHub(val *string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetHub(val *string) {
 	if err := j.validateSetHubParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetHub(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetworkConnectivityHubIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func NetworkConnectivityHubIamPolicy_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func NetworkConnectivityHubIamPolicy_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetworkConnectivityHubIamPolicy_IsConstruct(x interface{}) *bool {
+func NetworkConnectivityHubIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityHubIamPolicy_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func NetworkConnectivityHubIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func NetworkConnectivityHubIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkConnectivityHubIamPolicy_IsTerraformElement(x interface{}) *bool {
+func NetworkConnectivityHubIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityHubIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func NetworkConnectivityHubIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func NetworkConnectivityHubIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetworkConnectivityHubIamPolicy_IsTerraformResource(x interface{}) *bool {
+func NetworkConnectivityHubIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetworkConnectivityHubIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func NetworkConnectivityHubIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.networkConnectivityHubIamPolicy.NetworkConnectivityHubIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -818,7 +817,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -906,8 +905,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ResetProject() {
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -919,8 +918,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -932,8 +931,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -945,8 +944,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ToHclTerraform() interface{}
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -971,8 +970,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -983,4 +982,3 @@ func (n *jsiiProxy_NetworkConnectivityHubIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

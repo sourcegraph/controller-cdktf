@@ -15,15 +15,15 @@ type IamDenyPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,28 +60,28 @@ type IamDenyPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Rules() IamDenyPolicyRulesList
-	RulesInput() interface{}
+	RulesInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() IamDenyPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type IamDenyPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -111,14 +111,14 @@ type IamDenyPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRules(value interface{})
+	PutRules(value any)
 	PutTimeouts(value *IamDenyPolicyTimeouts)
 	ResetDisplayName()
 	ResetId()
@@ -126,17 +126,17 @@ type IamDenyPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IamDenyPolicy
@@ -154,8 +154,8 @@ func (j *jsiiProxy_IamDenyPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamDenyPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_IamDenyPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamDenyPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_IamDenyPolicy) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamDenyPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_IamDenyPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IamDenyPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_IamDenyPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamDenyPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_IamDenyPolicy) Rules() IamDenyPolicyRulesList {
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicy) RulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamDenyPolicy) RulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rulesInput",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_IamDenyPolicy) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IamDenyPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_IamDenyPolicy) Timeouts() IamDenyPolicyTimeoutsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamDenyPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_IamDenyPolicy) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_deny_policy google_iam_deny_policy} Resource.
 func NewIamDenyPolicy(scope constructs.Construct, id *string, config *IamDenyPolicyConfig) IamDenyPolicy {
@@ -446,7 +445,7 @@ func NewIamDenyPolicy(scope constructs.Construct, id *string, config *IamDenyPol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewIamDenyPolicy_Override(i IamDenyPolicy, scope constructs.Construct, id *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_IamDenyPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_IamDenyPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IamDenyPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetDisplayName(val *string) {
+func (j *jsiiProxy_IamDenyPolicy) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IamDenyPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -513,7 +512,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetId(val *string) {
+func (j *jsiiProxy_IamDenyPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IamDenyPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetName(val *string) {
+func (j *jsiiProxy_IamDenyPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetParent(val *string) {
+func (j *jsiiProxy_IamDenyPolicy) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IamDenyPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_IamDenyPolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IamDenyPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func IamDenyPolicy_GenerateConfigForImport(scope constructs.Construct, importToI
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -612,7 +611,7 @@ func IamDenyPolicy_GenerateConfigForImport(scope constructs.Construct, importToI
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IamDenyPolicy_IsConstruct(x interface{}) *bool {
+func IamDenyPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamDenyPolicy_IsConstructParameters(x); err != nil {
@@ -623,7 +622,7 @@ func IamDenyPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -631,7 +630,7 @@ func IamDenyPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IamDenyPolicy_IsTerraformElement(x interface{}) *bool {
+func IamDenyPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamDenyPolicy_IsTerraformElementParameters(x); err != nil {
@@ -642,7 +641,7 @@ func IamDenyPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func IamDenyPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IamDenyPolicy_IsTerraformResource(x interface{}) *bool {
+func IamDenyPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIamDenyPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -661,7 +660,7 @@ func IamDenyPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,31 +685,31 @@ func (i *jsiiProxy_IamDenyPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IamDenyPolicy) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IamDenyPolicy) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IamDenyPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamDenyPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (i *jsiiProxy_IamDenyPolicy) GetBooleanAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (i *jsiiProxy_IamDenyPolicy) GetBooleanMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (i *jsiiProxy_IamDenyPolicy) GetListAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (i *jsiiProxy_IamDenyPolicy) GetNumberAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (i *jsiiProxy_IamDenyPolicy) GetNumberListAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (i *jsiiProxy_IamDenyPolicy) GetNumberMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (i *jsiiProxy_IamDenyPolicy) GetStringAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,15 +837,15 @@ func (i *jsiiProxy_IamDenyPolicy) GetStringMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamDenyPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -865,7 +864,7 @@ func (i *jsiiProxy_IamDenyPolicy) ImportFrom(id *string, provider cdktf.Terrafor
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -878,7 +877,7 @@ func (i *jsiiProxy_IamDenyPolicy) InterpolationForAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -892,18 +891,18 @@ func (i *jsiiProxy_IamDenyPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IamDenyPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IamDenyPolicy) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -914,7 +913,7 @@ func (i *jsiiProxy_IamDenyPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -925,18 +924,18 @@ func (i *jsiiProxy_IamDenyPolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (i *jsiiProxy_IamDenyPolicy) PutRules(value interface{}) {
+func (i *jsiiProxy_IamDenyPolicy) PutRules(value any) {
 	if err := i.validatePutRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -947,7 +946,7 @@ func (i *jsiiProxy_IamDenyPolicy) PutTimeouts(value *IamDenyPolicyTimeouts) {
 	_jsii_.InvokeVoid(
 		i,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (i *jsiiProxy_IamDenyPolicy) ResetTimeouts() {
 	)
 }
 
-func (i *jsiiProxy_IamDenyPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamDenyPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -996,8 +995,8 @@ func (i *jsiiProxy_IamDenyPolicy) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IamDenyPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1009,8 +1008,8 @@ func (i *jsiiProxy_IamDenyPolicy) SynthesizeHclAttributes() *map[string]interfac
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamDenyPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1022,8 +1021,8 @@ func (i *jsiiProxy_IamDenyPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamDenyPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1048,8 +1047,8 @@ func (i *jsiiProxy_IamDenyPolicy) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IamDenyPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1060,4 +1059,3 @@ func (i *jsiiProxy_IamDenyPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

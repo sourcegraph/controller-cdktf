@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCase",
-		reflect.TypeOf((*DialogflowCxTestCase)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCase](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCase{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,19 +90,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseConfig",
-		reflect.TypeOf((*DialogflowCxTestCaseConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResult",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResult)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResult](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurns",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurns)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -149,7 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualAgentOutput", GoGetter: "VirtualAgentOutput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -157,19 +157,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInput",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInput)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInput](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInput",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInput)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInput](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmf",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmf)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmf](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -190,7 +190,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -216,7 +216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputDtmfOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -224,11 +224,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEvent",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEvent)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEvent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -249,7 +249,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputEventOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -303,7 +303,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -331,7 +331,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "text", GoGetter: "Text"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -339,11 +339,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputText",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputText)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputText](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -364,7 +364,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -389,7 +389,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "text", GoGetter: "Text"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputInputTextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -397,7 +397,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -410,7 +410,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -418,7 +418,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -446,7 +446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -454,15 +454,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutput",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutput)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutput](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPage",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPage)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -475,7 +475,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -483,7 +483,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -509,7 +509,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -517,11 +517,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferences",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferences)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferences](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -534,7 +534,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -542,7 +542,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -568,7 +568,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputDifferencesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -576,7 +576,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -589,7 +589,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -597,7 +597,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "triggeredIntent", GoGetter: "TriggeredIntent"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -635,11 +635,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatus",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatus)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -652,7 +652,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -660,7 +660,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -687,7 +687,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -695,11 +695,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponses",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponses)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -712,7 +712,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -720,7 +720,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -745,7 +745,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "text", GoGetter: "Text"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTextResponsesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -753,11 +753,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntent",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntent)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -770,7 +770,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -778,7 +778,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -804,7 +804,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -812,7 +812,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultList",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -825,7 +825,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -833,7 +833,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseLastTestResultOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseLastTestResultOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseLastTestResultOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -862,7 +862,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "testTime", GoGetter: "TestTime"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseLastTestResultOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -870,11 +870,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurns",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurns)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsList",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -888,7 +888,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -896,7 +896,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -928,7 +928,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "virtualAgentOutput", GoGetter: "VirtualAgentOutput"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualAgentOutputInput", GoGetter: "VirtualAgentOutputInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -936,19 +936,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInput",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInput)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInput](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInputInput](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -978,7 +978,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -986,11 +986,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEvent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1016,7 +1016,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputEventOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1024,7 +1024,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1063,7 +1063,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1071,11 +1071,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputText](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTextOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTextOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTextOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1101,7 +1101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputTextOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1109,7 +1109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1146,7 +1146,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1154,15 +1154,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1190,7 +1190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputCurrentPageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1198,7 +1198,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1237,7 +1237,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggeredIntent", GoGetter: "TriggeredIntent"},
 			_jsii_.MemberProperty{JsiiProperty: "triggeredIntentInput", GoGetter: "TriggeredIntentInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1245,11 +1245,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponses",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponses)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesList",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1263,7 +1263,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1271,7 +1271,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1298,7 +1298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "textInput", GoGetter: "TextInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponsesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1306,11 +1306,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1338,7 +1338,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTriggeredIntentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1346,11 +1346,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestConfig",
-		reflect.TypeOf((*DialogflowCxTestCaseTestConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTestConfigOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTestConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTestConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1383,7 +1383,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "trackingParameters", GoGetter: "TrackingParameters"},
 			_jsii_.MemberProperty{JsiiProperty: "trackingParametersInput", GoGetter: "TrackingParametersInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTestConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1391,11 +1391,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTimeouts",
-		reflect.TypeOf((*DialogflowCxTestCaseTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxTestCase.DialogflowCxTestCaseTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowCxTestCaseTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxTestCaseTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1428,7 +1428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxTestCaseTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

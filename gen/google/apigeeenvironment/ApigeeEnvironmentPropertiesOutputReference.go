@@ -12,9 +12,9 @@ type ApigeeEnvironmentPropertiesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type ApigeeEnvironmentPropertiesOutputReference interface {
 	InternalValue() *ApigeeEnvironmentProperties
 	SetInternalValue(val *ApigeeEnvironmentProperties)
 	Property() ApigeeEnvironmentPropertiesPropertyList
-	PropertyInput() interface{}
+	PropertyInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -42,7 +42,7 @@ type ApigeeEnvironmentPropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -63,11 +63,11 @@ type ApigeeEnvironmentPropertiesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutProperty(value interface{})
+	PutProperty(value any)
 	ResetProperty()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ApigeeEnvironmentPropertiesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) Property() Apigee
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) PropertyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) PropertyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"propertyInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewApigeeEnvironmentPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeEnvironmentPropertiesOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewApigeeEnvironmentPropertiesOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeEnvironment.ApigeeEnvironmentPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewApigeeEnvironmentPropertiesOutputReference_Override(a ApigeeEnvironmentP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeEnvironment.ApigeeEnvironmentPropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference)SetInternalValue(val *ApigeeEnvironmentProperties) {
+func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) SetInternalValue(val *ApigeeEnvironmentProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,16 +265,16 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -291,7 +290,7 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -307,7 +306,7 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -323,7 +322,7 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -355,7 +354,7 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,21 +431,21 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) PutProperty(value interface{}) {
+func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) PutProperty(value any) {
 	if err := a.validatePutPropertyParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putProperty",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -458,16 +457,16 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) ResetProperty() {
 	)
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (a *jsiiProxy_ApigeeEnvironmentPropertiesOutputReference) ToString() *strin
 
 	return returns
 }
-

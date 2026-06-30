@@ -1,6 +1,5 @@
 package biglakeicebergtable
 
-
 type BiglakeIcebergTableSchemaFields struct {
 	// The unique identifier of the field.
 	//
@@ -16,7 +15,7 @@ type BiglakeIcebergTableSchemaFields struct {
 	// Whether the field is required.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_iceberg_table#required BiglakeIcebergTable#required}
-	Required interface{} `field:"required" json:"required" yaml:"required"`
+	Required any `field:"required" json:"required" yaml:"required"`
 	// The type of the field.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_iceberg_table#type BiglakeIcebergTable#type}
@@ -26,4 +25,3 @@ type BiglakeIcebergTableSchemaFields struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_iceberg_table#doc BiglakeIcebergTable#doc}
 	Doc *string `field:"optional" json:"doc" yaml:"doc"`
 }
-

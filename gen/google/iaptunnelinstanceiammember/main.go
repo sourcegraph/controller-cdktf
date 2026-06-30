@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapTunnelInstanceIamMember.IapTunnelInstanceIamMember",
-		reflect.TypeOf((*IapTunnelInstanceIamMember)(nil)).Elem(),
+		reflect.TypeFor[IapTunnelInstanceIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapTunnelInstanceIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapTunnelInstanceIamMember.IapTunnelInstanceIamMemberCondition",
-		reflect.TypeOf((*IapTunnelInstanceIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[IapTunnelInstanceIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapTunnelInstanceIamMember.IapTunnelInstanceIamMemberConditionOutputReference",
-		reflect.TypeOf((*IapTunnelInstanceIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapTunnelInstanceIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapTunnelInstanceIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapTunnelInstanceIamMember.IapTunnelInstanceIamMemberConfig",
-		reflect.TypeOf((*IapTunnelInstanceIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[IapTunnelInstanceIamMemberConfig](),
 	)
 }

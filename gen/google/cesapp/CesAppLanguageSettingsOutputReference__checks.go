@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppLanguageSettingsOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_CesAppLanguageSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppLanguageSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CesAppLanguageSettingsOutputReference) validateSetDefaultLang
 	return nil
 }
 
-func (j *jsiiProxy_CesAppLanguageSettingsOutputReference) validateSetEnableMultilingualSupportParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppLanguageSettingsOutputReference) validateSetEnableMultilingualSupportParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewCesAppLanguageSettingsOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentSetParameterAc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDialogflowCxPageEventHandlersTriggerFulfillmentSetParameterActio
 
 	return nil
 }
-

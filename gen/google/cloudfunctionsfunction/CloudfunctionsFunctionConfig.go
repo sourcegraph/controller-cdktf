@@ -6,9 +6,9 @@ import (
 
 type CloudfunctionsFunctionConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CloudfunctionsFunctionConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A user-defined name of the function. Function names must be unique globally.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions_function#name CloudfunctionsFunction#name}
@@ -126,11 +126,11 @@ type CloudfunctionsFunctionConfig struct {
 	// secret_environment_variables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions_function#secret_environment_variables CloudfunctionsFunction#secret_environment_variables}
-	SecretEnvironmentVariables interface{} `field:"optional" json:"secretEnvironmentVariables" yaml:"secretEnvironmentVariables"`
+	SecretEnvironmentVariables any `field:"optional" json:"secretEnvironmentVariables" yaml:"secretEnvironmentVariables"`
 	// secret_volumes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions_function#secret_volumes CloudfunctionsFunction#secret_volumes}
-	SecretVolumes interface{} `field:"optional" json:"secretVolumes" yaml:"secretVolumes"`
+	SecretVolumes any `field:"optional" json:"secretVolumes" yaml:"secretVolumes"`
 	// If provided, the self-provided service account to run the function with.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions_function#service_account_email CloudfunctionsFunction#service_account_email}
@@ -160,7 +160,7 @@ type CloudfunctionsFunctionConfig struct {
 	// Any HTTP request (of a supported type) to the endpoint will trigger function execution. Supported HTTP request types are: POST, PUT, GET, DELETE, and OPTIONS. Endpoint is returned as https_trigger_url. Cannot be used with trigger_bucket and trigger_topic.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions_function#trigger_http CloudfunctionsFunction#trigger_http}
-	TriggerHttp interface{} `field:"optional" json:"triggerHttp" yaml:"triggerHttp"`
+	TriggerHttp any `field:"optional" json:"triggerHttp" yaml:"triggerHttp"`
 	// The VPC Network Connector that this cloud function can connect to.
 	//
 	// It can be either the fully-qualified URI, or the short name of the network connector resource. The format of this field is projects/* /locations/* /connectors/*.
@@ -176,4 +176,3 @@ type CloudfunctionsFunctionConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloudfunctions_function#vpc_connector_egress_settings CloudfunctionsFunction#vpc_connector_egress_settings}
 	VpcConnectorEgressSettings *string `field:"optional" json:"vpcConnectorEgressSettings" yaml:"vpcConnectorEgressSettings"`
 }
-

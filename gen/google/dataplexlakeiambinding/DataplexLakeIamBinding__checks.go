@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataplexLakeIamBinding) validateAddMoveTargetParameters(moveT
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLakeIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataplexLakeIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataplexLakeIamBinding) validateMoveFromIdParameters(id *stri
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLakeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataplexLakeIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDataplexLakeIamBinding_GenerateConfigForImportParameters(scope cons
 	return nil
 }
 
-func validateDataplexLakeIamBinding_IsConstructParameters(x interface{}) error {
+func validateDataplexLakeIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDataplexLakeIamBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataplexLakeIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateDataplexLakeIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDataplexLakeIamBinding_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func validateDataplexLakeIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateDataplexLakeIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDataplexLakeIamBinding_IsTerraformResourceParameters(x interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataplexLakeIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexLakeIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataplexLakeIamBinding) validateSetConnectionParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DataplexLakeIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexLakeIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataplexLakeIamBinding) validateSetProjectParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataplexLakeIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataplexLakeIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewDataplexLakeIamBindingParameters(scope constructs.Construct, id 
 
 	return nil
 }
-

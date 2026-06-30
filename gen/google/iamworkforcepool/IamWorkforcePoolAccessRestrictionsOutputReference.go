@@ -11,12 +11,12 @@ import (
 type IamWorkforcePoolAccessRestrictionsOutputReference interface {
 	cdktf.ComplexObject
 	AllowedServices() IamWorkforcePoolAccessRestrictionsAllowedServicesList
-	AllowedServicesInput() interface{}
+	AllowedServicesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type IamWorkforcePoolAccessRestrictionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableProgrammaticSignin() interface{}
-	SetDisableProgrammaticSignin(val interface{})
-	DisableProgrammaticSigninInput() interface{}
+	DisableProgrammaticSignin() any
+	SetDisableProgrammaticSignin(val any)
+	DisableProgrammaticSigninInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *IamWorkforcePoolAccessRestrictions
@@ -45,7 +45,7 @@ type IamWorkforcePoolAccessRestrictionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type IamWorkforcePoolAccessRestrictionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAllowedServices(value interface{})
+	PutAllowedServices(value any)
 	ResetAllowedServices()
 	ResetDisableProgrammaticSignin()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,8 +94,8 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) AllowedSer
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) AllowedServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) AllowedServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowedServicesInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) AllowedSer
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) CreationSt
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) DisableProgrammaticSignin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) DisableProgrammaticSignin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableProgrammaticSignin",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) DisablePro
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) DisableProgrammaticSigninInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) DisableProgrammaticSigninInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableProgrammaticSigninInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) TerraformR
 	return returns
 }
 
-
 func NewIamWorkforcePoolAccessRestrictionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IamWorkforcePoolAccessRestrictionsOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewIamWorkforcePoolAccessRestrictionsOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePoolAccessRestrictionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewIamWorkforcePoolAccessRestrictionsOutputReference_Override(i IamWorkforc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePoolAccessRestrictionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetDisableProgrammaticSignin(val interface{}) {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) SetDisableProgrammaticSignin(val any) {
 	if err := j.validateSetDisableProgrammaticSigninParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetDisableP
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetInternalValue(val *IamWorkforcePoolAccessRestrictions) {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) SetInternalValue(val *IamWorkforcePoolAccessRestrictions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) ComputeFqn
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetBoolean
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetListAtt
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetNumberA
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetNumberL
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetNumberM
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetStringA
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) GetStringM
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) Interpolat
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) PutAllowedServices(value interface{}) {
+func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) PutAllowedServices(value any) {
 	if err := i.validatePutAllowedServicesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putAllowedServices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) ResetDisab
 	)
 }
 
-func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) ToString()
 
 	return returns
 }
-

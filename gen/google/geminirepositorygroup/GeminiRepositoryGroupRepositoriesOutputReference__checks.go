@@ -106,7 +106,7 @@ func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGeminiRepositoryGroupRepositoriesOutputReferenceParameters(terra
 
 	return nil
 }
-

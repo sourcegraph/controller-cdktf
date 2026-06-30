@@ -15,9 +15,9 @@ type DialogflowCxWebhookGenericWebServiceOutputReference interface {
 	AllowedCaCertsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type DialogflowCxWebhookGenericWebServiceOutputReference interface {
 	SetSecretVersionForUsernamePassword(val *string)
 	SecretVersionForUsernamePasswordInput() *string
 	SecretVersionsForRequestHeaders() DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList
-	SecretVersionsForRequestHeadersInput() interface{}
+	SecretVersionsForRequestHeadersInput() any
 	ServiceAccountAuthConfig() DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference
 	ServiceAccountAuthConfigInput() *DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig
 	ServiceAgentAuth() *string
@@ -73,7 +73,7 @@ type DialogflowCxWebhookGenericWebServiceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type DialogflowCxWebhookGenericWebServiceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutOauthConfig(value *DialogflowCxWebhookGenericWebServiceOauthConfig)
-	PutSecretVersionsForRequestHeaders(value interface{})
+	PutSecretVersionsForRequestHeaders(value any)
 	PutServiceAccountAuthConfig(value *DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig)
 	ResetAllowedCaCerts()
 	ResetHttpMethod()
@@ -110,7 +110,7 @@ type DialogflowCxWebhookGenericWebServiceOutputReference interface {
 	ResetWebhookType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) AllowedC
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SecretVe
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SecretVersionsForRequestHeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SecretVersionsForRequestHeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"secretVersionsForRequestHeadersInput",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) WebhookT
 	return returns
 }
 
-
 func NewDialogflowCxWebhookGenericWebServiceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxWebhookGenericWebServiceOutputReference {
 	_init_.Initialize()
 
@@ -444,7 +443,7 @@ func NewDialogflowCxWebhookGenericWebServiceOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -456,12 +455,12 @@ func NewDialogflowCxWebhookGenericWebServiceOutputReference_Override(d Dialogflo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetAllowedCaCerts(val *[]*string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetAllowedCaCerts(val *[]*string) {
 	if err := j.validateSetAllowedCaCertsParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetAllowe
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetHttpMethod(val *string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetHttpMethod(val *string) {
 	if err := j.validateSetHttpMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetHttpMe
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetInternalValue(val *DialogflowCxWebhookGenericWebService) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetInternalValue(val *DialogflowCxWebhookGenericWebService) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetParameterMapping(val *map[string]*string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetParameterMapping(val *map[string]*string) {
 	if err := j.validateSetParameterMappingParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetParame
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetRequestBody(val *string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetRequestBody(val *string) {
 	if err := j.validateSetRequestBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetReques
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetRequestHeaders(val *map[string]*string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetRequestHeaders(val *map[string]*string) {
 	if err := j.validateSetRequestHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetReques
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetSecretVersionForUsernamePassword(val *string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetSecretVersionForUsernamePassword(val *string) {
 	if err := j.validateSetSecretVersionForUsernamePasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetSecret
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetServiceAgentAuth(val *string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetServiceAgentAuth(val *string) {
 	if err := j.validateSetServiceAgentAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetServic
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetUri(val *string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetUri(val *string) {
 	if err := j.validateSetUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetUri(va
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference)SetWebhookType(val *string) {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) SetWebhookType(val *string) {
 	if err := j.validateSetWebhookTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,16 +627,16 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) ComputeF
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetListA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) Interpol
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -808,18 +807,18 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) PutOauth
 	_jsii_.InvokeVoid(
 		d,
 		"putOauthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) PutSecretVersionsForRequestHeaders(value interface{}) {
+func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) PutSecretVersionsForRequestHeaders(value any) {
 	if err := d.validatePutSecretVersionsForRequestHeadersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSecretVersionsForRequestHeaders",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -830,7 +829,7 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) PutServi
 	_jsii_.InvokeVoid(
 		d,
 		"putServiceAccountAuthConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -922,16 +921,16 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) ResetWeb
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -950,4 +949,3 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) ToString
 
 	return returns
 }
-

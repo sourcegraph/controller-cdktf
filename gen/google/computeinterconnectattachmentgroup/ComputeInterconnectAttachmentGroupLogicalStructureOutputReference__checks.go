@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInterconnectAttachmentGroupLogicalStructureOutputReferenc
 
 	return nil
 }
-

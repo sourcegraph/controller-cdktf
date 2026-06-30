@@ -18,11 +18,11 @@ type DataGoogleNetblockIpRanges interface {
 	CidrBlocksIpv4() *[]*string
 	CidrBlocksIpv6() *[]*string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,17 +52,17 @@ type DataGoogleNetblockIpRanges interface {
 	SetRangeType(val *string)
 	RangeTypeInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,18 +89,18 @@ type DataGoogleNetblockIpRanges interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRangeType()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleNetblockIpRanges
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges) CidrBlocksIpv6() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -278,8 +278,8 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges) RangeTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -298,8 +298,8 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -318,7 +318,6 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/netblock_ip_ranges google_netblock_ip_ranges} Data Source.
 func NewDataGoogleNetblockIpRanges(scope constructs.Construct, id *string, config *DataGoogleNetblockIpRangesConfig) DataGoogleNetblockIpRanges {
 	_init_.Initialize()
@@ -330,7 +329,7 @@ func NewDataGoogleNetblockIpRanges(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -343,12 +342,12 @@ func NewDataGoogleNetblockIpRanges_Override(d DataGoogleNetblockIpRanges, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,7 +358,7 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -367,7 +366,7 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataGoogleNetblockIpRanges)SetRangeType(val *string) {
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) SetRangeType(val *string) {
 	if err := j.validateSetRangeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func DataGoogleNetblockIpRanges_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func DataGoogleNetblockIpRanges_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleNetblockIpRanges_IsConstruct(x interface{}) *bool {
+func DataGoogleNetblockIpRanges_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleNetblockIpRanges_IsConstructParameters(x); err != nil {
@@ -463,7 +462,7 @@ func DataGoogleNetblockIpRanges_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func DataGoogleNetblockIpRanges_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleNetblockIpRanges_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleNetblockIpRanges_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleNetblockIpRanges_IsTerraformDataSourceParameters(x); err != nil {
@@ -482,7 +481,7 @@ func DataGoogleNetblockIpRanges_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func DataGoogleNetblockIpRanges_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleNetblockIpRanges_IsTerraformElement(x interface{}) *bool {
+func DataGoogleNetblockIpRanges_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleNetblockIpRanges_IsTerraformElementParameters(x); err != nil {
@@ -501,7 +500,7 @@ func DataGoogleNetblockIpRanges_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -519,27 +518,27 @@ func DataGoogleNetblockIpRanges_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetblockIpRanges) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleNetblockIpRanges) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -555,7 +554,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -571,7 +570,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -635,7 +634,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -683,7 +682,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -725,8 +724,8 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) ResetRangeType() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleNetblockIpRanges) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleNetblockIpRanges) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -738,8 +737,8 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetblockIpRanges) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleNetblockIpRanges) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -751,8 +750,8 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetblockIpRanges) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleNetblockIpRanges) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -764,8 +763,8 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetblockIpRanges) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleNetblockIpRanges) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -790,8 +789,8 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleNetblockIpRanges) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleNetblockIpRanges) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -802,4 +801,3 @@ func (d *jsiiProxy_DataGoogleNetblockIpRanges) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOidcTokenOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewIntegrationsAuthConfigDecryptedCredentialOidcTokenOutputReferenc
 
 	return nil
 }
-

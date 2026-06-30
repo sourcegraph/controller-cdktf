@@ -112,7 +112,7 @@ func (b *jsiiProxy_BigqueryJobCopyOutputReference) validatePutDestinationTablePa
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobCopyOutputReference) validatePutSourceTablesParameters(value interface{}) error {
+func (b *jsiiProxy_BigqueryJobCopyOutputReference) validatePutSourceTablesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (b *jsiiProxy_BigqueryJobCopyOutputReference) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobCopyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobCopyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -267,4 +267,3 @@ func validateNewBigqueryJobCopyOutputReferenceParameters(terraformResource cdktf
 
 	return nil
 }
-

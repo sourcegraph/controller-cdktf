@@ -13,21 +13,21 @@ import (
 type BinaryAuthorizationPolicy interface {
 	cdktf.TerraformResource
 	AdmissionWhitelistPatterns() BinaryAuthorizationPolicyAdmissionWhitelistPatternsList
-	AdmissionWhitelistPatternsInput() interface{}
+	AdmissionWhitelistPatternsInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterAdmissionRules() BinaryAuthorizationPolicyClusterAdmissionRulesList
-	ClusterAdmissionRulesInput() interface{}
+	ClusterAdmissionRulesInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DefaultAdmissionRule() BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference
 	DefaultAdmissionRuleInput() *BinaryAuthorizationPolicyDefaultAdmissionRule
 	// Experimental.
@@ -65,26 +65,26 @@ type BinaryAuthorizationPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BinaryAuthorizationPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type BinaryAuthorizationPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,15 +114,15 @@ type BinaryAuthorizationPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAdmissionWhitelistPatterns(value interface{})
-	PutClusterAdmissionRules(value interface{})
+	PutAdmissionWhitelistPatterns(value any)
+	PutClusterAdmissionRules(value any)
 	PutDefaultAdmissionRule(value *BinaryAuthorizationPolicyDefaultAdmissionRule)
 	PutTimeouts(value *BinaryAuthorizationPolicyTimeouts)
 	ResetAdmissionWhitelistPatterns()
@@ -135,17 +135,17 @@ type BinaryAuthorizationPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BinaryAuthorizationPolicy
@@ -163,8 +163,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) AdmissionWhitelistPatterns() Binar
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) AdmissionWhitelistPatternsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicy) AdmissionWhitelistPatternsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"admissionWhitelistPatternsInput",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) ClusterAdmissionRules() BinaryAuth
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) ClusterAdmissionRulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicy) ClusterAdmissionRulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"clusterAdmissionRulesInput",
@@ -203,8 +203,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) ClusterAdmissionRulesInput() inter
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -223,8 +223,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) Timeouts() BinaryAuthorizationPoli
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BinaryAuthorizationPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -472,7 +472,6 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/binary_authorization_policy google_binary_authorization_policy} Resource.
 func NewBinaryAuthorizationPolicy(scope constructs.Construct, id *string, config *BinaryAuthorizationPolicyConfig) BinaryAuthorizationPolicy {
@@ -485,7 +484,7 @@ func NewBinaryAuthorizationPolicy(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -498,12 +497,12 @@ func NewBinaryAuthorizationPolicy_Override(b BinaryAuthorizationPolicy, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -514,7 +513,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -533,7 +532,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetDescription(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -552,7 +551,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetGlobalPolicyEvaluationMode(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetGlobalPolicyEvaluationMode(val *string) {
 	if err := j.validateSetGlobalPolicyEvaluationModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetGlobalPolicyEvaluationMode(val *
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetId(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -574,7 +573,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,7 +584,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetProject(val *string) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -596,7 +595,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -604,7 +603,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func BinaryAuthorizationPolicy_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -651,7 +650,7 @@ func BinaryAuthorizationPolicy_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BinaryAuthorizationPolicy_IsConstruct(x interface{}) *bool {
+func BinaryAuthorizationPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBinaryAuthorizationPolicy_IsConstructParameters(x); err != nil {
@@ -662,7 +661,7 @@ func BinaryAuthorizationPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -670,7 +669,7 @@ func BinaryAuthorizationPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BinaryAuthorizationPolicy_IsTerraformElement(x interface{}) *bool {
+func BinaryAuthorizationPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBinaryAuthorizationPolicy_IsTerraformElementParameters(x); err != nil {
@@ -681,7 +680,7 @@ func BinaryAuthorizationPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -689,7 +688,7 @@ func BinaryAuthorizationPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BinaryAuthorizationPolicy_IsTerraformResource(x interface{}) *bool {
+func BinaryAuthorizationPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBinaryAuthorizationPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -700,7 +699,7 @@ func BinaryAuthorizationPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -725,31 +724,31 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BinaryAuthorizationPolicy) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BinaryAuthorizationPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,7 +812,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,15 +876,15 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BinaryAuthorizationPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -904,7 +903,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -917,7 +916,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,18 +930,18 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BinaryAuthorizationPolicy) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -953,7 +952,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -964,29 +963,29 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) PutAdmissionWhitelistPatterns(value interface{}) {
+func (b *jsiiProxy_BinaryAuthorizationPolicy) PutAdmissionWhitelistPatterns(value any) {
 	if err := b.validatePutAdmissionWhitelistPatternsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putAdmissionWhitelistPatterns",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) PutClusterAdmissionRules(value interface{}) {
+func (b *jsiiProxy_BinaryAuthorizationPolicy) PutClusterAdmissionRules(value any) {
 	if err := b.validatePutClusterAdmissionRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putClusterAdmissionRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -997,7 +996,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) PutDefaultAdmissionRule(value *Bin
 	_jsii_.InvokeVoid(
 		b,
 		"putDefaultAdmissionRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1008,7 +1007,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) PutTimeouts(value *BinaryAuthoriza
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,8 +1075,8 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BinaryAuthorizationPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1089,8 +1088,8 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BinaryAuthorizationPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1102,8 +1101,8 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BinaryAuthorizationPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1115,8 +1114,8 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BinaryAuthorizationPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1141,8 +1140,8 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BinaryAuthorizationPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1153,4 +1152,3 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

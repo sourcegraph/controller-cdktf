@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudbuildTriggerRepositoryEventConfigPushOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerRepositoryEventConfigPushOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerRepositoryEventConfigPushOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CloudbuildTriggerRepositoryEventConfigPushOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerRepositoryEventConfigPushOutputReference) validateSetInvertRegexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerRepositoryEventConfigPushOutputReference) validateSetInvertRegexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCloudbuildTriggerRepositoryEventConfigPushOutputReferenceParamet
 
 	return nil
 }
-

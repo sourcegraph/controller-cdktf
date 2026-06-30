@@ -12,9 +12,9 @@ type BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference interface 
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,17 +25,17 @@ type BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BigqueryAnalyticsHubListingRestrictedExportConfig
 	SetInternalValue(val *BigqueryAnalyticsHubListingRestrictedExportConfig)
 	RestrictDirectTableAccess() cdktf.IResolvable
-	RestrictQueryResult() interface{}
-	SetRestrictQueryResult(val interface{})
-	RestrictQueryResultInput() interface{}
+	RestrictQueryResult() any
+	SetRestrictQueryResult(val any)
+	RestrictQueryResultInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -47,7 +47,7 @@ type BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference interface 
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference interface 
 	ResetRestrictQueryResult()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,8 +85,8 @@ type jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -115,8 +115,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -125,8 +125,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) RestrictQueryResult() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) RestrictQueryResult() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restrictQueryResult",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) RestrictQueryResultInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) RestrictQueryResultInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"restrictQueryResultInput",
@@ -205,7 +205,6 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	return returns
 }
 
-
 func NewBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference {
 	_init_.Initialize()
 
@@ -216,7 +215,7 @@ func NewBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference(terrafo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -228,12 +227,12 @@ func NewBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference_Overrid
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference)SetInternalValue(val *BigqueryAnalyticsHubListingRestrictedExportConfig) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) SetInternalValue(val *BigqueryAnalyticsHubListingRestrictedExportConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference)SetRestrictQueryResult(val interface{}) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) SetRestrictQueryResult(val any) {
 	if err := j.validateSetRestrictQueryResultParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,16 +322,16 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -428,7 +427,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -444,7 +443,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -460,7 +459,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -512,16 +511,16 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	)
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -540,4 +539,3 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 
 	return returns
 }
-

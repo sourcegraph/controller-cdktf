@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateInterpolati
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutAcceleratorConfigsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutAcceleratorConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -165,7 +165,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutDataDisk
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutNetworkInterfacesParameters(value interface{}) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutNetworkInterfacesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutReservat
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutServiceAccountsParameters(value interface{}) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutServiceAccountsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -333,7 +333,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetDisablePublicIpParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetDisablePublicIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -353,7 +353,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetDisableP
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetEnableIpForwardingParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateSetEnableIpForwardingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -432,4 +432,3 @@ func validateNewWorkbenchInstanceGceSetupOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

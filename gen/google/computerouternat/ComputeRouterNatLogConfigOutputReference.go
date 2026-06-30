@@ -12,9 +12,9 @@ type ComputeRouterNatLogConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type ComputeRouterNatLogConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enable() interface{}
-	SetEnable(val interface{})
-	EnableInput() interface{}
+	Enable() any
+	SetEnable(val any)
+	EnableInput() any
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -46,7 +46,7 @@ type ComputeRouterNatLogConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type ComputeRouterNatLogConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_ComputeRouterNatLogConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) Enable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) Enable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enable",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) Enable() interface{
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) EnableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) EnableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewComputeRouterNatLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRouterNatLogConfigOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewComputeRouterNatLogConfigOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewComputeRouterNatLogConfigOutputReference_Override(c ComputeRouterNatLogC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetEnable(val interface{}) {
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) SetEnable(val any) {
 	if err := j.validateSetEnableParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetEnable(val interf
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetFilter(val *string) {
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetFilter(val *strin
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetInternalValue(val *ComputeRouterNatLogConfig) {
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) SetInternalValue(val *ComputeRouterNatLogConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRouterNatLogConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (c *jsiiProxy_ComputeRouterNatLogConfigOutputReference) ToString() *string 
 
 	return returns
 }
-

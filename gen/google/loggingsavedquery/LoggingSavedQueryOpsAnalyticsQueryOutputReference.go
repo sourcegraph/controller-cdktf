@@ -12,9 +12,9 @@ type LoggingSavedQueryOpsAnalyticsQueryOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type LoggingSavedQueryOpsAnalyticsQueryOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type LoggingSavedQueryOpsAnalyticsQueryOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) TerraformR
 	return returns
 }
 
-
 func NewLoggingSavedQueryOpsAnalyticsQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoggingSavedQueryOpsAnalyticsQueryOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewLoggingSavedQueryOpsAnalyticsQueryOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQueryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewLoggingSavedQueryOpsAnalyticsQueryOutputReference_Override(l LoggingSave
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQueryOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetInternalValue(val *LoggingSavedQueryOpsAnalyticsQuery) {
+func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) SetInternalValue(val *LoggingSavedQueryOpsAnalyticsQuery) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetSqlQueryText(val *string) {
+func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) SetSqlQueryText(val *string) {
 	if err := j.validateSetSqlQueryTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetSqlQuery
 	)
 }
 
-func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) ComputeFqn
 	return returns
 }
 
-func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetBoolean
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetBoolean
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetListAtt
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetNumberA
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetNumberL
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetNumberM
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetStringA
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) GetStringM
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) Interpolat
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) ToString()
 
 	return returns
 }
-

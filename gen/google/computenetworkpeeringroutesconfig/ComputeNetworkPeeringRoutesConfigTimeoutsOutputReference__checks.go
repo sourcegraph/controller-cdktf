@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfigTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfigTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeNetworkPeeringRoutesConfigTimeoutsOutputReferenceParamete
 
 	return nil
 }
-

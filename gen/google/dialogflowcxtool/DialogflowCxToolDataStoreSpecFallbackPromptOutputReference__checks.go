@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxToolDataStoreSpecFallbackPromptOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolDataStoreSpecFallbackPromptOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolDataStoreSpecFallbackPromptOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDialogflowCxToolDataStoreSpecFallbackPromptOutputReferenceParame
 
 	return nil
 }
-

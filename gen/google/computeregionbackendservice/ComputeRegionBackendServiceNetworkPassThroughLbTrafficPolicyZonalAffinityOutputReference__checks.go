@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZ
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZona
 
 	return nil
 }
-

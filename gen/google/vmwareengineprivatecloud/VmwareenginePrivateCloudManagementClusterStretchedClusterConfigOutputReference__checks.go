@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterStretchedClusterConf
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterStretchedClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterStretchedClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewVmwareenginePrivateCloudManagementClusterStretchedClusterConfigO
 
 	return nil
 }
-

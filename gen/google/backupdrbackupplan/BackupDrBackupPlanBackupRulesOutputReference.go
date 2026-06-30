@@ -15,9 +15,9 @@ type BackupDrBackupPlanBackupRulesOutputReference interface {
 	BackupRetentionDaysInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type BackupDrBackupPlanBackupRulesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	RuleId() *string
 	SetRuleId(val *string)
 	RuleIdInput() *string
@@ -48,7 +48,7 @@ type BackupDrBackupPlanBackupRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -72,7 +72,7 @@ type BackupDrBackupPlanBackupRulesOutputReference interface {
 	PutStandardSchedule(value *BackupDrBackupPlanBackupRulesStandardSchedule)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,8 +105,8 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) BackupRetention
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -215,7 +215,6 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) TerraformResour
 	return returns
 }
 
-
 func NewBackupDrBackupPlanBackupRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BackupDrBackupPlanBackupRulesOutputReference {
 	_init_.Initialize()
 
@@ -226,7 +225,7 @@ func NewBackupDrBackupPlanBackupRulesOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrBackupPlan.BackupDrBackupPlanBackupRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -238,12 +237,12 @@ func NewBackupDrBackupPlanBackupRulesOutputReference_Override(b BackupDrBackupPl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrBackupPlan.BackupDrBackupPlanBackupRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetBackupRetentionDays(val *float64) {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) SetBackupRetentionDays(val *float64) {
 	if err := j.validateSetBackupRetentionDaysParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetBackupRetenti
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetRuleId(val *string) {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) SetRuleId(val *string) {
 	if err := j.validateSetRuleIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -298,7 +297,7 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetRuleId(val *s
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -309,7 +308,7 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -333,16 +332,16 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -513,20 +512,20 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) PutStandardSche
 	_jsii_.InvokeVoid(
 		b,
 		"putStandardSchedule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -545,4 +544,3 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesOutputReference) ToString() *str
 
 	return returns
 }
-

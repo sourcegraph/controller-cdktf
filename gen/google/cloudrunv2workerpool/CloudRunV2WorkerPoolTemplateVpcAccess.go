@@ -1,6 +1,5 @@
 package cloudrunv2workerpool
 
-
 type CloudRunV2WorkerPoolTemplateVpcAccess struct {
 	// VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.
 	//
@@ -13,6 +12,5 @@ type CloudRunV2WorkerPoolTemplateVpcAccess struct {
 	// network_interfaces block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_worker_pool#network_interfaces CloudRunV2WorkerPool#network_interfaces}
-	NetworkInterfaces interface{} `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
+	NetworkInterfaces any `field:"optional" json:"networkInterfaces" yaml:"networkInterfaces"`
 }
-

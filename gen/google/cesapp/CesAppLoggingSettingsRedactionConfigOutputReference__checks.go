@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppLoggingSettingsRedactionConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsRedactionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppLoggingSettingsRedactionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CesAppLoggingSettingsRedactionConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsRedactionConfigOutputReference) validateSetEnableRedactionParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppLoggingSettingsRedactionConfigOutputReference) validateSetEnableRedactionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewCesAppLoggingSettingsRedactionConfigOutputReferenceParameters(te
 
 	return nil
 }
-

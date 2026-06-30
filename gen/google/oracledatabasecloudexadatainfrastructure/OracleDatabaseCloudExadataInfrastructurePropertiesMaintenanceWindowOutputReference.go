@@ -12,9 +12,9 @@ type OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputRe
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -38,9 +38,9 @@ type OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputRe
 	HoursOfDayInput() *[]*float64
 	InternalValue() *OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow
 	SetInternalValue(val *OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow)
-	IsCustomActionTimeoutEnabled() interface{}
-	SetIsCustomActionTimeoutEnabled(val interface{})
-	IsCustomActionTimeoutEnabledInput() interface{}
+	IsCustomActionTimeoutEnabled() any
+	SetIsCustomActionTimeoutEnabled(val any)
+	IsCustomActionTimeoutEnabledInput() any
 	LeadTimeWeek() *float64
 	SetLeadTimeWeek(val *float64)
 	LeadTimeWeekInput() *float64
@@ -67,7 +67,7 @@ type OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputRe
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputRe
 	ResetWeeksOfMonth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -112,8 +112,8 @@ type jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWind
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -222,8 +222,8 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) IsCustomActionTimeoutEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) IsCustomActionTimeoutEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isCustomActionTimeoutEnabled",
@@ -232,8 +232,8 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) IsCustomActionTimeoutEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) IsCustomActionTimeoutEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isCustomActionTimeoutEnabledInput",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	return returns
 }
 
-
 func NewOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutpu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.oracleDatabaseCloudExadataInfrastructure.OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetCustomActionTimeoutMins(val *float64) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetCustomActionTimeoutMins(val *float64) {
 	if err := j.validateSetCustomActionTimeoutMinsParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetDaysOfWeek(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetDaysOfWeek(val *[]*string) {
 	if err := j.validateSetDaysOfWeekParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetHoursOfDay(val *[]*float64) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetHoursOfDay(val *[]*float64) {
 	if err := j.validateSetHoursOfDayParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetInternalValue(val *OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetInternalValue(val *OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetIsCustomActionTimeoutEnabled(val interface{}) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetIsCustomActionTimeoutEnabled(val any) {
 	if err := j.validateSetIsCustomActionTimeoutEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetLeadTimeWeek(val *float64) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetLeadTimeWeek(val *float64) {
 	if err := j.validateSetLeadTimeWeekParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetMonths(val *[]*string) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetMonths(val *[]*string) {
 	if err := j.validateSetMonthsParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetPatchingMode(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetPatchingMode(val *string) {
 	if err := j.validateSetPatchingModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetPreference(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetPreference(val *string) {
 	if err := j.validateSetPreferenceParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference)SetWeeksOfMonth(val *[]*float64) {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) SetWeeksOfMonth(val *[]*float64) {
 	if err := j.validateSetWeeksOfMonthParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesMaintenance
 
 	return returns
 }
-

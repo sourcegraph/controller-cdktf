@@ -12,9 +12,9 @@ type LoggingLogViewIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type LoggingLogViewIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type LoggingLogViewIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_LoggingLogViewIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) TitleInput()
 	return returns
 }
 
-
 func NewLoggingLogViewIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoggingLogViewIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewLoggingLogViewIamMemberConditionOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewLoggingLogViewIamMemberConditionOutputReference_Override(l LoggingLogVie
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetDescriptio
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetExpression
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetInternalValue(val *LoggingLogViewIamMemberCondition) {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) SetInternalValue(val *LoggingLogViewIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) ComputeFqn()
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := l.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		l,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		l,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		l,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetListAttri
 	_jsii_.Invoke(
 		l,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		l,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		l,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		l,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		l,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetStringMap
 	_jsii_.Invoke(
 		l,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) Interpolatio
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) ResetDescrip
 	)
 }
 
-func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) ToString() *
 
 	return returns
 }
-

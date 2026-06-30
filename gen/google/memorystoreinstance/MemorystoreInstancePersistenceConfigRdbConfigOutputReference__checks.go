@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigRdbConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMemorystoreInstancePersistenceConfigRdbConfigOutputReferencePara
 
 	return nil
 }
-

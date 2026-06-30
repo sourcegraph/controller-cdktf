@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionNetworkOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionNetworkOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionNetworkOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionNetworkOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionNetworkOutputReference) validateSetSessionAffinityParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionNetworkOutputReference) validateSetSessionAffinityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,4 +250,3 @@ func validateNewAppEngineFlexibleAppVersionNetworkOutputReferenceParameters(terr
 
 	return nil
 }
-

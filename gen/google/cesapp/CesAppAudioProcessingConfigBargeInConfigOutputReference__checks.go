@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigBargeInConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigBargeInConfigOutputReference) validateSetBargeInAwarenessParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppAudioProcessingConfigBargeInConfigOutputReference) validateSetBargeInAwarenessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigBargeInConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigBargeInConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppAudioProcessingConfigBargeInConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewCesAppAudioProcessingConfigBargeInConfigOutputReferenceParameter
 
 	return nil
 }
-

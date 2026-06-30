@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudSchedulerJob) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJob) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudSchedulerJob) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudSchedulerJob) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudSchedulerJob) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateCloudSchedulerJob_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateCloudSchedulerJob_IsConstructParameters(x interface{}) error {
+func validateCloudSchedulerJob_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateCloudSchedulerJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudSchedulerJob_IsTerraformElementParameters(x interface{}) error {
+func validateCloudSchedulerJob_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateCloudSchedulerJob_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateCloudSchedulerJob_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudSchedulerJob_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -307,7 +307,7 @@ func (j *jsiiProxy_CloudSchedulerJob) validateSetAttemptDeadlineParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJob) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSchedulerJob) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -340,7 +340,7 @@ func (j *jsiiProxy_CloudSchedulerJob) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJob) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSchedulerJob) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -429,7 +429,7 @@ func (j *jsiiProxy_CloudSchedulerJob) validateSetNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJob) validateSetPausedParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSchedulerJob) validateSetPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -457,7 +457,7 @@ func (j *jsiiProxy_CloudSchedulerJob) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJob) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudSchedulerJob) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -545,4 +545,3 @@ func validateNewCloudSchedulerJobParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

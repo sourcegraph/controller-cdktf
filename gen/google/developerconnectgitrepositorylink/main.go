@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLink",
-		reflect.TypeOf((*DeveloperConnectGitRepositoryLink)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectGitRepositoryLink](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectGitRepositoryLink{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -97,15 +97,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLinkConfig",
-		reflect.TypeOf((*DeveloperConnectGitRepositoryLinkConfig)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectGitRepositoryLinkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLinkTimeouts",
-		reflect.TypeOf((*DeveloperConnectGitRepositoryLinkTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectGitRepositoryLinkTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.developerConnectGitRepositoryLink.DeveloperConnectGitRepositoryLinkTimeoutsOutputReference",
-		reflect.TypeOf((*DeveloperConnectGitRepositoryLinkTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeveloperConnectGitRepositoryLinkTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeveloperConnectGitRepositoryLinkTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

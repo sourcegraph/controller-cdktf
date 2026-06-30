@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthentication
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOut
 
 	return nil
 }
-

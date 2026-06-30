@@ -109,7 +109,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_ApihubCurationEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubCurationEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewApihubCurationEndpointOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

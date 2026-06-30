@@ -15,15 +15,15 @@ type ObservabilityTraceScope interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -61,22 +61,22 @@ type ObservabilityTraceScope interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceNames() *[]*string
 	SetResourceNames(val *[]*string)
 	ResourceNamesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ObservabilityTraceScopeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TraceScopeId() *string
 	SetTraceScopeId(val *string)
 	TraceScopeIdInput() *string
@@ -85,9 +85,9 @@ type ObservabilityTraceScope interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type ObservabilityTraceScope interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,7 +117,7 @@ type ObservabilityTraceScope interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -132,17 +132,17 @@ type ObservabilityTraceScope interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ObservabilityTraceScope
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ObservabilityTraceScope) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObservabilityTraceScope) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ObservabilityTraceScope) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ObservabilityTraceScope) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_ObservabilityTraceScope) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObservabilityTraceScope) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_ObservabilityTraceScope) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ObservabilityTraceScope) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_ObservabilityTraceScope) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObservabilityTraceScope) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -410,8 +410,8 @@ func (j *jsiiProxy_ObservabilityTraceScope) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ObservabilityTraceScope) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_ObservabilityTraceScope) Timeouts() ObservabilityTraceScopeTi
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ObservabilityTraceScope) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -480,7 +480,6 @@ func (j *jsiiProxy_ObservabilityTraceScope) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/observability_trace_scope google_observability_trace_scope} Resource.
 func NewObservabilityTraceScope(scope constructs.Construct, id *string, config *ObservabilityTraceScopeConfig) ObservabilityTraceScope {
 	_init_.Initialize()
@@ -492,7 +491,7 @@ func NewObservabilityTraceScope(scope constructs.Construct, id *string, config *
 
 	_jsii_.Create(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScope",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewObservabilityTraceScope_Override(o ObservabilityTraceScope, scope constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScope",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetConnection(val interface{}) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetCount(val interface{}) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -540,7 +539,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetDescription(val *string) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -551,7 +550,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetId(val *string) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetLocation(val *string) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetProject(val *string) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -603,7 +602,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetResourceNames(val *[]*string) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetResourceNames(val *[]*string) {
 	if err := j.validateSetResourceNamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_ObservabilityTraceScope)SetResourceNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ObservabilityTraceScope)SetTraceScopeId(val *string) {
+func (j *jsiiProxy_ObservabilityTraceScope) SetTraceScopeId(val *string) {
 	if err := j.validateSetTraceScopeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func ObservabilityTraceScope_GenerateConfigForImport(scope constructs.Construct,
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScope",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func ObservabilityTraceScope_GenerateConfigForImport(scope constructs.Construct,
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ObservabilityTraceScope_IsConstruct(x interface{}) *bool {
+func ObservabilityTraceScope_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateObservabilityTraceScope_IsConstructParameters(x); err != nil {
@@ -691,7 +690,7 @@ func ObservabilityTraceScope_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScope",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -699,7 +698,7 @@ func ObservabilityTraceScope_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ObservabilityTraceScope_IsTerraformElement(x interface{}) *bool {
+func ObservabilityTraceScope_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateObservabilityTraceScope_IsTerraformElementParameters(x); err != nil {
@@ -710,7 +709,7 @@ func ObservabilityTraceScope_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScope",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func ObservabilityTraceScope_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ObservabilityTraceScope_IsTerraformResource(x interface{}) *bool {
+func ObservabilityTraceScope_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateObservabilityTraceScope_IsTerraformResourceParameters(x); err != nil {
@@ -729,7 +728,7 @@ func ObservabilityTraceScope_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.observabilityTraceScope.ObservabilityTraceScope",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -754,31 +753,31 @@ func (o *jsiiProxy_ObservabilityTraceScope) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_ObservabilityTraceScope) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_ObservabilityTraceScope) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_ObservabilityTraceScope) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_ObservabilityTraceScope) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) GetBooleanAttribute(terraformAttribu
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) GetBooleanMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) GetListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) GetNumberAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) GetNumberListAttribute(terraformAttr
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) GetNumberMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) GetStringAttribute(terraformAttribut
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,15 +905,15 @@ func (o *jsiiProxy_ObservabilityTraceScope) GetStringMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityTraceScope) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_ObservabilityTraceScope) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -933,7 +932,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) ImportFrom(id *string, provider cdkt
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -946,7 +945,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) InterpolationForAttribute(terraformA
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,18 +959,18 @@ func (o *jsiiProxy_ObservabilityTraceScope) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_ObservabilityTraceScope) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_ObservabilityTraceScope) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -982,7 +981,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -993,7 +992,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) OverrideLogicalId(newLogicalId *stri
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (o *jsiiProxy_ObservabilityTraceScope) PutTimeouts(value *ObservabilityTrac
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1048,8 +1047,8 @@ func (o *jsiiProxy_ObservabilityTraceScope) ResetTimeouts() {
 	)
 }
 
-func (o *jsiiProxy_ObservabilityTraceScope) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_ObservabilityTraceScope) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1061,8 +1060,8 @@ func (o *jsiiProxy_ObservabilityTraceScope) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityTraceScope) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_ObservabilityTraceScope) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1074,8 +1073,8 @@ func (o *jsiiProxy_ObservabilityTraceScope) SynthesizeHclAttributes() *map[strin
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityTraceScope) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_ObservabilityTraceScope) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1087,8 +1086,8 @@ func (o *jsiiProxy_ObservabilityTraceScope) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityTraceScope) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_ObservabilityTraceScope) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1113,8 +1112,8 @@ func (o *jsiiProxy_ObservabilityTraceScope) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_ObservabilityTraceScope) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_ObservabilityTraceScope) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1125,4 +1124,3 @@ func (o *jsiiProxy_ObservabilityTraceScope) ToTerraform() interface{} {
 
 	return returns
 }
-

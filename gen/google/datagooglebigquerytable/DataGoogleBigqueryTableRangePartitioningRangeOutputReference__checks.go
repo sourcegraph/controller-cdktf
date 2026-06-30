@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBigqueryTableRangePartitioningRangeOutputReferencePara
 
 	return nil
 }
-

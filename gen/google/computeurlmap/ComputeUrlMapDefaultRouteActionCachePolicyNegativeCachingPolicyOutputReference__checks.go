@@ -117,7 +117,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyO
 
 	return nil
 }
-

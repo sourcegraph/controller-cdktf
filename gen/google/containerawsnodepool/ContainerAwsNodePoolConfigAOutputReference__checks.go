@@ -145,7 +145,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validatePutSshCon
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validatePutTaintsParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validatePutTaintsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -184,7 +184,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -324,4 +324,3 @@ func validateNewContainerAwsNodePoolConfigAOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

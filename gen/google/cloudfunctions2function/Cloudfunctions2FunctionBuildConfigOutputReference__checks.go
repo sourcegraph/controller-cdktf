@@ -131,7 +131,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -279,4 +279,3 @@ func validateNewCloudfunctions2FunctionBuildConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReferenc
 
 	return nil
 }
-

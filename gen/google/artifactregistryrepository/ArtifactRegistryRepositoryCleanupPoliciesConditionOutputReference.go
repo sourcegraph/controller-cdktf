@@ -12,9 +12,9 @@ type ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -58,7 +58,7 @@ type ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference interface
 	ResetVersionNamePrefixes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	return returns
 }
 
-
 func NewArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetInternalValue(val *ArtifactRegistryRepositoryCleanupPoliciesCondition) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetInternalValue(val *ArtifactRegistryRepositoryCleanupPoliciesCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetNewerThan(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetNewerThan(val *string) {
 	if err := j.validateSetNewerThanParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetOlderThan(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetOlderThan(val *string) {
 	if err := j.validateSetOlderThanParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetPackageNamePrefixes(val *[]*string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetPackageNamePrefixes(val *[]*string) {
 	if err := j.validateSetPackageNamePrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetTagPrefixes(val *[]*string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetTagPrefixes(val *[]*string) {
 	if err := j.validateSetTagPrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetTagState(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetTagState(val *string) {
 	if err := j.validateSetTagStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetVersionNamePrefixes(val *[]*string) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) SetVersionNamePrefixes(val *[]*string) {
 	if err := j.validateSetVersionNamePrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	)
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 
 	return returns
 }
-

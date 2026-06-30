@@ -1,6 +1,5 @@
 package computeurlmap
 
-
 type ComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches struct {
 	// The name of the query parameter to match.
 	//
@@ -22,7 +21,7 @@ type ComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches struct {
 	// presentMatch, exactMatch and regexMatch must be set.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#present_match ComputeUrlMap#present_match}
-	PresentMatch interface{} `field:"optional" json:"presentMatch" yaml:"presentMatch"`
+	PresentMatch any `field:"optional" json:"presentMatch" yaml:"presentMatch"`
 	// The queryParameterMatch matches if the value of the parameter matches the regular expression specified by regexMatch.
 	//
 	// For the regular expression grammar,
@@ -32,4 +31,3 @@ type ComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#regex_match ComputeUrlMap#regex_match}
 	RegexMatch *string `field:"optional" json:"regexMatch" yaml:"regexMatch"`
 }
-

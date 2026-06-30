@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainGroup) validateAddMoveTargetPar
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkServicesMulticastDomainGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainGroup) validateMoveFromIdParame
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkServicesMulticastDomainGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkServicesMulticastDomainGroup_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateNetworkServicesMulticastDomainGroup_IsConstructParameters(x interface{}) error {
+func validateNetworkServicesMulticastDomainGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkServicesMulticastDomainGroup_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateNetworkServicesMulticastDomainGroup_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkServicesMulticastDomainGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkServicesMulticastDomainGroup_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateNetworkServicesMulticastDomainGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkServicesMulticastDomainGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateNetworkServicesMulticastDomainGroup_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastDomainGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainGroup) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastDomainGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainGroup) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastDomainGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewNetworkServicesMulticastDomainGroupParameters(scope constructs.C
 
 	return nil
 }
-

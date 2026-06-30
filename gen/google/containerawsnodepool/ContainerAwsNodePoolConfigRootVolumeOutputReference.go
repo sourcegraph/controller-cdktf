@@ -12,9 +12,9 @@ type ContainerAwsNodePoolConfigRootVolumeOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -55,7 +55,7 @@ type ContainerAwsNodePoolConfigRootVolumeOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type ContainerAwsNodePoolConfigRootVolumeOutputReference interface {
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) VolumeTy
 	return returns
 }
 
-
 func NewContainerAwsNodePoolConfigRootVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAwsNodePoolConfigRootVolumeOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewContainerAwsNodePoolConfigRootVolumeOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigRootVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewContainerAwsNodePoolConfigRootVolumeOutputReference_Override(c Container
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigRootVolumeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetInternalValue(val *ContainerAwsNodePoolConfigRootVolume) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetInternalValue(val *ContainerAwsNodePoolConfigRootVolume) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetIops(val *float64) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetIops(val *float64) {
 	if err := j.validateSetIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetIops(v
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetKmsKeyArn(val *string) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetKmsKeyArn(val *string) {
 	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetKmsKey
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetSizeGib(val *float64) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetSizeGib(val *float64) {
 	if err := j.validateSetSizeGibParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetSizeGi
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetThroughput(val *float64) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetThroughput(val *float64) {
 	if err := j.validateSetThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetThroug
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference)SetVolumeType(val *string) {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) SetVolumeType(val *string) {
 	if err := j.validateSetVolumeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) ComputeF
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetBoole
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetBoole
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetListA
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetNumbe
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetNumbe
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetNumbe
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetStrin
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) GetStrin
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) Interpol
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) ResetVol
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) ToString
 
 	return returns
 }
-

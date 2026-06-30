@@ -34,7 +34,7 @@ func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFolderAccessApprovalSettingsEnrolledServicesListParameters(terra
 
 	return nil
 }
-

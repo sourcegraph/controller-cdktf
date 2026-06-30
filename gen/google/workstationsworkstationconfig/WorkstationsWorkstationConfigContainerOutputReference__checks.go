@@ -114,7 +114,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigContainerOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigContainerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigContainerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewWorkstationsWorkstationConfigContainerOutputReferenceParameters(
 
 	return nil
 }
-

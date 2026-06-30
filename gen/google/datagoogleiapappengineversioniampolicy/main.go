@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
-		reflect.TypeOf((*DataGoogleIapAppEngineVersionIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIapAppEngineVersionIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "appId", GoGetter: "AppId"},
@@ -59,7 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionId", GoGetter: "VersionId"},
 			_jsii_.MemberProperty{JsiiProperty: "versionIdInput", GoGetter: "VersionIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleIapAppEngineVersionIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -67,6 +67,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicyConfig",
-		reflect.TypeOf((*DataGoogleIapAppEngineVersionIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleIapAppEngineVersionIamPolicyConfig](),
 	)
 }

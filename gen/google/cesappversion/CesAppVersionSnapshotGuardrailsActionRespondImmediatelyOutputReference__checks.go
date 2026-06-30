@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutput
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputRef
 
 	return nil
 }
-

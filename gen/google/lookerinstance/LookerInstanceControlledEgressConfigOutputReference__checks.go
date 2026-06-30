@@ -98,7 +98,7 @@ func (l *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) validateSetMarketplaceEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstanceControlledEgressConfigOutputReference) validateSetMarketplaceEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewLookerInstanceControlledEgressConfigOutputReferenceParameters(te
 
 	return nil
 }
-

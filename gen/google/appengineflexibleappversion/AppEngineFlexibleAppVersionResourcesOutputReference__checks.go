@@ -90,7 +90,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionResourcesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionResourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewAppEngineFlexibleAppVersionResourcesOutputReferenceParameters(te
 
 	return nil
 }
-

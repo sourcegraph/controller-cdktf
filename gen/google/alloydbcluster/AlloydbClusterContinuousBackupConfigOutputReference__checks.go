@@ -109,7 +109,7 @@ func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -174,7 +174,7 @@ func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -237,4 +237,3 @@ func validateNewAlloydbClusterContinuousBackupConfigOutputReferenceParameters(te
 
 	return nil
 }
-

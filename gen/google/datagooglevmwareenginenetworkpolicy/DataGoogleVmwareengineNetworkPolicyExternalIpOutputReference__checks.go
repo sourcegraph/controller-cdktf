@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineNetworkPolicyExternalIpOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineNetworkPolicyExternalIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareengineNetworkPolicyExternalIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVmwareengineNetworkPolicyExternalIpOutputReferencePara
 
 	return nil
 }
-

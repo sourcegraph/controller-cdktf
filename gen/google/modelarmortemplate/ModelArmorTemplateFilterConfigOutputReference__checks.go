@@ -142,7 +142,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewModelArmorTemplateFilterConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

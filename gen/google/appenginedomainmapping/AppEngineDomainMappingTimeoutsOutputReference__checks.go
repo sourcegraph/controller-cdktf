@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineDomainMappingTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineDomainMappingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineDomainMappingTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AppEngineDomainMappingTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineDomainMappingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineDomainMappingTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAppEngineDomainMappingTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -51,7 +51,7 @@ type TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference interface
 	ResetXy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	return returns
 }
 
-
 func NewTranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewTranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewTranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference)SetEndTimeOffset(val *string) {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) SetEndTimeOffset(val *string) {
 	if err := j.validateSetEndTimeOffsetParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference)SetFadeType(val *string) {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) SetFadeType(val *string) {
 	if err := j.validateSetFadeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference)SetInternalValue(val *TranscoderJobConfigOverlaysAnimationsAnimationFade) {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) SetInternalValue(val *TranscoderJobConfigOverlaysAnimationsAnimationFade) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference)SetStartTimeOffset(val *string) {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) SetStartTimeOffset(val *string) {
 	if err := j.validateSetStartTimeOffsetParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -370,16 +369,16 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -395,7 +394,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -411,7 +410,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -427,7 +426,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -459,7 +458,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -475,7 +474,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -491,7 +490,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -507,7 +506,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	_jsii_.InvokeVoid(
 		t,
 		"putXy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputRefer
 
 	return returns
 }
-

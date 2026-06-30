@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudTasksQueueHttpTargetOidcTokenOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueHttpTargetOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudTasksQueueHttpTargetOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudTasksQueueHttpTargetOidcTokenOutputReferenceParameters(terr
 
 	return nil
 }
-

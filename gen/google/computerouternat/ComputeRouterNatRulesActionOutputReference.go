@@ -12,9 +12,9 @@ type ComputeRouterNatRulesActionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type ComputeRouterNatRulesActionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type ComputeRouterNatRulesActionOutputReference interface {
 	ResetSourceNatDrainRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,8 +92,8 @@ type jsiiProxy_ComputeRouterNatRulesActionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -242,7 +242,6 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewComputeRouterNatRulesActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRouterNatRulesActionOutputReference {
 	_init_.Initialize()
 
@@ -253,7 +252,7 @@ func NewComputeRouterNatRulesActionOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatRulesActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -265,12 +264,12 @@ func NewComputeRouterNatRulesActionOutputReference_Override(c ComputeRouterNatRu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatRulesActionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,7 +280,7 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetInternalValue(val *ComputeRouterNatRulesAction) {
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) SetInternalValue(val *ComputeRouterNatRulesAction) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetSourceNatActiveIps(val *[]*string) {
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) SetSourceNatActiveIps(val *[]*string) {
 	if err := j.validateSetSourceNatActiveIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetSourceNatActive
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetSourceNatActiveRanges(val *[]*string) {
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) SetSourceNatActiveRanges(val *[]*string) {
 	if err := j.validateSetSourceNatActiveRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetSourceNatActive
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetSourceNatDrainIps(val *[]*string) {
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) SetSourceNatDrainIps(val *[]*string) {
 	if err := j.validateSetSourceNatDrainIpsParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetSourceNatDrainI
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetSourceNatDrainRanges(val *[]*string) {
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) SetSourceNatDrainRanges(val *[]*string) {
 	if err := j.validateSetSourceNatDrainRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetSourceNatDrainR
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,16 +381,16 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -439,7 +438,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -455,7 +454,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -471,7 +470,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -487,7 +486,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -519,7 +518,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -587,16 +586,16 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) ResetSourceNatDra
 	)
 }
 
-func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -615,4 +614,3 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) ToString() *strin
 
 	return returns
 }
-

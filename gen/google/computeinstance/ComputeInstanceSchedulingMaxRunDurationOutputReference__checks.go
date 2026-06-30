@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceSchedulingMaxRunDurationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceSchedulingMaxRunDurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceSchedulingMaxRunDurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeInstanceSchedulingMaxRunDurationOutputReferenceParameters
 
 	return nil
 }
-

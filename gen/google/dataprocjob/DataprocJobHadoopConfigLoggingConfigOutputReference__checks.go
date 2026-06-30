@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocJobHadoopConfigLoggingConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobHadoopConfigLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocJobHadoopConfigLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocJobHadoopConfigLoggingConfigOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -128,7 +128,7 @@ func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) validateSetArrayConfigPa
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -201,7 +201,7 @@ func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) validateSetFieldPathPara
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreIndexFieldsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -268,4 +268,3 @@ func validateNewFirestoreIndexFieldsOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

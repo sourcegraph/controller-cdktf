@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiCodeRepositoryIndex.GeminiCodeRepositoryIndex",
-		reflect.TypeOf((*GeminiCodeRepositoryIndex)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeRepositoryIndex](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiCodeRepositoryIndex{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiCodeRepositoryIndex.GeminiCodeRepositoryIndexConfig",
-		reflect.TypeOf((*GeminiCodeRepositoryIndexConfig)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeRepositoryIndexConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiCodeRepositoryIndex.GeminiCodeRepositoryIndexTimeouts",
-		reflect.TypeOf((*GeminiCodeRepositoryIndexTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeRepositoryIndexTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiCodeRepositoryIndex.GeminiCodeRepositoryIndexTimeoutsOutputReference",
-		reflect.TypeOf((*GeminiCodeRepositoryIndexTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GeminiCodeRepositoryIndexTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -131,7 +131,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiCodeRepositoryIndexTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

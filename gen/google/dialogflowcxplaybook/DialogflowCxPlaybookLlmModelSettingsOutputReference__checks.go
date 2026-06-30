@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxPlaybookLlmModelSettingsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPlaybookLlmModelSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxPlaybookLlmModelSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDialogflowCxPlaybookLlmModelSettingsOutputReferenceParameters(te
 
 	return nil
 }
-

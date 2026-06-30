@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeInstanceNetworkInterfaceIpv6AccessConfigListParameters(te
 
 	return nil
 }
-

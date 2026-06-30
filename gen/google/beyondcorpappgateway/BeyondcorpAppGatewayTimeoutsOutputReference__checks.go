@@ -98,7 +98,7 @@ func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBeyondcorpAppGatewayTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (b *jsiiProxy_BiglakeIcebergTableIamBinding) validateAddMoveTargetParameter
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergTableIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BiglakeIcebergTableIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BiglakeIcebergTableIamBinding) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergTableIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BiglakeIcebergTableIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBiglakeIcebergTableIamBinding_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateBiglakeIcebergTableIamBinding_IsConstructParameters(x interface{}) error {
+func validateBiglakeIcebergTableIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBiglakeIcebergTableIamBinding_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateBiglakeIcebergTableIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateBiglakeIcebergTableIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBiglakeIcebergTableIamBinding_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateBiglakeIcebergTableIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateBiglakeIcebergTableIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_BiglakeIcebergTableIamBinding) validateSetCatalogParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTableIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_BiglakeIcebergTableIamBinding) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTableIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_BiglakeIcebergTableIamBinding) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTableIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -473,4 +473,3 @@ func validateNewBiglakeIcebergTableIamBindingParameters(scope constructs.Constru
 
 	return nil
 }
-

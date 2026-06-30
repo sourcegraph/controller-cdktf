@@ -21,11 +21,11 @@ type DataGoogleMonitoringIstioCanonicalService interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,20 +60,20 @@ type DataGoogleMonitoringIstioCanonicalService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceId() *string
 	Telemetry() DataGoogleMonitoringIstioCanonicalServiceTelemetryList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	UserLabels() cdktf.StringMap
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,18 +100,18 @@ type DataGoogleMonitoringIstioCanonicalService interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleMonitoringIstioCanonicalService
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) CdktfStack() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) TerraformGenerator
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) UserLabels() cdktf
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/monitoring_istio_canonical_service google_monitoring_istio_canonical_service} Data Source.
 func NewDataGoogleMonitoringIstioCanonicalService(scope constructs.Construct, id *string, config *DataGoogleMonitoringIstioCanonicalServiceConfig) DataGoogleMonitoringIstioCanonicalService {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewDataGoogleMonitoringIstioCanonicalService(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -434,12 +433,12 @@ func NewDataGoogleMonitoringIstioCanonicalService_Override(d DataGoogleMonitorin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetCanonicalService(val *string) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetCanonicalService(val *string) {
 	if err := j.validateSetCanonicalServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetCanonicalService
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetCanonicalServiceNamespace(val *string) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetCanonicalServiceNamespace(val *string) {
 	if err := j.validateSetCanonicalServiceNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetCanonicalService
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -488,7 +487,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetMeshUid(val *string) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetMeshUid(val *string) {
 	if err := j.validateSetMeshUidParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetMeshUid(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetProject(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -552,7 +551,7 @@ func DataGoogleMonitoringIstioCanonicalService_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func DataGoogleMonitoringIstioCanonicalService_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleMonitoringIstioCanonicalService_IsConstruct(x interface{}) *bool {
+func DataGoogleMonitoringIstioCanonicalService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleMonitoringIstioCanonicalService_IsConstructParameters(x); err != nil {
@@ -587,7 +586,7 @@ func DataGoogleMonitoringIstioCanonicalService_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func DataGoogleMonitoringIstioCanonicalService_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func DataGoogleMonitoringIstioCanonicalService_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleMonitoringIstioCanonicalService_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleMonitoringIstioCanonicalService_IsTerraformDataSourceParameters(x); err != nil {
@@ -606,7 +605,7 @@ func DataGoogleMonitoringIstioCanonicalService_IsTerraformDataSource(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func DataGoogleMonitoringIstioCanonicalService_IsTerraformDataSource(x interface
 }
 
 // Experimental.
-func DataGoogleMonitoringIstioCanonicalService_IsTerraformElement(x interface{}) *bool {
+func DataGoogleMonitoringIstioCanonicalService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleMonitoringIstioCanonicalService_IsTerraformElementParameters(x); err != nil {
@@ -625,7 +624,7 @@ func DataGoogleMonitoringIstioCanonicalService_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -643,27 +642,27 @@ func DataGoogleMonitoringIstioCanonicalService_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -849,8 +848,8 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -862,8 +861,8 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SynthesizeAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -875,8 +874,8 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) SynthesizeHclAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -888,8 +887,8 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ToHclTerraform() i
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -914,8 +913,8 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ToString() *string
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -926,4 +925,3 @@ func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) ToTerraform() inte
 
 	return returns
 }
-

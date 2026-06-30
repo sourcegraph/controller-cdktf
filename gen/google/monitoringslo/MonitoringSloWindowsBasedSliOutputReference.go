@@ -12,9 +12,9 @@ type MonitoringSloWindowsBasedSliOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type MonitoringSloWindowsBasedSliOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type MonitoringSloWindowsBasedSliOutputReference interface {
 	ResetWindowPeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_MonitoringSloWindowsBasedSliOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) WindowPeriodInpu
 	return returns
 }
 
-
 func NewMonitoringSloWindowsBasedSliOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitoringSloWindowsBasedSliOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewMonitoringSloWindowsBasedSliOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewMonitoringSloWindowsBasedSliOutputReference_Override(m MonitoringSloWind
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetGoodBadMetricFilter(val *string) {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) SetGoodBadMetricFilter(val *string) {
 	if err := j.validateSetGoodBadMetricFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetGoodBadMetricF
 	)
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetInternalValue(val *MonitoringSloWindowsBasedSli) {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) SetInternalValue(val *MonitoringSloWindowsBasedSli) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference)SetWindowPeriod(val *string) {
+func (j *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) SetWindowPeriod(val *string) {
 	if err := j.validateSetWindowPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,16 +383,16 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,7 +440,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -457,7 +456,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -473,7 +472,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -489,7 +488,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -505,7 +504,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -521,7 +520,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -564,7 +563,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) PutGoodTotalRati
 	_jsii_.InvokeVoid(
 		m,
 		"putGoodTotalRatioThreshold",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -575,7 +574,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) PutMetricMeanInR
 	_jsii_.InvokeVoid(
 		m,
 		"putMetricMeanInRange",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -586,7 +585,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) PutMetricSumInRa
 	_jsii_.InvokeVoid(
 		m,
 		"putMetricSumInRange",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) ResetWindowPerio
 	)
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) ToString() *stri
 
 	return returns
 }
-

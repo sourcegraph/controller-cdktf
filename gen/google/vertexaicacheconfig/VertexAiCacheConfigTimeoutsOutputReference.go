@@ -12,9 +12,9 @@ type VertexAiCacheConfigTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type VertexAiCacheConfigTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type VertexAiCacheConfigTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type VertexAiCacheConfigTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) UpdateInput() *st
 	return returns
 }
 
-
 func NewVertexAiCacheConfigTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiCacheConfigTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewVertexAiCacheConfigTimeoutsOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewVertexAiCacheConfigTimeoutsOutputReference_Override(v VertexAiCacheConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetCreate(val *str
 	)
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetDelete(val *str
 	)
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (v *jsiiProxy_VertexAiCacheConfigTimeoutsOutputReference) ToString() *strin
 
 	return returns
 }
-

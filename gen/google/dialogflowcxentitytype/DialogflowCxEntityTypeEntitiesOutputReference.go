@@ -12,9 +12,9 @@ type DialogflowCxEntityTypeEntitiesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type DialogflowCxEntityTypeEntitiesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Synonyms() *[]*string
 	SetSynonyms(val *[]*string)
 	SynonymsInput() *[]*string
@@ -46,7 +46,7 @@ type DialogflowCxEntityTypeEntitiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type DialogflowCxEntityTypeEntitiesOutputReference interface {
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) ValueInput() *
 	return returns
 }
 
-
 func NewDialogflowCxEntityTypeEntitiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DialogflowCxEntityTypeEntitiesOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewDialogflowCxEntityTypeEntitiesOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewDialogflowCxEntityTypeEntitiesOutputReference_Override(d DialogflowCxEnt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeEntitiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetSynonyms(val *[]*string) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) SetSynonyms(val *[]*string) {
 	if err := j.validateSetSynonymsParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetSynonyms(val
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) InterpolationF
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) ResetValue() {
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (d *jsiiProxy_DialogflowCxEntityTypeEntitiesOutputReference) ToString() *st
 
 	return returns
 }
-

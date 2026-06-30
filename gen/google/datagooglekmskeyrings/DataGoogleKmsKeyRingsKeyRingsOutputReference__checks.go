@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleKmsKeyRingsKeyRingsOutputReferenceParameters(terraform
 
 	return nil
 }
-

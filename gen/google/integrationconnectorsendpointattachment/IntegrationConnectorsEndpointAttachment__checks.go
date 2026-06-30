@@ -19,7 +19,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateAddMoveTarge
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateMoveFromIdPa
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateIntegrationConnectorsEndpointAttachment_GenerateConfigForImportPara
 	return nil
 }
 
-func validateIntegrationConnectorsEndpointAttachment_IsConstructParameters(x interface{}) error {
+func validateIntegrationConnectorsEndpointAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateIntegrationConnectorsEndpointAttachment_IsConstructParameters(x int
 	return nil
 }
 
-func validateIntegrationConnectorsEndpointAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateIntegrationConnectorsEndpointAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateIntegrationConnectorsEndpointAttachment_IsTerraformElementParameter
 	return nil
 }
 
-func validateIntegrationConnectorsEndpointAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateIntegrationConnectorsEndpointAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateIntegrationConnectorsEndpointAttachment_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -353,7 +353,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetDescripti
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetEndpointGlobalAccessParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetEndpointGlobalAccessParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -421,7 +421,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -493,4 +493,3 @@ func validateNewIntegrationConnectorsEndpointAttachmentParameters(scope construc
 
 	return nil
 }
-

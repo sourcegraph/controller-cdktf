@@ -117,7 +117,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutput
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewDiscoveryEngineControlBoostActionInterpolationBoostSpecOutputRef
 
 	return nil
 }
-

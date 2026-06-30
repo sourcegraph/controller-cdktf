@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppDataStoreSettingsEnginesOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -17,15 +17,15 @@ type KmsCryptoKeyIamBinding interface {
 	Condition() KmsCryptoKeyIamBindingConditionOutputReference
 	ConditionInput() *KmsCryptoKeyIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CryptoKeyId() *string
 	SetCryptoKeyId(val *string)
 	CryptoKeyIdInput() *string
@@ -59,27 +59,27 @@ type KmsCryptoKeyIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type KmsCryptoKeyIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type KmsCryptoKeyIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type KmsCryptoKeyIamBinding interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for KmsCryptoKeyIamBinding
@@ -170,8 +170,8 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding) ConditionInput() *KmsCryptoKeyIamBind
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding} Resource.
 func NewKmsCryptoKeyIamBinding(scope constructs.Construct, id *string, config *KmsCryptoKeyIamBindingConfig) KmsCryptoKeyIamBinding {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewKmsCryptoKeyIamBinding(scope constructs.Construct, id *string, config *K
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewKmsCryptoKeyIamBinding_Override(k KmsCryptoKeyIamBinding, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetCryptoKeyId(val *string) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetCryptoKeyId(val *string) {
 	if err := j.validateSetCryptoKeyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetCryptoKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -481,7 +480,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -489,7 +488,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetId(val *string) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_KmsCryptoKeyIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func KmsCryptoKeyIamBinding_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func KmsCryptoKeyIamBinding_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func KmsCryptoKeyIamBinding_IsConstruct(x interface{}) *bool {
+func KmsCryptoKeyIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsCryptoKeyIamBinding_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func KmsCryptoKeyIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func KmsCryptoKeyIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsCryptoKeyIamBinding_IsTerraformElement(x interface{}) *bool {
+func KmsCryptoKeyIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsCryptoKeyIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func KmsCryptoKeyIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func KmsCryptoKeyIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func KmsCryptoKeyIamBinding_IsTerraformResource(x interface{}) *bool {
+func KmsCryptoKeyIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateKmsCryptoKeyIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func KmsCryptoKeyIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) AddOverride(path *string, value interface{}) {
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) AddOverride(path *string, value any) {
 	if err := k.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -841,7 +840,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		k,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		k,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		k,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -912,7 +911,7 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) PutCondition(value *KmsCryptoKeyIamBi
 	_jsii_.InvokeVoid(
 		k,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,8 +939,8 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) ResetOverrideLogicalId() {
 	)
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -953,8 +952,8 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
@@ -966,8 +965,8 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -979,8 +978,8 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1005,8 +1004,8 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) ToString() *string {
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		k,
@@ -1017,4 +1016,3 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

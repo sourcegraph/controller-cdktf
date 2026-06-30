@@ -98,7 +98,7 @@ func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewVpcAccessConnectorSubnetOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

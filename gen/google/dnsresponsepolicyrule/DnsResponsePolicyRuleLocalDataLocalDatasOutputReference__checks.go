@@ -98,7 +98,7 @@ func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DnsResponsePolicyRuleLocalDataLocalDatasOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -254,4 +254,3 @@ func validateNewDnsResponsePolicyRuleLocalDataLocalDatasOutputReferenceParameter
 
 	return nil
 }
-

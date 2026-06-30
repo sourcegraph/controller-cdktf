@@ -17,8 +17,8 @@ type SpannerInstanceConfigReplicasList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type SpannerInstanceConfigReplicasList interface {
 	Get(index *float64) SpannerInstanceConfigReplicasOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerInstanceConfigReplicasList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewSpannerInstanceConfigReplicasList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpannerInstanceConfigReplicasList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewSpannerInstanceConfigReplicasList(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewSpannerInstanceConfigReplicasList_Override(s SpannerInstanceConfigReplic
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasList)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasList)SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasList) AllWithMapKey(mapKeyAttrib
 	_jsii_.Invoke(
 		s,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasList) Get(index *float64) Spanne
 	_jsii_.Invoke(
 		s,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasList) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasList) ToString() *string {
 
 	return returns
 }
-

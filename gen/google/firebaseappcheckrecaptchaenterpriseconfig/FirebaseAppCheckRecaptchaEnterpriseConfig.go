@@ -18,15 +18,15 @@ type FirebaseAppCheckRecaptchaEnterpriseConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,22 +57,22 @@ type FirebaseAppCheckRecaptchaEnterpriseConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SiteKey() *string
 	SetSiteKey(val *string)
 	SiteKeyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TokenTtl() *string
 	SetTokenTtl(val *string)
 	TokenTtlInput() *string
@@ -80,9 +80,9 @@ type FirebaseAppCheckRecaptchaEnterpriseConfig interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type FirebaseAppCheckRecaptchaEnterpriseConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type FirebaseAppCheckRecaptchaEnterpriseConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -127,17 +127,17 @@ type FirebaseAppCheckRecaptchaEnterpriseConfig interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetTokenTtl()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FirebaseAppCheckRecaptchaEnterpriseConfig
@@ -175,8 +175,8 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) CdktfStack() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -185,8 +185,8 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Connection() inter
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Provider() cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Provisioners() *[]
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) TerraformGenerator
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) Timeouts() Firebas
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -435,7 +435,6 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) TokenTtlInput() *s
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_recaptcha_enterprise_config google_firebase_app_check_recaptcha_enterprise_config} Resource.
 func NewFirebaseAppCheckRecaptchaEnterpriseConfig(scope constructs.Construct, id *string, config *FirebaseAppCheckRecaptchaEnterpriseConfigConfig) FirebaseAppCheckRecaptchaEnterpriseConfig {
 	_init_.Initialize()
@@ -447,7 +446,7 @@ func NewFirebaseAppCheckRecaptchaEnterpriseConfig(scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppCheckRecaptchaEnterpriseConfig.FirebaseAppCheckRecaptchaEnterpriseConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -460,12 +459,12 @@ func NewFirebaseAppCheckRecaptchaEnterpriseConfig_Override(f FirebaseAppCheckRec
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseAppCheckRecaptchaEnterpriseConfig.FirebaseAppCheckRecaptchaEnterpriseConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetAppId(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetAppId(val *string) {
 	if err := j.validateSetAppIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetAppId(val *strin
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetCount(val interf
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -506,7 +505,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -514,7 +513,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetForEach(val cdkt
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetId(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -525,7 +524,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetLifecycle(val *c
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetProject(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetProject(val *str
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -555,7 +554,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetProvider(val cdk
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetProvisioners(val
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetSiteKey(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetSiteKey(val *string) {
 	if err := j.validateSetSiteKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetSiteKey(val *str
 	)
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig)SetTokenTtl(val *string) {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SetTokenTtl(val *string) {
 	if err := j.validateSetTokenTtlParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func FirebaseAppCheckRecaptchaEnterpriseConfig_GenerateConfigForImport(scope con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppCheckRecaptchaEnterpriseConfig.FirebaseAppCheckRecaptchaEnterpriseConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func FirebaseAppCheckRecaptchaEnterpriseConfig_GenerateConfigForImport(scope con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FirebaseAppCheckRecaptchaEnterpriseConfig_IsConstruct(x interface{}) *bool {
+func FirebaseAppCheckRecaptchaEnterpriseConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseAppCheckRecaptchaEnterpriseConfig_IsConstructParameters(x); err != nil {
@@ -635,7 +634,7 @@ func FirebaseAppCheckRecaptchaEnterpriseConfig_IsConstruct(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppCheckRecaptchaEnterpriseConfig.FirebaseAppCheckRecaptchaEnterpriseConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func FirebaseAppCheckRecaptchaEnterpriseConfig_IsConstruct(x interface{}) *bool 
 }
 
 // Experimental.
-func FirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformElement(x interface{}) *bool {
+func FirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformElementParameters(x); err != nil {
@@ -654,7 +653,7 @@ func FirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformElement(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppCheckRecaptchaEnterpriseConfig.FirebaseAppCheckRecaptchaEnterpriseConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func FirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformElement(x interface{})
 }
 
 // Experimental.
-func FirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformResource(x interface{}) *bool {
+func FirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformResourceParameters(x); err != nil {
@@ -673,7 +672,7 @@ func FirebaseAppCheckRecaptchaEnterpriseConfig_IsTerraformResource(x interface{}
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.firebaseAppCheckRecaptchaEnterpriseConfig.FirebaseAppCheckRecaptchaEnterpriseConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,31 +697,31 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) AddMoveTarget(move
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetBooleanAttribut
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetBooleanMapAttri
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetListAttribute(t
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetNumberAttribute
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetNumberListAttri
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetNumberMapAttrib
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetStringAttribute
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,15 +849,15 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) GetStringMapAttrib
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -877,7 +876,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ImportFrom(id *str
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -890,7 +889,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) InterpolationForAt
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,18 +903,18 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) MoveFromId(id *str
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -926,7 +925,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) MoveToId(id *strin
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -937,7 +936,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) OverrideLogicalId(
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -948,7 +947,7 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) PutTimeouts(value 
 	_jsii_.InvokeVoid(
 		f,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -992,8 +991,8 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ResetTokenTtl() {
 	)
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1005,8 +1004,8 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SynthesizeAttribut
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -1018,8 +1017,8 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) SynthesizeHclAttri
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1031,8 +1030,8 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ToHclTerraform() i
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1057,8 +1056,8 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ToString() *string
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1069,4 +1068,3 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) ToTerraform() inte
 
 	return returns
 }
-

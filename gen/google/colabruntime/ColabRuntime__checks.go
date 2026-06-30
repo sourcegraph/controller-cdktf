@@ -19,7 +19,7 @@ func (c *jsiiProxy_ColabRuntime) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntime) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ColabRuntime) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ColabRuntime) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntime) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ColabRuntime) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateColabRuntime_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateColabRuntime_IsConstructParameters(x interface{}) error {
+func validateColabRuntime_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateColabRuntime_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateColabRuntime_IsTerraformElementParameters(x interface{}) error {
+func validateColabRuntime_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateColabRuntime_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateColabRuntime_IsTerraformResourceParameters(x interface{}) error {
+func validateColabRuntime_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateColabRuntime_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntime) validateSetAutoUpgradeParameters(val interface{}) error {
+func (j *jsiiProxy_ColabRuntime) validateSetAutoUpgradeParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func (j *jsiiProxy_ColabRuntime) validateSetAutoUpgradeParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntime) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ColabRuntime) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_ColabRuntime) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntime) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ColabRuntime) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -440,7 +440,7 @@ func (j *jsiiProxy_ColabRuntime) validateSetProjectParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntime) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ColabRuntime) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -512,4 +512,3 @@ func validateNewColabRuntimeParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

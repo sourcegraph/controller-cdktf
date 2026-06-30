@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDataprocMetastoreFederationBackendMetastoresOutputReferenceParam
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package cloudrunv2job
 
-
 type CloudRunV2JobTemplateTemplateVolumesGcs struct {
 	// Name of the cloud storage bucket to back the volume.
 	//
@@ -17,6 +16,5 @@ type CloudRunV2JobTemplateTemplateVolumesGcs struct {
 	// If true, mount this volume as read-only in all mounts. If false, mount this volume as read-write.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#read_only CloudRunV2Job#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

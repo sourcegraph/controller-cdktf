@@ -12,9 +12,9 @@ type FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesO
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesO
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,16 +40,16 @@ type FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesO
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseInAppDefault() interface{}
-	SetUseInAppDefault(val interface{})
-	UseInAppDefaultInput() interface{}
+	UseInAppDefault() any
+	SetUseInAppDefault(val any)
+	UseInAppDefaultInput() any
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesO
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditio
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) UseInAppDefault() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) UseInAppDefault() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useInAppDefault",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	return returns
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) UseInAppDefaultInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) UseInAppDefaultInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useInAppDefaultInput",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	return returns
 }
 
-
 func NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference)SetConditionName(val *string) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) SetConditionName(val *string) {
 	if err := j.validateSetConditionNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference)SetUseInAppDefault(val interface{}) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) SetUseInAppDefault(val any) {
 	if err := j.validateSetUseInAppDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	)
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference)SetValue(val *string) {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) SetValue(val *string) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 	)
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParameterGroupsParametersCond
 
 	return returns
 }
-

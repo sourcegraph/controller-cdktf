@@ -18,21 +18,21 @@ type DataCatalogTag interface {
 	SetColumn(val *string)
 	ColumnInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Fields() DataCatalogTagFieldsList
-	FieldsInput() interface{}
+	FieldsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,11 +59,11 @@ type DataCatalogTag interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Template() *string
 	SetTemplate(val *string)
 	TemplateDisplayname() *string
@@ -71,18 +71,18 @@ type DataCatalogTag interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataCatalogTagTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type DataCatalogTag interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,14 +112,14 @@ type DataCatalogTag interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFields(value interface{})
+	PutFields(value any)
 	PutTimeouts(value *DataCatalogTagTimeouts)
 	ResetColumn()
 	ResetId()
@@ -128,17 +128,17 @@ type DataCatalogTag interface {
 	ResetOverrideLogicalId()
 	ResetParent()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCatalogTag
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DataCatalogTag) ColumnInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTag) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogTag) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DataCatalogTag) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTag) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCatalogTag) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_DataCatalogTag) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTag) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogTag) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_DataCatalogTag) Fields() DataCatalogTagFieldsList {
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTag) FieldsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogTag) FieldsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"fieldsInput",
@@ -346,8 +346,8 @@ func (j *jsiiProxy_DataCatalogTag) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTag) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataCatalogTag) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -356,8 +356,8 @@ func (j *jsiiProxy_DataCatalogTag) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTag) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogTag) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_DataCatalogTag) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTag) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCatalogTag) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -436,8 +436,8 @@ func (j *jsiiProxy_DataCatalogTag) Timeouts() DataCatalogTagTimeoutsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTag) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogTag) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -445,7 +445,6 @@ func (j *jsiiProxy_DataCatalogTag) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag google_data_catalog_tag} Resource.
 func NewDataCatalogTag(scope constructs.Construct, id *string, config *DataCatalogTagConfig) DataCatalogTag {
@@ -458,7 +457,7 @@ func NewDataCatalogTag(scope constructs.Construct, id *string, config *DataCatal
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -471,12 +470,12 @@ func NewDataCatalogTag_Override(d DataCatalogTag, scope constructs.Construct, id
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTag",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetColumn(val *string) {
+func (j *jsiiProxy_DataCatalogTag) SetColumn(val *string) {
 	if err := j.validateSetColumnParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_DataCatalogTag)SetColumn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataCatalogTag) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_DataCatalogTag)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCatalogTag) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DataCatalogTag)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCatalogTag) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -517,7 +516,7 @@ func (j *jsiiProxy_DataCatalogTag)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCatalogTag) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -525,7 +524,7 @@ func (j *jsiiProxy_DataCatalogTag)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetId(val *string) {
+func (j *jsiiProxy_DataCatalogTag) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,7 +535,7 @@ func (j *jsiiProxy_DataCatalogTag)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCatalogTag) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -547,7 +546,7 @@ func (j *jsiiProxy_DataCatalogTag)SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetParent(val *string) {
+func (j *jsiiProxy_DataCatalogTag) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_DataCatalogTag)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCatalogTag) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -566,7 +565,7 @@ func (j *jsiiProxy_DataCatalogTag)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataCatalogTag) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_DataCatalogTag)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTag)SetTemplate(val *string) {
+func (j *jsiiProxy_DataCatalogTag) SetTemplate(val *string) {
 	if err := j.validateSetTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func DataCatalogTag_GenerateConfigForImport(scope constructs.Construct, importTo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTag",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func DataCatalogTag_GenerateConfigForImport(scope constructs.Construct, importTo
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCatalogTag_IsConstruct(x interface{}) *bool {
+func DataCatalogTag_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCatalogTag_IsConstructParameters(x); err != nil {
@@ -635,7 +634,7 @@ func DataCatalogTag_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTag",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func DataCatalogTag_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCatalogTag_IsTerraformElement(x interface{}) *bool {
+func DataCatalogTag_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCatalogTag_IsTerraformElementParameters(x); err != nil {
@@ -654,7 +653,7 @@ func DataCatalogTag_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTag",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func DataCatalogTag_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCatalogTag_IsTerraformResource(x interface{}) *bool {
+func DataCatalogTag_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCatalogTag_IsTerraformResourceParameters(x); err != nil {
@@ -673,7 +672,7 @@ func DataCatalogTag_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataCatalogTag.DataCatalogTag",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,31 +697,31 @@ func (d *jsiiProxy_DataCatalogTag) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTag) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCatalogTag) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTag) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCatalogTag) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (d *jsiiProxy_DataCatalogTag) GetBooleanAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (d *jsiiProxy_DataCatalogTag) GetBooleanMapAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,7 +769,7 @@ func (d *jsiiProxy_DataCatalogTag) GetListAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -786,7 +785,7 @@ func (d *jsiiProxy_DataCatalogTag) GetNumberAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -802,7 +801,7 @@ func (d *jsiiProxy_DataCatalogTag) GetNumberListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -818,7 +817,7 @@ func (d *jsiiProxy_DataCatalogTag) GetNumberMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -834,7 +833,7 @@ func (d *jsiiProxy_DataCatalogTag) GetStringAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -850,15 +849,15 @@ func (d *jsiiProxy_DataCatalogTag) GetStringMapAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTag) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCatalogTag) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -877,7 +876,7 @@ func (d *jsiiProxy_DataCatalogTag) ImportFrom(id *string, provider cdktf.Terrafo
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -890,7 +889,7 @@ func (d *jsiiProxy_DataCatalogTag) InterpolationForAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,18 +903,18 @@ func (d *jsiiProxy_DataCatalogTag) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTag) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataCatalogTag) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -926,7 +925,7 @@ func (d *jsiiProxy_DataCatalogTag) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -937,18 +936,18 @@ func (d *jsiiProxy_DataCatalogTag) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTag) PutFields(value interface{}) {
+func (d *jsiiProxy_DataCatalogTag) PutFields(value any) {
 	if err := d.validatePutFieldsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putFields",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -959,7 +958,7 @@ func (d *jsiiProxy_DataCatalogTag) PutTimeouts(value *DataCatalogTagTimeouts) {
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1003,8 +1002,8 @@ func (d *jsiiProxy_DataCatalogTag) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTag) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCatalogTag) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1016,8 +1015,8 @@ func (d *jsiiProxy_DataCatalogTag) SynthesizeAttributes() *map[string]interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTag) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCatalogTag) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1029,8 +1028,8 @@ func (d *jsiiProxy_DataCatalogTag) SynthesizeHclAttributes() *map[string]interfa
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTag) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCatalogTag) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1042,8 +1041,8 @@ func (d *jsiiProxy_DataCatalogTag) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTag) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCatalogTag) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1068,8 +1067,8 @@ func (d *jsiiProxy_DataCatalogTag) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTag) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCatalogTag) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1080,4 +1079,3 @@ func (d *jsiiProxy_DataCatalogTag) ToTerraform() interface{} {
 
 	return returns
 }
-

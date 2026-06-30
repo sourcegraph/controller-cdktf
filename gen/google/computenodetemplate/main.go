@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplate",
-		reflect.TypeOf((*ComputeNodeTemplate)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeNodeTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -106,11 +106,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateAccelerators",
-		reflect.TypeOf((*ComputeNodeTemplateAccelerators)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateAcceleratorsList",
-		reflect.TypeOf((*ComputeNodeTemplateAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeNodeTemplateAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -132,7 +132,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateAcceleratorsOutputReference",
-		reflect.TypeOf((*ComputeNodeTemplateAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeNodeTemplateAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,15 +170,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateConfig",
-		reflect.TypeOf((*ComputeNodeTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateDisks",
-		reflect.TypeOf((*ComputeNodeTemplateDisks)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateDisks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateDisksList",
-		reflect.TypeOf((*ComputeNodeTemplateDisksList)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateDisksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeNodeTemplateDisksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -200,7 +200,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateDisksOutputReference",
-		reflect.TypeOf((*ComputeNodeTemplateDisksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateDisksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeNodeTemplateDisksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,11 +241,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateNodeTypeFlexibility",
-		reflect.TypeOf((*ComputeNodeTemplateNodeTypeFlexibility)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateNodeTypeFlexibility](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateNodeTypeFlexibilityOutputReference",
-		reflect.TypeOf((*ComputeNodeTemplateNodeTypeFlexibilityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateNodeTypeFlexibilityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -276,7 +276,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -284,11 +284,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateServerBinding",
-		reflect.TypeOf((*ComputeNodeTemplateServerBinding)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateServerBinding](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateServerBindingOutputReference",
-		reflect.TypeOf((*ComputeNodeTemplateServerBindingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateServerBindingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -314,7 +314,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeNodeTemplateServerBindingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -322,11 +322,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateTimeouts",
-		reflect.TypeOf((*ComputeNodeTemplateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeNodeTemplateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeNodeTemplateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeNodeTemplateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

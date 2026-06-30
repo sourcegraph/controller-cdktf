@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApigeeSharedflowMetaDataOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

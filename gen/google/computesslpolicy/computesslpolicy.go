@@ -15,15 +15,15 @@ type ComputeSslPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	CustomFeatures() *[]*string
 	SetCustomFeatures(val *[]*string)
@@ -71,27 +71,27 @@ type ComputeSslPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeSslPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type ComputeSslPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type ComputeSslPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type ComputeSslPolicy interface {
 	ResetProfile()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeSslPolicy
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ComputeSslPolicy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSslPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSslPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_ComputeSslPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSslPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeSslPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ComputeSslPolicy) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSslPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSslPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_ComputeSslPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSslPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeSslPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_ComputeSslPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSslPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSslPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_ComputeSslPolicy) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSslPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeSslPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_ComputeSslPolicy) Timeouts() ComputeSslPolicyTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSslPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeSslPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -516,7 +516,6 @@ func (j *jsiiProxy_ComputeSslPolicy) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_ssl_policy google_compute_ssl_policy} Resource.
 func NewComputeSslPolicy(scope constructs.Construct, id *string, config *ComputeSslPolicyConfig) ComputeSslPolicy {
@@ -529,7 +528,7 @@ func NewComputeSslPolicy(scope constructs.Construct, id *string, config *Compute
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSslPolicy.ComputeSslPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -542,12 +541,12 @@ func NewComputeSslPolicy_Override(c ComputeSslPolicy, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeSslPolicy.ComputeSslPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeSslPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -558,7 +557,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeSslPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetCustomFeatures(val *[]*string) {
+func (j *jsiiProxy_ComputeSslPolicy) SetCustomFeatures(val *[]*string) {
 	if err := j.validateSetCustomFeaturesParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetCustomFeatures(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeSslPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -588,7 +587,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeSslPolicy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeSslPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -607,7 +606,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetId(val *string) {
+func (j *jsiiProxy_ComputeSslPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -618,7 +617,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeSslPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -629,7 +628,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetMinTlsVersion(val *string) {
+func (j *jsiiProxy_ComputeSslPolicy) SetMinTlsVersion(val *string) {
 	if err := j.validateSetMinTlsVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetMinTlsVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetName(val *string) {
+func (j *jsiiProxy_ComputeSslPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetProfile(val *string) {
+func (j *jsiiProxy_ComputeSslPolicy) SetProfile(val *string) {
 	if err := j.validateSetProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetProfile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetProject(val *string) {
+func (j *jsiiProxy_ComputeSslPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeSslPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -681,7 +680,7 @@ func (j *jsiiProxy_ComputeSslPolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeSslPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,7 +703,7 @@ func ComputeSslPolicy_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSslPolicy.ComputeSslPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func ComputeSslPolicy_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeSslPolicy_IsConstruct(x interface{}) *bool {
+func ComputeSslPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeSslPolicy_IsConstructParameters(x); err != nil {
@@ -739,7 +738,7 @@ func ComputeSslPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSslPolicy.ComputeSslPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -747,7 +746,7 @@ func ComputeSslPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeSslPolicy_IsTerraformElement(x interface{}) *bool {
+func ComputeSslPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeSslPolicy_IsTerraformElementParameters(x); err != nil {
@@ -758,7 +757,7 @@ func ComputeSslPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSslPolicy.ComputeSslPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func ComputeSslPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeSslPolicy_IsTerraformResource(x interface{}) *bool {
+func ComputeSslPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeSslPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -777,7 +776,7 @@ func ComputeSslPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeSslPolicy.ComputeSslPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -802,31 +801,31 @@ func (c *jsiiProxy_ComputeSslPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeSslPolicy) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeSslPolicy) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeSslPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeSslPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (c *jsiiProxy_ComputeSslPolicy) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (c *jsiiProxy_ComputeSslPolicy) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,7 +873,7 @@ func (c *jsiiProxy_ComputeSslPolicy) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -890,7 +889,7 @@ func (c *jsiiProxy_ComputeSslPolicy) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -906,7 +905,7 @@ func (c *jsiiProxy_ComputeSslPolicy) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func (c *jsiiProxy_ComputeSslPolicy) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,7 +937,7 @@ func (c *jsiiProxy_ComputeSslPolicy) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -954,15 +953,15 @@ func (c *jsiiProxy_ComputeSslPolicy) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSslPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSslPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -981,7 +980,7 @@ func (c *jsiiProxy_ComputeSslPolicy) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -994,7 +993,7 @@ func (c *jsiiProxy_ComputeSslPolicy) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1008,18 +1007,18 @@ func (c *jsiiProxy_ComputeSslPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeSslPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeSslPolicy) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1030,7 +1029,7 @@ func (c *jsiiProxy_ComputeSslPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (c *jsiiProxy_ComputeSslPolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (c *jsiiProxy_ComputeSslPolicy) PutTimeouts(value *ComputeSslPolicyTimeouts
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1120,8 +1119,8 @@ func (c *jsiiProxy_ComputeSslPolicy) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeSslPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeSslPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1133,8 +1132,8 @@ func (c *jsiiProxy_ComputeSslPolicy) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSslPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeSslPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1146,8 +1145,8 @@ func (c *jsiiProxy_ComputeSslPolicy) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSslPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSslPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1159,8 +1158,8 @@ func (c *jsiiProxy_ComputeSslPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSslPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSslPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1185,8 +1184,8 @@ func (c *jsiiProxy_ComputeSslPolicy) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSslPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeSslPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1197,4 +1196,3 @@ func (c *jsiiProxy_ComputeSslPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

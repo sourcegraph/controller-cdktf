@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewLoggingSavedQueryOpsAnalyticsQueryOutputReferenceParameters(terr
 
 	return nil
 }
-

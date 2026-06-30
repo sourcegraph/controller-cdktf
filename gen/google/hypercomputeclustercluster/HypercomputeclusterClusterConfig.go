@@ -6,9 +6,9 @@ import (
 
 type HypercomputeclusterClusterConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type HypercomputeclusterClusterConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the cluster to create.
 	//
 	// Must start with a lowercase letter,
@@ -33,7 +33,7 @@ type HypercomputeclusterClusterConfig struct {
 	// compute_resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#compute_resources HypercomputeclusterCluster#compute_resources}
-	ComputeResources interface{} `field:"optional" json:"computeResources" yaml:"computeResources"`
+	ComputeResources any `field:"optional" json:"computeResources" yaml:"computeResources"`
 	// User-provided description of the cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
@@ -53,7 +53,7 @@ type HypercomputeclusterClusterConfig struct {
 	// network_resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#network_resources HypercomputeclusterCluster#network_resources}
-	NetworkResources interface{} `field:"optional" json:"networkResources" yaml:"networkResources"`
+	NetworkResources any `field:"optional" json:"networkResources" yaml:"networkResources"`
 	// orchestrator block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#orchestrator HypercomputeclusterCluster#orchestrator}
@@ -63,10 +63,9 @@ type HypercomputeclusterClusterConfig struct {
 	// storage_resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#storage_resources HypercomputeclusterCluster#storage_resources}
-	StorageResources interface{} `field:"optional" json:"storageResources" yaml:"storageResources"`
+	StorageResources any `field:"optional" json:"storageResources" yaml:"storageResources"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/hypercomputecluster_cluster#timeouts HypercomputeclusterCluster#timeouts}
 	Timeouts *HypercomputeclusterClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

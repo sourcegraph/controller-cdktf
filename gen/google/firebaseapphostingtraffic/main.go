@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTraffic",
-		reflect.TypeOf((*FirebaseAppHostingTraffic)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTraffic](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTraffic{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -90,15 +90,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficConfig",
-		reflect.TypeOf((*FirebaseAppHostingTrafficConfig)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrent",
-		reflect.TypeOf((*FirebaseAppHostingTrafficCurrent)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficCurrent](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentList",
-		reflect.TypeOf((*FirebaseAppHostingTrafficCurrentList)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficCurrentList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTrafficCurrentList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -119,7 +119,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingTrafficCurrentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficCurrentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTrafficCurrentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,11 +152,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentSplits",
-		reflect.TypeOf((*FirebaseAppHostingTrafficCurrentSplits)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficCurrentSplits](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentSplitsList",
-		reflect.TypeOf((*FirebaseAppHostingTrafficCurrentSplitsList)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficCurrentSplitsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTrafficCurrentSplitsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -177,7 +177,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficCurrentSplitsOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingTrafficCurrentSplitsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficCurrentSplitsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buildAttribute", GoGetter: "BuildAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTrafficCurrentSplitsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,11 +211,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicy",
-		reflect.TypeOf((*FirebaseAppHostingTrafficRolloutPolicy)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficRolloutPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficRolloutPolicyOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingTrafficRolloutPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficRolloutPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codebaseBranch", GoGetter: "CodebaseBranch"},
 			_jsii_.MemberProperty{JsiiProperty: "codebaseBranchInput", GoGetter: "CodebaseBranchInput"},
@@ -246,7 +246,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTrafficRolloutPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -254,11 +254,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTarget",
-		reflect.TypeOf((*FirebaseAppHostingTrafficTarget)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficTarget](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingTrafficTargetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficTargetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTrafficTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -293,11 +293,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplits",
-		reflect.TypeOf((*FirebaseAppHostingTrafficTargetSplits)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficTargetSplits](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplitsList",
-		reflect.TypeOf((*FirebaseAppHostingTrafficTargetSplitsList)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficTargetSplitsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTrafficTargetSplitsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -319,7 +319,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTargetSplitsOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingTrafficTargetSplitsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficTargetSplitsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buildAttribute", GoGetter: "BuildAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "buildAttributeInput", GoGetter: "BuildAttributeInput"},
@@ -347,7 +347,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTrafficTargetSplitsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -355,11 +355,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeouts",
-		reflect.TypeOf((*FirebaseAppHostingTrafficTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firebaseAppHostingTraffic.FirebaseAppHostingTrafficTimeoutsOutputReference",
-		reflect.TypeOf((*FirebaseAppHostingTrafficTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirebaseAppHostingTrafficTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -392,7 +392,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

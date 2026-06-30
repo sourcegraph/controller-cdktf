@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxEnvironmentVersionConfigsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxEnvironmentVersionConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxEnvironmentVersionConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DialogflowCxEnvironmentVersionConfigsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxEnvironmentVersionConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxEnvironmentVersionConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDialogflowCxEnvironmentVersionConfigsOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesList) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeAutoscalerAutoscalingPolicyScalingSchedulesListParameters
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeWireGroupWiresOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroupWiresOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeWireGroupWiresOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeWireGroupWiresOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

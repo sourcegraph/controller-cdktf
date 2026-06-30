@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionBackendServiceTlsSettingsSubjectAltNamesListParamet
 
 	return nil
 }
-

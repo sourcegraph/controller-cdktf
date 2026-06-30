@@ -12,9 +12,9 @@ type VertexAiIndexIndexStatsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type VertexAiIndexIndexStatsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,7 +65,7 @@ type VertexAiIndexIndexStatsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,8 +78,8 @@ type jsiiProxy_VertexAiIndexIndexStatsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference) VectorsCount() *strin
 	return returns
 }
 
-
 func NewVertexAiIndexIndexStatsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) VertexAiIndexIndexStatsOutputReference {
 	_init_.Initialize()
 
@@ -179,7 +178,7 @@ func NewVertexAiIndexIndexStatsOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -191,12 +190,12 @@ func NewVertexAiIndexIndexStatsOutputReference_Override(v VertexAiIndexIndexStat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference)SetInternalValue(val *VertexAiIndexIndexStats) {
+func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference) SetInternalValue(val *VertexAiIndexIndexStats) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiIndexIndexStatsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,16 +263,16 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -289,7 +288,7 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -305,7 +304,7 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -321,7 +320,7 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,23 +429,23 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -465,4 +464,3 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsOutputReference) ToString() *string {
 
 	return returns
 }
-

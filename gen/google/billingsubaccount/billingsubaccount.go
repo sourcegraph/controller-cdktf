@@ -16,15 +16,15 @@ type BillingSubaccount interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -62,24 +62,24 @@ type BillingSubaccount interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type BillingSubaccount interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type BillingSubaccount interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type BillingSubaccount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BillingSubaccount
@@ -159,8 +159,8 @@ func (j *jsiiProxy_BillingSubaccount) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_BillingSubaccount) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingSubaccount) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_BillingSubaccount) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BillingSubaccount) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BillingSubaccount) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_BillingSubaccount) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_BillingSubaccount) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingSubaccount) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_BillingSubaccount) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BillingSubaccount) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BillingSubaccount) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_BillingSubaccount) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BillingSubaccount) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingSubaccount) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_BillingSubaccount) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_BillingSubaccount) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BillingSubaccount) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -409,7 +409,6 @@ func (j *jsiiProxy_BillingSubaccount) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_subaccount google_billing_subaccount} Resource.
 func NewBillingSubaccount(scope constructs.Construct, id *string, config *BillingSubaccountConfig) BillingSubaccount {
 	_init_.Initialize()
@@ -421,7 +420,7 @@ func NewBillingSubaccount(scope constructs.Construct, id *string, config *Billin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -434,12 +433,12 @@ func NewBillingSubaccount_Override(b BillingSubaccount, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetConnection(val interface{}) {
+func (j *jsiiProxy_BillingSubaccount) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -450,7 +449,7 @@ func (j *jsiiProxy_BillingSubaccount)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetCount(val interface{}) {
+func (j *jsiiProxy_BillingSubaccount) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,7 +460,7 @@ func (j *jsiiProxy_BillingSubaccount)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_BillingSubaccount) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_BillingSubaccount)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BillingSubaccount) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -480,7 +479,7 @@ func (j *jsiiProxy_BillingSubaccount)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetDisplayName(val *string) {
+func (j *jsiiProxy_BillingSubaccount) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_BillingSubaccount)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BillingSubaccount) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -499,7 +498,7 @@ func (j *jsiiProxy_BillingSubaccount)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetId(val *string) {
+func (j *jsiiProxy_BillingSubaccount) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_BillingSubaccount)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BillingSubaccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_BillingSubaccount)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetMasterBillingAccount(val *string) {
+func (j *jsiiProxy_BillingSubaccount) SetMasterBillingAccount(val *string) {
 	if err := j.validateSetMasterBillingAccountParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_BillingSubaccount)SetMasterBillingAccount(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BillingSubaccount) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -540,7 +539,7 @@ func (j *jsiiProxy_BillingSubaccount)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BillingSubaccount)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BillingSubaccount) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -563,7 +562,7 @@ func BillingSubaccount_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -587,7 +586,7 @@ func BillingSubaccount_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BillingSubaccount_IsConstruct(x interface{}) *bool {
+func BillingSubaccount_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBillingSubaccount_IsConstructParameters(x); err != nil {
@@ -598,7 +597,7 @@ func BillingSubaccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func BillingSubaccount_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BillingSubaccount_IsTerraformElement(x interface{}) *bool {
+func BillingSubaccount_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBillingSubaccount_IsTerraformElementParameters(x); err != nil {
@@ -617,7 +616,7 @@ func BillingSubaccount_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func BillingSubaccount_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BillingSubaccount_IsTerraformResource(x interface{}) *bool {
+func BillingSubaccount_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBillingSubaccount_IsTerraformResourceParameters(x); err != nil {
@@ -636,7 +635,7 @@ func BillingSubaccount_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,31 +660,31 @@ func (b *jsiiProxy_BillingSubaccount) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BillingSubaccount) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BillingSubaccount) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BillingSubaccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BillingSubaccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -701,7 +700,7 @@ func (b *jsiiProxy_BillingSubaccount) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -717,7 +716,7 @@ func (b *jsiiProxy_BillingSubaccount) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -733,7 +732,7 @@ func (b *jsiiProxy_BillingSubaccount) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -749,7 +748,7 @@ func (b *jsiiProxy_BillingSubaccount) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (b *jsiiProxy_BillingSubaccount) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func (b *jsiiProxy_BillingSubaccount) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -797,7 +796,7 @@ func (b *jsiiProxy_BillingSubaccount) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -813,15 +812,15 @@ func (b *jsiiProxy_BillingSubaccount) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BillingSubaccount) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BillingSubaccount) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -840,7 +839,7 @@ func (b *jsiiProxy_BillingSubaccount) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -853,7 +852,7 @@ func (b *jsiiProxy_BillingSubaccount) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,18 +866,18 @@ func (b *jsiiProxy_BillingSubaccount) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BillingSubaccount) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BillingSubaccount) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -889,7 +888,7 @@ func (b *jsiiProxy_BillingSubaccount) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -900,7 +899,7 @@ func (b *jsiiProxy_BillingSubaccount) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -928,8 +927,8 @@ func (b *jsiiProxy_BillingSubaccount) ResetOverrideLogicalId() {
 	)
 }
 
-func (b *jsiiProxy_BillingSubaccount) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BillingSubaccount) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -941,8 +940,8 @@ func (b *jsiiProxy_BillingSubaccount) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (b *jsiiProxy_BillingSubaccount) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BillingSubaccount) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -954,8 +953,8 @@ func (b *jsiiProxy_BillingSubaccount) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (b *jsiiProxy_BillingSubaccount) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BillingSubaccount) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -967,8 +966,8 @@ func (b *jsiiProxy_BillingSubaccount) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BillingSubaccount) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BillingSubaccount) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -993,8 +992,8 @@ func (b *jsiiProxy_BillingSubaccount) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BillingSubaccount) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BillingSubaccount) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1005,4 +1004,3 @@ func (b *jsiiProxy_BillingSubaccount) ToTerraform() interface{} {
 
 	return returns
 }
-

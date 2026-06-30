@@ -34,7 +34,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) valida
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIamWorkforcePoolAccessRestrictionsAllowedServicesListParameters(
 
 	return nil
 }
-

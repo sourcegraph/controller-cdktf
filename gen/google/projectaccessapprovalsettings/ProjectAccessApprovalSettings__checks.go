@@ -19,7 +19,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) validateAddMoveTargetParameter
 	return nil
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_ProjectAccessApprovalSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_ProjectAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) validateOverrideLogicalIdParam
 	return nil
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) validatePutEnrolledServicesParameters(value interface{}) error {
+func (p *jsiiProxy_ProjectAccessApprovalSettings) validatePutEnrolledServicesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateProjectAccessApprovalSettings_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateProjectAccessApprovalSettings_IsConstructParameters(x interface{}) error {
+func validateProjectAccessApprovalSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateProjectAccessApprovalSettings_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateProjectAccessApprovalSettings_IsTerraformElementParameters(x interface{}) error {
+func validateProjectAccessApprovalSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateProjectAccessApprovalSettings_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateProjectAccessApprovalSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateProjectAccessApprovalSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetActiveKeyVersionPar
 	return nil
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetProjectIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -488,4 +488,3 @@ func validateNewProjectAccessApprovalSettingsParameters(scope constructs.Constru
 
 	return nil
 }
-

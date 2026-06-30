@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCesAppTimeZoneSettingsOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

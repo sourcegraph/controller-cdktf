@@ -1,6 +1,5 @@
 package accesscontextmanagerserviceperimeters
 
-
 type AccessContextManagerServicePerimetersServicePerimeters struct {
 	// Resource name for the ServicePerimeter. The short_name component must begin with a letter and only include alphanumeric and '_'. Format: accessPolicies/{policy_id}/servicePerimeters/{short_name}.
 	//
@@ -56,6 +55,5 @@ type AccessContextManagerServicePerimetersServicePerimeters struct {
 	// bet set to True if any of the fields in the spec are set to non-default values.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/access_context_manager_service_perimeters#use_explicit_dry_run_spec AccessContextManagerServicePerimeters#use_explicit_dry_run_spec}
-	UseExplicitDryRunSpec interface{} `field:"optional" json:"useExplicitDryRunSpec" yaml:"useExplicitDryRunSpec"`
+	UseExplicitDryRunSpec any `field:"optional" json:"useExplicitDryRunSpec" yaml:"useExplicitDryRunSpec"`
 }
-

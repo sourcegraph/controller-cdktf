@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettings",
-		reflect.TypeOf((*LoggingOrganizationSettings)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingOrganizationSettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettingsConfig",
-		reflect.TypeOf((*LoggingOrganizationSettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettingsTimeouts",
-		reflect.TypeOf((*LoggingOrganizationSettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingOrganizationSettings.LoggingOrganizationSettingsTimeoutsOutputReference",
-		reflect.TypeOf((*LoggingOrganizationSettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingOrganizationSettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingOrganizationSettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

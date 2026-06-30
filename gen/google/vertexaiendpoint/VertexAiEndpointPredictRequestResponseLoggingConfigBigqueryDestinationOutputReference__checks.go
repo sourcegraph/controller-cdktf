@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDe
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDesti
 
 	return nil
 }
-

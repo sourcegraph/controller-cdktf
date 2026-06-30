@@ -15,15 +15,15 @@ type DataLossPreventionStoredInfoType interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,11 +64,11 @@ type DataLossPreventionStoredInfoType interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Regex() DataLossPreventionStoredInfoTypeRegexOutputReference
 	RegexInput() *DataLossPreventionStoredInfoTypeRegex
 	StoredInfoTypeId() *string
@@ -77,18 +77,18 @@ type DataLossPreventionStoredInfoType interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DataLossPreventionStoredInfoTypeTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type DataLossPreventionStoredInfoType interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,7 +118,7 @@ type DataLossPreventionStoredInfoType interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type DataLossPreventionStoredInfoType interface {
 	ResetRegex()
 	ResetStoredInfoTypeId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataLossPreventionStoredInfoType
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -408,8 +408,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -468,8 +468,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -498,8 +498,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) Timeouts() DataLossPreventi
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -507,7 +507,6 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) TimeoutsInput() interface{}
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type} Resource.
 func NewDataLossPreventionStoredInfoType(scope constructs.Construct, id *string, config *DataLossPreventionStoredInfoTypeConfig) DataLossPreventionStoredInfoType {
@@ -520,7 +519,7 @@ func NewDataLossPreventionStoredInfoType(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -533,12 +532,12 @@ func NewDataLossPreventionStoredInfoType_Override(d DataLossPreventionStoredInfo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetCount(val interface{}) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -568,7 +567,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetDescription(val *string) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetDescription(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetDisplayName(val *string) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetDisplayName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -598,7 +597,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetId(val *string) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetParent(val *string) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -639,7 +638,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetStoredInfoTypeId(val *string) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) SetStoredInfoTypeId(val *string) {
 	if err := j.validateSetStoredInfoTypeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func DataLossPreventionStoredInfoType_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func DataLossPreventionStoredInfoType_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataLossPreventionStoredInfoType_IsConstruct(x interface{}) *bool {
+func DataLossPreventionStoredInfoType_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataLossPreventionStoredInfoType_IsConstructParameters(x); err != nil {
@@ -708,7 +707,7 @@ func DataLossPreventionStoredInfoType_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func DataLossPreventionStoredInfoType_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataLossPreventionStoredInfoType_IsTerraformElement(x interface{}) *bool {
+func DataLossPreventionStoredInfoType_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataLossPreventionStoredInfoType_IsTerraformElementParameters(x); err != nil {
@@ -727,7 +726,7 @@ func DataLossPreventionStoredInfoType_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func DataLossPreventionStoredInfoType_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataLossPreventionStoredInfoType_IsTerraformResource(x interface{}) *bool {
+func DataLossPreventionStoredInfoType_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataLossPreventionStoredInfoType_IsTerraformResourceParameters(x); err != nil {
@@ -746,7 +745,7 @@ func DataLossPreventionStoredInfoType_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoType",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -771,31 +770,31 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoType) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,7 +906,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -923,15 +922,15 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoType) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -950,7 +949,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -963,7 +962,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,18 +976,18 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoType) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -999,7 +998,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1010,7 +1009,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) PutDictionary(value *DataLo
 	_jsii_.InvokeVoid(
 		d,
 		"putDictionary",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1032,7 +1031,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) PutLargeCustomDictionary(va
 	_jsii_.InvokeVoid(
 		d,
 		"putLargeCustomDictionary",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) PutRegex(value *DataLossPre
 	_jsii_.InvokeVoid(
 		d,
 		"putRegex",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) PutTimeouts(value *DataLoss
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1130,8 +1129,8 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoType) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1143,8 +1142,8 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoType) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1156,8 +1155,8 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoType) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1169,8 +1168,8 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoType) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1195,8 +1194,8 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoType) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1207,4 +1206,3 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) ToTerraform() interface{} {
 
 	return returns
 }
-

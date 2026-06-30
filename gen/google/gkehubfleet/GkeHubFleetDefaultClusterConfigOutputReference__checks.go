@@ -120,7 +120,7 @@ func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFleetDefaultClusterConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGkeHubFleetDefaultClusterConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package datastreamstream
 
-
 type DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemas struct {
 	// Schema name.
 	//
@@ -9,6 +8,5 @@ type DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemas struct
 	// tables block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#tables DatastreamStream#tables}
-	Tables interface{} `field:"optional" json:"tables" yaml:"tables"`
+	Tables any `field:"optional" json:"tables" yaml:"tables"`
 }
-

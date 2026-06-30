@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringServiceTelemetryOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringServiceTelemetryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringServiceTelemetryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMonitoringServiceTelemetryOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

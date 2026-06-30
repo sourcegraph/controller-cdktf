@@ -18,15 +18,15 @@ type SccV2FolderSccBigQueryExport interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	Dataset() *string
 	SetDataset(val *string)
@@ -72,27 +72,27 @@ type SccV2FolderSccBigQueryExport interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SccV2FolderSccBigQueryExportTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type SccV2FolderSccBigQueryExport interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type SccV2FolderSccBigQueryExport interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -139,17 +139,17 @@ type SccV2FolderSccBigQueryExport interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SccV2FolderSccBigQueryExport
@@ -187,8 +187,8 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -507,8 +507,8 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport) Timeouts() SccV2FolderSccBigQue
 	return returns
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -527,7 +527,6 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_v2_folder_scc_big_query_export google_scc_v2_folder_scc_big_query_export} Resource.
 func NewSccV2FolderSccBigQueryExport(scope constructs.Construct, id *string, config *SccV2FolderSccBigQueryExportConfig) SccV2FolderSccBigQueryExport {
 	_init_.Initialize()
@@ -539,7 +538,7 @@ func NewSccV2FolderSccBigQueryExport(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -552,12 +551,12 @@ func NewSccV2FolderSccBigQueryExport_Override(s SccV2FolderSccBigQueryExport, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetBigQueryExportId(val *string) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetBigQueryExportId(val *string) {
 	if err := j.validateSetBigQueryExportIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetBigQueryExportId(val *string)
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetConnection(val interface{}) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetCount(val interface{}) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetDataset(val *string) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetDataset(val *string) {
 	if err := j.validateSetDatasetParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetDataset(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -609,7 +608,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetDescription(val *string) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetFilter(val *string) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetFilter(val *string) {
 	if err := j.validateSetFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetFolder(val *string) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -650,7 +649,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetId(val *string) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetLocation(val *string) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -691,7 +690,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_SccV2FolderSccBigQueryExport)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SccV2FolderSccBigQueryExport) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -714,7 +713,7 @@ func SccV2FolderSccBigQueryExport_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func SccV2FolderSccBigQueryExport_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SccV2FolderSccBigQueryExport_IsConstruct(x interface{}) *bool {
+func SccV2FolderSccBigQueryExport_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2FolderSccBigQueryExport_IsConstructParameters(x); err != nil {
@@ -749,7 +748,7 @@ func SccV2FolderSccBigQueryExport_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func SccV2FolderSccBigQueryExport_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SccV2FolderSccBigQueryExport_IsTerraformElement(x interface{}) *bool {
+func SccV2FolderSccBigQueryExport_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2FolderSccBigQueryExport_IsTerraformElementParameters(x); err != nil {
@@ -768,7 +767,7 @@ func SccV2FolderSccBigQueryExport_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func SccV2FolderSccBigQueryExport_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SccV2FolderSccBigQueryExport_IsTerraformResource(x interface{}) *bool {
+func SccV2FolderSccBigQueryExport_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSccV2FolderSccBigQueryExport_IsTerraformResourceParameters(x); err != nil {
@@ -787,7 +786,7 @@ func SccV2FolderSccBigQueryExport_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -812,31 +811,31 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExport) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SccV2FolderSccBigQueryExport) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -900,7 +899,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,7 +915,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -948,7 +947,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -964,15 +963,15 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExport) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2FolderSccBigQueryExport) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -991,7 +990,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1004,7 +1003,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1018,18 +1017,18 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExport) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SccV2FolderSccBigQueryExport) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1062,7 +1061,7 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) PutTimeouts(value *SccV2FolderS
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1122,8 +1121,8 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExport) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccV2FolderSccBigQueryExport) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1135,8 +1134,8 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExport) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SccV2FolderSccBigQueryExport) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1148,8 +1147,8 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1161,8 +1160,8 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1187,8 +1186,8 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1199,4 +1198,3 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExport) ToTerraform() interface{} {
 
 	return returns
 }
-

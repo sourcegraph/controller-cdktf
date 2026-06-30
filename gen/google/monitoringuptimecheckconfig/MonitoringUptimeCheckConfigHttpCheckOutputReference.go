@@ -11,7 +11,7 @@ import (
 type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	cdktf.ComplexObject
 	AcceptedResponseStatusCodes() MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList
-	AcceptedResponseStatusCodesInput() interface{}
+	AcceptedResponseStatusCodesInput() any
 	AuthInfo() MonitoringUptimeCheckConfigHttpCheckAuthInfoOutputReference
 	AuthInfoInput() *MonitoringUptimeCheckConfigHttpCheckAuthInfo
 	Body() *string
@@ -19,9 +19,9 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	BodyInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,9 +45,9 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	HeadersInput() *map[string]*string
 	InternalValue() *MonitoringUptimeCheckConfigHttpCheck
 	SetInternalValue(val *MonitoringUptimeCheckConfigHttpCheck)
-	MaskHeaders() interface{}
-	SetMaskHeaders(val interface{})
-	MaskHeadersInput() interface{}
+	MaskHeaders() any
+	SetMaskHeaders(val any)
+	MaskHeadersInput() any
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -69,16 +69,16 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseSsl() interface{}
-	SetUseSsl(val interface{})
-	UseSslInput() interface{}
-	ValidateSsl() interface{}
-	SetValidateSsl(val interface{})
-	ValidateSslInput() interface{}
+	UseSsl() any
+	SetUseSsl(val any)
+	UseSslInput() any
+	ValidateSsl() any
+	SetValidateSsl(val any)
+	ValidateSslInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAcceptedResponseStatusCodes(value interface{})
+	PutAcceptedResponseStatusCodes(value any)
 	PutAuthInfo(value *MonitoringUptimeCheckConfigHttpCheckAuthInfo)
 	PutPingConfig(value *MonitoringUptimeCheckConfigHttpCheckPingConfig)
 	PutServiceAgentAuthentication(value *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication)
@@ -119,7 +119,7 @@ type MonitoringUptimeCheckConfigHttpCheckOutputReference interface {
 	ResetValidateSsl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Accepted
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) AcceptedResponseStatusCodesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) AcceptedResponseStatusCodesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"acceptedResponseStatusCodesInput",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) BodyInpu
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -302,8 +302,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) MaskHeaders() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) MaskHeaders() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"maskHeaders",
@@ -312,8 +312,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) MaskHead
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) MaskHeadersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) MaskHeadersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"maskHeadersInput",
@@ -442,8 +442,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) UseSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) UseSsl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useSsl",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) UseSsl()
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) UseSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) UseSslInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useSslInput",
@@ -462,8 +462,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) UseSslIn
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ValidateSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ValidateSsl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"validateSsl",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Validate
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ValidateSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ValidateSslInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"validateSslInput",
@@ -481,7 +481,6 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Validate
 	)
 	return returns
 }
-
 
 func NewMonitoringUptimeCheckConfigHttpCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitoringUptimeCheckConfigHttpCheckOutputReference {
 	_init_.Initialize()
@@ -493,7 +492,7 @@ func NewMonitoringUptimeCheckConfigHttpCheckOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -505,12 +504,12 @@ func NewMonitoringUptimeCheckConfigHttpCheckOutputReference_Override(m Monitorin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetBody(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetBody(val *string) {
 	if err := j.validateSetBodyParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetBody(v
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -532,7 +531,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -543,7 +542,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetContentType(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetContentType(val *string) {
 	if err := j.validateSetContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -554,7 +553,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetConten
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetCustomContentType(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetCustomContentType(val *string) {
 	if err := j.validateSetCustomContentTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetCustom
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetHeaders(val *map[string]*string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetHeaders(val *map[string]*string) {
 	if err := j.validateSetHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetHeader
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetInternalValue(val *MonitoringUptimeCheckConfigHttpCheck) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetInternalValue(val *MonitoringUptimeCheckConfigHttpCheck) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetMaskHeaders(val interface{}) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetMaskHeaders(val any) {
 	if err := j.validateSetMaskHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -598,7 +597,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetMaskHe
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetPath(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -609,7 +608,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetPath(v
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -620,7 +619,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetPort(v
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetRequestMethod(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetRequestMethod(val *string) {
 	if err := j.validateSetRequestMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetReques
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetUseSsl(val interface{}) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetUseSsl(val any) {
 	if err := j.validateSetUseSslParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetUseSsl
 	)
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference)SetValidateSsl(val interface{}) {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) SetValidateSsl(val any) {
 	if err := j.validateSetValidateSslParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,16 +687,16 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ComputeF
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetBoole
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetBoole
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetListA
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -761,7 +760,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetNumbe
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetNumbe
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -793,7 +792,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetNumbe
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -809,7 +808,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetStrin
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -825,7 +824,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) GetStrin
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,21 +853,21 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Interpol
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutAcceptedResponseStatusCodes(value interface{}) {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutAcceptedResponseStatusCodes(value any) {
 	if err := m.validatePutAcceptedResponseStatusCodesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"putAcceptedResponseStatusCodes",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -879,7 +878,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutAuthI
 	_jsii_.InvokeVoid(
 		m,
 		"putAuthInfo",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -890,7 +889,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutPingC
 	_jsii_.InvokeVoid(
 		m,
 		"putPingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -901,7 +900,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) PutServi
 	_jsii_.InvokeVoid(
 		m,
 		"putServiceAgentAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1017,16 +1016,16 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ResetVal
 	)
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1045,4 +1044,3 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) ToString
 
 	return returns
 }
-

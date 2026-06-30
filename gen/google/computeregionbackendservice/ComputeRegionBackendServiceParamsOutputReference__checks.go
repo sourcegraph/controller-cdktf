@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceParamsOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceParamsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionBackendServiceParamsOutputReferenceParameters(terra
 
 	return nil
 }
-

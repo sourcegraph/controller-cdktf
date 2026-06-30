@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
-		reflect.TypeOf((*DataGoogleStorageBucketIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -52,7 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleStorageBucketIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -60,6 +60,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicyConfig",
-		reflect.TypeOf((*DataGoogleStorageBucketIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleStorageBucketIamPolicyConfig](),
 	)
 }

@@ -15,11 +15,11 @@ type DataGoogleContainerRegistryRepository interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,7 +49,7 @@ type DataGoogleContainerRegistryRepository interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -57,13 +57,13 @@ type DataGoogleContainerRegistryRepository interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,18 +91,18 @@ type DataGoogleContainerRegistryRepository interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleContainerRegistryRepository
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -250,8 +250,8 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -320,7 +320,6 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository) TerraformResourceType(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/container_registry_repository google_container_registry_repository} Data Source.
 func NewDataGoogleContainerRegistryRepository(scope constructs.Construct, id *string, config *DataGoogleContainerRegistryRepositoryConfig) DataGoogleContainerRegistryRepository {
 	_init_.Initialize()
@@ -332,7 +331,7 @@ func NewDataGoogleContainerRegistryRepository(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -345,12 +344,12 @@ func NewDataGoogleContainerRegistryRepository_Override(d DataGoogleContainerRegi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -369,7 +368,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -377,7 +376,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetProject(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -418,7 +417,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerRegistryRepository)SetRegion(val *string) {
+func (j *jsiiProxy_DataGoogleContainerRegistryRepository) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func DataGoogleContainerRegistryRepository_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func DataGoogleContainerRegistryRepository_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleContainerRegistryRepository_IsConstruct(x interface{}) *bool {
+func DataGoogleContainerRegistryRepository_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerRegistryRepository_IsConstructParameters(x); err != nil {
@@ -476,7 +475,7 @@ func DataGoogleContainerRegistryRepository_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func DataGoogleContainerRegistryRepository_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleContainerRegistryRepository_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleContainerRegistryRepository_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerRegistryRepository_IsTerraformDataSourceParameters(x); err != nil {
@@ -495,7 +494,7 @@ func DataGoogleContainerRegistryRepository_IsTerraformDataSource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -503,7 +502,7 @@ func DataGoogleContainerRegistryRepository_IsTerraformDataSource(x interface{}) 
 }
 
 // Experimental.
-func DataGoogleContainerRegistryRepository_IsTerraformElement(x interface{}) *bool {
+func DataGoogleContainerRegistryRepository_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerRegistryRepository_IsTerraformElementParameters(x); err != nil {
@@ -514,7 +513,7 @@ func DataGoogleContainerRegistryRepository_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -532,27 +531,27 @@ func DataGoogleContainerRegistryRepository_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerRegistryRepository) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleContainerRegistryRepository) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -746,8 +745,8 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleContainerRegistryRepository) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleContainerRegistryRepository) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -759,8 +758,8 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) SynthesizeAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerRegistryRepository) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleContainerRegistryRepository) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -772,8 +771,8 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) SynthesizeHclAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -785,8 +784,8 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ToHclTerraform() inter
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -811,8 +810,8 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -823,4 +822,3 @@ func (d *jsiiProxy_DataGoogleContainerRegistryRepository) ToTerraform() interfac
 
 	return returns
 }
-

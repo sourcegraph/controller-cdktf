@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerStatefulExternalIpOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStatefulExternalIpOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRegionInstanceGroupManagerStatefulExternalIpOutputReferen
 
 	return nil
 }
-

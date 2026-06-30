@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) validateSetDisableTraceSamplingParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionEndpointsApiServiceOutputReference) validateSetDisableTraceSamplingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewAppEngineFlexibleAppVersionEndpointsApiServiceOutputReferencePar
 
 	return nil
 }
-

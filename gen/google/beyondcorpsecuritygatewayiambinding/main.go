@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamBinding.BeyondcorpSecurityGatewayIamBinding",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayIamBinding)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayIamBinding](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpSecurityGatewayIamBinding{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamBinding.BeyondcorpSecurityGatewayIamBindingCondition",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayIamBindingCondition)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayIamBindingCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamBinding.BeyondcorpSecurityGatewayIamBindingConditionOutputReference",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayIamBindingConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayIamBindingConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BeyondcorpSecurityGatewayIamBindingConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.beyondcorpSecurityGatewayIamBinding.BeyondcorpSecurityGatewayIamBindingConfig",
-		reflect.TypeOf((*BeyondcorpSecurityGatewayIamBindingConfig)(nil)).Elem(),
+		reflect.TypeFor[BeyondcorpSecurityGatewayIamBindingConfig](),
 	)
 }

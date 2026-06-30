@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputePacketMirroringCollectorIlbOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputePacketMirroringCollectorIlbOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputePacketMirroringCollectorIlbOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputePacketMirroringCollectorIlbOutputReferenceParameters(terr
 
 	return nil
 }
-

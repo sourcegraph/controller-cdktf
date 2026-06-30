@@ -19,7 +19,7 @@ func (v *jsiiProxy_VertexAiFeatureGroupFeature) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureGroupFeature) validateAddOverrideParameters(path *string, value interface{}) error {
+func (v *jsiiProxy_VertexAiFeatureGroupFeature) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (v *jsiiProxy_VertexAiFeatureGroupFeature) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureGroupFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (v *jsiiProxy_VertexAiFeatureGroupFeature) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateVertexAiFeatureGroupFeature_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateVertexAiFeatureGroupFeature_IsConstructParameters(x interface{}) error {
+func validateVertexAiFeatureGroupFeature_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateVertexAiFeatureGroupFeature_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateVertexAiFeatureGroupFeature_IsTerraformElementParameters(x interface{}) error {
+func validateVertexAiFeatureGroupFeature_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateVertexAiFeatureGroupFeature_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateVertexAiFeatureGroupFeature_IsTerraformResourceParameters(x interface{}) error {
+func validateVertexAiFeatureGroupFeature_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateVertexAiFeatureGroupFeature_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureGroupFeature) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureGroupFeature) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_VertexAiFeatureGroupFeature) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureGroupFeature) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureGroupFeature) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_VertexAiFeatureGroupFeature) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureGroupFeature) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_VertexAiFeatureGroupFeature) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewVertexAiFeatureGroupFeatureParameters(scope constructs.Construct
 
 	return nil
 }
-

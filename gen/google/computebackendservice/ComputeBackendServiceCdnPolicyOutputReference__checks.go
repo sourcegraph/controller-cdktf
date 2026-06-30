@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateInterp
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validatePutBypassCacheOnRequestHeadersParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validatePutBypassCacheOnRequestHeadersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validatePutCac
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validatePutNegativeCachingPolicyParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validatePutNegativeCachingPolicyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetCli
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetMax
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetNegativeCachingParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetNegativeCachingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetNeg
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetRequestCoalescingParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetRequestCoalescingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -359,4 +359,3 @@ func validateNewComputeBackendServiceCdnPolicyOutputReferenceParameters(terrafor
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeNetworkAttachment) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNetworkAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeNetworkAttachment) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeNetworkAttachment) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNetworkAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeNetworkAttachment) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeNetworkAttachment_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateComputeNetworkAttachment_IsConstructParameters(x interface{}) error {
+func validateComputeNetworkAttachment_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeNetworkAttachment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateComputeNetworkAttachment_IsTerraformElementParameters(x interface{}) error {
+func validateComputeNetworkAttachment_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeNetworkAttachment_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateComputeNetworkAttachment_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeNetworkAttachment_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeNetworkAttachment_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkAttachment) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetworkAttachment) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_ComputeNetworkAttachment) validateSetConnectionPreferencePara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkAttachment) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeNetworkAttachment) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ComputeNetworkAttachment) validateSetProjectParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNetworkAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeNetworkAttachment) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewComputeNetworkAttachmentParameters(scope constructs.Construct, i
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHea
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHea
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeader
 
 	return nil
 }
-

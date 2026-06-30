@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapTunnelDestGroup.IapTunnelDestGroup",
-		reflect.TypeOf((*IapTunnelDestGroup)(nil)).Elem(),
+		reflect.TypeFor[IapTunnelDestGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapTunnelDestGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig",
-		reflect.TypeOf((*IapTunnelDestGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[IapTunnelDestGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts",
-		reflect.TypeOf((*IapTunnelDestGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IapTunnelDestGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeoutsOutputReference",
-		reflect.TypeOf((*IapTunnelDestGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IapTunnelDestGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -124,7 +124,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersVolumeMountsList) valida
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersVolumeMountsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersVolumeMountsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudRunServiceTemplateSpecContainersVolumeMountsListParameters(
 
 	return nil
 }
-

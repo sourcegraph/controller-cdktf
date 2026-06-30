@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApphubServiceServicePropertiesExtendedMetadataValueOutputReferen
 
 	return nil
 }
-

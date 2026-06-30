@@ -12,9 +12,9 @@ type DnsResponsePolicyGkeClustersOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type DnsResponsePolicyGkeClustersOutputReference interface {
 	GkeClusterName() *string
 	SetGkeClusterName(val *string)
 	GkeClusterNameInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type DnsResponsePolicyGkeClustersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type DnsResponsePolicyGkeClustersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_DnsResponsePolicyGkeClustersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GkeClusterNameIn
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewDnsResponsePolicyGkeClustersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DnsResponsePolicyGkeClustersOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewDnsResponsePolicyGkeClustersOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicyGkeClustersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewDnsResponsePolicyGkeClustersOutputReference_Override(d DnsResponsePolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicyGkeClustersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetGkeClusterName(val *string) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) SetGkeClusterName(val *string) {
 	if err := j.validateSetGkeClusterNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetGkeClusterName
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersOutputReference) ToString() *stri
 
 	return returns
 }
-

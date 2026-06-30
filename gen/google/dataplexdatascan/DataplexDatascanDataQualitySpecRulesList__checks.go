@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataplexDatascanDataQualitySpecRulesListParameters(terraformReso
 
 	return nil
 }
-

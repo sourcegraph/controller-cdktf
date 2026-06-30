@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutput
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutput
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutput
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference) validateSetReplaceParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference) validateSetReplaceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputRef
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkbenchInstanceIamMemberConditionOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewWorkbenchInstanceIamMemberConditionOutputReferenceParameters(ter
 
 	return nil
 }
-

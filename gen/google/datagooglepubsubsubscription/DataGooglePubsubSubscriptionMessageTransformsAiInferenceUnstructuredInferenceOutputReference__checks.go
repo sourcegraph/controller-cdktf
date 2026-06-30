@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstr
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstruct
 
 	return nil
 }
-

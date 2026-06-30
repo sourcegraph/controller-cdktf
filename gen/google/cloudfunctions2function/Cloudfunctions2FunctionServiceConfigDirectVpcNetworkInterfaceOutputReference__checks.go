@@ -98,7 +98,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOut
 
 	return nil
 }
-

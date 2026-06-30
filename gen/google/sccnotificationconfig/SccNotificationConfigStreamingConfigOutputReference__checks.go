@@ -98,7 +98,7 @@ func (s *jsiiProxy_SccNotificationConfigStreamingConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SccNotificationConfigStreamingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SccNotificationConfigStreamingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSccNotificationConfigStreamingConfigOutputReferenceParameters(te
 
 	return nil
 }
-

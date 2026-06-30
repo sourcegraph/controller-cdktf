@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocBatchRuntimeConfigAutotuningConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchRuntimeConfigAutotuningConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocBatchRuntimeConfigAutotuningConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocBatchRuntimeConfigAutotuningConfigOutputReferenceParamet
 
 	return nil
 }
-

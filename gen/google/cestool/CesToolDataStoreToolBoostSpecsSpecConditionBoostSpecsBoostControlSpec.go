@@ -1,6 +1,5 @@
 package cestool
 
-
 type CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec struct {
 	// The attribute type to be used to determine the boost amount.
 	//
@@ -18,7 +17,7 @@ type CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec struc
 	// control_points block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#control_points CesTool#control_points}
-	ControlPoints interface{} `field:"optional" json:"controlPoints" yaml:"controlPoints"`
+	ControlPoints any `field:"optional" json:"controlPoints" yaml:"controlPoints"`
 	// The name of the field whose value will be used to determine the boost amount.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#field_name CesTool#field_name}
@@ -28,4 +27,3 @@ type CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpec struc
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#interpolation_type CesTool#interpolation_type}
 	InterpolationType *string `field:"optional" json:"interpolationType" yaml:"interpolationType"`
 }
-

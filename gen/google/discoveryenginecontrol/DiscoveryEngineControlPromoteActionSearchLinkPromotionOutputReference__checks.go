@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlPromoteActionSearchLinkPromotionOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewDiscoveryEngineControlPromoteActionSearchLinkPromotionOutputRefe
 
 	return nil
 }
-

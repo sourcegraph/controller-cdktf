@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
-		reflect.TypeOf((*StorageDefaultObjectAccessControl)(nil)).Elem(),
+		reflect.TypeFor[StorageDefaultObjectAccessControl](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageDefaultObjectAccessControl{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlConfig",
-		reflect.TypeOf((*StorageDefaultObjectAccessControlConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageDefaultObjectAccessControlConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlProjectTeam",
-		reflect.TypeOf((*StorageDefaultObjectAccessControlProjectTeam)(nil)).Elem(),
+		reflect.TypeFor[StorageDefaultObjectAccessControlProjectTeam](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlProjectTeamList",
-		reflect.TypeOf((*StorageDefaultObjectAccessControlProjectTeamList)(nil)).Elem(),
+		reflect.TypeFor[StorageDefaultObjectAccessControlProjectTeamList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -111,7 +111,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlProjectTeamOutputReference",
-		reflect.TypeOf((*StorageDefaultObjectAccessControlProjectTeamOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageDefaultObjectAccessControlProjectTeamOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageDefaultObjectAccessControlProjectTeamOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeouts",
-		reflect.TypeOf((*StorageDefaultObjectAccessControlTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StorageDefaultObjectAccessControlTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControlTimeoutsOutputReference",
-		reflect.TypeOf((*StorageDefaultObjectAccessControlTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageDefaultObjectAccessControlTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -182,7 +182,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageDefaultObjectAccessControlTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

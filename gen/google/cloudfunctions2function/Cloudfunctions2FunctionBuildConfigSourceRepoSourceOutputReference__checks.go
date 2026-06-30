@@ -114,7 +114,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateSetInvertRegexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateSetInvertRegexParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -266,4 +266,3 @@ func validateNewCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReferenc
 
 	return nil
 }
-

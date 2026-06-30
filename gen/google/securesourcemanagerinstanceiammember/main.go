@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamMember.SecureSourceManagerInstanceIamMember",
-		reflect.TypeOf((*SecureSourceManagerInstanceIamMember)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerInstanceIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerInstanceIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamMember.SecureSourceManagerInstanceIamMemberCondition",
-		reflect.TypeOf((*SecureSourceManagerInstanceIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerInstanceIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamMember.SecureSourceManagerInstanceIamMemberConditionOutputReference",
-		reflect.TypeOf((*SecureSourceManagerInstanceIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerInstanceIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerInstanceIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerInstanceIamMember.SecureSourceManagerInstanceIamMemberConfig",
-		reflect.TypeOf((*SecureSourceManagerInstanceIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerInstanceIamMemberConfig](),
 	)
 }

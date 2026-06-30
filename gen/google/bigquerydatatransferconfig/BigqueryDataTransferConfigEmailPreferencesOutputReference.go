@@ -12,9 +12,9 @@ type BigqueryDataTransferConfigEmailPreferencesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type BigqueryDataTransferConfigEmailPreferencesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableFailureEmail() interface{}
-	SetEnableFailureEmail(val interface{})
-	EnableFailureEmailInput() interface{}
+	EnableFailureEmail() any
+	SetEnableFailureEmail(val any)
+	EnableFailureEmailInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BigqueryDataTransferConfigEmailPreferences
@@ -43,7 +43,7 @@ type BigqueryDataTransferConfigEmailPreferencesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type BigqueryDataTransferConfigEmailPreferencesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -109,8 +109,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Cr
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) EnableFailureEmail() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) EnableFailureEmail() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFailureEmail",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) EnableFailureEmailInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) EnableFailureEmailInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableFailureEmailInput",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Te
 	return returns
 }
 
-
 func NewBigqueryDataTransferConfigEmailPreferencesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryDataTransferConfigEmailPreferencesOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewBigqueryDataTransferConfigEmailPreferencesOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferencesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewBigqueryDataTransferConfigEmailPreferencesOutputReference_Override(b Big
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferencesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)SetEnableFailureEmail(val interface{}) {
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) SetEnableFailureEmail(val any) {
 	if err := j.validateSetEnableFailureEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)SetInternalValue(val *BigqueryDataTransferConfigEmailPreferences) {
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) SetInternalValue(val *BigqueryDataTransferConfigEmailPreferences) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Co
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Ge
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) In
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) To
 
 	return returns
 }
-

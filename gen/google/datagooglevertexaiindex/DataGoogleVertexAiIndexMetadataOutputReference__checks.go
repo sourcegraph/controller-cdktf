@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVertexAiIndexMetadataOutputReferenceParameters(terrafo
 
 	return nil
 }
-

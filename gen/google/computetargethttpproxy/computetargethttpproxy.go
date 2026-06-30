@@ -15,15 +15,15 @@ type ComputeTargetHttpProxy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -64,24 +64,24 @@ type ComputeTargetHttpProxy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
-	ProxyBind() interface{}
-	SetProxyBind(val interface{})
-	ProxyBindInput() interface{}
+	SetProvisioners(val *[]any)
+	ProxyBind() any
+	SetProxyBind(val any)
+	ProxyBindInput() any
 	ProxyId() *float64
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeTargetHttpProxyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UrlMap() *string
 	SetUrlMap(val *string)
 	UrlMapInput() *string
@@ -89,9 +89,9 @@ type ComputeTargetHttpProxy interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type ComputeTargetHttpProxy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type ComputeTargetHttpProxy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -138,17 +138,17 @@ type ComputeTargetHttpProxy interface {
 	ResetProject()
 	ResetProxyBind()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeTargetHttpProxy
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetHttpProxy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeTargetHttpProxy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -186,8 +186,8 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetHttpProxy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -386,8 +386,8 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeTargetHttpProxy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) ProxyBind() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetHttpProxy) ProxyBind() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"proxyBind",
@@ -406,8 +406,8 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) ProxyBind() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) ProxyBindInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetHttpProxy) ProxyBindInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"proxyBindInput",
@@ -426,8 +426,8 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) ProxyId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetHttpProxy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -456,8 +456,8 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeTargetHttpProxy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) Timeouts() ComputeTargetHttpProxyTime
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeTargetHttpProxy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -516,7 +516,6 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) UrlMapInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy} Resource.
 func NewComputeTargetHttpProxy(scope constructs.Construct, id *string, config *ComputeTargetHttpProxyConfig) ComputeTargetHttpProxy {
 	_init_.Initialize()
@@ -528,7 +527,7 @@ func NewComputeTargetHttpProxy(scope constructs.Construct, id *string, config *C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -541,12 +540,12 @@ func NewComputeTargetHttpProxy_Override(c ComputeTargetHttpProxy, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -576,7 +575,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -587,7 +586,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -595,7 +594,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetHttpKeepAliveTimeoutSec(val *float64) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetHttpKeepAliveTimeoutSec(val *float64) {
 	if err := j.validateSetHttpKeepAliveTimeoutSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetHttpKeepAliveTimeoutSec(val *float6
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetId(val *string) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetName(val *string) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetProject(val *string) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -658,7 +657,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetProxyBind(val interface{}) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetProxyBind(val any) {
 	if err := j.validateSetProxyBindParameters(val); err != nil {
 		panic(err)
 	}
@@ -680,7 +679,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy)SetProxyBind(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetHttpProxy)SetUrlMap(val *string) {
+func (j *jsiiProxy_ComputeTargetHttpProxy) SetUrlMap(val *string) {
 	if err := j.validateSetUrlMapParameters(val); err != nil {
 		panic(err)
 	}
@@ -703,7 +702,7 @@ func ComputeTargetHttpProxy_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func ComputeTargetHttpProxy_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeTargetHttpProxy_IsConstruct(x interface{}) *bool {
+func ComputeTargetHttpProxy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeTargetHttpProxy_IsConstructParameters(x); err != nil {
@@ -738,7 +737,7 @@ func ComputeTargetHttpProxy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func ComputeTargetHttpProxy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeTargetHttpProxy_IsTerraformElement(x interface{}) *bool {
+func ComputeTargetHttpProxy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeTargetHttpProxy_IsTerraformElementParameters(x); err != nil {
@@ -757,7 +756,7 @@ func ComputeTargetHttpProxy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func ComputeTargetHttpProxy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeTargetHttpProxy_IsTerraformResource(x interface{}) *bool {
+func ComputeTargetHttpProxy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeTargetHttpProxy_IsTerraformResourceParameters(x); err != nil {
@@ -776,7 +775,7 @@ func ComputeTargetHttpProxy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -801,31 +800,31 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeTargetHttpProxy) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeTargetHttpProxy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -841,7 +840,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,15 +952,15 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeTargetHttpProxy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -980,7 +979,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -993,7 +992,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1007,18 +1006,18 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeTargetHttpProxy) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1029,7 +1028,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1040,7 +1039,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1051,7 +1050,7 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) PutTimeouts(value *ComputeTargetHttpP
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1111,8 +1110,8 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeTargetHttpProxy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1124,8 +1123,8 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeTargetHttpProxy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1137,8 +1136,8 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeTargetHttpProxy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1150,8 +1149,8 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeTargetHttpProxy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1176,8 +1175,8 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeTargetHttpProxy) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeTargetHttpProxy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1188,4 +1187,3 @@ func (c *jsiiProxy_ComputeTargetHttpProxy) ToTerraform() interface{} {
 
 	return returns
 }
-

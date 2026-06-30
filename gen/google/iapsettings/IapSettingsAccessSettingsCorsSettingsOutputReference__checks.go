@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validateSetAllowHttpOptionsParameters(val interface{}) error {
+func (j *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validateSetAllowHttpOptionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewIapSettingsAccessSettingsCorsSettingsOutputReferenceParameters(t
 
 	return nil
 }
-

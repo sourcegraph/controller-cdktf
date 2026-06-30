@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.containerAzureClient.ContainerAzureClient",
-		reflect.TypeOf((*ContainerAzureClient)(nil)).Elem(),
+		reflect.TypeFor[ContainerAzureClient](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContainerAzureClient{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.containerAzureClient.ContainerAzureClientConfig",
-		reflect.TypeOf((*ContainerAzureClientConfig)(nil)).Elem(),
+		reflect.TypeFor[ContainerAzureClientConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.containerAzureClient.ContainerAzureClientTimeouts",
-		reflect.TypeOf((*ContainerAzureClientTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ContainerAzureClientTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.containerAzureClient.ContainerAzureClientTimeoutsOutputReference",
-		reflect.TypeOf((*ContainerAzureClientTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContainerAzureClientTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContainerAzureClientTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

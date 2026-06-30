@@ -114,7 +114,7 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOauthConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDialogflowCxWebhookGenericWebServiceOauthConfigOutputReferencePa
 
 	return nil
 }
-

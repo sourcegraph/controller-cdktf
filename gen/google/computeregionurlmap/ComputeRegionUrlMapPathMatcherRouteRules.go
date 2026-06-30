@@ -1,6 +1,5 @@
 package computeregionurlmap
 
-
 type ComputeRegionUrlMapPathMatcherRouteRules struct {
 	// For routeRules within a given pathMatcher, priority determines the order in which load balancer will interpret routeRules.
 	//
@@ -28,7 +27,7 @@ type ComputeRegionUrlMapPathMatcherRouteRules struct {
 	// match_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#match_rules ComputeRegionUrlMap#match_rules}
-	MatchRules interface{} `field:"optional" json:"matchRules" yaml:"matchRules"`
+	MatchRules any `field:"optional" json:"matchRules" yaml:"matchRules"`
 	// route_action block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#route_action ComputeRegionUrlMap#route_action}
@@ -49,4 +48,3 @@ type ComputeRegionUrlMapPathMatcherRouteRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_url_map#url_redirect ComputeRegionUrlMap#url_redirect}
 	UrlRedirect *ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect `field:"optional" json:"urlRedirect" yaml:"urlRedirect"`
 }
-

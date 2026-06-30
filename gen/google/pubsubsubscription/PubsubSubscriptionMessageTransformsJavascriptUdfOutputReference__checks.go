@@ -106,7 +106,7 @@ func (j *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPubsubSubscriptionMessageTransformsJavascriptUdfOutputReferenceP
 
 	return nil
 }
-

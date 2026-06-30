@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsObjectsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsObjectsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsObjectsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCloudbuildTriggerBuildArtifactsObjectsOutputReferenceP
 
 	return nil
 }
-

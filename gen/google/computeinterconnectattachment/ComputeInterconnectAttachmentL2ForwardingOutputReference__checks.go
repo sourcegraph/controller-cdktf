@@ -90,7 +90,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validatePutApplianceMappingsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validatePutApplianceMappingsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -264,4 +264,3 @@ func validateNewComputeInterconnectAttachmentL2ForwardingOutputReferenceParamete
 
 	return nil
 }
-

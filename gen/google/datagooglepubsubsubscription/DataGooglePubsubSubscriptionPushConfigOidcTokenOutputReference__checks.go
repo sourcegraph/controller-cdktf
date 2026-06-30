@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGooglePubsubSubscriptionPushConfigOidcTokenOutputReferencePa
 
 	return nil
 }
-

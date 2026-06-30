@@ -120,7 +120,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigSdpSettingsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingFilterConfigSdpSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorFloorsettingFilterConfigSdpSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewModelArmorFloorsettingFilterConfigSdpSettingsOutputReferencePara
 
 	return nil
 }
-

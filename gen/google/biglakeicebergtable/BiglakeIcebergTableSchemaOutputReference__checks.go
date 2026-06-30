@@ -90,7 +90,7 @@ func (b *jsiiProxy_BiglakeIcebergTableSchemaOutputReference) validateInterpolati
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergTableSchemaOutputReference) validatePutFieldsParameters(value interface{}) error {
+func (b *jsiiProxy_BiglakeIcebergTableSchemaOutputReference) validatePutFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (b *jsiiProxy_BiglakeIcebergTableSchemaOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableSchemaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTableSchemaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -245,4 +245,3 @@ func validateNewBiglakeIcebergTableSchemaOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

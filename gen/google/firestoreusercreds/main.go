@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreUserCreds.FirestoreUserCreds",
-		reflect.TypeOf((*FirestoreUserCreds)(nil)).Elem(),
+		reflect.TypeFor[FirestoreUserCreds](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreUserCreds{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreUserCreds.FirestoreUserCredsConfig",
-		reflect.TypeOf((*FirestoreUserCredsConfig)(nil)).Elem(),
+		reflect.TypeFor[FirestoreUserCredsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreUserCreds.FirestoreUserCredsResourceIdentity",
-		reflect.TypeOf((*FirestoreUserCredsResourceIdentity)(nil)).Elem(),
+		reflect.TypeFor[FirestoreUserCredsResourceIdentity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreUserCreds.FirestoreUserCredsResourceIdentityList",
-		reflect.TypeOf((*FirestoreUserCredsResourceIdentityList)(nil)).Elem(),
+		reflect.TypeFor[FirestoreUserCredsResourceIdentityList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreUserCredsResourceIdentityList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -109,7 +109,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreUserCreds.FirestoreUserCredsResourceIdentityOutputReference",
-		reflect.TypeOf((*FirestoreUserCredsResourceIdentityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirestoreUserCredsResourceIdentityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -134,7 +134,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -142,11 +142,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.firestoreUserCreds.FirestoreUserCredsTimeouts",
-		reflect.TypeOf((*FirestoreUserCredsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[FirestoreUserCredsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.firestoreUserCreds.FirestoreUserCredsTimeoutsOutputReference",
-		reflect.TypeOf((*FirestoreUserCredsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FirestoreUserCredsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FirestoreUserCredsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

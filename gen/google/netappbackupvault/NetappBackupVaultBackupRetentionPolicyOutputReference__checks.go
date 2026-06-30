@@ -106,7 +106,7 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetDailyBackupImmutableParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetDailyBackupImmutableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetManualBackupImmutableParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetManualBackupImmutableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetMonthlyBackupImmutableParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetMonthlyBackupImmutableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetWeeklyBackupImmutableParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateSetWeeklyBackupImmutableParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewNetappBackupVaultBackupRetentionPolicyOutputReferenceParameters(
 
 	return nil
 }
-

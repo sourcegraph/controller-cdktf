@@ -1,6 +1,5 @@
 package cesapp
 
-
 type CesAppAudioProcessingConfigBargeInConfig struct {
 	// If enabled, the agent will adapt its next response based on the assumption that the user hasn't heard the full preceding agent message.
 	//
@@ -8,6 +7,5 @@ type CesAppAudioProcessingConfigBargeInConfig struct {
 	// visually.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
-	BargeInAwareness interface{} `field:"optional" json:"bargeInAwareness" yaml:"bargeInAwareness"`
+	BargeInAwareness any `field:"optional" json:"bargeInAwareness" yaml:"bargeInAwareness"`
 }
-

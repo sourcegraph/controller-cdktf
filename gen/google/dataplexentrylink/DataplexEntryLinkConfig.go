@@ -6,9 +6,9 @@ import (
 
 type DataplexEntryLinkConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataplexEntryLinkConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The id of the entry group this entry link is in.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_link#entry_group_id DataplexEntryLink#entry_group_id}
@@ -34,7 +34,7 @@ type DataplexEntryLinkConfig struct {
 	// entry_references block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_link#entry_references DataplexEntryLink#entry_references}
-	EntryReferences interface{} `field:"required" json:"entryReferences" yaml:"entryReferences"`
+	EntryReferences any `field:"required" json:"entryReferences" yaml:"entryReferences"`
 	// The location for the entry.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_link#location DataplexEntryLink#location}
@@ -42,7 +42,7 @@ type DataplexEntryLinkConfig struct {
 	// aspects block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_link#aspects DataplexEntryLink#aspects}
-	Aspects interface{} `field:"optional" json:"aspects" yaml:"aspects"`
+	Aspects any `field:"optional" json:"aspects" yaml:"aspects"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_link#id DataplexEntryLink#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -55,4 +55,3 @@ type DataplexEntryLinkConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_link#timeouts DataplexEntryLink#timeouts}
 	Timeouts *DataplexEntryLinkTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

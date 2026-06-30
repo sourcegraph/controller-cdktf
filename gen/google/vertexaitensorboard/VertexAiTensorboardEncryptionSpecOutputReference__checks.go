@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiTensorboardEncryptionSpecOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiTensorboardEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiTensorboardEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVertexAiTensorboardEncryptionSpecOutputReferenceParameters(terra
 
 	return nil
 }
-

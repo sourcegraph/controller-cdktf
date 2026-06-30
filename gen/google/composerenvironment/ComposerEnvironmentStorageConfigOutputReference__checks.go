@@ -106,7 +106,7 @@ func (j *jsiiProxy_ComposerEnvironmentStorageConfigOutputReference) validateSetB
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentStorageConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComposerEnvironmentStorageConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

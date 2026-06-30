@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRouteAsPathsOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouteAsPathsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouteAsPathsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRouteAsPathsOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

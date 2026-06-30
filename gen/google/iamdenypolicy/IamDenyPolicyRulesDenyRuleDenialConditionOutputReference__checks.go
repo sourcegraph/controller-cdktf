@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewIamDenyPolicyRulesDenyRuleDenialConditionOutputReferenceParamete
 
 	return nil
 }
-

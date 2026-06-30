@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) validateSetEnableKerberosParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) validateSetEnableKerberosParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -330,4 +330,3 @@ func validateNewDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputRe
 
 	return nil
 }
-

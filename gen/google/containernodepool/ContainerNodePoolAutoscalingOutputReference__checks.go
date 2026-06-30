@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerNodePoolAutoscalingOutputReferenceParameters(terraformR
 
 	return nil
 }
-

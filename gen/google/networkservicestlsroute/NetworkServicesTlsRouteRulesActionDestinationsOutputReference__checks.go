@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesTlsRouteRulesActionDestinationsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesTlsRouteRulesActionDestinationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesTlsRouteRulesActionDestinationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkServicesTlsRouteRulesActionDestinationsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesTlsRouteRulesActionDestinationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesTlsRouteRulesActionDestinationsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNetworkServicesTlsRouteRulesActionDestinationsOutputReferencePar
 
 	return nil
 }
-

@@ -21,15 +21,15 @@ type ComputeGlobalAddress interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -80,31 +80,31 @@ type ComputeGlobalAddress interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Purpose() *string
 	SetPurpose(val *string)
 	PurposeInput() *string
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeGlobalAddressTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type ComputeGlobalAddress interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -134,7 +134,7 @@ type ComputeGlobalAddress interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -156,17 +156,17 @@ type ComputeGlobalAddress interface {
 	ResetProject()
 	ResetPurpose()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeGlobalAddress
@@ -224,8 +224,8 @@ func (j *jsiiProxy_ComputeGlobalAddress) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeGlobalAddress) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_ComputeGlobalAddress) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeGlobalAddress) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_ComputeGlobalAddress) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeGlobalAddress) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -514,8 +514,8 @@ func (j *jsiiProxy_ComputeGlobalAddress) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeGlobalAddress) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -544,8 +544,8 @@ func (j *jsiiProxy_ComputeGlobalAddress) PurposeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeGlobalAddress) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -584,8 +584,8 @@ func (j *jsiiProxy_ComputeGlobalAddress) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeGlobalAddress) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -614,8 +614,8 @@ func (j *jsiiProxy_ComputeGlobalAddress) Timeouts() ComputeGlobalAddressTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeGlobalAddress) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -623,7 +623,6 @@ func (j *jsiiProxy_ComputeGlobalAddress) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_global_address google_compute_global_address} Resource.
 func NewComputeGlobalAddress(scope constructs.Construct, id *string, config *ComputeGlobalAddressConfig) ComputeGlobalAddress {
@@ -636,7 +635,7 @@ func NewComputeGlobalAddress(scope constructs.Construct, id *string, config *Com
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddress",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -649,12 +648,12 @@ func NewComputeGlobalAddress_Override(c ComputeGlobalAddress, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddress",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetAddress(val *string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetAddress(val *string) {
 	if err := j.validateSetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetAddressType(val *string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetAddressType(val *string) {
 	if err := j.validateSetAddressTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetAddressType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -706,7 +705,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -725,7 +724,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetId(val *string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -736,7 +735,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetIpVersion(val *string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetIpVersion(val *string) {
 	if err := j.validateSetIpVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -747,7 +746,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetIpVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -758,7 +757,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetName(val *string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetNetwork(val *string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,7 +790,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetPrefixLength(val *float64) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetPrefixLength(val *float64) {
 	if err := j.validateSetPrefixLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -802,7 +801,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetPrefixLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetProject(val *string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -813,7 +812,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -821,7 +820,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -832,7 +831,7 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetPurpose(val *string) {
+func (j *jsiiProxy_ComputeGlobalAddress) SetPurpose(val *string) {
 	if err := j.validateSetPurposeParameters(val); err != nil {
 		panic(err)
 	}
@@ -855,7 +854,7 @@ func ComputeGlobalAddress_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddress",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func ComputeGlobalAddress_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeGlobalAddress_IsConstruct(x interface{}) *bool {
+func ComputeGlobalAddress_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeGlobalAddress_IsConstructParameters(x); err != nil {
@@ -890,7 +889,7 @@ func ComputeGlobalAddress_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddress",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -898,7 +897,7 @@ func ComputeGlobalAddress_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeGlobalAddress_IsTerraformElement(x interface{}) *bool {
+func ComputeGlobalAddress_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeGlobalAddress_IsTerraformElementParameters(x); err != nil {
@@ -909,7 +908,7 @@ func ComputeGlobalAddress_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddress",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func ComputeGlobalAddress_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeGlobalAddress_IsTerraformResource(x interface{}) *bool {
+func ComputeGlobalAddress_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeGlobalAddress_IsTerraformResourceParameters(x); err != nil {
@@ -928,7 +927,7 @@ func ComputeGlobalAddress_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddress",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -953,31 +952,31 @@ func (c *jsiiProxy_ComputeGlobalAddress) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeGlobalAddress) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeGlobalAddress) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeGlobalAddress) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeGlobalAddress) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1025,7 +1024,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1041,7 +1040,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1057,7 +1056,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1073,7 +1072,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1089,7 +1088,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1105,15 +1104,15 @@ func (c *jsiiProxy_ComputeGlobalAddress) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeGlobalAddress) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeGlobalAddress) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1132,7 +1131,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1145,7 +1144,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1159,18 +1158,18 @@ func (c *jsiiProxy_ComputeGlobalAddress) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeGlobalAddress) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeGlobalAddress) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1181,7 +1180,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1192,7 +1191,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1203,7 +1202,7 @@ func (c *jsiiProxy_ComputeGlobalAddress) PutTimeouts(value *ComputeGlobalAddress
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1303,8 +1302,8 @@ func (c *jsiiProxy_ComputeGlobalAddress) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeGlobalAddress) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeGlobalAddress) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1316,8 +1315,8 @@ func (c *jsiiProxy_ComputeGlobalAddress) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (c *jsiiProxy_ComputeGlobalAddress) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeGlobalAddress) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1329,8 +1328,8 @@ func (c *jsiiProxy_ComputeGlobalAddress) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (c *jsiiProxy_ComputeGlobalAddress) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeGlobalAddress) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1342,8 +1341,8 @@ func (c *jsiiProxy_ComputeGlobalAddress) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeGlobalAddress) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeGlobalAddress) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1368,8 +1367,8 @@ func (c *jsiiProxy_ComputeGlobalAddress) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeGlobalAddress) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeGlobalAddress) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1380,4 +1379,3 @@ func (c *jsiiProxy_ComputeGlobalAddress) ToTerraform() interface{} {
 
 	return returns
 }
-

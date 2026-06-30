@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewNetappVolumeSnapshotPolicyHourlyScheduleOutputReferenceParameter
 
 	return nil
 }
-

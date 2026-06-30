@@ -98,7 +98,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateSetMinimalParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateSetMinimalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateSetSecurityParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateSetSecurityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,4 +254,3 @@ func validateNewOsConfigPatchDeploymentPatchConfigYumOutputReferenceParameters(t
 
 	return nil
 }
-

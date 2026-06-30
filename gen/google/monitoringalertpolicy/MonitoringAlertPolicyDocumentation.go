@@ -1,6 +1,5 @@
 package monitoringalertpolicy
 
-
 type MonitoringAlertPolicyDocumentation struct {
 	// The text of the documentation, interpreted according to mimeType.
 	//
@@ -13,7 +12,7 @@ type MonitoringAlertPolicyDocumentation struct {
 	// links block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#links MonitoringAlertPolicy#links}
-	Links interface{} `field:"optional" json:"links" yaml:"links"`
+	Links any `field:"optional" json:"links" yaml:"links"`
 	// The format of the content field. Presently, only the value "text/markdown" is supported.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#mime_type MonitoringAlertPolicy#mime_type}
@@ -28,4 +27,3 @@ type MonitoringAlertPolicyDocumentation struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_alert_policy#subject MonitoringAlertPolicy#subject}
 	Subject *string `field:"optional" json:"subject" yaml:"subject"`
 }
-

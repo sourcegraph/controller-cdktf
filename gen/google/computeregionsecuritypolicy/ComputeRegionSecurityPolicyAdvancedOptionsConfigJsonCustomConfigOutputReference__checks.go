@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomCon
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfig
 
 	return nil
 }
-

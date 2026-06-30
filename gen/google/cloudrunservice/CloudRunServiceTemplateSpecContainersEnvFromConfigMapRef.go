@@ -1,6 +1,5 @@
 package cloudrunservice
 
-
 type CloudRunServiceTemplateSpecContainersEnvFromConfigMapRef struct {
 	// local_object_reference block.
 	//
@@ -9,6 +8,5 @@ type CloudRunServiceTemplateSpecContainersEnvFromConfigMapRef struct {
 	// Specify whether the ConfigMap must be defined.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#optional CloudRunService#optional}
-	Optional interface{} `field:"optional" json:"optional" yaml:"optional"`
+	Optional any `field:"optional" json:"optional" yaml:"optional"`
 }
-

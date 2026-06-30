@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleSourcerepoRepositoryIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleSourcerepoRepositoryIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleSourcerepoRepositoryIamPolicy_GenerateConfigForImportPara
 	return nil
 }
 
-func validateDataGoogleSourcerepoRepositoryIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleSourcerepoRepositoryIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleSourcerepoRepositoryIamPolicy_IsConstructParameters(x int
 	return nil
 }
 
-func validateDataGoogleSourcerepoRepositoryIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleSourcerepoRepositoryIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleSourcerepoRepositoryIamPolicy_IsTerraformDataSourceParame
 	return nil
 }
 
-func validateDataGoogleSourcerepoRepositoryIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleSourcerepoRepositoryIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleSourcerepoRepositoryIamPolicy_IsTerraformElementParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSourcerepoRepositoryIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSourcerepoRepositoryIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleSourcerepoRepositoryIamPolicyParameters(scope construc
 
 	return nil
 }
-

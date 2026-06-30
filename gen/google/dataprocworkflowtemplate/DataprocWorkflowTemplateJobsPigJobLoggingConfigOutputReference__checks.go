@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReferencePa
 
 	return nil
 }
-

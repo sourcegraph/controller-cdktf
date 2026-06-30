@@ -6,9 +6,9 @@ import (
 
 type OracleDatabaseExascaleDbStorageVaultConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type OracleDatabaseExascaleDbStorageVaultConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name for the ExascaleDbStorageVault.
 	//
 	// The name does not have to
@@ -49,7 +49,7 @@ type OracleDatabaseExascaleDbStorageVaultConfig struct {
 	// Unless this field is set to false in Terraform state, a terraform destroy or terraform apply that would delete the instance will fail.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_exascale_db_storage_vault#deletion_protection OracleDatabaseExascaleDbStorageVault#deletion_protection}
-	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
+	DeletionProtection any `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// The GCP Oracle zone where Oracle ExascaleDbStorageVault is hosted.
 	//
 	// Example: us-east4-b-r2.
@@ -76,4 +76,3 @@ type OracleDatabaseExascaleDbStorageVaultConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/oracle_database_exascale_db_storage_vault#timeouts OracleDatabaseExascaleDbStorageVault#timeouts}
 	Timeouts *OracleDatabaseExascaleDbStorageVaultTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

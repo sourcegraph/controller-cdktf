@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateAddMoveT
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateMoveFrom
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateOverride
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validatePutRuleParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validatePutRuleParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateComputeRegionNetworkFirewallPolicyWithRules_GenerateConfigForImport
 	return nil
 }
 
-func validateComputeRegionNetworkFirewallPolicyWithRules_IsConstructParameters(x interface{}) error {
+func validateComputeRegionNetworkFirewallPolicyWithRules_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateComputeRegionNetworkFirewallPolicyWithRules_IsConstructParameters(x
 	return nil
 }
 
-func validateComputeRegionNetworkFirewallPolicyWithRules_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRegionNetworkFirewallPolicyWithRules_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateComputeRegionNetworkFirewallPolicyWithRules_IsTerraformElementParam
 	return nil
 }
 
-func validateComputeRegionNetworkFirewallPolicyWithRules_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRegionNetworkFirewallPolicyWithRules_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateComputeRegionNetworkFirewallPolicyWithRules_IsTerraformResourcePara
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateSetConne
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateSetProje
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRules) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -496,4 +496,3 @@ func validateNewComputeRegionNetworkFirewallPolicyWithRulesParameters(scope cons
 
 	return nil
 }
-

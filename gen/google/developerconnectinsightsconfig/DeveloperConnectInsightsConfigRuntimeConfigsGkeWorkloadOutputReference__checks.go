@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutput
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputRef
 
 	return nil
 }
-

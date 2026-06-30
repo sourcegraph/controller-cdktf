@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateAddMoveTa
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateMoveFromI
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBigqueryAnalyticsHubDataExchangeIamBinding_GenerateConfigForImportP
 	return nil
 }
 
-func validateBigqueryAnalyticsHubDataExchangeIamBinding_IsConstructParameters(x interface{}) error {
+func validateBigqueryAnalyticsHubDataExchangeIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBigqueryAnalyticsHubDataExchangeIamBinding_IsConstructParameters(x 
 	return nil
 }
 
-func validateBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformElementParame
 	return nil
 }
 
-func validateBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformResourceParam
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateSetConnec
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateSetProjec
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewBigqueryAnalyticsHubDataExchangeIamBindingParameters(scope const
 
 	return nil
 }
-

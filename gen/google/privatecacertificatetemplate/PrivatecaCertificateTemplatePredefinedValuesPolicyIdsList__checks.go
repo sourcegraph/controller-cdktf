@@ -34,7 +34,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList) va
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPrivatecaCertificateTemplatePredefinedValuesPolicyIdsListParamet
 
 	return nil
 }
-

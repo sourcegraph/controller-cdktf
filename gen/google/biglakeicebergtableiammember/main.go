@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMember",
-		reflect.TypeOf((*BiglakeIcebergTableIamMember)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTableIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,11 +82,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberCondition",
-		reflect.TypeOf((*BiglakeIcebergTableIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConditionOutputReference",
-		reflect.TypeOf((*BiglakeIcebergTableIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -117,7 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BiglakeIcebergTableIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -125,6 +125,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.biglakeIcebergTableIamMember.BiglakeIcebergTableIamMemberConfig",
-		reflect.TypeOf((*BiglakeIcebergTableIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[BiglakeIcebergTableIamMemberConfig](),
 	)
 }

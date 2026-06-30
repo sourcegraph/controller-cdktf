@@ -36,7 +36,7 @@ type NetworkServicesMulticastDomainGroupStateList interface {
 	Get(index *float64) NetworkServicesMulticastDomainGroupStateOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainGroupStateList) WrapsSet() *boo
 	return returns
 }
 
-
 func NewNetworkServicesMulticastDomainGroupStateList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastDomainGroupStateList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewNetworkServicesMulticastDomainGroupStateList(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesMulticastDomainGroup.NetworkServicesMulticastDomainGroupStateList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewNetworkServicesMulticastDomainGroupStateList_Override(n NetworkServicesM
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesMulticastDomainGroup.NetworkServicesMulticastDomainGroupStateList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainGroupStateList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainGroupStateList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainGroupStateList)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainGroupStateList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainGroupStateList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainGroupStateList)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainGroupStateList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainGroupStateList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainGroupStateList) AllWithMapKey(m
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainGroupStateList) Get(index *floa
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainGroupStateList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkServicesMulticastDomainGroupStateList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainGroupStateList) ToString() *str
 
 	return returns
 }
-

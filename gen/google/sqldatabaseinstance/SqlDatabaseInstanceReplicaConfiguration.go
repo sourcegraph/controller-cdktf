@@ -1,6 +1,5 @@
 package sqldatabaseinstance
 
-
 type SqlDatabaseInstanceReplicaConfiguration struct {
 	// PEM representation of the trusted CA's x509 certificate.
 	//
@@ -11,7 +10,7 @@ type SqlDatabaseInstanceReplicaConfiguration struct {
 	// A cascadable replica is a SQL Server cross region replica that supports replica(s) under it.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#cascadable_replica SqlDatabaseInstance#cascadable_replica}
-	CascadableReplica interface{} `field:"optional" json:"cascadableReplica" yaml:"cascadableReplica"`
+	CascadableReplica any `field:"optional" json:"cascadableReplica" yaml:"cascadableReplica"`
 	// PEM representation of the replica's x509 certificate.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#client_certificate SqlDatabaseInstance#client_certificate}
@@ -33,7 +32,7 @@ type SqlDatabaseInstanceReplicaConfiguration struct {
 	// If the field is set to true the replica will be designated as a failover replica. If the master instance fails, the replica instance will be promoted as the new master instance. Not supported for Postgres
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#failover_target SqlDatabaseInstance#failover_target}
-	FailoverTarget interface{} `field:"optional" json:"failoverTarget" yaml:"failoverTarget"`
+	FailoverTarget any `field:"optional" json:"failoverTarget" yaml:"failoverTarget"`
 	// Time in ms between replication heartbeats.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#master_heartbeat_period SqlDatabaseInstance#master_heartbeat_period}
@@ -53,6 +52,5 @@ type SqlDatabaseInstanceReplicaConfiguration struct {
 	// True if the master's common name value is checked during the SSL handshake.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/sql_database_instance#verify_server_certificate SqlDatabaseInstance#verify_server_certificate}
-	VerifyServerCertificate interface{} `field:"optional" json:"verifyServerCertificate" yaml:"verifyServerCertificate"`
+	VerifyServerCertificate any `field:"optional" json:"verifyServerCertificate" yaml:"verifyServerCertificate"`
 }
-

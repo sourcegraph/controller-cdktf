@@ -98,7 +98,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReferenceP
 
 	return nil
 }
-

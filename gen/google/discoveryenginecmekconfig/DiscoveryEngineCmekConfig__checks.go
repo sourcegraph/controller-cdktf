@@ -19,7 +19,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) validatePutSingleRegionKeysParameters(value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) validatePutSingleRegionKeysParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateDiscoveryEngineCmekConfig_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDiscoveryEngineCmekConfig_IsConstructParameters(x interface{}) error {
+func validateDiscoveryEngineCmekConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateDiscoveryEngineCmekConfig_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDiscoveryEngineCmekConfig_IsTerraformElementParameters(x interface{}) error {
+func validateDiscoveryEngineCmekConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateDiscoveryEngineCmekConfig_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateDiscoveryEngineCmekConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateDiscoveryEngineCmekConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetCmekConfigIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -424,7 +424,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -470,7 +470,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetProvisionersParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetSetDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) validateSetSetDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -508,4 +508,3 @@ func validateNewDiscoveryEngineCmekConfigParameters(scope constructs.Construct, 
 
 	return nil
 }
-

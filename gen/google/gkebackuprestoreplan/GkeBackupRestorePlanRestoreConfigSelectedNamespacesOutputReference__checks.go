@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReferen
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewRedisClusterZoneDistributionConfigOutputReferenceParameters(terr
 
 	return nil
 }
-

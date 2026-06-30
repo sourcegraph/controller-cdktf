@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeBackendServiceLocalityLbPoliciesListParameters(terraformR
 
 	return nil
 }
-

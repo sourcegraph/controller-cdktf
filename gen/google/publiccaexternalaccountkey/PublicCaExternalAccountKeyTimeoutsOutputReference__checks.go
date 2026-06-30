@@ -98,7 +98,7 @@ func (p *jsiiProxy_PublicCaExternalAccountKeyTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_PublicCaExternalAccountKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PublicCaExternalAccountKeyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_PublicCaExternalAccountKeyTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_PublicCaExternalAccountKeyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PublicCaExternalAccountKeyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewPublicCaExternalAccountKeyTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

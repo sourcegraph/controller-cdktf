@@ -109,7 +109,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -249,4 +249,3 @@ func validateNewDiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReferen
 
 	return nil
 }
-

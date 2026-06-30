@@ -120,7 +120,7 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentTargetResourceConfi
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTargetResourceCreationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewCloudSecurityComplianceFrameworkDeploymentTargetResourceConfigTa
 
 	return nil
 }
-

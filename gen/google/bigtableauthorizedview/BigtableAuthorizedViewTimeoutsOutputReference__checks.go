@@ -98,7 +98,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateSetCre
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewBigtableAuthorizedViewTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

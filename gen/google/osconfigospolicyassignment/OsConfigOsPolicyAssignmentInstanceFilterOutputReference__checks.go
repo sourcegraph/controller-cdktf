@@ -90,7 +90,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validatePutExclusionLabelsParameters(value interface{}) error {
+func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validatePutExclusionLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validatePutInclusionLabelsParameters(value interface{}) error {
+func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validatePutInclusionLabelsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validatePutInventoriesParameters(value interface{}) error {
+func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validatePutInventoriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validateSetAllParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validateSetAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -311,4 +311,3 @@ func validateNewOsConfigOsPolicyAssignmentInstanceFilterOutputReferenceParameter
 
 	return nil
 }
-

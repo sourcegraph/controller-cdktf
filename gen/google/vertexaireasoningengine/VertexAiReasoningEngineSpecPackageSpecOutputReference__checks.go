@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecPackageSpecOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecPackageSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecPackageSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewVertexAiReasoningEngineSpecPackageSpecOutputReferenceParameters(
 
 	return nil
 }
-

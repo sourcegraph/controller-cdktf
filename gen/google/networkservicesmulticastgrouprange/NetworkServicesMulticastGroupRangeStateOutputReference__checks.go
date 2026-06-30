@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRangeStateOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRangeStateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRangeStateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkServicesMulticastGroupRangeStateOutputReferenceParameters
 
 	return nil
 }
-

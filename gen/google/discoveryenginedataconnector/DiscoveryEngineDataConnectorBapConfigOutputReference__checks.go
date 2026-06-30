@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorBapConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorBapConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorBapConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDiscoveryEngineDataConnectorBapConfigOutputReferenceParameters(t
 
 	return nil
 }
-

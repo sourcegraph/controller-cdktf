@@ -12,9 +12,9 @@ type DatastreamConnectionProfileMongodbProfileOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,7 +28,7 @@ type DatastreamConnectionProfileMongodbProfileOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	HostAddresses() DatastreamConnectionProfileMongodbProfileHostAddressesList
-	HostAddressesInput() interface{}
+	HostAddressesInput() any
 	InternalValue() *DatastreamConnectionProfileMongodbProfile
 	SetInternalValue(val *DatastreamConnectionProfileMongodbProfile)
 	Password() *string
@@ -60,7 +60,7 @@ type DatastreamConnectionProfileMongodbProfileOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -81,7 +81,7 @@ type DatastreamConnectionProfileMongodbProfileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutHostAddresses(value interface{})
+	PutHostAddresses(value any)
 	PutSrvConnectionFormat(value *DatastreamConnectionProfileMongodbProfileSrvConnectionFormat)
 	PutSslConfig(value *DatastreamConnectionProfileMongodbProfileSslConfig)
 	PutStandardConnectionFormat(value *DatastreamConnectionProfileMongodbProfileStandardConnectionFormat)
@@ -93,7 +93,7 @@ type DatastreamConnectionProfileMongodbProfileOutputReference interface {
 	ResetStandardConnectionFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,8 +106,8 @@ type jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Hos
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) HostAddressesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) HostAddressesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"hostAddressesInput",
@@ -336,7 +336,6 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Use
 	return returns
 }
 
-
 func NewDatastreamConnectionProfileMongodbProfileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileMongodbProfileOutputReference {
 	_init_.Initialize()
 
@@ -347,7 +346,7 @@ func NewDatastreamConnectionProfileMongodbProfileOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -359,12 +358,12 @@ func NewDatastreamConnectionProfileMongodbProfileOutputReference_Override(d Data
 
 	_jsii_.Create(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetInternalValue(val *DatastreamConnectionProfileMongodbProfile) {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) SetInternalValue(val *DatastreamConnectionProfileMongodbProfile) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetPassword(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) SetPassword(val *string) {
 	if err := j.validateSetPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetP
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetReplicaSet(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) SetReplicaSet(val *string) {
 	if err := j.validateSetReplicaSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetR
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetSecretManagerStoredPassword(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) SetSecretManagerStoredPassword(val *string) {
 	if err := j.validateSetSecretManagerStoredPasswordParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference)SetUsername(val *string) {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) SetUsername(val *string) {
 	if err := j.validateSetUsernameParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,16 +475,16 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Com
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -533,7 +532,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -549,7 +548,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -581,7 +580,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -597,7 +596,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Get
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,21 +641,21 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Int
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) PutHostAddresses(value interface{}) {
+func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) PutHostAddresses(value any) {
 	if err := d.validatePutHostAddressesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putHostAddresses",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -667,7 +666,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Put
 	_jsii_.InvokeVoid(
 		d,
 		"putSrvConnectionFormat",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Put
 	_jsii_.InvokeVoid(
 		d,
 		"putSslConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -689,7 +688,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Put
 	_jsii_.InvokeVoid(
 		d,
 		"putStandardConnectionFormat",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -741,16 +740,16 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Res
 	)
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -769,4 +768,3 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference) ToS
 
 	return returns
 }
-

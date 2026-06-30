@@ -1,6 +1,5 @@
 package clouddomainsregistration
 
-
 type ClouddomainsRegistrationDnsSettingsCustomDns struct {
 	// Required.
 	//
@@ -12,6 +11,5 @@ type ClouddomainsRegistrationDnsSettingsCustomDns struct {
 	// ds_records block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddomains_registration#ds_records ClouddomainsRegistration#ds_records}
-	DsRecords interface{} `field:"optional" json:"dsRecords" yaml:"dsRecords"`
+	DsRecords any `field:"optional" json:"dsRecords" yaml:"dsRecords"`
 }
-

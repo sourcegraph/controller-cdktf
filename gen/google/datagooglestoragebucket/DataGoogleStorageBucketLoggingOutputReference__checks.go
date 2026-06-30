@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketLoggingOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketLoggingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageBucketLoggingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleStorageBucketLoggingOutputReferenceParameters(terrafor
 
 	return nil
 }
-

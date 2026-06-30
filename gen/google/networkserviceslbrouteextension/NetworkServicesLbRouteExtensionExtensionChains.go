@@ -1,11 +1,10 @@
 package networkserviceslbrouteextension
 
-
 type NetworkServicesLbRouteExtensionExtensionChains struct {
 	// extensions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_route_extension#extensions NetworkServicesLbRouteExtension#extensions}
-	Extensions interface{} `field:"required" json:"extensions" yaml:"extensions"`
+	Extensions any `field:"required" json:"extensions" yaml:"extensions"`
 	// match_condition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_route_extension#match_condition NetworkServicesLbRouteExtension#match_condition}
@@ -20,4 +19,3 @@ type NetworkServicesLbRouteExtensionExtensionChains struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
-

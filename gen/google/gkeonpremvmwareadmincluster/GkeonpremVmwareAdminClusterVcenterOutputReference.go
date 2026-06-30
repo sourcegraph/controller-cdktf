@@ -21,9 +21,9 @@ type GkeonpremVmwareAdminClusterVcenterOutputReference interface {
 	ClusterInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -67,7 +67,7 @@ type GkeonpremVmwareAdminClusterVcenterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -99,7 +99,7 @@ type GkeonpremVmwareAdminClusterVcenterOutputReference interface {
 	ResetStoragePolicyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) ClusterInp
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -362,7 +362,6 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) TerraformR
 	return returns
 }
 
-
 func NewGkeonpremVmwareAdminClusterVcenterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterVcenterOutputReference {
 	_init_.Initialize()
 
@@ -373,7 +372,7 @@ func NewGkeonpremVmwareAdminClusterVcenterOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterVcenterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -385,12 +384,12 @@ func NewGkeonpremVmwareAdminClusterVcenterOutputReference_Override(g GkeonpremVm
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterVcenterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetAddress(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetAddress(val *string) {
 	if err := j.validateSetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -401,7 +400,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetAddress(
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetCaCertData(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetCaCertData(val *string) {
 	if err := j.validateSetCaCertDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -412,7 +411,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetCaCertDa
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetCluster(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetCluster(val *string) {
 	if err := j.validateSetClusterParameters(val); err != nil {
 		panic(err)
 	}
@@ -423,7 +422,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetCluster(
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -434,7 +433,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,7 +444,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetDatacenter(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetDatacenter(val *string) {
 	if err := j.validateSetDatacenterParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,7 +455,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetDatacent
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetDataDisk(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetDataDisk(val *string) {
 	if err := j.validateSetDataDiskParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetDataDisk
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetDatastore(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetDatastore(val *string) {
 	if err := j.validateSetDatastoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetDatastor
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetFolder(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetFolder(v
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetInternalValue(val *GkeonpremVmwareAdminClusterVcenter) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetInternalValue(val *GkeonpremVmwareAdminClusterVcenter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetResourcePool(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetResourcePool(val *string) {
 	if err := j.validateSetResourcePoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetResource
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetStoragePolicyName(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetStoragePolicyName(val *string) {
 	if err := j.validateSetStoragePolicyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetStorageP
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,16 +556,16 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) ComputeFqn
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -598,7 +597,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetBoolean
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -614,7 +613,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetListAtt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -630,7 +629,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetNumberA
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -646,7 +645,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetNumberL
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -662,7 +661,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetNumberM
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetStringA
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) GetStringM
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -802,16 +801,16 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) ResetStora
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -830,4 +829,3 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) ToString()
 
 	return returns
 }
-

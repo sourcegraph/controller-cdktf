@@ -109,7 +109,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutput
 
 	return nil
 }
-

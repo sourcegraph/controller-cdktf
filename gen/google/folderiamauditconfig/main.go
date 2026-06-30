@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfig",
-		reflect.TypeOf((*FolderIamAuditConfig)(nil)).Elem(),
+		reflect.TypeFor[FolderIamAuditConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderIamAuditConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,11 +72,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfig",
-		reflect.TypeOf((*FolderIamAuditConfigAuditLogConfig)(nil)).Elem(),
+		reflect.TypeFor[FolderIamAuditConfigAuditLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigList",
-		reflect.TypeOf((*FolderIamAuditConfigAuditLogConfigList)(nil)).Elem(),
+		reflect.TypeFor[FolderIamAuditConfigAuditLogConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderIamAuditConfigAuditLogConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -98,7 +98,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigOutputReference",
-		reflect.TypeOf((*FolderIamAuditConfigAuditLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FolderIamAuditConfigAuditLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -135,6 +135,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigConfig",
-		reflect.TypeOf((*FolderIamAuditConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[FolderIamAuditConfigConfig](),
 	)
 }

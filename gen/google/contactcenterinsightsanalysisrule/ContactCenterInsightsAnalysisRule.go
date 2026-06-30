@@ -12,9 +12,9 @@ import (
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_analysis_rule google_contact_center_insights_analysis_rule}.
 type ContactCenterInsightsAnalysisRule interface {
 	cdktf.TerraformResource
-	Active() interface{}
-	SetActive(val interface{})
-	ActiveInput() interface{}
+	Active() any
+	SetActive(val any)
+	ActiveInput() any
 	AnalysisPercentage() *float64
 	SetAnalysisPercentage(val *float64)
 	AnalysisPercentageInput() *float64
@@ -23,18 +23,18 @@ type ContactCenterInsightsAnalysisRule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ConversationFilter() *string
 	SetConversationFilter(val *string)
 	ConversationFilterInput() *string
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -72,27 +72,27 @@ type ContactCenterInsightsAnalysisRule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ContactCenterInsightsAnalysisRuleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type ContactCenterInsightsAnalysisRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type ContactCenterInsightsAnalysisRule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -142,17 +142,17 @@ type ContactCenterInsightsAnalysisRule interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ContactCenterInsightsAnalysisRule
@@ -160,8 +160,8 @@ type jsiiProxy_ContactCenterInsightsAnalysisRule struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Active() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Active() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"active",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Active() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) ActiveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) ActiveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activeInput",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) CdktfStack() cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -270,8 +270,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) ConversationFilterInput() 
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -450,8 +450,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Provider() cdktf.Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -460,8 +460,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Provisioners() *[]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -480,8 +480,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) TerraformGeneratorMetadata
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -510,8 +510,8 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) Timeouts() ContactCenterIn
 	return returns
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/contact_center_insights_analysis_rule google_contact_center_insights_analysis_rule} Resource.
 func NewContactCenterInsightsAnalysisRule(scope constructs.Construct, id *string, config *ContactCenterInsightsAnalysisRuleConfig) ContactCenterInsightsAnalysisRule {
 	_init_.Initialize()
@@ -542,7 +541,7 @@ func NewContactCenterInsightsAnalysisRule(scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-google.contactCenterInsightsAnalysisRule.ContactCenterInsightsAnalysisRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -555,12 +554,12 @@ func NewContactCenterInsightsAnalysisRule_Override(c ContactCenterInsightsAnalys
 
 	_jsii_.Create(
 		"@cdktf/provider-google.contactCenterInsightsAnalysisRule.ContactCenterInsightsAnalysisRule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetActive(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetActive(val any) {
 	if err := j.validateSetActiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetActive(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetAnalysisPercentage(val *float64) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetAnalysisPercentage(val *float64) {
 	if err := j.validateSetAnalysisPercentageParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetAnalysisPercentage(val *
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetConnection(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetConversationFilter(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetConversationFilter(val *string) {
 	if err := j.validateSetConversationFilterParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetConversationFilter(val *
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetCount(val interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -623,7 +622,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetDisplayName(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetDisplayName(val *string)
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -642,7 +641,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetId(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetLocation(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -675,7 +674,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetProject(val *string) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -686,7 +685,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -694,7 +693,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetProvider(val cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -717,7 +716,7 @@ func ContactCenterInsightsAnalysisRule_GenerateConfigForImport(scope constructs.
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.contactCenterInsightsAnalysisRule.ContactCenterInsightsAnalysisRule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func ContactCenterInsightsAnalysisRule_GenerateConfigForImport(scope constructs.
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ContactCenterInsightsAnalysisRule_IsConstruct(x interface{}) *bool {
+func ContactCenterInsightsAnalysisRule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContactCenterInsightsAnalysisRule_IsConstructParameters(x); err != nil {
@@ -752,7 +751,7 @@ func ContactCenterInsightsAnalysisRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.contactCenterInsightsAnalysisRule.ContactCenterInsightsAnalysisRule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func ContactCenterInsightsAnalysisRule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ContactCenterInsightsAnalysisRule_IsTerraformElement(x interface{}) *bool {
+func ContactCenterInsightsAnalysisRule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContactCenterInsightsAnalysisRule_IsTerraformElementParameters(x); err != nil {
@@ -771,7 +770,7 @@ func ContactCenterInsightsAnalysisRule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.contactCenterInsightsAnalysisRule.ContactCenterInsightsAnalysisRule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -779,7 +778,7 @@ func ContactCenterInsightsAnalysisRule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ContactCenterInsightsAnalysisRule_IsTerraformResource(x interface{}) *bool {
+func ContactCenterInsightsAnalysisRule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContactCenterInsightsAnalysisRule_IsTerraformResourceParameters(x); err != nil {
@@ -790,7 +789,7 @@ func ContactCenterInsightsAnalysisRule_IsTerraformResource(x interface{}) *bool 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.contactCenterInsightsAnalysisRule.ContactCenterInsightsAnalysisRule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -815,31 +814,31 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) AddMoveTarget(moveTarget *
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetListAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -919,7 +918,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -935,7 +934,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -951,7 +950,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -967,15 +966,15 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -994,7 +993,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ImportFrom(id *string, pro
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1007,7 +1006,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) InterpolationForAttribute(
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1021,18 +1020,18 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) OverrideLogicalId(newLogic
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) PutAnnotatorSelector(value
 	_jsii_.InvokeVoid(
 		c,
 		"putAnnotatorSelector",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1076,7 +1075,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) PutTimeouts(value *Contact
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1152,8 +1151,8 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1165,8 +1164,8 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) SynthesizeAttributes() *ma
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1178,8 +1177,8 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) SynthesizeHclAttributes() 
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1191,8 +1190,8 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ToHclTerraform() interface
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1217,8 +1216,8 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1229,4 +1228,3 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRule) ToTerraform() interface{} 
 
 	return returns
 }
-

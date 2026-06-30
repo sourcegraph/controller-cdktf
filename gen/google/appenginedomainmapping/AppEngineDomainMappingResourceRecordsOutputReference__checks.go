@@ -98,7 +98,7 @@ func (a *jsiiProxy_AppEngineDomainMappingResourceRecordsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineDomainMappingResourceRecordsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineDomainMappingResourceRecordsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAppEngineDomainMappingResourceRecordsOutputReferenceParameters(t
 
 	return nil
 }
-

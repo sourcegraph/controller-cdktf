@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCatalogEntryBigqueryTableSpecOutputReferenceParameters(terra
 
 	return nil
 }
-

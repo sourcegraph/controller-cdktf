@@ -1,6 +1,5 @@
 package cloudrunv2job
 
-
 type CloudRunV2JobTemplateTemplateContainers struct {
 	// URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images.
 	//
@@ -25,7 +24,7 @@ type CloudRunV2JobTemplateTemplateContainers struct {
 	// env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#env CloudRunV2Job#env}
-	Env interface{} `field:"optional" json:"env" yaml:"env"`
+	Env any `field:"optional" json:"env" yaml:"env"`
 	// Name of the container specified as a DNS_LABEL.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#name CloudRunV2Job#name}
@@ -33,7 +32,7 @@ type CloudRunV2JobTemplateTemplateContainers struct {
 	// ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#ports CloudRunV2Job#ports}
-	Ports interface{} `field:"optional" json:"ports" yaml:"ports"`
+	Ports any `field:"optional" json:"ports" yaml:"ports"`
 	// resources block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#resources CloudRunV2Job#resources}
@@ -45,7 +44,7 @@ type CloudRunV2JobTemplateTemplateContainers struct {
 	// volume_mounts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#volume_mounts CloudRunV2Job#volume_mounts}
-	VolumeMounts interface{} `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
+	VolumeMounts any `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
 	// Container's working directory.
 	//
 	// If not specified, the container runtime's default will be used, which might be configured in the container image.
@@ -53,4 +52,3 @@ type CloudRunV2JobTemplateTemplateContainers struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_job#working_dir CloudRunV2Job#working_dir}
 	WorkingDir *string `field:"optional" json:"workingDir" yaml:"workingDir"`
 }
-

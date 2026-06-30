@@ -101,7 +101,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validatePutAllo
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validatePutAllowedKeyTypesParameters(value interface{}) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validatePutAllowedKeyTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -170,7 +170,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateSetBack
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -278,4 +278,3 @@ func validateNewPrivatecaCaPoolIssuancePolicyOutputReferenceParameters(terraform
 
 	return nil
 }
-

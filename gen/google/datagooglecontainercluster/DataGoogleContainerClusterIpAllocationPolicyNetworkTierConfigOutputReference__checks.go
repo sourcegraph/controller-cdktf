@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfig
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOut
 
 	return nil
 }
-

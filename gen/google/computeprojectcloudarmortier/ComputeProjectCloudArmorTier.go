@@ -18,15 +18,15 @@ type ComputeProjectCloudArmorTier interface {
 	SetCloudArmorTier(val *string)
 	CloudArmorTierInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,26 +56,26 @@ type ComputeProjectCloudArmorTier interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeProjectCloudArmorTierTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -93,7 +93,7 @@ type ComputeProjectCloudArmorTier interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -105,7 +105,7 @@ type ComputeProjectCloudArmorTier interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type ComputeProjectCloudArmorTier interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeProjectCloudArmorTier
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) CloudArmorTierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -177,8 +177,8 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -307,8 +307,8 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) Timeouts() ComputeProjectCloudA
 	return returns
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -376,7 +376,6 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier} Resource.
 func NewComputeProjectCloudArmorTier(scope constructs.Construct, id *string, config *ComputeProjectCloudArmorTierConfig) ComputeProjectCloudArmorTier {
@@ -389,7 +388,7 @@ func NewComputeProjectCloudArmorTier(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -402,12 +401,12 @@ func NewComputeProjectCloudArmorTier_Override(c ComputeProjectCloudArmorTier, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetCloudArmorTier(val *string) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetCloudArmorTier(val *string) {
 	if err := j.validateSetCloudArmorTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetCloudArmorTier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -448,7 +447,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -456,7 +455,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetId(val *string) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,7 +466,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -478,7 +477,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetProject(val *string) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -497,7 +496,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func ComputeProjectCloudArmorTier_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func ComputeProjectCloudArmorTier_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeProjectCloudArmorTier_IsConstruct(x interface{}) *bool {
+func ComputeProjectCloudArmorTier_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeProjectCloudArmorTier_IsConstructParameters(x); err != nil {
@@ -555,7 +554,7 @@ func ComputeProjectCloudArmorTier_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func ComputeProjectCloudArmorTier_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeProjectCloudArmorTier_IsTerraformElement(x interface{}) *bool {
+func ComputeProjectCloudArmorTier_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeProjectCloudArmorTier_IsTerraformElementParameters(x); err != nil {
@@ -574,7 +573,7 @@ func ComputeProjectCloudArmorTier_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -582,7 +581,7 @@ func ComputeProjectCloudArmorTier_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeProjectCloudArmorTier_IsTerraformResource(x interface{}) *bool {
+func ComputeProjectCloudArmorTier_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeProjectCloudArmorTier_IsTerraformResourceParameters(x); err != nil {
@@ -593,7 +592,7 @@ func ComputeProjectCloudArmorTier_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeProjectCloudArmorTier.ComputeProjectCloudArmorTier",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -618,31 +617,31 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) AddMoveTarget(moveTarget *strin
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTier) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -754,7 +753,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -770,15 +769,15 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTier) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -797,7 +796,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) ImportFrom(id *string, provider
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -810,7 +809,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,18 +823,18 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTier) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -846,7 +845,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -857,7 +856,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -868,7 +867,7 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) PutTimeouts(value *ComputeProje
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -904,8 +903,8 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) ResetTimeouts() {
 	)
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTier) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -917,8 +916,8 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTier) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -930,8 +929,8 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTier) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -943,8 +942,8 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTier) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -969,8 +968,8 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTier) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -981,4 +980,3 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) ToTerraform() interface{} {
 
 	return returns
 }
-

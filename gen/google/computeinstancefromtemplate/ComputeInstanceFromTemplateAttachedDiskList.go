@@ -17,8 +17,8 @@ type ComputeInstanceFromTemplateAttachedDiskList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type ComputeInstanceFromTemplateAttachedDiskList interface {
 	Get(index *float64) ComputeInstanceFromTemplateAttachedDiskOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) WrapsSet() *bool
 	return returns
 }
 
-
 func NewComputeInstanceFromTemplateAttachedDiskList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceFromTemplateAttachedDiskList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewComputeInstanceFromTemplateAttachedDiskList(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateAttachedDiskList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewComputeInstanceFromTemplateAttachedDiskList_Override(c ComputeInstanceFr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateAttachedDiskList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList)SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) AllWithMapKey(ma
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) Get(index *float
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) ToString() *stri
 
 	return returns
 }
-

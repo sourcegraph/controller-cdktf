@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsResc
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsRescheduleDateRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsRescheduleDateRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVmwareengineUpgradesUpgradesScheduleConstraintsResched
 
 	return nil
 }
-

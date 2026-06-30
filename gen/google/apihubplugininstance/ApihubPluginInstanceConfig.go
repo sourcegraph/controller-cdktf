@@ -6,9 +6,9 @@ import (
 
 type ApihubPluginInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApihubPluginInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The display name for this plugin instance. Max length is 255 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin_instance#display_name ApihubPluginInstance#display_name}
@@ -48,7 +48,7 @@ type ApihubPluginInstanceConfig struct {
 	// actions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin_instance#actions ApihubPluginInstance#actions}
-	Actions interface{} `field:"optional" json:"actions" yaml:"actions"`
+	Actions any `field:"optional" json:"actions" yaml:"actions"`
 	// auth_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin_instance#auth_config ApihubPluginInstance#auth_config}
@@ -56,7 +56,7 @@ type ApihubPluginInstanceConfig struct {
 	// The display name for this plugin instance. Max length is 255 characters.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin_instance#disable ApihubPluginInstance#disable}
-	Disable interface{} `field:"optional" json:"disable" yaml:"disable"`
+	Disable any `field:"optional" json:"disable" yaml:"disable"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin_instance#id ApihubPluginInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -69,4 +69,3 @@ type ApihubPluginInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_plugin_instance#timeouts ApihubPluginInstance#timeouts}
 	Timeouts *ApihubPluginInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkPerformanceConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateNetworkPerformanceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateNetworkPerformanceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionInstanceTemplateNetworkPerformanceConfigOutputRefer
 
 	return nil
 }
-

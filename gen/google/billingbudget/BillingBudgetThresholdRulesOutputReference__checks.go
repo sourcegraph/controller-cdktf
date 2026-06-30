@@ -98,7 +98,7 @@ func (b *jsiiProxy_BillingBudgetThresholdRulesOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetThresholdRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewBillingBudgetThresholdRulesOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

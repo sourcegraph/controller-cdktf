@@ -17,15 +17,15 @@ type IapWebBackendServiceIamBinding interface {
 	Condition() IapWebBackendServiceIamBindingConditionOutputReference
 	ConditionInput() *IapWebBackendServiceIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,18 +59,18 @@ type IapWebBackendServiceIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WebBackendService() *string
@@ -80,9 +80,9 @@ type IapWebBackendServiceIamBinding interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type IapWebBackendServiceIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type IapWebBackendServiceIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type IapWebBackendServiceIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IapWebBackendServiceIamBinding
@@ -174,8 +174,8 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) ConditionInput() *IapWebBacke
 	return returns
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) WebBackendServiceInput() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
 func NewIapWebBackendServiceIamBinding(scope constructs.Construct, id *string, config *IapWebBackendServiceIamBindingConfig) IapWebBackendServiceIamBinding {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewIapWebBackendServiceIamBinding(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewIapWebBackendServiceIamBinding_Override(i IapWebBackendServiceIamBinding
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetId(val *string) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetProvisioners(val *[]interfa
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IapWebBackendServiceIamBinding)SetWebBackendService(val *string) {
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) SetWebBackendService(val *string) {
 	if err := j.validateSetWebBackendServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func IapWebBackendServiceIamBinding_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func IapWebBackendServiceIamBinding_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IapWebBackendServiceIamBinding_IsConstruct(x interface{}) *bool {
+func IapWebBackendServiceIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebBackendServiceIamBinding_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func IapWebBackendServiceIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func IapWebBackendServiceIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebBackendServiceIamBinding_IsTerraformElement(x interface{}) *bool {
+func IapWebBackendServiceIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebBackendServiceIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func IapWebBackendServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func IapWebBackendServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IapWebBackendServiceIamBinding_IsTerraformResource(x interface{}) *bool {
+func IapWebBackendServiceIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIapWebBackendServiceIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func IapWebBackendServiceIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		i,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -876,7 +875,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		i,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) PutCondition(value *IapWebBac
 	_jsii_.InvokeVoid(
 		i,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) ResetProject() {
 	)
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -996,8 +995,8 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -1009,8 +1008,8 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1022,8 +1021,8 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1048,8 +1047,8 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IapWebBackendServiceIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IapWebBackendServiceIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -1060,4 +1059,3 @@ func (i *jsiiProxy_IapWebBackendServiceIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

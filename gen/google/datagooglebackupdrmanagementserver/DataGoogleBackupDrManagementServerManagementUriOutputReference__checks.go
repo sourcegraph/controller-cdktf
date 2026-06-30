@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleBackupDrManagementServerManagementUriOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrManagementServerManagementUriOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBackupDrManagementServerManagementUriOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleBackupDrManagementServerManagementUriOutputReferencePa
 
 	return nil
 }
-

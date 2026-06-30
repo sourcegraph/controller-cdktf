@@ -15,11 +15,11 @@ type DataGoogleSpannerDatabase interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseDialect() *string
 	Ddl() *[]*string
 	DefaultTimeZone() *string
@@ -61,19 +61,19 @@ type DataGoogleSpannerDatabase interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	VersionRetentionPeriod() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,18 +100,18 @@ type DataGoogleSpannerDatabase interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleSpannerDatabase
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleSpannerDatabase) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleSpannerDatabase) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleSpannerDatabase) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleSpannerDatabase) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -419,7 +419,6 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase) VersionRetentionPeriod() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/spanner_database google_spanner_database} Data Source.
 func NewDataGoogleSpannerDatabase(scope constructs.Construct, id *string, config *DataGoogleSpannerDatabaseConfig) DataGoogleSpannerDatabase {
 	_init_.Initialize()
@@ -431,7 +430,7 @@ func NewDataGoogleSpannerDatabase(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSpannerDatabase.DataGoogleSpannerDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -444,12 +443,12 @@ func NewDataGoogleSpannerDatabase_Override(d DataGoogleSpannerDatabase, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSpannerDatabase.DataGoogleSpannerDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleSpannerDatabase) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -460,7 +459,7 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleSpannerDatabase) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -468,7 +467,7 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleSpannerDatabase) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -476,7 +475,7 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleSpannerDatabase) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase)SetInstance(val *string) {
+func (j *jsiiProxy_DataGoogleSpannerDatabase) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleSpannerDatabase) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -509,7 +508,7 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleSpannerDatabase) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -520,7 +519,7 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleSpannerDatabase) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,7 +530,7 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSpannerDatabase)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleSpannerDatabase) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -551,7 +550,7 @@ func DataGoogleSpannerDatabase_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSpannerDatabase.DataGoogleSpannerDatabase",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func DataGoogleSpannerDatabase_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleSpannerDatabase_IsConstruct(x interface{}) *bool {
+func DataGoogleSpannerDatabase_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSpannerDatabase_IsConstructParameters(x); err != nil {
@@ -586,7 +585,7 @@ func DataGoogleSpannerDatabase_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSpannerDatabase.DataGoogleSpannerDatabase",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -594,7 +593,7 @@ func DataGoogleSpannerDatabase_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleSpannerDatabase_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleSpannerDatabase_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSpannerDatabase_IsTerraformDataSourceParameters(x); err != nil {
@@ -605,7 +604,7 @@ func DataGoogleSpannerDatabase_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSpannerDatabase.DataGoogleSpannerDatabase",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func DataGoogleSpannerDatabase_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleSpannerDatabase_IsTerraformElement(x interface{}) *bool {
+func DataGoogleSpannerDatabase_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSpannerDatabase_IsTerraformElementParameters(x); err != nil {
@@ -624,7 +623,7 @@ func DataGoogleSpannerDatabase_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSpannerDatabase.DataGoogleSpannerDatabase",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,27 +641,27 @@ func DataGoogleSpannerDatabase_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSpannerDatabase) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleSpannerDatabase) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleSpannerDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleSpannerDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -678,7 +677,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -694,7 +693,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -742,7 +741,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -848,8 +847,8 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleSpannerDatabase) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleSpannerDatabase) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -861,8 +860,8 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSpannerDatabase) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleSpannerDatabase) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -874,8 +873,8 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSpannerDatabase) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSpannerDatabase) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -887,8 +886,8 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSpannerDatabase) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSpannerDatabase) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -913,8 +912,8 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSpannerDatabase) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSpannerDatabase) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -925,4 +924,3 @@ func (d *jsiiProxy_DataGoogleSpannerDatabase) ToTerraform() interface{} {
 
 	return returns
 }
-

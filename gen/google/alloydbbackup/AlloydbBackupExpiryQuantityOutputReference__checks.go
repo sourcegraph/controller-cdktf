@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbBackupExpiryQuantityOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbBackupExpiryQuantityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbBackupExpiryQuantityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAlloydbBackupExpiryQuantityOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

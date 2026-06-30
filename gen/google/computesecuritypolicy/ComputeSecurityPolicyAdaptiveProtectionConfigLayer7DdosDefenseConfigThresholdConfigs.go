@@ -1,6 +1,5 @@
 package computesecuritypolicy
 
-
 type ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs struct {
 	// The name must be 1-63 characters long, and comply with RFC1035.
 	//
@@ -25,6 +24,5 @@ type ComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresho
 	// traffic_granularity_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_security_policy#traffic_granularity_configs ComputeSecurityPolicy#traffic_granularity_configs}
-	TrafficGranularityConfigs interface{} `field:"optional" json:"trafficGranularityConfigs" yaml:"trafficGranularityConfigs"`
+	TrafficGranularityConfigs any `field:"optional" json:"trafficGranularityConfigs" yaml:"trafficGranularityConfigs"`
 }
-

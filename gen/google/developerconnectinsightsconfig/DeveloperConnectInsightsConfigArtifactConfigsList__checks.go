@@ -34,7 +34,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsList) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDeveloperConnectInsightsConfigArtifactConfigsListParameters(terr
 
 	return nil
 }
-

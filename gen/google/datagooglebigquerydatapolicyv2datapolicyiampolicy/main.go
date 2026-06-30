@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy",
-		reflect.TypeOf((*DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,6 +66,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy.DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicyConfig",
-		reflect.TypeOf((*DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicyConfig](),
 	)
 }

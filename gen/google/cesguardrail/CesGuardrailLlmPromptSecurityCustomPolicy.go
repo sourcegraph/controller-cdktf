@@ -1,6 +1,5 @@
 package cesguardrail
 
-
 type CesGuardrailLlmPromptSecurityCustomPolicy struct {
 	// Defines when to apply the policy check during the conversation.
 	//
@@ -25,11 +24,11 @@ type CesGuardrailLlmPromptSecurityCustomPolicy struct {
 	// including those that would normally be skipped.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
-	AllowShortUtterance interface{} `field:"optional" json:"allowShortUtterance" yaml:"allowShortUtterance"`
+	AllowShortUtterance any `field:"optional" json:"allowShortUtterance" yaml:"allowShortUtterance"`
 	// If an error occurs during the policy check, fail open and do not trigger the guardrail.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
-	FailOpen interface{} `field:"optional" json:"failOpen" yaml:"failOpen"`
+	FailOpen any `field:"optional" json:"failOpen" yaml:"failOpen"`
 	// When checking this policy, consider the last 'n' messages in the conversation.
 	//
 	// When not set a default value of 10 will be used.
@@ -41,4 +40,3 @@ type CesGuardrailLlmPromptSecurityCustomPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
 	ModelSettings *CesGuardrailLlmPromptSecurityCustomPolicyModelSettings `field:"optional" json:"modelSettings" yaml:"modelSettings"`
 }
-

@@ -19,7 +19,7 @@ func (s *jsiiProxy_SecretManagerSecret) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecret) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SecretManagerSecret) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SecretManagerSecret) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SecretManagerSecret) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -237,7 +237,7 @@ func (s *jsiiProxy_SecretManagerSecret) validatePutTimeoutsParameters(value *Sec
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecret) validatePutTopicsParameters(value interface{}) error {
+func (s *jsiiProxy_SecretManagerSecret) validatePutTopicsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func validateSecretManagerSecret_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateSecretManagerSecret_IsConstructParameters(x interface{}) error {
+func validateSecretManagerSecret_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func validateSecretManagerSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateSecretManagerSecret_IsTerraformElementParameters(x interface{}) error {
+func validateSecretManagerSecret_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func validateSecretManagerSecret_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateSecretManagerSecret_IsTerraformResourceParameters(x interface{}) error {
+func validateSecretManagerSecret_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -316,7 +316,7 @@ func (j *jsiiProxy_SecretManagerSecret) validateSetAnnotationsParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecret) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecret) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -349,7 +349,7 @@ func (j *jsiiProxy_SecretManagerSecret) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecret) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecret) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -406,7 +406,7 @@ func (j *jsiiProxy_SecretManagerSecret) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecret) validateSetDeletionProtectionParameters(val interface{}) error {
+func (j *jsiiProxy_SecretManagerSecret) validateSetDeletionProtectionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -466,7 +466,7 @@ func (j *jsiiProxy_SecretManagerSecret) validateSetProjectParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecret) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SecretManagerSecret) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -570,4 +570,3 @@ func validateNewSecretManagerSecretParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesApp",
-		reflect.TypeOf((*CesApp)(nil)).Elem(),
+		reflect.TypeFor[CesApp](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "variableDeclarations", GoGetter: "VariableDeclarations"},
 			_jsii_.MemberProperty{JsiiProperty: "variableDeclarationsInput", GoGetter: "VariableDeclarationsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesApp{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -140,15 +140,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfig",
-		reflect.TypeOf((*CesAppAudioProcessingConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppAudioProcessingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigAmbientSoundConfig",
-		reflect.TypeOf((*CesAppAudioProcessingConfigAmbientSoundConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppAudioProcessingConfigAmbientSoundConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigAmbientSoundConfigOutputReference",
-		reflect.TypeOf((*CesAppAudioProcessingConfigAmbientSoundConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppAudioProcessingConfigAmbientSoundConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -181,7 +181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeGainDb", GoGetter: "VolumeGainDb"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeGainDbInput", GoGetter: "VolumeGainDbInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -189,11 +189,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigBargeInConfig",
-		reflect.TypeOf((*CesAppAudioProcessingConfigBargeInConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppAudioProcessingConfigBargeInConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigBargeInConfigOutputReference",
-		reflect.TypeOf((*CesAppAudioProcessingConfigBargeInConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppAudioProcessingConfigBargeInConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bargeInAwareness", GoGetter: "BargeInAwareness"},
 			_jsii_.MemberProperty{JsiiProperty: "bargeInAwarenessInput", GoGetter: "BargeInAwarenessInput"},
@@ -220,7 +220,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppAudioProcessingConfigBargeInConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -228,7 +228,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigOutputReference",
-		reflect.TypeOf((*CesAppAudioProcessingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppAudioProcessingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ambientSoundConfig", GoGetter: "AmbientSoundConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "ambientSoundConfigInput", GoGetter: "AmbientSoundConfigInput"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppAudioProcessingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -275,11 +275,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs",
-		reflect.TypeOf((*CesAppAudioProcessingConfigSynthesizeSpeechConfigs)(nil)).Elem(),
+		reflect.TypeFor[CesAppAudioProcessingConfigSynthesizeSpeechConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsList",
-		reflect.TypeOf((*CesAppAudioProcessingConfigSynthesizeSpeechConfigsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppAudioProcessingConfigSynthesizeSpeechConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -293,7 +293,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -301,7 +301,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference",
-		reflect.TypeOf((*CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "voice", GoGetter: "Voice"},
 			_jsii_.MemberProperty{JsiiProperty: "voiceInput", GoGetter: "VoiceInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -341,11 +341,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppClientCertificateSettings",
-		reflect.TypeOf((*CesAppClientCertificateSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppClientCertificateSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppClientCertificateSettingsOutputReference",
-		reflect.TypeOf((*CesAppClientCertificateSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppClientCertificateSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -376,7 +376,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsCertificateInput", GoGetter: "TlsCertificateInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppClientCertificateSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -384,19 +384,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppConfig",
-		reflect.TypeOf((*CesAppConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppDataStoreSettings",
-		reflect.TypeOf((*CesAppDataStoreSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppDataStoreSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppDataStoreSettingsEngines",
-		reflect.TypeOf((*CesAppDataStoreSettingsEngines)(nil)).Elem(),
+		reflect.TypeFor[CesAppDataStoreSettingsEngines](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppDataStoreSettingsEnginesList",
-		reflect.TypeOf((*CesAppDataStoreSettingsEnginesList)(nil)).Elem(),
+		reflect.TypeFor[CesAppDataStoreSettingsEnginesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -409,7 +409,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppDataStoreSettingsEnginesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -417,7 +417,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppDataStoreSettingsEnginesOutputReference",
-		reflect.TypeOf((*CesAppDataStoreSettingsEnginesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppDataStoreSettingsEnginesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -443,7 +443,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -451,7 +451,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppDataStoreSettingsOutputReference",
-		reflect.TypeOf((*CesAppDataStoreSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppDataStoreSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -476,7 +476,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppDataStoreSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -484,11 +484,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfile",
-		reflect.TypeOf((*CesAppDefaultChannelProfile)(nil)).Elem(),
+		reflect.TypeFor[CesAppDefaultChannelProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference",
-		reflect.TypeOf((*CesAppDefaultChannelProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppDefaultChannelProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelType", GoGetter: "ChannelType"},
 			_jsii_.MemberProperty{JsiiProperty: "channelTypeInput", GoGetter: "ChannelTypeInput"},
@@ -532,7 +532,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetConfig", GoGetter: "WebWidgetConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetConfigInput", GoGetter: "WebWidgetConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppDefaultChannelProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -540,11 +540,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfilePersonaProperty",
-		reflect.TypeOf((*CesAppDefaultChannelProfilePersonaProperty)(nil)).Elem(),
+		reflect.TypeFor[CesAppDefaultChannelProfilePersonaProperty](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfilePersonaPropertyOutputReference",
-		reflect.TypeOf((*CesAppDefaultChannelProfilePersonaPropertyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppDefaultChannelProfilePersonaPropertyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -571,7 +571,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppDefaultChannelProfilePersonaPropertyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -579,11 +579,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig",
-		reflect.TypeOf((*CesAppDefaultChannelProfileWebWidgetConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppDefaultChannelProfileWebWidgetConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference",
-		reflect.TypeOf((*CesAppDefaultChannelProfileWebWidgetConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppDefaultChannelProfileWebWidgetConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -616,7 +616,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetTitle", GoGetter: "WebWidgetTitle"},
 			_jsii_.MemberProperty{JsiiProperty: "webWidgetTitleInput", GoGetter: "WebWidgetTitleInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppDefaultChannelProfileWebWidgetConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -624,19 +624,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholds",
-		reflect.TypeOf((*CesAppEvaluationMetricsThresholds)(nil)).Elem(),
+		reflect.TypeFor[CesAppEvaluationMetricsThresholds](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds",
-		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds)(nil)).Elem(),
+		reflect.TypeFor[CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds",
-		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds)(nil)).Elem(),
+		reflect.TypeFor[CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference",
-		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -663,7 +663,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toolInvocationParameterCorrectnessThresholdInput", GoGetter: "ToolInvocationParameterCorrectnessThresholdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -671,7 +671,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference",
-		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -703,7 +703,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "turnLevelMetricsThresholds", GoGetter: "TurnLevelMetricsThresholds"},
 			_jsii_.MemberProperty{JsiiProperty: "turnLevelMetricsThresholdsInput", GoGetter: "TurnLevelMetricsThresholdsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -711,11 +711,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds",
-		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds)(nil)).Elem(),
+		reflect.TypeFor[CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference",
-		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -745,7 +745,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -753,7 +753,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference",
-		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppEvaluationMetricsThresholdsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -781,7 +781,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -789,11 +789,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppLanguageSettings",
-		reflect.TypeOf((*CesAppLanguageSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppLanguageSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppLanguageSettingsOutputReference",
-		reflect.TypeOf((*CesAppLanguageSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppLanguageSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -829,7 +829,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppLanguageSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -837,15 +837,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettings",
-		reflect.TypeOf((*CesAppLoggingSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfig",
-		reflect.TypeOf((*CesAppLoggingSettingsAudioRecordingConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsAudioRecordingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfigOutputReference",
-		reflect.TypeOf((*CesAppLoggingSettingsAudioRecordingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsAudioRecordingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -875,7 +875,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -883,11 +883,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettings",
-		reflect.TypeOf((*CesAppLoggingSettingsBigqueryExportSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsBigqueryExportSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettingsOutputReference",
-		reflect.TypeOf((*CesAppLoggingSettingsBigqueryExportSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsBigqueryExportSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -920,7 +920,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -928,11 +928,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettings",
-		reflect.TypeOf((*CesAppLoggingSettingsCloudLoggingSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsCloudLoggingSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettingsOutputReference",
-		reflect.TypeOf((*CesAppLoggingSettingsCloudLoggingSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsCloudLoggingSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -959,7 +959,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppLoggingSettingsCloudLoggingSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -967,11 +967,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings",
-		reflect.TypeOf((*CesAppLoggingSettingsConversationLoggingSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsConversationLoggingSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference",
-		reflect.TypeOf((*CesAppLoggingSettingsConversationLoggingSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsConversationLoggingSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -998,7 +998,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1006,7 +1006,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsOutputReference",
-		reflect.TypeOf((*CesAppLoggingSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioRecordingConfig", GoGetter: "AudioRecordingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "audioRecordingConfigInput", GoGetter: "AudioRecordingConfigInput"},
@@ -1050,7 +1050,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppLoggingSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1058,11 +1058,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsRedactionConfig",
-		reflect.TypeOf((*CesAppLoggingSettingsRedactionConfig)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsRedactionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsRedactionConfigOutputReference",
-		reflect.TypeOf((*CesAppLoggingSettingsRedactionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppLoggingSettingsRedactionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1095,7 +1095,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppLoggingSettingsRedactionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1103,11 +1103,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppModelSettings",
-		reflect.TypeOf((*CesAppModelSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppModelSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppModelSettingsOutputReference",
-		reflect.TypeOf((*CesAppModelSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppModelSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1137,7 +1137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppModelSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1145,11 +1145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppTimeZoneSettings",
-		reflect.TypeOf((*CesAppTimeZoneSettings)(nil)).Elem(),
+		reflect.TypeFor[CesAppTimeZoneSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppTimeZoneSettingsOutputReference",
-		reflect.TypeOf((*CesAppTimeZoneSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppTimeZoneSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1176,7 +1176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppTimeZoneSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1184,11 +1184,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppTimeouts",
-		reflect.TypeOf((*CesAppTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CesAppTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppTimeoutsOutputReference",
-		reflect.TypeOf((*CesAppTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1221,7 +1221,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1229,11 +1229,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppVariableDeclarations",
-		reflect.TypeOf((*CesAppVariableDeclarations)(nil)).Elem(),
+		reflect.TypeFor[CesAppVariableDeclarations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsList",
-		reflect.TypeOf((*CesAppVariableDeclarationsList)(nil)).Elem(),
+		reflect.TypeFor[CesAppVariableDeclarationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1247,7 +1247,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVariableDeclarationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1255,7 +1255,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsOutputReference",
-		reflect.TypeOf((*CesAppVariableDeclarationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVariableDeclarationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1286,7 +1286,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVariableDeclarationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1294,11 +1294,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsSchema",
-		reflect.TypeOf((*CesAppVariableDeclarationsSchema)(nil)).Elem(),
+		reflect.TypeFor[CesAppVariableDeclarationsSchema](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsSchemaOutputReference",
-		reflect.TypeOf((*CesAppVariableDeclarationsSchemaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CesAppVariableDeclarationsSchemaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalProperties", GoGetter: "AdditionalProperties"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalPropertiesInput", GoGetter: "AdditionalPropertiesInput"},
@@ -1366,7 +1366,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uniqueItems", GoGetter: "UniqueItems"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueItemsInput", GoGetter: "UniqueItemsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

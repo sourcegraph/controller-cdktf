@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRegionUrlMapDefaultRouteActionTimeoutOutputReferenceParam
 
 	return nil
 }
-

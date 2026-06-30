@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPo
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyOutputReference) validatePutInstanceSelectionListParameters(value interface{}) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyOutputReference) validatePutInstanceSelectionListParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPo
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewDataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolic
 
 	return nil
 }
-

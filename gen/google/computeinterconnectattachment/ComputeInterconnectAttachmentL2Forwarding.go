@@ -1,11 +1,10 @@
 package computeinterconnectattachment
 
-
 type ComputeInterconnectAttachmentL2Forwarding struct {
 	// appliance_mappings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_attachment#appliance_mappings ComputeInterconnectAttachment#appliance_mappings}
-	ApplianceMappings interface{} `field:"optional" json:"applianceMappings" yaml:"applianceMappings"`
+	ApplianceMappings any `field:"optional" json:"applianceMappings" yaml:"applianceMappings"`
 	// The default appliance IP address.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_attachment#default_appliance_ip_address ComputeInterconnectAttachment#default_appliance_ip_address}
@@ -23,4 +22,3 @@ type ComputeInterconnectAttachmentL2Forwarding struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_interconnect_attachment#tunnel_endpoint_ip_address ComputeInterconnectAttachment#tunnel_endpoint_ip_address}
 	TunnelEndpointIpAddress *string `field:"optional" json:"tunnelEndpointIpAddress" yaml:"tunnelEndpointIpAddress"`
 }
-

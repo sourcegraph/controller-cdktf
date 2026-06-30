@@ -19,22 +19,22 @@ type ProjectAccessApprovalSettings interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EnrolledAncestor() cdktf.IResolvable
 	EnrolledServices() ProjectAccessApprovalSettingsEnrolledServicesList
-	EnrolledServicesInput() interface{}
+	EnrolledServicesInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -68,26 +68,26 @@ type ProjectAccessApprovalSettings interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ProjectAccessApprovalSettingsTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -105,7 +105,7 @@ type ProjectAccessApprovalSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -117,14 +117,14 @@ type ProjectAccessApprovalSettings interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutEnrolledServices(value interface{})
+	PutEnrolledServices(value any)
 	PutTimeouts(value *ProjectAccessApprovalSettingsTimeouts)
 	ResetActiveKeyVersion()
 	ResetId()
@@ -134,17 +134,17 @@ type ProjectAccessApprovalSettings interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ProjectAccessApprovalSettings
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectAccessApprovalSettings) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectAccessApprovalSettings) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectAccessApprovalSettings) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -252,8 +252,8 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) EnrolledServices() ProjectAcce
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) EnrolledServicesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectAccessApprovalSettings) EnrolledServicesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enrolledServicesInput",
@@ -422,8 +422,8 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ProjectAccessApprovalSettings) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -432,8 +432,8 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectAccessApprovalSettings) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -452,8 +452,8 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) TerraformGeneratorMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ProjectAccessApprovalSettings) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -482,8 +482,8 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) Timeouts() ProjectAccessApprov
 	return returns
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ProjectAccessApprovalSettings) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -491,7 +491,6 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_access_approval_settings google_project_access_approval_settings} Resource.
 func NewProjectAccessApprovalSettings(scope constructs.Construct, id *string, config *ProjectAccessApprovalSettingsConfig) ProjectAccessApprovalSettings {
@@ -504,7 +503,7 @@ func NewProjectAccessApprovalSettings(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -517,12 +516,12 @@ func NewProjectAccessApprovalSettings_Override(p ProjectAccessApprovalSettings, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetActiveKeyVersion(val *string) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetActiveKeyVersion(val *string) {
 	if err := j.validateSetActiveKeyVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -533,7 +532,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetActiveKeyVersion(val *string
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetConnection(val interface{}) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetCount(val interface{}) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -563,7 +562,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -571,7 +570,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetId(val *string) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetNotificationEmails(val *[]*string) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetNotificationEmails(val *[]*string) {
 	if err := j.validateSetNotificationEmailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetNotificationEmails(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetProject(val *string) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetProjectId(val *string) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetProjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -634,7 +633,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettings)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettings)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ProjectAccessApprovalSettings) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func ProjectAccessApprovalSettings_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func ProjectAccessApprovalSettings_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ProjectAccessApprovalSettings_IsConstruct(x interface{}) *bool {
+func ProjectAccessApprovalSettings_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectAccessApprovalSettings_IsConstructParameters(x); err != nil {
@@ -692,7 +691,7 @@ func ProjectAccessApprovalSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func ProjectAccessApprovalSettings_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectAccessApprovalSettings_IsTerraformElement(x interface{}) *bool {
+func ProjectAccessApprovalSettings_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectAccessApprovalSettings_IsTerraformElementParameters(x); err != nil {
@@ -711,7 +710,7 @@ func ProjectAccessApprovalSettings_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func ProjectAccessApprovalSettings_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ProjectAccessApprovalSettings_IsTerraformResource(x interface{}) *bool {
+func ProjectAccessApprovalSettings_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateProjectAccessApprovalSettings_IsTerraformResourceParameters(x); err != nil {
@@ -730,7 +729,7 @@ func ProjectAccessApprovalSettings_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -755,31 +754,31 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_ProjectAccessApprovalSettings) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_ProjectAccessApprovalSettings) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -795,7 +794,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -811,7 +810,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -827,7 +826,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -843,7 +842,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -859,7 +858,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -875,7 +874,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -891,7 +890,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -907,15 +906,15 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectAccessApprovalSettings) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -934,7 +933,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -947,7 +946,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,18 +960,18 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_ProjectAccessApprovalSettings) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -983,7 +982,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -994,18 +993,18 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) PutEnrolledServices(value interface{}) {
+func (p *jsiiProxy_ProjectAccessApprovalSettings) PutEnrolledServices(value any) {
 	if err := p.validatePutEnrolledServicesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"putEnrolledServices",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1016,7 +1015,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) PutTimeouts(value *ProjectAcce
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1068,8 +1067,8 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) ResetTimeouts() {
 	)
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectAccessApprovalSettings) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1081,8 +1080,8 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_ProjectAccessApprovalSettings) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1094,8 +1093,8 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectAccessApprovalSettings) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1107,8 +1106,8 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectAccessApprovalSettings) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1133,8 +1132,8 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettings) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_ProjectAccessApprovalSettings) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1145,4 +1144,3 @@ func (p *jsiiProxy_ProjectAccessApprovalSettings) ToTerraform() interface{} {
 
 	return returns
 }
-

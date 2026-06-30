@@ -1,6 +1,5 @@
 package dialogflowcxpage
 
-
 type DialogflowCxPageFormParametersFillBehavior struct {
 	// initial_prompt_fulfillment block.
 	//
@@ -9,6 +8,5 @@ type DialogflowCxPageFormParametersFillBehavior struct {
 	// reprompt_event_handlers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_page#reprompt_event_handlers DialogflowCxPage#reprompt_event_handlers}
-	RepromptEventHandlers interface{} `field:"optional" json:"repromptEventHandlers" yaml:"repromptEventHandlers"`
+	RepromptEventHandlers any `field:"optional" json:"repromptEventHandlers" yaml:"repromptEventHandlers"`
 }
-

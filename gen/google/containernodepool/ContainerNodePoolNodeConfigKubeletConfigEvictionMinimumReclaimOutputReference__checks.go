@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclai
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -246,4 +246,3 @@ func validateNewContainerNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOu
 
 	return nil
 }
-

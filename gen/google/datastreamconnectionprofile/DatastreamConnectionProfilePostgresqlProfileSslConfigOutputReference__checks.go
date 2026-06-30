@@ -120,7 +120,7 @@ func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewDatastreamConnectionProfilePostgresqlProfileSslConfigOutputRefer
 
 	return nil
 }
-

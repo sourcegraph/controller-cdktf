@@ -109,7 +109,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewComputeUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputRefer
 
 	return nil
 }
-

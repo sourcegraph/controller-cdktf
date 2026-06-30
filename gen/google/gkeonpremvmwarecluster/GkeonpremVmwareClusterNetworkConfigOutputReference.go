@@ -12,9 +12,9 @@ type GkeonpremVmwareClusterNetworkConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -57,7 +57,7 @@ type GkeonpremVmwareClusterNetworkConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -89,7 +89,7 @@ type GkeonpremVmwareClusterNetworkConfigOutputReference interface {
 	ResetVcenterNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -102,8 +102,8 @@ type jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -312,7 +312,6 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) VcenterNe
 	return returns
 }
 
-
 func NewGkeonpremVmwareClusterNetworkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareClusterNetworkConfigOutputReference {
 	_init_.Initialize()
 
@@ -323,7 +322,7 @@ func NewGkeonpremVmwareClusterNetworkConfigOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareClusterNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -335,12 +334,12 @@ func NewGkeonpremVmwareClusterNetworkConfigOutputReference_Override(g GkeonpremV
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeonpremVmwareCluster.GkeonpremVmwareClusterNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetInternalValue(val *GkeonpremVmwareClusterNetworkConfig) {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) SetInternalValue(val *GkeonpremVmwareClusterNetworkConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetPodAddressCidrBlocks(val *[]*string) {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) SetPodAddressCidrBlocks(val *[]*string) {
 	if err := j.validateSetPodAddressCidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetPodAddr
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetServiceAddressCidrBlocks(val *[]*string) {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) SetServiceAddressCidrBlocks(val *[]*string) {
 	if err := j.validateSetServiceAddressCidrBlocksParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetService
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference)SetVcenterNetwork(val *string) {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) SetVcenterNetwork(val *string) {
 	if err := j.validateSetVcenterNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,16 +440,16 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) ComputeFq
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetBoolea
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetListAt
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,7 +545,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetNumber
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -562,7 +561,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -578,7 +577,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) GetString
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) Interpola
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) PutContro
 	_jsii_.InvokeVoid(
 		g,
 		"putControlPlaneV2Config",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -632,7 +631,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) PutDhcpIp
 	_jsii_.InvokeVoid(
 		g,
 		"putDhcpIpConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -643,7 +642,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) PutHostCo
 	_jsii_.InvokeVoid(
 		g,
 		"putHostConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -654,7 +653,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) PutStatic
 	_jsii_.InvokeVoid(
 		g,
 		"putStaticIpConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -698,16 +697,16 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) ResetVcen
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -726,4 +725,3 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) ToString(
 
 	return returns
 }
-

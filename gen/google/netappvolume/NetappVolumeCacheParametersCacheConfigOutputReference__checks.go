@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) validateSetCifsChangeNotifyEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) validateSetCifsChangeNotifyEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeCacheParametersCacheConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewNetappVolumeCacheParametersCacheConfigOutputReferenceParameters(
 
 	return nil
 }
-

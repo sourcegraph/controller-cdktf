@@ -12,9 +12,9 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EventFilters() Cloudfunctions2FunctionEventTriggerEventFiltersList
-	EventFiltersInput() interface{}
+	EventFiltersInput() any
 	EventType() *string
 	SetEventType(val *string)
 	EventTypeInput() *string
@@ -58,7 +58,7 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -79,7 +79,7 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEventFilters(value interface{})
+	PutEventFilters(value any)
 	ResetEventFilters()
 	ResetPubsubTopic()
 	ResetRetryPolicy()
@@ -87,7 +87,7 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	ResetTriggerRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) EventFilt
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) EventFiltersInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) EventFiltersInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"eventFiltersInput",
@@ -300,7 +300,6 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) TriggerRe
 	return returns
 }
 
-
 func NewCloudfunctions2FunctionEventTriggerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Cloudfunctions2FunctionEventTriggerOutputReference {
 	_init_.Initialize()
 
@@ -311,7 +310,7 @@ func NewCloudfunctions2FunctionEventTriggerOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -323,12 +322,12 @@ func NewCloudfunctions2FunctionEventTriggerOutputReference_Override(c Cloudfunct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetEventType(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetEventType(val *string) {
 	if err := j.validateSetEventTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetEventTy
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetInternalValue(val *Cloudfunctions2FunctionEventTrigger) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetInternalValue(val *Cloudfunctions2FunctionEventTrigger) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetPubsubTopic(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetPubsubTopic(val *string) {
 	if err := j.validateSetPubsubTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetPubsubT
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetRetryPolicy(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetRetryPolicy(val *string) {
 	if err := j.validateSetRetryPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetRetryPo
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetServiceAccountEmail(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetServiceAccountEmail(val *string) {
 	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetService
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +426,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetTriggerRegion(val *string) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) SetTriggerRegion(val *string) {
 	if err := j.validateSetTriggerRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,16 +450,16 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) ComputeFq
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,7 +475,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetBoolea
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -492,7 +491,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetBoolea
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -508,7 +507,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetListAt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -524,7 +523,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetNumber
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetNumber
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -556,7 +555,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetNumber
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,7 +571,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetString
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetString
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,21 +616,21 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) Interpola
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) PutEventFilters(value interface{}) {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) PutEventFilters(value any) {
 	if err := c.validatePutEventFiltersParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEventFilters",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -675,16 +674,16 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) ResetTrig
 	)
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -703,4 +702,3 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) ToString(
 
 	return returns
 }
-

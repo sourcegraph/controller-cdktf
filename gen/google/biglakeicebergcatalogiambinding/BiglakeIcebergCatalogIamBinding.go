@@ -17,15 +17,15 @@ type BiglakeIcebergCatalogIamBinding interface {
 	Condition() BiglakeIcebergCatalogIamBindingConditionOutputReference
 	ConditionInput() *BiglakeIcebergCatalogIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type BiglakeIcebergCatalogIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type BiglakeIcebergCatalogIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type BiglakeIcebergCatalogIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type BiglakeIcebergCatalogIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BiglakeIcebergCatalogIamBinding
@@ -174,8 +174,8 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) ConditionInput() *BiglakeIce
 	return returns
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/biglake_iceberg_catalog_iam_binding google_biglake_iceberg_catalog_iam_binding} Resource.
 func NewBiglakeIcebergCatalogIamBinding(scope constructs.Construct, id *string, config *BiglakeIcebergCatalogIamBindingConfig) BiglakeIcebergCatalogIamBinding {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewBiglakeIcebergCatalogIamBinding(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewBiglakeIcebergCatalogIamBinding_Override(b BiglakeIcebergCatalogIamBindi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetId(val *string) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetName(val *string) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_BiglakeIcebergCatalogIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func BiglakeIcebergCatalogIamBinding_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func BiglakeIcebergCatalogIamBinding_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BiglakeIcebergCatalogIamBinding_IsConstruct(x interface{}) *bool {
+func BiglakeIcebergCatalogIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBiglakeIcebergCatalogIamBinding_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func BiglakeIcebergCatalogIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func BiglakeIcebergCatalogIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BiglakeIcebergCatalogIamBinding_IsTerraformElement(x interface{}) *bool {
+func BiglakeIcebergCatalogIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBiglakeIcebergCatalogIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func BiglakeIcebergCatalogIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func BiglakeIcebergCatalogIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BiglakeIcebergCatalogIamBinding_IsTerraformResource(x interface{}) *bool {
+func BiglakeIcebergCatalogIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBiglakeIcebergCatalogIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func BiglakeIcebergCatalogIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.biglakeIcebergCatalogIamBinding.BiglakeIcebergCatalogIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -876,7 +875,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) PutCondition(value *BiglakeI
 	_jsii_.InvokeVoid(
 		b,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ResetProject() {
 	)
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -996,8 +995,8 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1009,8 +1008,8 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1022,8 +1021,8 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ToHclTerraform() interface{}
 	return returns
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1048,8 +1047,8 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1060,4 +1059,3 @@ func (b *jsiiProxy_BiglakeIcebergCatalogIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

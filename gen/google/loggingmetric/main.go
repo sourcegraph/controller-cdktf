@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingMetric.LoggingMetric",
-		reflect.TypeOf((*LoggingMetric)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetric](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueExtractor", GoGetter: "ValueExtractor"},
 			_jsii_.MemberProperty{JsiiProperty: "valueExtractorInput", GoGetter: "ValueExtractorInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingMetric{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -98,15 +98,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptions",
-		reflect.TypeOf((*LoggingMetricBucketOptions)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricBucketOptions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExplicitBuckets",
-		reflect.TypeOf((*LoggingMetricBucketOptionsExplicitBuckets)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricBucketOptionsExplicitBuckets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExplicitBucketsOutputReference",
-		reflect.TypeOf((*LoggingMetricBucketOptionsExplicitBucketsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricBucketOptionsExplicitBucketsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bounds", GoGetter: "Bounds"},
 			_jsii_.MemberProperty{JsiiProperty: "boundsInput", GoGetter: "BoundsInput"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingMetricBucketOptionsExplicitBucketsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,11 +140,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExponentialBuckets",
-		reflect.TypeOf((*LoggingMetricBucketOptionsExponentialBuckets)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricBucketOptionsExponentialBuckets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExponentialBucketsOutputReference",
-		reflect.TypeOf((*LoggingMetricBucketOptionsExponentialBucketsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricBucketOptionsExponentialBucketsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -174,7 +174,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -182,11 +182,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsLinearBuckets",
-		reflect.TypeOf((*LoggingMetricBucketOptionsLinearBuckets)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricBucketOptionsLinearBuckets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsLinearBucketsOutputReference",
-		reflect.TypeOf((*LoggingMetricBucketOptionsLinearBucketsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricBucketOptionsLinearBucketsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -216,7 +216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "width", GoGetter: "Width"},
 			_jsii_.MemberProperty{JsiiProperty: "widthInput", GoGetter: "WidthInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -224,7 +224,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsOutputReference",
-		reflect.TypeOf((*LoggingMetricBucketOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricBucketOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -260,7 +260,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingMetricBucketOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -268,19 +268,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricConfig",
-		reflect.TypeOf((*LoggingMetricConfig)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptor",
-		reflect.TypeOf((*LoggingMetricMetricDescriptor)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricMetricDescriptor](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabels",
-		reflect.TypeOf((*LoggingMetricMetricDescriptorLabels)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricMetricDescriptorLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabelsList",
-		reflect.TypeOf((*LoggingMetricMetricDescriptorLabelsList)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricMetricDescriptorLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingMetricMetricDescriptorLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -302,7 +302,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabelsOutputReference",
-		reflect.TypeOf((*LoggingMetricMetricDescriptorLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricMetricDescriptorLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -334,7 +334,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueType", GoGetter: "ValueType"},
 			_jsii_.MemberProperty{JsiiProperty: "valueTypeInput", GoGetter: "ValueTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -342,7 +342,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorOutputReference",
-		reflect.TypeOf((*LoggingMetricMetricDescriptorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricMetricDescriptorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -380,7 +380,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueType", GoGetter: "ValueType"},
 			_jsii_.MemberProperty{JsiiProperty: "valueTypeInput", GoGetter: "ValueTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingMetricMetricDescriptorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -388,11 +388,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricTimeouts",
-		reflect.TypeOf((*LoggingMetricTimeouts)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.loggingMetric.LoggingMetricTimeoutsOutputReference",
-		reflect.TypeOf((*LoggingMetricTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoggingMetricTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -425,7 +425,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoggingMetricTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

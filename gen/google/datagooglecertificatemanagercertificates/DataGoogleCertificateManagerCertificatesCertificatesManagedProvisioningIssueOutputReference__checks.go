@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedPr
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedProvisioningIssueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleCertificateManagerCertificatesCertificatesManagedProvi
 
 	return nil
 }
-

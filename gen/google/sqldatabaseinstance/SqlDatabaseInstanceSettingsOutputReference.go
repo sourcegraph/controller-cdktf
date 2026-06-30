@@ -17,9 +17,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ActiveDirectoryConfigInput() *SqlDatabaseInstanceSettingsActiveDirectoryConfig
 	AdvancedMachineFeatures() SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference
 	AdvancedMachineFeaturesInput() *SqlDatabaseInstanceSettingsAdvancedMachineFeatures
-	AutoUpgradeEnabled() interface{}
-	SetAutoUpgradeEnabled(val interface{})
-	AutoUpgradeEnabledInput() interface{}
+	AutoUpgradeEnabled() any
+	SetAutoUpgradeEnabled(val any)
+	AutoUpgradeEnabledInput() any
 	AvailabilityType() *string
 	SetAvailabilityType(val *string)
 	AvailabilityTypeInput() *string
@@ -30,16 +30,16 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	CollationInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConnectionPoolConfig() SqlDatabaseInstanceSettingsConnectionPoolConfigList
-	ConnectionPoolConfigInput() interface{}
+	ConnectionPoolConfigInput() any
 	ConnectorEnforcement() *string
 	SetConnectorEnforcement(val *string)
 	ConnectorEnforcementInput() *string
@@ -52,17 +52,17 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	SetDataApiAccess(val *string)
 	DataApiAccessInput() *string
 	DatabaseFlags() SqlDatabaseInstanceSettingsDatabaseFlagsList
-	DatabaseFlagsInput() interface{}
+	DatabaseFlagsInput() any
 	DataCacheConfig() SqlDatabaseInstanceSettingsDataCacheConfigOutputReference
 	DataCacheConfigInput() *SqlDatabaseInstanceSettingsDataCacheConfig
-	DeletionProtectionEnabled() interface{}
-	SetDeletionProtectionEnabled(val interface{})
-	DeletionProtectionEnabledInput() interface{}
+	DeletionProtectionEnabled() any
+	SetDeletionProtectionEnabled(val any)
+	DeletionProtectionEnabledInput() any
 	DenyMaintenancePeriod() SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference
 	DenyMaintenancePeriodInput() *SqlDatabaseInstanceSettingsDenyMaintenancePeriod
-	DiskAutoresize() interface{}
-	SetDiskAutoresize(val interface{})
-	DiskAutoresizeInput() interface{}
+	DiskAutoresize() any
+	SetDiskAutoresize(val any)
+	DiskAutoresizeInput() any
 	DiskAutoresizeLimit() *float64
 	SetDiskAutoresizeLimit(val *float64)
 	DiskAutoresizeLimitInput() *float64
@@ -76,12 +76,12 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	SetEdition(val *string)
 	EditionInput() *string
 	EffectiveAvailabilityType() *string
-	EnableDataplexIntegration() interface{}
-	SetEnableDataplexIntegration(val interface{})
-	EnableDataplexIntegrationInput() interface{}
-	EnableGoogleMlIntegration() interface{}
-	SetEnableGoogleMlIntegration(val interface{})
-	EnableGoogleMlIntegrationInput() interface{}
+	EnableDataplexIntegration() any
+	SetEnableDataplexIntegration(val any)
+	EnableDataplexIntegrationInput() any
+	EnableGoogleMlIntegration() any
+	SetEnableGoogleMlIntegration(val any)
+	EnableGoogleMlIntegrationInput() any
 	EntraidConfig() SqlDatabaseInstanceSettingsEntraidConfigOutputReference
 	EntraidConfigInput() *SqlDatabaseInstanceSettingsEntraidConfig
 	FinalBackupConfig() SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference
@@ -105,9 +105,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PricingPlanInput() *string
 	ReadPoolAutoScaleConfig() SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
 	ReadPoolAutoScaleConfigInput() *SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig
-	RetainBackupsOnDelete() interface{}
-	SetRetainBackupsOnDelete(val interface{})
-	RetainBackupsOnDeleteInput() interface{}
+	RetainBackupsOnDelete() any
+	SetRetainBackupsOnDelete(val any)
+	RetainBackupsOnDeleteInput() any
 	SqlServerAuditConfig() SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference
 	SqlServerAuditConfigInput() *SqlDatabaseInstanceSettingsSqlServerAuditConfig
 	// Experimental.
@@ -131,7 +131,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -155,8 +155,8 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PutActiveDirectoryConfig(value *SqlDatabaseInstanceSettingsActiveDirectoryConfig)
 	PutAdvancedMachineFeatures(value *SqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *SqlDatabaseInstanceSettingsBackupConfiguration)
-	PutConnectionPoolConfig(value interface{})
-	PutDatabaseFlags(value interface{})
+	PutConnectionPoolConfig(value any)
+	PutDatabaseFlags(value any)
 	PutDataCacheConfig(value *SqlDatabaseInstanceSettingsDataCacheConfig)
 	PutDenyMaintenancePeriod(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod)
 	PutEntraidConfig(value *SqlDatabaseInstanceSettingsEntraidConfig)
@@ -204,7 +204,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetUserLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -277,8 +277,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AdvancedMachineFe
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoUpgradeEnabled",
@@ -287,8 +287,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnable
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AutoUpgradeEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"autoUpgradeEnabledInput",
@@ -357,8 +357,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) CollationInput() 
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -387,8 +387,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ConnectionPoolCon
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connectionPoolConfigInput",
@@ -457,8 +457,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DatabaseFlags() S
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DatabaseFlagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DatabaseFlagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"databaseFlagsInput",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DataCacheConfigIn
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabled",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DeletionProtectio
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"deletionProtectionEnabledInput",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DenyMaintenancePe
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DiskAutoresize() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DiskAutoresize() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diskAutoresize",
@@ -537,8 +537,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DiskAutoresize() 
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DiskAutoresizeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DiskAutoresizeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"diskAutoresizeInput",
@@ -637,8 +637,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EffectiveAvailabi
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDataplexIntegration",
@@ -647,8 +647,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexInt
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegrationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegrationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableDataplexIntegrationInput",
@@ -657,8 +657,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexInt
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegration() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegration() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableGoogleMlIntegration",
@@ -667,8 +667,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlInt
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegrationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegrationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableGoogleMlIntegrationInput",
@@ -877,8 +877,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ReadPoolAutoScale
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDelete() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDelete() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retainBackupsOnDelete",
@@ -887,8 +887,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDe
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDeleteInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) RetainBackupsOnDeleteInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"retainBackupsOnDeleteInput",
@@ -1007,7 +1007,6 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) Version() *float6
 	return returns
 }
 
-
 func NewSqlDatabaseInstanceSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlDatabaseInstanceSettingsOutputReference {
 	_init_.Initialize()
 
@@ -1018,7 +1017,7 @@ func NewSqlDatabaseInstanceSettingsOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -1030,12 +1029,12 @@ func NewSqlDatabaseInstanceSettingsOutputReference_Override(s SqlDatabaseInstanc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetActivationPolicy(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetActivationPolicy(val *string) {
 	if err := j.validateSetActivationPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -1046,7 +1045,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetActivationPolic
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetAutoUpgradeEnabled(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetAutoUpgradeEnabled(val any) {
 	if err := j.validateSetAutoUpgradeEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1057,7 +1056,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetAutoUpgradeEnab
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetAvailabilityType(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetAvailabilityType(val *string) {
 	if err := j.validateSetAvailabilityTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1068,7 +1067,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetAvailabilityTyp
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetCollation(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetCollation(val *string) {
 	if err := j.validateSetCollationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1079,7 +1078,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetCollation(val *
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -1090,7 +1089,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -1101,7 +1100,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetConnectorEnforcement(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetConnectorEnforcement(val *string) {
 	if err := j.validateSetConnectorEnforcementParameters(val); err != nil {
 		panic(err)
 	}
@@ -1112,7 +1111,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetConnectorEnforc
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDataApiAccess(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetDataApiAccess(val *string) {
 	if err := j.validateSetDataApiAccessParameters(val); err != nil {
 		panic(err)
 	}
@@ -1123,7 +1122,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDataApiAccess(v
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDeletionProtectionEnabled(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetDeletionProtectionEnabled(val any) {
 	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -1134,7 +1133,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDeletionProtect
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskAutoresize(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetDiskAutoresize(val any) {
 	if err := j.validateSetDiskAutoresizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1145,7 +1144,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskAutoresize(
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskAutoresizeLimit(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetDiskAutoresizeLimit(val *float64) {
 	if err := j.validateSetDiskAutoresizeLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -1156,7 +1155,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskAutoresizeL
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskSize(val *float64) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetDiskSize(val *float64) {
 	if err := j.validateSetDiskSizeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1167,7 +1166,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskSize(val *f
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskType(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetDiskType(val *string) {
 	if err := j.validateSetDiskTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1178,7 +1177,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskType(val *s
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEdition(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetEdition(val *string) {
 	if err := j.validateSetEditionParameters(val); err != nil {
 		panic(err)
 	}
@@ -1189,7 +1188,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEdition(val *st
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEnableDataplexIntegration(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetEnableDataplexIntegration(val any) {
 	if err := j.validateSetEnableDataplexIntegrationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1200,7 +1199,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEnableDataplexI
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEnableGoogleMlIntegration(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetEnableGoogleMlIntegration(val any) {
 	if err := j.validateSetEnableGoogleMlIntegrationParameters(val); err != nil {
 		panic(err)
 	}
@@ -1211,7 +1210,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEnableGoogleMlI
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetInternalValue(val *SqlDatabaseInstanceSettings) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetInternalValue(val *SqlDatabaseInstanceSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -1222,7 +1221,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetPricingPlan(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetPricingPlan(val *string) {
 	if err := j.validateSetPricingPlanParameters(val); err != nil {
 		panic(err)
 	}
@@ -1233,7 +1232,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetPricingPlan(val
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetRetainBackupsOnDelete(val interface{}) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetRetainBackupsOnDelete(val any) {
 	if err := j.validateSetRetainBackupsOnDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -1244,7 +1243,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetRetainBackupsOn
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -1255,7 +1254,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1266,7 +1265,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTier(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetTier(val *string) {
 	if err := j.validateSetTierParameters(val); err != nil {
 		panic(err)
 	}
@@ -1277,7 +1276,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTier(val *strin
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTimeZone(val *string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetTimeZone(val *string) {
 	if err := j.validateSetTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -1288,7 +1287,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTimeZone(val *s
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetUserLabels(val *map[string]*string) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) SetUserLabels(val *map[string]*string) {
 	if err := j.validateSetUserLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1312,16 +1311,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1337,7 +1336,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1353,7 +1352,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1369,7 +1368,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1385,7 +1384,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1401,7 +1400,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1417,7 +1416,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1433,7 +1432,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1449,7 +1448,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1478,7 +1477,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1492,7 +1491,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutActiveDirector
 	_jsii_.InvokeVoid(
 		s,
 		"putActiveDirectoryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1503,7 +1502,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutAdvancedMachin
 	_jsii_.InvokeVoid(
 		s,
 		"putAdvancedMachineFeatures",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1514,29 +1513,29 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutBackupConfigur
 	_jsii_.InvokeVoid(
 		s,
 		"putBackupConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutConnectionPoolConfig(value interface{}) {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutConnectionPoolConfig(value any) {
 	if err := s.validatePutConnectionPoolConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putConnectionPoolConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(value interface{}) {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(value any) {
 	if err := s.validatePutDatabaseFlagsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putDatabaseFlags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1547,7 +1546,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDataCacheConfi
 	_jsii_.InvokeVoid(
 		s,
 		"putDataCacheConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1558,7 +1557,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDenyMaintenanc
 	_jsii_.InvokeVoid(
 		s,
 		"putDenyMaintenancePeriod",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1569,7 +1568,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutEntraidConfig(
 	_jsii_.InvokeVoid(
 		s,
 		"putEntraidConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1580,7 +1579,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutFinalBackupCon
 	_jsii_.InvokeVoid(
 		s,
 		"putFinalBackupConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1591,7 +1590,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutInsightsConfig
 	_jsii_.InvokeVoid(
 		s,
 		"putInsightsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1602,7 +1601,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutIpConfiguratio
 	_jsii_.InvokeVoid(
 		s,
 		"putIpConfiguration",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1613,7 +1612,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutLocationPrefer
 	_jsii_.InvokeVoid(
 		s,
 		"putLocationPreference",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1624,7 +1623,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutMaintenanceWin
 	_jsii_.InvokeVoid(
 		s,
 		"putMaintenanceWindow",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1635,7 +1634,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutPasswordValida
 	_jsii_.InvokeVoid(
 		s,
 		"putPasswordValidationPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1646,7 +1645,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutReadPoolAutoSc
 	_jsii_.InvokeVoid(
 		s,
 		"putReadPoolAutoScaleConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1657,7 +1656,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutSqlServerAudit
 	_jsii_.InvokeVoid(
 		s,
 		"putSqlServerAuditConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1933,16 +1932,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetUserLabels()
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1961,4 +1960,3 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ToString() *strin
 
 	return returns
 }
-

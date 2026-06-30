@@ -106,7 +106,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorCo
 	return nil
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBlockchainNodeEngineBlockchainNodesEthereumDetailsValidatorConfi
 
 	return nil
 }
-

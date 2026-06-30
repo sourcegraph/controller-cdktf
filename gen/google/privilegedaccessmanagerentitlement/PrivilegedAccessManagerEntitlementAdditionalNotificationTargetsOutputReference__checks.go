@@ -106,7 +106,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTarge
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewPrivilegedAccessManagerEntitlementAdditionalNotificationTargetsO
 
 	return nil
 }
-

@@ -19,9 +19,9 @@ type IapSettingsAccessSettingsOauthSettingsOutputReference interface {
 	ClientSecretSha256() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -53,7 +53,7 @@ type IapSettingsAccessSettingsOauthSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type IapSettingsAccessSettingsOauthSettingsOutputReference interface {
 	ResetProgrammaticClients()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) Client
 	return returns
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -253,7 +253,6 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) Terraf
 	return returns
 }
 
-
 func NewIapSettingsAccessSettingsOauthSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsOauthSettingsOutputReference {
 	_init_.Initialize()
 
@@ -264,7 +263,7 @@ func NewIapSettingsAccessSettingsOauthSettingsOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -276,12 +275,12 @@ func NewIapSettingsAccessSettingsOauthSettingsOutputReference_Override(i IapSett
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetClientId(val *string) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) SetClientId(val *string) {
 	if err := j.validateSetClientIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetClie
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetClientSecret(val *string) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) SetClientSecret(val *string) {
 	if err := j.validateSetClientSecretParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetClie
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetInternalValue(val *IapSettingsAccessSettingsOauthSettings) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) SetInternalValue(val *IapSettingsAccessSettingsOauthSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetLoginHint(val *string) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) SetLoginHint(val *string) {
 	if err := j.validateSetLoginHintParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetLogi
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetProgrammaticClients(val *[]*string) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) SetProgrammaticClients(val *[]*string) {
 	if err := j.validateSetProgrammaticClientsParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetProg
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,16 +392,16 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) Comput
 	return returns
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetBoo
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetBoo
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetLis
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetNum
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetNum
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -498,7 +497,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetNum
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetStr
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -530,7 +529,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) GetStr
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) Interp
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -598,16 +597,16 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ResetP
 	)
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -626,4 +625,3 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) ToStri
 
 	return returns
 }
-

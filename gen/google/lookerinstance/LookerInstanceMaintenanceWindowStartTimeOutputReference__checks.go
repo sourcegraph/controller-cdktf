@@ -98,7 +98,7 @@ func (l *jsiiProxy_LookerInstanceMaintenanceWindowStartTimeOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstanceMaintenanceWindowStartTimeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LookerInstanceMaintenanceWindowStartTimeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewLookerInstanceMaintenanceWindowStartTimeOutputReferenceParameter
 
 	return nil
 }
-

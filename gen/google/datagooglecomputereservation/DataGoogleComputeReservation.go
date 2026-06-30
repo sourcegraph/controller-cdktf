@@ -17,11 +17,11 @@ type DataGoogleComputeReservation interface {
 	CdktfStack() cdktf.TerraformStack
 	Commitment() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	DeleteAfterDuration() DataGoogleComputeReservationDeleteAfterDurationList
 	DeleteAtTime() *string
@@ -58,7 +58,7 @@ type DataGoogleComputeReservation interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ReservationBlockCount() *float64
 	ReservationSharingPolicy() DataGoogleComputeReservationReservationSharingPolicyList
 	ResourceStatus() DataGoogleComputeReservationResourceStatusList
@@ -71,16 +71,16 @@ type DataGoogleComputeReservation interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,18 +106,18 @@ type DataGoogleComputeReservation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComputeReservation
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DataGoogleComputeReservation) Commitment() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeReservation) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_DataGoogleComputeReservation) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeReservation) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_DataGoogleComputeReservation) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeReservation) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_DataGoogleComputeReservation) TerraformGeneratorMetadata() *c
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeReservation) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_DataGoogleComputeReservation) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
 func NewDataGoogleComputeReservation(scope constructs.Construct, id *string, config *DataGoogleComputeReservationConfig) DataGoogleComputeReservation {
 	_init_.Initialize()
@@ -517,7 +516,7 @@ func NewDataGoogleComputeReservation(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeReservation.DataGoogleComputeReservation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewDataGoogleComputeReservation_Override(d DataGoogleComputeReservation, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeReservation.DataGoogleComputeReservation",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeReservation) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComputeReservation) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComputeReservation) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -562,7 +561,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComputeReservation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleComputeReservation) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComputeReservation) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComputeReservation) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservation)SetZone(val *string) {
+func (j *jsiiProxy_DataGoogleComputeReservation) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func DataGoogleComputeReservation_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeReservation.DataGoogleComputeReservation",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func DataGoogleComputeReservation_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComputeReservation_IsConstruct(x interface{}) *bool {
+func DataGoogleComputeReservation_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeReservation_IsConstructParameters(x); err != nil {
@@ -661,7 +660,7 @@ func DataGoogleComputeReservation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeReservation.DataGoogleComputeReservation",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func DataGoogleComputeReservation_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeReservation_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComputeReservation_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeReservation_IsTerraformDataSourceParameters(x); err != nil {
@@ -680,7 +679,7 @@ func DataGoogleComputeReservation_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeReservation.DataGoogleComputeReservation",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func DataGoogleComputeReservation_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeReservation_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComputeReservation_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeReservation_IsTerraformElementParameters(x); err != nil {
@@ -699,7 +698,7 @@ func DataGoogleComputeReservation_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeReservation.DataGoogleComputeReservation",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -717,27 +716,27 @@ func DataGoogleComputeReservation_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservation) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComputeReservation) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComputeReservation) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (d *jsiiProxy_DataGoogleComputeReservation) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -915,8 +914,8 @@ func (d *jsiiProxy_DataGoogleComputeReservation) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservation) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeReservation) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -928,8 +927,8 @@ func (d *jsiiProxy_DataGoogleComputeReservation) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservation) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeReservation) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -941,8 +940,8 @@ func (d *jsiiProxy_DataGoogleComputeReservation) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservation) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeReservation) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -954,8 +953,8 @@ func (d *jsiiProxy_DataGoogleComputeReservation) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservation) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeReservation) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -980,8 +979,8 @@ func (d *jsiiProxy_DataGoogleComputeReservation) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservation) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeReservation) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -992,4 +991,3 @@ func (d *jsiiProxy_DataGoogleComputeReservation) ToTerraform() interface{} {
 
 	return returns
 }
-

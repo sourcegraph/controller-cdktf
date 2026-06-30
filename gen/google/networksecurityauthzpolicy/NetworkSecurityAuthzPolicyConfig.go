@@ -6,9 +6,9 @@ import (
 
 type NetworkSecurityAuthzPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NetworkSecurityAuthzPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// When the action is CUSTOM, customProvider must be specified.
 	//
 	// When the action is ALLOW, only requests matching the policy will be allowed.
@@ -55,7 +55,7 @@ type NetworkSecurityAuthzPolicyConfig struct {
 	// http_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#http_rules NetworkSecurityAuthzPolicy#http_rules}
-	HttpRules interface{} `field:"optional" json:"httpRules" yaml:"httpRules"`
+	HttpRules any `field:"optional" json:"httpRules" yaml:"httpRules"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#id NetworkSecurityAuthzPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -86,4 +86,3 @@ type NetworkSecurityAuthzPolicyConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_authz_policy#timeouts NetworkSecurityAuthzPolicy#timeouts}
 	Timeouts *NetworkSecurityAuthzPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

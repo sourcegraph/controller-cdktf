@@ -15,15 +15,15 @@ type BigqueryDatapolicyv2DataPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DataMaskingPolicy() BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference
 	DataMaskingPolicyInput() *BigqueryDatapolicyv2DataPolicyDataMaskingPolicy
 	DataPolicyId() *string
@@ -72,27 +72,27 @@ type BigqueryDatapolicyv2DataPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BigqueryDatapolicyv2DataPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Version() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type BigqueryDatapolicyv2DataPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type BigqueryDatapolicyv2DataPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -140,17 +140,17 @@ type BigqueryDatapolicyv2DataPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BigqueryDatapolicyv2DataPolicy
@@ -168,8 +168,8 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) CdktfStack() cdktf.TerraformS
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Provider() cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -458,8 +458,8 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Provisioners() *[]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -478,8 +478,8 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) TerraformGeneratorMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -508,8 +508,8 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Timeouts() BigqueryDatapolicy
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -528,7 +528,6 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) Version() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigquery_datapolicyv2_data_policy google_bigquery_datapolicyv2_data_policy} Resource.
 func NewBigqueryDatapolicyv2DataPolicy(scope constructs.Construct, id *string, config *BigqueryDatapolicyv2DataPolicyConfig) BigqueryDatapolicyv2DataPolicy {
 	_init_.Initialize()
@@ -540,7 +539,7 @@ func NewBigqueryDatapolicyv2DataPolicy(scope constructs.Construct, id *string, c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -553,12 +552,12 @@ func NewBigqueryDatapolicyv2DataPolicy_Override(b BigqueryDatapolicyv2DataPolicy
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetDataPolicyId(val *string) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetDataPolicyId(val *string) {
 	if err := j.validateSetDataPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetDataPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetDataPolicyType(val *string) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetDataPolicyType(val *string) {
 	if err := j.validateSetDataPolicyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetDataPolicyType(val *string)
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -610,7 +609,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetEtag(val *string) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetEtag(val *string) {
 	if err := j.validateSetEtagParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetEtag(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -629,7 +628,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetForEach(val cdktf.ITerrafor
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetGrantees(val *[]*string) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetGrantees(val *[]*string) {
 	if err := j.validateSetGranteesParameters(val); err != nil {
 		panic(err)
 	}
@@ -640,7 +639,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetGrantees(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetId(val *string) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -651,7 +650,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -662,7 +661,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetLifecycle(val *cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -673,7 +672,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetProject(val *string) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -684,7 +683,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -692,7 +691,7 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetProvider(val cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -715,7 +714,7 @@ func BigqueryDatapolicyv2DataPolicy_GenerateConfigForImport(scope constructs.Con
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func BigqueryDatapolicyv2DataPolicy_GenerateConfigForImport(scope constructs.Con
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BigqueryDatapolicyv2DataPolicy_IsConstruct(x interface{}) *bool {
+func BigqueryDatapolicyv2DataPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryDatapolicyv2DataPolicy_IsConstructParameters(x); err != nil {
@@ -750,7 +749,7 @@ func BigqueryDatapolicyv2DataPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func BigqueryDatapolicyv2DataPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BigqueryDatapolicyv2DataPolicy_IsTerraformElement(x interface{}) *bool {
+func BigqueryDatapolicyv2DataPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryDatapolicyv2DataPolicy_IsTerraformElementParameters(x); err != nil {
@@ -769,7 +768,7 @@ func BigqueryDatapolicyv2DataPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -777,7 +776,7 @@ func BigqueryDatapolicyv2DataPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BigqueryDatapolicyv2DataPolicy_IsTerraformResource(x interface{}) *bool {
+func BigqueryDatapolicyv2DataPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigqueryDatapolicyv2DataPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -788,7 +787,7 @@ func BigqueryDatapolicyv2DataPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryDatapolicyv2DataPolicy.BigqueryDatapolicyv2DataPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -813,31 +812,31 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) AddMoveTarget(moveTarget *str
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetBooleanAttribute(terraform
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetBooleanMapAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetListAttribute(terraformAtt
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetNumberAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,7 +916,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetNumberListAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,7 +932,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetNumberMapAttribute(terrafo
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -949,7 +948,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetStringAttribute(terraformA
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -965,15 +964,15 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) GetStringMapAttribute(terrafo
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -992,7 +991,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ImportFrom(id *string, provid
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1005,7 +1004,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) InterpolationForAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,18 +1018,18 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1041,7 +1040,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1052,7 +1051,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) OverrideLogicalId(newLogicalI
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1063,7 +1062,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) PutDataMaskingPolicy(value *B
 	_jsii_.InvokeVoid(
 		b,
 		"putDataMaskingPolicy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1074,7 +1073,7 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) PutTimeouts(value *BigqueryDa
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1134,8 +1133,8 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1147,8 +1146,8 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SynthesizeAttributes() *map[s
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1160,8 +1159,8 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) SynthesizeHclAttributes() *ma
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1173,8 +1172,8 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ToHclTerraform() interface{} 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1199,8 +1198,8 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1211,4 +1210,3 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

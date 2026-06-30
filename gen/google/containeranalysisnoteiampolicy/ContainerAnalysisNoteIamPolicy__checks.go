@@ -19,7 +19,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateAddMoveTargetParamete
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateMoveFromIdParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateContainerAnalysisNoteIamPolicy_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateContainerAnalysisNoteIamPolicy_IsConstructParameters(x interface{}) error {
+func validateContainerAnalysisNoteIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateContainerAnalysisNoteIamPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateContainerAnalysisNoteIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateContainerAnalysisNoteIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateContainerAnalysisNoteIamPolicy_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateContainerAnalysisNoteIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateContainerAnalysisNoteIamPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateContainerAnalysisNoteIamPolicy_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -374,7 +374,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ContainerAnalysisNoteIamPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewContainerAnalysisNoteIamPolicyParameters(scope constructs.Constr
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMasterAuthClientCertificateConfigOu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterMasterAuthClientCertificateConfigOutpu
 
 	return nil
 }
-

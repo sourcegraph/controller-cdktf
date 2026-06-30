@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsClusterAuthorizationAdminUsersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerAwsClusterAuthorizationAdminUsersListParameters(terrafo
 
 	return nil
 }
-

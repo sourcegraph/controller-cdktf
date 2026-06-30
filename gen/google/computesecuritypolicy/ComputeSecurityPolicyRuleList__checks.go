@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeSecurityPolicyRuleListParameters(terraformResource cdktf.
 
 	return nil
 }
-

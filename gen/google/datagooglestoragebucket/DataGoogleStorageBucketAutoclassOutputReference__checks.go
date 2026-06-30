@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketAutoclassOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketAutoclassOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageBucketAutoclassOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleStorageBucketAutoclassOutputReferenceParameters(terraf
 
 	return nil
 }
-

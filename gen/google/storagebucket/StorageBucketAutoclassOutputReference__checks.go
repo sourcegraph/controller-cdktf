@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageBucketAutoclassOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketAutoclassOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketAutoclassOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_StorageBucketAutoclassOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketAutoclassOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBucketAutoclassOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewStorageBucketAutoclassOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

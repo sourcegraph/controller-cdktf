@@ -34,7 +34,7 @@ func (m *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList) v
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsListParame
 
 	return nil
 }
-

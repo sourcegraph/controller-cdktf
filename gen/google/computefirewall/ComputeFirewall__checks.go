@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeFirewall) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewall) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeFirewall) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeFirewall) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewall) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeFirewall) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (c *jsiiProxy_ComputeFirewall) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewall) validatePutAllowParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeFirewall) validatePutAllowParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (c *jsiiProxy_ComputeFirewall) validatePutAllowParameters(value interface{}
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewall) validatePutDenyParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeFirewall) validatePutDenyParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -315,7 +315,7 @@ func validateComputeFirewall_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateComputeFirewall_IsConstructParameters(x interface{}) error {
+func validateComputeFirewall_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -323,7 +323,7 @@ func validateComputeFirewall_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeFirewall_IsTerraformElementParameters(x interface{}) error {
+func validateComputeFirewall_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func validateComputeFirewall_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeFirewall_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeFirewall_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -339,7 +339,7 @@ func validateComputeFirewall_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewall) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewall) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -372,7 +372,7 @@ func (j *jsiiProxy_ComputeFirewall) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewall) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewall) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -453,7 +453,7 @@ func (j *jsiiProxy_ComputeFirewall) validateSetDirectionParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewall) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewall) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -473,7 +473,7 @@ func (j *jsiiProxy_ComputeFirewall) validateSetDisabledParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewall) validateSetEnableLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeFirewall) validateSetEnableLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -541,7 +541,7 @@ func (j *jsiiProxy_ComputeFirewall) validateSetProjectParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewall) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeFirewall) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -645,4 +645,3 @@ func validateNewComputeFirewallParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

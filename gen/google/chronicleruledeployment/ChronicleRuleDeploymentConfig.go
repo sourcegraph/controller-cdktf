@@ -6,9 +6,9 @@ import (
 
 type ChronicleRuleDeploymentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ChronicleRuleDeploymentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique identifier for the Chronicle instance, which is the same as the customer ID.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule_deployment#instance ChronicleRuleDeployment#instance}
@@ -36,7 +36,7 @@ type ChronicleRuleDeploymentConfig struct {
 	// Whether detections resulting from this deployment should be considered alerts.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule_deployment#alerting ChronicleRuleDeployment#alerting}
-	Alerting interface{} `field:"optional" json:"alerting" yaml:"alerting"`
+	Alerting any `field:"optional" json:"alerting" yaml:"alerting"`
 	// The archive state of the rule deployment.
 	//
 	// Cannot be set to true unless enabled is set to false i.e.
@@ -47,11 +47,11 @@ type ChronicleRuleDeploymentConfig struct {
 	// updated.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule_deployment#archived ChronicleRuleDeployment#archived}
-	Archived interface{} `field:"optional" json:"archived" yaml:"archived"`
+	Archived any `field:"optional" json:"archived" yaml:"archived"`
 	// Whether the rule is currently deployed continuously against incoming data.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule_deployment#enabled ChronicleRuleDeployment#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule_deployment#id ChronicleRuleDeployment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -68,4 +68,3 @@ type ChronicleRuleDeploymentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/chronicle_rule_deployment#timeouts ChronicleRuleDeployment#timeouts}
 	Timeouts *ChronicleRuleDeploymentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

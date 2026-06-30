@@ -90,7 +90,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateInte
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutActiveTimeRangeParameters(value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutActiveTimeRangeParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutA
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutQueryTermsParameters(value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutQueryTermsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -292,4 +292,3 @@ func validateNewDiscoveryEngineControlConditionsOutputReferenceParameters(terraf
 
 	return nil
 }
-

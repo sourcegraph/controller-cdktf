@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterDefaultSnatStatusOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterDefaultSnatStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterDefaultSnatStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterDefaultSnatStatusOutputReferenceParame
 
 	return nil
 }
-

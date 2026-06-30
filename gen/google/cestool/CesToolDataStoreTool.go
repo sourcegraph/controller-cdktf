@@ -1,6 +1,5 @@
 package cestool
 
-
 type CesToolDataStoreTool struct {
 	// The data store tool name.
 	//
@@ -9,7 +8,7 @@ type CesToolDataStoreTool struct {
 	// boost_specs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#boost_specs CesTool#boost_specs}
-	BoostSpecs interface{} `field:"optional" json:"boostSpecs" yaml:"boostSpecs"`
+	BoostSpecs any `field:"optional" json:"boostSpecs" yaml:"boostSpecs"`
 	// The tool description.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#description CesTool#description}
@@ -25,6 +24,5 @@ type CesToolDataStoreTool struct {
 	// modality_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_tool#modality_configs CesTool#modality_configs}
-	ModalityConfigs interface{} `field:"optional" json:"modalityConfigs" yaml:"modalityConfigs"`
+	ModalityConfigs any `field:"optional" json:"modalityConfigs" yaml:"modalityConfigs"`
 }
-

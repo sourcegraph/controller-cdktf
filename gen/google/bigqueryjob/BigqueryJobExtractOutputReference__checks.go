@@ -120,7 +120,7 @@ func (b *jsiiProxy_BigqueryJobExtractOutputReference) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobExtractOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobExtractOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,7 +225,7 @@ func (j *jsiiProxy_BigqueryJobExtractOutputReference) validateSetInternalValuePa
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobExtractOutputReference) validateSetPrintHeaderParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobExtractOutputReference) validateSetPrintHeaderParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func (j *jsiiProxy_BigqueryJobExtractOutputReference) validateSetTerraformResour
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobExtractOutputReference) validateSetUseAvroLogicalTypesParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryJobExtractOutputReference) validateSetUseAvroLogicalTypesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -292,4 +292,3 @@ func validateNewBigqueryJobExtractOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

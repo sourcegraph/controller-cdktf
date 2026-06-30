@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeSharedVpcHostProject) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSharedVpcHostProject) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeSharedVpcHostProject) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeSharedVpcHostProject) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSharedVpcHostProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeSharedVpcHostProject) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateComputeSharedVpcHostProject_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateComputeSharedVpcHostProject_IsConstructParameters(x interface{}) error {
+func validateComputeSharedVpcHostProject_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateComputeSharedVpcHostProject_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateComputeSharedVpcHostProject_IsTerraformElementParameters(x interface{}) error {
+func validateComputeSharedVpcHostProject_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateComputeSharedVpcHostProject_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateComputeSharedVpcHostProject_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeSharedVpcHostProject_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateComputeSharedVpcHostProject_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -433,4 +433,3 @@ func validateNewComputeSharedVpcHostProjectParameters(scope constructs.Construct
 
 	return nil
 }
-

@@ -15,15 +15,15 @@ type ServiceNetworkingPeeredDnsDomain interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,29 +63,29 @@ type ServiceNetworkingPeeredDnsDomain interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Service() *string
 	SetService(val *string)
 	ServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type ServiceNetworkingPeeredDnsDomain interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type ServiceNetworkingPeeredDnsDomain interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type ServiceNetworkingPeeredDnsDomain interface {
 	ResetProject()
 	ResetService()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ServiceNetworkingPeeredDnsDomain
@@ -158,8 +158,8 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -418,8 +418,8 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) Timeouts() ServiceNetworkin
 	return returns
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -457,7 +457,6 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) TimeoutsInput() interface{}
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Resource.
 func NewServiceNetworkingPeeredDnsDomain(scope constructs.Construct, id *string, config *ServiceNetworkingPeeredDnsDomainConfig) ServiceNetworkingPeeredDnsDomain {
@@ -470,7 +469,7 @@ func NewServiceNetworkingPeeredDnsDomain(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewServiceNetworkingPeeredDnsDomain_Override(s ServiceNetworkingPeeredDnsDo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetConnection(val interface{}) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetCount(val interface{}) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetDnsSuffix(val *string) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetDnsSuffix(val *string) {
 	if err := j.validateSetDnsSuffixParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetDnsSuffix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetId(val *string) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetName(val *string) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetNetwork(val *string) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetNetwork(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetProject(val *string) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain)SetService(val *string) {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SetService(val *string) {
 	if err := j.validateSetServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func ServiceNetworkingPeeredDnsDomain_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func ServiceNetworkingPeeredDnsDomain_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool {
+func ServiceNetworkingPeeredDnsDomain_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceNetworkingPeeredDnsDomain_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func ServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func ServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceNetworkingPeeredDnsDomain_IsTerraformElement(x interface{}) *bool {
+func ServiceNetworkingPeeredDnsDomain_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceNetworkingPeeredDnsDomain_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func ServiceNetworkingPeeredDnsDomain_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func ServiceNetworkingPeeredDnsDomain_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ServiceNetworkingPeeredDnsDomain_IsTerraformResource(x interface{}) *bool {
+func ServiceNetworkingPeeredDnsDomain_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateServiceNetworkingPeeredDnsDomain_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func ServiceNetworkingPeeredDnsDomain_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -911,7 +910,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) PutTimeouts(value *ServiceN
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1039,8 +1038,8 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SynthesizeAttributes() *map
 	return returns
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1052,8 +1051,8 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1065,8 +1064,8 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ToHclTerraform() interface{
 	return returns
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1091,8 +1090,8 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1103,4 +1102,3 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) ToTerraform() interface{} {
 
 	return returns
 }
-

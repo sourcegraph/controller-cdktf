@@ -98,7 +98,7 @@ func (m *jsiiProxy_MemorystoreInstancePscAutoConnectionsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstancePscAutoConnectionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstancePscAutoConnectionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMemorystoreInstancePscAutoConnectionsOutputReferenceParameters(t
 
 	return nil
 }
-

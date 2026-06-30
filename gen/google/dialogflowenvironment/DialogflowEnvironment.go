@@ -18,15 +18,15 @@ type DialogflowEnvironment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -68,29 +68,29 @@ type DialogflowEnvironment interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TextToSpeechSettings() DialogflowEnvironmentTextToSpeechSettingsOutputReference
 	TextToSpeechSettingsInput() *DialogflowEnvironmentTextToSpeechSettings
 	Timeouts() DialogflowEnvironmentTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type DialogflowEnvironment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type DialogflowEnvironment interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -141,17 +141,17 @@ type DialogflowEnvironment interface {
 	ResetProject()
 	ResetTextToSpeechSettings()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DialogflowEnvironment
@@ -189,8 +189,8 @@ func (j *jsiiProxy_DialogflowEnvironment) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironment) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowEnvironment) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -199,8 +199,8 @@ func (j *jsiiProxy_DialogflowEnvironment) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironment) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DialogflowEnvironment) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DialogflowEnvironment) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironment) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowEnvironment) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_DialogflowEnvironment) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironment) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DialogflowEnvironment) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_DialogflowEnvironment) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironment) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowEnvironment) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -459,8 +459,8 @@ func (j *jsiiProxy_DialogflowEnvironment) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironment) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DialogflowEnvironment) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -509,8 +509,8 @@ func (j *jsiiProxy_DialogflowEnvironment) Timeouts() DialogflowEnvironmentTimeou
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowEnvironment) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowEnvironment) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -518,7 +518,6 @@ func (j *jsiiProxy_DialogflowEnvironment) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_environment google_dialogflow_environment} Resource.
 func NewDialogflowEnvironment(scope constructs.Construct, id *string, config *DialogflowEnvironmentConfig) DialogflowEnvironment {
@@ -531,7 +530,7 @@ func NewDialogflowEnvironment(scope constructs.Construct, id *string, config *Di
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -544,12 +543,12 @@ func NewDialogflowEnvironment_Override(d DialogflowEnvironment, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironment",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetAgentVersion(val *string) {
+func (j *jsiiProxy_DialogflowEnvironment) SetAgentVersion(val *string) {
 	if err := j.validateSetAgentVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetAgentVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetConnection(val interface{}) {
+func (j *jsiiProxy_DialogflowEnvironment) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetCount(val interface{}) {
+func (j *jsiiProxy_DialogflowEnvironment) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DialogflowEnvironment) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetDescription(val *string) {
+func (j *jsiiProxy_DialogflowEnvironment) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetEnvironmentid(val *string) {
+func (j *jsiiProxy_DialogflowEnvironment) SetEnvironmentid(val *string) {
 	if err := j.validateSetEnvironmentidParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetEnvironmentid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DialogflowEnvironment) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -620,7 +619,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetId(val *string) {
+func (j *jsiiProxy_DialogflowEnvironment) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -631,7 +630,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DialogflowEnvironment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -642,7 +641,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetLocation(val *string) {
+func (j *jsiiProxy_DialogflowEnvironment) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -653,7 +652,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetProject(val *string) {
+func (j *jsiiProxy_DialogflowEnvironment) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +663,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DialogflowEnvironment) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -672,7 +671,7 @@ func (j *jsiiProxy_DialogflowEnvironment)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_DialogflowEnvironment)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DialogflowEnvironment) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -695,7 +694,7 @@ func DialogflowEnvironment_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironment",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func DialogflowEnvironment_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DialogflowEnvironment_IsConstruct(x interface{}) *bool {
+func DialogflowEnvironment_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowEnvironment_IsConstructParameters(x); err != nil {
@@ -730,7 +729,7 @@ func DialogflowEnvironment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironment",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -738,7 +737,7 @@ func DialogflowEnvironment_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DialogflowEnvironment_IsTerraformElement(x interface{}) *bool {
+func DialogflowEnvironment_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowEnvironment_IsTerraformElementParameters(x); err != nil {
@@ -749,7 +748,7 @@ func DialogflowEnvironment_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironment",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -757,7 +756,7 @@ func DialogflowEnvironment_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DialogflowEnvironment_IsTerraformResource(x interface{}) *bool {
+func DialogflowEnvironment_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDialogflowEnvironment_IsTerraformResourceParameters(x); err != nil {
@@ -768,7 +767,7 @@ func DialogflowEnvironment_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironment",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -793,31 +792,31 @@ func (d *jsiiProxy_DialogflowEnvironment) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DialogflowEnvironment) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DialogflowEnvironment) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowEnvironment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowEnvironment) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (d *jsiiProxy_DialogflowEnvironment) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (d *jsiiProxy_DialogflowEnvironment) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (d *jsiiProxy_DialogflowEnvironment) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (d *jsiiProxy_DialogflowEnvironment) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (d *jsiiProxy_DialogflowEnvironment) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (d *jsiiProxy_DialogflowEnvironment) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (d *jsiiProxy_DialogflowEnvironment) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,15 +944,15 @@ func (d *jsiiProxy_DialogflowEnvironment) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowEnvironment) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowEnvironment) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -972,7 +971,7 @@ func (d *jsiiProxy_DialogflowEnvironment) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -985,7 +984,7 @@ func (d *jsiiProxy_DialogflowEnvironment) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -999,18 +998,18 @@ func (d *jsiiProxy_DialogflowEnvironment) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DialogflowEnvironment) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DialogflowEnvironment) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1021,7 +1020,7 @@ func (d *jsiiProxy_DialogflowEnvironment) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1032,7 +1031,7 @@ func (d *jsiiProxy_DialogflowEnvironment) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1043,7 +1042,7 @@ func (d *jsiiProxy_DialogflowEnvironment) PutFulfillment(value *DialogflowEnviro
 	_jsii_.InvokeVoid(
 		d,
 		"putFulfillment",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1054,7 +1053,7 @@ func (d *jsiiProxy_DialogflowEnvironment) PutTextToSpeechSettings(value *Dialogf
 	_jsii_.InvokeVoid(
 		d,
 		"putTextToSpeechSettings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1065,7 +1064,7 @@ func (d *jsiiProxy_DialogflowEnvironment) PutTimeouts(value *DialogflowEnvironme
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1141,8 +1140,8 @@ func (d *jsiiProxy_DialogflowEnvironment) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DialogflowEnvironment) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DialogflowEnvironment) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1154,8 +1153,8 @@ func (d *jsiiProxy_DialogflowEnvironment) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowEnvironment) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DialogflowEnvironment) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1167,8 +1166,8 @@ func (d *jsiiProxy_DialogflowEnvironment) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowEnvironment) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowEnvironment) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1180,8 +1179,8 @@ func (d *jsiiProxy_DialogflowEnvironment) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowEnvironment) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowEnvironment) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1206,8 +1205,8 @@ func (d *jsiiProxy_DialogflowEnvironment) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowEnvironment) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DialogflowEnvironment) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1218,4 +1217,3 @@ func (d *jsiiProxy_DialogflowEnvironment) ToTerraform() interface{} {
 
 	return returns
 }
-

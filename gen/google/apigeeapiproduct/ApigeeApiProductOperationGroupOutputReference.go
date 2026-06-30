@@ -12,9 +12,9 @@ type ApigeeApiProductOperationGroupOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,7 +30,7 @@ type ApigeeApiProductOperationGroupOutputReference interface {
 	InternalValue() *ApigeeApiProductOperationGroup
 	SetInternalValue(val *ApigeeApiProductOperationGroup)
 	OperationConfigs() ApigeeApiProductOperationGroupOperationConfigsList
-	OperationConfigsInput() interface{}
+	OperationConfigsInput() any
 	OperationConfigType() *string
 	SetOperationConfigType(val *string)
 	OperationConfigTypeInput() *string
@@ -45,7 +45,7 @@ type ApigeeApiProductOperationGroupOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,12 +66,12 @@ type ApigeeApiProductOperationGroupOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutOperationConfigs(value interface{})
+	PutOperationConfigs(value any)
 	ResetOperationConfigs()
 	ResetOperationConfigType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ApigeeApiProductOperationGroupOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) OperationConfi
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) OperationConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) OperationConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"operationConfigsInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewApigeeApiProductOperationGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeApiProductOperationGroupOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewApigeeApiProductOperationGroupOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewApigeeApiProductOperationGroupOutputReference_Override(a ApigeeApiProduc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetInternalValue(val *ApigeeApiProductOperationGroup) {
+func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) SetInternalValue(val *ApigeeApiProductOperationGroup) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetOperationConfigType(val *string) {
+func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) SetOperationConfigType(val *string) {
 	if err := j.validateSetOperationConfigTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetOperationCon
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,21 +466,21 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) InterpolationF
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) PutOperationConfigs(value interface{}) {
+func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) PutOperationConfigs(value any) {
 	if err := a.validatePutOperationConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putOperationConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) ResetOperation
 	)
 }
 
-func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) ToString() *st
 
 	return returns
 }
-

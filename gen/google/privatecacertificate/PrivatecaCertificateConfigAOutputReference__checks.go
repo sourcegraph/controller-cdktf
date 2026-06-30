@@ -142,7 +142,7 @@ func (p *jsiiProxy_PrivatecaCertificateConfigAOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -242,4 +242,3 @@ func validateNewPrivatecaCertificateConfigAOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

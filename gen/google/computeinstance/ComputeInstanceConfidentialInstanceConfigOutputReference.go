@@ -12,9 +12,9 @@ type ComputeInstanceConfidentialInstanceConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type ComputeInstanceConfidentialInstanceConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableConfidentialCompute() interface{}
-	SetEnableConfidentialCompute(val interface{})
-	EnableConfidentialComputeInput() interface{}
+	EnableConfidentialCompute() any
+	SetEnableConfidentialCompute(val any)
+	EnableConfidentialComputeInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeInstanceConfidentialInstanceConfig
@@ -46,7 +46,7 @@ type ComputeInstanceConfidentialInstanceConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type ComputeInstanceConfidentialInstanceConfigOutputReference interface {
 	ResetEnableConfidentialCompute()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Cre
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) EnableConfidentialCompute() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) EnableConfidentialCompute() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialCompute",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Ena
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) EnableConfidentialComputeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) EnableConfidentialComputeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialComputeInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Ter
 	return returns
 }
 
-
 func NewComputeInstanceConfidentialInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeInstanceConfidentialInstanceConfigOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewComputeInstanceConfidentialInstanceConfigOutputReference(terraformResour
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstance.ComputeInstanceConfidentialInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewComputeInstanceConfidentialInstanceConfigOutputReference_Override(c Comp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstance.ComputeInstanceConfidentialInstanceConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetConfidentialInstanceType(val *string) {
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) SetConfidentialInstanceType(val *string) {
 	if err := j.validateSetConfidentialInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetC
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetEnableConfidentialCompute(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) SetEnableConfidentialCompute(val any) {
 	if err := j.validateSetEnableConfidentialComputeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetE
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetInternalValue(val *ComputeInstanceConfidentialInstanceConfig) {
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) SetInternalValue(val *ComputeInstanceConfidentialInstanceConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetI
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Com
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Get
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Int
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (c *jsiiProxy_ComputeInstanceConfidentialInstanceConfigOutputReference) ToS
 
 	return returns
 }
-

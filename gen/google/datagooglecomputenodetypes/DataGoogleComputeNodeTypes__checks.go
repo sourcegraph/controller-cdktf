@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleComputeNodeTypes) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleComputeNodeTypes) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleComputeNodeTypes_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateDataGoogleComputeNodeTypes_IsConstructParameters(x interface{}) error {
+func validateDataGoogleComputeNodeTypes_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleComputeNodeTypes_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateDataGoogleComputeNodeTypes_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleComputeNodeTypes_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleComputeNodeTypes_IsTerraformDataSourceParameters(x interf
 	return nil
 }
 
-func validateDataGoogleComputeNodeTypes_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleComputeNodeTypes_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleComputeNodeTypes_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeNodeTypes) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeNodeTypes) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -255,4 +255,3 @@ func validateNewDataGoogleComputeNodeTypesParameters(scope constructs.Construct,
 
 	return nil
 }
-

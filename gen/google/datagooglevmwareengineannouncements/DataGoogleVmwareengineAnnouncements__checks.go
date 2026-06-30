@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleVmwareengineAnnouncements) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleVmwareengineAnnouncements) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleVmwareengineAnnouncements_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataGoogleVmwareengineAnnouncements_IsConstructParameters(x interface{}) error {
+func validateDataGoogleVmwareengineAnnouncements_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleVmwareengineAnnouncements_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataGoogleVmwareengineAnnouncements_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleVmwareengineAnnouncements_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleVmwareengineAnnouncements_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataGoogleVmwareengineAnnouncements_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleVmwareengineAnnouncements_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleVmwareengineAnnouncements_IsTerraformElementParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineAnnouncements) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareengineAnnouncements) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleVmwareengineAnnouncementsParameters(scope constructs.C
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAttachedClusterTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAttachedClusterTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ContainerAttachedClusterTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAttachedClusterTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContainerAttachedClusterTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

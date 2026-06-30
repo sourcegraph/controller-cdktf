@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageTransferJobLoggingConfigOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferJobLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferJobLoggingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_StorageTransferJobLoggingConfigOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferJobLoggingConfigOutputReference) validateSetEnableOnPremGcsTransferLogsParameters(val interface{}) error {
+func (j *jsiiProxy_StorageTransferJobLoggingConfigOutputReference) validateSetEnableOnPremGcsTransferLogsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -234,4 +234,3 @@ func validateNewStorageTransferJobLoggingConfigOutputReferenceParameters(terrafo
 
 	return nil
 }
-

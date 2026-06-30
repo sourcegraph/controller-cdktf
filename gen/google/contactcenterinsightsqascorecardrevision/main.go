@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision",
-		reflect.TypeOf((*ContactCenterInsightsQaScorecardRevision)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsQaScorecardRevision](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsQaScorecardRevision{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -83,15 +83,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig",
-		reflect.TypeOf((*ContactCenterInsightsQaScorecardRevisionConfig)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsQaScorecardRevisionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshot",
-		reflect.TypeOf((*ContactCenterInsightsQaScorecardRevisionSnapshot)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsQaScorecardRevisionSnapshot](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshotList",
-		reflect.TypeOf((*ContactCenterInsightsQaScorecardRevisionSnapshotList)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsQaScorecardRevisionSnapshotList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference",
-		reflect.TypeOf((*ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,11 +151,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeouts",
-		reflect.TypeOf((*ContactCenterInsightsQaScorecardRevisionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsQaScorecardRevisionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference",
-		reflect.TypeOf((*ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

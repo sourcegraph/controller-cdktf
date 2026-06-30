@@ -1,6 +1,5 @@
 package cesapp
 
-
 type CesAppLoggingSettingsBigqueryExportSettings struct {
 	// The BigQuery dataset to export the data to.
 	//
@@ -9,7 +8,7 @@ type CesAppLoggingSettingsBigqueryExportSettings struct {
 	// Indicates whether the BigQuery export is enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#enabled CesApp#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// The project ID of the BigQuery dataset to export the data to.
 	//
 	// Note: If the BigQuery dataset is in a different project from the app, you should grant
@@ -19,4 +18,3 @@ type CesAppLoggingSettingsBigqueryExportSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/ces_app#project CesApp#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
-

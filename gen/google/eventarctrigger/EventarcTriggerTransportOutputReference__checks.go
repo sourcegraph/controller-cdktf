@@ -109,7 +109,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcTriggerTransportOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewEventarcTriggerTransportOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -1,11 +1,10 @@
 package computebackendservice
 
-
 type ComputeBackendServiceCdnPolicy struct {
 	// bypass_cache_on_request_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#bypass_cache_on_request_headers ComputeBackendService#bypass_cache_on_request_headers}
-	BypassCacheOnRequestHeaders interface{} `field:"optional" json:"bypassCacheOnRequestHeaders" yaml:"bypassCacheOnRequestHeaders"`
+	BypassCacheOnRequestHeaders any `field:"optional" json:"bypassCacheOnRequestHeaders" yaml:"bypassCacheOnRequestHeaders"`
 	// cache_key_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#cache_key_policy ComputeBackendService#cache_key_policy}
@@ -31,15 +30,15 @@ type ComputeBackendServiceCdnPolicy struct {
 	// Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#negative_caching ComputeBackendService#negative_caching}
-	NegativeCaching interface{} `field:"optional" json:"negativeCaching" yaml:"negativeCaching"`
+	NegativeCaching any `field:"optional" json:"negativeCaching" yaml:"negativeCaching"`
 	// negative_caching_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#negative_caching_policy ComputeBackendService#negative_caching_policy}
-	NegativeCachingPolicy interface{} `field:"optional" json:"negativeCachingPolicy" yaml:"negativeCachingPolicy"`
+	NegativeCachingPolicy any `field:"optional" json:"negativeCachingPolicy" yaml:"negativeCachingPolicy"`
 	// If true then Cloud CDN will combine multiple concurrent cache fill requests into a small number of requests to the origin.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#request_coalescing ComputeBackendService#request_coalescing}
-	RequestCoalescing interface{} `field:"optional" json:"requestCoalescing" yaml:"requestCoalescing"`
+	RequestCoalescing any `field:"optional" json:"requestCoalescing" yaml:"requestCoalescing"`
 	// Serve existing content from the cache (if available) when revalidating content with the origin, or when an error is encountered when refreshing the cache.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#serve_while_stale ComputeBackendService#serve_while_stale}
@@ -59,4 +58,3 @@ type ComputeBackendServiceCdnPolicy struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_backend_service#signed_url_cache_max_age_sec ComputeBackendService#signed_url_cache_max_age_sec}
 	SignedUrlCacheMaxAgeSec *float64 `field:"optional" json:"signedUrlCacheMaxAgeSec" yaml:"signedUrlCacheMaxAgeSec"`
 }
-

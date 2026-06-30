@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringCustomServiceTelemetryOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringCustomServiceTelemetryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringCustomServiceTelemetryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewMonitoringCustomServiceTelemetryOutputReferenceParameters(terraf
 
 	return nil
 }
-

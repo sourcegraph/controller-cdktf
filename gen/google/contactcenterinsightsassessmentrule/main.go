@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRule",
-		reflect.TypeOf((*ContactCenterInsightsAssessmentRule)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAssessmentRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
 			_jsii_.MemberProperty{JsiiProperty: "activeInput", GoGetter: "ActiveInput"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsAssessmentRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleConfig",
-		reflect.TypeOf((*ContactCenterInsightsAssessmentRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAssessmentRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleSampleRule",
-		reflect.TypeOf((*ContactCenterInsightsAssessmentRuleSampleRule)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAssessmentRuleSampleRule](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleSampleRuleOutputReference",
-		reflect.TypeOf((*ContactCenterInsightsAssessmentRuleSampleRuleOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAssessmentRuleSampleRuleOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsAssessmentRuleSampleRuleOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,11 +145,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleScheduleInfo",
-		reflect.TypeOf((*ContactCenterInsightsAssessmentRuleScheduleInfo)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAssessmentRuleScheduleInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleScheduleInfoOutputReference",
-		reflect.TypeOf((*ContactCenterInsightsAssessmentRuleScheduleInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAssessmentRuleScheduleInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -185,7 +185,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsAssessmentRuleScheduleInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -193,11 +193,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleTimeouts",
-		reflect.TypeOf((*ContactCenterInsightsAssessmentRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAssessmentRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.contactCenterInsightsAssessmentRule.ContactCenterInsightsAssessmentRuleTimeoutsOutputReference",
-		reflect.TypeOf((*ContactCenterInsightsAssessmentRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ContactCenterInsightsAssessmentRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -230,7 +230,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ContactCenterInsightsAssessmentRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

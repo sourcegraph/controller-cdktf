@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate",
-		reflect.TypeOf((*DataprocWorkflowTemplate)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplateEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,19 +145,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobs)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobs](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJob",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsHadoopJob)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsHadoopJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobLoggingConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsHadoopJobLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsHadoopJobLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,7 +192,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsHadoopJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsHadoopJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -249,11 +249,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJob",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsHiveJob)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsHiveJob](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsHiveJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsHiveJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -296,7 +296,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -304,11 +304,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStruct",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsHiveJobQueryListStruct)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsHiveJobQueryListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -334,7 +334,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -342,7 +342,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsList)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -364,7 +364,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -432,7 +432,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -440,15 +440,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJob",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPigJob)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPigJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPigJobLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPigJobLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -475,7 +475,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -483,7 +483,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPigJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPigJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -530,7 +530,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsPigJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -538,11 +538,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStruct",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPigJobQueryListStruct)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPigJobQueryListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -568,7 +568,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -576,15 +576,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJob",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPrestoJob)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPrestoJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPrestoJobLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPrestoJobLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -611,7 +611,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -619,7 +619,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPrestoJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPrestoJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientTags", GoGetter: "ClientTags"},
 			_jsii_.MemberProperty{JsiiProperty: "clientTagsInput", GoGetter: "ClientTagsInput"},
@@ -666,7 +666,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -674,11 +674,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStruct",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPrestoJobQueryListStruct)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPrestoJobQueryListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -704,7 +704,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -712,15 +712,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJob",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPysparkJob)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPysparkJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobLoggingConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPysparkJobLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPysparkJobLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPysparkJobLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPysparkJobLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -747,7 +747,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsPysparkJobLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -755,7 +755,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsPysparkJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsPysparkJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -803,7 +803,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsPysparkJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -811,11 +811,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsScheduling",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsScheduling)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsScheduling](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSchedulingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSchedulingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -845,7 +845,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -853,15 +853,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJob",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkJob)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobLoggingConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkJobLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkJobLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkJobLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkJobLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -888,7 +888,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsSparkJobLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -896,7 +896,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -945,7 +945,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsSparkJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -953,15 +953,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJob",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkRJob)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkRJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobLoggingConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkRJobLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkRJobLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkRJobLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkRJobLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -988,7 +988,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsSparkRJobLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -996,7 +996,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkRJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkRJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
 			_jsii_.MemberProperty{JsiiProperty: "archiveUrisInput", GoGetter: "ArchiveUrisInput"},
@@ -1038,7 +1038,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsSparkRJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1046,15 +1046,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJob",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkSqlJob)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkSqlJob](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1081,7 +1081,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1089,7 +1089,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkSqlJobOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkSqlJobOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1133,7 +1133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1141,11 +1141,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1171,7 +1171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1179,11 +1179,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters",
-		reflect.TypeOf((*DataprocWorkflowTemplateParameters)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateParameters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList",
-		reflect.TypeOf((*DataprocWorkflowTemplateParametersList)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateParametersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1197,7 +1197,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateParametersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1205,7 +1205,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1240,7 +1240,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validation", GoGetter: "Validation"},
 			_jsii_.MemberProperty{JsiiProperty: "validationInput", GoGetter: "ValidationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1248,11 +1248,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidation",
-		reflect.TypeOf((*DataprocWorkflowTemplateParametersValidation)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateParametersValidation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateParametersValidationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateParametersValidationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1284,7 +1284,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateParametersValidationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1292,11 +1292,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationRegex",
-		reflect.TypeOf((*DataprocWorkflowTemplateParametersValidationRegex)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateParametersValidationRegex](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationRegexOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateParametersValidationRegexOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateParametersValidationRegexOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1322,7 +1322,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateParametersValidationRegexOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1330,11 +1330,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationValues",
-		reflect.TypeOf((*DataprocWorkflowTemplateParametersValidationValues)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateParametersValidationValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationValuesOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateParametersValidationValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateParametersValidationValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1360,7 +1360,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateParametersValidationValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1368,15 +1368,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacement",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacement)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacement](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementClusterSelector",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementClusterSelector)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementClusterSelector](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementClusterSelectorOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementClusterSelectorOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementClusterSelectorOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterLabels", GoGetter: "ClusterLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterLabelsInput", GoGetter: "ClusterLabelsInput"},
@@ -1405,7 +1405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1413,19 +1413,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedCluster",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedCluster)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedCluster](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1452,7 +1452,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1460,11 +1460,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1491,7 +1491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1499,11 +1499,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1531,7 +1531,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1539,15 +1539,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1573,7 +1573,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1581,7 +1581,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1644,7 +1644,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1652,11 +1652,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinity",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinity)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1689,7 +1689,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1697,11 +1697,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1734,7 +1734,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1742,11 +1742,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1760,7 +1760,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1768,7 +1768,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1798,7 +1798,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1806,11 +1806,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoDeleteTime", GoGetter: "AutoDeleteTime"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDeleteTimeInput", GoGetter: "AutoDeleteTimeInput"},
@@ -1844,7 +1844,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1852,15 +1852,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1874,7 +1874,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1882,7 +1882,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -1912,7 +1912,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1920,11 +1920,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGb", GoGetter: "BootDiskSizeGb"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGbInput", GoGetter: "BootDiskSizeGbInput"},
@@ -1957,7 +1957,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1965,11 +1965,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1982,7 +1982,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1990,7 +1990,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2016,7 +2016,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2024,7 +2024,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -2074,7 +2074,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2082,7 +2082,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfig", GoGetter: "AutoscalingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfigInput", GoGetter: "AutoscalingConfigInput"},
@@ -2156,7 +2156,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workerConfig", GoGetter: "WorkerConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "workerConfigInput", GoGetter: "WorkerConfigInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2164,15 +2164,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2186,7 +2186,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2194,7 +2194,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -2224,7 +2224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2232,11 +2232,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGb", GoGetter: "BootDiskSizeGb"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGbInput", GoGetter: "BootDiskSizeGbInput"},
@@ -2269,7 +2269,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2277,11 +2277,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2294,7 +2294,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2302,7 +2302,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2328,7 +2328,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2336,7 +2336,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -2386,7 +2386,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2394,15 +2394,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2471,7 +2471,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "truststorePassword", GoGetter: "TruststorePassword"},
 			_jsii_.MemberProperty{JsiiProperty: "truststorePasswordInput", GoGetter: "TruststorePasswordInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2479,7 +2479,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2507,7 +2507,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2515,11 +2515,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2552,7 +2552,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2560,15 +2560,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2582,7 +2582,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2590,7 +2590,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCountInput", GoGetter: "AcceleratorCountInput"},
@@ -2620,7 +2620,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2628,11 +2628,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGb", GoGetter: "BootDiskSizeGb"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGbInput", GoGetter: "BootDiskSizeGbInput"},
@@ -2665,7 +2665,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2673,11 +2673,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfig",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2690,7 +2690,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -2698,7 +2698,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2724,7 +2724,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2732,7 +2732,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorsInput", GoGetter: "AcceleratorsInput"},
@@ -2782,7 +2782,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2790,7 +2790,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementManagedClusterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementManagedClusterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterNameInput", GoGetter: "ClusterNameInput"},
@@ -2822,7 +2822,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2830,7 +2830,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplatePlacementOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplatePlacementOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterSelector", GoGetter: "ClusterSelector"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterSelectorInput", GoGetter: "ClusterSelectorInput"},
@@ -2862,7 +2862,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplatePlacementOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -2870,11 +2870,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts",
-		reflect.TypeOf((*DataprocWorkflowTemplateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference",
-		reflect.TypeOf((*DataprocWorkflowTemplateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocWorkflowTemplateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2907,7 +2907,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocWorkflowTemplateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

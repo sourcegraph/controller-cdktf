@@ -106,7 +106,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtCl
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaim
 
 	return nil
 }
-

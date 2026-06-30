@@ -98,7 +98,7 @@ func (i *jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference) validateSetDisabledUserDeletionParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference) validateSetDisabledUserDeletionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference) validateSetDisabledUserSignupParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference) validateSetDisabledUserSignupParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewIdentityPlatformTenantClientPermissionsOutputReferenceParameters
 
 	return nil
 }
-

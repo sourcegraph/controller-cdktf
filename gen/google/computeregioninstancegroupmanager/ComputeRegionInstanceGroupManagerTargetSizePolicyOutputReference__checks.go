@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerTargetSizePolicyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManagerTargetSizePolicyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeRegionInstanceGroupManagerTargetSizePolicyOutputReference
 
 	return nil
 }
-

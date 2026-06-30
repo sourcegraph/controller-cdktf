@@ -18,9 +18,9 @@ type BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference interface {
 	ArchitectureInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,17 +36,17 @@ type BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference interface {
 	DescriptionInput() *string
 	DiskEncryptionKey() BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference
 	DiskEncryptionKeyInput() *BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
-	EnableConfidentialCompute() interface{}
-	SetEnableConfidentialCompute(val interface{})
-	EnableConfidentialComputeInput() interface{}
+	EnableConfidentialCompute() any
+	SetEnableConfidentialCompute(val any)
+	EnableConfidentialComputeInput() any
 	// Experimental.
 	Fqn() *string
 	GuestOsFeature() BackupDrRestoreWorkloadDiskRestorePropertiesGuestOsFeatureList
-	GuestOsFeatureInput() interface{}
+	GuestOsFeatureInput() any
 	InternalValue() *BackupDrRestoreWorkloadDiskRestoreProperties
 	SetInternalValue(val *BackupDrRestoreWorkloadDiskRestoreProperties)
 	Labels() BackupDrRestoreWorkloadDiskRestorePropertiesLabelsList
-	LabelsInput() interface{}
+	LabelsInput() any
 	Licenses() *[]*string
 	SetLicenses(val *[]*string)
 	LicensesInput() *[]*string
@@ -63,7 +63,7 @@ type BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference interface {
 	SetProvisionedThroughput(val *float64)
 	ProvisionedThroughputInput() *float64
 	ResourceManagerTags() BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsList
-	ResourceManagerTagsInput() interface{}
+	ResourceManagerTagsInput() any
 	ResourcePolicy() *[]*string
 	SetResourcePolicy(val *[]*string)
 	ResourcePolicyInput() *[]*string
@@ -87,7 +87,7 @@ type BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,9 +109,9 @@ type BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDiskEncryptionKey(value *BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey)
-	PutGuestOsFeature(value interface{})
-	PutLabels(value interface{})
-	PutResourceManagerTags(value interface{})
+	PutGuestOsFeature(value any)
+	PutLabels(value any)
+	PutResourceManagerTags(value any)
 	ResetAccessMode()
 	ResetArchitecture()
 	ResetDescription()
@@ -128,7 +128,7 @@ type BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference interface {
 	ResetStoragePool()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -251,8 +251,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) EnableConfidentialCompute() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) EnableConfidentialCompute() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialCompute",
@@ -261,8 +261,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) EnableConfidentialComputeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) EnableConfidentialComputeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConfidentialComputeInput",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) GuestOsFeatureInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) GuestOsFeatureInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"guestOsFeatureInput",
@@ -321,8 +321,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) LabelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) LabelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"labelsInput",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) ResourceManagerTagsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) ResourceManagerTagsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"resourceManagerTagsInput",
@@ -551,7 +551,6 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return returns
 }
 
-
 func NewBackupDrRestoreWorkloadDiskRestorePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference {
 	_init_.Initialize()
 
@@ -562,7 +561,7 @@ func NewBackupDrRestoreWorkloadDiskRestorePropertiesOutputReference(terraformRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -574,12 +573,12 @@ func NewBackupDrRestoreWorkloadDiskRestorePropertiesOutputReference_Override(b B
 
 	_jsii_.Create(
 		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetAccessMode(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetAccessMode(val *string) {
 	if err := j.validateSetAccessModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetArchitecture(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetArchitecture(val *string) {
 	if err := j.validateSetArchitectureParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -623,7 +622,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetEnableConfidentialCompute(val interface{}) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetEnableConfidentialCompute(val any) {
 	if err := j.validateSetEnableConfidentialComputeParameters(val); err != nil {
 		panic(err)
 	}
@@ -645,7 +644,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetInternalValue(val *BackupDrRestoreWorkloadDiskRestoreProperties) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetInternalValue(val *BackupDrRestoreWorkloadDiskRestoreProperties) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -656,7 +655,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetLicenses(val *[]*string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetLicenses(val *[]*string) {
 	if err := j.validateSetLicensesParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -678,7 +677,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetPhysicalBlockSizeBytes(val *float64) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetPhysicalBlockSizeBytes(val *float64) {
 	if err := j.validateSetPhysicalBlockSizeBytesParameters(val); err != nil {
 		panic(err)
 	}
@@ -689,7 +688,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetProvisionedIops(val *float64) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetProvisionedIops(val *float64) {
 	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
 		panic(err)
 	}
@@ -700,7 +699,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetProvisionedThroughput(val *float64) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetProvisionedThroughput(val *float64) {
 	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
 		panic(err)
 	}
@@ -711,7 +710,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetResourcePolicy(val *[]*string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetResourcePolicy(val *[]*string) {
 	if err := j.validateSetResourcePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -722,7 +721,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetSizeGb(val *float64) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetSizeGb(val *float64) {
 	if err := j.validateSetSizeGbParameters(val); err != nil {
 		panic(err)
 	}
@@ -733,7 +732,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetStoragePool(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetStoragePool(val *string) {
 	if err := j.validateSetStoragePoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -744,7 +743,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -755,7 +754,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,7 +765,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference)SetType(val *string) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -790,16 +789,16 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,7 +862,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -879,7 +878,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -911,7 +910,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -927,7 +926,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -956,7 +955,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -970,40 +969,40 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	_jsii_.InvokeVoid(
 		b,
 		"putDiskEncryptionKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) PutGuestOsFeature(value interface{}) {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) PutGuestOsFeature(value any) {
 	if err := b.validatePutGuestOsFeatureParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putGuestOsFeature",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) PutLabels(value interface{}) {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) PutLabels(value any) {
 	if err := b.validatePutLabelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putLabels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) PutResourceManagerTags(value interface{}) {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) PutResourceManagerTags(value any) {
 	if err := b.validatePutResourceManagerTagsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putResourceManagerTags",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1119,16 +1118,16 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1147,4 +1146,3 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesOutputReference) 
 
 	return returns
 }
-

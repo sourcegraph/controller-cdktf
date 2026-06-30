@@ -98,7 +98,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReferenceP
 
 	return nil
 }
-

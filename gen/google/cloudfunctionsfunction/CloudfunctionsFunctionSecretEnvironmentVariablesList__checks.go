@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validat
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudfunctionsFunctionSecretEnvironmentVariablesListParameters(t
 
 	return nil
 }
-

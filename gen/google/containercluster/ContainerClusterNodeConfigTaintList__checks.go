@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigTaintList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigTaintList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigTaintList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerClusterNodeConfigTaintListParameters(terraformResource 
 
 	return nil
 }
-

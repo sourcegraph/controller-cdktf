@@ -98,7 +98,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewKmsEkmConnectionServiceResolversServerCertificatesOutputReferenc
 
 	return nil
 }
-

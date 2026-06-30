@@ -6,9 +6,9 @@ import (
 
 type DialogflowCxFlowConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DialogflowCxFlowConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The human-readable name of the flow.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_flow#display_name DialogflowCxFlow#display_name}
@@ -34,7 +34,7 @@ type DialogflowCxFlowConfig struct {
 	// event_handlers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_flow#event_handlers DialogflowCxFlow#event_handlers}
-	EventHandlers interface{} `field:"optional" json:"eventHandlers" yaml:"eventHandlers"`
+	EventHandlers any `field:"optional" json:"eventHandlers" yaml:"eventHandlers"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_flow#id DialogflowCxFlow#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -45,7 +45,7 @@ type DialogflowCxFlowConfig struct {
 	// ~> Avoid having multiple 'google_dialogflow_cx_flow' resources linked to the same agent with 'is_default_start_flow = true' because they will compete to control a single Default Start Flow resource in GCP.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_flow#is_default_start_flow DialogflowCxFlow#is_default_start_flow}
-	IsDefaultStartFlow interface{} `field:"optional" json:"isDefaultStartFlow" yaml:"isDefaultStartFlow"`
+	IsDefaultStartFlow any `field:"optional" json:"isDefaultStartFlow" yaml:"isDefaultStartFlow"`
 	// knowledge_connector_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_flow#knowledge_connector_settings DialogflowCxFlow#knowledge_connector_settings}
@@ -76,6 +76,5 @@ type DialogflowCxFlowConfig struct {
 	// transition_routes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_flow#transition_routes DialogflowCxFlow#transition_routes}
-	TransitionRoutes interface{} `field:"optional" json:"transitionRoutes" yaml:"transitionRoutes"`
+	TransitionRoutes any `field:"optional" json:"transitionRoutes" yaml:"transitionRoutes"`
 }
-

@@ -98,7 +98,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputR
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputRefe
 
 	return nil
 }
-

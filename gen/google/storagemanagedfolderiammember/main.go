@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember",
-		reflect.TypeOf((*StorageManagedFolderIamMember)(nil)).Elem(),
+		reflect.TypeFor[StorageManagedFolderIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageManagedFolderIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -77,11 +77,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberCondition",
-		reflect.TypeOf((*StorageManagedFolderIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[StorageManagedFolderIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConditionOutputReference",
-		reflect.TypeOf((*StorageManagedFolderIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageManagedFolderIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageManagedFolderIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -120,6 +120,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig",
-		reflect.TypeOf((*StorageManagedFolderIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageManagedFolderIamMemberConfig](),
 	)
 }

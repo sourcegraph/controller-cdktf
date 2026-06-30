@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroF
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewPubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroForm
 
 	return nil
 }
-

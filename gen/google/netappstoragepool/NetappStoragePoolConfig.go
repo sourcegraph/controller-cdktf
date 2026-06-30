@@ -6,9 +6,9 @@ import (
 
 type NetappStoragePoolConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type NetappStoragePoolConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Capacity of the storage pool (in GiB).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_storage_pool#capacity_gib NetappStoragePool#capacity_gib}
@@ -52,11 +52,11 @@ type NetappStoragePoolConfig struct {
 	// Auto-tiering can be enabled after storage pool creation but it can't be disabled once enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_storage_pool#allow_auto_tiering NetappStoragePool#allow_auto_tiering}
-	AllowAutoTiering interface{} `field:"optional" json:"allowAutoTiering" yaml:"allowAutoTiering"`
+	AllowAutoTiering any `field:"optional" json:"allowAutoTiering" yaml:"allowAutoTiering"`
 	// Optional. True if using Independent Scaling of capacity and performance (Hyperdisk). Default is false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_storage_pool#custom_performance_enabled NetappStoragePool#custom_performance_enabled}
-	CustomPerformanceEnabled interface{} `field:"optional" json:"customPerformanceEnabled" yaml:"customPerformanceEnabled"`
+	CustomPerformanceEnabled any `field:"optional" json:"customPerformanceEnabled" yaml:"customPerformanceEnabled"`
 	// An optional description of this resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_storage_pool#description NetappStoragePool#description}
@@ -67,7 +67,7 @@ type NetappStoragePoolConfig struct {
 	// The increment will kick in only if the new size after increment is still less than or equal to storage pool size.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_storage_pool#enable_hot_tier_auto_resize NetappStoragePool#enable_hot_tier_auto_resize}
-	EnableHotTierAutoResize interface{} `field:"optional" json:"enableHotTierAutoResize" yaml:"enableHotTierAutoResize"`
+	EnableHotTierAutoResize any `field:"optional" json:"enableHotTierAutoResize" yaml:"enableHotTierAutoResize"`
 	// Total hot tier capacity for the Storage Pool.
 	//
 	// It is applicable only to Flex service level.
@@ -100,7 +100,7 @@ type NetappStoragePoolConfig struct {
 	// using security identifiers for NFSv4.1 or principal names for kerberized NFSv4.1.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_storage_pool#ldap_enabled NetappStoragePool#ldap_enabled}
-	LdapEnabled interface{} `field:"optional" json:"ldapEnabled" yaml:"ldapEnabled"`
+	LdapEnabled any `field:"optional" json:"ldapEnabled" yaml:"ldapEnabled"`
 	// Mode of the storage pool.
 	//
 	// The operational mode of the storage pool. ONTAP mode enables operations
@@ -151,4 +151,3 @@ type NetappStoragePoolConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_storage_pool#zone NetappStoragePool#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

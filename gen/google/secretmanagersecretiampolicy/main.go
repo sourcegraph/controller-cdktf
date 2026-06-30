@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicy",
-		reflect.TypeOf((*SecretManagerSecretIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[SecretManagerSecretIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecretManagerSecretIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,6 +72,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secretManagerSecretIamPolicy.SecretManagerSecretIamPolicyConfig",
-		reflect.TypeOf((*SecretManagerSecretIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[SecretManagerSecretIamPolicyConfig](),
 	)
 }

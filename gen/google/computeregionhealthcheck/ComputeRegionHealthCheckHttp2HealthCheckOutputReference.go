@@ -12,9 +12,9 @@ type ComputeRegionHealthCheckHttp2HealthCheckOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -61,7 +61,7 @@ type ComputeRegionHealthCheckHttp2HealthCheckOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type ComputeRegionHealthCheckHttp2HealthCheckOutputReference interface {
 	ResetResponse()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ type jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -314,7 +314,6 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) Terr
 	return returns
 }
 
-
 func NewComputeRegionHealthCheckHttp2HealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionHealthCheckHttp2HealthCheckOutputReference {
 	_init_.Initialize()
 
@@ -325,7 +324,7 @@ func NewComputeRegionHealthCheckHttp2HealthCheckOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttp2HealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -337,12 +336,12 @@ func NewComputeRegionHealthCheckHttp2HealthCheckOutputReference_Override(c Compu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttp2HealthCheckOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -353,7 +352,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,7 +363,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetHost(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,7 +374,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetHo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetInternalValue(val *ComputeRegionHealthCheckHttp2HealthCheck) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetInternalValue(val *ComputeRegionHealthCheckHttp2HealthCheck) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,7 +385,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetPort(val *float64) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +396,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetPo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetPortName(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetPortName(val *string) {
 	if err := j.validateSetPortNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetPo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetPortSpecification(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetPortSpecification(val *string) {
 	if err := j.validateSetPortSpecificationParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetPo
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetProxyHeader(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetProxyHeader(val *string) {
 	if err := j.validateSetProxyHeaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetPr
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetRequestPath(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetRequestPath(val *string) {
 	if err := j.validateSetRequestPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetRe
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetResponse(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetResponse(val *string) {
 	if err := j.validateSetResponseParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetRe
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,16 +486,16 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) Comp
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetB
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -544,7 +543,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetL
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -560,7 +559,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -576,7 +575,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetN
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -608,7 +607,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -624,7 +623,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) GetS
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) Inte
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -716,16 +715,16 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) Rese
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -744,4 +743,3 @@ func (c *jsiiProxy_ComputeRegionHealthCheckHttp2HealthCheckOutputReference) ToSt
 
 	return returns
 }
-

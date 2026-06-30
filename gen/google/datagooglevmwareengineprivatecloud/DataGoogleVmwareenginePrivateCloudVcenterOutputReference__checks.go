@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleVmwareenginePrivateCloudVcenterOutputReferenceParamete
 
 	return nil
 }
-

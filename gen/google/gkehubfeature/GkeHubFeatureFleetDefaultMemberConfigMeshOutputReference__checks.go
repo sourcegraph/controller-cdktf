@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigMeshOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigMeshOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigMeshOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeHubFeatureFleetDefaultMemberConfigMeshOutputReferenceParamete
 
 	return nil
 }
-

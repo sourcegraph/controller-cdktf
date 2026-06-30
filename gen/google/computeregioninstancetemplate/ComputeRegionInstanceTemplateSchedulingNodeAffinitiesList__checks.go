@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingNodeAffinitiesList) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingNodeAffinitiesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateSchedulingNodeAffinitiesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionInstanceTemplateSchedulingNodeAffinitiesListParamet
 
 	return nil
 }
-

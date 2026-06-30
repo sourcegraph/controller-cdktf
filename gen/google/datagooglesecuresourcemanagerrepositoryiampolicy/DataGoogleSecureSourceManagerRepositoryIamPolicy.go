@@ -15,11 +15,11 @@ type DataGoogleSecureSourceManagerRepositoryIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -54,20 +54,20 @@ type DataGoogleSecureSourceManagerRepositoryIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RepositoryId() *string
 	SetRepositoryId(val *string)
 	RepositoryIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,18 +95,18 @@ type DataGoogleSecureSourceManagerRepositoryIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleSecureSourceManagerRepositoryIamPolicy
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) CdktfStack(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ConstructNo
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) Provider() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) TerraformGe
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -354,7 +354,6 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) TerraformRe
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Data Source.
 func NewDataGoogleSecureSourceManagerRepositoryIamPolicy(scope constructs.Construct, id *string, config *DataGoogleSecureSourceManagerRepositoryIamPolicyConfig) DataGoogleSecureSourceManagerRepositoryIamPolicy {
 	_init_.Initialize()
@@ -366,7 +365,7 @@ func NewDataGoogleSecureSourceManagerRepositoryIamPolicy(scope constructs.Constr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -379,12 +378,12 @@ func NewDataGoogleSecureSourceManagerRepositoryIamPolicy_Override(d DataGoogleSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetCount(val
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetDependsOn
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetForEach(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetId(val *s
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetLifecycle
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetLocation(
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetProject(v
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -463,7 +462,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetProvider(
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy)SetRepositoryId(val *string) {
+func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SetRepositoryId(val *string) {
 	if err := j.validateSetRepositoryIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func DataGoogleSecureSourceManagerRepositoryIamPolicy_GenerateConfigForImport(sc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -510,7 +509,7 @@ func DataGoogleSecureSourceManagerRepositoryIamPolicy_GenerateConfigForImport(sc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsConstruct(x interface{}) *bool {
+func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSecureSourceManagerRepositoryIamPolicy_IsConstructParameters(x); err != nil {
@@ -521,7 +520,7 @@ func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsConstruct(x interface{})
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -529,7 +528,7 @@ func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsConstruct(x interface{})
 }
 
 // Experimental.
-func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformDataSourceParameters(x); err != nil {
@@ -540,7 +539,7 @@ func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformDataSource(x in
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -548,7 +547,7 @@ func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformDataSource(x in
 }
 
 // Experimental.
-func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformElement(x interface{}) *bool {
+func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -559,7 +558,7 @@ func DataGoogleSecureSourceManagerRepositoryIamPolicy_IsTerraformElement(x inter
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSecureSourceManagerRepositoryIamPolicy.DataGoogleSecureSourceManagerRepositoryIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -577,27 +576,27 @@ func DataGoogleSecureSourceManagerRepositoryIamPolicy_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -613,7 +612,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetBooleanA
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -629,7 +628,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetBooleanM
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -645,7 +644,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetListAttr
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetNumberAt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetNumberLi
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -693,7 +692,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetNumberMa
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -709,7 +708,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetStringAt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -725,7 +724,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) GetStringMa
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -741,7 +740,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) Interpolati
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) OverrideLog
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -791,8 +790,8 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ResetProjec
 	)
 }
 
-func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -804,8 +803,8 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SynthesizeA
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) SynthesizeH
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ToHclTerraf
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -856,8 +855,8 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ToString() 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -868,4 +867,3 @@ func (d *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) ToTerraform
 
 	return returns
 }
-

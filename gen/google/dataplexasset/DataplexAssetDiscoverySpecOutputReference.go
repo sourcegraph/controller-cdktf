@@ -12,9 +12,9 @@ type DataplexAssetDiscoverySpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,9 +27,9 @@ type DataplexAssetDiscoverySpecOutputReference interface {
 	CreationStack() *[]*string
 	CsvOptions() DataplexAssetDiscoverySpecCsvOptionsOutputReference
 	CsvOptionsInput() *DataplexAssetDiscoverySpecCsvOptions
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	ExcludePatterns() *[]*string
 	SetExcludePatterns(val *[]*string)
 	ExcludePatternsInput() *[]*string
@@ -56,7 +56,7 @@ type DataplexAssetDiscoverySpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type DataplexAssetDiscoverySpecOutputReference interface {
 	ResetSchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,8 +99,8 @@ type jsiiProxy_DataplexAssetDiscoverySpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) CsvOptionsInput() 
 	return returns
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) Enabled() interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -289,7 +289,6 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) TerraformResource(
 	return returns
 }
 
-
 func NewDataplexAssetDiscoverySpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataplexAssetDiscoverySpecOutputReference {
 	_init_.Initialize()
 
@@ -300,7 +299,7 @@ func NewDataplexAssetDiscoverySpecOutputReference(terraformResource cdktf.IInter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -312,12 +311,12 @@ func NewDataplexAssetDiscoverySpecOutputReference_Override(d DataplexAssetDiscov
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,7 +327,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,7 +338,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,7 +349,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetEnabled(val inte
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetExcludePatterns(val *[]*string) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) SetExcludePatterns(val *[]*string) {
 	if err := j.validateSetExcludePatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +360,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetExcludePatterns(
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetIncludePatterns(val *[]*string) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) SetIncludePatterns(val *[]*string) {
 	if err := j.validateSetIncludePatternsParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,7 +371,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetIncludePatterns(
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetInternalValue(val *DataplexAssetDiscoverySpec) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) SetInternalValue(val *DataplexAssetDiscoverySpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +382,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetSchedule(val *string) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) SetSchedule(val *string) {
 	if err := j.validateSetScheduleParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetSchedule(val *st
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,16 +428,16 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) ComputeFqn() *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetBooleanAttribut
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetBooleanMapAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetListAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetNumberAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetNumberListAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -534,7 +533,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetNumberMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetStringAttribute
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -566,7 +565,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) GetStringMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) PutCsvOptions(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putCsvOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -620,7 +619,7 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) PutJsonOptions(val
 	_jsii_.InvokeVoid(
 		d,
 		"putJsonOptions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -664,16 +663,16 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) ResetSchedule() {
 	)
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -692,4 +691,3 @@ func (d *jsiiProxy_DataplexAssetDiscoverySpecOutputReference) ToString() *string
 
 	return returns
 }
-

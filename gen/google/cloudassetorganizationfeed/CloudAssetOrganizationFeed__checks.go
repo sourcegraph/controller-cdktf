@@ -19,7 +19,7 @@ func (c *jsiiProxy_CloudAssetOrganizationFeed) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetOrganizationFeed) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateCloudAssetOrganizationFeed_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateCloudAssetOrganizationFeed_IsConstructParameters(x interface{}) error {
+func validateCloudAssetOrganizationFeed_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateCloudAssetOrganizationFeed_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateCloudAssetOrganizationFeed_IsTerraformElementParameters(x interface{}) error {
+func validateCloudAssetOrganizationFeed_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateCloudAssetOrganizationFeed_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateCloudAssetOrganizationFeed_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudAssetOrganizationFeed_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -301,7 +301,7 @@ func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetBillingProjectParamete
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -342,7 +342,7 @@ func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetContentTypeParameters(
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetOrgIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -495,4 +495,3 @@ func validateNewCloudAssetOrganizationFeedParameters(scope constructs.Construct,
 
 	return nil
 }
-

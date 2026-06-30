@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterVerticalPodAutoscalingOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterVerticalPodAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterVerticalPodAutoscalingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterVerticalPodAutoscalingOutputReferenceP
 
 	return nil
 }
-

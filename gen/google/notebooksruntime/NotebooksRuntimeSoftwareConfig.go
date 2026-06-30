@@ -1,6 +1,5 @@
 package notebooksruntime
 
-
 type NotebooksRuntimeSoftwareConfig struct {
 	// Specify a custom Cloud Storage path where the GPU driver is stored.
 	//
@@ -11,11 +10,11 @@ type NotebooksRuntimeSoftwareConfig struct {
 	// Verifies core internal services are running. Default: True.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#enable_health_monitoring NotebooksRuntime#enable_health_monitoring}
-	EnableHealthMonitoring interface{} `field:"optional" json:"enableHealthMonitoring" yaml:"enableHealthMonitoring"`
+	EnableHealthMonitoring any `field:"optional" json:"enableHealthMonitoring" yaml:"enableHealthMonitoring"`
 	// Runtime will automatically shutdown after idle_shutdown_time. Default: True.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#idle_shutdown NotebooksRuntime#idle_shutdown}
-	IdleShutdown interface{} `field:"optional" json:"idleShutdown" yaml:"idleShutdown"`
+	IdleShutdown any `field:"optional" json:"idleShutdown" yaml:"idleShutdown"`
 	// Time in minutes to wait before shuting down runtime. Default: 180 minutes.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#idle_shutdown_timeout NotebooksRuntime#idle_shutdown_timeout}
@@ -23,11 +22,11 @@ type NotebooksRuntimeSoftwareConfig struct {
 	// Install Nvidia Driver automatically.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#install_gpu_driver NotebooksRuntime#install_gpu_driver}
-	InstallGpuDriver interface{} `field:"optional" json:"installGpuDriver" yaml:"installGpuDriver"`
+	InstallGpuDriver any `field:"optional" json:"installGpuDriver" yaml:"installGpuDriver"`
 	// kernels block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#kernels NotebooksRuntime#kernels}
-	Kernels interface{} `field:"optional" json:"kernels" yaml:"kernels"`
+	Kernels any `field:"optional" json:"kernels" yaml:"kernels"`
 	// Cron expression in UTC timezone for schedule instance auto upgrade. Please follow the [cron format](https://en.wikipedia.org/wiki/Cron).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#notebook_upgrade_schedule NotebooksRuntime#notebook_upgrade_schedule}
@@ -44,4 +43,3 @@ type NotebooksRuntimeSoftwareConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime#post_startup_script_behavior NotebooksRuntime#post_startup_script_behavior}
 	PostStartupScriptBehavior *string `field:"optional" json:"postStartupScriptBehavior" yaml:"postStartupScriptBehavior"`
 }
-

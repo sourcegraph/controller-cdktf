@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.tagsTagKey.TagsTagKey",
-		reflect.TypeOf((*TagsTagKey)(nil)).Elem(),
+		reflect.TypeFor[TagsTagKey](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TagsTagKey{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -88,15 +88,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.tagsTagKey.TagsTagKeyConfig",
-		reflect.TypeOf((*TagsTagKeyConfig)(nil)).Elem(),
+		reflect.TypeFor[TagsTagKeyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.tagsTagKey.TagsTagKeyTimeouts",
-		reflect.TypeOf((*TagsTagKeyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[TagsTagKeyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.tagsTagKey.TagsTagKeyTimeoutsOutputReference",
-		reflect.TypeOf((*TagsTagKeyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TagsTagKeyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -129,7 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TagsTagKeyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

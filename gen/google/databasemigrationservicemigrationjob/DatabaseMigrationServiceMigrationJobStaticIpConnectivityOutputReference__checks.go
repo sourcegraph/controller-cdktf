@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputRe
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package dataplexasset
 
-
 type DataplexAssetDiscoverySpecCsvOptions struct {
 	// Optional. The delimiter being used to separate values. This defaults to ','.
 	//
@@ -11,7 +10,7 @@ type DataplexAssetDiscoverySpecCsvOptions struct {
 	// Whether to disable the inference of data type for CSV data. If true, all columns will be registered as strings.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_asset#disable_type_inference DataplexAsset#disable_type_inference}
-	DisableTypeInference interface{} `field:"optional" json:"disableTypeInference" yaml:"disableTypeInference"`
+	DisableTypeInference any `field:"optional" json:"disableTypeInference" yaml:"disableTypeInference"`
 	// Optional. The character encoding of the data. The default is UTF-8.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_asset#encoding DataplexAsset#encoding}
@@ -21,4 +20,3 @@ type DataplexAssetDiscoverySpecCsvOptions struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_asset#header_rows DataplexAsset#header_rows}
 	HeaderRows *float64 `field:"optional" json:"headerRows" yaml:"headerRows"`
 }
-

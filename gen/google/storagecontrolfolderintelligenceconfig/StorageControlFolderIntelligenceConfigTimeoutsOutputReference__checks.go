@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageControlFolderIntelligenceConfigTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlFolderIntelligenceConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageControlFolderIntelligenceConfigTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_StorageControlFolderIntelligenceConfigTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlFolderIntelligenceConfigTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_StorageControlFolderIntelligenceConfigTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewStorageControlFolderIntelligenceConfigTimeoutsOutputReferencePar
 
 	return nil
 }
-

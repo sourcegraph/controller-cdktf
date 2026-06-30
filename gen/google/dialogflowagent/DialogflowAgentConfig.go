@@ -6,9 +6,9 @@ import (
 
 type DialogflowAgentConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DialogflowAgentConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The default language of the agent as a language tag.
 	//
 	// [See Language Support](https://cloud.google.com/dialogflow/docs/reference/language)
@@ -69,7 +69,7 @@ type DialogflowAgentConfig struct {
 	// Determines whether this agent should log conversation queries.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_agent#enable_logging DialogflowAgent#enable_logging}
-	EnableLogging interface{} `field:"optional" json:"enableLogging" yaml:"enableLogging"`
+	EnableLogging any `field:"optional" json:"enableLogging" yaml:"enableLogging"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -104,4 +104,3 @@ type DialogflowAgentConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_agent#timeouts DialogflowAgent#timeouts}
 	Timeouts *DialogflowAgentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

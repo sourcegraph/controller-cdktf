@@ -34,7 +34,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDiscoveryEngineControlConditionsListParameters(terraformResource
 
 	return nil
 }
-

@@ -1,13 +1,12 @@
 package clouddeploydeliverypipeline
 
-
 type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRun struct {
 	// Whether Cloud Deploy should update the traffic stanza in a Cloud Run Service on the user's behalf to facilitate traffic splitting.
 	//
 	// This is required to be true for CanaryDeployments, but optional for CustomCanaryDeployments.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#automatic_traffic_control ClouddeployDeliveryPipeline#automatic_traffic_control}
-	AutomaticTrafficControl interface{} `field:"optional" json:"automaticTrafficControl" yaml:"automaticTrafficControl"`
+	AutomaticTrafficControl any `field:"optional" json:"automaticTrafficControl" yaml:"automaticTrafficControl"`
 	// Optional. A list of tags that are added to the canary revision while the canary phase is in progress.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#canary_revision_tags ClouddeployDeliveryPipeline#canary_revision_tags}
@@ -21,4 +20,3 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigC
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_delivery_pipeline#stable_revision_tags ClouddeployDeliveryPipeline#stable_revision_tags}
 	StableRevisionTags *[]*string `field:"optional" json:"stableRevisionTags" yaml:"stableRevisionTags"`
 }
-

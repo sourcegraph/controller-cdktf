@@ -12,9 +12,9 @@ type DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,15 +25,15 @@ type DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableConsentBasedRedaction() interface{}
-	SetEnableConsentBasedRedaction(val interface{})
-	EnableConsentBasedRedactionInput() interface{}
-	EnableInteractionLogging() interface{}
-	SetEnableInteractionLogging(val interface{})
-	EnableInteractionLoggingInput() interface{}
-	EnableStackdriverLogging() interface{}
-	SetEnableStackdriverLogging(val interface{})
-	EnableStackdriverLoggingInput() interface{}
+	EnableConsentBasedRedaction() any
+	SetEnableConsentBasedRedaction(val any)
+	EnableConsentBasedRedactionInput() any
+	EnableInteractionLogging() any
+	SetEnableInteractionLogging(val any)
+	EnableInteractionLoggingInput() any
+	EnableStackdriverLogging() any
+	SetEnableStackdriverLogging(val any)
+	EnableStackdriverLoggingInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DialogflowCxFlowAdvancedSettingsLoggingSettings
@@ -49,7 +49,7 @@ type DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference interface {
 	ResetEnableStackdriverLogging()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference st
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableConsentBasedRedaction() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableConsentBasedRedaction() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConsentBasedRedaction",
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableConsentBasedRedactionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableConsentBasedRedactionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableConsentBasedRedactionInput",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableInteractionLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableInteractionLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInteractionLogging",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableInteractionLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableInteractionLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableInteractionLoggingInput",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableStackdriverLogging() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableStackdriverLogging() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverLogging",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableStackdriverLoggingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) EnableStackdriverLoggingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableStackdriverLoggingInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return returns
 }
 
-
 func NewDialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewDialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewDialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference)SetEnableConsentBasedRedaction(val interface{}) {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) SetEnableConsentBasedRedaction(val any) {
 	if err := j.validateSetEnableConsentBasedRedactionParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference)SetEnableInteractionLogging(val interface{}) {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) SetEnableInteractionLogging(val any) {
 	if err := j.validateSetEnableInteractionLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference)SetEnableStackdriverLogging(val interface{}) {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) SetEnableStackdriverLogging(val any) {
 	if err := j.validateSetEnableStackdriverLoggingParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference)SetInternalValue(val *DialogflowCxFlowAdvancedSettingsLoggingSettings) {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) SetInternalValue(val *DialogflowCxFlowAdvancedSettingsLoggingSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReferenc
 
 	return returns
 }
-

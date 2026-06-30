@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigqueryBiReservation) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryBiReservation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigqueryBiReservation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigqueryBiReservation) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryBiReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigqueryBiReservation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (b *jsiiProxy_BigqueryBiReservation) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryBiReservation) validatePutPreferredTablesParameters(value interface{}) error {
+func (b *jsiiProxy_BigqueryBiReservation) validatePutPreferredTablesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateBigqueryBiReservation_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateBigqueryBiReservation_IsConstructParameters(x interface{}) error {
+func validateBigqueryBiReservation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateBigqueryBiReservation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBigqueryBiReservation_IsTerraformElementParameters(x interface{}) error {
+func validateBigqueryBiReservation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateBigqueryBiReservation_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateBigqueryBiReservation_IsTerraformResourceParameters(x interface{}) error {
+func validateBigqueryBiReservation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateBigqueryBiReservation_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryBiReservation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryBiReservation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_BigqueryBiReservation) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryBiReservation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryBiReservation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -408,7 +408,7 @@ func (j *jsiiProxy_BigqueryBiReservation) validateSetProjectParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryBiReservation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigqueryBiReservation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -480,4 +480,3 @@ func validateNewBigqueryBiReservationParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

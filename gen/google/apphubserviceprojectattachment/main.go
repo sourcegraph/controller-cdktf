@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment",
-		reflect.TypeOf((*ApphubServiceProjectAttachment)(nil)).Elem(),
+		reflect.TypeFor[ApphubServiceProjectAttachment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApphubServiceProjectAttachment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig",
-		reflect.TypeOf((*ApphubServiceProjectAttachmentConfig)(nil)).Elem(),
+		reflect.TypeFor[ApphubServiceProjectAttachmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentTimeouts",
-		reflect.TypeOf((*ApphubServiceProjectAttachmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ApphubServiceProjectAttachmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentTimeoutsOutputReference",
-		reflect.TypeOf((*ApphubServiceProjectAttachmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApphubServiceProjectAttachmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApphubServiceProjectAttachmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

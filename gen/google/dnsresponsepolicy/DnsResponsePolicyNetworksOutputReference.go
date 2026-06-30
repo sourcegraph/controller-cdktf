@@ -12,9 +12,9 @@ type DnsResponsePolicyNetworksOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,8 +27,8 @@ type DnsResponsePolicyNetworksOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	NetworkUrl() *string
 	SetNetworkUrl(val *string)
 	NetworkUrlInput() *string
@@ -43,7 +43,7 @@ type DnsResponsePolicyNetworksOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type DnsResponsePolicyNetworksOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_DnsResponsePolicyNetworksOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewDnsResponsePolicyNetworksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DnsResponsePolicyNetworksOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewDnsResponsePolicyNetworksOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicyNetworksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewDnsResponsePolicyNetworksOutputReference_Override(d DnsResponsePolicyNet
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicyNetworksOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetNetworkUrl(val *string) {
+func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) SetNetworkUrl(val *string) {
 	if err := j.validateSetNetworkUrlParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetNetworkUrl(val *s
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsResponsePolicyNetworksOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksOutputReference) ToString() *string 
 
 	return returns
 }
-

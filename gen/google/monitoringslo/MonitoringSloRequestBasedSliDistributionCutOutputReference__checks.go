@@ -109,7 +109,7 @@ func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewMonitoringSloRequestBasedSliDistributionCutOutputReferenceParame
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (p *jsiiProxy_ParameterManagerParameter) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (p *jsiiProxy_ParameterManagerParameter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (p *jsiiProxy_ParameterManagerParameter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (p *jsiiProxy_ParameterManagerParameter) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (p *jsiiProxy_ParameterManagerParameter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (p *jsiiProxy_ParameterManagerParameter) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateParameterManagerParameter_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateParameterManagerParameter_IsConstructParameters(x interface{}) error {
+func validateParameterManagerParameter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateParameterManagerParameter_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateParameterManagerParameter_IsTerraformElementParameters(x interface{}) error {
+func validateParameterManagerParameter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateParameterManagerParameter_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateParameterManagerParameter_IsTerraformResourceParameters(x interface{}) error {
+func validateParameterManagerParameter_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateParameterManagerParameter_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_ParameterManagerParameter) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ParameterManagerParameter) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ParameterManagerParameter) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ParameterManagerParameter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ParameterManagerParameter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_ParameterManagerParameter) validateSetProjectParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ParameterManagerParameter) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ParameterManagerParameter) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewParameterManagerParameterParameters(scope constructs.Construct, 
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipeline",
-		reflect.TypeOf((*DataPipelinePipeline)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipeline](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workload", GoGetter: "Workload"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadInput", GoGetter: "WorkloadInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipeline{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -100,15 +100,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineConfig",
-		reflect.TypeOf((*DataPipelinePipelineConfig)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineScheduleInfo",
-		reflect.TypeOf((*DataPipelinePipelineScheduleInfo)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineScheduleInfo](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineScheduleInfoOutputReference",
-		reflect.TypeOf((*DataPipelinePipelineScheduleInfoOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineScheduleInfoOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -147,11 +147,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineTimeouts",
-		reflect.TypeOf((*DataPipelinePipelineTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineTimeoutsOutputReference",
-		reflect.TypeOf((*DataPipelinePipelineTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -184,7 +184,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipelineTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -192,23 +192,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkload",
-		reflect.TypeOf((*DataPipelinePipelineWorkload)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkload](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowFlexTemplateRequest",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowFlexTemplateRequest)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowFlexTemplateRequest](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameter",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameter)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameter](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironment",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironment)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironment](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperimentsInput", GoGetter: "AdditionalExperimentsInput"},
@@ -280,7 +280,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -288,7 +288,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -341,7 +341,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -375,7 +375,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateOnly", GoGetter: "ValidateOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "validateOnlyInput", GoGetter: "ValidateOnlyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -383,19 +383,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequest",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowLaunchTemplateRequest)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowLaunchTemplateRequest](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParameters",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParameters)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParameters](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironment",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironment)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironment](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperimentsInput", GoGetter: "AdditionalExperimentsInput"},
@@ -467,7 +467,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -475,7 +475,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -514,7 +514,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -522,7 +522,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -561,7 +561,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validateOnly", GoGetter: "ValidateOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "validateOnlyInput", GoGetter: "ValidateOnlyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -569,7 +569,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadOutputReference",
-		reflect.TypeOf((*DataPipelinePipelineWorkloadOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataPipelinePipelineWorkloadOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -601,7 +601,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataPipelinePipelineWorkloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicy",
-		reflect.TypeOf((*NetworkSecurityAddressGroupIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityAddressGroupIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkSecurityAddressGroupIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,6 +75,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkSecurityAddressGroupIamPolicy.NetworkSecurityAddressGroupIamPolicyConfig",
-		reflect.TypeOf((*NetworkSecurityAddressGroupIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkSecurityAddressGroupIamPolicyConfig](),
 	)
 }

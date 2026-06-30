@@ -14,9 +14,9 @@ type IamAccessBoundaryPolicyRulesOutputReference interface {
 	AccessBoundaryRuleInput() *IamAccessBoundaryPolicyRulesAccessBoundaryRule
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,8 +32,8 @@ type IamAccessBoundaryPolicyRulesOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -45,7 +45,7 @@ type IamAccessBoundaryPolicyRulesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type IamAccessBoundaryPolicyRulesOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,8 +104,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) AccessBoundaryRu
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewIamAccessBoundaryPolicyRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IamAccessBoundaryPolicyRulesOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewIamAccessBoundaryPolicyRulesOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewIamAccessBoundaryPolicyRulesOutputReference_Override(i IamAccessBoundary
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetDescription(va
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) PutAccessBoundar
 	_jsii_.InvokeVoid(
 		i,
 		"putAccessBoundaryRule",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) ResetDescription
 	)
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesOutputReference) ToString() *stri
 
 	return returns
 }
-

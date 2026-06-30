@@ -98,7 +98,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyTimeoutsOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_FolderOrganizationPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyTimeoutsOutputReference) validateSetD
 	return nil
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FolderOrganizationPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewFolderOrganizationPolicyTimeoutsOutputReferenceParameters(terraf
 
 	return nil
 }
-

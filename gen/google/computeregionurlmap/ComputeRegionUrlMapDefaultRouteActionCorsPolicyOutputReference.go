@@ -10,9 +10,9 @@ import (
 
 type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	cdktf.ComplexObject
-	AllowCredentials() interface{}
-	SetAllowCredentials(val interface{})
-	AllowCredentialsInput() interface{}
+	AllowCredentials() any
+	SetAllowCredentials(val any)
+	AllowCredentialsInput() any
 	AllowHeaders() *[]*string
 	SetAllowHeaders(val *[]*string)
 	AllowHeadersInput() *[]*string
@@ -27,9 +27,9 @@ type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	AllowOriginsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -40,9 +40,9 @@ type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() any
+	SetDisabled(val any)
+	DisabledInput() any
 	ExposeHeaders() *[]*string
 	SetExposeHeaders(val *[]*string)
 	ExposeHeadersInput() *[]*string
@@ -64,7 +64,7 @@ type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	ResetMaxAge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ type jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference st
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) AllowCredentials() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) AllowCredentials() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowCredentials",
@@ -118,8 +118,8 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) AllowCredentialsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) AllowCredentialsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowCredentialsInput",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -238,8 +238,8 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) Disabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) DisabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) DisabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disabledInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-
 func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference(terraform
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference_Override(
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetAllowCredentials(val interface{}) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetAllowCredentials(val any) {
 	if err := j.validateSetAllowCredentialsParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetAllowHeaders(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetAllowHeaders(val *[]*string) {
 	if err := j.validateSetAllowHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetAllowMethods(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetAllowMethods(val *[]*string) {
 	if err := j.validateSetAllowMethodsParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetAllowOriginRegexes(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetAllowOriginRegexes(val *[]*string) {
 	if err := j.validateSetAllowOriginRegexesParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetAllowOrigins(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetAllowOrigins(val *[]*string) {
 	if err := j.validateSetAllowOriginsParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetDisabled(val interface{}) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetDisabled(val any) {
 	if err := j.validateSetDisabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetExposeHeaders(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetExposeHeaders(val *[]*string) {
 	if err := j.validateSetExposeHeadersParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetInternalValue(val *ComputeRegionUrlMapDefaultRouteActionCorsPolicy) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetInternalValue(val *ComputeRegionUrlMapDefaultRouteActionCorsPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetMaxAge(val *float64) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetMaxAge(val *float64) {
 	if err := j.validateSetMaxAgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReferenc
 
 	return returns
 }
-

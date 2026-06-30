@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference
 
 	return nil
 }
-

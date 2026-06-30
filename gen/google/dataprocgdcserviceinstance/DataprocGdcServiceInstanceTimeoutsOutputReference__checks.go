@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocGdcServiceInstanceTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataprocGdcServiceInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocGdcServiceInstanceTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataprocGdcServiceInstanceTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataprocGdcServiceInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocGdcServiceInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewDataprocGdcServiceInstanceTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

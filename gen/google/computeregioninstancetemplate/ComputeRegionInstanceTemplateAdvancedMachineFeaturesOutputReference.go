@@ -12,9 +12,9 @@ type ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference interfa
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,12 +25,12 @@ type ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference interfa
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableNestedVirtualization() interface{}
-	SetEnableNestedVirtualization(val interface{})
-	EnableNestedVirtualizationInput() interface{}
-	EnableUefiNetworking() interface{}
-	SetEnableUefiNetworking(val interface{})
-	EnableUefiNetworkingInput() interface{}
+	EnableNestedVirtualization() any
+	SetEnableNestedVirtualization(val any)
+	EnableNestedVirtualizationInput() any
+	EnableUefiNetworking() any
+	SetEnableUefiNetworking(val any)
+	EnableUefiNetworkingInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeRegionInstanceTemplateAdvancedMachineFeatures
@@ -58,7 +58,7 @@ type ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference interfa
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,7 +87,7 @@ type ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference interfa
 	ResetVisibleCoreCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,8 +100,8 @@ type jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReferen
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) EnableNestedVirtualization() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) EnableNestedVirtualization() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableNestedVirtualization",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) EnableNestedVirtualizationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) EnableNestedVirtualizationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableNestedVirtualizationInput",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) EnableUefiNetworking() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) EnableUefiNetworking() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableUefiNetworking",
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) EnableUefiNetworkingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) EnableUefiNetworkingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enableUefiNetworkingInput",
@@ -290,7 +290,6 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	return returns
 }
 
-
 func NewComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference {
 	_init_.Initialize()
 
@@ -301,7 +300,7 @@ func NewComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference(terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionInstanceTemplate.ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -313,12 +312,12 @@ func NewComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference_Over
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionInstanceTemplate.ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,7 +328,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,7 +339,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetEnableNestedVirtualization(val interface{}) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetEnableNestedVirtualization(val any) {
 	if err := j.validateSetEnableNestedVirtualizationParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,7 +350,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetEnableUefiNetworking(val interface{}) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetEnableUefiNetworking(val any) {
 	if err := j.validateSetEnableUefiNetworkingParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,7 +361,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetInternalValue(val *ComputeRegionInstanceTemplateAdvancedMachineFeatures) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetInternalValue(val *ComputeRegionInstanceTemplateAdvancedMachineFeatures) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,7 +372,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetPerformanceMonitoringUnit(val *string) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetPerformanceMonitoringUnit(val *string) {
 	if err := j.validateSetPerformanceMonitoringUnitParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,7 +405,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetThreadsPerCore(val *float64) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetThreadsPerCore(val *float64) {
 	if err := j.validateSetThreadsPerCoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,7 +416,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetTurboMode(val *string) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetTurboMode(val *string) {
 	if err := j.validateSetTurboModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference)SetVisibleCoreCount(val *float64) {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) SetVisibleCoreCount(val *float64) {
 	if err := j.validateSetVisibleCoreCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,16 +451,16 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -493,7 +492,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -541,7 +540,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -557,7 +556,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -673,16 +672,16 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -701,4 +700,3 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputRef
 
 	return returns
 }
-

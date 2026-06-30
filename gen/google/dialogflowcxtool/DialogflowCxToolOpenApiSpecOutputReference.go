@@ -14,9 +14,9 @@ type DialogflowCxToolOpenApiSpecOutputReference interface {
 	AuthenticationInput() *DialogflowCxToolOpenApiSpecAuthentication
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type DialogflowCxToolOpenApiSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type DialogflowCxToolOpenApiSpecOutputReference interface {
 	ResetTlsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -111,8 +111,8 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) AuthenticationInp
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) TlsConfigInput() 
 	return returns
 }
 
-
 func NewDialogflowCxToolOpenApiSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxToolOpenApiSpecOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewDialogflowCxToolOpenApiSpecOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewDialogflowCxToolOpenApiSpecOutputReference_Override(d DialogflowCxToolOp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxTool.DialogflowCxToolOpenApiSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetInternalValue(val *DialogflowCxToolOpenApiSpec) {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) SetInternalValue(val *DialogflowCxToolOpenApiSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference)SetTextSchema(val *string) {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) SetTextSchema(val *string) {
 	if err := j.validateSetTextSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -348,16 +347,16 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -373,7 +372,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -389,7 +388,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -514,7 +513,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) PutAuthentication
 	_jsii_.InvokeVoid(
 		d,
 		"putAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -539,7 +538,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) PutServiceDirecto
 	_jsii_.InvokeVoid(
 		d,
 		"putServiceDirectoryConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -550,7 +549,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) PutTlsConfig(valu
 	_jsii_.InvokeVoid(
 		d,
 		"putTlsConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -578,16 +577,16 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) ResetTlsConfig() 
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) ToString() *strin
 
 	return returns
 }
-

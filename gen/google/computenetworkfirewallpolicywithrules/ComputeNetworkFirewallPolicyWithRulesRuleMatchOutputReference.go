@@ -12,9 +12,9 @@ type ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -45,7 +45,7 @@ type ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference interface {
 	InternalValue() *ComputeNetworkFirewallPolicyWithRulesRuleMatch
 	SetInternalValue(val *ComputeNetworkFirewallPolicyWithRulesRuleMatch)
 	Layer4Config() ComputeNetworkFirewallPolicyWithRulesRuleMatchLayer4ConfigList
-	Layer4ConfigInput() interface{}
+	Layer4ConfigInput() any
 	SrcAddressGroups() *[]*string
 	SetSrcAddressGroups(val *[]*string)
 	SrcAddressGroupsInput() *[]*string
@@ -59,7 +59,7 @@ type ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference interface {
 	SetSrcRegionCodes(val *[]*string)
 	SrcRegionCodesInput() *[]*string
 	SrcSecureTag() ComputeNetworkFirewallPolicyWithRulesRuleMatchSrcSecureTagList
-	SrcSecureTagInput() interface{}
+	SrcSecureTagInput() any
 	SrcThreatIntelligences() *[]*string
 	SetSrcThreatIntelligences(val *[]*string)
 	SrcThreatIntelligencesInput() *[]*string
@@ -74,7 +74,7 @@ type ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,8 +95,8 @@ type ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutLayer4Config(value interface{})
-	PutSrcSecureTag(value interface{})
+	PutLayer4Config(value any)
+	PutSrcSecureTag(value any)
 	ResetDestAddressGroups()
 	ResetDestFqdns()
 	ResetDestIpRanges()
@@ -110,7 +110,7 @@ type ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference interface {
 	ResetSrcThreatIntelligences()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -123,8 +123,8 @@ type jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) Layer4ConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) Layer4ConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"layer4ConfigInput",
@@ -383,8 +383,8 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SrcSecureTagInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SrcSecureTagInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"srcSecureTagInput",
@@ -433,7 +433,6 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	return returns
 }
 
-
 func NewComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference {
 	_init_.Initialize()
 
@@ -444,7 +443,7 @@ func NewComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference(terraformR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeNetworkFirewallPolicyWithRules.ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -456,12 +455,12 @@ func NewComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference_Override(c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeNetworkFirewallPolicyWithRules.ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -472,7 +471,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -483,7 +482,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetDestAddressGroups(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetDestAddressGroups(val *[]*string) {
 	if err := j.validateSetDestAddressGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,7 +493,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetDestFqdns(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetDestFqdns(val *[]*string) {
 	if err := j.validateSetDestFqdnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,7 +504,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetDestIpRanges(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetDestIpRanges(val *[]*string) {
 	if err := j.validateSetDestIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -516,7 +515,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetDestRegionCodes(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetDestRegionCodes(val *[]*string) {
 	if err := j.validateSetDestRegionCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,7 +526,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetDestThreatIntelligences(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetDestThreatIntelligences(val *[]*string) {
 	if err := j.validateSetDestThreatIntelligencesParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetInternalValue(val *ComputeNetworkFirewallPolicyWithRulesRuleMatch) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetInternalValue(val *ComputeNetworkFirewallPolicyWithRulesRuleMatch) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetSrcAddressGroups(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetSrcAddressGroups(val *[]*string) {
 	if err := j.validateSetSrcAddressGroupsParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetSrcFqdns(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetSrcFqdns(val *[]*string) {
 	if err := j.validateSetSrcFqdnsParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetSrcIpRanges(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetSrcIpRanges(val *[]*string) {
 	if err := j.validateSetSrcIpRangesParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetSrcRegionCodes(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetSrcRegionCodes(val *[]*string) {
 	if err := j.validateSetSrcRegionCodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -593,7 +592,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetSrcThreatIntelligences(val *[]*string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetSrcThreatIntelligences(val *[]*string) {
 	if err := j.validateSetSrcThreatIntelligencesParameters(val); err != nil {
 		panic(err)
 	}
@@ -604,7 +603,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -615,7 +614,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,16 +638,16 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -664,7 +663,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -680,7 +679,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -712,7 +711,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -728,7 +727,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -760,7 +759,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,32 +804,32 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) PutLayer4Config(value interface{}) {
+func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) PutLayer4Config(value any) {
 	if err := c.validatePutLayer4ConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putLayer4Config",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) PutSrcSecureTag(value interface{}) {
+func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) PutSrcSecureTag(value any) {
 	if err := c.validatePutSrcSecureTagParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSrcSecureTag",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -922,16 +921,16 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 	)
 }
 
-func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -950,4 +949,3 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesRuleMatchOutputReference
 
 	return returns
 }
-

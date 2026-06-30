@@ -98,7 +98,7 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) validateSetCriticalParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference) validateSetCriticalParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewPrivatecaCertificateConfigX509ConfigNameConstraintsOutputReferen
 
 	return nil
 }
-

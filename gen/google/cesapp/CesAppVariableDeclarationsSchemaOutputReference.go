@@ -18,9 +18,9 @@ type CesAppVariableDeclarationsSchemaOutputReference interface {
 	AnyOfInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,9 +50,9 @@ type CesAppVariableDeclarationsSchemaOutputReference interface {
 	Items() *string
 	SetItems(val *string)
 	ItemsInput() *string
-	Nullable() interface{}
-	SetNullable(val interface{})
-	NullableInput() interface{}
+	Nullable() any
+	SetNullable(val any)
+	NullableInput() any
 	PrefixItems() *string
 	SetPrefixItems(val *string)
 	PrefixItemsInput() *string
@@ -79,13 +79,13 @@ type CesAppVariableDeclarationsSchemaOutputReference interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	UniqueItems() interface{}
-	SetUniqueItems(val interface{})
-	UniqueItemsInput() interface{}
+	UniqueItems() any
+	SetUniqueItems(val any)
+	UniqueItemsInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -122,7 +122,7 @@ type CesAppVariableDeclarationsSchemaOutputReference interface {
 	ResetUniqueItems()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -175,8 +175,8 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) AnyOfInput()
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) ItemsInput()
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) Nullable() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) Nullable() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nullable",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) Nullable() i
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) NullableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) NullableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nullableInput",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) TypeInput() 
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) UniqueItems() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) UniqueItems() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"uniqueItems",
@@ -495,8 +495,8 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) UniqueItems(
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) UniqueItemsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) UniqueItemsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"uniqueItemsInput",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) UniqueItemsI
 	)
 	return returns
 }
-
 
 func NewCesAppVariableDeclarationsSchemaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesAppVariableDeclarationsSchemaOutputReference {
 	_init_.Initialize()
@@ -516,7 +515,7 @@ func NewCesAppVariableDeclarationsSchemaOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsSchemaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -528,12 +527,12 @@ func NewCesAppVariableDeclarationsSchemaOutputReference_Override(c CesAppVariabl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsSchemaOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetAdditionalProperties(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetAdditionalProperties(val *string) {
 	if err := j.validateSetAdditionalPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -544,7 +543,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetAdditional
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetAnyOf(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetAnyOf(val *string) {
 	if err := j.validateSetAnyOfParameters(val); err != nil {
 		panic(err)
 	}
@@ -555,7 +554,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetAnyOf(val 
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -566,7 +565,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -577,7 +576,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetDefault(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetDefault(val *string) {
 	if err := j.validateSetDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -588,7 +587,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetDefault(va
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetDefs(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetDefs(val *string) {
 	if err := j.validateSetDefsParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetDefs(val *
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -610,7 +609,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetDescriptio
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetEnum(val *[]*string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetEnum(val *[]*string) {
 	if err := j.validateSetEnumParameters(val); err != nil {
 		panic(err)
 	}
@@ -621,7 +620,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetEnum(val *
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetInternalValue(val *CesAppVariableDeclarationsSchema) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetInternalValue(val *CesAppVariableDeclarationsSchema) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,7 +631,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetItems(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetItems(val *string) {
 	if err := j.validateSetItemsParameters(val); err != nil {
 		panic(err)
 	}
@@ -643,7 +642,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetItems(val 
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetNullable(val interface{}) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetNullable(val any) {
 	if err := j.validateSetNullableParameters(val); err != nil {
 		panic(err)
 	}
@@ -654,7 +653,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetNullable(v
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetPrefixItems(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetPrefixItems(val *string) {
 	if err := j.validateSetPrefixItemsParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,7 +664,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetPrefixItem
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetProperties(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetProperties(val *string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetProperties
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetRef(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetRef(val *string) {
 	if err := j.validateSetRefParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetRef(val *s
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetRequired(val *[]*string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetRequired(val *[]*string) {
 	if err := j.validateSetRequiredParameters(val); err != nil {
 		panic(err)
 	}
@@ -698,7 +697,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetRequired(v
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,7 +708,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -720,7 +719,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -731,7 +730,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetTitle(val 
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetType(val *string) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -742,7 +741,7 @@ func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetType(val *
 	)
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference)SetUniqueItems(val interface{}) {
+func (j *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) SetUniqueItems(val any) {
 	if err := j.validateSetUniqueItemsParameters(val); err != nil {
 		panic(err)
 	}
@@ -766,16 +765,16 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,7 +790,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -807,7 +806,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -823,7 +822,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -839,7 +838,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -871,7 +870,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -887,7 +886,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -932,7 +931,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1051,16 +1050,16 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) ResetUniqueI
 	)
 }
 
-func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1079,4 +1078,3 @@ func (c *jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference) ToString() *
 
 	return returns
 }
-

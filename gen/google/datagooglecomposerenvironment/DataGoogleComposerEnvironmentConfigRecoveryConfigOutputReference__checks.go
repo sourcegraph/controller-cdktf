@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigRecoveryConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigRecoveryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigRecoveryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComposerEnvironmentConfigRecoveryConfigOutputReference
 
 	return nil
 }
-

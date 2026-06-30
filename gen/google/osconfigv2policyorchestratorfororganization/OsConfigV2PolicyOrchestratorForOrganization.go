@@ -18,15 +18,15 @@ type OsConfigV2PolicyOrchestratorForOrganization interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -74,11 +74,11 @@ type OsConfigV2PolicyOrchestratorForOrganization interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	State() *string
 	SetState(val *string)
@@ -87,19 +87,19 @@ type OsConfigV2PolicyOrchestratorForOrganization interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() OsConfigV2PolicyOrchestratorForOrganizationTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -117,7 +117,7 @@ type OsConfigV2PolicyOrchestratorForOrganization interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -129,7 +129,7 @@ type OsConfigV2PolicyOrchestratorForOrganization interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -148,17 +148,17 @@ type OsConfigV2PolicyOrchestratorForOrganization interface {
 	ResetOverrideLogicalId()
 	ResetState()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for OsConfigV2PolicyOrchestratorForOrganization
@@ -196,8 +196,8 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) CdktfStack() cdk
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Connection() int
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -486,8 +486,8 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Provider() cdktf
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -496,8 +496,8 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Provisioners() *
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -556,8 +556,8 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) TerraformLabels(
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -586,8 +586,8 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) Timeouts() OsCon
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -606,7 +606,6 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) UpdateTime() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/os_config_v2_policy_orchestrator_for_organization google_os_config_v2_policy_orchestrator_for_organization} Resource.
 func NewOsConfigV2PolicyOrchestratorForOrganization(scope constructs.Construct, id *string, config *OsConfigV2PolicyOrchestratorForOrganizationConfig) OsConfigV2PolicyOrchestratorForOrganization {
 	_init_.Initialize()
@@ -618,7 +617,7 @@ func NewOsConfigV2PolicyOrchestratorForOrganization(scope constructs.Construct, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigV2PolicyOrchestratorForOrganization.OsConfigV2PolicyOrchestratorForOrganization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -631,12 +630,12 @@ func NewOsConfigV2PolicyOrchestratorForOrganization_Override(o OsConfigV2PolicyO
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigV2PolicyOrchestratorForOrganization.OsConfigV2PolicyOrchestratorForOrganization",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetAction(val *string) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetAction(val *string) {
 	if err := j.validateSetActionParameters(val); err != nil {
 		panic(err)
 	}
@@ -647,7 +646,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetAction(val *st
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetConnection(val interface{}) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -658,7 +657,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetConnection(val
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetCount(val interface{}) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -669,7 +668,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetCount(val inte
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -677,7 +676,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetDependsOn(val 
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetDescription(val *string) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetDescription(va
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -696,7 +695,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetForEach(val cd
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetId(val *string) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -707,7 +706,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetId(val *string
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -718,7 +717,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetLabels(val *ma
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -729,7 +728,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetLifecycle(val 
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetOrganizationId(val *string) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetOrganizationId(val *string) {
 	if err := j.validateSetOrganizationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -740,7 +739,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetOrganizationId
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetPolicyOrchestratorId(val *string) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetPolicyOrchestratorId(val *string) {
 	if err := j.validateSetPolicyOrchestratorIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -751,7 +750,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetPolicyOrchestr
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -759,7 +758,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetProvider(val c
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -770,7 +769,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetProvisioners(v
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization)SetState(val *string) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SetState(val *string) {
 	if err := j.validateSetStateParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func OsConfigV2PolicyOrchestratorForOrganization_GenerateConfigForImport(scope c
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.osConfigV2PolicyOrchestratorForOrganization.OsConfigV2PolicyOrchestratorForOrganization",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func OsConfigV2PolicyOrchestratorForOrganization_GenerateConfigForImport(scope c
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OsConfigV2PolicyOrchestratorForOrganization_IsConstruct(x interface{}) *bool {
+func OsConfigV2PolicyOrchestratorForOrganization_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOsConfigV2PolicyOrchestratorForOrganization_IsConstructParameters(x); err != nil {
@@ -828,7 +827,7 @@ func OsConfigV2PolicyOrchestratorForOrganization_IsConstruct(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.osConfigV2PolicyOrchestratorForOrganization.OsConfigV2PolicyOrchestratorForOrganization",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func OsConfigV2PolicyOrchestratorForOrganization_IsConstruct(x interface{}) *boo
 }
 
 // Experimental.
-func OsConfigV2PolicyOrchestratorForOrganization_IsTerraformElement(x interface{}) *bool {
+func OsConfigV2PolicyOrchestratorForOrganization_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOsConfigV2PolicyOrchestratorForOrganization_IsTerraformElementParameters(x); err != nil {
@@ -847,7 +846,7 @@ func OsConfigV2PolicyOrchestratorForOrganization_IsTerraformElement(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.osConfigV2PolicyOrchestratorForOrganization.OsConfigV2PolicyOrchestratorForOrganization",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -855,7 +854,7 @@ func OsConfigV2PolicyOrchestratorForOrganization_IsTerraformElement(x interface{
 }
 
 // Experimental.
-func OsConfigV2PolicyOrchestratorForOrganization_IsTerraformResource(x interface{}) *bool {
+func OsConfigV2PolicyOrchestratorForOrganization_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateOsConfigV2PolicyOrchestratorForOrganization_IsTerraformResourceParameters(x); err != nil {
@@ -866,7 +865,7 @@ func OsConfigV2PolicyOrchestratorForOrganization_IsTerraformResource(x interface
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.osConfigV2PolicyOrchestratorForOrganization.OsConfigV2PolicyOrchestratorForOrganization",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -891,31 +890,31 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) AddMoveTarget(mo
 	_jsii_.InvokeVoid(
 		o,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetBooleanAttrib
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetBooleanMapAtt
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetListAttribute
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -979,7 +978,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetNumberAttribu
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,7 +994,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetNumberListAtt
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1011,7 +1010,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetNumberMapAttr
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1027,7 +1026,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetStringAttribu
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1043,15 +1042,15 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) GetStringMapAttr
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) HasResourceMove() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1070,7 +1069,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ImportFrom(id *s
 	_jsii_.InvokeVoid(
 		o,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1083,7 +1082,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) InterpolationFor
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1097,18 +1096,18 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) MoveFromId(id *s
 	_jsii_.InvokeVoid(
 		o,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) MoveTo(moveTarget *string, index interface{}) {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) MoveTo(moveTarget *string, index any) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1119,7 +1118,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) MoveToId(id *str
 	_jsii_.InvokeVoid(
 		o,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1130,7 +1129,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) OverrideLogicalI
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1141,7 +1140,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) PutOrchestratedR
 	_jsii_.InvokeVoid(
 		o,
 		"putOrchestratedResource",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1152,7 +1151,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) PutOrchestration
 	_jsii_.InvokeVoid(
 		o,
 		"putOrchestrationScope",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1163,7 +1162,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) PutTimeouts(valu
 	_jsii_.InvokeVoid(
 		o,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1223,8 +1222,8 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ResetTimeouts() 
 	)
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1236,8 +1235,8 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SynthesizeAttrib
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1249,8 +1248,8 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) SynthesizeHclAtt
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1262,8 +1261,8 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ToHclTerraform()
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1288,8 +1287,8 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ToString() *stri
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1300,4 +1299,3 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorForOrganization) ToTerraform() in
 
 	return returns
 }
-

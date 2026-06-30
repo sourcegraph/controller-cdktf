@@ -1,6 +1,5 @@
 package datalosspreventionjobtrigger
 
-
 type DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig struct {
 	// When the job is started by a JobTrigger we will automatically figure out a valid startTime to avoid scanning files that have not been modified since the last time the JobTrigger executed.
 	//
@@ -9,7 +8,7 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig struct {
 	// used in the last run of the JobTrigger.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_job_trigger#enable_auto_population_of_timespan_config DataLossPreventionJobTrigger#enable_auto_population_of_timespan_config}
-	EnableAutoPopulationOfTimespanConfig interface{} `field:"optional" json:"enableAutoPopulationOfTimespanConfig" yaml:"enableAutoPopulationOfTimespanConfig"`
+	EnableAutoPopulationOfTimespanConfig any `field:"optional" json:"enableAutoPopulationOfTimespanConfig" yaml:"enableAutoPopulationOfTimespanConfig"`
 	// Exclude files, tables, or rows newer than this value. If not set, no upper time limit is applied.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_job_trigger#end_time DataLossPreventionJobTrigger#end_time}
@@ -23,4 +22,3 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_loss_prevention_job_trigger#timestamp_field DataLossPreventionJobTrigger#timestamp_field}
 	TimestampField *DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampField `field:"optional" json:"timestampField" yaml:"timestampField"`
 }
-

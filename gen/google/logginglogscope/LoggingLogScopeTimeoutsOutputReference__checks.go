@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingLogScopeTimeoutsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLogScopeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingLogScopeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_LoggingLogScopeTimeoutsOutputReference) validateSetDeletePara
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLogScopeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingLogScopeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoggingLogScopeTimeoutsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

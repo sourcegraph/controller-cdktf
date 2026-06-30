@@ -120,7 +120,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSmsRegionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigSmsRegionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewIdentityPlatformConfigSmsRegionConfigOutputReferenceParameters(t
 
 	return nil
 }
-

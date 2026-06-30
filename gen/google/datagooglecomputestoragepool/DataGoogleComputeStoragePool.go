@@ -16,11 +16,11 @@ type DataGoogleComputeStoragePool interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	DeletionProtection() cdktf.IResolvable
 	// Experimental.
@@ -63,7 +63,7 @@ type DataGoogleComputeStoragePool interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ResourceStatus() DataGoogleComputeStoragePoolResourceStatusList
 	Status() DataGoogleComputeStoragePoolStatusList
 	StoragePoolType() *string
@@ -71,16 +71,16 @@ type DataGoogleComputeStoragePool interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Zone() *string
 	SetZone(val *string)
 	ZoneInput() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,18 +106,18 @@ type DataGoogleComputeStoragePool interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleComputeStoragePool
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool) CdktfStack() cdktf.TerraformSta
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeStoragePool) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeStoragePool) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,8 +405,8 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool) Provider() cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleComputeStoragePool) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool) TerraformLabels() cdktf.StringM
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleComputeStoragePool) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,7 +505,6 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool) ZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_storage_pool google_compute_storage_pool} Data Source.
 func NewDataGoogleComputeStoragePool(scope constructs.Construct, id *string, config *DataGoogleComputeStoragePoolConfig) DataGoogleComputeStoragePool {
 	_init_.Initialize()
@@ -517,7 +516,7 @@ func NewDataGoogleComputeStoragePool(scope constructs.Construct, id *string, con
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -530,12 +529,12 @@ func NewDataGoogleComputeStoragePool_Override(d DataGoogleComputeStoragePool, sc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleComputeStoragePool) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleComputeStoragePool) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleComputeStoragePool) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -562,7 +561,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool)SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleComputeStoragePool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,7 +572,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool)SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleComputeStoragePool) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleComputeStoragePool) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleComputeStoragePool) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePool)SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePool)SetZone(val *string) {
+func (j *jsiiProxy_DataGoogleComputeStoragePool) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -626,7 +625,7 @@ func DataGoogleComputeStoragePool_GenerateConfigForImport(scope constructs.Const
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func DataGoogleComputeStoragePool_GenerateConfigForImport(scope constructs.Const
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleComputeStoragePool_IsConstruct(x interface{}) *bool {
+func DataGoogleComputeStoragePool_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeStoragePool_IsConstructParameters(x); err != nil {
@@ -661,7 +660,7 @@ func DataGoogleComputeStoragePool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func DataGoogleComputeStoragePool_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeStoragePool_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleComputeStoragePool_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeStoragePool_IsTerraformDataSourceParameters(x); err != nil {
@@ -680,7 +679,7 @@ func DataGoogleComputeStoragePool_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func DataGoogleComputeStoragePool_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleComputeStoragePool_IsTerraformElement(x interface{}) *bool {
+func DataGoogleComputeStoragePool_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleComputeStoragePool_IsTerraformElementParameters(x); err != nil {
@@ -699,7 +698,7 @@ func DataGoogleComputeStoragePool_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -717,27 +716,27 @@ func DataGoogleComputeStoragePool_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePool) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleComputeStoragePool) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleComputeStoragePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) GetBooleanAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) GetBooleanMapAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) GetListAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) GetNumberAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) GetNumberListAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) GetNumberMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,7 +848,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) GetStringAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -865,7 +864,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) GetStringMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -881,7 +880,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) InterpolationForAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -895,7 +894,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) OverrideLogicalId(newLogicalId 
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -915,8 +914,8 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePool) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeStoragePool) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -928,8 +927,8 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) SynthesizeAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePool) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleComputeStoragePool) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -941,8 +940,8 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) SynthesizeHclAttributes() *map[
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePool) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeStoragePool) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -954,8 +953,8 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePool) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeStoragePool) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -980,8 +979,8 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePool) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleComputeStoragePool) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -992,4 +991,3 @@ func (d *jsiiProxy_DataGoogleComputeStoragePool) ToTerraform() interface{} {
 
 	return returns
 }
-

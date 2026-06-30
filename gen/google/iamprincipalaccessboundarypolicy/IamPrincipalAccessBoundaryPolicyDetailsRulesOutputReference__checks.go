@@ -98,7 +98,7 @@ func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReferenceParam
 
 	return nil
 }
-

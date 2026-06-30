@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContactCenterInsightsAssessmentRuleScheduleInfoOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAssessmentRuleScheduleInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAssessmentRuleScheduleInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewContactCenterInsightsAssessmentRuleScheduleInfoOutputReferencePa
 
 	return nil
 }
-

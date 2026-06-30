@@ -1,6 +1,5 @@
 package dataplexdatascan
 
-
 type DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation struct {
 	// column statistics. Possible values: ["STATISTIC_UNDEFINED", "MEAN", "MIN", "MAX"].
 	//
@@ -23,12 +22,11 @@ type DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation struct {
 	// Only relevant if a maxValue has been defined. Default = false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#strict_max_enabled DataplexDatascan#strict_max_enabled}
-	StrictMaxEnabled interface{} `field:"optional" json:"strictMaxEnabled" yaml:"strictMaxEnabled"`
+	StrictMaxEnabled any `field:"optional" json:"strictMaxEnabled" yaml:"strictMaxEnabled"`
 	// Whether column statistic needs to be strictly greater than ('>') the minimum, or if equality is allowed.
 	//
 	// Only relevant if a minValue has been defined. Default = false.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_datascan#strict_min_enabled DataplexDatascan#strict_min_enabled}
-	StrictMinEnabled interface{} `field:"optional" json:"strictMinEnabled" yaml:"strictMinEnabled"`
+	StrictMinEnabled any `field:"optional" json:"strictMinEnabled" yaml:"strictMinEnabled"`
 }
-

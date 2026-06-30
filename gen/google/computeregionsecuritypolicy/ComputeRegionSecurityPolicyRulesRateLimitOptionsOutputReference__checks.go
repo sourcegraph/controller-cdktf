@@ -101,7 +101,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validatePutEnforceOnKeyConfigsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validatePutEnforceOnKeyConfigsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -291,4 +291,3 @@ func validateNewComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferenceP
 
 	return nil
 }
-

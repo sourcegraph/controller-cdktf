@@ -6,9 +6,9 @@ import (
 
 type DatastreamStreamConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DatastreamStreamConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// destination_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#destination_config DatastreamStream#destination_config}
@@ -50,7 +50,7 @@ type DatastreamStreamConfig struct {
 	// Create the stream without validating it.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#create_without_validation DatastreamStream#create_without_validation}
-	CreateWithoutValidation interface{} `field:"optional" json:"createWithoutValidation" yaml:"createWithoutValidation"`
+	CreateWithoutValidation any `field:"optional" json:"createWithoutValidation" yaml:"createWithoutValidation"`
 	// A reference to a KMS encryption key.
 	//
 	// If provided, it will be used to encrypt the data. If left blank, data
@@ -84,10 +84,9 @@ type DatastreamStreamConfig struct {
 	// rule_sets block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#rule_sets DatastreamStream#rule_sets}
-	RuleSets interface{} `field:"optional" json:"ruleSets" yaml:"ruleSets"`
+	RuleSets any `field:"optional" json:"ruleSets" yaml:"ruleSets"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/datastream_stream#timeouts DatastreamStream#timeouts}
 	Timeouts *DatastreamStreamTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

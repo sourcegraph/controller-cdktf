@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiDatasetEncryptionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewVertexAiDatasetEncryptionSpecOutputReferenceParameters(terraform
 
 	return nil
 }
-

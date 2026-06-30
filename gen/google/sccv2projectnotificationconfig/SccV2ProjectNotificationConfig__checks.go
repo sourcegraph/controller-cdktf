@@ -19,7 +19,7 @@ func (s *jsiiProxy_SccV2ProjectNotificationConfig) validateAddMoveTargetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SccV2ProjectNotificationConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_SccV2ProjectNotificationConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_SccV2ProjectNotificationConfig) validateMoveFromIdParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SccV2ProjectNotificationConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_SccV2ProjectNotificationConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateSccV2ProjectNotificationConfig_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateSccV2ProjectNotificationConfig_IsConstructParameters(x interface{}) error {
+func validateSccV2ProjectNotificationConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateSccV2ProjectNotificationConfig_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateSccV2ProjectNotificationConfig_IsTerraformElementParameters(x interface{}) error {
+func validateSccV2ProjectNotificationConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateSccV2ProjectNotificationConfig_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateSccV2ProjectNotificationConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateSccV2ProjectNotificationConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -274,7 +274,7 @@ func (j *jsiiProxy_SccV2ProjectNotificationConfig) validateSetConfigIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_SccV2ProjectNotificationConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SccV2ProjectNotificationConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -307,7 +307,7 @@ func (j *jsiiProxy_SccV2ProjectNotificationConfig) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_SccV2ProjectNotificationConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_SccV2ProjectNotificationConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -404,7 +404,7 @@ func (j *jsiiProxy_SccV2ProjectNotificationConfig) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SccV2ProjectNotificationConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_SccV2ProjectNotificationConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewSccV2ProjectNotificationConfigParameters(scope constructs.Constr
 
 	return nil
 }
-

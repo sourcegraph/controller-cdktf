@@ -106,7 +106,7 @@ func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewStorageBatchOperationsJobPutMetadataOutputReferenceParameters(te
 
 	return nil
 }
-

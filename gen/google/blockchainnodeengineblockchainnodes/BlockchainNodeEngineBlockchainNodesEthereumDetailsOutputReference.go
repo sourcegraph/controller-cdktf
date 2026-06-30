@@ -11,17 +11,17 @@ import (
 type BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference interface {
 	cdktf.ComplexObject
 	AdditionalEndpoints() BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsList
-	ApiEnableAdmin() interface{}
-	SetApiEnableAdmin(val interface{})
-	ApiEnableAdminInput() interface{}
-	ApiEnableDebug() interface{}
-	SetApiEnableDebug(val interface{})
-	ApiEnableDebugInput() interface{}
+	ApiEnableAdmin() any
+	SetApiEnableAdmin(val any)
+	ApiEnableAdminInput() any
+	ApiEnableDebug() any
+	SetApiEnableDebug(val any)
+	ApiEnableDebugInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -63,7 +63,7 @@ type BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference interface
 	ResetValidatorConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ApiEnableAdmin() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ApiEnableAdmin() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"apiEnableAdmin",
@@ -129,8 +129,8 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ApiEnableAdminInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ApiEnableAdminInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"apiEnableAdminInput",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ApiEnableDebug() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ApiEnableDebug() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"apiEnableDebug",
@@ -149,8 +149,8 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ApiEnableDebugInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ApiEnableDebugInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"apiEnableDebugInput",
@@ -159,8 +159,8 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -349,7 +349,6 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	return returns
 }
 
-
 func NewBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference {
 	_init_.Initialize()
 
@@ -360,7 +359,7 @@ func NewBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -372,12 +371,12 @@ func NewBlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.blockchainNodeEngineBlockchainNodes.BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetApiEnableAdmin(val interface{}) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetApiEnableAdmin(val any) {
 	if err := j.validateSetApiEnableAdminParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetApiEnableDebug(val interface{}) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetApiEnableDebug(val any) {
 	if err := j.validateSetApiEnableDebugParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetConsensusClient(val *string) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetConsensusClient(val *string) {
 	if err := j.validateSetConsensusClientParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetExecutionClient(val *string) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetExecutionClient(val *string) {
 	if err := j.validateSetExecutionClientParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetInternalValue(val *BlockchainNodeEngineBlockchainNodesEthereumDetails) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetInternalValue(val *BlockchainNodeEngineBlockchainNodesEthereumDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetNodeType(val *string) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetNodeType(val *string) {
 	if err := j.validateSetNodeTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,16 +510,16 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	return returns
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -536,7 +535,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -552,7 +551,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -568,7 +567,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -616,7 +615,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -632,7 +631,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.InvokeVoid(
 		b,
 		"putFetchhDetails",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -702,7 +701,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	_jsii_.InvokeVoid(
 		b,
 		"putValidatorConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -770,16 +769,16 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	)
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -798,4 +797,3 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 
 	return returns
 }
-

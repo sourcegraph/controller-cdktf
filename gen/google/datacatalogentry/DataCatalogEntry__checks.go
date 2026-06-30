@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataCatalogEntry) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntry) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCatalogEntry) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataCatalogEntry) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntry) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataCatalogEntry) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateDataCatalogEntry_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateDataCatalogEntry_IsConstructParameters(x interface{}) error {
+func validateDataCatalogEntry_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateDataCatalogEntry_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataCatalogEntry_IsTerraformElementParameters(x interface{}) error {
+func validateDataCatalogEntry_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateDataCatalogEntry_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateDataCatalogEntry_IsTerraformResourceParameters(x interface{}) error {
+func validateDataCatalogEntry_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateDataCatalogEntry_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntry) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogEntry) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataCatalogEntry) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntry) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogEntry) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataCatalogEntry) validateSetLinkedResourceParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntry) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataCatalogEntry) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -508,4 +508,3 @@ func validateNewDataCatalogEntryParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

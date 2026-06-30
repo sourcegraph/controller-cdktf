@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVault",
-		reflect.TypeOf((*NetappBackupVault)(nil)).Elem(),
+		reflect.TypeFor[NetappBackupVault](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappBackupVault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,11 +103,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicy",
-		reflect.TypeOf((*NetappBackupVaultBackupRetentionPolicy)(nil)).Elem(),
+		reflect.TypeFor[NetappBackupVaultBackupRetentionPolicy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicyOutputReference",
-		reflect.TypeOf((*NetappBackupVaultBackupRetentionPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappBackupVaultBackupRetentionPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupMinimumEnforcedRetentionDays", GoGetter: "BackupMinimumEnforcedRetentionDays"},
 			_jsii_.MemberProperty{JsiiProperty: "backupMinimumEnforcedRetentionDaysInput", GoGetter: "BackupMinimumEnforcedRetentionDaysInput"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weeklyBackupImmutable", GoGetter: "WeeklyBackupImmutable"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyBackupImmutableInput", GoGetter: "WeeklyBackupImmutableInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,15 +153,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultConfig",
-		reflect.TypeOf((*NetappBackupVaultConfig)(nil)).Elem(),
+		reflect.TypeFor[NetappBackupVaultConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultTimeouts",
-		reflect.TypeOf((*NetappBackupVaultTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetappBackupVaultTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultTimeoutsOutputReference",
-		reflect.TypeOf((*NetappBackupVaultTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetappBackupVaultTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetappBackupVaultTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

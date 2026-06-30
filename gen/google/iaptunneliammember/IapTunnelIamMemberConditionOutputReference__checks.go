@@ -98,7 +98,7 @@ func (i *jsiiProxy_IapTunnelIamMemberConditionOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_IapTunnelIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IapTunnelIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewIapTunnelIamMemberConditionOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

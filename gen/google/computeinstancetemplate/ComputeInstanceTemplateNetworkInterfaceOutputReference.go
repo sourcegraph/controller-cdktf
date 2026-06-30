@@ -11,14 +11,14 @@ import (
 type ComputeInstanceTemplateNetworkInterfaceOutputReference interface {
 	cdktf.ComplexObject
 	AccessConfig() ComputeInstanceTemplateNetworkInterfaceAccessConfigList
-	AccessConfigInput() interface{}
+	AccessConfigInput() any
 	AliasIpRange() ComputeInstanceTemplateNetworkInterfaceAliasIpRangeList
-	AliasIpRangeInput() interface{}
+	AliasIpRangeInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -37,10 +37,10 @@ type ComputeInstanceTemplateNetworkInterfaceOutputReference interface {
 	InternalIpv6PrefixLength() *float64
 	SetInternalIpv6PrefixLength(val *float64)
 	InternalIpv6PrefixLengthInput() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Ipv6AccessConfig() ComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigList
-	Ipv6AccessConfigInput() interface{}
+	Ipv6AccessConfigInput() any
 	Ipv6AccessType() *string
 	Ipv6Address() *string
 	SetIpv6Address(val *string)
@@ -85,7 +85,7 @@ type ComputeInstanceTemplateNetworkInterfaceOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,9 +106,9 @@ type ComputeInstanceTemplateNetworkInterfaceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAccessConfig(value interface{})
-	PutAliasIpRange(value interface{})
-	PutIpv6AccessConfig(value interface{})
+	PutAccessConfig(value any)
+	PutAliasIpRange(value any)
+	PutIpv6AccessConfig(value any)
 	ResetAccessConfig()
 	ResetAliasIpRange()
 	ResetIgmpQuery()
@@ -126,7 +126,7 @@ type ComputeInstanceTemplateNetworkInterfaceOutputReference interface {
 	ResetVlan()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Acces
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) AccessConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) AccessConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"accessConfigInput",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Alias
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) AliasIpRangeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) AliasIpRangeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"aliasIpRangeInput",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Alias
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -279,8 +279,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Ipv6A
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Ipv6AccessConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Ipv6AccessConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipv6AccessConfigInput",
@@ -539,7 +539,6 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) VlanI
 	return returns
 }
 
-
 func NewComputeInstanceTemplateNetworkInterfaceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeInstanceTemplateNetworkInterfaceOutputReference {
 	_init_.Initialize()
 
@@ -550,7 +549,7 @@ func NewComputeInstanceTemplateNetworkInterfaceOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateNetworkInterfaceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -562,12 +561,12 @@ func NewComputeInstanceTemplateNetworkInterfaceOutputReference_Override(c Comput
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateNetworkInterfaceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetIgmpQuery(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetIgmpQuery(val *string) {
 	if err := j.validateSetIgmpQueryParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetIgm
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetInternalIpv6PrefixLength(val *float64) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetInternalIpv6PrefixLength(val *float64) {
 	if err := j.validateSetInternalIpv6PrefixLengthParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -622,7 +621,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetIpv6Address(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetIpv6Address(val *string) {
 	if err := j.validateSetIpv6AddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetIpv
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetNetwork(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetNetwork(val *string) {
 	if err := j.validateSetNetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetNet
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetNetworkAttachment(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetNetworkAttachment(val *string) {
 	if err := j.validateSetNetworkAttachmentParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetNet
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetNetworkIp(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetNetworkIp(val *string) {
 	if err := j.validateSetNetworkIpParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetNet
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetNicType(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetNicType(val *string) {
 	if err := j.validateSetNicTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetNic
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetQueueCount(val *float64) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetQueueCount(val *float64) {
 	if err := j.validateSetQueueCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -688,7 +687,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetQue
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetStackType(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetStackType(val *string) {
 	if err := j.validateSetStackTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -699,7 +698,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetSta
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetSubnetwork(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetSub
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetSubnetworkProject(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetSubnetworkProject(val *string) {
 	if err := j.validateSetSubnetworkProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -721,7 +720,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetSub
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -732,7 +731,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -743,7 +742,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference)SetVlan(val *float64) {
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) SetVlan(val *float64) {
 	if err := j.validateSetVlanParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,16 +766,16 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Compu
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -792,7 +791,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -808,7 +807,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetBo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -824,7 +823,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetLi
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetNu
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) GetSt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -933,43 +932,43 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Inter
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) PutAccessConfig(value interface{}) {
+func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) PutAccessConfig(value any) {
 	if err := c.validatePutAccessConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAccessConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) PutAliasIpRange(value interface{}) {
+func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) PutAliasIpRange(value any) {
 	if err := c.validatePutAliasIpRangeParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAliasIpRange",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) PutIpv6AccessConfig(value interface{}) {
+func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) PutIpv6AccessConfig(value any) {
 	if err := c.validatePutIpv6AccessConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putIpv6AccessConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1093,16 +1092,16 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1121,4 +1120,3 @@ func (c *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceOutputReference) ToStr
 
 	return returns
 }
-

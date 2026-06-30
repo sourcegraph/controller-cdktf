@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion",
-		reflect.TypeOf((*ParameterManagerParameterVersion)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterVersion](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ParameterManagerParameterVersion{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,15 +81,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig",
-		reflect.TypeOf((*ParameterManagerParameterVersionConfig)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterVersionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts",
-		reflect.TypeOf((*ParameterManagerParameterVersionTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterVersionTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference",
-		reflect.TypeOf((*ParameterManagerParameterVersionTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ParameterManagerParameterVersionTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ParameterManagerParameterVersionTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

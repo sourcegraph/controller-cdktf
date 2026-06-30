@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplate",
-		reflect.TypeOf((*DataprocSessionTemplate)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplate](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,7 +93,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplate{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -101,23 +101,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateConfig",
-		reflect.TypeOf((*DataprocSessionTemplateConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfig",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfig",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfigExecutionConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfigExecutionConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -144,7 +144,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userWorkloadAuthenticationType", GoGetter: "UserWorkloadAuthenticationType"},
 			_jsii_.MemberProperty{JsiiProperty: "userWorkloadAuthenticationTypeInput", GoGetter: "UserWorkloadAuthenticationTypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -152,7 +152,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfig", GoGetter: "AuthenticationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "authenticationConfigInput", GoGetter: "AuthenticationConfigInput"},
@@ -201,7 +201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -209,7 +209,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigOutputReference",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplateEnvironmentConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -249,11 +249,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfig",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfigPeripheralsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfigPeripheralsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -284,7 +284,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -292,11 +292,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference",
-		reflect.TypeOf((*DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -323,7 +323,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -331,11 +331,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateJupyterSession",
-		reflect.TypeOf((*DataprocSessionTemplateJupyterSession)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateJupyterSession](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateJupyterSessionOutputReference",
-		reflect.TypeOf((*DataprocSessionTemplateJupyterSessionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateJupyterSessionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -365,7 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplateJupyterSessionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -373,11 +373,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateRuntimeConfig",
-		reflect.TypeOf((*DataprocSessionTemplateRuntimeConfig)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateRuntimeConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateRuntimeConfigOutputReference",
-		reflect.TypeOf((*DataprocSessionTemplateRuntimeConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateRuntimeConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -411,7 +411,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplateRuntimeConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -419,11 +419,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateSparkConnectSession",
-		reflect.TypeOf((*DataprocSessionTemplateSparkConnectSession)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateSparkConnectSession](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateSparkConnectSessionOutputReference",
-		reflect.TypeOf((*DataprocSessionTemplateSparkConnectSessionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateSparkConnectSessionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -447,7 +447,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplateSparkConnectSessionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -455,11 +455,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateTimeouts",
-		reflect.TypeOf((*DataprocSessionTemplateTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateTimeoutsOutputReference",
-		reflect.TypeOf((*DataprocSessionTemplateTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataprocSessionTemplateTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -492,7 +492,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataprocSessionTemplateTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

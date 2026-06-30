@@ -34,7 +34,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsQueryTermsList) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsQueryTermsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsQueryTermsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDiscoveryEngineControlConditionsQueryTermsListParameters(terrafo
 
 	return nil
 }
-

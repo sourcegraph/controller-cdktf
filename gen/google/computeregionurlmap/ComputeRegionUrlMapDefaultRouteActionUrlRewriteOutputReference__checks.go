@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReferencePa
 
 	return nil
 }
-

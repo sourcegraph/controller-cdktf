@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesToolDataStoreToolModalityConfigsGroundingConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsGroundingConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewCesToolDataStoreToolModalityConfigsGroundingConfigOutputReferenc
 
 	return nil
 }
-

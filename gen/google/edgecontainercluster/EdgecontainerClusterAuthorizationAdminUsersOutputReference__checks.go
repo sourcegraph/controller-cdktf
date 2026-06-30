@@ -98,7 +98,7 @@ func (e *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewEdgecontainerClusterAuthorizationAdminUsersOutputReferenceParame
 
 	return nil
 }
-

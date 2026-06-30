@@ -17,9 +17,9 @@ type BigtableInstanceClusterOutputReference interface {
 	ClusterIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -32,8 +32,8 @@ type BigtableInstanceClusterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
@@ -61,7 +61,7 @@ type BigtableInstanceClusterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,7 +91,7 @@ type BigtableInstanceClusterOutputReference interface {
 	ResetZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference) ClusterIdInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -324,7 +324,6 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference) ZoneInput() *string {
 	return returns
 }
 
-
 func NewBigtableInstanceClusterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigtableInstanceClusterOutputReference {
 	_init_.Initialize()
 
@@ -335,7 +334,7 @@ func NewBigtableInstanceClusterOutputReference(terraformResource cdktf.IInterpol
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -347,12 +346,12 @@ func NewBigtableInstanceClusterOutputReference_Override(b BigtableInstanceCluste
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetClusterId(val *string) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,7 +362,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetClusterId(val *stri
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,7 +373,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,7 +384,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,7 +395,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetKmsKeyName(val *string) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetKmsKeyName(val *string) {
 	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,7 +406,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetKmsKeyName(val *str
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetNodeScalingFactor(val *string) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetNodeScalingFactor(val *string) {
 	if err := j.validateSetNodeScalingFactorParameters(val); err != nil {
 		panic(err)
 	}
@@ -418,7 +417,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetNodeScalingFactor(v
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetNumNodes(val *float64) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetNumNodes(val *float64) {
 	if err := j.validateSetNumNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +428,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetNumNodes(val *float
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetStorageType(val *string) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetStorageType(val *string) {
 	if err := j.validateSetStorageTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetStorageType(val *st
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_BigtableInstanceClusterOutputReference)SetZone(val *string) {
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) SetZone(val *string) {
 	if err := j.validateSetZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,16 +485,16 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetBooleanAttribute(t
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetBooleanMapAttribut
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetListAttribute(terr
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -559,7 +558,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetNumberAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -575,7 +574,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetNumberListAttribut
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -591,7 +590,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetNumberMapAttribute
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetStringAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) GetStringMapAttribute
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) PutAutoscalingConfig(
 	_jsii_.InvokeVoid(
 		b,
 		"putAutoscalingConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -718,16 +717,16 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) ResetZone() {
 	)
 }
 
-func (b *jsiiProxy_BigtableInstanceClusterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigtableInstanceClusterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -746,4 +745,3 @@ func (b *jsiiProxy_BigtableInstanceClusterOutputReference) ToString() *string {
 
 	return returns
 }
-

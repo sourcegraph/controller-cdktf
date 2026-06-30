@@ -19,7 +19,7 @@ func (a *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateAddMoveTargetPa
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateMoveFromIdParam
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateOverrideLogical
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineApplicationUrlDispatchRules) validatePutDispatchRulesParameters(value interface{}) error {
+func (a *jsiiProxy_AppEngineApplicationUrlDispatchRules) validatePutDispatchRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func validateAppEngineApplicationUrlDispatchRules_GenerateConfigForImportParamet
 	return nil
 }
 
-func validateAppEngineApplicationUrlDispatchRules_IsConstructParameters(x interface{}) error {
+func validateAppEngineApplicationUrlDispatchRules_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -270,7 +270,7 @@ func validateAppEngineApplicationUrlDispatchRules_IsConstructParameters(x interf
 	return nil
 }
 
-func validateAppEngineApplicationUrlDispatchRules_IsTerraformElementParameters(x interface{}) error {
+func validateAppEngineApplicationUrlDispatchRules_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -278,7 +278,7 @@ func validateAppEngineApplicationUrlDispatchRules_IsTerraformElementParameters(x
 	return nil
 }
 
-func validateAppEngineApplicationUrlDispatchRules_IsTerraformResourceParameters(x interface{}) error {
+func validateAppEngineApplicationUrlDispatchRules_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateAppEngineApplicationUrlDispatchRules_IsTerraformResourceParameters(
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -319,7 +319,7 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetConnectionPa
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -400,7 +400,7 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetProjectParam
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -464,4 +464,3 @@ func validateNewAppEngineApplicationUrlDispatchRulesParameters(scope constructs.
 
 	return nil
 }
-

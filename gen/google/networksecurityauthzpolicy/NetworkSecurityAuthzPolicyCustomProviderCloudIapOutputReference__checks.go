@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderCloudIapOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderCloudIapOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderCloudIapOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderCloudIapOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderCloudIapOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderCloudIapOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewNetworkSecurityAuthzPolicyCustomProviderCloudIapOutputReferenceP
 
 	return nil
 }
-

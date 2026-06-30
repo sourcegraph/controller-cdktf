@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeHostParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeHostParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeProtocolParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeProtocolParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeQueryStringParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutputReference) validateSetIncludeQueryStringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -290,4 +290,3 @@ func validateNewComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicyOutputRe
 
 	return nil
 }
-

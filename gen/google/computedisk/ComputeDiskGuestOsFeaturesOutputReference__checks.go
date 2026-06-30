@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeDiskGuestOsFeaturesOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskGuestOsFeaturesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskGuestOsFeaturesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeDiskGuestOsFeaturesOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskGuestOsFeaturesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeDiskGuestOsFeaturesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewComputeDiskGuestOsFeaturesOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

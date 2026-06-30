@@ -12,9 +12,9 @@ type DataplexZoneResourceSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type DataplexZoneResourceSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type DataplexZoneResourceSpecOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_DataplexZoneResourceSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewDataplexZoneResourceSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataplexZoneResourceSpecOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewDataplexZoneResourceSpecOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexZone.DataplexZoneResourceSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewDataplexZoneResourceSpecOutputReference_Override(d DataplexZoneResourceS
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexZone.DataplexZoneResourceSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetInternalValue(val *DataplexZoneResourceSpec) {
+func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) SetInternalValue(val *DataplexZoneResourceSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetLocationType(val *string) {
+func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) SetLocationType(val *string) {
 	if err := j.validateSetLocationTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetLocationType(val *
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexZoneResourceSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (d *jsiiProxy_DataplexZoneResourceSpecOutputReference) ToString() *string {
 
 	return returns
 }
-

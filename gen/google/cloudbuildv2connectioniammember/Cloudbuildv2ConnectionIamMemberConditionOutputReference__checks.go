@@ -98,7 +98,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamMemberConditionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCloudbuildv2ConnectionIamMemberConditionOutputReferenceParameter
 
 	return nil
 }
-

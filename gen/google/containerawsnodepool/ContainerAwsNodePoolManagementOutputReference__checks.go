@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolManagementOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolManagementOutputReference) validateSetAutoRepairParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolManagementOutputReference) validateSetAutoRepairParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolManagementOutputReference) validateSetAut
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsNodePoolManagementOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -218,4 +218,3 @@ func validateNewContainerAwsNodePoolManagementOutputReferenceParameters(terrafor
 
 	return nil
 }
-

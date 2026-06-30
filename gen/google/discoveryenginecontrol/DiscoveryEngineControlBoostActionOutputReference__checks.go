@@ -109,7 +109,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -233,4 +233,3 @@ func validateNewDiscoveryEngineControlBoostActionOutputReferenceParameters(terra
 
 	return nil
 }
-

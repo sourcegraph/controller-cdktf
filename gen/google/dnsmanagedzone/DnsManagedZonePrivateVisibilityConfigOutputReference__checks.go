@@ -90,7 +90,7 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validatePutGkeClustersParameters(value interface{}) error {
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validatePutGkeClustersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validatePutNetworksParameters(value interface{}) error {
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validatePutNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -160,7 +160,7 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -260,4 +260,3 @@ func validateNewDnsManagedZonePrivateVisibilityConfigOutputReferenceParameters(t
 
 	return nil
 }
-

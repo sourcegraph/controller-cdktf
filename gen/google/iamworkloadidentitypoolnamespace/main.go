@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespace",
-		reflect.TypeOf((*IamWorkloadIdentityPoolNamespace)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolNamespace](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolNamespaceId", GoGetter: "WorkloadIdentityPoolNamespaceId"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadIdentityPoolNamespaceIdInput", GoGetter: "WorkloadIdentityPoolNamespaceIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolNamespace{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -84,15 +84,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceConfig",
-		reflect.TypeOf((*IamWorkloadIdentityPoolNamespaceConfig)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolNamespaceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceOwnerService",
-		reflect.TypeOf((*IamWorkloadIdentityPoolNamespaceOwnerService)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolNamespaceOwnerService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceOwnerServiceList",
-		reflect.TypeOf((*IamWorkloadIdentityPoolNamespaceOwnerServiceList)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolNamespaceOwnerServiceList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -113,7 +113,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceOwnerServiceOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolNamespaceOwnerServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolNamespaceOwnerServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolNamespaceOwnerServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeouts",
-		reflect.TypeOf((*IamWorkloadIdentityPoolNamespaceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolNamespaceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.iamWorkloadIdentityPoolNamespace.IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference",
-		reflect.TypeOf((*IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -183,7 +183,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IamWorkloadIdentityPoolNamespaceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

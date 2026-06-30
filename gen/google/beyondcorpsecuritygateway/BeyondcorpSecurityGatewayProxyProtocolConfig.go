@@ -1,6 +1,5 @@
 package beyondcorpsecuritygateway
 
-
 type BeyondcorpSecurityGatewayProxyProtocolConfig struct {
 	// The configuration for the proxy.
 	//
@@ -9,7 +8,7 @@ type BeyondcorpSecurityGatewayProxyProtocolConfig struct {
 	// Client IP configuration. The client IP address is included if true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_security_gateway#client_ip BeyondcorpSecurityGateway#client_ip}
-	ClientIp interface{} `field:"optional" json:"clientIp" yaml:"clientIp"`
+	ClientIp any `field:"optional" json:"clientIp" yaml:"clientIp"`
 	// contextual_headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_security_gateway#contextual_headers BeyondcorpSecurityGateway#contextual_headers}
@@ -28,4 +27,3 @@ type BeyondcorpSecurityGatewayProxyProtocolConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/beyondcorp_security_gateway#metadata_headers BeyondcorpSecurityGateway#metadata_headers}
 	MetadataHeaders *map[string]*string `field:"optional" json:"metadataHeaders" yaml:"metadataHeaders"`
 }
-

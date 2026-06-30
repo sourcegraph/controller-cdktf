@@ -109,7 +109,7 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) validateSetAcceptEulaParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) validateSetAcceptEulaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -202,7 +202,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) validateSetHuggingFaceCacheEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference) validateSetHuggingFaceCacheEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,4 +265,3 @@ func validateNewVertexAiEndpointWithModelGardenDeploymentModelConfigOutputRefere
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type CloudAssetFolderFeedConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -52,7 +52,7 @@ type CloudAssetFolderFeedConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -78,7 +78,7 @@ type CloudAssetFolderFeedConditionOutputReference interface {
 	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,8 +91,8 @@ type jsiiProxy_CloudAssetFolderFeedConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -241,7 +241,6 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) TitleInput() *s
 	return returns
 }
 
-
 func NewCloudAssetFolderFeedConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAssetFolderFeedConditionOutputReference {
 	_init_.Initialize()
 
@@ -252,7 +251,7 @@ func NewCloudAssetFolderFeedConditionOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -264,12 +263,12 @@ func NewCloudAssetFolderFeedConditionOutputReference_Override(c CloudAssetFolder
 
 	_jsii_.Create(
 		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,7 +279,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,7 +290,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetDescription(v
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetExpression(va
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetInternalValue(val *CloudAssetFolderFeedCondition) {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) SetInternalValue(val *CloudAssetFolderFeedCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetLocation(val *string) {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetLocation(val 
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +345,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,7 +356,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,16 +380,16 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,7 +453,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -470,7 +469,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -486,7 +485,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -502,7 +501,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -578,16 +577,16 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) ResetTitle() {
 	)
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -606,4 +605,3 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) ToString() *str
 
 	return returns
 }
-

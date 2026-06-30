@@ -98,7 +98,7 @@ func (b *jsiiProxy_BeyondcorpAppConnectionApplicationEndpointOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpAppConnectionApplicationEndpointOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpAppConnectionApplicationEndpointOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBeyondcorpAppConnectionApplicationEndpointOutputReferenceParamet
 
 	return nil
 }
-

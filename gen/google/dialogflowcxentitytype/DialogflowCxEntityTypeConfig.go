@@ -6,9 +6,9 @@ import (
 
 type DialogflowCxEntityTypeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DialogflowCxEntityTypeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The human-readable name of the entity type, unique within the agent.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_entity_type#display_name DialogflowCxEntityType#display_name}
@@ -26,7 +26,7 @@ type DialogflowCxEntityTypeConfig struct {
 	// entities block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_entity_type#entities DialogflowCxEntityType#entities}
-	Entities interface{} `field:"required" json:"entities" yaml:"entities"`
+	Entities any `field:"required" json:"entities" yaml:"entities"`
 	// Indicates whether the entity type can be automatically expanded.
 	//
 	// * KIND_MAP: Map entity types allow mapping of a group of synonyms to a canonical value.
@@ -45,11 +45,11 @@ type DialogflowCxEntityTypeConfig struct {
 	// Enables fuzzy entity extraction during classification.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_entity_type#enable_fuzzy_extraction DialogflowCxEntityType#enable_fuzzy_extraction}
-	EnableFuzzyExtraction interface{} `field:"optional" json:"enableFuzzyExtraction" yaml:"enableFuzzyExtraction"`
+	EnableFuzzyExtraction any `field:"optional" json:"enableFuzzyExtraction" yaml:"enableFuzzyExtraction"`
 	// excluded_phrases block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_entity_type#excluded_phrases DialogflowCxEntityType#excluded_phrases}
-	ExcludedPhrases interface{} `field:"optional" json:"excludedPhrases" yaml:"excludedPhrases"`
+	ExcludedPhrases any `field:"optional" json:"excludedPhrases" yaml:"excludedPhrases"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_entity_type#id DialogflowCxEntityType#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -68,10 +68,9 @@ type DialogflowCxEntityTypeConfig struct {
 	// If redaction is enabled, page parameters and intent parameters referring to the entity type will be replaced by parameter name when logging.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_entity_type#redact DialogflowCxEntityType#redact}
-	Redact interface{} `field:"optional" json:"redact" yaml:"redact"`
+	Redact any `field:"optional" json:"redact" yaml:"redact"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_cx_entity_type#timeouts DialogflowCxEntityType#timeouts}
 	Timeouts *DialogflowCxEntityTypeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

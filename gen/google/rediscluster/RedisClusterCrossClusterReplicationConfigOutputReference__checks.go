@@ -101,7 +101,7 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) val
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) validatePutSecondaryClustersParameters(value interface{}) error {
+func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) validatePutSecondaryClustersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -148,7 +148,7 @@ func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewRedisClusterCrossClusterReplicationConfigOutputReferenceParamete
 
 	return nil
 }
-

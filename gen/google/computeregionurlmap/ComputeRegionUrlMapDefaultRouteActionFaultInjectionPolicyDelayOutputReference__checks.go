@@ -109,7 +109,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDela
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -217,4 +217,3 @@ func validateNewComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOu
 
 	return nil
 }
-

@@ -10,9 +10,9 @@ import (
 
 type GkeBackupRestorePlanRestoreConfigOutputReference interface {
 	cdktf.ComplexObject
-	AllNamespaces() interface{}
-	SetAllNamespaces(val interface{})
-	AllNamespacesInput() interface{}
+	AllNamespaces() any
+	SetAllNamespaces(val any)
+	AllNamespacesInput() any
 	ClusterResourceConflictPolicy() *string
 	SetClusterResourceConflictPolicy(val *string)
 	ClusterResourceConflictPolicyInput() *string
@@ -20,9 +20,9 @@ type GkeBackupRestorePlanRestoreConfigOutputReference interface {
 	ClusterResourceRestoreScopeInput() *GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,9 +42,9 @@ type GkeBackupRestorePlanRestoreConfigOutputReference interface {
 	NamespacedResourceRestoreMode() *string
 	SetNamespacedResourceRestoreMode(val *string)
 	NamespacedResourceRestoreModeInput() *string
-	NoNamespaces() interface{}
-	SetNoNamespaces(val interface{})
-	NoNamespacesInput() interface{}
+	NoNamespaces() any
+	SetNoNamespaces(val any)
+	NoNamespacesInput() any
 	RestoreOrder() GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference
 	RestoreOrderInput() *GkeBackupRestorePlanRestoreConfigRestoreOrder
 	SelectedApplications() GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference
@@ -60,16 +60,16 @@ type GkeBackupRestorePlanRestoreConfigOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TransformationRules() GkeBackupRestorePlanRestoreConfigTransformationRulesList
-	TransformationRulesInput() interface{}
+	TransformationRulesInput() any
 	VolumeDataRestorePolicy() *string
 	SetVolumeDataRestorePolicy(val *string)
 	VolumeDataRestorePolicyBindings() GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList
-	VolumeDataRestorePolicyBindingsInput() interface{}
+	VolumeDataRestorePolicyBindingsInput() any
 	VolumeDataRestorePolicyInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,8 +95,8 @@ type GkeBackupRestorePlanRestoreConfigOutputReference interface {
 	PutRestoreOrder(value *GkeBackupRestorePlanRestoreConfigRestoreOrder)
 	PutSelectedApplications(value *GkeBackupRestorePlanRestoreConfigSelectedApplications)
 	PutSelectedNamespaces(value *GkeBackupRestorePlanRestoreConfigSelectedNamespaces)
-	PutTransformationRules(value interface{})
-	PutVolumeDataRestorePolicyBindings(value interface{})
+	PutTransformationRules(value any)
+	PutVolumeDataRestorePolicyBindings(value any)
 	ResetAllNamespaces()
 	ResetClusterResourceConflictPolicy()
 	ResetClusterResourceRestoreScope()
@@ -111,7 +111,7 @@ type GkeBackupRestorePlanRestoreConfigOutputReference interface {
 	ResetVolumeDataRestorePolicyBindings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -124,8 +124,8 @@ type jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) AllNamespaces() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) AllNamespaces() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allNamespaces",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) AllNamespac
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) AllNamespacesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) AllNamespacesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allNamespacesInput",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) ClusterReso
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) NamespacedR
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) NoNamespaces() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) NoNamespaces() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noNamespaces",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) NoNamespace
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) NoNamespacesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) NoNamespacesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noNamespacesInput",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) Transformat
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) TransformationRulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) TransformationRulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"transformationRulesInput",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) VolumeDataR
 	return returns
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) VolumeDataRestorePolicyBindingsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) VolumeDataRestorePolicyBindingsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"volumeDataRestorePolicyBindingsInput",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) VolumeDataR
 	return returns
 }
 
-
 func NewGkeBackupRestorePlanRestoreConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeBackupRestorePlanRestoreConfigOutputReference {
 	_init_.Initialize()
 
@@ -445,7 +444,7 @@ func NewGkeBackupRestorePlanRestoreConfigOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -457,12 +456,12 @@ func NewGkeBackupRestorePlanRestoreConfigOutputReference_Override(g GkeBackupRes
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetAllNamespaces(val interface{}) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetAllNamespaces(val any) {
 	if err := j.validateSetAllNamespacesParameters(val); err != nil {
 		panic(err)
 	}
@@ -473,7 +472,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetAllNamesp
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetClusterResourceConflictPolicy(val *string) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetClusterResourceConflictPolicy(val *string) {
 	if err := j.validateSetClusterResourceConflictPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -484,7 +483,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetClusterRe
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -495,7 +494,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,7 +505,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetInternalValue(val *GkeBackupRestorePlanRestoreConfig) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetInternalValue(val *GkeBackupRestorePlanRestoreConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -517,7 +516,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetNamespacedResourceRestoreMode(val *string) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetNamespacedResourceRestoreMode(val *string) {
 	if err := j.validateSetNamespacedResourceRestoreModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -528,7 +527,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetNamespace
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetNoNamespaces(val interface{}) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetNoNamespaces(val any) {
 	if err := j.validateSetNoNamespacesParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,7 +538,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetNoNamespa
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -550,7 +549,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference)SetVolumeDataRestorePolicy(val *string) {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) SetVolumeDataRestorePolicy(val *string) {
 	if err := j.validateSetVolumeDataRestorePolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -585,16 +584,16 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) ComputeFqn(
 	return returns
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -610,7 +609,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetListAttr
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -690,7 +689,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -706,7 +705,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetStringAt
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -722,7 +721,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) GetStringMa
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) Interpolati
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -765,7 +764,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) PutClusterR
 	_jsii_.InvokeVoid(
 		g,
 		"putClusterResourceRestoreScope",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -776,7 +775,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) PutExcluded
 	_jsii_.InvokeVoid(
 		g,
 		"putExcludedNamespaces",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -787,7 +786,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) PutRestoreO
 	_jsii_.InvokeVoid(
 		g,
 		"putRestoreOrder",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -798,7 +797,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) PutSelected
 	_jsii_.InvokeVoid(
 		g,
 		"putSelectedApplications",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -809,29 +808,29 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) PutSelected
 	_jsii_.InvokeVoid(
 		g,
 		"putSelectedNamespaces",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) PutTransformationRules(value interface{}) {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) PutTransformationRules(value any) {
 	if err := g.validatePutTransformationRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putTransformationRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) PutVolumeDataRestorePolicyBindings(value interface{}) {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) PutVolumeDataRestorePolicyBindings(value any) {
 	if err := g.validatePutVolumeDataRestorePolicyBindingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"putVolumeDataRestorePolicyBindings",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -931,16 +930,16 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) ResetVolume
 	)
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := g.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -959,4 +958,3 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigOutputReference) ToString() 
 
 	return returns
 }
-

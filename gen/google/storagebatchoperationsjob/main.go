@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob",
-		reflect.TypeOf((*StorageBatchOperationsJob)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,15 +102,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListBuckets",
-		reflect.TypeOf((*StorageBatchOperationsJobBucketListBuckets)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobBucketListBuckets](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListBucketsManifest",
-		reflect.TypeOf((*StorageBatchOperationsJobBucketListBucketsManifest)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobBucketListBucketsManifest](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListBucketsManifestOutputReference",
-		reflect.TypeOf((*StorageBatchOperationsJobBucketListBucketsManifestOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobBucketListBucketsManifestOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJobBucketListBucketsManifestOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -145,7 +145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListBucketsOutputReference",
-		reflect.TypeOf((*StorageBatchOperationsJobBucketListBucketsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobBucketListBucketsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJobBucketListBucketsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -187,11 +187,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListBucketsPrefixListStruct",
-		reflect.TypeOf((*StorageBatchOperationsJobBucketListBucketsPrefixListStruct)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobBucketListBucketsPrefixListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListBucketsPrefixListStructOutputReference",
-		reflect.TypeOf((*StorageBatchOperationsJobBucketListBucketsPrefixListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobBucketListBucketsPrefixListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -218,7 +218,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJobBucketListBucketsPrefixListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -226,11 +226,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListStruct",
-		reflect.TypeOf((*StorageBatchOperationsJobBucketListStruct)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobBucketListStruct](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListStructOutputReference",
-		reflect.TypeOf((*StorageBatchOperationsJobBucketListStructOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobBucketListStructOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buckets", GoGetter: "Buckets"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketsInput", GoGetter: "BucketsInput"},
@@ -257,7 +257,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJobBucketListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -265,15 +265,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig",
-		reflect.TypeOf((*StorageBatchOperationsJobConfig)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobDeleteObject",
-		reflect.TypeOf((*StorageBatchOperationsJobDeleteObject)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobDeleteObject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobDeleteObjectOutputReference",
-		reflect.TypeOf((*StorageBatchOperationsJobDeleteObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobDeleteObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -299,7 +299,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJobDeleteObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -307,11 +307,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutMetadata",
-		reflect.TypeOf((*StorageBatchOperationsJobPutMetadata)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobPutMetadata](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutMetadataOutputReference",
-		reflect.TypeOf((*StorageBatchOperationsJobPutMetadataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobPutMetadataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheControl", GoGetter: "CacheControl"},
 			_jsii_.MemberProperty{JsiiProperty: "cacheControlInput", GoGetter: "CacheControlInput"},
@@ -356,7 +356,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJobPutMetadataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -364,11 +364,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutObjectHold",
-		reflect.TypeOf((*StorageBatchOperationsJobPutObjectHold)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobPutObjectHold](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutObjectHoldOutputReference",
-		reflect.TypeOf((*StorageBatchOperationsJobPutObjectHoldOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobPutObjectHoldOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -398,7 +398,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJobPutObjectHoldOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -406,11 +406,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobRewriteObject",
-		reflect.TypeOf((*StorageBatchOperationsJobRewriteObject)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobRewriteObject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobRewriteObjectOutputReference",
-		reflect.TypeOf((*StorageBatchOperationsJobRewriteObjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobRewriteObjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -436,7 +436,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJobRewriteObjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -444,11 +444,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobTimeouts",
-		reflect.TypeOf((*StorageBatchOperationsJobTimeouts)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobTimeoutsOutputReference",
-		reflect.TypeOf((*StorageBatchOperationsJobTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[StorageBatchOperationsJobTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -481,7 +481,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_StorageBatchOperationsJobTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

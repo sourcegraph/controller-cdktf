@@ -1,6 +1,5 @@
 package gkeonpremvmwareadmincluster
 
-
 type GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock struct {
 	// The network gateway used by the VMware Admin Cluster.
 	//
@@ -9,10 +8,9 @@ type GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpB
 	// ips block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_admin_cluster#ips GkeonpremVmwareAdminCluster#ips}
-	Ips interface{} `field:"required" json:"ips" yaml:"ips"`
+	Ips any `field:"required" json:"ips" yaml:"ips"`
 	// The netmask used by the VMware Admin Cluster.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gkeonprem_vmware_admin_cluster#netmask GkeonpremVmwareAdminCluster#netmask}
 	Netmask *string `field:"required" json:"netmask" yaml:"netmask"`
 }
-

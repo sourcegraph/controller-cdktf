@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigFastSocketOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigFastSocketOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigFastSocketOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigFastSocketOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigFastSocketOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigFastSocketOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewContainerClusterNodeConfigFastSocketOutputReferenceParameters(te
 
 	return nil
 }
-

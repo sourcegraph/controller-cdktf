@@ -106,7 +106,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetBit
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewCloudbuildTriggerGitFileSourceOutputReferenceParameters(terrafor
 
 	return nil
 }
-

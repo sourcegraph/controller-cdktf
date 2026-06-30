@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfig",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,19 +94,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigConfig",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedState",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedState)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedState](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDisk",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateDisk)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateDisk](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskList",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateDiskList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateDiskList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -128,7 +128,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -162,7 +162,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -170,15 +170,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateExternalIp",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateExternalIp)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateExternalIp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -213,7 +213,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateExternalIpList",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateExternalIpList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateExternalIpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -227,7 +227,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -235,7 +235,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoDelete", GoGetter: "AutoDelete"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDeleteInput", GoGetter: "AutoDeleteInput"},
@@ -268,7 +268,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -276,15 +276,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateInternalIp",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateInternalIp)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateInternalIp](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -319,7 +319,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateInternalIpList",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateInternalIpList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateInternalIpList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -333,7 +333,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateInternalIpList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -341,7 +341,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoDelete", GoGetter: "AutoDelete"},
 			_jsii_.MemberProperty{JsiiProperty: "autoDeleteInput", GoGetter: "AutoDeleteInput"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -382,7 +382,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateOutputReference",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigPreservedStateOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigPreservedStateOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -421,7 +421,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -429,11 +429,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigTimeouts",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeRegionPerInstanceConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRegionPerInstanceConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -466,7 +466,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRegionPerInstanceConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

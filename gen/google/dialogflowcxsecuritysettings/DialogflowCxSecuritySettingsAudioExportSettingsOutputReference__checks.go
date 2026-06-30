@@ -114,7 +114,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) validateSetEnableAudioRedactionParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference) validateSetEnableAudioRedactionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,4 +242,3 @@ func validateNewDialogflowCxSecuritySettingsAudioExportSettingsOutputReferencePa
 
 	return nil
 }
-

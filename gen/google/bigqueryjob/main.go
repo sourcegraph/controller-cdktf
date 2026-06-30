@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJob",
-		reflect.TypeOf((*BigqueryJob)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJob](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userEmail", GoGetter: "UserEmail"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJob{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,19 +103,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobConfig",
-		reflect.TypeOf((*BigqueryJobConfig)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopy",
-		reflect.TypeOf((*BigqueryJobCopy)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobCopy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyDestinationEncryptionConfiguration",
-		reflect.TypeOf((*BigqueryJobCopyDestinationEncryptionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobCopyDestinationEncryptionConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyDestinationEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*BigqueryJobCopyDestinationEncryptionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobCopyDestinationEncryptionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -142,7 +142,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobCopyDestinationEncryptionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -150,11 +150,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyDestinationTable",
-		reflect.TypeOf((*BigqueryJobCopyDestinationTable)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobCopyDestinationTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyDestinationTableOutputReference",
-		reflect.TypeOf((*BigqueryJobCopyDestinationTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobCopyDestinationTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobCopyDestinationTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -194,7 +194,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyOutputReference",
-		reflect.TypeOf((*BigqueryJobCopyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobCopyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -235,7 +235,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeDisposition", GoGetter: "WriteDisposition"},
 			_jsii_.MemberProperty{JsiiProperty: "writeDispositionInput", GoGetter: "WriteDispositionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobCopyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -243,11 +243,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTables",
-		reflect.TypeOf((*BigqueryJobCopySourceTables)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobCopySourceTables](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTablesList",
-		reflect.TypeOf((*BigqueryJobCopySourceTablesList)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobCopySourceTablesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -261,7 +261,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobCopySourceTablesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -269,7 +269,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
-		reflect.TypeOf((*BigqueryJobCopySourceTablesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobCopySourceTablesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -301,7 +301,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobCopySourceTablesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -309,11 +309,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtract",
-		reflect.TypeOf((*BigqueryJobExtract)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobExtract](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractOutputReference",
-		reflect.TypeOf((*BigqueryJobExtractOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobExtractOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -362,7 +362,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useAvroLogicalTypes", GoGetter: "UseAvroLogicalTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "useAvroLogicalTypesInput", GoGetter: "UseAvroLogicalTypesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobExtractOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -370,11 +370,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceModel",
-		reflect.TypeOf((*BigqueryJobExtractSourceModel)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobExtractSourceModel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceModelOutputReference",
-		reflect.TypeOf((*BigqueryJobExtractSourceModelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobExtractSourceModelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -404,7 +404,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobExtractSourceModelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -412,11 +412,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceTable",
-		reflect.TypeOf((*BigqueryJobExtractSourceTable)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobExtractSourceTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceTableOutputReference",
-		reflect.TypeOf((*BigqueryJobExtractSourceTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobExtractSourceTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -448,7 +448,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobExtractSourceTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -456,15 +456,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoad",
-		reflect.TypeOf((*BigqueryJobLoad)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoad](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadDestinationEncryptionConfiguration",
-		reflect.TypeOf((*BigqueryJobLoadDestinationEncryptionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoadDestinationEncryptionConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadDestinationEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*BigqueryJobLoadDestinationEncryptionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoadDestinationEncryptionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -491,7 +491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobLoadDestinationEncryptionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -499,11 +499,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadDestinationTable",
-		reflect.TypeOf((*BigqueryJobLoadDestinationTable)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoadDestinationTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadDestinationTableOutputReference",
-		reflect.TypeOf((*BigqueryJobLoadDestinationTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoadDestinationTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -535,7 +535,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobLoadDestinationTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -543,7 +543,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadOutputReference",
-		reflect.TypeOf((*BigqueryJobLoadOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoadOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowJaggedRows", GoGetter: "AllowJaggedRows"},
 			_jsii_.MemberProperty{JsiiProperty: "allowJaggedRowsInput", GoGetter: "AllowJaggedRowsInput"},
@@ -632,7 +632,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeDisposition", GoGetter: "WriteDisposition"},
 			_jsii_.MemberProperty{JsiiProperty: "writeDispositionInput", GoGetter: "WriteDispositionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobLoadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -640,11 +640,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadParquetOptions",
-		reflect.TypeOf((*BigqueryJobLoadParquetOptions)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoadParquetOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadParquetOptionsOutputReference",
-		reflect.TypeOf((*BigqueryJobLoadParquetOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoadParquetOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -674,7 +674,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -682,11 +682,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadTimePartitioning",
-		reflect.TypeOf((*BigqueryJobLoadTimePartitioning)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoadTimePartitioning](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadTimePartitioningOutputReference",
-		reflect.TypeOf((*BigqueryJobLoadTimePartitioningOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobLoadTimePartitioningOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -718,7 +718,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobLoadTimePartitioningOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -726,15 +726,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQuery",
-		reflect.TypeOf((*BigqueryJobQuery)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQuery](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryConnectionProperties",
-		reflect.TypeOf((*BigqueryJobQueryConnectionProperties)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryConnectionProperties](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryConnectionPropertiesList",
-		reflect.TypeOf((*BigqueryJobQueryConnectionPropertiesList)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryConnectionPropertiesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -748,7 +748,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobQueryConnectionPropertiesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -756,7 +756,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryConnectionPropertiesOutputReference",
-		reflect.TypeOf((*BigqueryJobQueryConnectionPropertiesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryConnectionPropertiesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -784,7 +784,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobQueryConnectionPropertiesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -792,11 +792,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDefaultDataset",
-		reflect.TypeOf((*BigqueryJobQueryDefaultDataset)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryDefaultDataset](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDefaultDatasetOutputReference",
-		reflect.TypeOf((*BigqueryJobQueryDefaultDatasetOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryDefaultDatasetOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -825,7 +825,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobQueryDefaultDatasetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -833,11 +833,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfiguration",
-		reflect.TypeOf((*BigqueryJobQueryDestinationEncryptionConfiguration)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryDestinationEncryptionConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfigurationOutputReference",
-		reflect.TypeOf((*BigqueryJobQueryDestinationEncryptionConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryDestinationEncryptionConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -864,7 +864,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobQueryDestinationEncryptionConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -872,11 +872,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationTable",
-		reflect.TypeOf((*BigqueryJobQueryDestinationTable)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryDestinationTable](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationTableOutputReference",
-		reflect.TypeOf((*BigqueryJobQueryDestinationTableOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryDestinationTableOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -908,7 +908,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobQueryDestinationTableOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -916,7 +916,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryOutputReference",
-		reflect.TypeOf((*BigqueryJobQueryOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowLargeResults", GoGetter: "AllowLargeResults"},
 			_jsii_.MemberProperty{JsiiProperty: "allowLargeResultsInput", GoGetter: "AllowLargeResultsInput"},
@@ -999,7 +999,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "writeDisposition", GoGetter: "WriteDisposition"},
 			_jsii_.MemberProperty{JsiiProperty: "writeDispositionInput", GoGetter: "WriteDispositionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobQueryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1007,11 +1007,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryScriptOptions",
-		reflect.TypeOf((*BigqueryJobQueryScriptOptions)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryScriptOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryScriptOptionsOutputReference",
-		reflect.TypeOf((*BigqueryJobQueryScriptOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryScriptOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1044,7 +1044,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobQueryScriptOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1052,11 +1052,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResources",
-		reflect.TypeOf((*BigqueryJobQueryUserDefinedFunctionResources)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryUserDefinedFunctionResources](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesList",
-		reflect.TypeOf((*BigqueryJobQueryUserDefinedFunctionResourcesList)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryUserDefinedFunctionResourcesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1070,7 +1070,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1078,7 +1078,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesOutputReference",
-		reflect.TypeOf((*BigqueryJobQueryUserDefinedFunctionResourcesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobQueryUserDefinedFunctionResourcesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1108,7 +1108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1116,15 +1116,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatus",
-		reflect.TypeOf((*BigqueryJobStatus)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobStatus](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResult",
-		reflect.TypeOf((*BigqueryJobStatusErrorResult)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobStatusErrorResult](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResultList",
-		reflect.TypeOf((*BigqueryJobStatusErrorResultList)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobStatusErrorResultList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1137,7 +1137,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobStatusErrorResultList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1145,7 +1145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResultOutputReference",
-		reflect.TypeOf((*BigqueryJobStatusErrorResultOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobStatusErrorResultOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1172,7 +1172,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobStatusErrorResultOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1180,11 +1180,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrors",
-		reflect.TypeOf((*BigqueryJobStatusErrors)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobStatusErrors](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorsList",
-		reflect.TypeOf((*BigqueryJobStatusErrorsList)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobStatusErrorsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1197,7 +1197,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobStatusErrorsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1205,7 +1205,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorsOutputReference",
-		reflect.TypeOf((*BigqueryJobStatusErrorsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobStatusErrorsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1232,7 +1232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobStatusErrorsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1240,7 +1240,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusList",
-		reflect.TypeOf((*BigqueryJobStatusList)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1253,7 +1253,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1261,7 +1261,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusOutputReference",
-		reflect.TypeOf((*BigqueryJobStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1288,7 +1288,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1296,11 +1296,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobTimeouts",
-		reflect.TypeOf((*BigqueryJobTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobTimeoutsOutputReference",
-		reflect.TypeOf((*BigqueryJobTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigqueryJobTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1333,7 +1333,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryJobTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

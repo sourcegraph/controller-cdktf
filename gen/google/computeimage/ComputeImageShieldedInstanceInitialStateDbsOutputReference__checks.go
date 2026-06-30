@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeImageShieldedInstanceInitialStateDbsOutputReferenceParame
 
 	return nil
 }
-

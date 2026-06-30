@@ -98,7 +98,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewBackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReferenc
 
 	return nil
 }
-

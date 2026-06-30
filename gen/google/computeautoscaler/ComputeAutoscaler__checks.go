@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeAutoscaler) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (c *jsiiProxy_ComputeAutoscaler) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeAutoscaler) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeAutoscaler) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (c *jsiiProxy_ComputeAutoscaler) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeAutoscaler) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateComputeAutoscaler_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateComputeAutoscaler_IsConstructParameters(x interface{}) error {
+func validateComputeAutoscaler_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateComputeAutoscaler_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeAutoscaler_IsTerraformElementParameters(x interface{}) error {
+func validateComputeAutoscaler_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateComputeAutoscaler_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateComputeAutoscaler_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeAutoscaler_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateComputeAutoscaler_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscaler) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeAutoscaler) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ComputeAutoscaler) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscaler) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeAutoscaler) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_ComputeAutoscaler) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscaler) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeAutoscaler) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -476,4 +476,3 @@ func validateNewComputeAutoscalerParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

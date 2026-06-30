@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsO
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsO
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutp
 
 	return nil
 }
-

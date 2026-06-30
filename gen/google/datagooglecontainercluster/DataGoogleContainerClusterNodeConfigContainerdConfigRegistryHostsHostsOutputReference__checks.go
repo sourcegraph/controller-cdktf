@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigRegistryH
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigRegistryHostsHostsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigContainerdConfigRegistryHostsHostsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterNodeConfigContainerdConfigRegistryHost
 
 	return nil
 }
-

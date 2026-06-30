@@ -120,7 +120,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewClouddeployCustomTargetTypeTasksOutputReferenceParameters(terraf
 
 	return nil
 }
-

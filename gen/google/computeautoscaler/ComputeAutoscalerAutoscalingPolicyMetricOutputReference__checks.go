@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyMetricOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyMetricOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -262,4 +262,3 @@ func validateNewComputeAutoscalerAutoscalingPolicyMetricOutputReferenceParameter
 
 	return nil
 }
-

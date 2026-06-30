@@ -106,7 +106,7 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) validateSetAl
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) validateSetEnforceInTransitParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) validateSetEnforceInTransitParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,4 +226,3 @@ func validateNewPubsubTopicMessageStoragePolicyOutputReferenceParameters(terrafo
 
 	return nil
 }
-

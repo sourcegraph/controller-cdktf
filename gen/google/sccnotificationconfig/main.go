@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
-		reflect.TypeOf((*SccNotificationConfig)(nil)).Elem(),
+		reflect.TypeFor[SccNotificationConfig](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccNotificationConfig{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -82,15 +82,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigConfig",
-		reflect.TypeOf((*SccNotificationConfigConfig)(nil)).Elem(),
+		reflect.TypeFor[SccNotificationConfigConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigStreamingConfig",
-		reflect.TypeOf((*SccNotificationConfigStreamingConfig)(nil)).Elem(),
+		reflect.TypeFor[SccNotificationConfigStreamingConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigStreamingConfigOutputReference",
-		reflect.TypeOf((*SccNotificationConfigStreamingConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SccNotificationConfigStreamingConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccNotificationConfigStreamingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,11 +124,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts",
-		reflect.TypeOf((*SccNotificationConfigTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SccNotificationConfigTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigTimeoutsOutputReference",
-		reflect.TypeOf((*SccNotificationConfigTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SccNotificationConfigTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SccNotificationConfigTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

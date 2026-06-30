@@ -1,6 +1,5 @@
 package clouddeploydeploypolicy
 
-
 type ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows struct {
 	// The time zone in IANA format IANA Time Zone Database (e.g. America/New_York).
 	//
@@ -9,10 +8,9 @@ type ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindows struct {
 	// one_time_windows block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#one_time_windows ClouddeployDeployPolicy#one_time_windows}
-	OneTimeWindows interface{} `field:"optional" json:"oneTimeWindows" yaml:"oneTimeWindows"`
+	OneTimeWindows any `field:"optional" json:"oneTimeWindows" yaml:"oneTimeWindows"`
 	// weekly_windows block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/clouddeploy_deploy_policy#weekly_windows ClouddeployDeployPolicy#weekly_windows}
-	WeeklyWindows interface{} `field:"optional" json:"weeklyWindows" yaml:"weeklyWindows"`
+	WeeklyWindows any `field:"optional" json:"weeklyWindows" yaml:"weeklyWindows"`
 }
-

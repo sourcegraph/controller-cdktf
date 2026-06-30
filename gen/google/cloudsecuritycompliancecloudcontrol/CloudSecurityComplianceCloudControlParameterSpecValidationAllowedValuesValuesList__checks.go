@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecValidationAll
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudSecurityComplianceCloudControlParameterSpecValidationAllowe
 
 	return nil
 }
-

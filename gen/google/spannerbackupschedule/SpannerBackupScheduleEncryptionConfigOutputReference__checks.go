@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSpannerBackupScheduleEncryptionConfigOutputReferenceParameters(t
 
 	return nil
 }
-

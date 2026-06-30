@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSetting",
-		reflect.TypeOf((*GeminiReleaseChannelSetting)(nil)).Elem(),
+		reflect.TypeFor[GeminiReleaseChannelSetting](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiReleaseChannelSetting{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingConfig",
-		reflect.TypeOf((*GeminiReleaseChannelSettingConfig)(nil)).Elem(),
+		reflect.TypeFor[GeminiReleaseChannelSettingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeouts",
-		reflect.TypeOf((*GeminiReleaseChannelSettingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GeminiReleaseChannelSettingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiReleaseChannelSetting.GeminiReleaseChannelSettingTimeoutsOutputReference",
-		reflect.TypeOf((*GeminiReleaseChannelSettingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GeminiReleaseChannelSettingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiReleaseChannelSettingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -11,7 +11,7 @@ import (
 type IntegrationConnectorsConnectionSslConfigOutputReference interface {
 	cdktf.ComplexObject
 	AdditionalVariable() IntegrationConnectorsConnectionSslConfigAdditionalVariableList
-	AdditionalVariableInput() interface{}
+	AdditionalVariableInput() any
 	ClientCertificate() IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference
 	ClientCertificateInput() *IntegrationConnectorsConnectionSslConfigClientCertificate
 	ClientCertType() *string
@@ -23,9 +23,9 @@ type IntegrationConnectorsConnectionSslConfigOutputReference interface {
 	ClientPrivateKeyPassInput() *IntegrationConnectorsConnectionSslConfigClientPrivateKeyPass
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -59,13 +59,13 @@ type IntegrationConnectorsConnectionSslConfigOutputReference interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	UseSsl() interface{}
-	SetUseSsl(val interface{})
-	UseSslInput() interface{}
+	UseSsl() any
+	SetUseSsl(val any)
+	UseSslInput() any
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -86,7 +86,7 @@ type IntegrationConnectorsConnectionSslConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdditionalVariable(value interface{})
+	PutAdditionalVariable(value any)
 	PutClientCertificate(value *IntegrationConnectorsConnectionSslConfigClientCertificate)
 	PutClientPrivateKey(value *IntegrationConnectorsConnectionSslConfigClientPrivateKey)
 	PutClientPrivateKeyPass(value *IntegrationConnectorsConnectionSslConfigClientPrivateKeyPass)
@@ -102,7 +102,7 @@ type IntegrationConnectorsConnectionSslConfigOutputReference interface {
 	ResetUseSsl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -125,8 +125,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) Addi
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) AdditionalVariableInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) AdditionalVariableInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"additionalVariableInput",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) Clie
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -365,8 +365,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) Type
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) UseSsl() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) UseSsl() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useSsl",
@@ -375,8 +375,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) UseS
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) UseSslInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) UseSslInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"useSslInput",
@@ -384,7 +384,6 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) UseS
 	)
 	return returns
 }
-
 
 func NewIntegrationConnectorsConnectionSslConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationConnectorsConnectionSslConfigOutputReference {
 	_init_.Initialize()
@@ -396,7 +395,7 @@ func NewIntegrationConnectorsConnectionSslConfigOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -408,12 +407,12 @@ func NewIntegrationConnectorsConnectionSslConfigOutputReference_Override(i Integ
 
 	_jsii_.Create(
 		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetClientCertType(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetClientCertType(val *string) {
 	if err := j.validateSetClientCertTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -424,7 +423,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetCl
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -435,7 +434,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +445,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetInternalValue(val *IntegrationConnectorsConnectionSslConfig) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetInternalValue(val *IntegrationConnectorsConnectionSslConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,7 +456,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetServerCertType(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetServerCertType(val *string) {
 	if err := j.validateSetServerCertTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,7 +467,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetSe
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -479,7 +478,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetTrustModel(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetTrustModel(val *string) {
 	if err := j.validateSetTrustModelParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetTr
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetType(val *string) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetTy
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference)SetUseSsl(val interface{}) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) SetUseSsl(val any) {
 	if err := j.validateSetUseSslParameters(val); err != nil {
 		panic(err)
 	}
@@ -536,16 +535,16 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) Comp
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -561,7 +560,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetB
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetB
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -593,7 +592,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetL
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -609,7 +608,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -625,7 +624,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -641,7 +640,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetN
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -657,7 +656,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetS
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -673,7 +672,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) GetS
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,21 +701,21 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) Inte
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) PutAdditionalVariable(value interface{}) {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) PutAdditionalVariable(value any) {
 	if err := i.validatePutAdditionalVariableParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"putAdditionalVariable",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -727,7 +726,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) PutC
 	_jsii_.InvokeVoid(
 		i,
 		"putClientCertificate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -738,7 +737,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) PutC
 	_jsii_.InvokeVoid(
 		i,
 		"putClientPrivateKey",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -749,7 +748,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) PutC
 	_jsii_.InvokeVoid(
 		i,
 		"putClientPrivateKeyPass",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -760,7 +759,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) PutP
 	_jsii_.InvokeVoid(
 		i,
 		"putPrivateServerCertificate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -836,16 +835,16 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) Rese
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -864,4 +863,3 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) ToSt
 
 	return returns
 }
-

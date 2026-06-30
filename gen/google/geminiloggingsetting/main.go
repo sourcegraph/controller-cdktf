@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSetting",
-		reflect.TypeOf((*GeminiLoggingSetting)(nil)).Elem(),
+		reflect.TypeFor[GeminiLoggingSetting](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiLoggingSetting{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -89,15 +89,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSettingConfig",
-		reflect.TypeOf((*GeminiLoggingSettingConfig)(nil)).Elem(),
+		reflect.TypeFor[GeminiLoggingSettingConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSettingTimeouts",
-		reflect.TypeOf((*GeminiLoggingSettingTimeouts)(nil)).Elem(),
+		reflect.TypeFor[GeminiLoggingSettingTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.geminiLoggingSetting.GeminiLoggingSettingTimeoutsOutputReference",
-		reflect.TypeOf((*GeminiLoggingSettingTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[GeminiLoggingSettingTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GeminiLoggingSettingTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

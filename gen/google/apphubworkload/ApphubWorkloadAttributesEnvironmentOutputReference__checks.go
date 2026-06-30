@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewApphubWorkloadAttributesEnvironmentOutputReferenceParameters(ter
 
 	return nil
 }
-

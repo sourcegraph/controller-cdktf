@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewNetappVolumeSnapshotPolicyMonthlyScheduleOutputReferenceParamete
 
 	return nil
 }
-

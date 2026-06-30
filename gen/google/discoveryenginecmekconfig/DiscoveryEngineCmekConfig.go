@@ -18,15 +18,15 @@ type DiscoveryEngineCmekConfig interface {
 	SetCmekConfigId(val *string)
 	CmekConfigIdInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -67,32 +67,32 @@ type DiscoveryEngineCmekConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
-	SetDefault() interface{}
-	SetSetDefault(val interface{})
-	SetDefaultInput() interface{}
+	RawOverrides() any
+	SetDefault() any
+	SetSetDefault(val any)
+	SetDefaultInput() any
 	SingleRegionKeys() DiscoveryEngineCmekConfigSingleRegionKeysList
-	SingleRegionKeysInput() interface{}
+	SingleRegionKeysInput() any
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() DiscoveryEngineCmekConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type DiscoveryEngineCmekConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,14 +122,14 @@ type DiscoveryEngineCmekConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutSingleRegionKeys(value interface{})
+	PutSingleRegionKeys(value any)
 	PutTimeouts(value *DiscoveryEngineCmekConfigTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -139,17 +139,17 @@ type DiscoveryEngineCmekConfig interface {
 	ResetSetDefault()
 	ResetSingleRegionKeys()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DiscoveryEngineCmekConfig
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) CmekConfigIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -417,8 +417,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -427,8 +427,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -437,8 +437,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetDefault() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetDefault() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"setDefault",
@@ -447,8 +447,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetDefault() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetDefaultInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetDefaultInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"setDefaultInput",
@@ -467,8 +467,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) SingleRegionKeys() DiscoveryEngine
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) SingleRegionKeysInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SingleRegionKeysInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"singleRegionKeysInput",
@@ -497,8 +497,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) Timeouts() DiscoveryEngineCmekConf
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -536,7 +536,6 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource.
 func NewDiscoveryEngineCmekConfig(scope constructs.Construct, id *string, config *DiscoveryEngineCmekConfigConfig) DiscoveryEngineCmekConfig {
@@ -549,7 +548,7 @@ func NewDiscoveryEngineCmekConfig(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -562,12 +561,12 @@ func NewDiscoveryEngineCmekConfig_Override(d DiscoveryEngineCmekConfig, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetCmekConfigId(val *string) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetCmekConfigId(val *string) {
 	if err := j.validateSetCmekConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -578,7 +577,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetCmekConfigId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -608,7 +607,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -616,7 +615,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetId(val *string) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetKmsKey(val *string) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetKmsKey(val *string) {
 	if err := j.validateSetKmsKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetKmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetLocation(val *string) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -660,7 +659,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetProject(val *string) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -671,7 +670,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -679,7 +678,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineCmekConfig)SetSetDefault(val interface{}) {
+func (j *jsiiProxy_DiscoveryEngineCmekConfig) SetSetDefault(val any) {
 	if err := j.validateSetSetDefaultParameters(val); err != nil {
 		panic(err)
 	}
@@ -713,7 +712,7 @@ func DiscoveryEngineCmekConfig_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func DiscoveryEngineCmekConfig_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DiscoveryEngineCmekConfig_IsConstruct(x interface{}) *bool {
+func DiscoveryEngineCmekConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDiscoveryEngineCmekConfig_IsConstructParameters(x); err != nil {
@@ -748,7 +747,7 @@ func DiscoveryEngineCmekConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -756,7 +755,7 @@ func DiscoveryEngineCmekConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DiscoveryEngineCmekConfig_IsTerraformElement(x interface{}) *bool {
+func DiscoveryEngineCmekConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDiscoveryEngineCmekConfig_IsTerraformElementParameters(x); err != nil {
@@ -767,7 +766,7 @@ func DiscoveryEngineCmekConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func DiscoveryEngineCmekConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DiscoveryEngineCmekConfig_IsTerraformResource(x interface{}) *bool {
+func DiscoveryEngineCmekConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDiscoveryEngineCmekConfig_IsTerraformResourceParameters(x); err != nil {
@@ -786,7 +785,7 @@ func DiscoveryEngineCmekConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -811,31 +810,31 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -851,7 +850,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -867,7 +866,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -883,7 +882,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -899,7 +898,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -915,7 +914,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -931,7 +930,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -947,7 +946,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -963,15 +962,15 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -990,7 +989,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1003,7 +1002,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,18 +1016,18 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1050,18 +1049,18 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) PutSingleRegionKeys(value interface{}) {
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) PutSingleRegionKeys(value any) {
 	if err := d.validatePutSingleRegionKeysParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSingleRegionKeys",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1072,7 +1071,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) PutTimeouts(value *DiscoveryEngine
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1124,8 +1123,8 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) ResetTimeouts() {
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1137,8 +1136,8 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1150,8 +1149,8 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1163,8 +1162,8 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1189,8 +1188,8 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DiscoveryEngineCmekConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1201,4 +1200,3 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

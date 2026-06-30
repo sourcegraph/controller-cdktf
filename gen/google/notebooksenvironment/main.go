@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironment",
-		reflect.TypeOf((*NotebooksEnvironment)(nil)).Elem(),
+		reflect.TypeFor[NotebooksEnvironment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmImage", GoGetter: "VmImage"},
 			_jsii_.MemberProperty{JsiiProperty: "vmImageInput", GoGetter: "VmImageInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksEnvironment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig",
-		reflect.TypeOf((*NotebooksEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[NotebooksEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImage",
-		reflect.TypeOf((*NotebooksEnvironmentContainerImage)(nil)).Elem(),
+		reflect.TypeFor[NotebooksEnvironmentContainerImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
-		reflect.TypeOf((*NotebooksEnvironmentContainerImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksEnvironmentContainerImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksEnvironmentContainerImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,11 +138,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts",
-		reflect.TypeOf((*NotebooksEnvironmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NotebooksEnvironmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeoutsOutputReference",
-		reflect.TypeOf((*NotebooksEnvironmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksEnvironmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksEnvironmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -183,11 +183,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentVmImage",
-		reflect.TypeOf((*NotebooksEnvironmentVmImage)(nil)).Elem(),
+		reflect.TypeFor[NotebooksEnvironmentVmImage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentVmImageOutputReference",
-		reflect.TypeOf((*NotebooksEnvironmentVmImageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotebooksEnvironmentVmImageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -219,7 +219,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotebooksEnvironmentVmImageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

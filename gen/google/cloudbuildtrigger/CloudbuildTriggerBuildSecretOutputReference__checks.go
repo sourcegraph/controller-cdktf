@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildSecretOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildSecretOutputReference) validateSetCompl
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildSecretOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCloudbuildTriggerBuildSecretOutputReferenceParameters(terraformR
 
 	return nil
 }
-

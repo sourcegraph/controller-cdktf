@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertific
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIntegrationConnectorsConnectionSslConfigPrivateServerCertificate
 
 	return nil
 }
-

@@ -12,9 +12,9 @@ type ContainerNodePoolNodeDrainConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -27,11 +27,11 @@ type ContainerNodePoolNodeDrainConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	RespectPdbDuringNodePoolDeletion() interface{}
-	SetRespectPdbDuringNodePoolDeletion(val interface{})
-	RespectPdbDuringNodePoolDeletionInput() interface{}
+	InternalValue() any
+	SetInternalValue(val any)
+	RespectPdbDuringNodePoolDeletion() any
+	SetRespectPdbDuringNodePoolDeletion(val any)
+	RespectPdbDuringNodePoolDeletionInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,7 +43,7 @@ type ContainerNodePoolNodeDrainConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ContainerNodePoolNodeDrainConfigOutputReference interface {
 	ResetRespectPdbDuringNodePoolDeletion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,8 +80,8 @@ type jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -120,8 +120,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) InternalValu
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) RespectPdbDuringNodePoolDeletion() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) RespectPdbDuringNodePoolDeletion() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"respectPdbDuringNodePoolDeletion",
@@ -140,8 +140,8 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) RespectPdbDu
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) RespectPdbDuringNodePoolDeletionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) RespectPdbDuringNodePoolDeletionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"respectPdbDuringNodePoolDeletionInput",
@@ -170,7 +170,6 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) TerraformRes
 	return returns
 }
 
-
 func NewContainerNodePoolNodeDrainConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ContainerNodePoolNodeDrainConfigOutputReference {
 	_init_.Initialize()
 
@@ -181,7 +180,7 @@ func NewContainerNodePoolNodeDrainConfigOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeDrainConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -193,12 +192,12 @@ func NewContainerNodePoolNodeDrainConfigOutputReference_Override(c ContainerNode
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeDrainConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +208,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +219,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetRespectPdbDuringNodePoolDeletion(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) SetRespectPdbDuringNodePoolDeletion(val any) {
 	if err := j.validateSetRespectPdbDuringNodePoolDeletionParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetRespectPdb
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,16 +276,16 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) ComputeFqn()
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -302,7 +301,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -318,7 +317,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -334,7 +333,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetListAttri
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -350,7 +349,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -366,7 +365,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -382,7 +381,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -398,7 +397,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -414,7 +413,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) GetStringMap
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -443,7 +442,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) Interpolatio
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -458,16 +457,16 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) ResetRespect
 	)
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -486,4 +485,3 @@ func (c *jsiiProxy_ContainerNodePoolNodeDrainConfigOutputReference) ToString() *
 
 	return returns
 }
-

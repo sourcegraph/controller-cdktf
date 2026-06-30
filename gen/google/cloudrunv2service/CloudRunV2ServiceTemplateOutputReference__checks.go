@@ -90,7 +90,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateInterpolati
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validatePutContainersParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validatePutContainersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validatePutScalingP
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validatePutVolumesParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validatePutVolumesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -201,7 +201,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetAnnotati
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -282,7 +282,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetExecutio
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetGpuZonal
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetHealthCheckDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetHealthCheckDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -362,7 +362,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetServiceA
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetSessionAffinityParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetSessionAffinityParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -417,4 +417,3 @@ func validateNewCloudRunV2ServiceTemplateOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

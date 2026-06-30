@@ -14,30 +14,30 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	SetAcceleratorNetworkProfile(val *string)
 	AcceleratorNetworkProfileInput() *string
 	AdditionalNodeNetworkConfigs() ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
-	AdditionalNodeNetworkConfigsInput() interface{}
+	AdditionalNodeNetworkConfigsInput() any
 	AdditionalPodNetworkConfigs() ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList
-	AdditionalPodNetworkConfigsInput() interface{}
+	AdditionalPodNetworkConfigsInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	CreatePodRange() interface{}
-	SetCreatePodRange(val interface{})
-	CreatePodRangeInput() interface{}
+	CreatePodRange() any
+	SetCreatePodRange(val any)
+	CreatePodRangeInput() any
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnablePrivateNodes() interface{}
-	SetEnablePrivateNodes(val interface{})
-	EnablePrivateNodesInput() interface{}
+	EnablePrivateNodes() any
+	SetEnablePrivateNodes(val any)
+	EnablePrivateNodesInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ContainerClusterNodePoolNetworkConfig
@@ -66,7 +66,7 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -87,8 +87,8 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdditionalNodeNetworkConfigs(value interface{})
-	PutAdditionalPodNetworkConfigs(value interface{})
+	PutAdditionalNodeNetworkConfigs(value any)
+	PutAdditionalPodNetworkConfigs(value any)
 	PutNetworkPerformanceConfig(value *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig)
 	PutPodCidrOverprovisionConfig(value *ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig)
 	ResetAcceleratorNetworkProfile()
@@ -103,7 +103,7 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	ResetSubnetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Additio
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) AdditionalNodeNetworkConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) AdditionalNodeNetworkConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"additionalNodeNetworkConfigsInput",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Additio
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) AdditionalPodNetworkConfigsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) AdditionalPodNetworkConfigsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"additionalPodNetworkConfigsInput",
@@ -176,8 +176,8 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Additio
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Complex
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) CreatePodRange() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) CreatePodRange() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createPodRange",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) CreateP
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) CreatePodRangeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) CreatePodRangeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"createPodRangeInput",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Creatio
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) EnablePrivateNodes() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) EnablePrivateNodes() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateNodes",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) EnableP
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) EnablePrivateNodesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) EnablePrivateNodesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enablePrivateNodesInput",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Terrafo
 	return returns
 }
 
-
 func NewContainerClusterNodePoolNetworkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNetworkConfigOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewContainerClusterNodePoolNetworkConfigOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewContainerClusterNodePoolNetworkConfigOutputReference_Override(c Containe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetAcceleratorNetworkProfile(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetAcceleratorNetworkProfile(val *string) {
 	if err := j.validateSetAcceleratorNetworkProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetAccel
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetCreatePodRange(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetCreatePodRange(val any) {
 	if err := j.validateSetCreatePodRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetCreat
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetEnablePrivateNodes(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetEnablePrivateNodes(val any) {
 	if err := j.validateSetEnablePrivateNodesParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetEnabl
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetInternalValue(val *ContainerClusterNodePoolNetworkConfig) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetInternalValue(val *ContainerClusterNodePoolNetworkConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetPodIpv4CidrBlock(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetPodIpv4CidrBlock(val *string) {
 	if err := j.validateSetPodIpv4CidrBlockParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetPodIp
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetPodRange(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetPodRange(val *string) {
 	if err := j.validateSetPodRangeParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetPodRa
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetSubnetwork(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetSubnetwork(val *string) {
 	if err := j.validateSetSubnetworkParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetSubne
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,16 +547,16 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Compute
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -573,7 +572,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -589,7 +588,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -605,7 +604,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetList
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -621,7 +620,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -653,7 +652,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -669,7 +668,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -685,7 +684,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,32 +713,32 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Interpo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutAdditionalNodeNetworkConfigs(value interface{}) {
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutAdditionalNodeNetworkConfigs(value any) {
 	if err := c.validatePutAdditionalNodeNetworkConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAdditionalNodeNetworkConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutAdditionalPodNetworkConfigs(value interface{}) {
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutAdditionalPodNetworkConfigs(value any) {
 	if err := c.validatePutAdditionalPodNetworkConfigsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAdditionalPodNetworkConfigs",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -750,7 +749,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutNetw
 	_jsii_.InvokeVoid(
 		c,
 		"putNetworkPerformanceConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -761,7 +760,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutPodC
 	_jsii_.InvokeVoid(
 		c,
 		"putPodCidrOverprovisionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -845,16 +844,16 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ResetSu
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ToStrin
 
 	return returns
 }
-

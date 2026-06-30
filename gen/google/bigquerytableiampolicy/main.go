@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryTableIamPolicy.BigqueryTableIamPolicy",
-		reflect.TypeOf((*BigqueryTableIamPolicy)(nil)).Elem(),
+		reflect.TypeFor[BigqueryTableIamPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigqueryTableIamPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,6 +74,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryTableIamPolicy.BigqueryTableIamPolicyConfig",
-		reflect.TypeOf((*BigqueryTableIamPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[BigqueryTableIamPolicyConfig](),
 	)
 }

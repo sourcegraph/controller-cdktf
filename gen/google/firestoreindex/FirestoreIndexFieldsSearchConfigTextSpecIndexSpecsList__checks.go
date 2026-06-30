@@ -34,7 +34,7 @@ func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsListParameters
 
 	return nil
 }
-

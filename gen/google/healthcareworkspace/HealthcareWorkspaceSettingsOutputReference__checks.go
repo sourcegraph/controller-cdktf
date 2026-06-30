@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcareWorkspaceSettingsOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareWorkspaceSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcareWorkspaceSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewHealthcareWorkspaceSettingsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

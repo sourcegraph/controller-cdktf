@@ -98,7 +98,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewFlexStartI
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstancesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstancesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewHypercomputeclusterClusterComputeResourcesConfigNewFlexStartInst
 
 	return nil
 }
-

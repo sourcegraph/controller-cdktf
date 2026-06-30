@@ -18,15 +18,15 @@ type ComputeRegionHealthCheck interface {
 	SetCheckIntervalSec(val *float64)
 	CheckIntervalSecInput() *float64
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -79,11 +79,11 @@ type ComputeRegionHealthCheck interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -95,14 +95,14 @@ type ComputeRegionHealthCheck interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ComputeRegionHealthCheckTimeoutsOutputReference
 	TimeoutSec() *float64
 	SetTimeoutSec(val *float64)
 	TimeoutSecInput() *float64
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	Type() *string
 	UnhealthyThreshold() *float64
 	SetUnhealthyThreshold(val *float64)
@@ -111,9 +111,9 @@ type ComputeRegionHealthCheck interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -131,7 +131,7 @@ type ComputeRegionHealthCheck interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -143,7 +143,7 @@ type ComputeRegionHealthCheck interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -179,17 +179,17 @@ type ComputeRegionHealthCheck interface {
 	ResetTimeouts()
 	ResetTimeoutSec()
 	ResetUnhealthyThreshold()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeRegionHealthCheck
@@ -227,8 +227,8 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) CheckIntervalSecInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionHealthCheck) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionHealthCheck) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -247,8 +247,8 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionHealthCheck) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -567,8 +567,8 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeRegionHealthCheck) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -577,8 +577,8 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionHealthCheck) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -667,8 +667,8 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeRegionHealthCheck) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -717,8 +717,8 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) TimeoutSecInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeRegionHealthCheck) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -757,7 +757,6 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) UnhealthyThresholdInput() *float64 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_health_check google_compute_region_health_check} Resource.
 func NewComputeRegionHealthCheck(scope constructs.Construct, id *string, config *ComputeRegionHealthCheckConfig) ComputeRegionHealthCheck {
 	_init_.Initialize()
@@ -769,7 +768,7 @@ func NewComputeRegionHealthCheck(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -782,12 +781,12 @@ func NewComputeRegionHealthCheck_Override(c ComputeRegionHealthCheck, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetCheckIntervalSec(val *float64) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetCheckIntervalSec(val *float64) {
 	if err := j.validateSetCheckIntervalSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -798,7 +797,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetCheckIntervalSec(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -809,7 +808,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -820,7 +819,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -828,7 +827,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetDescription(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -839,7 +838,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -847,7 +846,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetHealthyThreshold(val *float64) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetHealthyThreshold(val *float64) {
 	if err := j.validateSetHealthyThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -858,7 +857,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetHealthyThreshold(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetId(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -869,7 +868,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -880,7 +879,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetName(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -891,7 +890,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetProject(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -902,7 +901,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -910,7 +909,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -921,7 +920,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetRegion(val *string) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -932,7 +931,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetTimeoutSec(val *float64) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetTimeoutSec(val *float64) {
 	if err := j.validateSetTimeoutSecParameters(val); err != nil {
 		panic(err)
 	}
@@ -943,7 +942,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck)SetTimeoutSec(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheck)SetUnhealthyThreshold(val *float64) {
+func (j *jsiiProxy_ComputeRegionHealthCheck) SetUnhealthyThreshold(val *float64) {
 	if err := j.validateSetUnhealthyThresholdParameters(val); err != nil {
 		panic(err)
 	}
@@ -966,7 +965,7 @@ func ComputeRegionHealthCheck_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -990,7 +989,7 @@ func ComputeRegionHealthCheck_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeRegionHealthCheck_IsConstruct(x interface{}) *bool {
+func ComputeRegionHealthCheck_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionHealthCheck_IsConstructParameters(x); err != nil {
@@ -1001,7 +1000,7 @@ func ComputeRegionHealthCheck_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func ComputeRegionHealthCheck_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionHealthCheck_IsTerraformElement(x interface{}) *bool {
+func ComputeRegionHealthCheck_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionHealthCheck_IsTerraformElementParameters(x); err != nil {
@@ -1020,7 +1019,7 @@ func ComputeRegionHealthCheck_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func ComputeRegionHealthCheck_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeRegionHealthCheck_IsTerraformResource(x interface{}) *bool {
+func ComputeRegionHealthCheck_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeRegionHealthCheck_IsTerraformResourceParameters(x); err != nil {
@@ -1039,7 +1038,7 @@ func ComputeRegionHealthCheck_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -1064,31 +1063,31 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheck) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeRegionHealthCheck) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheck) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeRegionHealthCheck) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1104,7 +1103,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1120,7 +1119,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1136,7 +1135,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1152,7 +1151,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1168,7 +1167,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1184,7 +1183,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1200,7 +1199,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1216,15 +1215,15 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheck) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionHealthCheck) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1243,7 +1242,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) ImportFrom(id *string, provider cdk
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1256,7 +1255,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1270,18 +1269,18 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheck) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeRegionHealthCheck) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1292,7 +1291,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1303,7 +1302,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1314,7 +1313,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) PutGrpcHealthCheck(value *ComputeRe
 	_jsii_.InvokeVoid(
 		c,
 		"putGrpcHealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1325,7 +1324,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) PutGrpcTlsHealthCheck(value *Comput
 	_jsii_.InvokeVoid(
 		c,
 		"putGrpcTlsHealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1336,7 +1335,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) PutHttp2HealthCheck(value *ComputeR
 	_jsii_.InvokeVoid(
 		c,
 		"putHttp2HealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1347,7 +1346,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) PutHttpHealthCheck(value *ComputeRe
 	_jsii_.InvokeVoid(
 		c,
 		"putHttpHealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1358,7 +1357,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) PutHttpsHealthCheck(value *ComputeR
 	_jsii_.InvokeVoid(
 		c,
 		"putHttpsHealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1369,7 +1368,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) PutLogConfig(value *ComputeRegionHe
 	_jsii_.InvokeVoid(
 		c,
 		"putLogConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1380,7 +1379,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) PutSslHealthCheck(value *ComputeReg
 	_jsii_.InvokeVoid(
 		c,
 		"putSslHealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1391,7 +1390,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) PutTcpHealthCheck(value *ComputeReg
 	_jsii_.InvokeVoid(
 		c,
 		"putTcpHealthCheck",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1402,7 +1401,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) PutTimeouts(value *ComputeRegionHea
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1550,8 +1549,8 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) ResetUnhealthyThreshold() {
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheck) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionHealthCheck) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1563,8 +1562,8 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheck) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeRegionHealthCheck) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1576,8 +1575,8 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheck) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionHealthCheck) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1589,8 +1588,8 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheck) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionHealthCheck) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1615,8 +1614,8 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheck) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeRegionHealthCheck) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1627,4 +1626,3 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataGoogleCloudIdentityGroupLookupGroupKeyOutputReferenceParamet
 
 	return nil
 }
-

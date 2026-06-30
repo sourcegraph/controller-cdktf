@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigOrgConfigLocationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOrgConfigLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOrgConfigLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDataLossPreventionDiscoveryConfigOrgConfigLocationOutputReferenc
 
 	return nil
 }
-

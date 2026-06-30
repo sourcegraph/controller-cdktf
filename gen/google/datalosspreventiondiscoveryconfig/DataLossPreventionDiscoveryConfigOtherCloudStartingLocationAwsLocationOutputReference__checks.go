@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAw
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationOutputReference) validateSetAllAssetInventoryAssetsParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationOutputReference) validateSetAllAssetInventoryAssetsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -126,7 +126,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAw
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -226,4 +226,3 @@ func validateNewDataLossPreventionDiscoveryConfigOtherCloudStartingLocationAwsLo
 
 	return nil
 }
-

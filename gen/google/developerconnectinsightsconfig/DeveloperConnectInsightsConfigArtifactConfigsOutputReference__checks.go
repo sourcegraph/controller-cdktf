@@ -120,7 +120,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -185,7 +185,7 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -252,4 +252,3 @@ func validateNewDeveloperConnectInsightsConfigArtifactConfigsOutputReferencePara
 
 	return nil
 }
-

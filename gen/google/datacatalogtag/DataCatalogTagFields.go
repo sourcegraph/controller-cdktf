@@ -1,13 +1,12 @@
 package datacatalogtag
 
-
 type DataCatalogTagFields struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#field_name DataCatalogTag#field_name}.
 	FieldName *string `field:"required" json:"fieldName" yaml:"fieldName"`
 	// Holds the value for a tag field with boolean type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#bool_value DataCatalogTag#bool_value}
-	BoolValue interface{} `field:"optional" json:"boolValue" yaml:"boolValue"`
+	BoolValue any `field:"optional" json:"boolValue" yaml:"boolValue"`
 	// Holds the value for a tag field with double type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#double_value DataCatalogTag#double_value}
@@ -25,4 +24,3 @@ type DataCatalogTagFields struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag#timestamp_value DataCatalogTag#timestamp_value}
 	TimestampValue *string `field:"optional" json:"timestampValue" yaml:"timestampValue"`
 }
-

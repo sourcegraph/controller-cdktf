@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexTaskExecutionStatusOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_DataplexTaskExecutionStatusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexTaskExecutionStatusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataplexTaskExecutionStatusOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

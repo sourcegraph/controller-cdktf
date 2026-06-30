@@ -19,7 +19,7 @@ func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateAddMoveTargetParamete
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateMoveFromIdParameters(
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateIdentityPlatformOauthIdpConfig_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateIdentityPlatformOauthIdpConfig_IsConstructParameters(x interface{}) error {
+func validateIdentityPlatformOauthIdpConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateIdentityPlatformOauthIdpConfig_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateIdentityPlatformOauthIdpConfig_IsTerraformElementParameters(x interface{}) error {
+func validateIdentityPlatformOauthIdpConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateIdentityPlatformOauthIdpConfig_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateIdentityPlatformOauthIdpConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateIdentityPlatformOauthIdpConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetClientSecretParame
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -380,7 +380,7 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetDisplayNameParamet
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -504,4 +504,3 @@ func validateNewIdentityPlatformOauthIdpConfigParameters(scope constructs.Constr
 
 	return nil
 }
-

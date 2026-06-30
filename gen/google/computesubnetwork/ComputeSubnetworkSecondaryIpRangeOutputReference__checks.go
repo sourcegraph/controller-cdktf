@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewComputeSubnetworkSecondaryIpRangeOutputReferenceParameters(terra
 
 	return nil
 }
-

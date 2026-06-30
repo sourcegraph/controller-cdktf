@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocument",
-		reflect.TypeOf((*DataGoogleFirestoreDocument)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleFirestoreDocument](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleFirestoreDocument{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -70,6 +70,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleFirestoreDocument.DataGoogleFirestoreDocumentConfig",
-		reflect.TypeOf((*DataGoogleFirestoreDocumentConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleFirestoreDocumentConfig](),
 	)
 }

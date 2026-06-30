@@ -36,7 +36,7 @@ type RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList inter
 	Get(index *float64) RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClu
 	return returns
 }
 
-
 func NewRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClu
 	)
 }
 
-func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClu
 	)
 }
 
-func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClu
 	_jsii_.Invoke(
 		r,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClu
 	_jsii_.Invoke(
 		r,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigMembershipPrimaryClu
 
 	return returns
 }
-

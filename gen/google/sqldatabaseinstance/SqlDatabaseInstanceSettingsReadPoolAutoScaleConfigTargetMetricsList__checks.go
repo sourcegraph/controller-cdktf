@@ -34,7 +34,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetri
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsL
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetDisableDefaultIamRecipientsParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetDisableDefaultIamRecipientsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetDisabl
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetEnableProjectLevelRecipientsParameters(val interface{}) error {
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetEnableProjectLevelRecipientsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,4 +262,3 @@ func validateNewBillingBudgetAllUpdatesRuleOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

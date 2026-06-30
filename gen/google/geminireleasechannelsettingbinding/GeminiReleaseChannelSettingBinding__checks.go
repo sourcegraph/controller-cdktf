@@ -19,7 +19,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSettingBinding) validateAddMoveTargetPara
 	return nil
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSettingBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GeminiReleaseChannelSettingBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GeminiReleaseChannelSettingBinding) validateMoveFromIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSettingBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GeminiReleaseChannelSettingBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGeminiReleaseChannelSettingBinding_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateGeminiReleaseChannelSettingBinding_IsConstructParameters(x interface{}) error {
+func validateGeminiReleaseChannelSettingBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGeminiReleaseChannelSettingBinding_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateGeminiReleaseChannelSettingBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGeminiReleaseChannelSettingBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGeminiReleaseChannelSettingBinding_IsTerraformElementParameters(x i
 	return nil
 }
 
-func validateGeminiReleaseChannelSettingBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGeminiReleaseChannelSettingBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGeminiReleaseChannelSettingBinding_IsTerraformResourceParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSettingBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiReleaseChannelSettingBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSettingBinding) validateSetConnectionPara
 	return nil
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSettingBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiReleaseChannelSettingBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSettingBinding) validateSetProjectParamet
 	return nil
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSettingBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GeminiReleaseChannelSettingBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewGeminiReleaseChannelSettingBindingParameters(scope constructs.Co
 
 	return nil
 }
-

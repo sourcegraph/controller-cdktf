@@ -15,15 +15,15 @@ type SpannerBackupSchedule interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -68,11 +68,11 @@ type SpannerBackupSchedule interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	RetentionDuration() *string
 	SetRetentionDuration(val *string)
 	RetentionDurationInput() *string
@@ -81,18 +81,18 @@ type SpannerBackupSchedule interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() SpannerBackupScheduleTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type SpannerBackupSchedule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,7 +122,7 @@ type SpannerBackupSchedule interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -145,17 +145,17 @@ type SpannerBackupSchedule interface {
 	ResetProject()
 	ResetSpec()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SpannerBackupSchedule
@@ -173,8 +173,8 @@ func (j *jsiiProxy_SpannerBackupSchedule) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerBackupSchedule) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_SpannerBackupSchedule) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpannerBackupSchedule) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -193,8 +193,8 @@ func (j *jsiiProxy_SpannerBackupSchedule) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerBackupSchedule) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -433,8 +433,8 @@ func (j *jsiiProxy_SpannerBackupSchedule) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SpannerBackupSchedule) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -443,8 +443,8 @@ func (j *jsiiProxy_SpannerBackupSchedule) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerBackupSchedule) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -503,8 +503,8 @@ func (j *jsiiProxy_SpannerBackupSchedule) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SpannerBackupSchedule) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -533,8 +533,8 @@ func (j *jsiiProxy_SpannerBackupSchedule) Timeouts() SpannerBackupScheduleTimeou
 	return returns
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SpannerBackupSchedule) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -542,7 +542,6 @@ func (j *jsiiProxy_SpannerBackupSchedule) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/spanner_backup_schedule google_spanner_backup_schedule} Resource.
 func NewSpannerBackupSchedule(scope constructs.Construct, id *string, config *SpannerBackupScheduleConfig) SpannerBackupSchedule {
@@ -555,7 +554,7 @@ func NewSpannerBackupSchedule(scope constructs.Construct, id *string, config *Sp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupSchedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -568,12 +567,12 @@ func NewSpannerBackupSchedule_Override(s SpannerBackupSchedule, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupSchedule",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetConnection(val interface{}) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -584,7 +583,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetCount(val interface{}) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetDatabase(val *string) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetDatabase(val *string) {
 	if err := j.validateSetDatabaseParameters(val); err != nil {
 		panic(err)
 	}
@@ -606,7 +605,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetDatabase(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -614,7 +613,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -622,7 +621,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetId(val *string) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -633,7 +632,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetInstance(val *string) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,7 +643,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -655,7 +654,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetName(val *string) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -666,7 +665,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetProject(val *string) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -677,7 +676,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -685,7 +684,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -696,7 +695,7 @@ func (j *jsiiProxy_SpannerBackupSchedule)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpannerBackupSchedule)SetRetentionDuration(val *string) {
+func (j *jsiiProxy_SpannerBackupSchedule) SetRetentionDuration(val *string) {
 	if err := j.validateSetRetentionDurationParameters(val); err != nil {
 		panic(err)
 	}
@@ -719,7 +718,7 @@ func SpannerBackupSchedule_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupSchedule",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func SpannerBackupSchedule_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SpannerBackupSchedule_IsConstruct(x interface{}) *bool {
+func SpannerBackupSchedule_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpannerBackupSchedule_IsConstructParameters(x); err != nil {
@@ -754,7 +753,7 @@ func SpannerBackupSchedule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupSchedule",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func SpannerBackupSchedule_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SpannerBackupSchedule_IsTerraformElement(x interface{}) *bool {
+func SpannerBackupSchedule_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpannerBackupSchedule_IsTerraformElementParameters(x); err != nil {
@@ -773,7 +772,7 @@ func SpannerBackupSchedule_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupSchedule",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -781,7 +780,7 @@ func SpannerBackupSchedule_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SpannerBackupSchedule_IsTerraformResource(x interface{}) *bool {
+func SpannerBackupSchedule_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSpannerBackupSchedule_IsTerraformResourceParameters(x); err != nil {
@@ -792,7 +791,7 @@ func SpannerBackupSchedule_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.spannerBackupSchedule.SpannerBackupSchedule",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -817,31 +816,31 @@ func (s *jsiiProxy_SpannerBackupSchedule) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SpannerBackupSchedule) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SpannerBackupSchedule) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SpannerBackupSchedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SpannerBackupSchedule) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,7 +856,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -873,7 +872,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -889,7 +888,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -905,7 +904,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -921,7 +920,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -937,7 +936,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -953,7 +952,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -969,15 +968,15 @@ func (s *jsiiProxy_SpannerBackupSchedule) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SpannerBackupSchedule) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerBackupSchedule) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -996,7 +995,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1009,7 +1008,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1023,18 +1022,18 @@ func (s *jsiiProxy_SpannerBackupSchedule) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SpannerBackupSchedule) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SpannerBackupSchedule) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1045,7 +1044,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1056,7 +1055,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1067,7 +1066,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) PutEncryptionConfig(value *SpannerBack
 	_jsii_.InvokeVoid(
 		s,
 		"putEncryptionConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1078,7 +1077,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) PutFullBackupSpec(value *SpannerBackup
 	_jsii_.InvokeVoid(
 		s,
 		"putFullBackupSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1089,7 +1088,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) PutIncrementalBackupSpec(value *Spanne
 	_jsii_.InvokeVoid(
 		s,
 		"putIncrementalBackupSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1100,7 +1099,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) PutSpec(value *SpannerBackupScheduleSp
 	_jsii_.InvokeVoid(
 		s,
 		"putSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1111,7 +1110,7 @@ func (s *jsiiProxy_SpannerBackupSchedule) PutTimeouts(value *SpannerBackupSchedu
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1187,8 +1186,8 @@ func (s *jsiiProxy_SpannerBackupSchedule) ResetTimeouts() {
 	)
 }
 
-func (s *jsiiProxy_SpannerBackupSchedule) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpannerBackupSchedule) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1200,8 +1199,8 @@ func (s *jsiiProxy_SpannerBackupSchedule) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (s *jsiiProxy_SpannerBackupSchedule) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SpannerBackupSchedule) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -1213,8 +1212,8 @@ func (s *jsiiProxy_SpannerBackupSchedule) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (s *jsiiProxy_SpannerBackupSchedule) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerBackupSchedule) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1226,8 +1225,8 @@ func (s *jsiiProxy_SpannerBackupSchedule) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SpannerBackupSchedule) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerBackupSchedule) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1252,8 +1251,8 @@ func (s *jsiiProxy_SpannerBackupSchedule) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SpannerBackupSchedule) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SpannerBackupSchedule) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1264,4 +1263,3 @@ func (s *jsiiProxy_SpannerBackupSchedule) ToTerraform() interface{} {
 
 	return returns
 }
-

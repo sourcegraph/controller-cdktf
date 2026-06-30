@@ -106,7 +106,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) validateSetArchiv
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -278,4 +278,3 @@ func validateNewBigqueryRoutineSparkOptionsOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

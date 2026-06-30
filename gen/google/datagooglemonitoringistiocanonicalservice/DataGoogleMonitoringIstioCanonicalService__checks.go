@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleMonitoringIstioCanonicalService_GenerateConfigForImportPa
 	return nil
 }
 
-func validateDataGoogleMonitoringIstioCanonicalService_IsConstructParameters(x interface{}) error {
+func validateDataGoogleMonitoringIstioCanonicalService_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleMonitoringIstioCanonicalService_IsConstructParameters(x i
 	return nil
 }
 
-func validateDataGoogleMonitoringIstioCanonicalService_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleMonitoringIstioCanonicalService_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleMonitoringIstioCanonicalService_IsTerraformDataSourcePara
 	return nil
 }
 
-func validateDataGoogleMonitoringIstioCanonicalService_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleMonitoringIstioCanonicalService_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) validateSetCanonic
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,4 +274,3 @@ func validateNewDataGoogleMonitoringIstioCanonicalServiceParameters(scope constr
 
 	return nil
 }
-

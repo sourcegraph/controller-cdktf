@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsList) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceCustomMetricsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRegionBackendServiceCustomMetricsListParameters(terraform
 
 	return nil
 }
-

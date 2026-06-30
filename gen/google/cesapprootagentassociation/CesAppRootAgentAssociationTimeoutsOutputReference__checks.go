@@ -98,7 +98,7 @@ func (c *jsiiProxy_CesAppRootAgentAssociationTimeoutsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppRootAgentAssociationTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_CesAppRootAgentAssociationTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CesAppRootAgentAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CesAppRootAgentAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCesAppRootAgentAssociationTimeoutsOutputReferenceParameters(terr
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeHostParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeHostParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeProtocolParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeProtocolParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeQueryStringParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeQueryStringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,4 +282,3 @@ func validateNewComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReferenc
 
 	return nil
 }
-

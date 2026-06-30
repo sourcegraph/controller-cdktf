@@ -19,7 +19,7 @@ func (h *jsiiProxy_HealthcarePipelineJob) validateAddMoveTargetParameters(moveTa
 	return nil
 }
 
-func (h *jsiiProxy_HealthcarePipelineJob) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_HealthcarePipelineJob) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_HealthcarePipelineJob) validateMoveFromIdParameters(id *strin
 	return nil
 }
 
-func (h *jsiiProxy_HealthcarePipelineJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_HealthcarePipelineJob) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func validateHealthcarePipelineJob_GenerateConfigForImportParameters(scope const
 	return nil
 }
 
-func validateHealthcarePipelineJob_IsConstructParameters(x interface{}) error {
+func validateHealthcarePipelineJob_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func validateHealthcarePipelineJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateHealthcarePipelineJob_IsTerraformElementParameters(x interface{}) error {
+func validateHealthcarePipelineJob_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func validateHealthcarePipelineJob_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
-func validateHealthcarePipelineJob_IsTerraformResourceParameters(x interface{}) error {
+func validateHealthcarePipelineJob_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -288,7 +288,7 @@ func validateHealthcarePipelineJob_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_HealthcarePipelineJob) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcarePipelineJob) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_HealthcarePipelineJob) validateSetConnectionParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_HealthcarePipelineJob) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcarePipelineJob) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -386,7 +386,7 @@ func (j *jsiiProxy_HealthcarePipelineJob) validateSetDatasetParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_HealthcarePipelineJob) validateSetDisableLineageParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcarePipelineJob) validateSetDisableLineageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -446,7 +446,7 @@ func (j *jsiiProxy_HealthcarePipelineJob) validateSetNameParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_HealthcarePipelineJob) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_HealthcarePipelineJob) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -510,4 +510,3 @@ func validateNewHealthcarePipelineJobParameters(scope constructs.Construct, id *
 
 	return nil
 }
-

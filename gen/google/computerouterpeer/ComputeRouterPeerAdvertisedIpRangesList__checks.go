@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeRouterPeerAdvertisedIpRangesListParameters(terraformResou
 
 	return nil
 }
-

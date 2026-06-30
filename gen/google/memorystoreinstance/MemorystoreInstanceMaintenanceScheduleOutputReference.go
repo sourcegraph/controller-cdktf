@@ -12,9 +12,9 @@ type MemorystoreInstanceMaintenanceScheduleOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type MemorystoreInstanceMaintenanceScheduleOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type MemorystoreInstanceMaintenanceScheduleOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -179,7 +179,6 @@ func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) Terraf
 	return returns
 }
 
-
 func NewMemorystoreInstanceMaintenanceScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MemorystoreInstanceMaintenanceScheduleOutputReference {
 	_init_.Initialize()
 
@@ -190,7 +189,7 @@ func NewMemorystoreInstanceMaintenanceScheduleOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenanceScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -202,12 +201,12 @@ func NewMemorystoreInstanceMaintenanceScheduleOutputReference_Override(m Memorys
 
 	_jsii_.Create(
 		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenanceScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference)SetInternalValue(val *MemorystoreInstanceMaintenanceSchedule) {
+func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) SetInternalValue(val *MemorystoreInstanceMaintenanceSchedule) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,16 +274,16 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) Comput
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -300,7 +299,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetBoo
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -316,7 +315,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetBoo
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -332,7 +331,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetLis
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetNum
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetNum
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetNum
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetStr
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) GetStr
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,23 +440,23 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) Interp
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -476,4 +475,3 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) ToStri
 
 	return returns
 }
-

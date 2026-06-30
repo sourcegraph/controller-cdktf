@@ -36,7 +36,7 @@ type BigqueryAnalyticsHubListingCommercialInfoList interface {
 	Get(index *float64) BigqueryAnalyticsHubListingCommercialInfoOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) WrapsSet() *bo
 	return returns
 }
 
-
 func NewBigqueryAnalyticsHubListingCommercialInfoList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigqueryAnalyticsHubListingCommercialInfoList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewBigqueryAnalyticsHubListingCommercialInfoList(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingCommercialInfoList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewBigqueryAnalyticsHubListingCommercialInfoList_Override(b BigqueryAnalyti
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingCommercialInfoList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList)SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) AllWithMapKey(
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) Get(index *flo
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) ToString() *st
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAutoLabelingRuleTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewContactCenterInsightsAutoLabelingRuleTimeoutsOutputReferencePara
 
 	return nil
 }
-

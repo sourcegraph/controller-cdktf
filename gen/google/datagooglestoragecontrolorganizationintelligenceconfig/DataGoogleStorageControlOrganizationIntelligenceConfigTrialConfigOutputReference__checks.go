@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigTrialCo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleStorageControlOrganizationIntelligenceConfigTrialConfi
 
 	return nil
 }
-

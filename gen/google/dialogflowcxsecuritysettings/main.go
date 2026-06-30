@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettings",
-		reflect.TypeOf((*DialogflowCxSecuritySettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxSecuritySettings](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxSecuritySettings{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,11 +105,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsAudioExportSettings",
-		reflect.TypeOf((*DialogflowCxSecuritySettingsAudioExportSettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxSecuritySettingsAudioExportSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsAudioExportSettingsOutputReference",
-		reflect.TypeOf((*DialogflowCxSecuritySettingsAudioExportSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxSecuritySettingsAudioExportSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioExportPattern", GoGetter: "AudioExportPattern"},
 			_jsii_.MemberProperty{JsiiProperty: "audioExportPatternInput", GoGetter: "AudioExportPatternInput"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxSecuritySettingsAudioExportSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -153,15 +153,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsConfig",
-		reflect.TypeOf((*DialogflowCxSecuritySettingsConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxSecuritySettingsConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsInsightsExportSettings",
-		reflect.TypeOf((*DialogflowCxSecuritySettingsInsightsExportSettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxSecuritySettingsInsightsExportSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference",
-		reflect.TypeOf((*DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -195,11 +195,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsTimeouts",
-		reflect.TypeOf((*DialogflowCxSecuritySettingsTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxSecuritySettingsTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettingsTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowCxSecuritySettingsTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowCxSecuritySettingsTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowCxSecuritySettingsTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

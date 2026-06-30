@@ -14,9 +14,9 @@ type ContainerAwsClusterControlPlaneOutputReference interface {
 	AwsServicesAuthenticationInput() *ContainerAwsClusterControlPlaneAwsServicesAuthentication
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -72,7 +72,7 @@ type ContainerAwsClusterControlPlaneOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type ContainerAwsClusterControlPlaneOutputReference interface {
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) AwsServicesAu
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -452,7 +452,6 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) VersionInput(
 	return returns
 }
 
-
 func NewContainerAwsClusterControlPlaneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAwsClusterControlPlaneOutputReference {
 	_init_.Initialize()
 
@@ -463,7 +462,7 @@ func NewContainerAwsClusterControlPlaneOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterControlPlaneOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -475,12 +474,12 @@ func NewContainerAwsClusterControlPlaneOutputReference_Override(c ContainerAwsCl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterControlPlaneOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetIamInstanceProfile(val *string) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetIamInstanceProfile(val *string) {
 	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetIamInstance
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetInstanceType(val *string) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetInstanceType(val *string) {
 	if err := j.validateSetInstanceTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetInstanceTyp
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetInternalValue(val *ContainerAwsClusterControlPlane) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetInternalValue(val *ContainerAwsClusterControlPlane) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetSecurityGroupIds(val *[]*string) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetSecurityGroupIds(val *[]*string) {
 	if err := j.validateSetSecurityGroupIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetSecurityGro
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetSubnetIds(val *[]*string) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetSubnetIds(val *[]*string) {
 	if err := j.validateSetSubnetIdsParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetSubnetIds(v
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetTags(val *map[string]*string) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetTags(val *m
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference)SetVersion(val *string) {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) SetVersion(val *string) {
 	if err := j.validateSetVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,16 +613,16 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetNumberList
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,7 +734,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -780,7 +779,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) Interpolation
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) PutAwsService
 	_jsii_.InvokeVoid(
 		c,
 		"putAwsServicesAuthentication",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -805,7 +804,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) PutConfigEncr
 	_jsii_.InvokeVoid(
 		c,
 		"putConfigEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -816,7 +815,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) PutDatabaseEn
 	_jsii_.InvokeVoid(
 		c,
 		"putDatabaseEncryption",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -827,7 +826,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) PutMainVolume
 	_jsii_.InvokeVoid(
 		c,
 		"putMainVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -838,7 +837,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) PutProxyConfi
 	_jsii_.InvokeVoid(
 		c,
 		"putProxyConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -849,7 +848,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) PutRootVolume
 	_jsii_.InvokeVoid(
 		c,
 		"putRootVolume",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -860,7 +859,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) PutSshConfig(
 	_jsii_.InvokeVoid(
 		c,
 		"putSshConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -920,16 +919,16 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) ResetTags() {
 	)
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -948,4 +947,3 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) ToString() *s
 
 	return returns
 }
-

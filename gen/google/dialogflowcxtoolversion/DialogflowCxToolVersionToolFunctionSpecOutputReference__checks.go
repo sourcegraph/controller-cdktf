@@ -98,7 +98,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolFunctionSpecOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolFunctionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowCxToolVersionToolFunctionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewDialogflowCxToolVersionToolFunctionSpecOutputReferenceParameters
 
 	return nil
 }
-

@@ -101,7 +101,7 @@ func (d *jsiiProxy_DeploymentManagerDeploymentTargetOutputReference) validatePut
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentManagerDeploymentTargetOutputReference) validatePutImportsParameters(value interface{}) error {
+func (d *jsiiProxy_DeploymentManagerDeploymentTargetOutputReference) validatePutImportsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (d *jsiiProxy_DeploymentManagerDeploymentTargetOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentManagerDeploymentTargetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeploymentManagerDeploymentTargetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewDeploymentManagerDeploymentTargetOutputReferenceParameters(terra
 
 	return nil
 }
-

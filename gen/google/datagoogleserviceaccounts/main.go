@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleServiceAccounts.DataGoogleServiceAccounts",
-		reflect.TypeOf((*DataGoogleServiceAccounts)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleServiceAccounts](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accounts", GoGetter: "Accounts"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleServiceAccounts{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -66,11 +66,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleServiceAccounts.DataGoogleServiceAccountsAccounts",
-		reflect.TypeOf((*DataGoogleServiceAccountsAccounts)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleServiceAccountsAccounts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleServiceAccounts.DataGoogleServiceAccountsAccountsList",
-		reflect.TypeOf((*DataGoogleServiceAccountsAccountsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleServiceAccountsAccountsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -83,7 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleServiceAccountsAccountsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -91,7 +91,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleServiceAccounts.DataGoogleServiceAccountsAccountsOutputReference",
-		reflect.TypeOf((*DataGoogleServiceAccountsAccountsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleServiceAccountsAccountsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleServiceAccountsAccountsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,6 +130,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleServiceAccounts.DataGoogleServiceAccountsConfig",
-		reflect.TypeOf((*DataGoogleServiceAccountsConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleServiceAccountsConfig](),
 	)
 }

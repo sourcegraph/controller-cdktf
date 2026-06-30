@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResource",
-		reflect.TypeOf((*AccessContextManagerServicePerimeterDryRunResource)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerServicePerimeterDryRunResource](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicyId", GoGetter: "AccessPolicyId"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerServicePerimeterDryRunResource{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,15 +74,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceConfig",
-		reflect.TypeOf((*AccessContextManagerServicePerimeterDryRunResourceConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerServicePerimeterDryRunResourceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeouts",
-		reflect.TypeOf((*AccessContextManagerServicePerimeterDryRunResourceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerServicePerimeterDryRunResourceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.accessContextManagerServicePerimeterDryRunResource.AccessContextManagerServicePerimeterDryRunResourceTimeoutsOutputReference",
-		reflect.TypeOf((*AccessContextManagerServicePerimeterDryRunResourceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessContextManagerServicePerimeterDryRunResourceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessContextManagerServicePerimeterDryRunResourceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

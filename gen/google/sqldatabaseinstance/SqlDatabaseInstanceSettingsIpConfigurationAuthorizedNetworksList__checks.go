@@ -34,7 +34,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksL
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList
 
 	return nil
 }
-

@@ -17,8 +17,8 @@ type LoggingProjectBucketConfigIndexConfigsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type LoggingProjectBucketConfigIndexConfigsList interface {
 	Get(index *float64) LoggingProjectBucketConfigIndexConfigsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) WrapsSet() *bool 
 	return returns
 }
 
-
 func NewLoggingProjectBucketConfigIndexConfigsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoggingProjectBucketConfigIndexConfigsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewLoggingProjectBucketConfigIndexConfigsList(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewLoggingProjectBucketConfigIndexConfigsList_Override(l LoggingProjectBuck
 
 	_jsii_.Create(
 		"@cdktf/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList)SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) AllWithMapKey(map
 	_jsii_.Invoke(
 		l,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) Get(index *float6
 	_jsii_.Invoke(
 		l,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := l.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) ToString() *strin
 
 	return returns
 }
-

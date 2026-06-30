@@ -90,7 +90,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummari
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validatePutSummarizationSectionsParameters(value interface{}) error {
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validatePutSummarizationSectionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummari
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStructOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewDialogflowGeneratorSummarizationContextFewShotExamplesSummarizat
 
 	return nil
 }
-

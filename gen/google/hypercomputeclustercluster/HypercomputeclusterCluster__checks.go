@@ -19,7 +19,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) validateAddOverrideParameters(path *string, value interface{}) error {
+func (h *jsiiProxy_HypercomputeclusterCluster) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (h *jsiiProxy_HypercomputeclusterCluster) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) validateOverrideLogicalIdParamete
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) validatePutComputeResourcesParameters(value interface{}) error {
+func (h *jsiiProxy_HypercomputeclusterCluster) validatePutComputeResourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) validatePutComputeResourcesParame
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) validatePutNetworkResourcesParameters(value interface{}) error {
+func (h *jsiiProxy_HypercomputeclusterCluster) validatePutNetworkResourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func (h *jsiiProxy_HypercomputeclusterCluster) validatePutOrchestratorParameters
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterCluster) validatePutStorageResourcesParameters(value interface{}) error {
+func (h *jsiiProxy_HypercomputeclusterCluster) validatePutStorageResourcesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func validateHypercomputeclusterCluster_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateHypercomputeclusterCluster_IsConstructParameters(x interface{}) error {
+func validateHypercomputeclusterCluster_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func validateHypercomputeclusterCluster_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateHypercomputeclusterCluster_IsTerraformElementParameters(x interface{}) error {
+func validateHypercomputeclusterCluster_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func validateHypercomputeclusterCluster_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateHypercomputeclusterCluster_IsTerraformResourceParameters(x interface{}) error {
+func validateHypercomputeclusterCluster_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster) validateSetClusterIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterCluster) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -400,7 +400,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterCluster) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -505,7 +505,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_HypercomputeclusterCluster) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -569,4 +569,3 @@ func validateNewHypercomputeclusterClusterParameters(scope constructs.Construct,
 
 	return nil
 }
-

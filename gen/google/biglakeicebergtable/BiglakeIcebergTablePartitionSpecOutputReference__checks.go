@@ -90,7 +90,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) validateInte
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) validatePutFieldsParameters(value interface{}) error {
+func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) validatePutFieldsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewBiglakeIcebergTablePartitionSpecOutputReferenceParameters(terraf
 
 	return nil
 }
-

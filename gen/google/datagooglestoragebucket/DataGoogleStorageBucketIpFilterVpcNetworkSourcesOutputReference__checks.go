@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketIpFilterVpcNetworkSourcesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketIpFilterVpcNetworkSourcesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleStorageBucketIpFilterVpcNetworkSourcesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleStorageBucketIpFilterVpcNetworkSourcesOutputReferenceP
 
 	return nil
 }
-

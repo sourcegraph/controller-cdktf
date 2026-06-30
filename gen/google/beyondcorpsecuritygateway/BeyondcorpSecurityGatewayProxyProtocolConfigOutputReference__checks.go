@@ -117,7 +117,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateSetClientIpParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateSetClientIpParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -137,7 +137,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewBeyondcorpSecurityGatewayProxyProtocolConfigOutputReferenceParam
 
 	return nil
 }
-

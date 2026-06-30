@@ -19,7 +19,7 @@ func (w *jsiiProxy_WorkbenchInstanceIamMember) validateAddMoveTargetParameters(m
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (w *jsiiProxy_WorkbenchInstanceIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (w *jsiiProxy_WorkbenchInstanceIamMember) validateMoveFromIdParameters(id *
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (w *jsiiProxy_WorkbenchInstanceIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateWorkbenchInstanceIamMember_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateWorkbenchInstanceIamMember_IsConstructParameters(x interface{}) error {
+func validateWorkbenchInstanceIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateWorkbenchInstanceIamMember_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateWorkbenchInstanceIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateWorkbenchInstanceIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateWorkbenchInstanceIamMember_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func validateWorkbenchInstanceIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateWorkbenchInstanceIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateWorkbenchInstanceIamMember_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_WorkbenchInstanceIamMember) validateSetConnectionParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_WorkbenchInstanceIamMember) validateSetProjectParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstanceIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_WorkbenchInstanceIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewWorkbenchInstanceIamMemberParameters(scope constructs.Construct,
 
 	return nil
 }
-

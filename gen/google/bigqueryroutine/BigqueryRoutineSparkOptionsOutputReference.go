@@ -15,9 +15,9 @@ type BigqueryRoutineSparkOptionsOutputReference interface {
 	ArchiveUrisInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -70,7 +70,7 @@ type BigqueryRoutineSparkOptionsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type BigqueryRoutineSparkOptionsOutputReference interface {
 	ResetRuntimeVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -136,8 +136,8 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) ArchiveUrisInput(
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -386,7 +386,6 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewBigqueryRoutineSparkOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryRoutineSparkOptionsOutputReference {
 	_init_.Initialize()
 
@@ -397,7 +396,7 @@ func NewBigqueryRoutineSparkOptionsOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineSparkOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -409,12 +408,12 @@ func NewBigqueryRoutineSparkOptionsOutputReference_Override(b BigqueryRoutineSpa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineSparkOptionsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetArchiveUris(val *[]*string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetArchiveUris(val *[]*string) {
 	if err := j.validateSetArchiveUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -425,7 +424,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetArchiveUris(val
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -436,7 +435,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -447,7 +446,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetConnection(val *string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetConnection(val *string) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -458,7 +457,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetContainerImage(val *string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetContainerImage(val *string) {
 	if err := j.validateSetContainerImageParameters(val); err != nil {
 		panic(err)
 	}
@@ -469,7 +468,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetContainerImage(
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetFileUris(val *[]*string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetFileUris(val *[]*string) {
 	if err := j.validateSetFileUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,7 +479,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetFileUris(val *[
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetInternalValue(val *BigqueryRoutineSparkOptions) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetInternalValue(val *BigqueryRoutineSparkOptions) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -491,7 +490,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetJarUris(val *[]*string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetJarUris(val *[]*string) {
 	if err := j.validateSetJarUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,7 +501,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetJarUris(val *[]
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetMainClass(val *string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetMainClass(val *string) {
 	if err := j.validateSetMainClassParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetMainClass(val *
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetMainFileUri(val *string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetMainFileUri(val *string) {
 	if err := j.validateSetMainFileUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetMainFileUri(val
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetProperties(val *map[string]*string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetProperties(val *map[string]*string) {
 	if err := j.validateSetPropertiesParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetProperties(val 
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetPyFileUris(val *[]*string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetPyFileUris(val *[]*string) {
 	if err := j.validateSetPyFileUrisParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetPyFileUris(val 
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetRuntimeVersion(val *string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetRuntimeVersion(val *string) {
 	if err := j.validateSetRuntimeVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetRuntimeVersion(
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -568,7 +567,7 @@ func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,16 +591,16 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -617,7 +616,7 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -633,7 +632,7 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -649,7 +648,7 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -665,7 +664,7 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -681,7 +680,7 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -697,7 +696,7 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -713,7 +712,7 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -758,7 +757,7 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -845,16 +844,16 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) ResetRuntimeVersi
 	)
 }
 
-func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -873,4 +872,3 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) ToString() *strin
 
 	return returns
 }
-

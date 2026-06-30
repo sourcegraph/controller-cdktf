@@ -109,7 +109,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewNotebooksRuntimeVirtualMachineOutputReferenceParameters(terrafor
 
 	return nil
 }
-

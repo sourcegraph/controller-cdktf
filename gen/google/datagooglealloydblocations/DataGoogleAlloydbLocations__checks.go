@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleAlloydbLocations) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleAlloydbLocations) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleAlloydbLocations_GenerateConfigForImportParameters(scope 
 	return nil
 }
 
-func validateDataGoogleAlloydbLocations_IsConstructParameters(x interface{}) error {
+func validateDataGoogleAlloydbLocations_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleAlloydbLocations_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func validateDataGoogleAlloydbLocations_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleAlloydbLocations_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleAlloydbLocations_IsTerraformDataSourceParameters(x interf
 	return nil
 }
 
-func validateDataGoogleAlloydbLocations_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleAlloydbLocations_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleAlloydbLocations_IsTerraformElementParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbLocations) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleAlloydbLocations) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -247,4 +247,3 @@ func validateNewDataGoogleAlloydbLocationsParameters(scope constructs.Construct,
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewMonitoringAlertPolicyTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

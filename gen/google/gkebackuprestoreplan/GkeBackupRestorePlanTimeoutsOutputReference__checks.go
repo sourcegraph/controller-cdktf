@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanTimeoutsOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanTimeoutsOutputReference) validateSetDelet
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GkeBackupRestorePlanTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewGkeBackupRestorePlanTimeoutsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

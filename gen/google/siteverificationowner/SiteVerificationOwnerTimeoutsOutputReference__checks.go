@@ -98,7 +98,7 @@ func (s *jsiiProxy_SiteVerificationOwnerTimeoutsOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationOwnerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SiteVerificationOwnerTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SiteVerificationOwnerTimeoutsOutputReference) validateSetDele
 	return nil
 }
 
-func (j *jsiiProxy_SiteVerificationOwnerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SiteVerificationOwnerTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewSiteVerificationOwnerTimeoutsOutputReferenceParameters(terraform
 
 	return nil
 }
-

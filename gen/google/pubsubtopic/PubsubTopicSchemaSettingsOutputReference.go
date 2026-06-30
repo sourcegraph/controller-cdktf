@@ -12,9 +12,9 @@ type PubsubTopicSchemaSettingsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type PubsubTopicSchemaSettingsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -70,7 +70,7 @@ type PubsubTopicSchemaSettingsOutputReference interface {
 	ResetEncoding()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,8 +83,8 @@ type jsiiProxy_PubsubTopicSchemaSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -193,7 +193,6 @@ func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) TerraformResource()
 	return returns
 }
 
-
 func NewPubsubTopicSchemaSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubTopicSchemaSettingsOutputReference {
 	_init_.Initialize()
 
@@ -204,7 +203,7 @@ func NewPubsubTopicSchemaSettingsOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicSchemaSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -216,12 +215,12 @@ func NewPubsubTopicSchemaSettingsOutputReference_Override(p PubsubTopicSchemaSet
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicSchemaSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +231,7 @@ func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +242,7 @@ func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetEncoding(val *string) {
+func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) SetEncoding(val *string) {
 	if err := j.validateSetEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +253,7 @@ func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetEncoding(val *str
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetInternalValue(val *PubsubTopicSchemaSettings) {
+func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) SetInternalValue(val *PubsubTopicSchemaSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -265,7 +264,7 @@ func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetSchema(val *string) {
+func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) SetSchema(val *string) {
 	if err := j.validateSetSchemaParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,7 +275,7 @@ func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetSchema(val *strin
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -287,7 +286,7 @@ func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,16 +310,16 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -336,7 +335,7 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -352,7 +351,7 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -368,7 +367,7 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -477,7 +476,7 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -492,16 +491,16 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) ResetEncoding() {
 	)
 }
 
-func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -520,4 +519,3 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) ToString() *string 
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleRedisInstanceNodesOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleRedisInstanceNodesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleRedisInstanceNodesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleRedisInstanceNodesOutputReferenceParameters(terraformR
 
 	return nil
 }
-

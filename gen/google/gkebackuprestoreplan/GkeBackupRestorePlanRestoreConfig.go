@@ -1,11 +1,10 @@
 package gkebackuprestoreplan
 
-
 type GkeBackupRestorePlanRestoreConfig struct {
 	// If True, restore all namespaced resources in the Backup. Setting this field to False will result in an error.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_plan#all_namespaces GkeBackupRestorePlan#all_namespaces}
-	AllNamespaces interface{} `field:"optional" json:"allNamespaces" yaml:"allNamespaces"`
+	AllNamespaces any `field:"optional" json:"allNamespaces" yaml:"allNamespaces"`
 	// Defines the behavior for handling the situation where cluster-scoped resources being restored already exist in the target cluster.
 	//
 	// This MUST be set to a value other than 'CLUSTER_RESOURCE_CONFLICT_POLICY_UNSPECIFIED'
@@ -35,7 +34,7 @@ type GkeBackupRestorePlanRestoreConfig struct {
 	// Do not restore any namespaced resources if set to "True". Specifying this field to "False" is not allowed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_plan#no_namespaces GkeBackupRestorePlan#no_namespaces}
-	NoNamespaces interface{} `field:"optional" json:"noNamespaces" yaml:"noNamespaces"`
+	NoNamespaces any `field:"optional" json:"noNamespaces" yaml:"noNamespaces"`
 	// restore_order block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_plan#restore_order GkeBackupRestorePlan#restore_order}
@@ -51,7 +50,7 @@ type GkeBackupRestorePlanRestoreConfig struct {
 	// transformation_rules block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_plan#transformation_rules GkeBackupRestorePlan#transformation_rules}
-	TransformationRules interface{} `field:"optional" json:"transformationRules" yaml:"transformationRules"`
+	TransformationRules any `field:"optional" json:"transformationRules" yaml:"transformationRules"`
 	// Specifies the mechanism to be used to restore volume data.
 	//
 	// This should be set to a value other than 'NAMESPACED_RESOURCE_RESTORE_MODE_UNSPECIFIED'
@@ -65,6 +64,5 @@ type GkeBackupRestorePlanRestoreConfig struct {
 	// volume_data_restore_policy_bindings block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_backup_restore_plan#volume_data_restore_policy_bindings GkeBackupRestorePlan#volume_data_restore_policy_bindings}
-	VolumeDataRestorePolicyBindings interface{} `field:"optional" json:"volumeDataRestorePolicyBindings" yaml:"volumeDataRestorePolicyBindings"`
+	VolumeDataRestorePolicyBindings any `field:"optional" json:"volumeDataRestorePolicyBindings" yaml:"volumeDataRestorePolicyBindings"`
 }
-

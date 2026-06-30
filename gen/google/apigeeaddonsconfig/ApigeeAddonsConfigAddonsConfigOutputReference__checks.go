@@ -153,7 +153,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -253,4 +253,3 @@ func validateNewApigeeAddonsConfigAddonsConfigOutputReferenceParameters(terrafor
 
 	return nil
 }
-

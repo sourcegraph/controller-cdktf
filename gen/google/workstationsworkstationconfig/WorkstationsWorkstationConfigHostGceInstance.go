@@ -1,15 +1,14 @@
 package workstationsworkstationconfig
 
-
 type WorkstationsWorkstationConfigHostGceInstance struct {
 	// accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#accelerators WorkstationsWorkstationConfigA#accelerators}
-	Accelerators interface{} `field:"optional" json:"accelerators" yaml:"accelerators"`
+	Accelerators any `field:"optional" json:"accelerators" yaml:"accelerators"`
 	// boost_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#boost_configs WorkstationsWorkstationConfigA#boost_configs}
-	BoostConfigs interface{} `field:"optional" json:"boostConfigs" yaml:"boostConfigs"`
+	BoostConfigs any `field:"optional" json:"boostConfigs" yaml:"boostConfigs"`
 	// Size of the boot disk in GB.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#boot_disk_size_gb WorkstationsWorkstationConfigA#boot_disk_size_gb}
@@ -21,17 +20,17 @@ type WorkstationsWorkstationConfigHostGceInstance struct {
 	// Whether instances have no public IP address.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#disable_public_ip_addresses WorkstationsWorkstationConfigA#disable_public_ip_addresses}
-	DisablePublicIpAddresses interface{} `field:"optional" json:"disablePublicIpAddresses" yaml:"disablePublicIpAddresses"`
+	DisablePublicIpAddresses any `field:"optional" json:"disablePublicIpAddresses" yaml:"disablePublicIpAddresses"`
 	// Whether to disable SSH access to the VM.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#disable_ssh WorkstationsWorkstationConfigA#disable_ssh}
-	DisableSsh interface{} `field:"optional" json:"disableSsh" yaml:"disableSsh"`
+	DisableSsh any `field:"optional" json:"disableSsh" yaml:"disableSsh"`
 	// Whether to enable nested virtualization on the Compute Engine VMs backing the Workstations.
 	//
 	// See https://cloud.google.com/workstations/docs/reference/rest/v1/projects.locations.workstationClusters.workstationConfigs#GceInstance.FIELDS.enable_nested_virtualization
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#enable_nested_virtualization WorkstationsWorkstationConfigA#enable_nested_virtualization}
-	EnableNestedVirtualization interface{} `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
+	EnableNestedVirtualization any `field:"optional" json:"enableNestedVirtualization" yaml:"enableNestedVirtualization"`
 	// The name of a Compute Engine machine type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#machine_type WorkstationsWorkstationConfigA#machine_type}
@@ -70,4 +69,3 @@ type WorkstationsWorkstationConfigHostGceInstance struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#vm_tags WorkstationsWorkstationConfigA#vm_tags}
 	VmTags *map[string]*string `field:"optional" json:"vmTags" yaml:"vmTags"`
 }
-

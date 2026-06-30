@@ -19,7 +19,7 @@ func (e *jsiiProxy_EndpointsServiceIamMember) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsServiceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EndpointsServiceIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EndpointsServiceIamMember) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsServiceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EndpointsServiceIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateEndpointsServiceIamMember_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateEndpointsServiceIamMember_IsConstructParameters(x interface{}) error {
+func validateEndpointsServiceIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateEndpointsServiceIamMember_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateEndpointsServiceIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateEndpointsServiceIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateEndpointsServiceIamMember_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateEndpointsServiceIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateEndpointsServiceIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateEndpointsServiceIamMember_IsTerraformResourceParameters(x interface
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsServiceIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsServiceIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_EndpointsServiceIamMember) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsServiceIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EndpointsServiceIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -369,7 +369,7 @@ func (j *jsiiProxy_EndpointsServiceIamMember) validateSetMemberParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsServiceIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EndpointsServiceIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -449,4 +449,3 @@ func validateNewEndpointsServiceIamMemberParameters(scope constructs.Construct, 
 
 	return nil
 }
-

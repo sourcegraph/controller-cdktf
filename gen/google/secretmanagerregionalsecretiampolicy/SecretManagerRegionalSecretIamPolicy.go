@@ -15,15 +15,15 @@ type SecretManagerRegionalSecretIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,27 +60,27 @@ type SecretManagerRegionalSecretIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SecretId() *string
 	SetSecretId(val *string)
 	SecretIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -98,7 +98,7 @@ type SecretManagerRegionalSecretIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -110,7 +110,7 @@ type SecretManagerRegionalSecretIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -123,17 +123,17 @@ type SecretManagerRegionalSecretIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SecretManagerRegionalSecretIamPolicy
@@ -151,8 +151,8 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) CdktfStack() cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) Connection() interface{
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -171,8 +171,8 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,8 +341,8 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) Provider() cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) Provisioners() *[]inter
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -391,8 +391,8 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) TerraformGeneratorMetad
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -411,7 +411,6 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) TerraformResourceType()
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Resource.
 func NewSecretManagerRegionalSecretIamPolicy(scope constructs.Construct, id *string, config *SecretManagerRegionalSecretIamPolicyConfig) SecretManagerRegionalSecretIamPolicy {
 	_init_.Initialize()
@@ -423,7 +422,7 @@ func NewSecretManagerRegionalSecretIamPolicy(scope constructs.Construct, id *str
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secretManagerRegionalSecretIamPolicy.SecretManagerRegionalSecretIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -436,12 +435,12 @@ func NewSecretManagerRegionalSecretIamPolicy_Override(s SecretManagerRegionalSec
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secretManagerRegionalSecretIamPolicy.SecretManagerRegionalSecretIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -452,7 +451,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -463,7 +462,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetCount(val interface{}
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -471,7 +470,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetDependsOn(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +478,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetForEach(val cdktf.ITe
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -490,7 +489,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -501,7 +500,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetLifecycle(val *cdktf.
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetLocation(val *string) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetLocation(val *string)
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetPolicyData(val *strin
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -534,7 +533,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetProject(val *string) 
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,7 +541,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetProvider(val cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetProvisioners(val *[]i
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy)SetSecretId(val *string) {
+func (j *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SetSecretId(val *string) {
 	if err := j.validateSetSecretIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func SecretManagerRegionalSecretIamPolicy_GenerateConfigForImport(scope construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secretManagerRegionalSecretIamPolicy.SecretManagerRegionalSecretIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -600,7 +599,7 @@ func SecretManagerRegionalSecretIamPolicy_GenerateConfigForImport(scope construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SecretManagerRegionalSecretIamPolicy_IsConstruct(x interface{}) *bool {
+func SecretManagerRegionalSecretIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecretManagerRegionalSecretIamPolicy_IsConstructParameters(x); err != nil {
@@ -611,7 +610,7 @@ func SecretManagerRegionalSecretIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secretManagerRegionalSecretIamPolicy.SecretManagerRegionalSecretIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -619,7 +618,7 @@ func SecretManagerRegionalSecretIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SecretManagerRegionalSecretIamPolicy_IsTerraformElement(x interface{}) *bool {
+func SecretManagerRegionalSecretIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecretManagerRegionalSecretIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -630,7 +629,7 @@ func SecretManagerRegionalSecretIamPolicy_IsTerraformElement(x interface{}) *boo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secretManagerRegionalSecretIamPolicy.SecretManagerRegionalSecretIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -638,7 +637,7 @@ func SecretManagerRegionalSecretIamPolicy_IsTerraformElement(x interface{}) *boo
 }
 
 // Experimental.
-func SecretManagerRegionalSecretIamPolicy_IsTerraformResource(x interface{}) *bool {
+func SecretManagerRegionalSecretIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSecretManagerRegionalSecretIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -649,7 +648,7 @@ func SecretManagerRegionalSecretIamPolicy_IsTerraformResource(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.secretManagerRegionalSecretIamPolicy.SecretManagerRegionalSecretIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,31 +673,31 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) AddMoveTarget(moveTarge
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetListAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetNumberListAttribute(
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetStringAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,15 +825,15 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -853,7 +852,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ImportFrom(id *string, 
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -866,7 +865,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) InterpolationForAttribu
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,18 +879,18 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) MoveFromId(id *string) 
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -902,7 +901,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -913,7 +912,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) OverrideLogicalId(newLo
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -949,8 +948,8 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ResetProject() {
 	)
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -962,8 +961,8 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SynthesizeAttributes() 
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -975,8 +974,8 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) SynthesizeHclAttributes
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -988,8 +987,8 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ToHclTerraform() interf
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1014,8 +1013,8 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1026,4 +1025,3 @@ func (s *jsiiProxy_SecretManagerRegionalSecretIamPolicy) ToTerraform() interface
 
 	return returns
 }
-

@@ -10,14 +10,14 @@ import (
 
 type NetworkServicesGrpcRouteRulesMatchesMethodOutputReference interface {
 	cdktf.ComplexObject
-	CaseSensitive() interface{}
-	SetCaseSensitive(val interface{})
-	CaseSensitiveInput() interface{}
+	CaseSensitive() any
+	SetCaseSensitive(val any)
+	CaseSensitiveInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type NetworkServicesGrpcRouteRulesMatchesMethodOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type NetworkServicesGrpcRouteRulesMatchesMethodOutputReference interface {
 	ResetCaseSensitive()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) CaseSensitive() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) CaseSensitive() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"caseSensitive",
@@ -96,8 +96,8 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ca
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) CaseSensitiveInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) CaseSensitiveInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"caseSensitiveInput",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ca
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Te
 	return returns
 }
 
-
 func NewNetworkServicesGrpcRouteRulesMatchesMethodOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkServicesGrpcRouteRulesMatchesMethodOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewNetworkServicesGrpcRouteRulesMatchesMethodOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesGrpcRoute.NetworkServicesGrpcRouteRulesMatchesMethodOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewNetworkServicesGrpcRouteRulesMatchesMethodOutputReference_Override(n Net
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkServicesGrpcRoute.NetworkServicesGrpcRouteRulesMatchesMethodOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)SetCaseSensitive(val interface{}) {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) SetCaseSensitive(val any) {
 	if err := j.validateSetCaseSensitiveParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)SetGrpcMethod(val *string) {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) SetGrpcMethod(val *string) {
 	if err := j.validateSetGrpcMethodParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)SetGrpcService(val *string) {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) SetGrpcService(val *string) {
 	if err := j.validateSetGrpcServiceParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)SetInternalValue(val *NetworkServicesGrpcRouteRulesMatchesMethod) {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) SetInternalValue(val *NetworkServicesGrpcRouteRulesMatchesMethod) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Co
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ge
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ge
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ge
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ge
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ge
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ge
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ge
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Ge
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) In
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Re
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesMatchesMethodOutputReference) To
 
 	return returns
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
-		reflect.TypeOf((*DataGoogleMonitoringNotificationChannel)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringNotificationChannel](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -69,7 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userLabelsInput", GoGetter: "UserLabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationStatus", GoGetter: "VerificationStatus"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleMonitoringNotificationChannel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
 			return &j
@@ -77,15 +77,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelConfig",
-		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelConfig)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringNotificationChannelConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabels",
-		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelSensitiveLabels)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringNotificationChannelSensitiveLabels](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsList",
-		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelSensitiveLabelsList)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringNotificationChannelSensitiveLabelsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -106,7 +106,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
-		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authToken", GoGetter: "AuthToken"},
 			_jsii_.MemberProperty{JsiiProperty: "authTokenWo", GoGetter: "AuthTokenWo"},
@@ -139,7 +139,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

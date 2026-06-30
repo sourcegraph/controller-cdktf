@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineConditionPipelineReadyConditionOut
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewClouddeployDeliveryPipelineConditionPipelineReadyConditionOutput
 
 	return nil
 }
-

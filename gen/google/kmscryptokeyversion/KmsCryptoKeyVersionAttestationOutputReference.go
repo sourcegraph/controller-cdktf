@@ -13,9 +13,9 @@ type KmsCryptoKeyVersionAttestationOutputReference interface {
 	CertChains() KmsCryptoKeyVersionAttestationCertChainsList
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type KmsCryptoKeyVersionAttestationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type KmsCryptoKeyVersionAttestationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) CertChains() K
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -190,7 +190,6 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewKmsCryptoKeyVersionAttestationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) KmsCryptoKeyVersionAttestationOutputReference {
 	_init_.Initialize()
 
@@ -201,7 +200,7 @@ func NewKmsCryptoKeyVersionAttestationOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -213,12 +212,12 @@ func NewKmsCryptoKeyVersionAttestationOutputReference_Override(k KmsCryptoKeyVer
 
 	_jsii_.Create(
 		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		k,
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference)SetInternalValue(val *KmsCryptoKeyVersionAttestation) {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) SetInternalValue(val *KmsCryptoKeyVersionAttestation) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,16 +285,16 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		k,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -311,7 +310,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		k,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -327,7 +326,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		k,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -343,7 +342,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		k,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		k,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		k,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		k,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		k,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		k,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,23 +451,23 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) InterpolationF
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := k.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -487,4 +486,3 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationOutputReference) ToString() *st
 
 	return returns
 }
-

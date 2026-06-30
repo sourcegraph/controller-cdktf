@@ -98,7 +98,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVolumesEmptyDirOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVolumesEmptyDirOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVolumesEmptyDirOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewCloudRunV2WorkerPoolTemplateVolumesEmptyDirOutputReferenceParame
 
 	return nil
 }
-

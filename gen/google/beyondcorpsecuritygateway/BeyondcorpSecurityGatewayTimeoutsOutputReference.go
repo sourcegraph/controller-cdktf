@@ -12,9 +12,9 @@ type BeyondcorpSecurityGatewayTimeoutsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type BeyondcorpSecurityGatewayTimeoutsOutputReference interface {
 	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type BeyondcorpSecurityGatewayTimeoutsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type BeyondcorpSecurityGatewayTimeoutsOutputReference interface {
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,8 +88,8 @@ type jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) UpdateInput
 	return returns
 }
 
-
 func NewBeyondcorpSecurityGatewayTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayTimeoutsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewBeyondcorpSecurityGatewayTimeoutsOutputReference(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewBeyondcorpSecurityGatewayTimeoutsOutputReference_Override(b BeyondcorpSe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeoutsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetCreate(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) SetCreate(val *string) {
 	if err := j.validateSetCreateParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetCreate(va
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetDelete(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) SetDelete(val *string) {
 	if err := j.validateSetDeleteParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetDelete(va
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference)SetUpdate(val *string) {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) SetUpdate(val *string) {
 	if err := j.validateSetUpdateParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) ComputeFqn(
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetBooleanA
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetBooleanM
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetListAttr
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetNumberAt
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetNumberLi
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetNumberMa
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetStringAt
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) GetStringMa
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) Interpolati
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) ResetUpdate
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayTimeoutsOutputReference) ToString() 
 
 	return returns
 }
-

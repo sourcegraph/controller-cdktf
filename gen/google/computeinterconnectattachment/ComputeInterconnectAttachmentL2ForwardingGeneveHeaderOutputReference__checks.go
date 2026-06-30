@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeInterconnectAttachmentL2ForwardingGeneveHeaderOutputRefer
 
 	return nil
 }
-

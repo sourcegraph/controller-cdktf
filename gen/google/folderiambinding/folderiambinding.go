@@ -17,15 +17,15 @@ type FolderIamBinding interface {
 	Condition() FolderIamBindingConditionOutputReference
 	ConditionInput() *FolderIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,27 +59,27 @@ type FolderIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -97,7 +97,7 @@ type FolderIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -109,7 +109,7 @@ type FolderIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -122,17 +122,17 @@ type FolderIamBinding interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for FolderIamBinding
@@ -170,8 +170,8 @@ func (j *jsiiProxy_FolderIamBinding) ConditionInput() *FolderIamBindingCondition
 	return returns
 }
 
-func (j *jsiiProxy_FolderIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FolderIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_FolderIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FolderIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FolderIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_FolderIamBinding) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_FolderIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FolderIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,8 +340,8 @@ func (j *jsiiProxy_FolderIamBinding) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_FolderIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_FolderIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_FolderIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FolderIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FolderIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -390,8 +390,8 @@ func (j *jsiiProxy_FolderIamBinding) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_FolderIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_FolderIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -410,7 +410,6 @@ func (j *jsiiProxy_FolderIamBinding) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_iam_binding google_folder_iam_binding} Resource.
 func NewFolderIamBinding(scope constructs.Construct, id *string, config *FolderIamBindingConfig) FolderIamBinding {
 	_init_.Initialize()
@@ -422,7 +421,7 @@ func NewFolderIamBinding(scope constructs.Construct, id *string, config *FolderI
 
 	_jsii_.Create(
 		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -435,12 +434,12 @@ func NewFolderIamBinding_Override(f FolderIamBinding, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_FolderIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_FolderIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_FolderIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_FolderIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_FolderIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_FolderIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetFolder(val *string) {
+func (j *jsiiProxy_FolderIamBinding) SetFolder(val *string) {
 	if err := j.validateSetFolderParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,7 +480,7 @@ func (j *jsiiProxy_FolderIamBinding)SetFolder(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_FolderIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -489,7 +488,7 @@ func (j *jsiiProxy_FolderIamBinding)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetId(val *string) {
+func (j *jsiiProxy_FolderIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_FolderIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_FolderIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_FolderIamBinding)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_FolderIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_FolderIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_FolderIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_FolderIamBinding)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_FolderIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func (j *jsiiProxy_FolderIamBinding)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FolderIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_FolderIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,7 +563,7 @@ func FolderIamBinding_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func FolderIamBinding_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func FolderIamBinding_IsConstruct(x interface{}) *bool {
+func FolderIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFolderIamBinding_IsConstructParameters(x); err != nil {
@@ -599,7 +598,7 @@ func FolderIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -607,7 +606,7 @@ func FolderIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func FolderIamBinding_IsTerraformElement(x interface{}) *bool {
+func FolderIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFolderIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -618,7 +617,7 @@ func FolderIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -626,7 +625,7 @@ func FolderIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func FolderIamBinding_IsTerraformResource(x interface{}) *bool {
+func FolderIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateFolderIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -637,7 +636,7 @@ func FolderIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.folderIamBinding.FolderIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -662,31 +661,31 @@ func (f *jsiiProxy_FolderIamBinding) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (f *jsiiProxy_FolderIamBinding) AddOverride(path *string, value interface{}) {
+func (f *jsiiProxy_FolderIamBinding) AddOverride(path *string, value any) {
 	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (f *jsiiProxy_FolderIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FolderIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -702,7 +701,7 @@ func (f *jsiiProxy_FolderIamBinding) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -718,7 +717,7 @@ func (f *jsiiProxy_FolderIamBinding) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func (f *jsiiProxy_FolderIamBinding) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (f *jsiiProxy_FolderIamBinding) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (f *jsiiProxy_FolderIamBinding) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (f *jsiiProxy_FolderIamBinding) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (f *jsiiProxy_FolderIamBinding) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,15 +813,15 @@ func (f *jsiiProxy_FolderIamBinding) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FolderIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FolderIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -841,7 +840,7 @@ func (f *jsiiProxy_FolderIamBinding) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		f,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -854,7 +853,7 @@ func (f *jsiiProxy_FolderIamBinding) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,18 +867,18 @@ func (f *jsiiProxy_FolderIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (f *jsiiProxy_FolderIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (f *jsiiProxy_FolderIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		f,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -890,7 +889,7 @@ func (f *jsiiProxy_FolderIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -901,7 +900,7 @@ func (f *jsiiProxy_FolderIamBinding) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		f,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -912,7 +911,7 @@ func (f *jsiiProxy_FolderIamBinding) PutCondition(value *FolderIamBindingConditi
 	_jsii_.InvokeVoid(
 		f,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -940,8 +939,8 @@ func (f *jsiiProxy_FolderIamBinding) ResetOverrideLogicalId() {
 	)
 }
 
-func (f *jsiiProxy_FolderIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FolderIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -953,8 +952,8 @@ func (f *jsiiProxy_FolderIamBinding) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (f *jsiiProxy_FolderIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (f *jsiiProxy_FolderIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
@@ -966,8 +965,8 @@ func (f *jsiiProxy_FolderIamBinding) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (f *jsiiProxy_FolderIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FolderIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -979,8 +978,8 @@ func (f *jsiiProxy_FolderIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (f *jsiiProxy_FolderIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FolderIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1005,8 +1004,8 @@ func (f *jsiiProxy_FolderIamBinding) ToString() *string {
 	return returns
 }
 
-func (f *jsiiProxy_FolderIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (f *jsiiProxy_FolderIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		f,
@@ -1017,4 +1016,3 @@ func (f *jsiiProxy_FolderIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

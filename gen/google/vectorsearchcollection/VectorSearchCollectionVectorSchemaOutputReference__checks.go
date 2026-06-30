@@ -120,7 +120,7 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -193,7 +193,7 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -252,4 +252,3 @@ func validateNewVectorSearchCollectionVectorSchemaOutputReferenceParameters(terr
 
 	return nil
 }
-

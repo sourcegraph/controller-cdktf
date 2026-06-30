@@ -6,9 +6,9 @@ import (
 
 type DataprocJobConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataprocJobConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// placement block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_job#placement DataprocJob#placement}
@@ -28,7 +28,7 @@ type DataprocJobConfig struct {
 	// Setting this to true, and calling destroy, will ensure that the job is first cancelled before issuing the delete.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_job#force_delete DataprocJob#force_delete}
-	ForceDelete interface{} `field:"optional" json:"forceDelete" yaml:"forceDelete"`
+	ForceDelete any `field:"optional" json:"forceDelete" yaml:"forceDelete"`
 	// hadoop_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_job#hadoop_config DataprocJob#hadoop_config}
@@ -98,6 +98,5 @@ type DataprocJobConfig struct {
 	// Otherwise, Terraform will consider the job 'created' once it is in the RUNNING state.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_job#wait_for_completion DataprocJob#wait_for_completion}
-	WaitForCompletion interface{} `field:"optional" json:"waitForCompletion" yaml:"waitForCompletion"`
+	WaitForCompletion any `field:"optional" json:"waitForCompletion" yaml:"waitForCompletion"`
 }
-

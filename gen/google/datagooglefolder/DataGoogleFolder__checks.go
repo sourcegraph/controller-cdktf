@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleFolder) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleFolder) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleFolder_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateDataGoogleFolder_IsConstructParameters(x interface{}) error {
+func validateDataGoogleFolder_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleFolder_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataGoogleFolder_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleFolder_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleFolder_IsTerraformDataSourceParameters(x interface{}) err
 	return nil
 }
 
-func validateDataGoogleFolder_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleFolder_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleFolder_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFolder) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleFolder) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataGoogleFolder) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFolder) validateSetLookupOrganizationParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleFolder) validateSetLookupOrganizationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -270,4 +270,3 @@ func validateNewDataGoogleFolderParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

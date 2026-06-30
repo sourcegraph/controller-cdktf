@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOperationConfigsAttributesList)
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeApiProductOperationGroupOperationConfigsAttributesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeApiProductOperationGroupOperationConfigsAttributesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApigeeApiProductOperationGroupOperationConfigsAttributesListPara
 
 	return nil
 }
-

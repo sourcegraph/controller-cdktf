@@ -19,7 +19,7 @@ func (i *jsiiProxy_IamOauthClient) validateAddMoveTargetParameters(moveTarget *s
 	return nil
 }
 
-func (i *jsiiProxy_IamOauthClient) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IamOauthClient) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IamOauthClient) validateMoveFromIdParameters(id *string) erro
 	return nil
 }
 
-func (i *jsiiProxy_IamOauthClient) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IamOauthClient) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateIamOauthClient_GenerateConfigForImportParameters(scope constructs.C
 	return nil
 }
 
-func validateIamOauthClient_IsConstructParameters(x interface{}) error {
+func validateIamOauthClient_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateIamOauthClient_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateIamOauthClient_IsTerraformElementParameters(x interface{}) error {
+func validateIamOauthClient_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateIamOauthClient_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateIamOauthClient_IsTerraformResourceParameters(x interface{}) error {
+func validateIamOauthClient_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -287,7 +287,7 @@ func (j *jsiiProxy_IamOauthClient) validateSetClientTypeParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_IamOauthClient) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IamOauthClient) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -320,7 +320,7 @@ func (j *jsiiProxy_IamOauthClient) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_IamOauthClient) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IamOauthClient) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_IamOauthClient) validateSetDescriptionParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_IamOauthClient) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_IamOauthClient) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -453,7 +453,7 @@ func (j *jsiiProxy_IamOauthClient) validateSetProjectParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_IamOauthClient) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IamOauthClient) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -517,4 +517,3 @@ func validateNewIamOauthClientParameters(scope constructs.Construct, id *string,
 
 	return nil
 }
-

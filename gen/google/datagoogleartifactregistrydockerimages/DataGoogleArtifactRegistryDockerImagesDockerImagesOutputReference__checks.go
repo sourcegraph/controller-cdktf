@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleArtifactRegistryDockerImagesDockerImagesOutputReferenc
 
 	return nil
 }
-

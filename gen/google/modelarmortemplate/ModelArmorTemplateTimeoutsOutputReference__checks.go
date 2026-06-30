@@ -98,7 +98,7 @@ func (m *jsiiProxy_ModelArmorTemplateTimeoutsOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorTemplateTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ModelArmorTemplateTimeoutsOutputReference) validateSetDeleteP
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ModelArmorTemplateTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewModelArmorTemplateTimeoutsOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

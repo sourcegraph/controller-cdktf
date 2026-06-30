@@ -17,8 +17,8 @@ type DnsResponsePolicyGkeClustersList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type DnsResponsePolicyGkeClustersList interface {
 	Get(index *float64) DnsResponsePolicyGkeClustersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewDnsResponsePolicyGkeClustersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DnsResponsePolicyGkeClustersList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewDnsResponsePolicyGkeClustersList(terraformResource cdktf.IInterpolatingP
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicyGkeClustersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewDnsResponsePolicyGkeClustersList_Override(d DnsResponsePolicyGkeClusters
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dnsResponsePolicy.DnsResponsePolicyGkeClustersList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersList)SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_DnsResponsePolicyGkeClustersList)SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_DnsResponsePolicyGkeClustersList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DnsResponsePolicyGkeClustersList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersList) AllWithMapKey(mapKeyAttribu
 	_jsii_.Invoke(
 		d,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersList) Get(index *float64) DnsResp
 	_jsii_.Invoke(
 		d,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DnsResponsePolicyGkeClustersList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DnsResponsePolicyGkeClustersList) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (d *jsiiProxy_DnsResponsePolicyGkeClustersList) ToString() *string {
 
 	return returns
 }
-

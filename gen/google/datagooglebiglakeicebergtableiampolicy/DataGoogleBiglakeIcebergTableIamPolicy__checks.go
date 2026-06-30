@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleBiglakeIcebergTableIamPolicy_GenerateConfigForImportParam
 	return nil
 }
 
-func validateDataGoogleBiglakeIcebergTableIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleBiglakeIcebergTableIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleBiglakeIcebergTableIamPolicy_IsConstructParameters(x inte
 	return nil
 }
 
-func validateDataGoogleBiglakeIcebergTableIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleBiglakeIcebergTableIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleBiglakeIcebergTableIamPolicy_IsTerraformDataSourceParamet
 	return nil
 }
 
-func validateDataGoogleBiglakeIcebergTableIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleBiglakeIcebergTableIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) validateSetCatalogPar
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergTableIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -274,4 +274,3 @@ func validateNewDataGoogleBiglakeIcebergTableIamPolicyParameters(scope construct
 
 	return nil
 }
-

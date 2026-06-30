@@ -34,7 +34,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityListParam
 
 	return nil
 }
-

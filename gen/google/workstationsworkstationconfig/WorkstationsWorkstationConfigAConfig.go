@@ -6,9 +6,9 @@ import (
 
 type WorkstationsWorkstationConfigAConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type WorkstationsWorkstationConfigAConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location where the workstation cluster config should reside.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#location WorkstationsWorkstationConfigA#location}
@@ -34,7 +34,7 @@ type WorkstationsWorkstationConfigAConfig struct {
 	// allowed_ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#allowed_ports WorkstationsWorkstationConfigA#allowed_ports}
-	AllowedPorts interface{} `field:"optional" json:"allowedPorts" yaml:"allowedPorts"`
+	AllowedPorts any `field:"optional" json:"allowedPorts" yaml:"allowedPorts"`
 	// Client-specified annotations. This is distinct from labels.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
@@ -51,7 +51,7 @@ type WorkstationsWorkstationConfigAConfig struct {
 	// By default the service supports TCP connections via a websocket relay. Setting this option to true disables that relay, which prevents the usage of services that require plain tcp connections, such as ssh. When enabled, all communication must occur over https or wss.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#disable_tcp_connections WorkstationsWorkstationConfigA#disable_tcp_connections}
-	DisableTcpConnections interface{} `field:"optional" json:"disableTcpConnections" yaml:"disableTcpConnections"`
+	DisableTcpConnections any `field:"optional" json:"disableTcpConnections" yaml:"disableTcpConnections"`
 	// Human-readable name for this resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#display_name WorkstationsWorkstationConfigA#display_name}
@@ -61,7 +61,7 @@ type WorkstationsWorkstationConfigAConfig struct {
 	// When enabled, a service account must also be specified that has 'logging.buckets.write' permission on the project. Operating system audit logging is distinct from Cloud Audit Logs.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#enable_audit_agent WorkstationsWorkstationConfigA#enable_audit_agent}
-	EnableAuditAgent interface{} `field:"optional" json:"enableAuditAgent" yaml:"enableAuditAgent"`
+	EnableAuditAgent any `field:"optional" json:"enableAuditAgent" yaml:"enableAuditAgent"`
 	// encryption_key block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#encryption_key WorkstationsWorkstationConfigA#encryption_key}
@@ -69,7 +69,7 @@ type WorkstationsWorkstationConfigAConfig struct {
 	// ephemeral_directories block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#ephemeral_directories WorkstationsWorkstationConfigA#ephemeral_directories}
-	EphemeralDirectories interface{} `field:"optional" json:"ephemeralDirectories" yaml:"ephemeralDirectories"`
+	EphemeralDirectories any `field:"optional" json:"ephemeralDirectories" yaml:"ephemeralDirectories"`
 	// host block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#host WorkstationsWorkstationConfigA#host}
@@ -100,13 +100,13 @@ type WorkstationsWorkstationConfigAConfig struct {
 	// persistent_directories block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#persistent_directories WorkstationsWorkstationConfigA#persistent_directories}
-	PersistentDirectories interface{} `field:"optional" json:"persistentDirectories" yaml:"persistentDirectories"`
+	PersistentDirectories any `field:"optional" json:"persistentDirectories" yaml:"persistentDirectories"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#project WorkstationsWorkstationConfigA#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// readiness_checks block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#readiness_checks WorkstationsWorkstationConfigA#readiness_checks}
-	ReadinessChecks interface{} `field:"optional" json:"readinessChecks" yaml:"readinessChecks"`
+	ReadinessChecks any `field:"optional" json:"readinessChecks" yaml:"readinessChecks"`
 	// Specifies the zones used to replicate the VM and disk resources within the region.
 	//
 	// If set, exactly two zones within the workstation cluster's region must be specified—for example, '['us-central1-a', 'us-central1-f']'.
@@ -126,4 +126,3 @@ type WorkstationsWorkstationConfigAConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#timeouts WorkstationsWorkstationConfigA#timeouts}
 	Timeouts *WorkstationsWorkstationConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

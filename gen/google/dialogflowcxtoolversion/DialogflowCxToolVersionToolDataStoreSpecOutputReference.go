@@ -12,9 +12,9 @@ type DialogflowCxToolVersionToolDataStoreSpecOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -26,7 +26,7 @@ type DialogflowCxToolVersionToolDataStoreSpecOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DataStoreConnections() DialogflowCxToolVersionToolDataStoreSpecDataStoreConnectionsList
-	DataStoreConnectionsInput() interface{}
+	DataStoreConnectionsInput() any
 	FallbackPrompt() DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference
 	FallbackPromptInput() *DialogflowCxToolVersionToolDataStoreSpecFallbackPrompt
 	// Experimental.
@@ -44,7 +44,7 @@ type DialogflowCxToolVersionToolDataStoreSpecOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,11 +65,11 @@ type DialogflowCxToolVersionToolDataStoreSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutDataStoreConnections(value interface{})
+	PutDataStoreConnections(value any)
 	PutFallbackPrompt(value *DialogflowCxToolVersionToolDataStoreSpecFallbackPrompt)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) Data
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) DataStoreConnectionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) DataStoreConnectionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"dataStoreConnectionsInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) Terr
 	return returns
 }
 
-
 func NewDialogflowCxToolVersionToolDataStoreSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxToolVersionToolDataStoreSpecOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewDialogflowCxToolVersionToolDataStoreSpecOutputReference(terraformResourc
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolDataStoreSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewDialogflowCxToolVersionToolDataStoreSpecOutputReference_Override(d Dialo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolDataStoreSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference)SetCo
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference)SetInternalValue(val *DialogflowCxToolVersionToolDataStoreSpec) {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) SetInternalValue(val *DialogflowCxToolVersionToolDataStoreSpec) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference)SetIn
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,16 +287,16 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) Comp
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -313,7 +312,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -329,7 +328,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetB
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -345,7 +344,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetL
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -361,7 +360,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -377,7 +376,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -393,7 +392,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetN
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -409,7 +408,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -425,7 +424,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) GetS
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -454,21 +453,21 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) Inte
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) PutDataStoreConnections(value interface{}) {
+func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) PutDataStoreConnections(value any) {
 	if err := d.validatePutDataStoreConnectionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDataStoreConnections",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -479,20 +478,20 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) PutF
 	_jsii_.InvokeVoid(
 		d,
 		"putFallbackPrompt",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecOutputReference) ToSt
 
 	return returns
 }
-

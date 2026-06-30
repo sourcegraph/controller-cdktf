@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRoute.ComputeRoute",
-		reflect.TypeOf((*ComputeRoute)(nil)).Elem(),
+		reflect.TypeFor[ComputeRoute](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -112,7 +112,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "warnings", GoGetter: "Warnings"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRoute{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -120,11 +120,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRoute.ComputeRouteAsPaths",
-		reflect.TypeOf((*ComputeRouteAsPaths)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteAsPaths](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRoute.ComputeRouteAsPathsList",
-		reflect.TypeOf((*ComputeRouteAsPathsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteAsPathsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouteAsPathsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -145,7 +145,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRoute.ComputeRouteAsPathsOutputReference",
-		reflect.TypeOf((*ComputeRouteAsPathsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteAsPathsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "asLists", GoGetter: "AsLists"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouteAsPathsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -179,15 +179,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRoute.ComputeRouteConfig",
-		reflect.TypeOf((*ComputeRouteConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRoute.ComputeRouteParams",
-		reflect.TypeOf((*ComputeRouteParams)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRoute.ComputeRouteParamsOutputReference",
-		reflect.TypeOf((*ComputeRouteParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -214,7 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouteParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -222,11 +222,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRoute.ComputeRouteTimeouts",
-		reflect.TypeOf((*ComputeRouteTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRoute.ComputeRouteTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeRouteTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -256,7 +256,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouteTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -264,15 +264,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRoute.ComputeRouteWarnings",
-		reflect.TypeOf((*ComputeRouteWarnings)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteWarnings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeRoute.ComputeRouteWarningsData",
-		reflect.TypeOf((*ComputeRouteWarningsData)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteWarningsData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRoute.ComputeRouteWarningsDataList",
-		reflect.TypeOf((*ComputeRouteWarningsDataList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteWarningsDataList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -285,7 +285,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouteWarningsDataList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -293,7 +293,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRoute.ComputeRouteWarningsDataOutputReference",
-		reflect.TypeOf((*ComputeRouteWarningsDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteWarningsDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -319,7 +319,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouteWarningsDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -327,7 +327,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRoute.ComputeRouteWarningsList",
-		reflect.TypeOf((*ComputeRouteWarningsList)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteWarningsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -340,7 +340,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouteWarningsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -348,7 +348,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeRoute.ComputeRouteWarningsOutputReference",
-		reflect.TypeOf((*ComputeRouteWarningsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeRouteWarningsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -375,7 +375,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeRouteWarningsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

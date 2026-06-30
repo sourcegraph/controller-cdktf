@@ -101,7 +101,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutColumnDefsParameters(value interface{}) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutColumnDefsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutLegendsParameters(value interface{}) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutLegendsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -185,7 +185,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutSeriesParameters(value interface{}) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutSeriesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -238,7 +238,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutVisualMapsParameters(value interface{}) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutVisualMapsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutXAxesParameters(value interface{}) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutXAxesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -300,7 +300,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutYAxesParameters(value interface{}) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validatePutYAxesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -339,7 +339,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -444,7 +444,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateSetThresholdColoringEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateSetThresholdColoringEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -475,4 +475,3 @@ func validateNewChronicleDashboardChartDashboardChartVisualizationOutputReferenc
 
 	return nil
 }
-

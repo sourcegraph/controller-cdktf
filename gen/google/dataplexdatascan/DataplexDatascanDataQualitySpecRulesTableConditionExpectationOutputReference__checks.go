@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesTableConditionExpectation
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataplexDatascanDataQualitySpecRulesTableConditionExpectationOut
 
 	return nil
 }
-

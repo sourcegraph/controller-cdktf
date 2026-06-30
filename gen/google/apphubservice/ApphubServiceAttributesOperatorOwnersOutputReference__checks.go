@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApphubServiceAttributesOperatorOwnersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceAttributesOperatorOwnersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubServiceAttributesOperatorOwnersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ApphubServiceAttributesOperatorOwnersOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceAttributesOperatorOwnersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubServiceAttributesOperatorOwnersOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApphubServiceAttributesOperatorOwnersOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityGroup.NetworkConnectivityGroup",
-		reflect.TypeOf((*NetworkConnectivityGroup)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityGroup](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityGroup{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,11 +92,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivityGroup.NetworkConnectivityGroupAutoAccept",
-		reflect.TypeOf((*NetworkConnectivityGroupAutoAccept)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityGroupAutoAccept](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityGroup.NetworkConnectivityGroupAutoAcceptOutputReference",
-		reflect.TypeOf((*NetworkConnectivityGroupAutoAcceptOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityGroupAutoAcceptOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoAcceptProjects", GoGetter: "AutoAcceptProjects"},
 			_jsii_.MemberProperty{JsiiProperty: "autoAcceptProjectsInput", GoGetter: "AutoAcceptProjectsInput"},
@@ -122,7 +122,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityGroupAutoAcceptOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -130,15 +130,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig",
-		reflect.TypeOf((*NetworkConnectivityGroupConfig)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityGroupConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeouts",
-		reflect.TypeOf((*NetworkConnectivityGroupTimeouts)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityGroupTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeoutsOutputReference",
-		reflect.TypeOf((*NetworkConnectivityGroupTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NetworkConnectivityGroupTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -171,7 +171,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NetworkConnectivityGroupTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

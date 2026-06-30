@@ -19,7 +19,7 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateAddMove
 	return nil
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateMoveFro
 	return nil
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateStorageControlOrganizationIntelligenceConfig_GenerateConfigForImpor
 	return nil
 }
 
-func validateStorageControlOrganizationIntelligenceConfig_IsConstructParameters(x interface{}) error {
+func validateStorageControlOrganizationIntelligenceConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateStorageControlOrganizationIntelligenceConfig_IsConstructParameters(
 	return nil
 }
 
-func validateStorageControlOrganizationIntelligenceConfig_IsTerraformElementParameters(x interface{}) error {
+func validateStorageControlOrganizationIntelligenceConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateStorageControlOrganizationIntelligenceConfig_IsTerraformElementPara
 	return nil
 }
 
-func validateStorageControlOrganizationIntelligenceConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateStorageControlOrganizationIntelligenceConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateStorageControlOrganizationIntelligenceConfig_IsTerraformResourcePar
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateSetConn
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -388,7 +388,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateSetName
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -452,4 +452,3 @@ func validateNewStorageControlOrganizationIntelligenceConfigParameters(scope con
 
 	return nil
 }
-

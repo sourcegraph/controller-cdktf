@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeRoutersRoutersBgpAdvertisedIpRangesOutputRefere
 
 	return nil
 }
-

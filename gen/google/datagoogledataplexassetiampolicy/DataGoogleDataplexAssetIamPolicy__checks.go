@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleDataplexAssetIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleDataplexAssetIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleDataplexAssetIamPolicy_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateDataGoogleDataplexAssetIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleDataplexAssetIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleDataplexAssetIamPolicy_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateDataGoogleDataplexAssetIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleDataplexAssetIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleDataplexAssetIamPolicy_IsTerraformDataSourceParameters(x 
 	return nil
 }
 
-func validateDataGoogleDataplexAssetIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleDataplexAssetIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleDataplexAssetIamPolicy) validateSetAssetParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataplexAssetIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDataplexAssetIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -282,4 +282,3 @@ func validateNewDataGoogleDataplexAssetIamPolicyParameters(scope constructs.Cons
 
 	return nil
 }
-

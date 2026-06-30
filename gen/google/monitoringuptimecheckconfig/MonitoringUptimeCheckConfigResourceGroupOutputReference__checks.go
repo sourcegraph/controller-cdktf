@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigResourceGroupOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigResourceGroupOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigResourceGroupOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMonitoringUptimeCheckConfigResourceGroupOutputReferenceParameter
 
 	return nil
 }
-

@@ -10,14 +10,14 @@ import (
 
 type FolderOrganizationPolicyListPolicyDenyOutputReference interface {
 	cdktf.ComplexObject
-	All() interface{}
-	SetAll(val interface{})
-	AllInput() interface{}
+	All() any
+	SetAll(val any)
+	AllInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type FolderOrganizationPolicyListPolicyDenyOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type FolderOrganizationPolicyListPolicyDenyOutputReference interface {
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) All() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) All() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"all",
@@ -94,8 +94,8 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) All() 
 	return returns
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) AllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) AllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allInput",
@@ -104,8 +104,8 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) AllInp
 	return returns
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) Values
 	return returns
 }
 
-
 func NewFolderOrganizationPolicyListPolicyDenyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FolderOrganizationPolicyListPolicyDenyOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewFolderOrganizationPolicyListPolicyDenyOutputReference(terraformResource 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDenyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewFolderOrganizationPolicyListPolicyDenyOutputReference_Override(f FolderO
 
 	_jsii_.Create(
 		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDenyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		f,
 	)
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetAll(val interface{}) {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) SetAll(val any) {
 	if err := j.validateSetAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetAll(
 	)
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetComp
 	)
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetInternalValue(val *FolderOrganizationPolicyListPolicyDeny) {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) SetInternalValue(val *FolderOrganizationPolicyListPolicyDeny) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetInte
 	)
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference)SetValues(val *[]*string) {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) SetValues(val *[]*string) {
 	if err := j.validateSetValuesParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) Comput
 	return returns
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		f,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetBoo
 	_jsii_.Invoke(
 		f,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetBoo
 	_jsii_.Invoke(
 		f,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetLis
 	_jsii_.Invoke(
 		f,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetNum
 	_jsii_.Invoke(
 		f,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetNum
 	_jsii_.Invoke(
 		f,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetNum
 	_jsii_.Invoke(
 		f,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetStr
 	_jsii_.Invoke(
 		f,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) GetStr
 	_jsii_.Invoke(
 		f,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) Interp
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) ResetV
 	)
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := f.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) ToStri
 
 	return returns
 }
-

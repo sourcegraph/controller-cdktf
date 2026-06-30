@@ -6,9 +6,9 @@ import (
 
 type ApigeeApiProductConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApigeeApiProductConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name displayed in the UI or developer portal to developers registering for API access.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#display_name ApigeeApiProduct#display_name}
@@ -47,7 +47,7 @@ type ApigeeApiProductConfig struct {
 	// attributes block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
-	Attributes interface{} `field:"optional" json:"attributes" yaml:"attributes"`
+	Attributes any `field:"optional" json:"attributes" yaml:"attributes"`
 	// Description of the API product. Include key information about the API product that is not captured by other fields.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#description ApigeeApiProduct#description}
@@ -118,4 +118,3 @@ type ApigeeApiProductConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#timeouts ApigeeApiProduct#timeouts}
 	Timeouts *ApigeeApiProductTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

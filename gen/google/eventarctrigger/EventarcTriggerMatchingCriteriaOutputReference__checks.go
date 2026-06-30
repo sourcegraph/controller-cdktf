@@ -106,7 +106,7 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateSetAt
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewEventarcTriggerMatchingCriteriaOutputReferenceParameters(terrafo
 
 	return nil
 }
-

@@ -17,15 +17,15 @@ type ContainerAnalysisNoteIamBinding interface {
 	Condition() ContainerAnalysisNoteIamBindingConditionOutputReference
 	ConditionInput() *ContainerAnalysisNoteIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,27 +62,27 @@ type ContainerAnalysisNoteIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type ContainerAnalysisNoteIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type ContainerAnalysisNoteIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type ContainerAnalysisNoteIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ContainerAnalysisNoteIamBinding
@@ -174,8 +174,8 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) ConditionInput() *ContainerA
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -364,8 +364,8 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) Provider() cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) Provisioners() *[]interface{
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) TerraformGeneratorMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) TerraformResourceType() *str
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_note_iam_binding google_container_analysis_note_iam_binding} Resource.
 func NewContainerAnalysisNoteIamBinding(scope constructs.Construct, id *string, config *ContainerAnalysisNoteIamBindingConfig) ContainerAnalysisNoteIamBinding {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewContainerAnalysisNoteIamBinding(scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewContainerAnalysisNoteIamBinding_Override(c ContainerAnalysisNoteIamBindi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetId(val *string) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetNote(val *string) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetNote(val *string) {
 	if err := j.validateSetNoteParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetNote(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -557,7 +556,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -565,7 +564,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func ContainerAnalysisNoteIamBinding_GenerateConfigForImport(scope constructs.Co
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func ContainerAnalysisNoteIamBinding_GenerateConfigForImport(scope constructs.Co
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ContainerAnalysisNoteIamBinding_IsConstruct(x interface{}) *bool {
+func ContainerAnalysisNoteIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAnalysisNoteIamBinding_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func ContainerAnalysisNoteIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func ContainerAnalysisNoteIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerAnalysisNoteIamBinding_IsTerraformElement(x interface{}) *bool {
+func ContainerAnalysisNoteIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAnalysisNoteIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func ContainerAnalysisNoteIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func ContainerAnalysisNoteIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ContainerAnalysisNoteIamBinding_IsTerraformResource(x interface{}) *bool {
+func ContainerAnalysisNoteIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateContainerAnalysisNoteIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func ContainerAnalysisNoteIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) AddMoveTarget(moveTarget *st
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetBooleanAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetBooleanMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetListAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetNumberAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetNumberListAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetNumberMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetStringAttribute(terraform
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) GetStringMapAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -876,7 +875,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ImportFrom(id *string, provi
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) InterpolationForAttribute(te
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) OverrideLogicalId(newLogical
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) PutCondition(value *Containe
 	_jsii_.InvokeVoid(
 		c,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ResetProject() {
 	)
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -996,8 +995,8 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) SynthesizeAttributes() *map[
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1009,8 +1008,8 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) SynthesizeHclAttributes() *m
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1022,8 +1021,8 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ToHclTerraform() interface{}
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1048,8 +1047,8 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1060,4 +1059,3 @@ func (c *jsiiProxy_ContainerAnalysisNoteIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

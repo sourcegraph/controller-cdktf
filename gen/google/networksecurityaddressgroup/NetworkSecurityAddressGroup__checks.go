@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetworkSecurityAddressGroup) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAddressGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetworkSecurityAddressGroup) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetworkSecurityAddressGroup) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAddressGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetworkSecurityAddressGroup) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateNetworkSecurityAddressGroup_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateNetworkSecurityAddressGroup_IsConstructParameters(x interface{}) error {
+func validateNetworkSecurityAddressGroup_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateNetworkSecurityAddressGroup_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateNetworkSecurityAddressGroup_IsTerraformElementParameters(x interface{}) error {
+func validateNetworkSecurityAddressGroup_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateNetworkSecurityAddressGroup_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateNetworkSecurityAddressGroup_IsTerraformResourceParameters(x interface{}) error {
+func validateNetworkSecurityAddressGroup_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -263,7 +263,7 @@ func (j *jsiiProxy_NetworkSecurityAddressGroup) validateSetCapacityParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAddressGroup) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAddressGroup) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -296,7 +296,7 @@ func (j *jsiiProxy_NetworkSecurityAddressGroup) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAddressGroup) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAddressGroup) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_NetworkSecurityAddressGroup) validateSetParentParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityAddressGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkSecurityAddressGroup) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -489,4 +489,3 @@ func validateNewNetworkSecurityAddressGroupParameters(scope constructs.Construct
 
 	return nil
 }
-

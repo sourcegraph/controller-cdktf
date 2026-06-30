@@ -23,13 +23,13 @@ type DataGoogleAlloydbCluster interface {
 	ClusterIdInput() *string
 	ClusterType() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	ContinuousBackupConfig() DataGoogleAlloydbClusterContinuousBackupConfigList
 	ContinuousBackupInfo() DataGoogleAlloydbClusterContinuousBackupInfoList
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DatabaseVersion() *string
 	DataplexConfig() DataGoogleAlloydbClusterDataplexConfigList
 	DeletionPolicy() *string
@@ -79,7 +79,7 @@ type DataGoogleAlloydbCluster interface {
 	SetProvider(val cdktf.TerraformProvider)
 	PscConfig() DataGoogleAlloydbClusterPscConfigList
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Reconciling() cdktf.IResolvable
 	RestoreBackupdrBackupSource() DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList
 	RestoreBackupdrPitrSource() DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList
@@ -93,15 +93,15 @@ type DataGoogleAlloydbCluster interface {
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	TrialMetadata() DataGoogleAlloydbClusterTrialMetadataList
 	Uid() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -129,18 +129,18 @@ type DataGoogleAlloydbCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleAlloydbCluster
@@ -228,8 +228,8 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster) ClusterType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleAlloydbCluster) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster) ContinuousBackupInfo() DataGoogleAl
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleAlloydbCluster) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -568,8 +568,8 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster) PscConfig() DataGoogleAlloydbCluste
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleAlloydbCluster) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -688,8 +688,8 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleAlloydbCluster) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -728,7 +728,6 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster) Uid() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/alloydb_cluster google_alloydb_cluster} Data Source.
 func NewDataGoogleAlloydbCluster(scope constructs.Construct, id *string, config *DataGoogleAlloydbClusterConfig) DataGoogleAlloydbCluster {
 	_init_.Initialize()
@@ -740,7 +739,7 @@ func NewDataGoogleAlloydbCluster(scope constructs.Construct, id *string, config 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -753,12 +752,12 @@ func NewDataGoogleAlloydbCluster_Override(d DataGoogleAlloydbCluster, scope cons
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster)SetClusterId(val *string) {
+func (j *jsiiProxy_DataGoogleAlloydbCluster) SetClusterId(val *string) {
 	if err := j.validateSetClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -769,7 +768,7 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster)SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleAlloydbCluster) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,7 +779,7 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleAlloydbCluster) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -788,7 +787,7 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleAlloydbCluster) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -796,7 +795,7 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleAlloydbCluster) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -807,7 +806,7 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleAlloydbCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -818,7 +817,7 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleAlloydbCluster) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -829,7 +828,7 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleAlloydbCluster) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -840,7 +839,7 @@ func (j *jsiiProxy_DataGoogleAlloydbCluster)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbCluster)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleAlloydbCluster) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -860,7 +859,7 @@ func DataGoogleAlloydbCluster_GenerateConfigForImport(scope constructs.Construct
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -884,7 +883,7 @@ func DataGoogleAlloydbCluster_GenerateConfigForImport(scope constructs.Construct
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleAlloydbCluster_IsConstruct(x interface{}) *bool {
+func DataGoogleAlloydbCluster_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleAlloydbCluster_IsConstructParameters(x); err != nil {
@@ -895,7 +894,7 @@ func DataGoogleAlloydbCluster_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -903,7 +902,7 @@ func DataGoogleAlloydbCluster_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleAlloydbCluster_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleAlloydbCluster_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleAlloydbCluster_IsTerraformDataSourceParameters(x); err != nil {
@@ -914,7 +913,7 @@ func DataGoogleAlloydbCluster_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -922,7 +921,7 @@ func DataGoogleAlloydbCluster_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleAlloydbCluster_IsTerraformElement(x interface{}) *bool {
+func DataGoogleAlloydbCluster_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleAlloydbCluster_IsTerraformElementParameters(x); err != nil {
@@ -933,7 +932,7 @@ func DataGoogleAlloydbCluster_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -951,27 +950,27 @@ func DataGoogleAlloydbCluster_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbCluster) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleAlloydbCluster) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleAlloydbCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -987,7 +986,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) GetBooleanAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1003,7 +1002,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) GetBooleanMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1019,7 +1018,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) GetListAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1035,7 +1034,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) GetNumberAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,7 +1050,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) GetNumberListAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1067,7 +1066,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) GetNumberMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1083,7 +1082,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) GetStringAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1099,7 +1098,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) GetStringMapAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1115,7 +1114,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) InterpolationForAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1129,7 +1128,7 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) OverrideLogicalId(newLogicalId *str
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1165,8 +1164,8 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbCluster) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleAlloydbCluster) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1178,8 +1177,8 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) SynthesizeAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbCluster) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleAlloydbCluster) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1191,8 +1190,8 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) SynthesizeHclAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbCluster) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleAlloydbCluster) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1204,8 +1203,8 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbCluster) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleAlloydbCluster) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1230,8 +1229,8 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbCluster) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleAlloydbCluster) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1242,4 +1241,3 @@ func (d *jsiiProxy_DataGoogleAlloydbCluster) ToTerraform() interface{} {
 
 	return returns
 }
-

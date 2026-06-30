@@ -90,7 +90,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) validatePutMaintenanceExclusionsParameters(value interface{}) error {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) validatePutMaintenanceExclusionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -240,4 +240,3 @@ func validateNewEdgecontainerClusterMaintenancePolicyOutputReferenceParameters(t
 
 	return nil
 }
-

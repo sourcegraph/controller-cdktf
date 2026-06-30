@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleSecretManagerRegionalSecretsSecretsRotationOutputRefer
 
 	return nil
 }
-

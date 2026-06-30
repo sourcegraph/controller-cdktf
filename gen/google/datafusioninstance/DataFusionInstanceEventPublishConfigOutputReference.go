@@ -12,9 +12,9 @@ type DataFusionInstanceEventPublishConfigOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,9 +25,9 @@ type DataFusionInstanceEventPublishConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataFusionInstanceEventPublishConfig
@@ -46,7 +46,7 @@ type DataFusionInstanceEventPublishConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -69,7 +69,7 @@ type DataFusionInstanceEventPublishConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,8 +82,8 @@ type jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -112,8 +112,8 @@ func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) Enabled(
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -192,7 +192,6 @@ func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) TopicInp
 	return returns
 }
 
-
 func NewDataFusionInstanceEventPublishConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataFusionInstanceEventPublishConfigOutputReference {
 	_init_.Initialize()
 
@@ -203,7 +202,7 @@ func NewDataFusionInstanceEventPublishConfigOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceEventPublishConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -215,12 +214,12 @@ func NewDataFusionInstanceEventPublishConfigOutputReference_Override(d DataFusio
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceEventPublishConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,7 +230,7 @@ func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -242,7 +241,7 @@ func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +252,7 @@ func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetEnable
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetInternalValue(val *DataFusionInstanceEventPublishConfig) {
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) SetInternalValue(val *DataFusionInstanceEventPublishConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +263,7 @@ func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,7 +274,7 @@ func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,7 +285,7 @@ func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference)SetTopic(val *string) {
+func (j *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,16 +309,16 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) ComputeF
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -335,7 +334,7 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -351,7 +350,7 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -367,7 +366,7 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetListA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -383,7 +382,7 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -399,7 +398,7 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -415,7 +414,7 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -476,23 +475,23 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -511,4 +510,3 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) ToString
 
 	return returns
 }
-

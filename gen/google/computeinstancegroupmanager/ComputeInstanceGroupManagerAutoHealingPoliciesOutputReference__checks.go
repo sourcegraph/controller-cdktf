@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeInstanceGroupManagerAutoHealingPoliciesOutputReferencePar
 
 	return nil
 }
-

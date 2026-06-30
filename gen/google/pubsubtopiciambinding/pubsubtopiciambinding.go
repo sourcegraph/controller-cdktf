@@ -17,15 +17,15 @@ type PubsubTopicIamBinding interface {
 	Condition() PubsubTopicIamBindingConditionOutputReference
 	ConditionInput() *PubsubTopicIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,18 +59,18 @@ type PubsubTopicIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Topic() *string
@@ -80,9 +80,9 @@ type PubsubTopicIamBinding interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type PubsubTopicIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type PubsubTopicIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type PubsubTopicIamBinding interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for PubsubTopicIamBinding
@@ -174,8 +174,8 @@ func (j *jsiiProxy_PubsubTopicIamBinding) ConditionInput() *PubsubTopicIamBindin
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_PubsubTopicIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubTopicIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_PubsubTopicIamBinding) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_PubsubTopicIamBinding) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_PubsubTopicIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_PubsubTopicIamBinding) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PubsubTopicIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_PubsubTopicIamBinding) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_PubsubTopicIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_PubsubTopicIamBinding) TopicInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding} Resource.
 func NewPubsubTopicIamBinding(scope constructs.Construct, id *string, config *PubsubTopicIamBindingConfig) PubsubTopicIamBinding {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewPubsubTopicIamBinding(scope constructs.Construct, id *string, config *Pu
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewPubsubTopicIamBinding_Override(p PubsubTopicIamBinding, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetId(val *string) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamBinding)SetTopic(val *string) {
+func (j *jsiiProxy_PubsubTopicIamBinding) SetTopic(val *string) {
 	if err := j.validateSetTopicParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func PubsubTopicIamBinding_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func PubsubTopicIamBinding_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func PubsubTopicIamBinding_IsConstruct(x interface{}) *bool {
+func PubsubTopicIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubTopicIamBinding_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func PubsubTopicIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func PubsubTopicIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubTopicIamBinding_IsTerraformElement(x interface{}) *bool {
+func PubsubTopicIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubTopicIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func PubsubTopicIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func PubsubTopicIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func PubsubTopicIamBinding_IsTerraformResource(x interface{}) *bool {
+func PubsubTopicIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validatePubsubTopicIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func PubsubTopicIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (p *jsiiProxy_PubsubTopicIamBinding) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (p *jsiiProxy_PubsubTopicIamBinding) AddOverride(path *string, value interface{}) {
+func (p *jsiiProxy_PubsubTopicIamBinding) AddOverride(path *string, value any) {
 	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (p *jsiiProxy_PubsubTopicIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PubsubTopicIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (p *jsiiProxy_PubsubTopicIamBinding) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubTopicIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -876,7 +875,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) ImportFrom(id *string, provider cdktf.
 	_jsii_.InvokeVoid(
 		p,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (p *jsiiProxy_PubsubTopicIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (p *jsiiProxy_PubsubTopicIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (p *jsiiProxy_PubsubTopicIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := p.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		p,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		p,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (p *jsiiProxy_PubsubTopicIamBinding) PutCondition(value *PubsubTopicIamBind
 	_jsii_.InvokeVoid(
 		p,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (p *jsiiProxy_PubsubTopicIamBinding) ResetProject() {
 	)
 }
 
-func (p *jsiiProxy_PubsubTopicIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubTopicIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -996,8 +995,8 @@ func (p *jsiiProxy_PubsubTopicIamBinding) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (p *jsiiProxy_PubsubTopicIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
@@ -1009,8 +1008,8 @@ func (p *jsiiProxy_PubsubTopicIamBinding) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubTopicIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1022,8 +1021,8 @@ func (p *jsiiProxy_PubsubTopicIamBinding) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubTopicIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1048,8 +1047,8 @@ func (p *jsiiProxy_PubsubTopicIamBinding) ToString() *string {
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (p *jsiiProxy_PubsubTopicIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		p,
@@ -1060,4 +1059,3 @@ func (p *jsiiProxy_PubsubTopicIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

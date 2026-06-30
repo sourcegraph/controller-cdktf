@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAsset",
-		reflect.TypeOf((*DataplexAsset)(nil)).Elem(),
+		reflect.TypeFor[DataplexAsset](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAsset{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,19 +103,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetConfig",
-		reflect.TypeOf((*DataplexAssetConfig)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpec",
-		reflect.TypeOf((*DataplexAssetDiscoverySpec)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoverySpec](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecCsvOptions",
-		reflect.TypeOf((*DataplexAssetDiscoverySpecCsvOptions)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoverySpecCsvOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecCsvOptionsOutputReference",
-		reflect.TypeOf((*DataplexAssetDiscoverySpecCsvOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoverySpecCsvOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -151,7 +151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetDiscoverySpecCsvOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -159,11 +159,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecJsonOptions",
-		reflect.TypeOf((*DataplexAssetDiscoverySpecJsonOptions)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoverySpecJsonOptions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecJsonOptionsOutputReference",
-		reflect.TypeOf((*DataplexAssetDiscoverySpecJsonOptionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoverySpecJsonOptionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetDiscoverySpecJsonOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -201,7 +201,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecOutputReference",
-		reflect.TypeOf((*DataplexAssetDiscoverySpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoverySpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetDiscoverySpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -252,11 +252,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatus",
-		reflect.TypeOf((*DataplexAssetDiscoveryStatus)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoveryStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusList",
-		reflect.TypeOf((*DataplexAssetDiscoveryStatusList)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoveryStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -269,7 +269,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetDiscoveryStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -277,7 +277,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusOutputReference",
-		reflect.TypeOf((*DataplexAssetDiscoveryStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoveryStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -307,7 +307,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetDiscoveryStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -315,11 +315,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusStats",
-		reflect.TypeOf((*DataplexAssetDiscoveryStatusStats)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoveryStatusStats](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusStatsList",
-		reflect.TypeOf((*DataplexAssetDiscoveryStatusStatsList)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoveryStatusStatsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -332,7 +332,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetDiscoveryStatusStatsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -340,7 +340,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusStatsOutputReference",
-		reflect.TypeOf((*DataplexAssetDiscoveryStatusStatsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetDiscoveryStatusStatsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetDiscoveryStatusStatsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -376,11 +376,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetResourceSpec",
-		reflect.TypeOf((*DataplexAssetResourceSpec)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetResourceSpec](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetResourceSpecOutputReference",
-		reflect.TypeOf((*DataplexAssetResourceSpecOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetResourceSpecOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetResourceSpecOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -420,11 +420,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetResourceStatus",
-		reflect.TypeOf((*DataplexAssetResourceStatus)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetResourceStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetResourceStatusList",
-		reflect.TypeOf((*DataplexAssetResourceStatusList)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetResourceStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -437,7 +437,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetResourceStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -445,7 +445,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetResourceStatusOutputReference",
-		reflect.TypeOf((*DataplexAssetResourceStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetResourceStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -472,7 +472,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetResourceStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -480,11 +480,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetSecurityStatus",
-		reflect.TypeOf((*DataplexAssetSecurityStatus)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetSecurityStatus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetSecurityStatusList",
-		reflect.TypeOf((*DataplexAssetSecurityStatusList)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetSecurityStatusList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -497,7 +497,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetSecurityStatusList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -505,7 +505,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetSecurityStatusOutputReference",
-		reflect.TypeOf((*DataplexAssetSecurityStatusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetSecurityStatusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -532,7 +532,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetSecurityStatusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -540,11 +540,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetTimeouts",
-		reflect.TypeOf((*DataplexAssetTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dataplexAsset.DataplexAssetTimeoutsOutputReference",
-		reflect.TypeOf((*DataplexAssetTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DataplexAssetTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -577,7 +577,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DataplexAssetTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpoint
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionDiskAsyncPrimaryDiskOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskAsyncPrimaryDiskOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionDiskAsyncPrimaryDiskOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewComputeRegionDiskAsyncPrimaryDiskOutputReferenceParameters(terra
 
 	return nil
 }
-

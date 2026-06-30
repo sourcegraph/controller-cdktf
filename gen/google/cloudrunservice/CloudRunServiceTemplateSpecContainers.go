@@ -1,6 +1,5 @@
 package cloudrunservice
 
-
 type CloudRunServiceTemplateSpecContainers struct {
 	// Docker image name. This is most often a reference to a container located in the container registry, such as gcr.io/cloudrun/hello.
 	//
@@ -17,11 +16,11 @@ type CloudRunServiceTemplateSpecContainers struct {
 	// env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#env CloudRunService#env}
-	Env interface{} `field:"optional" json:"env" yaml:"env"`
+	Env any `field:"optional" json:"env" yaml:"env"`
 	// env_from block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#env_from CloudRunService#env_from}
-	EnvFrom interface{} `field:"optional" json:"envFrom" yaml:"envFrom"`
+	EnvFrom any `field:"optional" json:"envFrom" yaml:"envFrom"`
 	// liveness_probe block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#liveness_probe CloudRunService#liveness_probe}
@@ -33,7 +32,7 @@ type CloudRunServiceTemplateSpecContainers struct {
 	// ports block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#ports CloudRunService#ports}
-	Ports interface{} `field:"optional" json:"ports" yaml:"ports"`
+	Ports any `field:"optional" json:"ports" yaml:"ports"`
 	// readiness_probe block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#readiness_probe CloudRunService#readiness_probe}
@@ -49,10 +48,9 @@ type CloudRunServiceTemplateSpecContainers struct {
 	// volume_mounts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#volume_mounts CloudRunService#volume_mounts}
-	VolumeMounts interface{} `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
+	VolumeMounts any `field:"optional" json:"volumeMounts" yaml:"volumeMounts"`
 	// Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#working_dir CloudRunService#working_dir}
 	WorkingDir *string `field:"optional" json:"workingDir" yaml:"workingDir"`
 }
-

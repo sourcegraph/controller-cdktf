@@ -19,7 +19,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (s *jsiiProxy_StorageInsightsReportConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (s *jsiiProxy_StorageInsightsReportConfig) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (s *jsiiProxy_StorageInsightsReportConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func validateStorageInsightsReportConfig_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateStorageInsightsReportConfig_IsConstructParameters(x interface{}) error {
+func validateStorageInsightsReportConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func validateStorageInsightsReportConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateStorageInsightsReportConfig_IsTerraformElementParameters(x interface{}) error {
+func validateStorageInsightsReportConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func validateStorageInsightsReportConfig_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateStorageInsightsReportConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateStorageInsightsReportConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func validateStorageInsightsReportConfig_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsReportConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsReportConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -397,7 +397,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig) validateSetDisplayNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) validateSetForceDestroyParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsReportConfig) validateSetForceDestroyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -449,7 +449,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_StorageInsightsReportConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -513,4 +513,3 @@ func validateNewStorageInsightsReportConfigParameters(scope constructs.Construct
 
 	return nil
 }
-

@@ -10,16 +10,16 @@ import (
 
 type IdentityPlatformConfigSignInOutputReference interface {
 	cdktf.ComplexObject
-	AllowDuplicateEmails() interface{}
-	SetAllowDuplicateEmails(val interface{})
-	AllowDuplicateEmailsInput() interface{}
+	AllowDuplicateEmails() any
+	SetAllowDuplicateEmails(val any)
+	AllowDuplicateEmailsInput() any
 	Anonymous() IdentityPlatformConfigSignInAnonymousOutputReference
 	AnonymousInput() *IdentityPlatformConfigSignInAnonymous
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type IdentityPlatformConfigSignInOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type IdentityPlatformConfigSignInOutputReference interface {
 	ResetPhoneNumber()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,8 +93,8 @@ type jsiiProxy_IdentityPlatformConfigSignInOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) AllowDuplicateEmails() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) AllowDuplicateEmails() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowDuplicateEmails",
@@ -103,8 +103,8 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) AllowDuplicateEm
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) AllowDuplicateEmailsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) AllowDuplicateEmailsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowDuplicateEmailsInput",
@@ -133,8 +133,8 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) AnonymousInput()
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -253,7 +253,6 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) TerraformResourc
 	return returns
 }
 
-
 func NewIdentityPlatformConfigSignInOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigSignInOutputReference {
 	_init_.Initialize()
 
@@ -264,7 +263,7 @@ func NewIdentityPlatformConfigSignInOutputReference(terraformResource cdktf.IInt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -276,12 +275,12 @@ func NewIdentityPlatformConfigSignInOutputReference_Override(i IdentityPlatformC
 
 	_jsii_.Create(
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetAllowDuplicateEmails(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) SetAllowDuplicateEmails(val any) {
 	if err := j.validateSetAllowDuplicateEmailsParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,7 +291,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetAllowDuplicate
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,7 +302,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,7 +313,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetInternalValue(val *IdentityPlatformConfigSignIn) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) SetInternalValue(val *IdentityPlatformConfigSignIn) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityPlatformConfigSignInOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,16 +359,16 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) ComputeFqn() *st
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetBooleanAttrib
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetBooleanMapAtt
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetListAttribute
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetNumberAttribu
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetNumberListAtt
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -465,7 +464,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetNumberMapAttr
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetStringAttribu
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -497,7 +496,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) GetStringMapAttr
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -526,7 +525,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -540,7 +539,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) PutAnonymous(val
 	_jsii_.InvokeVoid(
 		i,
 		"putAnonymous",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -551,7 +550,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) PutEmail(value *
 	_jsii_.InvokeVoid(
 		i,
 		"putEmail",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -562,7 +561,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) PutPhoneNumber(v
 	_jsii_.InvokeVoid(
 		i,
 		"putPhoneNumber",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -598,16 +597,16 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) ResetPhoneNumber
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -626,4 +625,3 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) ToString() *stri
 
 	return returns
 }
-

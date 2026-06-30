@@ -98,7 +98,7 @@ func (d *jsiiProxy_DiscoveryEngineSitemapTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSitemapTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSitemapTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DiscoveryEngineSitemapTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineSitemapTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineSitemapTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDiscoveryEngineSitemapTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

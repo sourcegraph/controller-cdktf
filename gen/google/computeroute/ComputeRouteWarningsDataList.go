@@ -36,7 +36,7 @@ type ComputeRouteWarningsDataList interface {
 	Get(index *float64) ComputeRouteWarningsDataOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_ComputeRouteWarningsDataList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewComputeRouteWarningsDataList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRouteWarningsDataList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewComputeRouteWarningsDataList(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRoute.ComputeRouteWarningsDataList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewComputeRouteWarningsDataList_Override(c ComputeRouteWarningsDataList, te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeRoute.ComputeRouteWarningsDataList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeRouteWarningsDataList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeRouteWarningsDataList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_ComputeRouteWarningsDataList)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_ComputeRouteWarningsDataList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRouteWarningsDataList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_ComputeRouteWarningsDataList)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_ComputeRouteWarningsDataList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ComputeRouteWarningsDataList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (c *jsiiProxy_ComputeRouteWarningsDataList) AllWithMapKey(mapKeyAttributeNa
 	_jsii_.Invoke(
 		c,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (c *jsiiProxy_ComputeRouteWarningsDataList) Get(index *float64) ComputeRout
 	_jsii_.Invoke(
 		c,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRouteWarningsDataList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeRouteWarningsDataList) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (c *jsiiProxy_ComputeRouteWarningsDataList) ToString() *string {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterFleetOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterFleetOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewGkeonpremBareMetalClusterFleetOutputReferenceParameters(terrafor
 
 	return nil
 }
-

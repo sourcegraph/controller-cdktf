@@ -15,11 +15,11 @@ type DataGoogleDataLineageConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,17 +55,17 @@ type DataGoogleDataLineageConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -91,18 +91,18 @@ type DataGoogleDataLineageConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleDataLineageConfig
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig) CdktfStack() cdktf.TerraformStac
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleDataLineageConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDataLineageConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDataLineageConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -320,8 +320,8 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleDataLineageConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -340,7 +340,6 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig) TerraformResourceType() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/data_lineage_config google_data_lineage_config} Data Source.
 func NewDataGoogleDataLineageConfig(scope constructs.Construct, id *string, config *DataGoogleDataLineageConfigConfig) DataGoogleDataLineageConfig {
 	_init_.Initialize()
@@ -352,7 +351,7 @@ func NewDataGoogleDataLineageConfig(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -365,12 +364,12 @@ func NewDataGoogleDataLineageConfig_Override(d DataGoogleDataLineageConfig, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleDataLineageConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -381,7 +380,7 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleDataLineageConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -389,7 +388,7 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleDataLineageConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -397,7 +396,7 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleDataLineageConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,7 +407,7 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleDataLineageConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +418,7 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig)SetLocation(val *string) {
+func (j *jsiiProxy_DataGoogleDataLineageConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,7 +429,7 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig)SetParent(val *string) {
+func (j *jsiiProxy_DataGoogleDataLineageConfig) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -441,7 +440,7 @@ func (j *jsiiProxy_DataGoogleDataLineageConfig)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataLineageConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleDataLineageConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -461,7 +460,7 @@ func DataGoogleDataLineageConfig_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func DataGoogleDataLineageConfig_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleDataLineageConfig_IsConstruct(x interface{}) *bool {
+func DataGoogleDataLineageConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataLineageConfig_IsConstructParameters(x); err != nil {
@@ -496,7 +495,7 @@ func DataGoogleDataLineageConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -504,7 +503,7 @@ func DataGoogleDataLineageConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleDataLineageConfig_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleDataLineageConfig_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataLineageConfig_IsTerraformDataSourceParameters(x); err != nil {
@@ -515,7 +514,7 @@ func DataGoogleDataLineageConfig_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -523,7 +522,7 @@ func DataGoogleDataLineageConfig_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleDataLineageConfig_IsTerraformElement(x interface{}) *bool {
+func DataGoogleDataLineageConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataLineageConfig_IsTerraformElementParameters(x); err != nil {
@@ -534,7 +533,7 @@ func DataGoogleDataLineageConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleDataLineageConfig.DataGoogleDataLineageConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -552,27 +551,27 @@ func DataGoogleDataLineageConfig_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataLineageConfig) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleDataLineageConfig) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleDataLineageConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleDataLineageConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -588,7 +587,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -604,7 +603,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -620,7 +619,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -652,7 +651,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -668,7 +667,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -684,7 +683,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -700,7 +699,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -716,7 +715,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -750,8 +749,8 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleDataLineageConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleDataLineageConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -763,8 +762,8 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataLineageConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleDataLineageConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -776,8 +775,8 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataLineageConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDataLineageConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -789,8 +788,8 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataLineageConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDataLineageConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -815,8 +814,8 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataLineageConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleDataLineageConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -827,4 +826,3 @@ func (d *jsiiProxy_DataGoogleDataLineageConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

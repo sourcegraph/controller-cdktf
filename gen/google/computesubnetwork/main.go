@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork",
-		reflect.TypeOf((*ComputeSubnetwork)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetwork](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSubnetwork{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -143,15 +143,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig",
-		reflect.TypeOf((*ComputeSubnetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig",
-		reflect.TypeOf((*ComputeSubnetworkLogConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkLogConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference",
-		reflect.TypeOf((*ComputeSubnetworkLogConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkLogConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInterval", GoGetter: "AggregationInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "aggregationIntervalInput", GoGetter: "AggregationIntervalInput"},
@@ -190,7 +190,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSubnetworkLogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -198,11 +198,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams",
-		reflect.TypeOf((*ComputeSubnetworkParams)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkParams](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference",
-		reflect.TypeOf((*ComputeSubnetworkParamsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkParamsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -229,7 +229,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSubnetworkParamsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -237,11 +237,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange",
-		reflect.TypeOf((*ComputeSubnetworkSecondaryIpRange)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkSecondaryIpRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList",
-		reflect.TypeOf((*ComputeSubnetworkSecondaryIpRangeList)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkSecondaryIpRangeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSubnetworkSecondaryIpRangeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -263,7 +263,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference",
-		reflect.TypeOf((*ComputeSubnetworkSecondaryIpRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkSecondaryIpRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -303,11 +303,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts",
-		reflect.TypeOf((*ComputeSubnetworkTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeSubnetworkTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeSubnetworkTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -340,7 +340,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeSubnetworkTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRange
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOut
 
 	return nil
 }
-

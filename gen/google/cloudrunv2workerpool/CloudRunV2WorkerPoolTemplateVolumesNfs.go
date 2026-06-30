@@ -1,6 +1,5 @@
 package cloudrunv2workerpool
 
-
 type CloudRunV2WorkerPoolTemplateVolumesNfs struct {
 	// Path that is exported by the NFS server.
 	//
@@ -13,6 +12,5 @@ type CloudRunV2WorkerPoolTemplateVolumesNfs struct {
 	// If true, mount the NFS volume as read only.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
-	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	ReadOnly any `field:"optional" json:"readOnly" yaml:"readOnly"`
 }
-

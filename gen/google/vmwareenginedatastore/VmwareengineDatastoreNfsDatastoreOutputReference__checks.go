@@ -120,7 +120,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewVmwareengineDatastoreNfsDatastoreOutputReferenceParameters(terra
 
 	return nil
 }
-

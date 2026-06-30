@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsBigqueryExportO
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutp
 
 	return nil
 }
-

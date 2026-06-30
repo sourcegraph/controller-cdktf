@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstra
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstra
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAccessContextManagerAccessLevelConditionDevicePolicyOsConstraint
 
 	return nil
 }
-

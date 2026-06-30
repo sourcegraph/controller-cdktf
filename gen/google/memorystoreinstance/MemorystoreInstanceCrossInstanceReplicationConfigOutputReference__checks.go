@@ -101,7 +101,7 @@ func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigOutputReference) validatePutSecondaryInstancesParameters(value interface{}) error {
+func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigOutputReference) validatePutSecondaryInstancesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -248,4 +248,3 @@ func validateNewMemorystoreInstanceCrossInstanceReplicationConfigOutputReference
 
 	return nil
 }
-

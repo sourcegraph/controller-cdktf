@@ -17,15 +17,15 @@ type GkeHubScopeIamMember interface {
 	Condition() GkeHubScopeIamMemberConditionOutputReference
 	ConditionInput() *GkeHubScopeIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,11 +59,11 @@ type GkeHubScopeIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -73,16 +73,16 @@ type GkeHubScopeIamMember interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -100,7 +100,7 @@ type GkeHubScopeIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -112,7 +112,7 @@ type GkeHubScopeIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -126,17 +126,17 @@ type GkeHubScopeIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for GkeHubScopeIamMember
@@ -174,8 +174,8 @@ func (j *jsiiProxy_GkeHubScopeIamMember) ConditionInput() *GkeHubScopeIamMemberC
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubScopeIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GkeHubScopeIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeHubScopeIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_GkeHubScopeIamMember) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubScopeIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,8 +344,8 @@ func (j *jsiiProxy_GkeHubScopeIamMember) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_GkeHubScopeIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -354,8 +354,8 @@ func (j *jsiiProxy_GkeHubScopeIamMember) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GkeHubScopeIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_GkeHubScopeIamMember) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_GkeHubScopeIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -434,7 +434,6 @@ func (j *jsiiProxy_GkeHubScopeIamMember) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_scope_iam_member google_gke_hub_scope_iam_member} Resource.
 func NewGkeHubScopeIamMember(scope constructs.Construct, id *string, config *GkeHubScopeIamMemberConfig) GkeHubScopeIamMember {
 	_init_.Initialize()
@@ -446,7 +445,7 @@ func NewGkeHubScopeIamMember(scope constructs.Construct, id *string, config *Gke
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubScopeIamMember.GkeHubScopeIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -459,12 +458,12 @@ func NewGkeHubScopeIamMember_Override(g GkeHubScopeIamMember, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.gkeHubScopeIamMember.GkeHubScopeIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		g,
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,7 +485,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -494,7 +493,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -502,7 +501,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetId(val *string) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -513,7 +512,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -524,7 +523,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetMember(val *string) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -535,7 +534,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetProject(val *string) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -546,7 +545,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -554,7 +553,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetRole(val *string) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_GkeHubScopeIamMember)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GkeHubScopeIamMember)SetScopeId(val *string) {
+func (j *jsiiProxy_GkeHubScopeIamMember) SetScopeId(val *string) {
 	if err := j.validateSetScopeIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -599,7 +598,7 @@ func GkeHubScopeIamMember_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeHubScopeIamMember.GkeHubScopeIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func GkeHubScopeIamMember_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func GkeHubScopeIamMember_IsConstruct(x interface{}) *bool {
+func GkeHubScopeIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeHubScopeIamMember_IsConstructParameters(x); err != nil {
@@ -634,7 +633,7 @@ func GkeHubScopeIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeHubScopeIamMember.GkeHubScopeIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -642,7 +641,7 @@ func GkeHubScopeIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeHubScopeIamMember_IsTerraformElement(x interface{}) *bool {
+func GkeHubScopeIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeHubScopeIamMember_IsTerraformElementParameters(x); err != nil {
@@ -653,7 +652,7 @@ func GkeHubScopeIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeHubScopeIamMember.GkeHubScopeIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -661,7 +660,7 @@ func GkeHubScopeIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func GkeHubScopeIamMember_IsTerraformResource(x interface{}) *bool {
+func GkeHubScopeIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateGkeHubScopeIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -672,7 +671,7 @@ func GkeHubScopeIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.gkeHubScopeIamMember.GkeHubScopeIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -697,31 +696,31 @@ func (g *jsiiProxy_GkeHubScopeIamMember) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (g *jsiiProxy_GkeHubScopeIamMember) AddOverride(path *string, value interface{}) {
+func (g *jsiiProxy_GkeHubScopeIamMember) AddOverride(path *string, value any) {
 	if err := g.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (g *jsiiProxy_GkeHubScopeIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (g *jsiiProxy_GkeHubScopeIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -737,7 +736,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		g,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -769,7 +768,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		g,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -785,7 +784,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -801,7 +800,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		g,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -817,7 +816,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -833,7 +832,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		g,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -849,15 +848,15 @@ func (g *jsiiProxy_GkeHubScopeIamMember) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		g,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeHubScopeIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -876,7 +875,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		g,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -889,7 +888,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -903,18 +902,18 @@ func (g *jsiiProxy_GkeHubScopeIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (g *jsiiProxy_GkeHubScopeIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (g *jsiiProxy_GkeHubScopeIamMember) MoveTo(moveTarget *string, index any) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -925,7 +924,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		g,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -936,7 +935,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -947,7 +946,7 @@ func (g *jsiiProxy_GkeHubScopeIamMember) PutCondition(value *GkeHubScopeIamMembe
 	_jsii_.InvokeVoid(
 		g,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,8 +982,8 @@ func (g *jsiiProxy_GkeHubScopeIamMember) ResetProject() {
 	)
 }
 
-func (g *jsiiProxy_GkeHubScopeIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeHubScopeIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -996,8 +995,8 @@ func (g *jsiiProxy_GkeHubScopeIamMember) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (g *jsiiProxy_GkeHubScopeIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		g,
@@ -1009,8 +1008,8 @@ func (g *jsiiProxy_GkeHubScopeIamMember) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeHubScopeIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1022,8 +1021,8 @@ func (g *jsiiProxy_GkeHubScopeIamMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeHubScopeIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1048,8 +1047,8 @@ func (g *jsiiProxy_GkeHubScopeIamMember) ToString() *string {
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (g *jsiiProxy_GkeHubScopeIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		g,
@@ -1060,4 +1059,3 @@ func (g *jsiiProxy_GkeHubScopeIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

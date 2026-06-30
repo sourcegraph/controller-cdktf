@@ -6,9 +6,9 @@ import (
 
 type LoggingProjectSinkConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type LoggingProjectSinkConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The destination of the sink (or, in other words, where logs are written to).
 	//
 	// Can be a Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples: "storage.googleapis.com/[GCS_BUCKET]" "bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]" "pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]" The writer associated with the sink must have access to write to the above resource.
@@ -46,11 +46,11 @@ type LoggingProjectSinkConfig struct {
 	// If set to True, then this sink is disabled and it does not export any log entries.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_sink#disabled LoggingProjectSink#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// exclusions block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_sink#exclusions LoggingProjectSink#exclusions}
-	Exclusions interface{} `field:"optional" json:"exclusions" yaml:"exclusions"`
+	Exclusions any `field:"optional" json:"exclusions" yaml:"exclusions"`
 	// The filter to apply when exporting logs. Only log entries that match the filter are exported.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_sink#filter LoggingProjectSink#filter}
@@ -71,6 +71,5 @@ type LoggingProjectSinkConfig struct {
 	// If false (the legacy behavior), then the writer_identity used is serviceAccount:cloud-logs@system.gserviceaccount.com. If true (default), then a unique service account is created and used for this sink. If you wish to publish logs across projects, you must set unique_writer_identity to true.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/logging_project_sink#unique_writer_identity LoggingProjectSink#unique_writer_identity}
-	UniqueWriterIdentity interface{} `field:"optional" json:"uniqueWriterIdentity" yaml:"uniqueWriterIdentity"`
+	UniqueWriterIdentity any `field:"optional" json:"uniqueWriterIdentity" yaml:"uniqueWriterIdentity"`
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReferen
 
 	return nil
 }
-

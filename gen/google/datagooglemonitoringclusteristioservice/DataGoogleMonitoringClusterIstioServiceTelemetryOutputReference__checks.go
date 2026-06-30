@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleMonitoringClusterIstioServiceTelemetryOutputReferenceP
 
 	return nil
 }
-

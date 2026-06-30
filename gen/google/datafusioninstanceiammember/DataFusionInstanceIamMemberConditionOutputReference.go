@@ -12,9 +12,9 @@ type DataFusionInstanceIamMemberConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type DataFusionInstanceIamMemberConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type DataFusionInstanceIamMemberConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) TitleInp
 	return returns
 }
 
-
 func NewDataFusionInstanceIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataFusionInstanceIamMemberConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewDataFusionInstanceIamMemberConditionOutputReference(terraformResource cd
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewDataFusionInstanceIamMemberConditionOutputReference_Override(d DataFusio
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMemberConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetDescri
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetExpres
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetInternalValue(val *DataFusionInstanceIamMemberCondition) {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) SetInternalValue(val *DataFusionInstanceIamMemberCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) ComputeF
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetBoole
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetListA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetNumbe
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetStrin
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) Interpol
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) ResetDes
 	)
 }
 
-func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) ToString
 
 	return returns
 }
-

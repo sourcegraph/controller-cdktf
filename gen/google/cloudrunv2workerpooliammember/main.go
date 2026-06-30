@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMember",
-		reflect.TypeOf((*CloudRunV2WorkerPoolIamMember)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2WorkerPoolIamMember](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2WorkerPoolIamMember{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -81,11 +81,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMemberCondition",
-		reflect.TypeOf((*CloudRunV2WorkerPoolIamMemberCondition)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2WorkerPoolIamMemberCondition](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMemberConditionOutputReference",
-		reflect.TypeOf((*CloudRunV2WorkerPoolIamMemberConditionOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2WorkerPoolIamMemberConditionOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CloudRunV2WorkerPoolIamMemberConditionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -124,6 +124,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.cloudRunV2WorkerPoolIamMember.CloudRunV2WorkerPoolIamMemberConfig",
-		reflect.TypeOf((*CloudRunV2WorkerPoolIamMemberConfig)(nil)).Elem(),
+		reflect.TypeFor[CloudRunV2WorkerPoolIamMemberConfig](),
 	)
 }

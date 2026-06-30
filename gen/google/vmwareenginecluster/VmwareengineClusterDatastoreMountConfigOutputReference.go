@@ -15,9 +15,9 @@ type VmwareengineClusterDatastoreMountConfigOutputReference interface {
 	AccessModeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,11 +36,11 @@ type VmwareengineClusterDatastoreMountConfigOutputReference interface {
 	FileShare() *string
 	// Experimental.
 	Fqn() *string
-	IgnoreColocation() interface{}
-	SetIgnoreColocation(val interface{})
-	IgnoreColocationInput() interface{}
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	IgnoreColocation() any
+	SetIgnoreColocation(val any)
+	IgnoreColocationInput() any
+	InternalValue() any
+	SetInternalValue(val any)
 	NfsVersion() *string
 	SetNfsVersion(val *string)
 	NfsVersionInput() *string
@@ -56,7 +56,7 @@ type VmwareengineClusterDatastoreMountConfigOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type VmwareengineClusterDatastoreMountConfigOutputReference interface {
 	ResetNfsVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Acces
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) IgnoreColocation() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) IgnoreColocation() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreColocation",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Ignor
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) IgnoreColocationInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) IgnoreColocationInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreColocationInput",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Ignor
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -286,7 +286,6 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Terra
 	return returns
 }
 
-
 func NewVmwareengineClusterDatastoreMountConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) VmwareengineClusterDatastoreMountConfigOutputReference {
 	_init_.Initialize()
 
@@ -297,7 +296,7 @@ func NewVmwareengineClusterDatastoreMountConfigOutputReference(terraformResource
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterDatastoreMountConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -309,12 +308,12 @@ func NewVmwareengineClusterDatastoreMountConfigOutputReference_Override(v Vmware
 
 	_jsii_.Create(
 		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterDatastoreMountConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetAccessMode(val *string) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) SetAccessMode(val *string) {
 	if err := j.validateSetAccessModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -325,7 +324,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetAcc
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -336,7 +335,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,7 +346,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetDatastore(val *string) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) SetDatastore(val *string) {
 	if err := j.validateSetDatastoreParameters(val); err != nil {
 		panic(err)
 	}
@@ -358,7 +357,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetDat
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetIgnoreColocation(val interface{}) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) SetIgnoreColocation(val any) {
 	if err := j.validateSetIgnoreColocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -369,7 +368,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetIgn
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,7 +379,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetInt
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetNfsVersion(val *string) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) SetNfsVersion(val *string) {
 	if err := j.validateSetNfsVersionParameters(val); err != nil {
 		panic(err)
 	}
@@ -391,7 +390,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetNfs
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -402,7 +401,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,16 +425,16 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Compu
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := v.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		v,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetBo
 	_jsii_.Invoke(
 		v,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetBo
 	_jsii_.Invoke(
 		v,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetLi
 	_jsii_.Invoke(
 		v,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		v,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -515,7 +514,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		v,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetNu
 	_jsii_.Invoke(
 		v,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetSt
 	_jsii_.Invoke(
 		v,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetSt
 	_jsii_.Invoke(
 		v,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -592,7 +591,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Inter
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -606,7 +605,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) PutDa
 	_jsii_.InvokeVoid(
 		v,
 		"putDatastoreNetwork",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -634,16 +633,16 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Reset
 	)
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := v.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -662,4 +661,3 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) ToStr
 
 	return returns
 }
-

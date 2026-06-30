@@ -98,7 +98,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateSetIsDiagnosticsEventsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateSetIsDiagnosticsEventsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateSetIsIncidentLogsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateSetIsIncidentLogsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputRefer
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (b *jsiiProxy_BigtableSchemaBundle) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (b *jsiiProxy_BigtableSchemaBundle) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BigtableSchemaBundle) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BigtableSchemaBundle) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (b *jsiiProxy_BigtableSchemaBundle) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BigtableSchemaBundle) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateBigtableSchemaBundle_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateBigtableSchemaBundle_IsConstructParameters(x interface{}) error {
+func validateBigtableSchemaBundle_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateBigtableSchemaBundle_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateBigtableSchemaBundle_IsTerraformElementParameters(x interface{}) error {
+func validateBigtableSchemaBundle_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateBigtableSchemaBundle_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateBigtableSchemaBundle_IsTerraformResourceParameters(x interface{}) error {
+func validateBigtableSchemaBundle_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateBigtableSchemaBundle_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_BigtableSchemaBundle) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableSchemaBundle) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_BigtableSchemaBundle) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_BigtableSchemaBundle) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableSchemaBundle) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -364,7 +364,7 @@ func (j *jsiiProxy_BigtableSchemaBundle) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_BigtableSchemaBundle) validateSetIgnoreWarningsParameters(val interface{}) error {
+func (j *jsiiProxy_BigtableSchemaBundle) validateSetIgnoreWarningsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -408,7 +408,7 @@ func (j *jsiiProxy_BigtableSchemaBundle) validateSetProjectParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_BigtableSchemaBundle) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BigtableSchemaBundle) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -488,4 +488,3 @@ func validateNewBigtableSchemaBundleParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

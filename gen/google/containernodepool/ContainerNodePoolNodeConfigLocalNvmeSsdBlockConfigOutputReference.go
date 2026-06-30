@@ -12,9 +12,9 @@ type ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference interface
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference interface
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference interface
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,8 +79,8 @@ type jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -169,7 +169,6 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	return returns
 }
 
-
 func NewContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference {
 	_init_.Initialize()
 
@@ -180,7 +179,7 @@ func NewContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference(terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -192,12 +191,12 @@ func NewContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference_Overri
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -208,7 +207,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -219,7 +218,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference)SetInternalValue(val *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) SetInternalValue(val *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -230,7 +229,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference)SetLocalSsdCount(val *float64) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) SetLocalSsdCount(val *float64) {
 	if err := j.validateSetLocalSsdCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -241,7 +240,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -252,7 +251,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -276,16 +275,16 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -301,7 +300,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -317,7 +316,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -333,7 +332,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -349,7 +348,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -365,7 +364,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -381,7 +380,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -397,7 +396,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -413,7 +412,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,23 +441,23 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -477,4 +476,3 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 
 	return returns
 }
-

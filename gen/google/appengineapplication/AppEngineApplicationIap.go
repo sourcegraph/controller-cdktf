@@ -1,6 +1,5 @@
 package appengineapplication
 
-
 type AppEngineApplicationIap struct {
 	// OAuth2 client ID to use for the authentication flow.
 	//
@@ -15,6 +14,5 @@ type AppEngineApplicationIap struct {
 	// Adapted for use with the app.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/app_engine_application#enabled AppEngineApplication#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 }
-

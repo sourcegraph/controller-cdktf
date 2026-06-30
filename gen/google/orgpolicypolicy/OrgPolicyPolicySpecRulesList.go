@@ -17,8 +17,8 @@ type OrgPolicyPolicySpecRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type OrgPolicyPolicySpecRulesList interface {
 	Get(index *float64) OrgPolicyPolicySpecRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewOrgPolicyPolicySpecRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrgPolicyPolicySpecRulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewOrgPolicyPolicySpecRulesList(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewOrgPolicyPolicySpecRulesList_Override(o OrgPolicyPolicySpecRulesList, te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesList)SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesList)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesList)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesList) AllWithMapKey(mapKeyAttributeNa
 	_jsii_.Invoke(
 		o,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesList) Get(index *float64) OrgPolicyPo
 	_jsii_.Invoke(
 		o,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicySpecRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OrgPolicyPolicySpecRulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesList) ToString() *string {
 
 	return returns
 }
-

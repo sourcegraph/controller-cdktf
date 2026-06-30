@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validatePutActionsParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validatePutActionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -259,4 +259,3 @@ func validateNewDataLossPreventionJobTriggerInspectJobOutputReferenceParameters(
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeDnsZonePeeringConfigOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeDnsZonePeeringConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeDnsZonePeeringConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApigeeDnsZonePeeringConfigOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

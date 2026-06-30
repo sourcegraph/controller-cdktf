@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkstationsWorkstationConfigAllowedPortsListParameters(terrafor
 
 	return nil
 }
-

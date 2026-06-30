@@ -17,15 +17,15 @@ type NotebooksRuntimeIamMember interface {
 	Condition() NotebooksRuntimeIamMemberConditionOutputReference
 	ConditionInput() *NotebooksRuntimeIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,11 +62,11 @@ type NotebooksRuntimeIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -76,16 +76,16 @@ type NotebooksRuntimeIamMember interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type NotebooksRuntimeIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type NotebooksRuntimeIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type NotebooksRuntimeIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NotebooksRuntimeIamMember
@@ -178,8 +178,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) ConditionInput() *NotebooksRuntime
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -378,8 +378,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NotebooksRuntimeIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_runtime_iam_member google_notebooks_runtime_iam_member} Resource.
 func NewNotebooksRuntimeIamMember(scope constructs.Construct, id *string, config *NotebooksRuntimeIamMemberConfig) NotebooksRuntimeIamMember {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewNotebooksRuntimeIamMember(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewNotebooksRuntimeIamMember_Override(n NotebooksRuntimeIamMember, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetId(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetLocation(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetMember(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetProject(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -589,7 +588,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetRole(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamMember)SetRuntimeName(val *string) {
+func (j *jsiiProxy_NotebooksRuntimeIamMember) SetRuntimeName(val *string) {
 	if err := j.validateSetRuntimeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func NotebooksRuntimeIamMember_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func NotebooksRuntimeIamMember_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotebooksRuntimeIamMember_IsConstruct(x interface{}) *bool {
+func NotebooksRuntimeIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotebooksRuntimeIamMember_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func NotebooksRuntimeIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func NotebooksRuntimeIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NotebooksRuntimeIamMember_IsTerraformElement(x interface{}) *bool {
+func NotebooksRuntimeIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotebooksRuntimeIamMember_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func NotebooksRuntimeIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func NotebooksRuntimeIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NotebooksRuntimeIamMember_IsTerraformResource(x interface{}) *bool {
+func NotebooksRuntimeIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNotebooksRuntimeIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func NotebooksRuntimeIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NotebooksRuntimeIamMember) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotebooksRuntimeIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -911,7 +910,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NotebooksRuntimeIamMember) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) PutCondition(value *NotebooksRunti
 	_jsii_.InvokeVoid(
 		n,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) ResetProject() {
 	)
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1039,8 +1038,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1052,8 +1051,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1065,8 +1064,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1091,8 +1090,8 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksRuntimeIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NotebooksRuntimeIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1103,4 +1102,3 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

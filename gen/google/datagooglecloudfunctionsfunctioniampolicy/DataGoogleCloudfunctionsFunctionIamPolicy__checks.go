@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleCloudfunctionsFunctionIamPolicy_GenerateConfigForImportPa
 	return nil
 }
 
-func validateDataGoogleCloudfunctionsFunctionIamPolicy_IsConstructParameters(x interface{}) error {
+func validateDataGoogleCloudfunctionsFunctionIamPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleCloudfunctionsFunctionIamPolicy_IsConstructParameters(x i
 	return nil
 }
 
-func validateDataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformDataSourcePara
 	return nil
 }
 
-func validateDataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleCloudfunctionsFunctionIamPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -159,7 +159,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) validateSetCloudFu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunctionIamPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -266,4 +266,3 @@ func validateNewDataGoogleCloudfunctionsFunctionIamPolicyParameters(scope constr
 
 	return nil
 }
-

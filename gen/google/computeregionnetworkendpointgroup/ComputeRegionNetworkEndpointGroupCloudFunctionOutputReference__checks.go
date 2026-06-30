@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewComputeRegionNetworkEndpointGroupCloudFunctionOutputReferencePar
 
 	return nil
 }
-

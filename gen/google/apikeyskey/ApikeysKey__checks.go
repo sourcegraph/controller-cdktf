@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApikeysKey) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKey) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApikeysKey) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApikeysKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApikeysKey) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateApikeysKey_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateApikeysKey_IsConstructParameters(x interface{}) error {
+func validateApikeysKey_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateApikeysKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateApikeysKey_IsTerraformElementParameters(x interface{}) error {
+func validateApikeysKey_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateApikeysKey_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateApikeysKey_IsTerraformResourceParameters(x interface{}) error {
+func validateApikeysKey_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -266,7 +266,7 @@ func validateApikeysKey_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKey) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKey) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -299,7 +299,7 @@ func (j *jsiiProxy_ApikeysKey) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKey) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApikeysKey) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_ApikeysKey) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKey) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApikeysKey) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -468,4 +468,3 @@ func validateNewApikeysKeyParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

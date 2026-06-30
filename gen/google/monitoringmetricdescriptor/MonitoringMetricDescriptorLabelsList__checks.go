@@ -34,7 +34,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewMonitoringMetricDescriptorLabelsListParameters(terraformResource
 
 	return nil
 }
-

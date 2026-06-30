@@ -13,19 +13,19 @@ import (
 type CertificateManagerTrustConfig interface {
 	cdktf.TerraformResource
 	AllowlistedCertificates() CertificateManagerTrustConfigAllowlistedCertificatesList
-	AllowlistedCertificatesInput() interface{}
+	AllowlistedCertificatesInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -69,30 +69,30 @@ type CertificateManagerTrustConfig interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() CertificateManagerTrustConfigTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TrustStores() CertificateManagerTrustConfigTrustStoresList
-	TrustStoresInput() interface{}
+	TrustStoresInput() any
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -110,7 +110,7 @@ type CertificateManagerTrustConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -122,16 +122,16 @@ type CertificateManagerTrustConfig interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAllowlistedCertificates(value interface{})
+	PutAllowlistedCertificates(value any)
 	PutTimeouts(value *CertificateManagerTrustConfigTimeouts)
-	PutTrustStores(value interface{})
+	PutTrustStores(value any)
 	ResetAllowlistedCertificates()
 	ResetDescription()
 	ResetId()
@@ -142,17 +142,17 @@ type CertificateManagerTrustConfig interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetTrustStores()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for CertificateManagerTrustConfig
@@ -170,8 +170,8 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) AllowlistedCertificates() Cert
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig) AllowlistedCertificatesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificateManagerTrustConfig) AllowlistedCertificatesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allowlistedCertificatesInput",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) CdktfStack() cdktf.TerraformSt
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificateManagerTrustConfig) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -200,8 +200,8 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CertificateManagerTrustConfig) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -210,8 +210,8 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificateManagerTrustConfig) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -430,8 +430,8 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) Provider() cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_CertificateManagerTrustConfig) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -440,8 +440,8 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) Provisioners() *[]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificateManagerTrustConfig) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) TerraformLabels() cdktf.String
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_CertificateManagerTrustConfig) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -500,8 +500,8 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) Timeouts() CertificateManagerT
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificateManagerTrustConfig) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -520,8 +520,8 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) TrustStores() CertificateManag
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig) TrustStoresInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CertificateManagerTrustConfig) TrustStoresInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"trustStoresInput",
@@ -540,7 +540,6 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) UpdateTime() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
 func NewCertificateManagerTrustConfig(scope constructs.Construct, id *string, config *CertificateManagerTrustConfigConfig) CertificateManagerTrustConfig {
 	_init_.Initialize()
@@ -552,7 +551,7 @@ func NewCertificateManagerTrustConfig(scope constructs.Construct, id *string, co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -565,12 +564,12 @@ func NewCertificateManagerTrustConfig_Override(c CertificateManagerTrustConfig, 
 
 	_jsii_.Create(
 		"@cdktf/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetConnection(val interface{}) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetCount(val interface{}) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetDescription(val *string) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -619,7 +618,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetId(val *string) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetLabels(val *map[string]*stri
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -652,7 +651,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetLocation(val *string) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -663,7 +662,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetName(val *string) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -674,7 +673,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetProject(val *string) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -685,7 +684,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -693,7 +692,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig)SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfig)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CertificateManagerTrustConfig) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func CertificateManagerTrustConfig_GenerateConfigForImport(scope constructs.Cons
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -740,7 +739,7 @@ func CertificateManagerTrustConfig_GenerateConfigForImport(scope constructs.Cons
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func CertificateManagerTrustConfig_IsConstruct(x interface{}) *bool {
+func CertificateManagerTrustConfig_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCertificateManagerTrustConfig_IsConstructParameters(x); err != nil {
@@ -751,7 +750,7 @@ func CertificateManagerTrustConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func CertificateManagerTrustConfig_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func CertificateManagerTrustConfig_IsTerraformElement(x interface{}) *bool {
+func CertificateManagerTrustConfig_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCertificateManagerTrustConfig_IsTerraformElementParameters(x); err != nil {
@@ -770,7 +769,7 @@ func CertificateManagerTrustConfig_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func CertificateManagerTrustConfig_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func CertificateManagerTrustConfig_IsTerraformResource(x interface{}) *bool {
+func CertificateManagerTrustConfig_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateCertificateManagerTrustConfig_IsTerraformResourceParameters(x); err != nil {
@@ -789,7 +788,7 @@ func CertificateManagerTrustConfig_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -814,31 +813,31 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) AddMoveTarget(moveTarget *stri
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_CertificateManagerTrustConfig) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CertificateManagerTrustConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) GetBooleanAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) GetBooleanMapAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,7 +885,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) GetListAttribute(terraformAttr
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -902,7 +901,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) GetNumberAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -918,7 +917,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) GetNumberListAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -934,7 +933,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) GetNumberMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -950,7 +949,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) GetStringAttribute(terraformAt
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -966,15 +965,15 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) GetStringMapAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CertificateManagerTrustConfig) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -993,7 +992,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) ImportFrom(id *string, provide
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1006,7 +1005,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) InterpolationForAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,18 +1019,18 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_CertificateManagerTrustConfig) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1042,7 +1041,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1053,18 +1052,18 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) OverrideLogicalId(newLogicalId
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) PutAllowlistedCertificates(value interface{}) {
+func (c *jsiiProxy_CertificateManagerTrustConfig) PutAllowlistedCertificates(value any) {
 	if err := c.validatePutAllowlistedCertificatesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAllowlistedCertificates",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1075,18 +1074,18 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) PutTimeouts(value *Certificate
 	_jsii_.InvokeVoid(
 		c,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) PutTrustStores(value interface{}) {
+func (c *jsiiProxy_CertificateManagerTrustConfig) PutTrustStores(value any) {
 	if err := c.validatePutTrustStoresParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTrustStores",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1154,8 +1153,8 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) ResetTrustStores() {
 	)
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CertificateManagerTrustConfig) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1167,8 +1166,8 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) SynthesizeAttributes() *map[st
 	return returns
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_CertificateManagerTrustConfig) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -1180,8 +1179,8 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) SynthesizeHclAttributes() *map
 	return returns
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CertificateManagerTrustConfig) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1193,8 +1192,8 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CertificateManagerTrustConfig) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1219,8 +1218,8 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfig) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_CertificateManagerTrustConfig) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -1231,4 +1230,3 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) ToTerraform() interface{} {
 
 	return returns
 }
-

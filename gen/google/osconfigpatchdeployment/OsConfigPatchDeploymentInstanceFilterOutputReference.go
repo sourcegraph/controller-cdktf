@@ -10,14 +10,14 @@ import (
 
 type OsConfigPatchDeploymentInstanceFilterOutputReference interface {
 	cdktf.ComplexObject
-	All() interface{}
-	SetAll(val interface{})
-	AllInput() interface{}
+	All() any
+	SetAll(val any)
+	AllInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -31,7 +31,7 @@ type OsConfigPatchDeploymentInstanceFilterOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	GroupLabels() OsConfigPatchDeploymentInstanceFilterGroupLabelsList
-	GroupLabelsInput() interface{}
+	GroupLabelsInput() any
 	InstanceNamePrefixes() *[]*string
 	SetInstanceNamePrefixes(val *[]*string)
 	InstanceNamePrefixesInput() *[]*string
@@ -54,7 +54,7 @@ type OsConfigPatchDeploymentInstanceFilterOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type OsConfigPatchDeploymentInstanceFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutGroupLabels(value interface{})
+	PutGroupLabels(value any)
 	ResetAll()
 	ResetGroupLabels()
 	ResetInstanceNamePrefixes()
@@ -83,7 +83,7 @@ type OsConfigPatchDeploymentInstanceFilterOutputReference interface {
 	ResetZones()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) All() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) All() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"all",
@@ -106,8 +106,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) All() i
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) AllInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) AllInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"allInput",
@@ -116,8 +116,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) AllInpu
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GroupLa
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GroupLabelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GroupLabelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"groupLabelsInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) ZonesIn
 	return returns
 }
 
-
 func NewOsConfigPatchDeploymentInstanceFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentInstanceFilterOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewOsConfigPatchDeploymentInstanceFilterOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewOsConfigPatchDeploymentInstanceFilterOutputReference_Override(o OsConfig
 
 	_jsii_.Create(
 		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		o,
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetAll(val interface{}) {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) SetAll(val any) {
 	if err := j.validateSetAllParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetAll(v
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetInstanceNamePrefixes(val *[]*string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) SetInstanceNamePrefixes(val *[]*string) {
 	if err := j.validateSetInstanceNamePrefixesParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetInsta
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetInstances(val *[]*string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) SetInstances(val *[]*string) {
 	if err := j.validateSetInstancesParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetInsta
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetInternalValue(val *OsConfigPatchDeploymentInstanceFilter) {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) SetInternalValue(val *OsConfigPatchDeploymentInstanceFilter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference)SetZones(val *[]*string) {
+func (j *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) SetZones(val *[]*string) {
 	if err := j.validateSetZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -406,16 +405,16 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) Compute
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -431,7 +430,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetBool
 	_jsii_.Invoke(
 		o,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -447,7 +446,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetBool
 	_jsii_.Invoke(
 		o,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -463,7 +462,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetList
 	_jsii_.Invoke(
 		o,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -479,7 +478,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetNumb
 	_jsii_.Invoke(
 		o,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -495,7 +494,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetNumb
 	_jsii_.Invoke(
 		o,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetNumb
 	_jsii_.Invoke(
 		o,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -527,7 +526,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetStri
 	_jsii_.Invoke(
 		o,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -543,7 +542,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) GetStri
 	_jsii_.Invoke(
 		o,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -572,21 +571,21 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) Interpo
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) PutGroupLabels(value interface{}) {
+func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) PutGroupLabels(value any) {
 	if err := o.validatePutGroupLabelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"putGroupLabels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -630,16 +629,16 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) ResetZo
 	)
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := o.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterOutputReference) ToStrin
 
 	return returns
 }
-

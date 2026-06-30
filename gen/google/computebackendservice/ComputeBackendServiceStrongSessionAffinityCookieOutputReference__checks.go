@@ -109,7 +109,7 @@ func (c *jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -225,4 +225,3 @@ func validateNewComputeBackendServiceStrongSessionAffinityCookieOutputReferenceP
 
 	return nil
 }
-

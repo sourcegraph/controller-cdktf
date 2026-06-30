@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigOu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleContainerClusterSecretManagerConfigRotationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleContainerClusterSecretManagerConfigRotationConfigOutpu
 
 	return nil
 }
-

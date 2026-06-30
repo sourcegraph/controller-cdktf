@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironment",
-		reflect.TypeOf((*DialogflowEnvironment)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironment](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironment{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -92,19 +92,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentConfig",
-		reflect.TypeOf((*DialogflowEnvironmentConfig)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentFulfillment",
-		reflect.TypeOf((*DialogflowEnvironmentFulfillment)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentFulfillment](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentFulfillmentFeatures",
-		reflect.TypeOf((*DialogflowEnvironmentFulfillmentFeatures)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentFulfillmentFeatures](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentFulfillmentFeaturesList",
-		reflect.TypeOf((*DialogflowEnvironmentFulfillmentFeaturesList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentFulfillmentFeaturesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -126,7 +126,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentFulfillmentFeaturesOutputReference",
-		reflect.TypeOf((*DialogflowEnvironmentFulfillmentFeaturesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentFulfillmentFeaturesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironmentFulfillmentFeaturesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentFulfillmentGenericWebService",
-		reflect.TypeOf((*DialogflowEnvironmentFulfillmentGenericWebService)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentFulfillmentGenericWebService](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference",
-		reflect.TypeOf((*DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -199,7 +199,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -207,7 +207,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentFulfillmentOutputReference",
-		reflect.TypeOf((*DialogflowEnvironmentFulfillmentOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentFulfillmentOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -245,7 +245,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironmentFulfillmentOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -253,11 +253,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTextToSpeechSettings",
-		reflect.TypeOf((*DialogflowEnvironmentTextToSpeechSettings)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentTextToSpeechSettings](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTextToSpeechSettingsOutputReference",
-		reflect.TypeOf((*DialogflowEnvironmentTextToSpeechSettingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentTextToSpeechSettingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -294,7 +294,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -302,11 +302,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigs",
-		reflect.TypeOf((*DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigs)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsList",
-		reflect.TypeOf((*DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsList)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -320,7 +320,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -328,7 +328,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsOutputReference",
-		reflect.TypeOf((*DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -370,7 +370,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeGainDb", GoGetter: "VolumeGainDb"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeGainDbInput", GoGetter: "VolumeGainDbInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -378,11 +378,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoice",
-		reflect.TypeOf((*DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoice)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoice](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoiceOutputReference",
-		reflect.TypeOf((*DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoiceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoiceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -412,7 +412,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoiceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -420,11 +420,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTimeouts",
-		reflect.TypeOf((*DialogflowEnvironmentTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowEnvironment.DialogflowEnvironmentTimeoutsOutputReference",
-		reflect.TypeOf((*DialogflowEnvironmentTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DialogflowEnvironmentTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -457,7 +457,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DialogflowEnvironmentTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

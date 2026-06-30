@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataFusionInstance) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstance) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataFusionInstance) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataFusionInstance) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataFusionInstance) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (d *jsiiProxy_DataFusionInstance) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstance) validatePutAcceleratorsParameters(value interface{}) error {
+func (d *jsiiProxy_DataFusionInstance) validatePutAcceleratorsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func validateDataFusionInstance_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateDataFusionInstance_IsConstructParameters(x interface{}) error {
+func validateDataFusionInstance_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func validateDataFusionInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDataFusionInstance_IsTerraformElementParameters(x interface{}) error {
+func validateDataFusionInstance_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -311,7 +311,7 @@ func validateDataFusionInstance_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataFusionInstance_IsTerraformResourceParameters(x interface{}) error {
+func validateDataFusionInstance_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -319,7 +319,7 @@ func validateDataFusionInstance_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstance) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstance) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataFusionInstance) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstance) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstance) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -433,7 +433,7 @@ func (j *jsiiProxy_DataFusionInstance) validateSetDisplayNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstance) validateSetEnableRbacParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstance) validateSetEnableRbacParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -453,7 +453,7 @@ func (j *jsiiProxy_DataFusionInstance) validateSetEnableRbacParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstance) validateSetEnableStackdriverLoggingParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstance) validateSetEnableStackdriverLoggingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -473,7 +473,7 @@ func (j *jsiiProxy_DataFusionInstance) validateSetEnableStackdriverLoggingParame
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstance) validateSetEnableStackdriverMonitoringParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstance) validateSetEnableStackdriverMonitoringParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -541,7 +541,7 @@ func (j *jsiiProxy_DataFusionInstance) validateSetPatchRevisionParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstance) validateSetPrivateInstanceParameters(val interface{}) error {
+func (j *jsiiProxy_DataFusionInstance) validateSetPrivateInstanceParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -569,7 +569,7 @@ func (j *jsiiProxy_DataFusionInstance) validateSetProjectParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DataFusionInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataFusionInstance) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -673,4 +673,3 @@ func validateNewDataFusionInstanceParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

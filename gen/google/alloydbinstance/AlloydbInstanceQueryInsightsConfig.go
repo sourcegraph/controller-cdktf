@@ -1,6 +1,5 @@
 package alloydbinstance
 
-
 type AlloydbInstanceQueryInsightsConfig struct {
 	// Number of query execution plans captured by Insights per minute for all queries combined.
 	//
@@ -15,10 +14,9 @@ type AlloydbInstanceQueryInsightsConfig struct {
 	// Record application tags for an instance. This flag is turned "on" by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_instance#record_application_tags AlloydbInstance#record_application_tags}
-	RecordApplicationTags interface{} `field:"optional" json:"recordApplicationTags" yaml:"recordApplicationTags"`
+	RecordApplicationTags any `field:"optional" json:"recordApplicationTags" yaml:"recordApplicationTags"`
 	// Record client address for an instance. Client address is PII information. This flag is turned "on" by default.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/alloydb_instance#record_client_address AlloydbInstance#record_client_address}
-	RecordClientAddress interface{} `field:"optional" json:"recordClientAddress" yaml:"recordClientAddress"`
+	RecordClientAddress any `field:"optional" json:"recordClientAddress" yaml:"recordClientAddress"`
 }
-

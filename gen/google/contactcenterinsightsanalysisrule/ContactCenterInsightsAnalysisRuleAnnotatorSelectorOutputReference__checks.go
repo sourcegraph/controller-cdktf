@@ -120,7 +120,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,7 +209,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunEntityAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunEntityAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -229,7 +229,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunIntentAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunIntentAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunInterruptionAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunInterruptionAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunIssueModelAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunIssueModelAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunPhraseMatcherAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunPhraseMatcherAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -309,7 +309,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunQaAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunQaAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -329,7 +329,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSentimentAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSentimentAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -349,7 +349,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSilenceAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSilenceAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -369,7 +369,7 @@ func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSummarizationAnnotatorParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetRunSummarizationAnnotatorParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -416,4 +416,3 @@ func validateNewContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReferenc
 
 	return nil
 }
-

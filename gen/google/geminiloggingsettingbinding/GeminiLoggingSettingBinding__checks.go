@@ -19,7 +19,7 @@ func (g *jsiiProxy_GeminiLoggingSettingBinding) validateAddMoveTargetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GeminiLoggingSettingBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_GeminiLoggingSettingBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (g *jsiiProxy_GeminiLoggingSettingBinding) validateMoveFromIdParameters(id 
 	return nil
 }
 
-func (g *jsiiProxy_GeminiLoggingSettingBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (g *jsiiProxy_GeminiLoggingSettingBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateGeminiLoggingSettingBinding_GenerateConfigForImportParameters(scope
 	return nil
 }
 
-func validateGeminiLoggingSettingBinding_IsConstructParameters(x interface{}) error {
+func validateGeminiLoggingSettingBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateGeminiLoggingSettingBinding_IsConstructParameters(x interface{}) er
 	return nil
 }
 
-func validateGeminiLoggingSettingBinding_IsTerraformElementParameters(x interface{}) error {
+func validateGeminiLoggingSettingBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateGeminiLoggingSettingBinding_IsTerraformElementParameters(x interfac
 	return nil
 }
 
-func validateGeminiLoggingSettingBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateGeminiLoggingSettingBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateGeminiLoggingSettingBinding_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSettingBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSettingBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GeminiLoggingSettingBinding) validateSetConnectionParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSettingBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSettingBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GeminiLoggingSettingBinding) validateSetProjectParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSettingBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_GeminiLoggingSettingBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewGeminiLoggingSettingBindingParameters(scope constructs.Construct
 
 	return nil
 }
-

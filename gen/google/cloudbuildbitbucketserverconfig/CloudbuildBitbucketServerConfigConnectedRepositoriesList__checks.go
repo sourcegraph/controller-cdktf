@@ -34,7 +34,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesList) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCloudbuildBitbucketServerConfigConnectedRepositoriesListParamete
 
 	return nil
 }
-

@@ -1,6 +1,5 @@
 package computeurlmap
 
-
 type ComputeUrlMapTest struct {
 	// Host portion of the URL.
 	//
@@ -33,10 +32,9 @@ type ComputeUrlMapTest struct {
 	// headers block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#headers ComputeUrlMap#headers}
-	Headers interface{} `field:"optional" json:"headers" yaml:"headers"`
+	Headers any `field:"optional" json:"headers" yaml:"headers"`
 	// The backend service or backend bucket link that should be matched by this test.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 }
-

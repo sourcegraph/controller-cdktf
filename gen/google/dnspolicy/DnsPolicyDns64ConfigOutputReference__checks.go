@@ -109,7 +109,7 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigOutputReference) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicyDns64ConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsPolicyDns64ConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewDnsPolicyDns64ConfigOutputReferenceParameters(terraformResource 
 
 	return nil
 }
-

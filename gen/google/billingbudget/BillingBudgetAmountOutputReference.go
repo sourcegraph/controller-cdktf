@@ -12,9 +12,9 @@ type BillingBudgetAmountOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -29,9 +29,9 @@ type BillingBudgetAmountOutputReference interface {
 	Fqn() *string
 	InternalValue() *BillingBudgetAmount
 	SetInternalValue(val *BillingBudgetAmount)
-	LastPeriodAmount() interface{}
-	SetLastPeriodAmount(val interface{})
-	LastPeriodAmountInput() interface{}
+	LastPeriodAmount() any
+	SetLastPeriodAmount(val any)
+	LastPeriodAmountInput() any
 	SpecifiedAmount() BillingBudgetAmountSpecifiedAmountOutputReference
 	SpecifiedAmountInput() *BillingBudgetAmountSpecifiedAmount
 	// Experimental.
@@ -45,7 +45,7 @@ type BillingBudgetAmountOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type BillingBudgetAmountOutputReference interface {
 	ResetSpecifiedAmount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_BillingBudgetAmountOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_BillingBudgetAmountOutputReference) InternalValue() *BillingB
 	return returns
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference) LastPeriodAmount() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) LastPeriodAmount() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lastPeriodAmount",
@@ -144,8 +144,8 @@ func (j *jsiiProxy_BillingBudgetAmountOutputReference) LastPeriodAmount() interf
 	return returns
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference) LastPeriodAmountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) LastPeriodAmountInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"lastPeriodAmountInput",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_BillingBudgetAmountOutputReference) TerraformResource() cdktf
 	return returns
 }
 
-
 func NewBillingBudgetAmountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BillingBudgetAmountOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewBillingBudgetAmountOutputReference(terraformResource cdktf.IInterpolatin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAmountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewBillingBudgetAmountOutputReference_Override(b BillingBudgetAmountOutputR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.billingBudget.BillingBudgetAmountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetComplexObjectIndex(val 
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetComplexObjectIsFromSet(
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetInternalValue(val *BillingBudgetAmount) {
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) SetInternalValue(val *BillingBudgetAmount) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetInternalValue(val *Bill
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetLastPeriodAmount(val interface{}) {
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) SetLastPeriodAmount(val any) {
 	if err := j.validateSetLastPeriodAmountParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetLastPeriodAmount(val in
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_BillingBudgetAmountOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BillingBudgetAmountOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,16 +300,16 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -326,7 +325,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetBooleanAttribute(terra
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -342,7 +341,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetBooleanMapAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetListAttribute(terrafor
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -374,7 +373,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetNumberAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -390,7 +389,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetNumberListAttribute(te
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -406,7 +405,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetNumberMapAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -422,7 +421,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetStringAttribute(terraf
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -438,7 +437,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) GetStringMapAttribute(ter
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) InterpolationForAttribute
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -481,7 +480,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) PutSpecifiedAmount(value 
 	_jsii_.InvokeVoid(
 		b,
 		"putSpecifiedAmount",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -501,16 +500,16 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) ResetSpecifiedAmount() {
 	)
 }
 
-func (b *jsiiProxy_BillingBudgetAmountOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BillingBudgetAmountOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) ToString() *string {
 
 	return returns
 }
-

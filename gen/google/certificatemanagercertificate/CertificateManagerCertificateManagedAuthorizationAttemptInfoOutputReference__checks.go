@@ -98,7 +98,7 @@ func (c *jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoO
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewCertificateManagerCertificateManagedAuthorizationAttemptInfoOutp
 
 	return nil
 }
-

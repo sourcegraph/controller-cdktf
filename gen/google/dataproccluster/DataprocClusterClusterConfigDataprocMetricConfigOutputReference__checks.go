@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigDataprocMetricConfigOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigDataprocMetricConfigOutputReference) validatePutMetricsParameters(value interface{}) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigDataprocMetricConfigOutputReference) validatePutMetricsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigDataprocMetricConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigDataprocMetricConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigDataprocMetricConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -229,4 +229,3 @@ func validateNewDataprocClusterClusterConfigDataprocMetricConfigOutputReferenceP
 
 	return nil
 }
-

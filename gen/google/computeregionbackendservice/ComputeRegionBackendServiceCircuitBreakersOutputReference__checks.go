@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCircuitBreakersOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceCircuitBreakersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceCircuitBreakersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -238,4 +238,3 @@ func validateNewComputeRegionBackendServiceCircuitBreakersOutputReferenceParamet
 
 	return nil
 }
-

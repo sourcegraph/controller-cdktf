@@ -19,7 +19,7 @@ func (n *jsiiProxy_NetappBackupVault) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupVault) validateAddOverrideParameters(path *string, value interface{}) error {
+func (n *jsiiProxy_NetappBackupVault) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (n *jsiiProxy_NetappBackupVault) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupVault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (n *jsiiProxy_NetappBackupVault) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func validateNetappBackupVault_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateNetappBackupVault_IsConstructParameters(x interface{}) error {
+func validateNetappBackupVault_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func validateNetappBackupVault_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNetappBackupVault_IsTerraformElementParameters(x interface{}) error {
+func validateNetappBackupVault_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -258,7 +258,7 @@ func validateNetappBackupVault_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateNetappBackupVault_IsTerraformResourceParameters(x interface{}) error {
+func validateNetappBackupVault_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_NetappBackupVault) validateSetBackupVaultTypeParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupVault) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupVault) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -315,7 +315,7 @@ func (j *jsiiProxy_NetappBackupVault) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupVault) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_NetappBackupVault) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -436,7 +436,7 @@ func (j *jsiiProxy_NetappBackupVault) validateSetProjectParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_NetappBackupVault) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetappBackupVault) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -500,4 +500,3 @@ func validateNewNetappBackupVaultParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

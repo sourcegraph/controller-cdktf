@@ -17,15 +17,15 @@ type DataCatalogTagTemplateIamBinding interface {
 	Condition() DataCatalogTagTemplateIamBindingConditionOutputReference
 	ConditionInput() *DataCatalogTagTemplateIamBindingCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,11 +59,11 @@ type DataCatalogTagTemplateIamBinding interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -76,16 +76,16 @@ type DataCatalogTagTemplateIamBinding interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type DataCatalogTagTemplateIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type DataCatalogTagTemplateIamBinding interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type DataCatalogTagTemplateIamBinding interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataCatalogTagTemplateIamBinding
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) ConditionInput() *DataCatal
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -358,8 +358,8 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding} Resource.
 func NewDataCatalogTagTemplateIamBinding(scope constructs.Construct, id *string, config *DataCatalogTagTemplateIamBindingConfig) DataCatalogTagTemplateIamBinding {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewDataCatalogTagTemplateIamBinding(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewDataCatalogTagTemplateIamBinding_Override(d DataCatalogTagTemplateIamBin
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetCount(val interface{}) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -526,7 +525,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetId(val *string) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,7 +536,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetMembers(val *[]*string) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetMembers(val *[]*string) {
 	if err := j.validateSetMembersParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetMembers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetProject(val *string) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -578,7 +577,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetRegion(val *string) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetRegion(val *string) {
 	if err := j.validateSetRegionParameters(val); err != nil {
 		panic(err)
 	}
@@ -600,7 +599,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetRole(val *string) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateIamBinding)SetTagTemplate(val *string) {
+func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) SetTagTemplate(val *string) {
 	if err := j.validateSetTagTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func DataCatalogTagTemplateIamBinding_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func DataCatalogTagTemplateIamBinding_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataCatalogTagTemplateIamBinding_IsConstruct(x interface{}) *bool {
+func DataCatalogTagTemplateIamBinding_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCatalogTagTemplateIamBinding_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func DataCatalogTagTemplateIamBinding_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func DataCatalogTagTemplateIamBinding_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCatalogTagTemplateIamBinding_IsTerraformElement(x interface{}) *bool {
+func DataCatalogTagTemplateIamBinding_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCatalogTagTemplateIamBinding_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func DataCatalogTagTemplateIamBinding_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func DataCatalogTagTemplateIamBinding_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataCatalogTagTemplateIamBinding_IsTerraformResource(x interface{}) *bool {
+func DataCatalogTagTemplateIamBinding_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataCatalogTagTemplateIamBinding_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func DataCatalogTagTemplateIamBinding_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataCatalogTagTemplateIamBinding.DataCatalogTagTemplateIamBinding",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -911,7 +910,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) PutCondition(value *DataCat
 	_jsii_.InvokeVoid(
 		d,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ResetRegion() {
 	)
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1039,8 +1038,8 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) SynthesizeAttributes() *map
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1052,8 +1051,8 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1065,8 +1064,8 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ToHclTerraform() interface{
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1091,8 +1090,8 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1103,4 +1102,3 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamBinding) ToTerraform() interface{} {
 
 	return returns
 }
-

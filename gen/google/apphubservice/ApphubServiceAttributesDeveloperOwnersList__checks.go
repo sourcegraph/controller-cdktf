@@ -34,7 +34,7 @@ func (a *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApphubServiceAttributesDeveloperOwnersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewApphubServiceAttributesDeveloperOwnersListParameters(terraformRe
 
 	return nil
 }
-

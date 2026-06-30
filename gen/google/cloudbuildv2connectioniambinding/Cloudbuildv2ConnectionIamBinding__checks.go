@@ -19,7 +19,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateAddMoveTargetParame
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateMoveFromIdParameter
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateCloudbuildv2ConnectionIamBinding_GenerateConfigForImportParameters(
 	return nil
 }
 
-func validateCloudbuildv2ConnectionIamBinding_IsConstructParameters(x interface{}) error {
+func validateCloudbuildv2ConnectionIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateCloudbuildv2ConnectionIamBinding_IsConstructParameters(x interface{
 	return nil
 }
 
-func validateCloudbuildv2ConnectionIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateCloudbuildv2ConnectionIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateCloudbuildv2ConnectionIamBinding_IsTerraformElementParameters(x int
 	return nil
 }
 
-func validateCloudbuildv2ConnectionIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateCloudbuildv2ConnectionIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateCloudbuildv2ConnectionIamBinding_IsTerraformResourceParameters(x in
 	return nil
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateSetConnectionParame
 	return nil
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateSetProjectParameter
 	return nil
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewCloudbuildv2ConnectionIamBindingParameters(scope constructs.Cons
 
 	return nil
 }
-

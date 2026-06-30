@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewLoggingLogViewIamMemberConditionOutputReferenceParameters(terraf
 
 	return nil
 }
-

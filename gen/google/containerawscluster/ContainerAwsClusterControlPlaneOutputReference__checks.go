@@ -175,7 +175,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -323,4 +323,3 @@ func validateNewContainerAwsClusterControlPlaneOutputReferenceParameters(terrafo
 
 	return nil
 }
-

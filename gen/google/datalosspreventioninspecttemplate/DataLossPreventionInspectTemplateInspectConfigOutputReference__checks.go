@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validatePutCustomInfoTypesParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validatePutCustomInfoTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validatePutInfoTypesParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validatePutInfoTypesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validatePutRuleSetParameters(value interface{}) error {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validatePutRuleSetParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -202,7 +202,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validateSetExcludeInfoTypesParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validateSetExcludeInfoTypesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validateSetIncludeQuoteParameters(val interface{}) error {
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigOutputReference) validateSetIncludeQuoteParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -358,4 +358,3 @@ func validateNewDataLossPreventionInspectTemplateInspectConfigOutputReferencePar
 
 	return nil
 }
-

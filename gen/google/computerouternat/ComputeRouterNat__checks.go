@@ -19,7 +19,7 @@ func (c *jsiiProxy_ComputeRouterNat) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterNat) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_ComputeRouterNat) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_ComputeRouterNat) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterNat) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_ComputeRouterNat) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -215,7 +215,7 @@ func (c *jsiiProxy_ComputeRouterNat) validatePutLogConfigParameters(value *Compu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterNat) validatePutNat64SubnetworkParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRouterNat) validatePutNat64SubnetworkParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -246,7 +246,7 @@ func (c *jsiiProxy_ComputeRouterNat) validatePutNat64SubnetworkParameters(value 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterNat) validatePutRulesParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRouterNat) validatePutRulesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func (c *jsiiProxy_ComputeRouterNat) validatePutRulesParameters(value interface{
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterNat) validatePutSubnetworkParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeRouterNat) validatePutSubnetworkParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -335,7 +335,7 @@ func validateComputeRouterNat_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateComputeRouterNat_IsConstructParameters(x interface{}) error {
+func validateComputeRouterNat_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -343,7 +343,7 @@ func validateComputeRouterNat_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateComputeRouterNat_IsTerraformElementParameters(x interface{}) error {
+func validateComputeRouterNat_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func validateComputeRouterNat_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateComputeRouterNat_IsTerraformResourceParameters(x interface{}) error {
+func validateComputeRouterNat_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetAutoNetworkTierParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterNat) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterNat) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -400,7 +400,7 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterNat) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterNat) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -465,7 +465,7 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetDrainNatIpsParameters(val *[]*st
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterNat) validateSetEnableDynamicPortAllocationParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterNat) validateSetEnableDynamicPortAllocationParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -485,7 +485,7 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetEnableDynamicPortAllocationParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterNat) validateSetEnableEndpointIndependentMappingParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeRouterNat) validateSetEnableEndpointIndependentMappingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -593,7 +593,7 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetProjectParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterNat) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ComputeRouterNat) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -729,4 +729,3 @@ func validateNewComputeRouterNatParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

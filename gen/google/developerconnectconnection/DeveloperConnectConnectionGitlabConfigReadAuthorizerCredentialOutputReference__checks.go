@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigReadAuthorizerCredentia
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOu
 
 	return nil
 }
-

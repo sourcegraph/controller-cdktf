@@ -106,7 +106,7 @@ func (j *jsiiProxy_StorageInsightsReportConfigObjectMetadataReportOptionsStorage
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewStorageInsightsReportConfigObjectMetadataReportOptionsStorageDes
 
 	return nil
 }
-

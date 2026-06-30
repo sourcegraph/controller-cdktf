@@ -98,7 +98,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineIamMemberConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_VertexAiReasoningEngineIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewVertexAiReasoningEngineIamMemberConditionOutputReferenceParamete
 
 	return nil
 }
-

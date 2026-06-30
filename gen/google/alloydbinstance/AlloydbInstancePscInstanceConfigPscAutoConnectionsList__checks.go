@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlloydbInstancePscInstanceConfigPscAutoConnectionsListParameters
 
 	return nil
 }
-

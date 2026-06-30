@@ -98,7 +98,7 @@ func (d *jsiiProxy_DnsManagedZoneIamBindingConditionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DnsManagedZoneIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDnsManagedZoneIamBindingConditionOutputReferenceParameters(terra
 
 	return nil
 }
-

@@ -1,13 +1,12 @@
 package firebaseremoteconfigremoteconfig
 
-
 type FirebaseRemoteConfigRemoteConfigParameterGroupsParameters struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_remote_config_remote_config#parameter_name FirebaseRemoteConfigRemoteConfig#parameter_name}.
 	ParameterName *string `field:"required" json:"parameterName" yaml:"parameterName"`
 	// conditional_values block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_remote_config_remote_config#conditional_values FirebaseRemoteConfigRemoteConfig#conditional_values}
-	ConditionalValues interface{} `field:"optional" json:"conditionalValues" yaml:"conditionalValues"`
+	ConditionalValues any `field:"optional" json:"conditionalValues" yaml:"conditionalValues"`
 	// default_value block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_remote_config_remote_config#default_value FirebaseRemoteConfigRemoteConfig#default_value}
@@ -26,4 +25,3 @@ type FirebaseRemoteConfigRemoteConfigParameterGroupsParameters struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_remote_config_remote_config#value_type FirebaseRemoteConfigRemoteConfig#value_type}
 	ValueType *string `field:"optional" json:"valueType" yaml:"valueType"`
 }
-

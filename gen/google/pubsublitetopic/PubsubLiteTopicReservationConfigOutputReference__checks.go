@@ -98,7 +98,7 @@ func (p *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PubsubLiteTopicReservationConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewPubsubLiteTopicReservationConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

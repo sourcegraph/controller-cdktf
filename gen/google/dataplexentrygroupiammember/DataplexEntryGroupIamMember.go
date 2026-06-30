@@ -17,15 +17,15 @@ type DataplexEntryGroupIamMember interface {
 	Condition() DataplexEntryGroupIamMemberConditionOutputReference
 	ConditionInput() *DataplexEntryGroupIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,27 +65,27 @@ type DataplexEntryGroupIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type DataplexEntryGroupIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type DataplexEntryGroupIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -130,17 +130,17 @@ type DataplexEntryGroupIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataplexEntryGroupIamMember
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember) ConditionInput() *DataplexEntryG
 	return returns
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexEntryGroupIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataplexEntryGroupIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexEntryGroupIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember) Provider() cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_DataplexEntryGroupIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -398,8 +398,8 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplexEntryGroupIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -438,8 +438,8 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember) TerraformGeneratorMetadata() *cd
 	return returns
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataplexEntryGroupIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -458,7 +458,6 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember) TerraformResourceType() *string 
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group_iam_member google_dataplex_entry_group_iam_member} Resource.
 func NewDataplexEntryGroupIamMember(scope constructs.Construct, id *string, config *DataplexEntryGroupIamMemberConfig) DataplexEntryGroupIamMember {
 	_init_.Initialize()
@@ -470,7 +469,7 @@ func NewDataplexEntryGroupIamMember(scope constructs.Construct, id *string, conf
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexEntryGroupIamMember.DataplexEntryGroupIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -483,12 +482,12 @@ func NewDataplexEntryGroupIamMember_Override(d DataplexEntryGroupIamMember, scop
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataplexEntryGroupIamMember.DataplexEntryGroupIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetEntryGroupId(val *string) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetEntryGroupId(val *string) {
 	if err := j.validateSetEntryGroupIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,7 +528,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetEntryGroupId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetId(val *string) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetLocation(val *string) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetMember(val *string) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -581,7 +580,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetProject(val *string) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -592,7 +591,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +599,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,7 +610,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamMember)SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_DataplexEntryGroupIamMember)SetRole(val *string) {
+func (j *jsiiProxy_DataplexEntryGroupIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -634,7 +633,7 @@ func DataplexEntryGroupIamMember_GenerateConfigForImport(scope constructs.Constr
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexEntryGroupIamMember.DataplexEntryGroupIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -658,7 +657,7 @@ func DataplexEntryGroupIamMember_GenerateConfigForImport(scope constructs.Constr
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataplexEntryGroupIamMember_IsConstruct(x interface{}) *bool {
+func DataplexEntryGroupIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexEntryGroupIamMember_IsConstructParameters(x); err != nil {
@@ -669,7 +668,7 @@ func DataplexEntryGroupIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexEntryGroupIamMember.DataplexEntryGroupIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -677,7 +676,7 @@ func DataplexEntryGroupIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataplexEntryGroupIamMember_IsTerraformElement(x interface{}) *bool {
+func DataplexEntryGroupIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexEntryGroupIamMember_IsTerraformElementParameters(x); err != nil {
@@ -688,7 +687,7 @@ func DataplexEntryGroupIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexEntryGroupIamMember.DataplexEntryGroupIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -696,7 +695,7 @@ func DataplexEntryGroupIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func DataplexEntryGroupIamMember_IsTerraformResource(x interface{}) *bool {
+func DataplexEntryGroupIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataplexEntryGroupIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -707,7 +706,7 @@ func DataplexEntryGroupIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataplexEntryGroupIamMember.DataplexEntryGroupIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -732,31 +731,31 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) AddMoveTarget(moveTarget *string
 	_jsii_.InvokeVoid(
 		d,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamMember) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataplexEntryGroupIamMember) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataplexEntryGroupIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) GetBooleanAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -788,7 +787,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) GetBooleanMapAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -804,7 +803,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) GetListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -820,7 +819,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) GetNumberAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -836,7 +835,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) GetNumberListAttribute(terraform
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -852,7 +851,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) GetNumberMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -868,7 +867,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) GetStringAttribute(terraformAttr
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -884,15 +883,15 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) GetStringMapAttribute(terraformA
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexEntryGroupIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -911,7 +910,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) ImportFrom(id *string, provider 
 	_jsii_.InvokeVoid(
 		d,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -924,7 +923,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) InterpolationForAttribute(terraf
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -938,18 +937,18 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (d *jsiiProxy_DataplexEntryGroupIamMember) MoveTo(moveTarget *string, index any) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -960,7 +959,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		d,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -971,7 +970,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) OverrideLogicalId(newLogicalId *
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -982,7 +981,7 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) PutCondition(value *DataplexEntr
 	_jsii_.InvokeVoid(
 		d,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1026,8 +1025,8 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataplexEntryGroupIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1039,8 +1038,8 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) SynthesizeAttributes() *map[stri
 	return returns
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataplexEntryGroupIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -1052,8 +1051,8 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) SynthesizeHclAttributes() *map[s
 	return returns
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexEntryGroupIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1065,8 +1064,8 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexEntryGroupIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1091,8 +1090,8 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataplexEntryGroupIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataplexEntryGroupIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -1103,4 +1102,3 @@ func (d *jsiiProxy_DataplexEntryGroupIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

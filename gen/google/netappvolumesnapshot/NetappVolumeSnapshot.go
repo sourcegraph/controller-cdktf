@@ -15,15 +15,15 @@ type NetappVolumeSnapshot interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,20 +66,20 @@ type NetappVolumeSnapshot interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() NetappVolumeSnapshotTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UsedBytes() *float64
 	VolumeName() *string
 	SetVolumeName(val *string)
@@ -88,9 +88,9 @@ type NetappVolumeSnapshot interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type NetappVolumeSnapshot interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -120,7 +120,7 @@ type NetappVolumeSnapshot interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type NetappVolumeSnapshot interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for NetappVolumeSnapshot
@@ -164,8 +164,8 @@ func (j *jsiiProxy_NetappVolumeSnapshot) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeSnapshot) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_NetappVolumeSnapshot) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappVolumeSnapshot) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_NetappVolumeSnapshot) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeSnapshot) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_NetappVolumeSnapshot) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_NetappVolumeSnapshot) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_NetappVolumeSnapshot) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeSnapshot) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -434,8 +434,8 @@ func (j *jsiiProxy_NetappVolumeSnapshot) TerraformLabels() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_NetappVolumeSnapshot) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_NetappVolumeSnapshot) Timeouts() NetappVolumeSnapshotTimeouts
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeSnapshot) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_NetappVolumeSnapshot) VolumeNameInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_volume_snapshot google_netapp_volume_snapshot} Resource.
 func NewNetappVolumeSnapshot(scope constructs.Construct, id *string, config *NetappVolumeSnapshotConfig) NetappVolumeSnapshot {
 	_init_.Initialize()
@@ -516,7 +515,7 @@ func NewNetappVolumeSnapshot(scope constructs.Construct, id *string, config *Net
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewNetappVolumeSnapshot_Override(n NetappVolumeSnapshot, scope constructs.C
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshot",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetConnection(val interface{}) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetCount(val interface{}) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetDescription(val *string) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -575,7 +574,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -583,7 +582,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetId(val *string) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetLocation(val *string) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetName(val *string) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -638,7 +637,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetProject(val *string) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -649,7 +648,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_NetappVolumeSnapshot)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshot)SetVolumeName(val *string) {
+func (j *jsiiProxy_NetappVolumeSnapshot) SetVolumeName(val *string) {
 	if err := j.validateSetVolumeNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -691,7 +690,7 @@ func NetappVolumeSnapshot_GenerateConfigForImport(scope constructs.Construct, im
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshot",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -715,7 +714,7 @@ func NetappVolumeSnapshot_GenerateConfigForImport(scope constructs.Construct, im
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NetappVolumeSnapshot_IsConstruct(x interface{}) *bool {
+func NetappVolumeSnapshot_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappVolumeSnapshot_IsConstructParameters(x); err != nil {
@@ -726,7 +725,7 @@ func NetappVolumeSnapshot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshot",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func NetappVolumeSnapshot_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappVolumeSnapshot_IsTerraformElement(x interface{}) *bool {
+func NetappVolumeSnapshot_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappVolumeSnapshot_IsTerraformElementParameters(x); err != nil {
@@ -745,7 +744,7 @@ func NetappVolumeSnapshot_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshot",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func NetappVolumeSnapshot_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func NetappVolumeSnapshot_IsTerraformResource(x interface{}) *bool {
+func NetappVolumeSnapshot_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateNetappVolumeSnapshot_IsTerraformResourceParameters(x); err != nil {
@@ -764,7 +763,7 @@ func NetappVolumeSnapshot_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.netappVolumeSnapshot.NetappVolumeSnapshot",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -789,31 +788,31 @@ func (n *jsiiProxy_NetappVolumeSnapshot) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshot) AddOverride(path *string, value interface{}) {
+func (n *jsiiProxy_NetappVolumeSnapshot) AddOverride(path *string, value any) {
 	if err := n.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NetappVolumeSnapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -829,7 +828,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) GetBooleanAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,7 +844,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) GetBooleanMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -861,7 +860,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) GetListAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -877,7 +876,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) GetNumberAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -893,7 +892,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) GetNumberListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -909,7 +908,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) GetNumberMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -925,7 +924,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) GetStringAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -941,15 +940,15 @@ func (n *jsiiProxy_NetappVolumeSnapshot) GetStringMapAttribute(terraformAttribut
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshot) HasResourceMove() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappVolumeSnapshot) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -968,7 +967,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) ImportFrom(id *string, provider cdktf.T
 	_jsii_.InvokeVoid(
 		n,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -981,7 +980,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) InterpolationForAttribute(terraformAttr
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -995,18 +994,18 @@ func (n *jsiiProxy_NetappVolumeSnapshot) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshot) MoveTo(moveTarget *string, index interface{}) {
+func (n *jsiiProxy_NetappVolumeSnapshot) MoveTo(moveTarget *string, index any) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1017,7 +1016,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		n,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) OverrideLogicalId(newLogicalId *string)
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (n *jsiiProxy_NetappVolumeSnapshot) PutTimeouts(value *NetappVolumeSnapshot
 	_jsii_.InvokeVoid(
 		n,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1091,8 +1090,8 @@ func (n *jsiiProxy_NetappVolumeSnapshot) ResetTimeouts() {
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshot) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappVolumeSnapshot) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1104,8 +1103,8 @@ func (n *jsiiProxy_NetappVolumeSnapshot) SynthesizeAttributes() *map[string]inte
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshot) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (n *jsiiProxy_NetappVolumeSnapshot) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
@@ -1117,8 +1116,8 @@ func (n *jsiiProxy_NetappVolumeSnapshot) SynthesizeHclAttributes() *map[string]i
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshot) ToHclTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappVolumeSnapshot) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1130,8 +1129,8 @@ func (n *jsiiProxy_NetappVolumeSnapshot) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshot) ToMetadata() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappVolumeSnapshot) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1156,8 +1155,8 @@ func (n *jsiiProxy_NetappVolumeSnapshot) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshot) ToTerraform() interface{} {
-	var returns interface{}
+func (n *jsiiProxy_NetappVolumeSnapshot) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		n,
@@ -1168,4 +1167,3 @@ func (n *jsiiProxy_NetappVolumeSnapshot) ToTerraform() interface{} {
 
 	return returns
 }
-

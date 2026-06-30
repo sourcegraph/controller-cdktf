@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleServiceAccountIdToken) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleServiceAccountIdToken) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleServiceAccountIdToken_GenerateConfigForImportParameters(s
 	return nil
 }
 
-func validateDataGoogleServiceAccountIdToken_IsConstructParameters(x interface{}) error {
+func validateDataGoogleServiceAccountIdToken_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleServiceAccountIdToken_IsConstructParameters(x interface{}
 	return nil
 }
 
-func validateDataGoogleServiceAccountIdToken_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleServiceAccountIdToken_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleServiceAccountIdToken_IsTerraformDataSourceParameters(x i
 	return nil
 }
 
-func validateDataGoogleServiceAccountIdToken_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleServiceAccountIdToken_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleServiceAccountIdToken_IsTerraformElementParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -224,7 +224,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountIdToken) validateSetIncludeEmailParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) validateSetIncludeEmailParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -286,4 +286,3 @@ func validateNewDataGoogleServiceAccountIdTokenParameters(scope constructs.Const
 
 	return nil
 }
-

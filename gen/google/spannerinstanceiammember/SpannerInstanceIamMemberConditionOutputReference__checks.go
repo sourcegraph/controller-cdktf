@@ -98,7 +98,7 @@ func (s *jsiiProxy_SpannerInstanceIamMemberConditionOutputReference) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SpannerInstanceIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewSpannerInstanceIamMemberConditionOutputReferenceParameters(terra
 
 	return nil
 }
-

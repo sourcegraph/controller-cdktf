@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesStatisticRangeExpectat
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesStatisticRangeExpectationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesStatisticRangeExpectationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleDataplexDataQualityRulesRulesStatisticRangeExpectation
 
 	return nil
 }
-

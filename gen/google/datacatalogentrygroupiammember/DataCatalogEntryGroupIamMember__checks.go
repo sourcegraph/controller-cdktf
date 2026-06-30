@@ -19,7 +19,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateAddMoveTargetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateMoveFromIdParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateDataCatalogEntryGroupIamMember_GenerateConfigForImportParameters(sc
 	return nil
 }
 
-func validateDataCatalogEntryGroupIamMember_IsConstructParameters(x interface{}) error {
+func validateDataCatalogEntryGroupIamMember_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateDataCatalogEntryGroupIamMember_IsConstructParameters(x interface{})
 	return nil
 }
 
-func validateDataCatalogEntryGroupIamMember_IsTerraformElementParameters(x interface{}) error {
+func validateDataCatalogEntryGroupIamMember_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateDataCatalogEntryGroupIamMember_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func validateDataCatalogEntryGroupIamMember_IsTerraformResourceParameters(x interface{}) error {
+func validateDataCatalogEntryGroupIamMember_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateDataCatalogEntryGroupIamMember_IsTerraformResourceParameters(x inte
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupIamMember) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogEntryGroupIamMember) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupIamMember) validateSetConnectionParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupIamMember) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataCatalogEntryGroupIamMember) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupIamMember) validateSetProjectParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroupIamMember) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DataCatalogEntryGroupIamMember) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewDataCatalogEntryGroupIamMemberParameters(scope constructs.Constr
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (s *jsiiProxy_SecurityposturePostureTimeoutsOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePostureTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePostureTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_SecurityposturePostureTimeoutsOutputReference) validateSetDel
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePostureTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SecurityposturePostureTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewSecurityposturePostureTimeoutsOutputReferenceParameters(terrafor
 
 	return nil
 }
-

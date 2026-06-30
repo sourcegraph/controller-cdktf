@@ -17,15 +17,15 @@ type MonitoringService interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,11 +59,11 @@ type MonitoringService interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ServiceId() *string
 	SetServiceId(val *string)
 	ServiceIdInput() *string
@@ -71,11 +71,11 @@ type MonitoringService interface {
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() MonitoringServiceTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	UserLabels() *map[string]*string
 	SetUserLabels(val *map[string]*string)
 	UserLabelsInput() *map[string]*string
@@ -83,9 +83,9 @@ type MonitoringService interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -103,7 +103,7 @@ type MonitoringService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -115,7 +115,7 @@ type MonitoringService interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -133,17 +133,17 @@ type MonitoringService interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetUserLabels()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for MonitoringService
@@ -181,8 +181,8 @@ func (j *jsiiProxy_MonitoringService) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringService) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringService) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_MonitoringService) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringService) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MonitoringService) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -201,8 +201,8 @@ func (j *jsiiProxy_MonitoringService) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringService) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringService) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -351,8 +351,8 @@ func (j *jsiiProxy_MonitoringService) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringService) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_MonitoringService) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -361,8 +361,8 @@ func (j *jsiiProxy_MonitoringService) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringService) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringService) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -411,8 +411,8 @@ func (j *jsiiProxy_MonitoringService) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringService) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_MonitoringService) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -441,8 +441,8 @@ func (j *jsiiProxy_MonitoringService) Timeouts() MonitoringServiceTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringService) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringService) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -471,7 +471,6 @@ func (j *jsiiProxy_MonitoringService) UserLabelsInput() *map[string]*string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/monitoring_service google_monitoring_service} Resource.
 func NewMonitoringService(scope constructs.Construct, id *string, config *MonitoringServiceConfig) MonitoringService {
 	_init_.Initialize()
@@ -483,7 +482,7 @@ func NewMonitoringService(scope constructs.Construct, id *string, config *Monito
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringService.MonitoringService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -496,12 +495,12 @@ func NewMonitoringService_Override(m MonitoringService, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringService.MonitoringService",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetConnection(val interface{}) {
+func (j *jsiiProxy_MonitoringService) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +511,7 @@ func (j *jsiiProxy_MonitoringService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetCount(val interface{}) {
+func (j *jsiiProxy_MonitoringService) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -523,7 +522,7 @@ func (j *jsiiProxy_MonitoringService)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MonitoringService) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -531,7 +530,7 @@ func (j *jsiiProxy_MonitoringService)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetDisplayName(val *string) {
+func (j *jsiiProxy_MonitoringService) SetDisplayName(val *string) {
 	if err := j.validateSetDisplayNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -542,7 +541,7 @@ func (j *jsiiProxy_MonitoringService)SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MonitoringService) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -550,7 +549,7 @@ func (j *jsiiProxy_MonitoringService)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetId(val *string) {
+func (j *jsiiProxy_MonitoringService) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -561,7 +560,7 @@ func (j *jsiiProxy_MonitoringService)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MonitoringService) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,7 +571,7 @@ func (j *jsiiProxy_MonitoringService)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetProject(val *string) {
+func (j *jsiiProxy_MonitoringService) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_MonitoringService)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MonitoringService) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -591,7 +590,7 @@ func (j *jsiiProxy_MonitoringService)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MonitoringService) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_MonitoringService)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetServiceId(val *string) {
+func (j *jsiiProxy_MonitoringService) SetServiceId(val *string) {
 	if err := j.validateSetServiceIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_MonitoringService)SetServiceId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringService)SetUserLabels(val *map[string]*string) {
+func (j *jsiiProxy_MonitoringService) SetUserLabels(val *map[string]*string) {
 	if err := j.validateSetUserLabelsParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func MonitoringService_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.monitoringService.MonitoringService",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -660,7 +659,7 @@ func MonitoringService_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func MonitoringService_IsConstruct(x interface{}) *bool {
+func MonitoringService_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMonitoringService_IsConstructParameters(x); err != nil {
@@ -671,7 +670,7 @@ func MonitoringService_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.monitoringService.MonitoringService",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func MonitoringService_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func MonitoringService_IsTerraformElement(x interface{}) *bool {
+func MonitoringService_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMonitoringService_IsTerraformElementParameters(x); err != nil {
@@ -690,7 +689,7 @@ func MonitoringService_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.monitoringService.MonitoringService",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func MonitoringService_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func MonitoringService_IsTerraformResource(x interface{}) *bool {
+func MonitoringService_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateMonitoringService_IsTerraformResourceParameters(x); err != nil {
@@ -709,7 +708,7 @@ func MonitoringService_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.monitoringService.MonitoringService",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -734,31 +733,31 @@ func (m *jsiiProxy_MonitoringService) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (m *jsiiProxy_MonitoringService) AddOverride(path *string, value interface{}) {
+func (m *jsiiProxy_MonitoringService) AddOverride(path *string, value any) {
 	if err := m.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (m *jsiiProxy_MonitoringService) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitoringService) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -774,7 +773,7 @@ func (m *jsiiProxy_MonitoringService) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -790,7 +789,7 @@ func (m *jsiiProxy_MonitoringService) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -806,7 +805,7 @@ func (m *jsiiProxy_MonitoringService) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -822,7 +821,7 @@ func (m *jsiiProxy_MonitoringService) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func (m *jsiiProxy_MonitoringService) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -854,7 +853,7 @@ func (m *jsiiProxy_MonitoringService) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -870,7 +869,7 @@ func (m *jsiiProxy_MonitoringService) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -886,15 +885,15 @@ func (m *jsiiProxy_MonitoringService) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringService) HasResourceMove() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitoringService) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -913,7 +912,7 @@ func (m *jsiiProxy_MonitoringService) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		m,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -926,7 +925,7 @@ func (m *jsiiProxy_MonitoringService) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -940,18 +939,18 @@ func (m *jsiiProxy_MonitoringService) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (m *jsiiProxy_MonitoringService) MoveTo(moveTarget *string, index interface{}) {
+func (m *jsiiProxy_MonitoringService) MoveTo(moveTarget *string, index any) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -962,7 +961,7 @@ func (m *jsiiProxy_MonitoringService) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -973,7 +972,7 @@ func (m *jsiiProxy_MonitoringService) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -984,7 +983,7 @@ func (m *jsiiProxy_MonitoringService) PutBasicService(value *MonitoringServiceBa
 	_jsii_.InvokeVoid(
 		m,
 		"putBasicService",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -995,7 +994,7 @@ func (m *jsiiProxy_MonitoringService) PutTimeouts(value *MonitoringServiceTimeou
 	_jsii_.InvokeVoid(
 		m,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1055,8 +1054,8 @@ func (m *jsiiProxy_MonitoringService) ResetUserLabels() {
 	)
 }
 
-func (m *jsiiProxy_MonitoringService) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MonitoringService) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1068,8 +1067,8 @@ func (m *jsiiProxy_MonitoringService) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringService) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (m *jsiiProxy_MonitoringService) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
@@ -1081,8 +1080,8 @@ func (m *jsiiProxy_MonitoringService) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringService) ToHclTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitoringService) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1094,8 +1093,8 @@ func (m *jsiiProxy_MonitoringService) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringService) ToMetadata() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitoringService) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1120,8 +1119,8 @@ func (m *jsiiProxy_MonitoringService) ToString() *string {
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringService) ToTerraform() interface{} {
-	var returns interface{}
+func (m *jsiiProxy_MonitoringService) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		m,
@@ -1132,4 +1131,3 @@ func (m *jsiiProxy_MonitoringService) ToTerraform() interface{} {
 
 	return returns
 }
-

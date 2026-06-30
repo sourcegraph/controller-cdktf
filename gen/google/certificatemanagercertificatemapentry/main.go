@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
-		reflect.TypeOf((*CertificateManagerCertificateMapEntry)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateMapEntry](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificateMapEntry{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryConfig",
-		reflect.TypeOf((*CertificateManagerCertificateMapEntryConfig)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateMapEntryConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeouts",
-		reflect.TypeOf((*CertificateManagerCertificateMapEntryTimeouts)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateMapEntryTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeoutsOutputReference",
-		reflect.TypeOf((*CertificateManagerCertificateMapEntryTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertificateManagerCertificateMapEntryTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertificateManagerCertificateMapEntryTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -120,7 +120,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewGkeonpremBareMetalClusterStorageOutputReferenceParameters(terraf
 
 	return nil
 }
-

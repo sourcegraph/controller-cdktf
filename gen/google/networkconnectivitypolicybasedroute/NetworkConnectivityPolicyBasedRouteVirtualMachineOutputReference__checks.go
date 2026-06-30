@@ -98,7 +98,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteVirtualMachineOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteVirtualMachineOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteVirtualMachineOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNetworkConnectivityPolicyBasedRouteVirtualMachineOutputReference
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewComputeBackendServiceCdnPolicyNegativeCachingPolicyListParameter
 
 	return nil
 }
-

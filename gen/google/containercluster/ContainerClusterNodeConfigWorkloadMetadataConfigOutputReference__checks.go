@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigWorkloadMetadataConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewContainerClusterNodeConfigWorkloadMetadataConfigOutputReferenceP
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateSetApp
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewBeyondcorpAppConnectionGatewayOutputReferenceParameters(terrafor
 
 	return nil
 }
-

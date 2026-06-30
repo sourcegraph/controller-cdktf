@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile",
-		reflect.TypeOf((*DatastreamConnectionProfile)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -122,11 +122,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfile",
-		reflect.TypeOf((*DatastreamConnectionProfileBigqueryProfile)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileBigqueryProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfileOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileBigqueryProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileBigqueryProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -150,7 +150,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileBigqueryProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -158,15 +158,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig",
-		reflect.TypeOf((*DatastreamConnectionProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivity",
-		reflect.TypeOf((*DatastreamConnectionProfileForwardSshConnectivity)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileForwardSshConnectivity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivityOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileForwardSshConnectivityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileForwardSshConnectivityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -203,7 +203,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -211,11 +211,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfile",
-		reflect.TypeOf((*DatastreamConnectionProfileGcsProfile)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileGcsProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfileOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileGcsProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileGcsProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
@@ -244,7 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileGcsProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -252,15 +252,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfile",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfile)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfile](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileHostAddresses",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileHostAddresses)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileHostAddresses](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileHostAddressesList",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileHostAddressesList)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileHostAddressesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -282,7 +282,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -311,7 +311,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -319,7 +319,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -369,7 +369,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileMongodbProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -377,11 +377,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSrvConnectionFormat",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileSrvConnectionFormat)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileSrvConnectionFormat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSrvConnectionFormatOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileSrvConnectionFormatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileSrvConnectionFormatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -405,7 +405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileMongodbProfileSrvConnectionFormatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -413,11 +413,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSslConfig",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileSslConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileSslConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSslConfigOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileSslConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileSslConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateInput", GoGetter: "CaCertificateInput"},
@@ -456,7 +456,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileMongodbProfileSslConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -464,11 +464,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileStandardConnectionFormat",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileStandardConnectionFormat)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileStandardConnectionFormat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -495,7 +495,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -503,11 +503,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfile",
-		reflect.TypeOf((*DatastreamConnectionProfileMysqlProfile)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMysqlProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileMysqlProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMysqlProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -548,7 +548,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -556,11 +556,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfig",
-		reflect.TypeOf((*DatastreamConnectionProfileMysqlProfileSslConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMysqlProfileSslConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfigOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileMysqlProfileSslConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileMysqlProfileSslConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateInput", GoGetter: "CaCertificateInput"},
@@ -596,7 +596,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileMysqlProfileSslConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -604,11 +604,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfile",
-		reflect.TypeOf((*DatastreamConnectionProfileOracleProfile)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileOracleProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfileOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileOracleProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileOracleProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -650,7 +650,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -658,11 +658,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfile",
-		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfile)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePostgresqlProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePostgresqlProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -705,7 +705,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -713,11 +713,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfig",
-		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfileSslConfig)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePostgresqlProfileSslConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -749,7 +749,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -757,11 +757,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerification",
-		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerification)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerification](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateInput", GoGetter: "CaCertificateInput"},
@@ -791,7 +791,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -799,11 +799,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerification",
-		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerification)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerification](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerificationOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerificationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerificationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertificateInput", GoGetter: "CaCertificateInput"},
@@ -829,7 +829,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerificationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -837,11 +837,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivity",
-		reflect.TypeOf((*DatastreamConnectionProfilePrivateConnectivity)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePrivateConnectivity](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivityOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfilePrivateConnectivityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfilePrivateConnectivityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -867,7 +867,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfilePrivateConnectivityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -875,11 +875,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileSqlServerProfile",
-		reflect.TypeOf((*DatastreamConnectionProfileSqlServerProfile)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileSqlServerProfile](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileSqlServerProfileOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileSqlServerProfileOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileSqlServerProfileOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -918,7 +918,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileSqlServerProfileOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -926,11 +926,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts",
-		reflect.TypeOf((*DatastreamConnectionProfileTimeouts)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeoutsOutputReference",
-		reflect.TypeOf((*DatastreamConnectionProfileTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DatastreamConnectionProfileTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -963,7 +963,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DatastreamConnectionProfileTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

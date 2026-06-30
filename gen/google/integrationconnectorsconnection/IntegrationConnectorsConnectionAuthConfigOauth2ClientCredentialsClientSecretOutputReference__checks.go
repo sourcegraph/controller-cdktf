@@ -98,7 +98,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2ClientCredenti
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewIntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials
 
 	return nil
 }
-

@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryVersions) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryVersions) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleArtifactRegistryVersions_GenerateConfigForImportParameter
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryVersions_IsConstructParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryVersions_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleArtifactRegistryVersions_IsConstructParameters(x interfac
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryVersions_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryVersions_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleArtifactRegistryVersions_IsTerraformDataSourceParameters(
 	return nil
 }
 
-func validateDataGoogleArtifactRegistryVersions_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleArtifactRegistryVersions_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleArtifactRegistryVersions_IsTerraformElementParameters(x i
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryVersions) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryVersions) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -290,4 +290,3 @@ func validateNewDataGoogleArtifactRegistryVersionsParameters(scope constructs.Co
 
 	return nil
 }
-

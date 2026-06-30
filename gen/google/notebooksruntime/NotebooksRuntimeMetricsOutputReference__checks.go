@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotebooksRuntimeMetricsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeMetricsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeMetricsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewNotebooksRuntimeMetricsOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

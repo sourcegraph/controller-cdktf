@@ -13,9 +13,9 @@ type RedisClusterDiscoveryEndpointsOutputReference interface {
 	Address() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -43,7 +43,7 @@ type RedisClusterDiscoveryEndpointsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -66,7 +66,7 @@ type RedisClusterDiscoveryEndpointsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,8 +89,8 @@ func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) Address() *str
 	return returns
 }
 
-func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -179,7 +179,6 @@ func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) TerraformResou
 	return returns
 }
 
-
 func NewRedisClusterDiscoveryEndpointsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RedisClusterDiscoveryEndpointsOutputReference {
 	_init_.Initialize()
 
@@ -190,7 +189,7 @@ func NewRedisClusterDiscoveryEndpointsOutputReference(terraformResource cdktf.II
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisClusterDiscoveryEndpointsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -202,12 +201,12 @@ func NewRedisClusterDiscoveryEndpointsOutputReference_Override(r RedisClusterDis
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisCluster.RedisClusterDiscoveryEndpointsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference)SetInternalValue(val *RedisClusterDiscoveryEndpoints) {
+func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) SetInternalValue(val *RedisClusterDiscoveryEndpoints) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference)SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -275,16 +274,16 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) ComputeFqn() *
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -300,7 +299,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetBooleanAttr
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -316,7 +315,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetBooleanMapA
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -332,7 +331,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetListAttribu
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -348,7 +347,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetNumberAttri
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -364,7 +363,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetNumberListA
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -380,7 +379,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetNumberMapAt
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -396,7 +395,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetStringAttri
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -412,7 +411,7 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) GetStringMapAt
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -441,23 +440,23 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) InterpolationF
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -476,4 +475,3 @@ func (r *jsiiProxy_RedisClusterDiscoveryEndpointsOutputReference) ToString() *st
 
 	return returns
 }
-

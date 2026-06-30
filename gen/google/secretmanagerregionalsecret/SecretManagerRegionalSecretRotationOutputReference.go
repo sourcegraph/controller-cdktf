@@ -12,9 +12,9 @@ type SecretManagerRegionalSecretRotationOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -46,7 +46,7 @@ type SecretManagerRegionalSecretRotationOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type SecretManagerRegionalSecretRotationOutputReference interface {
 	ResetRotationPeriod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_SecretManagerRegionalSecretRotationOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) Terraform
 	return returns
 }
 
-
 func NewSecretManagerRegionalSecretRotationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SecretManagerRegionalSecretRotationOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewSecretManagerRegionalSecretRotationOutputReference(terraformResource cdk
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewSecretManagerRegionalSecretRotationOutputReference_Override(s SecretMana
 
 	_jsii_.Create(
 		"@cdktf/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetInternalValue(val *SecretManagerRegionalSecretRotation) {
+func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) SetInternalValue(val *SecretManagerRegionalSecretRotation) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetInterna
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetNextRotationTime(val *string) {
+func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) SetNextRotationTime(val *string) {
 	if err := j.validateSetNextRotationTimeParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetNextRot
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetRotationPeriod(val *string) {
+func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) SetRotationPeriod(val *string) {
 	if err := j.validateSetRotationPeriodParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetRotatio
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) ComputeFq
 	return returns
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetBoolea
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetListAt
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetNumber
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetNumber
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetNumber
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetString
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) GetString
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) Interpola
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) ResetRota
 	)
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (s *jsiiProxy_SecretManagerRegionalSecretRotationOutputReference) ToString(
 
 	return returns
 }
-

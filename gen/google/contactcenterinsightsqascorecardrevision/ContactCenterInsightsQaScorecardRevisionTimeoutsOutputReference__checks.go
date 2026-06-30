@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewContactCenterInsightsQaScorecardRevisionTimeoutsOutputReferenceP
 
 	return nil
 }
-

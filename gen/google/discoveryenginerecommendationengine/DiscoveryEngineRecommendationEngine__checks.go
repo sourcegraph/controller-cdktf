@@ -19,7 +19,7 @@ func (d *jsiiProxy_DiscoveryEngineRecommendationEngine) validateAddMoveTargetPar
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineRecommendationEngine) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineRecommendationEngine) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DiscoveryEngineRecommendationEngine) validateMoveFromIdParame
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineRecommendationEngine) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DiscoveryEngineRecommendationEngine) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateDiscoveryEngineRecommendationEngine_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDiscoveryEngineRecommendationEngine_IsConstructParameters(x interface{}) error {
+func validateDiscoveryEngineRecommendationEngine_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateDiscoveryEngineRecommendationEngine_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDiscoveryEngineRecommendationEngine_IsTerraformElementParameters(x interface{}) error {
+func validateDiscoveryEngineRecommendationEngine_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateDiscoveryEngineRecommendationEngine_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateDiscoveryEngineRecommendationEngine_IsTerraformResourceParameters(x interface{}) error {
+func validateDiscoveryEngineRecommendationEngine_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateDiscoveryEngineRecommendationEngine_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineRecommendationEngine) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineRecommendationEngine) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DiscoveryEngineRecommendationEngine) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineRecommendationEngine) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineRecommendationEngine) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DiscoveryEngineRecommendationEngine) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineRecommendationEngine) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DiscoveryEngineRecommendationEngine) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -495,4 +495,3 @@ func validateNewDiscoveryEngineRecommendationEngineParameters(scope constructs.C
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocati
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeReservationResourceStatusSpecificSkuAllocationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeReservationResourceStatusSpecificSkuAllocationO
 
 	return nil
 }
-

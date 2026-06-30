@@ -6,9 +6,9 @@ import (
 
 type DataFusionInstanceConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type DataFusionInstanceConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the instance or a fully qualified identifier for the instance.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#name DataFusionInstance#name}
@@ -41,7 +41,7 @@ type DataFusionInstanceConfig struct {
 	// accelerators block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#accelerators DataFusionInstance#accelerators}
-	Accelerators interface{} `field:"optional" json:"accelerators" yaml:"accelerators"`
+	Accelerators any `field:"optional" json:"accelerators" yaml:"accelerators"`
 	// crypto_key_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#crypto_key_config DataFusionInstance#crypto_key_config}
@@ -61,15 +61,15 @@ type DataFusionInstanceConfig struct {
 	// Option to enable granular role-based access control.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#enable_rbac DataFusionInstance#enable_rbac}
-	EnableRbac interface{} `field:"optional" json:"enableRbac" yaml:"enableRbac"`
+	EnableRbac any `field:"optional" json:"enableRbac" yaml:"enableRbac"`
 	// Option to enable Stackdriver Logging.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#enable_stackdriver_logging DataFusionInstance#enable_stackdriver_logging}
-	EnableStackdriverLogging interface{} `field:"optional" json:"enableStackdriverLogging" yaml:"enableStackdriverLogging"`
+	EnableStackdriverLogging any `field:"optional" json:"enableStackdriverLogging" yaml:"enableStackdriverLogging"`
 	// Option to enable Stackdriver Monitoring.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#enable_stackdriver_monitoring DataFusionInstance#enable_stackdriver_monitoring}
-	EnableStackdriverMonitoring interface{} `field:"optional" json:"enableStackdriverMonitoring" yaml:"enableStackdriverMonitoring"`
+	EnableStackdriverMonitoring any `field:"optional" json:"enableStackdriverMonitoring" yaml:"enableStackdriverMonitoring"`
 	// event_publish_config block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#event_publish_config DataFusionInstance#event_publish_config}
@@ -105,7 +105,7 @@ type DataFusionInstanceConfig struct {
 	// able to access the public internet.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#private_instance DataFusionInstance#private_instance}
-	PrivateInstance interface{} `field:"optional" json:"privateInstance" yaml:"privateInstance"`
+	PrivateInstance any `field:"optional" json:"privateInstance" yaml:"privateInstance"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#project DataFusionInstance#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The region of the Data Fusion instance.
@@ -133,4 +133,3 @@ type DataFusionInstanceConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/data_fusion_instance#zone DataFusionInstance#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
-

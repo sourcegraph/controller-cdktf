@@ -106,7 +106,7 @@ func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewCesToolsetOpenApiToolsetApiAuthenticationApiKeyConfigOutputRefer
 
 	return nil
 }
-

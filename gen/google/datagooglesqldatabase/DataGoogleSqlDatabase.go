@@ -17,11 +17,11 @@ type DataGoogleSqlDatabase interface {
 	Charset() *string
 	Collation() *string
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionPolicy() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -58,18 +58,18 @@ type DataGoogleSqlDatabase interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,18 +96,18 @@ type DataGoogleSqlDatabase interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleSqlDatabase
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabase) Collation() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleSqlDatabase) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabase) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleSqlDatabase) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -325,8 +325,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabase) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleSqlDatabase) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -355,8 +355,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabase) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleSqlDatabase) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -375,7 +375,6 @@ func (j *jsiiProxy_DataGoogleSqlDatabase) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/sql_database google_sql_database} Data Source.
 func NewDataGoogleSqlDatabase(scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseConfig) DataGoogleSqlDatabase {
 	_init_.Initialize()
@@ -387,7 +386,7 @@ func NewDataGoogleSqlDatabase(scope constructs.Construct, id *string, config *Da
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -400,12 +399,12 @@ func NewDataGoogleSqlDatabase_Override(d DataGoogleSqlDatabase, scope constructs
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleSqlDatabase) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +415,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabase)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleSqlDatabase) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -424,7 +423,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabase)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleSqlDatabase) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +431,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabase)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleSqlDatabase) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabase)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase)SetInstance(val *string) {
+func (j *jsiiProxy_DataGoogleSqlDatabase) SetInstance(val *string) {
 	if err := j.validateSetInstanceParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabase)SetInstance(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleSqlDatabase) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabase)SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase)SetName(val *string) {
+func (j *jsiiProxy_DataGoogleSqlDatabase) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabase)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase)SetProject(val *string) {
+func (j *jsiiProxy_DataGoogleSqlDatabase) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabase)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabase)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleSqlDatabase) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -507,7 +506,7 @@ func DataGoogleSqlDatabase_GenerateConfigForImport(scope constructs.Construct, i
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -531,7 +530,7 @@ func DataGoogleSqlDatabase_GenerateConfigForImport(scope constructs.Construct, i
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleSqlDatabase_IsConstruct(x interface{}) *bool {
+func DataGoogleSqlDatabase_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSqlDatabase_IsConstructParameters(x); err != nil {
@@ -542,7 +541,7 @@ func DataGoogleSqlDatabase_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -550,7 +549,7 @@ func DataGoogleSqlDatabase_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleSqlDatabase_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleSqlDatabase_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSqlDatabase_IsTerraformDataSourceParameters(x); err != nil {
@@ -561,7 +560,7 @@ func DataGoogleSqlDatabase_IsTerraformDataSource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -569,7 +568,7 @@ func DataGoogleSqlDatabase_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleSqlDatabase_IsTerraformElement(x interface{}) *bool {
+func DataGoogleSqlDatabase_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleSqlDatabase_IsTerraformElementParameters(x); err != nil {
@@ -580,7 +579,7 @@ func DataGoogleSqlDatabase_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleSqlDatabase.DataGoogleSqlDatabase",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -598,27 +597,27 @@ func DataGoogleSqlDatabase_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabase) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleSqlDatabase) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleSqlDatabase) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) GetBooleanAttribute(terraformAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) GetBooleanMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) GetListAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) GetNumberAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) GetNumberListAttribute(terraformAttrib
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) GetNumberMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) GetStringAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -746,7 +745,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) GetStringMapAttribute(terraformAttribu
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) InterpolationForAttribute(terraformAtt
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -776,7 +775,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) OverrideLogicalId(newLogicalId *string
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -804,8 +803,8 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) ResetProject() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabase) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleSqlDatabase) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -817,8 +816,8 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) SynthesizeAttributes() *map[string]int
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabase) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleSqlDatabase) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -830,8 +829,8 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) SynthesizeHclAttributes() *map[string]
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabase) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSqlDatabase) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -843,8 +842,8 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabase) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSqlDatabase) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -869,8 +868,8 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabase) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleSqlDatabase) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -881,4 +880,3 @@ func (d *jsiiProxy_DataGoogleSqlDatabase) ToTerraform() interface{} {
 
 	return returns
 }
-

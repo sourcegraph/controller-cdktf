@@ -17,15 +17,15 @@ type WorkstationsWorkstationIamMember interface {
 	Condition() WorkstationsWorkstationIamMemberConditionOutputReference
 	ConditionInput() *WorkstationsWorkstationIamMemberCondition
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -62,18 +62,18 @@ type WorkstationsWorkstationIamMember interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	WorkstationClusterId() *string
@@ -89,9 +89,9 @@ type WorkstationsWorkstationIamMember interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type WorkstationsWorkstationIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type WorkstationsWorkstationIamMember interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -136,17 +136,17 @@ type WorkstationsWorkstationIamMember interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for WorkstationsWorkstationIamMember
@@ -184,8 +184,8 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember) ConditionInput() *Workstati
 	return returns
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -204,8 +204,8 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -424,8 +424,8 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -504,7 +504,6 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember) WorkstationIdInput() *strin
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_iam_member google_workstations_workstation_iam_member} Resource.
 func NewWorkstationsWorkstationIamMember(scope constructs.Construct, id *string, config *WorkstationsWorkstationIamMemberConfig) WorkstationsWorkstationIamMember {
 	_init_.Initialize()
@@ -516,7 +515,7 @@ func NewWorkstationsWorkstationIamMember(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -529,12 +528,12 @@ func NewWorkstationsWorkstationIamMember_Override(w WorkstationsWorkstationIamMe
 
 	_jsii_.Create(
 		"@cdktf/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetConnection(val interface{}) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetCount(val interface{}) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -556,7 +555,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -564,7 +563,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -572,7 +571,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetId(val *string) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -583,7 +582,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -594,7 +593,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetLocation(val *string) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -605,7 +604,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetMember(val *string) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetMember(val *string) {
 	if err := j.validateSetMemberParameters(val); err != nil {
 		panic(err)
 	}
@@ -616,7 +615,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetMember(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetProject(val *string) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -627,7 +626,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetRole(val *string) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetRole(val *string) {
 	if err := j.validateSetRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetWorkstationClusterId(val *string) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetWorkstationClusterId(val *string) {
 	if err := j.validateSetWorkstationClusterIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetWorkstationClusterId(val 
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetWorkstationConfigId(val *string) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetWorkstationConfigId(val *string) {
 	if err := j.validateSetWorkstationConfigIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetWorkstationConfigId(val *
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationIamMember)SetWorkstationId(val *string) {
+func (j *jsiiProxy_WorkstationsWorkstationIamMember) SetWorkstationId(val *string) {
 	if err := j.validateSetWorkstationIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -702,7 +701,7 @@ func WorkstationsWorkstationIamMember_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -726,7 +725,7 @@ func WorkstationsWorkstationIamMember_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func WorkstationsWorkstationIamMember_IsConstruct(x interface{}) *bool {
+func WorkstationsWorkstationIamMember_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkstationsWorkstationIamMember_IsConstructParameters(x); err != nil {
@@ -737,7 +736,7 @@ func WorkstationsWorkstationIamMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -745,7 +744,7 @@ func WorkstationsWorkstationIamMember_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkstationsWorkstationIamMember_IsTerraformElement(x interface{}) *bool {
+func WorkstationsWorkstationIamMember_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkstationsWorkstationIamMember_IsTerraformElementParameters(x); err != nil {
@@ -756,7 +755,7 @@ func WorkstationsWorkstationIamMember_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -764,7 +763,7 @@ func WorkstationsWorkstationIamMember_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func WorkstationsWorkstationIamMember_IsTerraformResource(x interface{}) *bool {
+func WorkstationsWorkstationIamMember_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateWorkstationsWorkstationIamMember_IsTerraformResourceParameters(x); err != nil {
@@ -775,7 +774,7 @@ func WorkstationsWorkstationIamMember_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.workstationsWorkstationIamMember.WorkstationsWorkstationIamMember",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -800,31 +799,31 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		w,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMember) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_WorkstationsWorkstationIamMember) AddOverride(path *string, value any) {
 	if err := w.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -840,7 +839,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		w,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -856,7 +855,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -872,7 +871,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		w,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -888,7 +887,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -904,7 +903,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		w,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -920,7 +919,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -936,7 +935,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		w,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -952,15 +951,15 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		w,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMember) HasResourceMove() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkstationsWorkstationIamMember) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -979,7 +978,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		w,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -992,7 +991,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1006,18 +1005,18 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMember) MoveTo(moveTarget *string, index interface{}) {
+func (w *jsiiProxy_WorkstationsWorkstationIamMember) MoveTo(moveTarget *string, index any) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1028,7 +1027,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		w,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1039,7 +1038,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		w,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1050,7 +1049,7 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) PutCondition(value *Worksta
 	_jsii_.InvokeVoid(
 		w,
 		"putCondition",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1094,8 +1093,8 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) ResetProject() {
 	)
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMember) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkstationsWorkstationIamMember) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1107,8 +1106,8 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) SynthesizeAttributes() *map
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMember) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (w *jsiiProxy_WorkstationsWorkstationIamMember) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		w,
@@ -1120,8 +1119,8 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMember) ToHclTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkstationsWorkstationIamMember) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1133,8 +1132,8 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) ToHclTerraform() interface{
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMember) ToMetadata() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkstationsWorkstationIamMember) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1159,8 +1158,8 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) ToString() *string {
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationIamMember) ToTerraform() interface{} {
-	var returns interface{}
+func (w *jsiiProxy_WorkstationsWorkstationIamMember) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		w,
@@ -1171,4 +1170,3 @@ func (w *jsiiProxy_WorkstationsWorkstationIamMember) ToTerraform() interface{} {
 
 	return returns
 }
-

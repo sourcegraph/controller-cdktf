@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerIm
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerIm
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImage
 
 	return nil
 }
-

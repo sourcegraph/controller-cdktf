@@ -13,9 +13,9 @@ type ComputeResizeRequestStatusErrorErrorsOutputReference interface {
 	Code() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -44,7 +44,7 @@ type ComputeResizeRequestStatusErrorErrorsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -67,7 +67,7 @@ type ComputeResizeRequestStatusErrorErrorsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,8 +90,8 @@ func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) Code() 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -190,7 +190,6 @@ func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) Terrafo
 	return returns
 }
 
-
 func NewComputeResizeRequestStatusErrorErrorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeResizeRequestStatusErrorErrorsOutputReference {
 	_init_.Initialize()
 
@@ -201,7 +200,7 @@ func NewComputeResizeRequestStatusErrorErrorsOutputReference(terraformResource c
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -213,12 +212,12 @@ func NewComputeResizeRequestStatusErrorErrorsOutputReference_Override(c ComputeR
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusErrorErrorsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference)SetInternalValue(val *ComputeResizeRequestStatusErrorErrors) {
+func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) SetInternalValue(val *ComputeResizeRequestStatusErrorErrors) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +250,7 @@ func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -262,7 +261,7 @@ func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -286,16 +285,16 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) Compute
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -311,7 +310,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -327,7 +326,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetBool
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -343,7 +342,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetList
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -359,7 +358,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -375,7 +374,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -391,7 +390,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetNumb
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -407,7 +406,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -423,7 +422,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) GetStri
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,23 +451,23 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) Interpo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -487,4 +486,3 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsOutputReference) ToStrin
 
 	return returns
 }
-

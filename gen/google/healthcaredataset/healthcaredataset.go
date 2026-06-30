@@ -15,15 +15,15 @@ type HealthcareDataset interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -61,20 +61,20 @@ type HealthcareDataset interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() HealthcareDatasetTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	TimeZone() *string
 	SetTimeZone(val *string)
 	TimeZoneInput() *string
@@ -82,9 +82,9 @@ type HealthcareDataset interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -102,7 +102,7 @@ type HealthcareDataset interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -114,7 +114,7 @@ type HealthcareDataset interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -131,17 +131,17 @@ type HealthcareDataset interface {
 	ResetProject()
 	ResetTimeouts()
 	ResetTimeZone()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for HealthcareDataset
@@ -159,8 +159,8 @@ func (j *jsiiProxy_HealthcareDataset) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDataset) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareDataset) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_HealthcareDataset) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDataset) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HealthcareDataset) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_HealthcareDataset) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDataset) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareDataset) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_HealthcareDataset) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDataset) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_HealthcareDataset) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_HealthcareDataset) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDataset) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareDataset) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -399,8 +399,8 @@ func (j *jsiiProxy_HealthcareDataset) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDataset) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_HealthcareDataset) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -429,8 +429,8 @@ func (j *jsiiProxy_HealthcareDataset) Timeouts() HealthcareDatasetTimeoutsOutput
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDataset) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_HealthcareDataset) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -459,7 +459,6 @@ func (j *jsiiProxy_HealthcareDataset) TimeZoneInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/healthcare_dataset google_healthcare_dataset} Resource.
 func NewHealthcareDataset(scope constructs.Construct, id *string, config *HealthcareDatasetConfig) HealthcareDataset {
 	_init_.Initialize()
@@ -471,7 +470,7 @@ func NewHealthcareDataset(scope constructs.Construct, id *string, config *Health
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDataset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -484,12 +483,12 @@ func NewHealthcareDataset_Override(h HealthcareDataset, scope constructs.Constru
 
 	_jsii_.Create(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDataset",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		h,
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetConnection(val interface{}) {
+func (j *jsiiProxy_HealthcareDataset) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_HealthcareDataset)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetCount(val interface{}) {
+func (j *jsiiProxy_HealthcareDataset) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_HealthcareDataset)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_HealthcareDataset) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_HealthcareDataset)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_HealthcareDataset) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -527,7 +526,7 @@ func (j *jsiiProxy_HealthcareDataset)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetId(val *string) {
+func (j *jsiiProxy_HealthcareDataset) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_HealthcareDataset)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_HealthcareDataset) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_HealthcareDataset)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetLocation(val *string) {
+func (j *jsiiProxy_HealthcareDataset) SetLocation(val *string) {
 	if err := j.validateSetLocationParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_HealthcareDataset)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetName(val *string) {
+func (j *jsiiProxy_HealthcareDataset) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -571,7 +570,7 @@ func (j *jsiiProxy_HealthcareDataset)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetProject(val *string) {
+func (j *jsiiProxy_HealthcareDataset) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -582,7 +581,7 @@ func (j *jsiiProxy_HealthcareDataset)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_HealthcareDataset) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +589,7 @@ func (j *jsiiProxy_HealthcareDataset)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_HealthcareDataset) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,7 +600,7 @@ func (j *jsiiProxy_HealthcareDataset)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_HealthcareDataset)SetTimeZone(val *string) {
+func (j *jsiiProxy_HealthcareDataset) SetTimeZone(val *string) {
 	if err := j.validateSetTimeZoneParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func HealthcareDataset_GenerateConfigForImport(scope constructs.Construct, impor
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDataset",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -648,7 +647,7 @@ func HealthcareDataset_GenerateConfigForImport(scope constructs.Construct, impor
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func HealthcareDataset_IsConstruct(x interface{}) *bool {
+func HealthcareDataset_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareDataset_IsConstructParameters(x); err != nil {
@@ -659,7 +658,7 @@ func HealthcareDataset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDataset",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -667,7 +666,7 @@ func HealthcareDataset_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func HealthcareDataset_IsTerraformElement(x interface{}) *bool {
+func HealthcareDataset_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareDataset_IsTerraformElementParameters(x); err != nil {
@@ -678,7 +677,7 @@ func HealthcareDataset_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDataset",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -686,7 +685,7 @@ func HealthcareDataset_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func HealthcareDataset_IsTerraformResource(x interface{}) *bool {
+func HealthcareDataset_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateHealthcareDataset_IsTerraformResourceParameters(x); err != nil {
@@ -697,7 +696,7 @@ func HealthcareDataset_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.healthcareDataset.HealthcareDataset",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -722,31 +721,31 @@ func (h *jsiiProxy_HealthcareDataset) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (h *jsiiProxy_HealthcareDataset) AddOverride(path *string, value interface{}) {
+func (h *jsiiProxy_HealthcareDataset) AddOverride(path *string, value any) {
 	if err := h.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (h *jsiiProxy_HealthcareDataset) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (h *jsiiProxy_HealthcareDataset) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := h.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -762,7 +761,7 @@ func (h *jsiiProxy_HealthcareDataset) GetBooleanAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		h,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -778,7 +777,7 @@ func (h *jsiiProxy_HealthcareDataset) GetBooleanMapAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		h,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -794,7 +793,7 @@ func (h *jsiiProxy_HealthcareDataset) GetListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		h,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -810,7 +809,7 @@ func (h *jsiiProxy_HealthcareDataset) GetNumberAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		h,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -826,7 +825,7 @@ func (h *jsiiProxy_HealthcareDataset) GetNumberListAttribute(terraformAttribute 
 	_jsii_.Invoke(
 		h,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -842,7 +841,7 @@ func (h *jsiiProxy_HealthcareDataset) GetNumberMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		h,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -858,7 +857,7 @@ func (h *jsiiProxy_HealthcareDataset) GetStringAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		h,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -874,15 +873,15 @@ func (h *jsiiProxy_HealthcareDataset) GetStringMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		h,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDataset) HasResourceMove() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareDataset) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -901,7 +900,7 @@ func (h *jsiiProxy_HealthcareDataset) ImportFrom(id *string, provider cdktf.Terr
 	_jsii_.InvokeVoid(
 		h,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -914,7 +913,7 @@ func (h *jsiiProxy_HealthcareDataset) InterpolationForAttribute(terraformAttribu
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,18 +927,18 @@ func (h *jsiiProxy_HealthcareDataset) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (h *jsiiProxy_HealthcareDataset) MoveTo(moveTarget *string, index interface{}) {
+func (h *jsiiProxy_HealthcareDataset) MoveTo(moveTarget *string, index any) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		h,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -950,7 +949,7 @@ func (h *jsiiProxy_HealthcareDataset) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -961,7 +960,7 @@ func (h *jsiiProxy_HealthcareDataset) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		h,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -972,7 +971,7 @@ func (h *jsiiProxy_HealthcareDataset) PutEncryptionSpec(value *HealthcareDataset
 	_jsii_.InvokeVoid(
 		h,
 		"putEncryptionSpec",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -983,7 +982,7 @@ func (h *jsiiProxy_HealthcareDataset) PutTimeouts(value *HealthcareDatasetTimeou
 	_jsii_.InvokeVoid(
 		h,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1035,8 +1034,8 @@ func (h *jsiiProxy_HealthcareDataset) ResetTimeZone() {
 	)
 }
 
-func (h *jsiiProxy_HealthcareDataset) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HealthcareDataset) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1048,8 +1047,8 @@ func (h *jsiiProxy_HealthcareDataset) SynthesizeAttributes() *map[string]interfa
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDataset) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (h *jsiiProxy_HealthcareDataset) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		h,
@@ -1061,8 +1060,8 @@ func (h *jsiiProxy_HealthcareDataset) SynthesizeHclAttributes() *map[string]inte
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDataset) ToHclTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareDataset) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1074,8 +1073,8 @@ func (h *jsiiProxy_HealthcareDataset) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDataset) ToMetadata() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareDataset) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1100,8 +1099,8 @@ func (h *jsiiProxy_HealthcareDataset) ToString() *string {
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDataset) ToTerraform() interface{} {
-	var returns interface{}
+func (h *jsiiProxy_HealthcareDataset) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		h,
@@ -1112,4 +1111,3 @@ func (h *jsiiProxy_HealthcareDataset) ToTerraform() interface{} {
 
 	return returns
 }
-

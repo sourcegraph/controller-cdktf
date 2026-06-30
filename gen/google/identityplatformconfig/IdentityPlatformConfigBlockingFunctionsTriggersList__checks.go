@@ -34,7 +34,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsTriggersList) validate
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsTriggersList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformConfigBlockingFunctionsTriggersList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewIdentityPlatformConfigBlockingFunctionsTriggersListParameters(te
 
 	return nil
 }
-

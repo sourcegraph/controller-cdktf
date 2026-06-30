@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicy",
-		reflect.TypeOf((*VmwareengineNetworkPolicy)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmwareEngineNetworkCanonical", GoGetter: "VmwareEngineNetworkCanonical"},
 			_jsii_.MemberProperty{JsiiProperty: "vmwareEngineNetworkInput", GoGetter: "VmwareEngineNetworkInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineNetworkPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -94,15 +94,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyConfig",
-		reflect.TypeOf((*VmwareengineNetworkPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIp",
-		reflect.TypeOf((*VmwareengineNetworkPolicyExternalIp)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPolicyExternalIp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyExternalIpOutputReference",
-		reflect.TypeOf((*VmwareengineNetworkPolicyExternalIpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPolicyExternalIpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -130,7 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineNetworkPolicyExternalIpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -138,11 +138,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyInternetAccess",
-		reflect.TypeOf((*VmwareengineNetworkPolicyInternetAccess)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPolicyInternetAccess](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyInternetAccessOutputReference",
-		reflect.TypeOf((*VmwareengineNetworkPolicyInternetAccessOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPolicyInternetAccessOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineNetworkPolicyInternetAccessOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -178,11 +178,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeouts",
-		reflect.TypeOf((*VmwareengineNetworkPolicyTimeouts)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPolicyTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.vmwareengineNetworkPolicy.VmwareengineNetworkPolicyTimeoutsOutputReference",
-		reflect.TypeOf((*VmwareengineNetworkPolicyTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[VmwareengineNetworkPolicyTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -215,7 +215,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_VmwareengineNetworkPolicyTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

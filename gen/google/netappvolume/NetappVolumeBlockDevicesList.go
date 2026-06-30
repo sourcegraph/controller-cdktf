@@ -17,8 +17,8 @@ type NetappVolumeBlockDevicesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type NetappVolumeBlockDevicesList interface {
 	Get(index *float64) NetappVolumeBlockDevicesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NetappVolumeBlockDevicesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewNetappVolumeBlockDevicesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetappVolumeBlockDevicesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewNetappVolumeBlockDevicesList(terraformResource cdktf.IInterpolatingParen
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevicesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewNetappVolumeBlockDevicesList_Override(n NetappVolumeBlockDevicesList, te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.netappVolume.NetappVolumeBlockDevicesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesList)SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesList)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_NetappVolumeBlockDevicesList)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeBlockDevicesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetappVolumeBlockDevicesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesList) AllWithMapKey(mapKeyAttributeNa
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesList) Get(index *float64) NetappVolum
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeBlockDevicesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetappVolumeBlockDevicesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (n *jsiiProxy_NetappVolumeBlockDevicesList) ToString() *string {
 
 	return returns
 }
-

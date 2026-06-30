@@ -1,6 +1,5 @@
 package cloudrunservice
 
-
 type CloudRunServiceTraffic struct {
 	// Percent specifies percent of the traffic to this Revision or Configuration.
 	//
@@ -13,7 +12,7 @@ type CloudRunServiceTraffic struct {
 	// false when RevisionName is non-empty.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#latest_revision CloudRunService#latest_revision}
-	LatestRevision interface{} `field:"optional" json:"latestRevision" yaml:"latestRevision"`
+	LatestRevision any `field:"optional" json:"latestRevision" yaml:"latestRevision"`
 	// RevisionName of a specific revision to which to send this portion of traffic.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#revision_name CloudRunService#revision_name}
@@ -23,4 +22,3 @@ type CloudRunServiceTraffic struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_service#tag CloudRunService#tag}
 	Tag *string `field:"optional" json:"tag" yaml:"tag"`
 }
-

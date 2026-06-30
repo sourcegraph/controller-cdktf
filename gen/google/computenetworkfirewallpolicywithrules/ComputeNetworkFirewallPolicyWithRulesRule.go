@@ -1,6 +1,5 @@
 package computenetworkfirewallpolicywithrules
 
-
 type ComputeNetworkFirewallPolicyWithRulesRule struct {
 	// The Action to perform when the client connection triggers the rule. Can currently be either "allow", "deny", "apply_security_profile_group" or "goto_next".
 	//
@@ -34,14 +33,14 @@ type ComputeNetworkFirewallPolicyWithRulesRule struct {
 	// enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_firewall_policy_with_rules#disabled ComputeNetworkFirewallPolicyWithRules#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// Denotes whether to enable logging for a particular rule.
 	//
 	// If logging is enabled, logs will be exported to the
 	// configured export destination in Stackdriver.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_firewall_policy_with_rules#enable_logging ComputeNetworkFirewallPolicyWithRules#enable_logging}
-	EnableLogging interface{} `field:"optional" json:"enableLogging" yaml:"enableLogging"`
+	EnableLogging any `field:"optional" json:"enableLogging" yaml:"enableLogging"`
 	// An optional name for the rule. This field is not a unique identifier and can be updated.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_firewall_policy_with_rules#rule_name ComputeNetworkFirewallPolicyWithRules#rule_name}
@@ -53,7 +52,7 @@ type ComputeNetworkFirewallPolicyWithRulesRule struct {
 	// target_secure_tag block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_firewall_policy_with_rules#target_secure_tag ComputeNetworkFirewallPolicyWithRules#target_secure_tag}
-	TargetSecureTag interface{} `field:"optional" json:"targetSecureTag" yaml:"targetSecureTag"`
+	TargetSecureTag any `field:"optional" json:"targetSecureTag" yaml:"targetSecureTag"`
 	// A list of service accounts indicating the sets of instances that are applied with this rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_firewall_policy_with_rules#target_service_accounts ComputeNetworkFirewallPolicyWithRules#target_service_accounts}
@@ -63,6 +62,5 @@ type ComputeNetworkFirewallPolicyWithRulesRule struct {
 	// It can be set only if action = 'apply_security_profile_group' and cannot be set for other actions.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_network_firewall_policy_with_rules#tls_inspect ComputeNetworkFirewallPolicyWithRules#tls_inspect}
-	TlsInspect interface{} `field:"optional" json:"tlsInspect" yaml:"tlsInspect"`
+	TlsInspect any `field:"optional" json:"tlsInspect" yaml:"tlsInspect"`
 }
-

@@ -1,6 +1,5 @@
 package vertexaireasoningengine
 
-
 type VertexAiReasoningEngineSpecDeploymentSpec struct {
 	// Optional. Concurrency for each container and agent server. Recommended value: 2 * cpu + 1. Defaults to 9.
 	//
@@ -9,7 +8,7 @@ type VertexAiReasoningEngineSpecDeploymentSpec struct {
 	// env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_reasoning_engine#env VertexAiReasoningEngine#env}
-	Env interface{} `field:"optional" json:"env" yaml:"env"`
+	Env any `field:"optional" json:"env" yaml:"env"`
 	// Optional.
 	//
 	// The maximum number of application instances that can be
@@ -47,6 +46,5 @@ type VertexAiReasoningEngineSpecDeploymentSpec struct {
 	// secret_env block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/vertex_ai_reasoning_engine#secret_env VertexAiReasoningEngine#secret_env}
-	SecretEnv interface{} `field:"optional" json:"secretEnv" yaml:"secretEnv"`
+	SecretEnv any `field:"optional" json:"secretEnv" yaml:"secretEnv"`
 }
-

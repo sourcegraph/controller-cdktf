@@ -36,7 +36,7 @@ type EndpointsServiceApisMethodsList interface {
 	Get(index *float64) EndpointsServiceApisMethodsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_EndpointsServiceApisMethodsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewEndpointsServiceApisMethodsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EndpointsServiceApisMethodsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewEndpointsServiceApisMethodsList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewEndpointsServiceApisMethodsList_Override(e EndpointsServiceApisMethodsLi
 
 	_jsii_.Create(
 		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceApisMethodsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EndpointsServiceApisMethodsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_EndpointsServiceApisMethodsList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceApisMethodsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EndpointsServiceApisMethodsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_EndpointsServiceApisMethodsList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceApisMethodsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EndpointsServiceApisMethodsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (e *jsiiProxy_EndpointsServiceApisMethodsList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (e *jsiiProxy_EndpointsServiceApisMethodsList) Get(index *float64) Endpoint
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsServiceApisMethodsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EndpointsServiceApisMethodsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (e *jsiiProxy_EndpointsServiceApisMethodsList) ToString() *string {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileBigqueryProfileOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileBigqueryProfileOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DatastreamConnectionProfileBigqueryProfileOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -198,4 +198,3 @@ func validateNewDatastreamConnectionProfileBigqueryProfileOutputReferenceParamet
 
 	return nil
 }
-

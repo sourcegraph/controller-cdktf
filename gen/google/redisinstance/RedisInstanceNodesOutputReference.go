@@ -12,9 +12,9 @@ type RedisInstanceNodesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -42,7 +42,7 @@ type RedisInstanceNodesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -65,7 +65,7 @@ type RedisInstanceNodesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,8 +78,8 @@ type jsiiProxy_RedisInstanceNodesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_RedisInstanceNodesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RedisInstanceNodesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -168,7 +168,6 @@ func (j *jsiiProxy_RedisInstanceNodesOutputReference) Zone() *string {
 	return returns
 }
 
-
 func NewRedisInstanceNodesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RedisInstanceNodesOutputReference {
 	_init_.Initialize()
 
@@ -179,7 +178,7 @@ func NewRedisInstanceNodesOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisInstance.RedisInstanceNodesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -191,12 +190,12 @@ func NewRedisInstanceNodesOutputReference_Override(r RedisInstanceNodesOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisInstance.RedisInstanceNodesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RedisInstanceNodesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RedisInstanceNodesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +206,7 @@ func (j *jsiiProxy_RedisInstanceNodesOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_RedisInstanceNodesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RedisInstanceNodesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +217,7 @@ func (j *jsiiProxy_RedisInstanceNodesOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_RedisInstanceNodesOutputReference)SetInternalValue(val *RedisInstanceNodes) {
+func (j *jsiiProxy_RedisInstanceNodesOutputReference) SetInternalValue(val *RedisInstanceNodes) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +228,7 @@ func (j *jsiiProxy_RedisInstanceNodesOutputReference)SetInternalValue(val *Redis
 	)
 }
 
-func (j *jsiiProxy_RedisInstanceNodesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RedisInstanceNodesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +239,7 @@ func (j *jsiiProxy_RedisInstanceNodesOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_RedisInstanceNodesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedisInstanceNodesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,16 +263,16 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -289,7 +288,7 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -305,7 +304,7 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -321,7 +320,7 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -430,23 +429,23 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedisInstanceNodesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RedisInstanceNodesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -465,4 +464,3 @@ func (r *jsiiProxy_RedisInstanceNodesOutputReference) ToString() *string {
 
 	return returns
 }
-

@@ -120,7 +120,7 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuiteOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuiteOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuiteOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -220,4 +220,3 @@ func validateNewComputeVpnTunnelCipherSuiteOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerVipConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerVipConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerVipConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewGkeonpremBareMetalClusterLoadBalancerVipConfigOutputReferencePar
 
 	return nil
 }
-

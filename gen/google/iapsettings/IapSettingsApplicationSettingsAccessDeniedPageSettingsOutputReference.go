@@ -15,9 +15,9 @@ type IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference inter
 	AccessDeniedPageUriInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,14 +30,14 @@ type IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference inter
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	GenerateTroubleshootingUri() interface{}
-	SetGenerateTroubleshootingUri(val interface{})
-	GenerateTroubleshootingUriInput() interface{}
+	GenerateTroubleshootingUri() any
+	SetGenerateTroubleshootingUri(val any)
+	GenerateTroubleshootingUriInput() any
 	InternalValue() *IapSettingsApplicationSettingsAccessDeniedPageSettings
 	SetInternalValue(val *IapSettingsApplicationSettingsAccessDeniedPageSettings)
-	RemediationTokenGenerationEnabled() interface{}
-	SetRemediationTokenGenerationEnabled(val interface{})
-	RemediationTokenGenerationEnabledInput() interface{}
+	RemediationTokenGenerationEnabled() any
+	SetRemediationTokenGenerationEnabled(val any)
+	RemediationTokenGenerationEnabledInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference inter
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference inter
 	ResetRemediationTokenGenerationEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -148,8 +148,8 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) GenerateTroubleshootingUri() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) GenerateTroubleshootingUri() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"generateTroubleshootingUri",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) GenerateTroubleshootingUriInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) GenerateTroubleshootingUriInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"generateTroubleshootingUriInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) RemediationTokenGenerationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) RemediationTokenGenerationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"remediationTokenGenerationEnabled",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return returns
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) RemediationTokenGenerationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) RemediationTokenGenerationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"remediationTokenGenerationEnabledInput",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return returns
 }
 
-
 func NewIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference(te
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference_Ov
 
 	_jsii_.Create(
 		"@cdktf/provider-google.iapSettings.IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetAccessDeniedPageUri(val *string) {
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) SetAccessDeniedPageUri(val *string) {
 	if err := j.validateSetAccessDeniedPageUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetGenerateTroubleshootingUri(val interface{}) {
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) SetGenerateTroubleshootingUri(val any) {
 	if err := j.validateSetGenerateTroubleshootingUriParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetInternalValue(val *IapSettingsApplicationSettingsAccessDeniedPageSettings) {
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) SetInternalValue(val *IapSettingsApplicationSettingsAccessDeniedPageSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetRemediationTokenGenerationEnabled(val interface{}) {
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) SetRemediationTokenGenerationEnabled(val any) {
 	if err := j.validateSetRemediationTokenGenerationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	)
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return returns
 }
 
-func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	_jsii_.Invoke(
 		i,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	_jsii_.Invoke(
 		i,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	_jsii_.Invoke(
 		i,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	_jsii_.Invoke(
 		i,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	_jsii_.Invoke(
 		i,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	_jsii_.Invoke(
 		i,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	_jsii_.Invoke(
 		i,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	_jsii_.Invoke(
 		i,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	)
 }
 
-func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := i.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 
 	return returns
 }
-

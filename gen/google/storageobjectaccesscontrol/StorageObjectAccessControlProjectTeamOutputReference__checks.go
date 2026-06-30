@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageObjectAccessControlProjectTeamOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_StorageObjectAccessControlProjectTeamOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageObjectAccessControlProjectTeamOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStorageObjectAccessControlProjectTeamOutputReferenceParameters(t
 
 	return nil
 }
-

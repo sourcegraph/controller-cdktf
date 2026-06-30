@@ -19,7 +19,7 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateAddMoveTarge
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateMoveFromIdPa
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func validateIdentityPlatformTenantInboundSamlConfig_GenerateConfigForImportPara
 	return nil
 }
 
-func validateIdentityPlatformTenantInboundSamlConfig_IsConstructParameters(x interface{}) error {
+func validateIdentityPlatformTenantInboundSamlConfig_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -261,7 +261,7 @@ func validateIdentityPlatformTenantInboundSamlConfig_IsConstructParameters(x int
 	return nil
 }
 
-func validateIdentityPlatformTenantInboundSamlConfig_IsTerraformElementParameters(x interface{}) error {
+func validateIdentityPlatformTenantInboundSamlConfig_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func validateIdentityPlatformTenantInboundSamlConfig_IsTerraformElementParameter
 	return nil
 }
 
-func validateIdentityPlatformTenantInboundSamlConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateIdentityPlatformTenantInboundSamlConfig_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -277,7 +277,7 @@ func validateIdentityPlatformTenantInboundSamlConfig_IsTerraformResourceParamete
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetConnectio
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -375,7 +375,7 @@ func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetDisplayNa
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -427,7 +427,7 @@ func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetProjectPa
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -499,4 +499,3 @@ func validateNewIdentityPlatformTenantInboundSamlConfigParameters(scope construc
 
 	return nil
 }
-

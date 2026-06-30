@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule",
-		reflect.TypeOf((*SecureSourceManagerBranchRule)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerBranchRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerBranchRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig",
-		reflect.TypeOf((*SecureSourceManagerBranchRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerBranchRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts",
-		reflect.TypeOf((*SecureSourceManagerBranchRuleTimeouts)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerBranchRuleTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeoutsOutputReference",
-		reflect.TypeOf((*SecureSourceManagerBranchRuleTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[SecureSourceManagerBranchRuleTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -145,7 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_SecureSourceManagerBranchRuleTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

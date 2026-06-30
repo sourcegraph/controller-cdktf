@@ -19,7 +19,7 @@ func (a *jsiiProxy_ApihubHostProjectRegistration) validateAddMoveTargetParameter
 	return nil
 }
 
-func (a *jsiiProxy_ApihubHostProjectRegistration) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_ApihubHostProjectRegistration) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_ApihubHostProjectRegistration) validateMoveFromIdParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_ApihubHostProjectRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_ApihubHostProjectRegistration) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateApihubHostProjectRegistration_GenerateConfigForImportParameters(sco
 	return nil
 }
 
-func validateApihubHostProjectRegistration_IsConstructParameters(x interface{}) error {
+func validateApihubHostProjectRegistration_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateApihubHostProjectRegistration_IsConstructParameters(x interface{}) 
 	return nil
 }
 
-func validateApihubHostProjectRegistration_IsTerraformElementParameters(x interface{}) error {
+func validateApihubHostProjectRegistration_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateApihubHostProjectRegistration_IsTerraformElementParameters(x interf
 	return nil
 }
 
-func validateApihubHostProjectRegistration_IsTerraformResourceParameters(x interface{}) error {
+func validateApihubHostProjectRegistration_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateApihubHostProjectRegistration_IsTerraformResourceParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_ApihubHostProjectRegistration) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubHostProjectRegistration) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ApihubHostProjectRegistration) validateSetConnectionParameter
 	return nil
 }
 
-func (j *jsiiProxy_ApihubHostProjectRegistration) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_ApihubHostProjectRegistration) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -393,7 +393,7 @@ func (j *jsiiProxy_ApihubHostProjectRegistration) validateSetProjectParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ApihubHostProjectRegistration) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_ApihubHostProjectRegistration) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -457,4 +457,3 @@ func validateNewApihubHostProjectRegistrationParameters(scope constructs.Constru
 
 	return nil
 }
-

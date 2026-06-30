@@ -167,7 +167,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutGcfsCo
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutGuestAcceleratorParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutGuestAcceleratorParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -275,7 +275,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSandbo
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSoleTe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutTaintParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutTaintParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -397,7 +397,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetBootDi
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -478,7 +478,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetDiskTy
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -498,7 +498,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetEnable
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetFlexStartParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetFlexStartParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -614,7 +614,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetOauthS
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetPreemptibleParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetPreemptibleParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -658,7 +658,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetServic
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetSpotParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetSpotParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -721,4 +721,3 @@ func validateNewContainerNodePoolNodeConfigOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

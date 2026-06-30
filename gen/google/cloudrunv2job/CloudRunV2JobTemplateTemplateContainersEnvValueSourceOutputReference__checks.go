@@ -109,7 +109,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -209,4 +209,3 @@ func validateNewCloudRunV2JobTemplateTemplateContainersEnvValueSourceOutputRefer
 
 	return nil
 }
-

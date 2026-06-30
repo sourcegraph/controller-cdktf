@@ -12,9 +12,9 @@ type MonitoringMetricDescriptorLabelsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -30,8 +30,8 @@ type MonitoringMetricDescriptorLabelsOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -49,7 +49,7 @@ type MonitoringMetricDescriptorLabelsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -74,7 +74,7 @@ type MonitoringMetricDescriptorLabelsOutputReference interface {
 	ResetValueType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,8 +87,8 @@ type jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -217,7 +217,6 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) ValueTypeInp
 	return returns
 }
 
-
 func NewMonitoringMetricDescriptorLabelsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitoringMetricDescriptorLabelsOutputReference {
 	_init_.Initialize()
 
@@ -228,7 +227,7 @@ func NewMonitoringMetricDescriptorLabelsOutputReference(terraformResource cdktf.
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -240,12 +239,12 @@ func NewMonitoringMetricDescriptorLabelsOutputReference_Override(m MonitoringMet
 
 	_jsii_.Create(
 		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,7 +255,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -267,7 +266,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +277,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetDescriptio
 	)
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,7 +288,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetKey(val *string) {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) SetKey(val *string) {
 	if err := j.validateSetKeyParameters(val); err != nil {
 		panic(err)
 	}
@@ -300,7 +299,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetKey(val *s
 	)
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -311,7 +310,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -322,7 +321,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference)SetValueType(val *string) {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) SetValueType(val *string) {
 	if err := j.validateSetValueTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,16 +345,16 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) ComputeFqn()
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		m,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -371,7 +370,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetBooleanAt
 	_jsii_.Invoke(
 		m,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -387,7 +386,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetBooleanMa
 	_jsii_.Invoke(
 		m,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -403,7 +402,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetListAttri
 	_jsii_.Invoke(
 		m,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -419,7 +418,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetNumberAtt
 	_jsii_.Invoke(
 		m,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -435,7 +434,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetNumberLis
 	_jsii_.Invoke(
 		m,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -451,7 +450,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetNumberMap
 	_jsii_.Invoke(
 		m,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -467,7 +466,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetStringAtt
 	_jsii_.Invoke(
 		m,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -483,7 +482,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) GetStringMap
 	_jsii_.Invoke(
 		m,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -512,7 +511,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) Interpolatio
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -535,16 +534,16 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) ResetValueTy
 	)
 }
 
-func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := m.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -563,4 +562,3 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsOutputReference) ToString() *
 
 	return returns
 }
-

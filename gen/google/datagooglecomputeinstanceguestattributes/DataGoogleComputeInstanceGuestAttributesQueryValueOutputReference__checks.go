@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGuestAttributesQueryValueOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGuestAttributesQueryValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceGuestAttributesQueryValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataGoogleComputeInstanceGuestAttributesQueryValueOutputReferenc
 
 	return nil
 }
-

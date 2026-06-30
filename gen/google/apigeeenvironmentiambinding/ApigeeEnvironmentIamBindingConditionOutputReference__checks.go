@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBindingConditionOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeEnvironmentIamBindingConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewApigeeEnvironmentIamBindingConditionOutputReferenceParameters(te
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputR
 
 	return nil
 }
-

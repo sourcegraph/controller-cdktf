@@ -18,15 +18,15 @@ type ResourceManagerCapability interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,29 +56,29 @@ type ResourceManagerCapability interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() ResourceManagerCapabilityTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	Value() interface{}
-	SetValue(val interface{})
-	ValueInput() interface{}
+	TimeoutsInput() any
+	Value() any
+	SetValue(val any)
+	ValueInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type ResourceManagerCapability interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,7 +108,7 @@ type ResourceManagerCapability interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -121,17 +121,17 @@ type ResourceManagerCapability interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ResourceManagerCapability
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ResourceManagerCapability) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceManagerCapability) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ResourceManagerCapability) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ResourceManagerCapability) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_ResourceManagerCapability) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceManagerCapability) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_ResourceManagerCapability) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ResourceManagerCapability) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_ResourceManagerCapability) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceManagerCapability) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_ResourceManagerCapability) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ResourceManagerCapability) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_ResourceManagerCapability) Timeouts() ResourceManagerCapabili
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceManagerCapability) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_ResourceManagerCapability) TimeoutsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) Value() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceManagerCapability) Value() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"value",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_ResourceManagerCapability) Value() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ResourceManagerCapability) ValueInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ResourceManagerCapability) ValueInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"valueInput",
@@ -398,7 +398,6 @@ func (j *jsiiProxy_ResourceManagerCapability) ValueInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/resource_manager_capability google_resource_manager_capability} Resource.
 func NewResourceManagerCapability(scope constructs.Construct, id *string, config *ResourceManagerCapabilityConfig) ResourceManagerCapability {
@@ -411,7 +410,7 @@ func NewResourceManagerCapability(scope constructs.Construct, id *string, config
 
 	_jsii_.Create(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapability",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewResourceManagerCapability_Override(r ResourceManagerCapability, scope co
 
 	_jsii_.Create(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapability",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		r,
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetCapabilityName(val *string) {
+func (j *jsiiProxy_ResourceManagerCapability) SetCapabilityName(val *string) {
 	if err := j.validateSetCapabilityNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetCapabilityName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetConnection(val interface{}) {
+func (j *jsiiProxy_ResourceManagerCapability) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetCount(val interface{}) {
+func (j *jsiiProxy_ResourceManagerCapability) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ResourceManagerCapability) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ResourceManagerCapability) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetId(val *string) {
+func (j *jsiiProxy_ResourceManagerCapability) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ResourceManagerCapability) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetParent(val *string) {
+func (j *jsiiProxy_ResourceManagerCapability) SetParent(val *string) {
 	if err := j.validateSetParentParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetParent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ResourceManagerCapability) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ResourceManagerCapability) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -530,7 +529,7 @@ func (j *jsiiProxy_ResourceManagerCapability)SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_ResourceManagerCapability)SetValue(val interface{}) {
+func (j *jsiiProxy_ResourceManagerCapability) SetValue(val any) {
 	if err := j.validateSetValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func ResourceManagerCapability_GenerateConfigForImport(scope constructs.Construc
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapability",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func ResourceManagerCapability_GenerateConfigForImport(scope constructs.Construc
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ResourceManagerCapability_IsConstruct(x interface{}) *bool {
+func ResourceManagerCapability_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateResourceManagerCapability_IsConstructParameters(x); err != nil {
@@ -588,7 +587,7 @@ func ResourceManagerCapability_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapability",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func ResourceManagerCapability_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ResourceManagerCapability_IsTerraformElement(x interface{}) *bool {
+func ResourceManagerCapability_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateResourceManagerCapability_IsTerraformElementParameters(x); err != nil {
@@ -607,7 +606,7 @@ func ResourceManagerCapability_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapability",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func ResourceManagerCapability_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ResourceManagerCapability_IsTerraformResource(x interface{}) *bool {
+func ResourceManagerCapability_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateResourceManagerCapability_IsTerraformResourceParameters(x); err != nil {
@@ -626,7 +625,7 @@ func ResourceManagerCapability_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.resourceManagerCapability.ResourceManagerCapability",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,31 +650,31 @@ func (r *jsiiProxy_ResourceManagerCapability) AddMoveTarget(moveTarget *string) 
 	_jsii_.InvokeVoid(
 		r,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) AddOverride(path *string, value interface{}) {
+func (r *jsiiProxy_ResourceManagerCapability) AddOverride(path *string, value any) {
 	if err := r.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (r *jsiiProxy_ResourceManagerCapability) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (r *jsiiProxy_ResourceManagerCapability) GetBooleanAttribute(terraformAttri
 	_jsii_.Invoke(
 		r,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (r *jsiiProxy_ResourceManagerCapability) GetBooleanMapAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (r *jsiiProxy_ResourceManagerCapability) GetListAttribute(terraformAttribut
 	_jsii_.Invoke(
 		r,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (r *jsiiProxy_ResourceManagerCapability) GetNumberAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (r *jsiiProxy_ResourceManagerCapability) GetNumberListAttribute(terraformAt
 	_jsii_.Invoke(
 		r,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (r *jsiiProxy_ResourceManagerCapability) GetNumberMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (r *jsiiProxy_ResourceManagerCapability) GetStringAttribute(terraformAttrib
 	_jsii_.Invoke(
 		r,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,15 +802,15 @@ func (r *jsiiProxy_ResourceManagerCapability) GetStringMapAttribute(terraformAtt
 	_jsii_.Invoke(
 		r,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) HasResourceMove() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ResourceManagerCapability) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -830,7 +829,7 @@ func (r *jsiiProxy_ResourceManagerCapability) ImportFrom(id *string, provider cd
 	_jsii_.InvokeVoid(
 		r,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -843,7 +842,7 @@ func (r *jsiiProxy_ResourceManagerCapability) InterpolationForAttribute(terrafor
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,18 +856,18 @@ func (r *jsiiProxy_ResourceManagerCapability) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) MoveTo(moveTarget *string, index interface{}) {
+func (r *jsiiProxy_ResourceManagerCapability) MoveTo(moveTarget *string, index any) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		r,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -879,7 +878,7 @@ func (r *jsiiProxy_ResourceManagerCapability) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		r,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -890,7 +889,7 @@ func (r *jsiiProxy_ResourceManagerCapability) OverrideLogicalId(newLogicalId *st
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -901,7 +900,7 @@ func (r *jsiiProxy_ResourceManagerCapability) PutTimeouts(value *ResourceManager
 	_jsii_.InvokeVoid(
 		r,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -929,8 +928,8 @@ func (r *jsiiProxy_ResourceManagerCapability) ResetTimeouts() {
 	)
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_ResourceManagerCapability) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -942,8 +941,8 @@ func (r *jsiiProxy_ResourceManagerCapability) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (r *jsiiProxy_ResourceManagerCapability) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		r,
@@ -955,8 +954,8 @@ func (r *jsiiProxy_ResourceManagerCapability) SynthesizeHclAttributes() *map[str
 	return returns
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) ToHclTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ResourceManagerCapability) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -968,8 +967,8 @@ func (r *jsiiProxy_ResourceManagerCapability) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) ToMetadata() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ResourceManagerCapability) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -994,8 +993,8 @@ func (r *jsiiProxy_ResourceManagerCapability) ToString() *string {
 	return returns
 }
 
-func (r *jsiiProxy_ResourceManagerCapability) ToTerraform() interface{} {
-	var returns interface{}
+func (r *jsiiProxy_ResourceManagerCapability) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		r,
@@ -1006,4 +1005,3 @@ func (r *jsiiProxy_ResourceManagerCapability) ToTerraform() interface{} {
 
 	return returns
 }
-

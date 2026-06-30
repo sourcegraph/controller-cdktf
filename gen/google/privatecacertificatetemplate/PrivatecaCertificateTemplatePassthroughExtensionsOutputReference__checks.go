@@ -90,7 +90,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePassthroughExtensionsOutputRefere
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplatePassthroughExtensionsOutputReference) validatePutAdditionalExtensionsParameters(value interface{}) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplatePassthroughExtensionsOutputReference) validatePutAdditionalExtensionsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -129,7 +129,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePassthroughExtensionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplatePassthroughExtensionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplatePassthroughExtensionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -237,4 +237,3 @@ func validateNewPrivatecaCertificateTemplatePassthroughExtensionsOutputReference
 
 	return nil
 }
-

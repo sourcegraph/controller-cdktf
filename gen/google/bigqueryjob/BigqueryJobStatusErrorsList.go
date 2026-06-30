@@ -36,7 +36,7 @@ type BigqueryJobStatusErrorsList interface {
 	Get(index *float64) BigqueryJobStatusErrorsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_BigqueryJobStatusErrorsList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewBigqueryJobStatusErrorsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigqueryJobStatusErrorsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewBigqueryJobStatusErrorsList(terraformResource cdktf.IInterpolatingParent
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewBigqueryJobStatusErrorsList_Override(b BigqueryJobStatusErrorsList, terr
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobStatusErrorsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryJobStatusErrorsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_BigqueryJobStatusErrorsList)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobStatusErrorsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryJobStatusErrorsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_BigqueryJobStatusErrorsList)SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobStatusErrorsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_BigqueryJobStatusErrorsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (b *jsiiProxy_BigqueryJobStatusErrorsList) AllWithMapKey(mapKeyAttributeNam
 	_jsii_.Invoke(
 		b,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (b *jsiiProxy_BigqueryJobStatusErrorsList) Get(index *float64) BigqueryJobS
 	_jsii_.Invoke(
 		b,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryJobStatusErrorsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryJobStatusErrorsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (b *jsiiProxy_BigqueryJobStatusErrorsList) ToString() *string {
 
 	return returns
 }
-

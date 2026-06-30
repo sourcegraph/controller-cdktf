@@ -18,15 +18,15 @@ type BigtableGcPolicy interface {
 	SetColumnFamily(val *string)
 	ColumnFamilyInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -48,9 +48,9 @@ type BigtableGcPolicy interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IgnoreWarnings() interface{}
-	SetIgnoreWarnings(val interface{})
-	IgnoreWarningsInput() interface{}
+	IgnoreWarnings() any
+	SetIgnoreWarnings(val any)
+	IgnoreWarningsInput() any
 	InstanceName() *string
 	SetInstanceName(val *string)
 	InstanceNameInput() *string
@@ -61,7 +61,7 @@ type BigtableGcPolicy interface {
 	MaxAge() BigtableGcPolicyMaxAgeOutputReference
 	MaxAgeInput() *BigtableGcPolicyMaxAge
 	MaxVersion() BigtableGcPolicyMaxVersionList
-	MaxVersionInput() interface{}
+	MaxVersionInput() any
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -75,29 +75,29 @@ type BigtableGcPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Table() *string
 	SetTable(val *string)
 	TableInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() BigtableGcPolicyTimeoutsOutputReference
-	TimeoutsInput() interface{}
+	TimeoutsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -115,7 +115,7 @@ type BigtableGcPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -127,7 +127,7 @@ type BigtableGcPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -135,7 +135,7 @@ type BigtableGcPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMaxAge(value *BigtableGcPolicyMaxAge)
-	PutMaxVersion(value interface{})
+	PutMaxVersion(value any)
 	PutTimeouts(value *BigtableGcPolicyTimeouts)
 	ResetDeletionPolicy()
 	ResetGcRules()
@@ -149,17 +149,17 @@ type BigtableGcPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for BigtableGcPolicy
@@ -197,8 +197,8 @@ func (j *jsiiProxy_BigtableGcPolicy) ColumnFamilyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableGcPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_BigtableGcPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableGcPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -217,8 +217,8 @@ func (j *jsiiProxy_BigtableGcPolicy) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableGcPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,8 +327,8 @@ func (j *jsiiProxy_BigtableGcPolicy) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) IgnoreWarnings() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableGcPolicy) IgnoreWarnings() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreWarnings",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_BigtableGcPolicy) IgnoreWarnings() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) IgnoreWarningsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableGcPolicy) IgnoreWarningsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ignoreWarningsInput",
@@ -407,8 +407,8 @@ func (j *jsiiProxy_BigtableGcPolicy) MaxVersion() BigtableGcPolicyMaxVersionList
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) MaxVersionInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableGcPolicy) MaxVersionInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"maxVersionInput",
@@ -477,8 +477,8 @@ func (j *jsiiProxy_BigtableGcPolicy) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_BigtableGcPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -487,8 +487,8 @@ func (j *jsiiProxy_BigtableGcPolicy) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableGcPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -527,8 +527,8 @@ func (j *jsiiProxy_BigtableGcPolicy) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_BigtableGcPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -557,8 +557,8 @@ func (j *jsiiProxy_BigtableGcPolicy) Timeouts() BigtableGcPolicyTimeoutsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_BigtableGcPolicy) TimeoutsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigtableGcPolicy) TimeoutsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
@@ -566,7 +566,6 @@ func (j *jsiiProxy_BigtableGcPolicy) TimeoutsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/bigtable_gc_policy google_bigtable_gc_policy} Resource.
 func NewBigtableGcPolicy(scope constructs.Construct, id *string, config *BigtableGcPolicyConfig) BigtableGcPolicy {
@@ -579,7 +578,7 @@ func NewBigtableGcPolicy(scope constructs.Construct, id *string, config *Bigtabl
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -592,12 +591,12 @@ func NewBigtableGcPolicy_Override(b BigtableGcPolicy, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetColumnFamily(val *string) {
+func (j *jsiiProxy_BigtableGcPolicy) SetColumnFamily(val *string) {
 	if err := j.validateSetColumnFamilyParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetColumnFamily(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_BigtableGcPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_BigtableGcPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -630,7 +629,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetDeletionPolicy(val *string) {
+func (j *jsiiProxy_BigtableGcPolicy) SetDeletionPolicy(val *string) {
 	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,7 +640,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetDeletionPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_BigtableGcPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -649,7 +648,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_BigtableGcPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetGcRules(val *string) {
+func (j *jsiiProxy_BigtableGcPolicy) SetGcRules(val *string) {
 	if err := j.validateSetGcRulesParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetGcRules(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetId(val *string) {
+func (j *jsiiProxy_BigtableGcPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetIgnoreWarnings(val interface{}) {
+func (j *jsiiProxy_BigtableGcPolicy) SetIgnoreWarnings(val any) {
 	if err := j.validateSetIgnoreWarningsParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetIgnoreWarnings(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetInstanceName(val *string) {
+func (j *jsiiProxy_BigtableGcPolicy) SetInstanceName(val *string) {
 	if err := j.validateSetInstanceNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetInstanceName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_BigtableGcPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetMode(val *string) {
+func (j *jsiiProxy_BigtableGcPolicy) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetProject(val *string) {
+func (j *jsiiProxy_BigtableGcPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_BigtableGcPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -742,7 +741,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_BigtableGcPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -753,7 +752,7 @@ func (j *jsiiProxy_BigtableGcPolicy)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigtableGcPolicy)SetTable(val *string) {
+func (j *jsiiProxy_BigtableGcPolicy) SetTable(val *string) {
 	if err := j.validateSetTableParameters(val); err != nil {
 		panic(err)
 	}
@@ -776,7 +775,7 @@ func BigtableGcPolicy_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -800,7 +799,7 @@ func BigtableGcPolicy_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func BigtableGcPolicy_IsConstruct(x interface{}) *bool {
+func BigtableGcPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableGcPolicy_IsConstructParameters(x); err != nil {
@@ -811,7 +810,7 @@ func BigtableGcPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -819,7 +818,7 @@ func BigtableGcPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableGcPolicy_IsTerraformElement(x interface{}) *bool {
+func BigtableGcPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableGcPolicy_IsTerraformElementParameters(x); err != nil {
@@ -830,7 +829,7 @@ func BigtableGcPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -838,7 +837,7 @@ func BigtableGcPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func BigtableGcPolicy_IsTerraformResource(x interface{}) *bool {
+func BigtableGcPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateBigtableGcPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -849,7 +848,7 @@ func BigtableGcPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -874,31 +873,31 @@ func (b *jsiiProxy_BigtableGcPolicy) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) AddOverride(path *string, value interface{}) {
+func (b *jsiiProxy_BigtableGcPolicy) AddOverride(path *string, value any) {
 	if err := b.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigtableGcPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -914,7 +913,7 @@ func (b *jsiiProxy_BigtableGcPolicy) GetBooleanAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -930,7 +929,7 @@ func (b *jsiiProxy_BigtableGcPolicy) GetBooleanMapAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -946,7 +945,7 @@ func (b *jsiiProxy_BigtableGcPolicy) GetListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -962,7 +961,7 @@ func (b *jsiiProxy_BigtableGcPolicy) GetNumberAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -978,7 +977,7 @@ func (b *jsiiProxy_BigtableGcPolicy) GetNumberListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -994,7 +993,7 @@ func (b *jsiiProxy_BigtableGcPolicy) GetNumberMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1010,7 +1009,7 @@ func (b *jsiiProxy_BigtableGcPolicy) GetStringAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1026,15 +1025,15 @@ func (b *jsiiProxy_BigtableGcPolicy) GetStringMapAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableGcPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1053,7 +1052,7 @@ func (b *jsiiProxy_BigtableGcPolicy) ImportFrom(id *string, provider cdktf.Terra
 	_jsii_.InvokeVoid(
 		b,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1066,7 +1065,7 @@ func (b *jsiiProxy_BigtableGcPolicy) InterpolationForAttribute(terraformAttribut
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1080,18 +1079,18 @@ func (b *jsiiProxy_BigtableGcPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (b *jsiiProxy_BigtableGcPolicy) MoveTo(moveTarget *string, index any) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (b *jsiiProxy_BigtableGcPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (b *jsiiProxy_BigtableGcPolicy) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		b,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1124,18 +1123,18 @@ func (b *jsiiProxy_BigtableGcPolicy) PutMaxAge(value *BigtableGcPolicyMaxAge) {
 	_jsii_.InvokeVoid(
 		b,
 		"putMaxAge",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) PutMaxVersion(value interface{}) {
+func (b *jsiiProxy_BigtableGcPolicy) PutMaxVersion(value any) {
 	if err := b.validatePutMaxVersionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		b,
 		"putMaxVersion",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1146,7 +1145,7 @@ func (b *jsiiProxy_BigtableGcPolicy) PutTimeouts(value *BigtableGcPolicyTimeouts
 	_jsii_.InvokeVoid(
 		b,
 		"putTimeouts",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1230,8 +1229,8 @@ func (b *jsiiProxy_BigtableGcPolicy) ResetTimeouts() {
 	)
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableGcPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1243,8 +1242,8 @@ func (b *jsiiProxy_BigtableGcPolicy) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (b *jsiiProxy_BigtableGcPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
@@ -1256,8 +1255,8 @@ func (b *jsiiProxy_BigtableGcPolicy) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableGcPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1269,8 +1268,8 @@ func (b *jsiiProxy_BigtableGcPolicy) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableGcPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1295,8 +1294,8 @@ func (b *jsiiProxy_BigtableGcPolicy) ToString() *string {
 	return returns
 }
 
-func (b *jsiiProxy_BigtableGcPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (b *jsiiProxy_BigtableGcPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		b,
@@ -1307,4 +1306,3 @@ func (b *jsiiProxy_BigtableGcPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

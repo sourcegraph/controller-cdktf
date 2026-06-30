@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscaler",
-		reflect.TypeOf((*ComputeAutoscaler)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscaler](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscaler{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -86,15 +86,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicy",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicy)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicy](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilization",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyCpuUtilization)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyCpuUtilization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -123,7 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -131,11 +131,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -161,7 +161,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -169,11 +169,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyMetric",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyMetric)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyMetric](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyMetricList",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyMetricList)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyMetricList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -187,7 +187,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyMetricList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -195,7 +195,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyMetricOutputReference",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyMetricOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyMetricOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyMetricOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -241,7 +241,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyOutputReference",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -303,15 +303,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControl",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScaleInControl)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyScaleInControl](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -349,7 +349,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -380,7 +380,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeWindowSecInput", GoGetter: "TimeWindowSecInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -388,11 +388,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedules",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScalingSchedules)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyScalingSchedules](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesList",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScalingSchedulesList)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyScalingSchedulesList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -406,7 +406,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -414,7 +414,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
-		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -455,7 +455,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeZoneInput", GoGetter: "TimeZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -463,15 +463,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerConfig",
-		reflect.TypeOf((*ComputeAutoscalerConfig)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerTimeouts",
-		reflect.TypeOf((*ComputeAutoscalerTimeouts)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerTimeoutsOutputReference",
-		reflect.TypeOf((*ComputeAutoscalerTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ComputeAutoscalerTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -504,7 +504,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ComputeAutoscalerTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

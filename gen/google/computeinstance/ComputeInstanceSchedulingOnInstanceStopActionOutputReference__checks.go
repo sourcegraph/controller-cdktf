@@ -98,7 +98,7 @@ func (c *jsiiProxy_ComputeInstanceSchedulingOnInstanceStopActionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceSchedulingOnInstanceStopActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceSchedulingOnInstanceStopActionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOnInstanceStopActionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceSchedulingOnInstanceStopActionOutputReference) validateSetDiscardLocalSsdParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceSchedulingOnInstanceStopActionOutputReference) validateSetDiscardLocalSsdParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,4 +218,3 @@ func validateNewComputeInstanceSchedulingOnInstanceStopActionOutputReferencePara
 
 	return nil
 }
-

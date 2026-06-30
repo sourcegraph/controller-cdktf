@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSlo",
-		reflect.TypeOf((*MonitoringSlo)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSlo](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,7 +95,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "windowsBasedSli", GoGetter: "WindowsBasedSli"},
 			_jsii_.MemberProperty{JsiiProperty: "windowsBasedSliInput", GoGetter: "WindowsBasedSliInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSlo{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -103,15 +103,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSli",
-		reflect.TypeOf((*MonitoringSloBasicSli)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloBasicSli](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliAvailability",
-		reflect.TypeOf((*MonitoringSloBasicSliAvailability)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloBasicSliAvailability](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliAvailabilityOutputReference",
-		reflect.TypeOf((*MonitoringSloBasicSliAvailabilityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloBasicSliAvailabilityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloBasicSliAvailabilityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliLatency",
-		reflect.TypeOf((*MonitoringSloBasicSliLatency)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloBasicSliLatency](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliLatencyOutputReference",
-		reflect.TypeOf((*MonitoringSloBasicSliLatencyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloBasicSliLatencyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -176,7 +176,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloBasicSliLatencyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -184,7 +184,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliOutputReference",
-		reflect.TypeOf((*MonitoringSloBasicSliOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloBasicSliOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityInput", GoGetter: "AvailabilityInput"},
@@ -225,7 +225,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloBasicSliOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -233,19 +233,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloConfig",
-		reflect.TypeOf((*MonitoringSloConfig)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSli",
-		reflect.TypeOf((*MonitoringSloRequestBasedSli)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloRequestBasedSli](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCut",
-		reflect.TypeOf((*MonitoringSloRequestBasedSliDistributionCut)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloRequestBasedSliDistributionCut](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutOutputReference",
-		reflect.TypeOf((*MonitoringSloRequestBasedSliDistributionCutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloRequestBasedSliDistributionCutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloRequestBasedSliDistributionCutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutRange",
-		reflect.TypeOf((*MonitoringSloRequestBasedSliDistributionCutRange)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloRequestBasedSliDistributionCutRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutRangeOutputReference",
-		reflect.TypeOf((*MonitoringSloRequestBasedSliDistributionCutRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloRequestBasedSliDistributionCutRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -316,7 +316,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -324,11 +324,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatio",
-		reflect.TypeOf((*MonitoringSloRequestBasedSliGoodTotalRatio)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloRequestBasedSliGoodTotalRatio](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatioOutputReference",
-		reflect.TypeOf((*MonitoringSloRequestBasedSliGoodTotalRatioOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloRequestBasedSliGoodTotalRatioOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "badServiceFilter", GoGetter: "BadServiceFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "badServiceFilterInput", GoGetter: "BadServiceFilterInput"},
@@ -361,7 +361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalServiceFilter", GoGetter: "TotalServiceFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "totalServiceFilterInput", GoGetter: "TotalServiceFilterInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -369,7 +369,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliOutputReference",
-		reflect.TypeOf((*MonitoringSloRequestBasedSliOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloRequestBasedSliOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -401,7 +401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloRequestBasedSliOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -409,11 +409,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloTimeouts",
-		reflect.TypeOf((*MonitoringSloTimeouts)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloTimeoutsOutputReference",
-		reflect.TypeOf((*MonitoringSloTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -446,7 +446,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -454,23 +454,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSli",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSli)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSli](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThreshold",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThreshold)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThreshold](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -497,7 +497,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -505,11 +505,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -535,7 +535,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -543,7 +543,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityInput", GoGetter: "AvailabilityInput"},
@@ -584,7 +584,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -592,7 +592,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicSliPerformance", GoGetter: "BasicSliPerformance"},
 			_jsii_.MemberProperty{JsiiProperty: "basicSliPerformanceInput", GoGetter: "BasicSliPerformanceInput"},
@@ -627,7 +627,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -635,15 +635,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -672,7 +672,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -680,11 +680,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -714,7 +714,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -722,11 +722,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "badServiceFilter", GoGetter: "BadServiceFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "badServiceFilterInput", GoGetter: "BadServiceFilterInput"},
@@ -759,7 +759,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "totalServiceFilter", GoGetter: "TotalServiceFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "totalServiceFilterInput", GoGetter: "TotalServiceFilterInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -767,7 +767,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -799,7 +799,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -807,11 +807,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRange",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricMeanInRange)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliMetricMeanInRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -840,7 +840,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeSeriesInput", GoGetter: "TimeSeriesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -848,11 +848,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRange",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricMeanInRangeRange)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliMetricMeanInRangeRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -882,7 +882,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -890,11 +890,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRange",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricSumInRange)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliMetricSumInRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -923,7 +923,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeSeriesInput", GoGetter: "TimeSeriesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -931,11 +931,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRange",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricSumInRangeRange)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliMetricSumInRangeRange](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -965,7 +965,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -973,7 +973,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliOutputReference",
-		reflect.TypeOf((*MonitoringSloWindowsBasedSliOutputReference)(nil)).Elem(),
+		reflect.TypeFor[MonitoringSloWindowsBasedSliOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1015,7 +1015,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "windowPeriod", GoGetter: "WindowPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "windowPeriodInput", GoGetter: "WindowPeriodInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_MonitoringSloWindowsBasedSliOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

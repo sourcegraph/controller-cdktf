@@ -6,9 +6,9 @@ import (
 
 type IdentityPlatformTenantConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type IdentityPlatformTenantConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Human friendly display name of the tenant.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#display_name IdentityPlatformTenant#display_name}
@@ -26,7 +26,7 @@ type IdentityPlatformTenantConfig struct {
 	// Whether to allow email/password user authentication.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#allow_password_signup IdentityPlatformTenant#allow_password_signup}
-	AllowPasswordSignup interface{} `field:"optional" json:"allowPasswordSignup" yaml:"allowPasswordSignup"`
+	AllowPasswordSignup any `field:"optional" json:"allowPasswordSignup" yaml:"allowPasswordSignup"`
 	// client block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#client IdentityPlatformTenant#client}
@@ -38,11 +38,11 @@ type IdentityPlatformTenantConfig struct {
 	// are not able to manage its users.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#disable_auth IdentityPlatformTenant#disable_auth}
-	DisableAuth interface{} `field:"optional" json:"disableAuth" yaml:"disableAuth"`
+	DisableAuth any `field:"optional" json:"disableAuth" yaml:"disableAuth"`
 	// Whether to enable email link user authentication.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#enable_email_link_signin IdentityPlatformTenant#enable_email_link_signin}
-	EnableEmailLinkSignin interface{} `field:"optional" json:"enableEmailLinkSignin" yaml:"enableEmailLinkSignin"`
+	EnableEmailLinkSignin any `field:"optional" json:"enableEmailLinkSignin" yaml:"enableEmailLinkSignin"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#id IdentityPlatformTenant#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -55,4 +55,3 @@ type IdentityPlatformTenantConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/identity_platform_tenant#timeouts IdentityPlatformTenant#timeouts}
 	Timeouts *IdentityPlatformTenantTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

@@ -19,7 +19,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateAddMoveTargetPar
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateMoveFromIdParame
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -231,7 +231,7 @@ func validateBeyondcorpSecurityGatewayIamBinding_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateBeyondcorpSecurityGatewayIamBinding_IsConstructParameters(x interface{}) error {
+func validateBeyondcorpSecurityGatewayIamBinding_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -239,7 +239,7 @@ func validateBeyondcorpSecurityGatewayIamBinding_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateBeyondcorpSecurityGatewayIamBinding_IsTerraformElementParameters(x interface{}) error {
+func validateBeyondcorpSecurityGatewayIamBinding_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -247,7 +247,7 @@ func validateBeyondcorpSecurityGatewayIamBinding_IsTerraformElementParameters(x 
 	return nil
 }
 
-func validateBeyondcorpSecurityGatewayIamBinding_IsTerraformResourceParameters(x interface{}) error {
+func validateBeyondcorpSecurityGatewayIamBinding_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -255,7 +255,7 @@ func validateBeyondcorpSecurityGatewayIamBinding_IsTerraformResourceParameters(x
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateSetConnectionPar
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -385,7 +385,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateSetProjectParame
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayIamBinding) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -465,4 +465,3 @@ func validateNewBeyondcorpSecurityGatewayIamBindingParameters(scope constructs.C
 
 	return nil
 }
-

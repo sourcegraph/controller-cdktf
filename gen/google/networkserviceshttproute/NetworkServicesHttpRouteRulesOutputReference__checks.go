@@ -101,7 +101,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesOutputReference) validatePutActi
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesOutputReference) validatePutMatchesParameters(value interface{}) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesOutputReference) validatePutMatchesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -264,4 +264,3 @@ func validateNewNetworkServicesHttpRouteRulesOutputReferenceParameters(terraform
 
 	return nil
 }
-

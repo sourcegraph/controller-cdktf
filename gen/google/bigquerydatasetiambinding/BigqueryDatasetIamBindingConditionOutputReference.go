@@ -12,9 +12,9 @@ type BigqueryDatasetIamBindingConditionOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type BigqueryDatasetIamBindingConditionOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type BigqueryDatasetIamBindingConditionOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) TitleInput
 	return returns
 }
 
-
 func NewBigqueryDatasetIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryDatasetIamBindingConditionOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewBigqueryDatasetIamBindingConditionOutputReference(terraformResource cdkt
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDatasetIamBinding.BigqueryDatasetIamBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewBigqueryDatasetIamBindingConditionOutputReference_Override(b BigqueryDat
 
 	_jsii_.Create(
 		"@cdktf/provider-google.bigqueryDatasetIamBinding.BigqueryDatasetIamBindingConditionOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		b,
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetDescript
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetExpression(val *string) {
+func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) SetExpression(val *string) {
 	if err := j.validateSetExpressionParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetExpressi
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetInternalValue(val *BigqueryDatasetIamBindingCondition) {
+func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) SetInternalValue(val *BigqueryDatasetIamBindingCondition) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference)SetTitle(val *string) {
+func (j *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) SetTitle(val *string) {
 	if err := j.validateSetTitleParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) ComputeFqn
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		b,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetBoolean
 	_jsii_.Invoke(
 		b,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetBoolean
 	_jsii_.Invoke(
 		b,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetListAtt
 	_jsii_.Invoke(
 		b,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetNumberA
 	_jsii_.Invoke(
 		b,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetNumberL
 	_jsii_.Invoke(
 		b,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetNumberM
 	_jsii_.Invoke(
 		b,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetStringA
 	_jsii_.Invoke(
 		b,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) GetStringM
 	_jsii_.Invoke(
 		b,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) Interpolat
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) ResetDescr
 	)
 }
 
-func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := b.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (b *jsiiProxy_BigqueryDatasetIamBindingConditionOutputReference) ToString()
 
 	return returns
 }
-

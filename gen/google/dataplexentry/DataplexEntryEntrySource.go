@@ -1,11 +1,10 @@
 package dataplexentry
 
-
 type DataplexEntryEntrySource struct {
 	// ancestors block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry#ancestors DataplexEntry#ancestors}
-	Ancestors interface{} `field:"optional" json:"ancestors" yaml:"ancestors"`
+	Ancestors any `field:"optional" json:"ancestors" yaml:"ancestors"`
 	// The time when the resource was created in the source system.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry#create_time DataplexEntry#create_time}
@@ -45,4 +44,3 @@ type DataplexEntryEntrySource struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry#update_time DataplexEntry#update_time}
 	UpdateTime *string `field:"optional" json:"updateTime" yaml:"updateTime"`
 }
-

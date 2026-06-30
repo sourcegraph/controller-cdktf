@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateSetComplex
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewApigeeApiProductAttributesOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

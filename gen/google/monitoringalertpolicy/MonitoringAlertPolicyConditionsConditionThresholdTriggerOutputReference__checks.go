@@ -98,7 +98,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdTriggerOutpu
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputRe
 
 	return nil
 }
-

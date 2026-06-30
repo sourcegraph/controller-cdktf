@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigServiceDirec
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigServiceDirectoryConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDeveloperConnectAccountConnectorCustomOauthConfigServiceDirector
 
 	return nil
 }
-

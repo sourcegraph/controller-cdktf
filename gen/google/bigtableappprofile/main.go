@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
-		reflect.TypeOf((*BigtableAppProfile)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfile](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAppProfile{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileConfig",
-		reflect.TypeOf((*BigtableAppProfileConfig)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfileConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnly",
-		reflect.TypeOf((*BigtableAppProfileDataBoostIsolationReadOnly)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfileDataBoostIsolationReadOnly](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference",
-		reflect.TypeOf((*BigtableAppProfileDataBoostIsolationReadOnlyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfileDataBoostIsolationReadOnlyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -146,11 +146,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting",
-		reflect.TypeOf((*BigtableAppProfileSingleClusterRouting)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfileSingleClusterRouting](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference",
-		reflect.TypeOf((*BigtableAppProfileSingleClusterRoutingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfileSingleClusterRoutingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowTransactionalWrites", GoGetter: "AllowTransactionalWrites"},
 			_jsii_.MemberProperty{JsiiProperty: "allowTransactionalWritesInput", GoGetter: "AllowTransactionalWritesInput"},
@@ -179,7 +179,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -187,11 +187,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolation",
-		reflect.TypeOf((*BigtableAppProfileStandardIsolation)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfileStandardIsolation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference",
-		reflect.TypeOf((*BigtableAppProfileStandardIsolationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfileStandardIsolationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -217,7 +217,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAppProfileStandardIsolationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -225,11 +225,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts",
-		reflect.TypeOf((*BigtableAppProfileTimeouts)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfileTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference",
-		reflect.TypeOf((*BigtableAppProfileTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[BigtableAppProfileTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -262,7 +262,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_BigtableAppProfileTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

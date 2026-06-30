@@ -36,7 +36,7 @@ type NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList interf
 	Get(index *float64) NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -99,7 +99,6 @@ func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDeta
 	return returns
 }
 
-
 func NewNetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList {
 	_init_.Initialize()
 
@@ -110,7 +109,7 @@ func NewNetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList(ter
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityInterceptEndpointGroupAssociation.NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -122,12 +121,12 @@ func NewNetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList_Ove
 
 	_jsii_.Create(
 		"@cdktf/provider-google.networkSecurityInterceptEndpointGroupAssociation.NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -138,7 +137,7 @@ func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDeta
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -149,7 +148,7 @@ func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDeta
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -169,7 +168,7 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDeta
 	_jsii_.Invoke(
 		n,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -198,23 +197,23 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDeta
 	_jsii_.Invoke(
 		n,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDetailsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -233,4 +232,3 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationLocationsDeta
 
 	return returns
 }
-

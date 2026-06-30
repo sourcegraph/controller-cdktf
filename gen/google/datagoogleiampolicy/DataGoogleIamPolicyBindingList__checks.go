@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataGoogleIamPolicyBindingList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamPolicyBindingList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleIamPolicyBindingList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataGoogleIamPolicyBindingListParameters(terraformResource cdktf
 
 	return nil
 }
-

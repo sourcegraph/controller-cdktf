@@ -98,7 +98,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesPromoteReleaseRuleOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployAutomationRulesPromoteReleaseRuleOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ClouddeployAutomationRulesPromoteReleaseRuleOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -230,4 +230,3 @@ func validateNewClouddeployAutomationRulesPromoteReleaseRuleOutputReferenceParam
 
 	return nil
 }
-

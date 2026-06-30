@@ -15,15 +15,15 @@ type ComputeInstanceTemplateIamPolicy interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,24 +60,24 @@ type ComputeInstanceTemplateIamPolicy interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type ComputeInstanceTemplateIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -107,7 +107,7 @@ type ComputeInstanceTemplateIamPolicy interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -119,17 +119,17 @@ type ComputeInstanceTemplateIamPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ComputeInstanceTemplateIamPolicy
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) CdktfStack() cdktf.Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -157,8 +157,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -337,8 +337,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) Provider() cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -347,8 +347,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) Provisioners() *[]interface
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -367,8 +367,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) TerraformGeneratorMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -387,7 +387,6 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) TerraformResourceType() *st
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_template_iam_policy google_compute_instance_template_iam_policy} Resource.
 func NewComputeInstanceTemplateIamPolicy(scope constructs.Construct, id *string, config *ComputeInstanceTemplateIamPolicyConfig) ComputeInstanceTemplateIamPolicy {
 	_init_.Initialize()
@@ -399,7 +398,7 @@ func NewComputeInstanceTemplateIamPolicy(scope constructs.Construct, id *string,
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceTemplateIamPolicy.ComputeInstanceTemplateIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -412,12 +411,12 @@ func NewComputeInstanceTemplateIamPolicy_Override(c ComputeInstanceTemplateIamPo
 
 	_jsii_.Create(
 		"@cdktf/provider-google.computeInstanceTemplateIamPolicy.ComputeInstanceTemplateIamPolicy",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		c,
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetConnection(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,7 +427,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetCount(val interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -439,7 +438,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -447,7 +446,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -455,7 +454,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetId(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,7 +465,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetName(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetPolicyData(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetPolicyData(val *string) {
 	if err := j.validateSetPolicyDataParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetPolicyData(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetProject(val *string) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,7 +517,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ComputeInstanceTemplateIamPolicy) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -541,7 +540,7 @@ func ComputeInstanceTemplateIamPolicy_GenerateConfigForImport(scope constructs.C
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeInstanceTemplateIamPolicy.ComputeInstanceTemplateIamPolicy",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -565,7 +564,7 @@ func ComputeInstanceTemplateIamPolicy_GenerateConfigForImport(scope constructs.C
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ComputeInstanceTemplateIamPolicy_IsConstruct(x interface{}) *bool {
+func ComputeInstanceTemplateIamPolicy_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeInstanceTemplateIamPolicy_IsConstructParameters(x); err != nil {
@@ -576,7 +575,7 @@ func ComputeInstanceTemplateIamPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeInstanceTemplateIamPolicy.ComputeInstanceTemplateIamPolicy",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -584,7 +583,7 @@ func ComputeInstanceTemplateIamPolicy_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeInstanceTemplateIamPolicy_IsTerraformElement(x interface{}) *bool {
+func ComputeInstanceTemplateIamPolicy_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeInstanceTemplateIamPolicy_IsTerraformElementParameters(x); err != nil {
@@ -595,7 +594,7 @@ func ComputeInstanceTemplateIamPolicy_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeInstanceTemplateIamPolicy.ComputeInstanceTemplateIamPolicy",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -603,7 +602,7 @@ func ComputeInstanceTemplateIamPolicy_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ComputeInstanceTemplateIamPolicy_IsTerraformResource(x interface{}) *bool {
+func ComputeInstanceTemplateIamPolicy_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateComputeInstanceTemplateIamPolicy_IsTerraformResourceParameters(x); err != nil {
@@ -614,7 +613,7 @@ func ComputeInstanceTemplateIamPolicy_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.computeInstanceTemplateIamPolicy.ComputeInstanceTemplateIamPolicy",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -639,31 +638,31 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) AddMoveTarget(moveTarget *s
 	_jsii_.InvokeVoid(
 		c,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) AddOverride(path *string, value interface{}) {
+func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) AddOverride(path *string, value any) {
 	if err := c.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -679,7 +678,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetBooleanAttribute(terrafo
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -695,7 +694,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetBooleanMapAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -711,7 +710,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetListAttribute(terraformA
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -727,7 +726,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetNumberAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -743,7 +742,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetNumberListAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -759,7 +758,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetNumberMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -775,7 +774,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetStringAttribute(terrafor
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -791,15 +790,15 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) GetStringMapAttribute(terra
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) HasResourceMove() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -818,7 +817,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ImportFrom(id *string, prov
 	_jsii_.InvokeVoid(
 		c,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -831,7 +830,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) InterpolationForAttribute(t
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -845,18 +844,18 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) MoveTo(moveTarget *string, index any) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -867,7 +866,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		c,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -878,7 +877,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) OverrideLogicalId(newLogica
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -906,8 +905,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ResetProject() {
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -919,8 +918,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) SynthesizeAttributes() *map
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
@@ -932,8 +931,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) SynthesizeHclAttributes() *
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ToHclTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -945,8 +944,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ToHclTerraform() interface{
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ToMetadata() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -971,8 +970,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ToString() *string {
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ToTerraform() interface{} {
-	var returns interface{}
+func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		c,
@@ -983,4 +982,3 @@ func (c *jsiiProxy_ComputeInstanceTemplateIamPolicy) ToTerraform() interface{} {
 
 	return returns
 }
-

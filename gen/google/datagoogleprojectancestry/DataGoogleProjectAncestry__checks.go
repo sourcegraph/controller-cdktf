@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleProjectAncestry) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleProjectAncestry) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleProjectAncestry_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateDataGoogleProjectAncestry_IsConstructParameters(x interface{}) error {
+func validateDataGoogleProjectAncestry_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleProjectAncestry_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateDataGoogleProjectAncestry_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleProjectAncestry_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleProjectAncestry_IsTerraformDataSourceParameters(x interfa
 	return nil
 }
 
-func validateDataGoogleProjectAncestry_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleProjectAncestry_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleProjectAncestry_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleProjectAncestry) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleProjectAncestry) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -247,4 +247,3 @@ func validateNewDataGoogleProjectAncestryParameters(scope constructs.Construct, 
 
 	return nil
 }
-

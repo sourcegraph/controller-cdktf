@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleParameterManagerParameter) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleParameterManagerParameter) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleParameterManagerParameter_GenerateConfigForImportParamete
 	return nil
 }
 
-func validateDataGoogleParameterManagerParameter_IsConstructParameters(x interface{}) error {
+func validateDataGoogleParameterManagerParameter_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleParameterManagerParameter_IsConstructParameters(x interfa
 	return nil
 }
 
-func validateDataGoogleParameterManagerParameter_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleParameterManagerParameter_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleParameterManagerParameter_IsTerraformDataSourceParameters
 	return nil
 }
 
-func validateDataGoogleParameterManagerParameter_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleParameterManagerParameter_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleParameterManagerParameter_IsTerraformElementParameters(x 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleParameterManagerParameter) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleParameterManagerParameter) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -258,4 +258,3 @@ func validateNewDataGoogleParameterManagerParameterParameters(scope constructs.C
 
 	return nil
 }
-

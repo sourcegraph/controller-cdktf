@@ -98,7 +98,7 @@ func (o *jsiiProxy_ObservabilityTraceScopeTimeoutsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_ObservabilityTraceScopeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ObservabilityTraceScopeTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_ObservabilityTraceScopeTimeoutsOutputReference) validateSetDe
 	return nil
 }
 
-func (j *jsiiProxy_ObservabilityTraceScopeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ObservabilityTraceScopeTimeoutsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewObservabilityTraceScopeTimeoutsOutputReferenceParameters(terrafo
 
 	return nil
 }
-

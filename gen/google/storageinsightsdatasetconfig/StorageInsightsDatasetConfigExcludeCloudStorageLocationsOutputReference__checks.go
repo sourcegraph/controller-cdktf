@@ -98,7 +98,7 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewStorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputRe
 
 	return nil
 }
-

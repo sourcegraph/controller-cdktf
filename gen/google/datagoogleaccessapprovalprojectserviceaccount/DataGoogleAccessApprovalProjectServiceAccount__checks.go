@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataGoogleAccessApprovalProjectServiceAccount) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DataGoogleAccessApprovalProjectServiceAccount) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDataGoogleAccessApprovalProjectServiceAccount_GenerateConfigForImpo
 	return nil
 }
 
-func validateDataGoogleAccessApprovalProjectServiceAccount_IsConstructParameters(x interface{}) error {
+func validateDataGoogleAccessApprovalProjectServiceAccount_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDataGoogleAccessApprovalProjectServiceAccount_IsConstructParameters
 	return nil
 }
 
-func validateDataGoogleAccessApprovalProjectServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+func validateDataGoogleAccessApprovalProjectServiceAccount_IsTerraformDataSourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -143,7 +143,7 @@ func validateDataGoogleAccessApprovalProjectServiceAccount_IsTerraformDataSource
 	return nil
 }
 
-func validateDataGoogleAccessApprovalProjectServiceAccount_IsTerraformElementParameters(x interface{}) error {
+func validateDataGoogleAccessApprovalProjectServiceAccount_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -151,7 +151,7 @@ func validateDataGoogleAccessApprovalProjectServiceAccount_IsTerraformElementPar
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAccessApprovalProjectServiceAccount) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DataGoogleAccessApprovalProjectServiceAccount) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -250,4 +250,3 @@ func validateNewDataGoogleAccessApprovalProjectServiceAccountParameters(scope co
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstance",
-		reflect.TypeOf((*AlloydbInstance)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstance](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationPolicy", GoGetter: "ActivationPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "activationPolicyInput", GoGetter: "ActivationPolicyInput"},
@@ -127,7 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -135,11 +135,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig",
-		reflect.TypeOf((*AlloydbInstanceClientConnectionConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceClientConnectionConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference",
-		reflect.TypeOf((*AlloydbInstanceClientConnectionConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceClientConnectionConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -170,7 +170,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceClientConnectionConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -178,11 +178,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfig",
-		reflect.TypeOf((*AlloydbInstanceClientConnectionConfigSslConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceClientConnectionConfigSslConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference",
-		reflect.TypeOf((*AlloydbInstanceClientConnectionConfigSslConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceClientConnectionConfigSslConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -209,7 +209,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -217,15 +217,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceConfig",
-		reflect.TypeOf((*AlloydbInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig",
-		reflect.TypeOf((*AlloydbInstanceConnectionPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceConnectionPoolConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference",
-		reflect.TypeOf((*AlloydbInstanceConnectionPoolConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceConnectionPoolConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -255,7 +255,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceConnectionPoolConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -263,11 +263,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceMachineConfig",
-		reflect.TypeOf((*AlloydbInstanceMachineConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceMachineConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference",
-		reflect.TypeOf((*AlloydbInstanceMachineConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceMachineConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -297,7 +297,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceMachineConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -305,15 +305,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig",
-		reflect.TypeOf((*AlloydbInstanceNetworkConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceNetworkConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks",
-		reflect.TypeOf((*AlloydbInstanceNetworkConfigAuthorizedExternalNetworks)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceNetworkConfigAuthorizedExternalNetworks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList",
-		reflect.TypeOf((*AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -327,7 +327,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -335,7 +335,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference",
-		reflect.TypeOf((*AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrRange", GoGetter: "CidrRange"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrRangeInput", GoGetter: "CidrRangeInput"},
@@ -362,7 +362,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -370,7 +370,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference",
-		reflect.TypeOf((*AlloydbInstanceNetworkConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceNetworkConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRangeOverride", GoGetter: "AllocatedIpRangeOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRangeOverrideInput", GoGetter: "AllocatedIpRangeOverrideInput"},
@@ -407,7 +407,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceNetworkConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -415,11 +415,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig",
-		reflect.TypeOf((*AlloydbInstancePscInstanceConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstancePscInstanceConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference",
-		reflect.TypeOf((*AlloydbInstancePscInstanceConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstancePscInstanceConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedConsumerProjects", GoGetter: "AllowedConsumerProjects"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedConsumerProjectsInput", GoGetter: "AllowedConsumerProjectsInput"},
@@ -456,7 +456,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -464,11 +464,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections",
-		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscAutoConnections)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstancePscInstanceConfigPscAutoConnections](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList",
-		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscAutoConnectionsList)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstancePscInstanceConfigPscAutoConnectionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -482,7 +482,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -490,7 +490,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference",
-		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -523,7 +523,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -531,11 +531,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs",
-		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscInterfaceConfigs)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstancePscInstanceConfigPscInterfaceConfigs](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList",
-		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscInterfaceConfigsList)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstancePscInstanceConfigPscInterfaceConfigsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -549,7 +549,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -557,7 +557,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference",
-		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -584,7 +584,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -592,11 +592,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig",
-		reflect.TypeOf((*AlloydbInstanceQueryInsightsConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceQueryInsightsConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference",
-		reflect.TypeOf((*AlloydbInstanceQueryInsightsConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceQueryInsightsConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -632,7 +632,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceQueryInsightsConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -640,11 +640,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfig",
-		reflect.TypeOf((*AlloydbInstanceReadPoolConfig)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceReadPoolConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference",
-		reflect.TypeOf((*AlloydbInstanceReadPoolConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceReadPoolConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -671,7 +671,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceReadPoolConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -679,11 +679,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceTimeouts",
-		reflect.TypeOf((*AlloydbInstanceTimeouts)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference",
-		reflect.TypeOf((*AlloydbInstanceTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AlloydbInstanceTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -716,7 +716,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AlloydbInstanceTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

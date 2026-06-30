@@ -19,11 +19,11 @@ type DataGoogleStorageBucketObjectContents interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -56,17 +56,17 @@ type DataGoogleStorageBucketObjectContents interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -94,18 +94,18 @@ type DataGoogleStorageBucketObjectContents interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrefix()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for DataGoogleStorageBucketObjectContents
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) CdktfStack() cdktf.Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,8 +303,8 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) Provider() cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) TerraformGeneratorMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -343,7 +343,6 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) TerraformResourceType(
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/storage_bucket_object_contents google_storage_bucket_object_contents} Data Source.
 func NewDataGoogleStorageBucketObjectContents(scope constructs.Construct, id *string, config *DataGoogleStorageBucketObjectContentsConfig) DataGoogleStorageBucketObjectContents {
 	_init_.Initialize()
@@ -355,7 +354,7 @@ func NewDataGoogleStorageBucketObjectContents(scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleStorageBucketObjectContents.DataGoogleStorageBucketObjectContents",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -368,12 +367,12 @@ func NewDataGoogleStorageBucketObjectContents_Override(d DataGoogleStorageBucket
 
 	_jsii_.Create(
 		"@cdktf/provider-google.dataGoogleStorageBucketObjectContents.DataGoogleStorageBucketObjectContents",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetBucket(val *string) {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,7 +383,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetBucket(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetCount(val interface{}) {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,7 +394,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetCount(val interface{
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -403,7 +402,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -411,7 +410,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetId(val *string) {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,7 +421,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,7 +432,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetMatchGlob(val *string) {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) SetMatchGlob(val *string) {
 	if err := j.validateSetMatchGlobParameters(val); err != nil {
 		panic(err)
 	}
@@ -444,7 +443,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetMatchGlob(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetPrefix(val *string) {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) SetPrefix(val *string) {
 	if err := j.validateSetPrefixParameters(val); err != nil {
 		panic(err)
 	}
@@ -455,7 +454,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetPrefix(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContents)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContents) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -475,7 +474,7 @@ func DataGoogleStorageBucketObjectContents_GenerateConfigForImport(scope constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageBucketObjectContents.DataGoogleStorageBucketObjectContents",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -499,7 +498,7 @@ func DataGoogleStorageBucketObjectContents_GenerateConfigForImport(scope constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataGoogleStorageBucketObjectContents_IsConstruct(x interface{}) *bool {
+func DataGoogleStorageBucketObjectContents_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleStorageBucketObjectContents_IsConstructParameters(x); err != nil {
@@ -510,7 +509,7 @@ func DataGoogleStorageBucketObjectContents_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageBucketObjectContents.DataGoogleStorageBucketObjectContents",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -518,7 +517,7 @@ func DataGoogleStorageBucketObjectContents_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataGoogleStorageBucketObjectContents_IsTerraformDataSource(x interface{}) *bool {
+func DataGoogleStorageBucketObjectContents_IsTerraformDataSource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleStorageBucketObjectContents_IsTerraformDataSourceParameters(x); err != nil {
@@ -529,7 +528,7 @@ func DataGoogleStorageBucketObjectContents_IsTerraformDataSource(x interface{}) 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageBucketObjectContents.DataGoogleStorageBucketObjectContents",
 		"isTerraformDataSource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -537,7 +536,7 @@ func DataGoogleStorageBucketObjectContents_IsTerraformDataSource(x interface{}) 
 }
 
 // Experimental.
-func DataGoogleStorageBucketObjectContents_IsTerraformElement(x interface{}) *bool {
+func DataGoogleStorageBucketObjectContents_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateDataGoogleStorageBucketObjectContents_IsTerraformElementParameters(x); err != nil {
@@ -548,7 +547,7 @@ func DataGoogleStorageBucketObjectContents_IsTerraformElement(x interface{}) *bo
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleStorageBucketObjectContents.DataGoogleStorageBucketObjectContents",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -566,27 +565,27 @@ func DataGoogleStorageBucketObjectContents_TfResourceType() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) AddOverride(path *string, value any) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -602,7 +601,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetBooleanAttribute(te
 	_jsii_.Invoke(
 		d,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -618,7 +617,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetBooleanMapAttribute
 	_jsii_.Invoke(
 		d,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -634,7 +633,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetListAttribute(terra
 	_jsii_.Invoke(
 		d,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -650,7 +649,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetNumberAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -666,7 +665,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetNumberListAttribute
 	_jsii_.Invoke(
 		d,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -682,7 +681,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetNumberMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -698,7 +697,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetStringAttribute(ter
 	_jsii_.Invoke(
 		d,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -714,7 +713,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) GetStringMapAttribute(
 	_jsii_.Invoke(
 		d,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -730,7 +729,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) InterpolationForAttrib
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -744,7 +743,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) OverrideLogicalId(newL
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -780,8 +779,8 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ResetPrefix() {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +792,8 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) SynthesizeAttributes()
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		d,
@@ -806,8 +805,8 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) SynthesizeHclAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ToHclTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -819,8 +818,8 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ToHclTerraform() inter
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ToMetadata() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -845,8 +844,8 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ToTerraform() interface{} {
-	var returns interface{}
+func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		d,
@@ -857,4 +856,3 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContents) ToTerraform() interfac
 
 	return returns
 }
-

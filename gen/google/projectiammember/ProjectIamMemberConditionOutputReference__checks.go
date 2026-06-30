@@ -98,7 +98,7 @@ func (p *jsiiProxy_ProjectIamMemberConditionOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_ProjectIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ProjectIamMemberConditionOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewProjectIamMemberConditionOutputReferenceParameters(terraformReso
 
 	return nil
 }
-
