@@ -98,7 +98,7 @@ func (d *jsiiProxy_DeviceDexTestDataOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_DeviceDexTestDataOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceDexTestDataOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewDeviceDexTestDataOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

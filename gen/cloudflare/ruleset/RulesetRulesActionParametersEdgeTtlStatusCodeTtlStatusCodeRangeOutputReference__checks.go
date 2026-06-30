@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRan
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRan
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeO
 
 	return nil
 }
-

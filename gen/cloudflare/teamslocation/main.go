@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocation",
-		reflect.TypeOf((*TeamsLocation)(nil)).Elem(),
+		reflect.TypeFor[TeamsLocation](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsLocation{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationConfig",
-		reflect.TypeOf((*TeamsLocationConfig)(nil)).Elem(),
+		reflect.TypeFor[TeamsLocationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworks",
-		reflect.TypeOf((*TeamsLocationNetworks)(nil)).Elem(),
+		reflect.TypeFor[TeamsLocationNetworks](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksList",
-		reflect.TypeOf((*TeamsLocationNetworksList)(nil)).Elem(),
+		reflect.TypeFor[TeamsLocationNetworksList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsLocationNetworksList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -110,7 +110,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsLocation.TeamsLocationNetworksOutputReference",
-		reflect.TypeOf((*TeamsLocationNetworksOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsLocationNetworksOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -137,7 +137,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsLocationNetworksOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

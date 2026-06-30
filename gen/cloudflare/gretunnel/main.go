@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.greTunnel.GreTunnel",
-		reflect.TypeOf((*GreTunnel)(nil)).Elem(),
+		reflect.TypeFor[GreTunnel](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_GreTunnel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,6 +93,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.greTunnel.GreTunnelConfig",
-		reflect.TypeOf((*GreTunnelConfig)(nil)).Elem(),
+		reflect.TypeFor[GreTunnelConfig](),
 	)
 }

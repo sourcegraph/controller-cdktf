@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration",
-		reflect.TypeOf((*DevicePostureIntegration)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureIntegration](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -72,7 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicePostureIntegration{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -80,15 +80,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig",
-		reflect.TypeOf((*DevicePostureIntegrationConfig)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureIntegrationConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA",
-		reflect.TypeOf((*DevicePostureIntegrationConfigA)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureIntegrationConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAList",
-		reflect.TypeOf((*DevicePostureIntegrationConfigAList)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureIntegrationConfigAList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicePostureIntegrationConfigAList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -110,7 +110,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference",
-		reflect.TypeOf((*DevicePostureIntegrationConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DevicePostureIntegrationConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiUrl", GoGetter: "ApiUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "apiUrlInput", GoGetter: "ApiUrlInput"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DevicePostureIntegrationConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworks",
-		reflect.TypeOf((*DeviceManagedNetworks)(nil)).Elem(),
+		reflect.TypeFor[DeviceManagedNetworks](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -65,7 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeviceManagedNetworks{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -73,15 +73,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfig",
-		reflect.TypeOf((*DeviceManagedNetworksConfig)(nil)).Elem(),
+		reflect.TypeFor[DeviceManagedNetworksConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigA",
-		reflect.TypeOf((*DeviceManagedNetworksConfigA)(nil)).Elem(),
+		reflect.TypeFor[DeviceManagedNetworksConfigA](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
-		reflect.TypeOf((*DeviceManagedNetworksConfigAOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeviceManagedNetworksConfigAOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -109,7 +109,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsSockaddrInput", GoGetter: "TlsSockaddrInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeviceManagedNetworksConfigAOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

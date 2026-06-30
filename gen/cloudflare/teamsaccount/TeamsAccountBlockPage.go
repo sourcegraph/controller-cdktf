@@ -1,6 +1,5 @@
 package teamsaccount
 
-
 type TeamsAccountBlockPage struct {
 	// Hex code of block page background color.
 	//
@@ -9,7 +8,7 @@ type TeamsAccountBlockPage struct {
 	// Indicator of enablement.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#enabled TeamsAccount#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Block page footer text.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#footer_text TeamsAccount#footer_text}
@@ -35,4 +34,3 @@ type TeamsAccountBlockPage struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account#name TeamsAccount#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
-

@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference) validateSetLogAllParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference) validateSetLogAllParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -191,7 +191,7 @@ func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference) validateSetLogBlocksParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference) validateSetLogBlocksParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -238,4 +238,3 @@ func validateNewTeamsAccountLoggingSettingsByRuleTypeL4OutputReferenceParameters
 
 	return nil
 }
-

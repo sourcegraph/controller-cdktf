@@ -1,6 +1,5 @@
 package datacloudflarezones
 
-
 type DataCloudflareZonesFilter struct {
 	// The account identifier to target for the resource.
 	//
@@ -25,10 +24,9 @@ type DataCloudflareZonesFilter struct {
 	// Paused status of the zone to lookup. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zones#paused DataCloudflareZones#paused}
-	Paused interface{} `field:"optional" json:"paused" yaml:"paused"`
+	Paused any `field:"optional" json:"paused" yaml:"paused"`
 	// Status of the zone to lookup.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/data-sources/zones#status DataCloudflareZones#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
-

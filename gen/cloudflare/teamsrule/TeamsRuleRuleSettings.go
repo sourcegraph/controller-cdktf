@@ -1,6 +1,5 @@
 package teamsrule
 
-
 type TeamsRuleRuleSettings struct {
 	// Add custom headers to allowed requests in the form of key-value pairs.
 	//
@@ -9,7 +8,7 @@ type TeamsRuleRuleSettings struct {
 	// Allow parent MSP accounts to enable bypass their children's rules.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#allow_child_bypass TeamsRule#allow_child_bypass}
-	AllowChildBypass interface{} `field:"optional" json:"allowChildBypass" yaml:"allowChildBypass"`
+	AllowChildBypass any `field:"optional" json:"allowChildBypass" yaml:"allowChildBypass"`
 	// audit_ssh block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#audit_ssh TeamsRule#audit_ssh}
@@ -21,7 +20,7 @@ type TeamsRuleRuleSettings struct {
 	// Indicator of block page enablement.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#block_page_enabled TeamsRule#block_page_enabled}
-	BlockPageEnabled interface{} `field:"optional" json:"blockPageEnabled" yaml:"blockPageEnabled"`
+	BlockPageEnabled any `field:"optional" json:"blockPageEnabled" yaml:"blockPageEnabled"`
 	// The displayed reason for a user being blocked.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#block_page_reason TeamsRule#block_page_reason}
@@ -29,7 +28,7 @@ type TeamsRuleRuleSettings struct {
 	// Allow child MSP accounts to bypass their parent's rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#bypass_parent_rule TeamsRule#bypass_parent_rule}
-	BypassParentRule interface{} `field:"optional" json:"bypassParentRule" yaml:"bypassParentRule"`
+	BypassParentRule any `field:"optional" json:"bypassParentRule" yaml:"bypassParentRule"`
 	// check_session block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#check_session TeamsRule#check_session}
@@ -41,11 +40,11 @@ type TeamsRuleRuleSettings struct {
 	// Disable DNSSEC validation (must be Allow rule).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#insecure_disable_dnssec_validation TeamsRule#insecure_disable_dnssec_validation}
-	InsecureDisableDnssecValidation interface{} `field:"optional" json:"insecureDisableDnssecValidation" yaml:"insecureDisableDnssecValidation"`
+	InsecureDisableDnssecValidation any `field:"optional" json:"insecureDisableDnssecValidation" yaml:"insecureDisableDnssecValidation"`
 	// Turns on IP category based filter on dns if the rule contains dns category checks.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#ip_categories TeamsRule#ip_categories}
-	IpCategories interface{} `field:"optional" json:"ipCategories" yaml:"ipCategories"`
+	IpCategories any `field:"optional" json:"ipCategories" yaml:"ipCategories"`
 	// l4override block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#l4override TeamsRule#l4override}
@@ -67,4 +66,3 @@ type TeamsRuleRuleSettings struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#untrusted_cert TeamsRule#untrusted_cert}
 	UntrustedCert *TeamsRuleRuleSettingsUntrustedCert `field:"optional" json:"untrustedCert" yaml:"untrustedCert"`
 }
-

@@ -6,9 +6,9 @@ import (
 
 type EmailRoutingSettingsConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,11 +18,11 @@ type EmailRoutingSettingsConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// State of the zone settings for Email Routing. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/email_routing_settings#enabled EmailRoutingSettings#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// The zone identifier to target for the resource. **Modifying this attribute will force creation of a new resource.**.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
@@ -35,6 +35,5 @@ type EmailRoutingSettingsConfig struct {
 	// Flag to check if the user skipped the configuration wizard.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/email_routing_settings#skip_wizard EmailRoutingSettings#skip_wizard}
-	SkipWizard interface{} `field:"optional" json:"skipWizard" yaml:"skipWizard"`
+	SkipWizard any `field:"optional" json:"skipWizard" yaml:"skipWizard"`
 }
-

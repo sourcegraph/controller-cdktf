@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.record.Record",
-		reflect.TypeOf((*Record)(nil)).Elem(),
+		reflect.TypeFor[Record](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Record{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -104,15 +104,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.record.RecordConfig",
-		reflect.TypeOf((*RecordConfig)(nil)).Elem(),
+		reflect.TypeFor[RecordConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.record.RecordData",
-		reflect.TypeOf((*RecordData)(nil)).Elem(),
+		reflect.TypeFor[RecordData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.record.RecordDataOutputReference",
-		reflect.TypeOf((*RecordDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RecordDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "algorithmInput", GoGetter: "AlgorithmInput"},
@@ -253,7 +253,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weight", GoGetter: "Weight"},
 			_jsii_.MemberProperty{JsiiProperty: "weightInput", GoGetter: "WeightInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RecordDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -261,11 +261,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.record.RecordTimeouts",
-		reflect.TypeOf((*RecordTimeouts)(nil)).Elem(),
+		reflect.TypeFor[RecordTimeouts](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference",
-		reflect.TypeOf((*RecordTimeoutsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[RecordTimeoutsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -295,7 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "update", GoGetter: "Update"},
 			_jsii_.MemberProperty{JsiiProperty: "updateInput", GoGetter: "UpdateInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_RecordTimeoutsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -98,7 +98,7 @@ func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewCustomSslCustomSslPriorityOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

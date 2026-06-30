@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessRule.AccessRule",
-		reflect.TypeOf((*AccessRule)(nil)).Elem(),
+		reflect.TypeFor[AccessRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -70,7 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -78,15 +78,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfig",
-		reflect.TypeOf((*AccessRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration",
-		reflect.TypeOf((*AccessRuleConfiguration)(nil)).Elem(),
+		reflect.TypeFor[AccessRuleConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference",
-		reflect.TypeOf((*AccessRuleConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessRuleConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessRuleConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

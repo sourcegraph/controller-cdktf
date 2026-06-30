@@ -6,9 +6,9 @@ import (
 
 type AccessPolicyConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AccessPolicyConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the application the policy is associated with.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#application_id AccessPolicy#application_id}
@@ -30,7 +30,7 @@ type AccessPolicyConfig struct {
 	// include block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#include AccessPolicy#include}
-	Include interface{} `field:"required" json:"include" yaml:"include"`
+	Include any `field:"required" json:"include" yaml:"include"`
 	// Friendly name of the Access Policy.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#name AccessPolicy#name}
@@ -46,13 +46,13 @@ type AccessPolicyConfig struct {
 	// approval_group block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#approval_group AccessPolicy#approval_group}
-	ApprovalGroup interface{} `field:"optional" json:"approvalGroup" yaml:"approvalGroup"`
+	ApprovalGroup any `field:"optional" json:"approvalGroup" yaml:"approvalGroup"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#approval_required AccessPolicy#approval_required}.
-	ApprovalRequired interface{} `field:"optional" json:"approvalRequired" yaml:"approvalRequired"`
+	ApprovalRequired any `field:"optional" json:"approvalRequired" yaml:"approvalRequired"`
 	// exclude block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#exclude AccessPolicy#exclude}
-	Exclude interface{} `field:"optional" json:"exclude" yaml:"exclude"`
+	Exclude any `field:"optional" json:"exclude" yaml:"exclude"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#id AccessPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -65,14 +65,13 @@ type AccessPolicyConfig struct {
 	// Whether to prompt the user for a justification for accessing the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#purpose_justification_required AccessPolicy#purpose_justification_required}
-	PurposeJustificationRequired interface{} `field:"optional" json:"purposeJustificationRequired" yaml:"purposeJustificationRequired"`
+	PurposeJustificationRequired any `field:"optional" json:"purposeJustificationRequired" yaml:"purposeJustificationRequired"`
 	// require block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#require AccessPolicy#require}
-	Require interface{} `field:"optional" json:"require" yaml:"require"`
+	Require any `field:"optional" json:"require" yaml:"require"`
 	// The zone identifier to target for the resource. Conflicts with `account_id`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_policy#zone_id AccessPolicy#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
-

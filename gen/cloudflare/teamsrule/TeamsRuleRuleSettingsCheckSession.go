@@ -1,6 +1,5 @@
 package teamsrule
 
-
 type TeamsRuleRuleSettingsCheckSession struct {
 	// Configure how fresh the session needs to be to be considered valid.
 	//
@@ -9,6 +8,5 @@ type TeamsRuleRuleSettingsCheckSession struct {
 	// Enable session enforcement for this rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_rule#enforce TeamsRule#enforce}
-	Enforce interface{} `field:"required" json:"enforce" yaml:"enforce"`
+	Enforce any `field:"required" json:"enforce" yaml:"enforce"`
 }
-

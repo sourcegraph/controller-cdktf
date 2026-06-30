@@ -6,9 +6,9 @@ import (
 
 type IpsecTunnelConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type IpsecTunnelConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// IP address assigned to the Cloudflare side of the IPsec tunnel.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel#cloudflare_endpoint IpsecTunnel#cloudflare_endpoint}
@@ -42,7 +42,7 @@ type IpsecTunnelConfig struct {
 	// Specifies if this tunnel may use a null cipher (ENCR_NULL) in Phase 2. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel#allow_null_cipher IpsecTunnel#allow_null_cipher}
-	AllowNullCipher interface{} `field:"optional" json:"allowNullCipher" yaml:"allowNullCipher"`
+	AllowNullCipher any `field:"optional" json:"allowNullCipher" yaml:"allowNullCipher"`
 	// An optional description of the IPsec tunnel.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel#description IpsecTunnel#description}
@@ -54,7 +54,7 @@ type IpsecTunnelConfig struct {
 	// Specifies if ICMP tunnel health checks are enabled. Default: `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel#health_check_enabled IpsecTunnel#health_check_enabled}
-	HealthCheckEnabled interface{} `field:"optional" json:"healthCheckEnabled" yaml:"healthCheckEnabled"`
+	HealthCheckEnabled any `field:"optional" json:"healthCheckEnabled" yaml:"healthCheckEnabled"`
 	// The IP address of the customer endpoint that will receive tunnel health checks. Default: `<customer_gre_endpoint>`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel#health_check_target IpsecTunnel#health_check_target}
@@ -85,4 +85,3 @@ type IpsecTunnelConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ipsec_tunnel#user_id IpsecTunnel#user_id}
 	UserId *string `field:"optional" json:"userId" yaml:"userId"`
 }
-

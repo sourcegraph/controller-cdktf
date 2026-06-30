@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateSetHeaderPa
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoadBalancerMonitorHeaderOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

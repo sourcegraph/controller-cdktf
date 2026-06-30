@@ -19,7 +19,7 @@ func (t *jsiiProxy_TeamsAccount) validateAddMoveTargetParameters(moveTarget *str
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccount) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TeamsAccount) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (t *jsiiProxy_TeamsAccount) validateMoveFromIdParameters(id *string) error 
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (t *jsiiProxy_TeamsAccount) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -286,7 +286,7 @@ func validateTeamsAccount_GenerateConfigForImportParameters(scope constructs.Con
 	return nil
 }
 
-func validateTeamsAccount_IsConstructParameters(x interface{}) error {
+func validateTeamsAccount_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -294,7 +294,7 @@ func validateTeamsAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTeamsAccount_IsTerraformElementParameters(x interface{}) error {
+func validateTeamsAccount_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -302,7 +302,7 @@ func validateTeamsAccount_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateTeamsAccount_IsTerraformResourceParameters(x interface{}) error {
+func validateTeamsAccount_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -318,7 +318,7 @@ func (j *jsiiProxy_TeamsAccount) validateSetAccountIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccount) validateSetActivityLogEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccount) validateSetActivityLogEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -338,7 +338,7 @@ func (j *jsiiProxy_TeamsAccount) validateSetActivityLogEnabledParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccount) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccount) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -371,7 +371,7 @@ func (j *jsiiProxy_TeamsAccount) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccount) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccount) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -444,7 +444,7 @@ func (j *jsiiProxy_TeamsAccount) validateSetLifecycleParameters(val *cdktf.Terra
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccount) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_TeamsAccount) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -490,7 +490,7 @@ func (j *jsiiProxy_TeamsAccount) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccount) validateSetTlsDecryptEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccount) validateSetTlsDecryptEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -510,7 +510,7 @@ func (j *jsiiProxy_TeamsAccount) validateSetTlsDecryptEnabledParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccount) validateSetUrlBrowserIsolationEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccount) validateSetUrlBrowserIsolationEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -548,4 +548,3 @@ func validateNewTeamsAccountParameters(scope constructs.Construct, id *string, c
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessApplicationSaasAppOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessApplicationSaasAppOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -222,4 +222,3 @@ func validateNewAccessApplicationSaasAppOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiTokenPolicyOutputReference) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenPolicyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ApiTokenPolicyOutputReference) validateSetEffectParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenPolicyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewApiTokenPolicyOutputReferenceParameters(terraformResource cdktf.
 
 	return nil
 }
-

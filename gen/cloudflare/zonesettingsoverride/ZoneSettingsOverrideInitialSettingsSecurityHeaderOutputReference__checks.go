@@ -98,7 +98,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference
 
 	return nil
 }
-

@@ -19,7 +19,7 @@ func (t *jsiiProxy_TeamsLocation) validateAddMoveTargetParameters(moveTarget *st
 	return nil
 }
 
-func (t *jsiiProxy_TeamsLocation) validateAddOverrideParameters(path *string, value interface{}) error {
+func (t *jsiiProxy_TeamsLocation) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (t *jsiiProxy_TeamsLocation) validateMoveFromIdParameters(id *string) error
 	return nil
 }
 
-func (t *jsiiProxy_TeamsLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (t *jsiiProxy_TeamsLocation) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (t *jsiiProxy_TeamsLocation) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (t *jsiiProxy_TeamsLocation) validatePutNetworksParameters(value interface{}) error {
+func (t *jsiiProxy_TeamsLocation) validatePutNetworksParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateTeamsLocation_GenerateConfigForImportParameters(scope constructs.Co
 	return nil
 }
 
-func validateTeamsLocation_IsConstructParameters(x interface{}) error {
+func validateTeamsLocation_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateTeamsLocation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateTeamsLocation_IsTerraformElementParameters(x interface{}) error {
+func validateTeamsLocation_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateTeamsLocation_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateTeamsLocation_IsTerraformResourceParameters(x interface{}) error {
+func validateTeamsLocation_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_TeamsLocation) validateSetAccountIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_TeamsLocation) validateSetClientDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsLocation) validateSetClientDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func (j *jsiiProxy_TeamsLocation) validateSetClientDefaultParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_TeamsLocation) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsLocation) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -336,7 +336,7 @@ func (j *jsiiProxy_TeamsLocation) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_TeamsLocation) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsLocation) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_TeamsLocation) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_TeamsLocation) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_TeamsLocation) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -481,4 +481,3 @@ func validateNewTeamsLocationParameters(scope constructs.Construct, id *string, 
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy",
-		reflect.TypeOf((*NotificationPolicy)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -85,7 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "webhooksIntegration", GoGetter: "WebhooksIntegration"},
 			_jsii_.MemberProperty{JsiiProperty: "webhooksIntegrationInput", GoGetter: "WebhooksIntegrationInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -93,15 +93,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig",
-		reflect.TypeOf((*NotificationPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegration",
-		reflect.TypeOf((*NotificationPolicyEmailIntegration)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyEmailIntegration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationList",
-		reflect.TypeOf((*NotificationPolicyEmailIntegrationList)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyEmailIntegrationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationPolicyEmailIntegrationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -123,7 +123,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationOutputReference",
-		reflect.TypeOf((*NotificationPolicyEmailIntegrationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyEmailIntegrationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -152,7 +152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationPolicyEmailIntegrationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -160,11 +160,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters",
-		reflect.TypeOf((*NotificationPolicyFilters)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyFilters](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
-		reflect.TypeOf((*NotificationPolicyFiltersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyFiltersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -242,7 +242,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
 			_jsii_.MemberProperty{JsiiProperty: "zonesInput", GoGetter: "ZonesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationPolicyFiltersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -250,11 +250,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegration",
-		reflect.TypeOf((*NotificationPolicyPagerdutyIntegration)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyPagerdutyIntegration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationList",
-		reflect.TypeOf((*NotificationPolicyPagerdutyIntegrationList)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyPagerdutyIntegrationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -268,7 +268,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationPolicyPagerdutyIntegrationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -276,7 +276,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationOutputReference",
-		reflect.TypeOf((*NotificationPolicyPagerdutyIntegrationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyPagerdutyIntegrationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -305,7 +305,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationPolicyPagerdutyIntegrationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -313,11 +313,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegration",
-		reflect.TypeOf((*NotificationPolicyWebhooksIntegration)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyWebhooksIntegration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationList",
-		reflect.TypeOf((*NotificationPolicyWebhooksIntegrationList)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyWebhooksIntegrationList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -331,7 +331,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationPolicyWebhooksIntegrationList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -339,7 +339,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
-		reflect.TypeOf((*NotificationPolicyWebhooksIntegrationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[NotificationPolicyWebhooksIntegrationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -368,7 +368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

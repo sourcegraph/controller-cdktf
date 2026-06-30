@@ -114,7 +114,7 @@ func (j *jsiiProxy_AccessGroupIncludeSamlOutputReference) validateSetAttributeVa
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeSamlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupIncludeSamlOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_AccessGroupIncludeSamlOutputReference) validateSetIdentityPro
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeSamlOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupIncludeSamlOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewAccessGroupIncludeSamlOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

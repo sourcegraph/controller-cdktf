@@ -6,9 +6,9 @@ import (
 
 type ApiTokenConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type ApiTokenConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the API Token.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_token#name ApiToken#name}
@@ -26,7 +26,7 @@ type ApiTokenConfig struct {
 	// policy block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_token#policy ApiToken#policy}
-	Policy interface{} `field:"required" json:"policy" yaml:"policy"`
+	Policy any `field:"required" json:"policy" yaml:"policy"`
 	// condition block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_token#condition ApiToken#condition}
@@ -45,4 +45,3 @@ type ApiTokenConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_token#not_before ApiToken#not_before}
 	NotBefore *string `field:"optional" json:"notBefore" yaml:"notBefore"`
 }
-

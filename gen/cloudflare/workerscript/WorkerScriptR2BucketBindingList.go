@@ -17,8 +17,8 @@ type WorkerScriptR2BucketBindingList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type WorkerScriptR2BucketBindingList interface {
 	Get(index *float64) WorkerScriptR2BucketBindingOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_WorkerScriptR2BucketBindingList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewWorkerScriptR2BucketBindingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptR2BucketBindingList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewWorkerScriptR2BucketBindingList(terraformResource cdktf.IInterpolatingPa
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewWorkerScriptR2BucketBindingList_Override(w WorkerScriptR2BucketBindingLi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingList)SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingList)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_WorkerScriptR2BucketBindingList)SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptR2BucketBindingList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_WorkerScriptR2BucketBindingList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingList) AllWithMapKey(mapKeyAttribut
 	_jsii_.Invoke(
 		w,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingList) Get(index *float64) WorkerSc
 	_jsii_.Invoke(
 		w,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScriptR2BucketBindingList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (w *jsiiProxy_WorkerScriptR2BucketBindingList) Resolve(_context cdktf.IResolveContext) any {
 	if err := w.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (w *jsiiProxy_WorkerScriptR2BucketBindingList) ToString() *string {
 
 	return returns
 }
-

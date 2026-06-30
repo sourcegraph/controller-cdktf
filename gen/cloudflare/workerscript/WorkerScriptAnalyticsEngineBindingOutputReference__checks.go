@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkerScriptAnalyticsEngineBindingOutputReferenceParameters(terr
 
 	return nil
 }
-

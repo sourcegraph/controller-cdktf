@@ -90,7 +90,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) validateInterpolationForAttribut
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutActionParametersParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutActionParametersParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) validatePutActionParametersParam
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutExposedCredentialCheckParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutExposedCredentialCheckParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) validatePutExposedCredentialChec
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutLoggingParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutLoggingParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (r *jsiiProxy_RulesetRulesOutputReference) validatePutLoggingParameters(val
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesOutputReference) validatePutRatelimitParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesOutputReference) validatePutRatelimitParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -230,7 +230,7 @@ func (j *jsiiProxy_RulesetRulesOutputReference) validateSetActionParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -303,7 +303,7 @@ func (j *jsiiProxy_RulesetRulesOutputReference) validateSetDescriptionParameters
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -339,7 +339,7 @@ func (j *jsiiProxy_RulesetRulesOutputReference) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -422,4 +422,3 @@ func validateNewRulesetRulesOutputReferenceParameters(terraformResource cdktf.II
 
 	return nil
 }
-

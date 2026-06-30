@@ -19,7 +19,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) validateAddMoveTargetParameters(moveTar
 	return nil
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_DeviceSettingsPolicy) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (d *jsiiProxy_DeviceSettingsPolicy) validateMoveFromIdParameters(id *string
 	return nil
 }
 
-func (d *jsiiProxy_DeviceSettingsPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (d *jsiiProxy_DeviceSettingsPolicy) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateDeviceSettingsPolicy_GenerateConfigForImportParameters(scope constr
 	return nil
 }
 
-func validateDeviceSettingsPolicy_IsConstructParameters(x interface{}) error {
+func validateDeviceSettingsPolicy_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateDeviceSettingsPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDeviceSettingsPolicy_IsTerraformElementParameters(x interface{}) error {
+func validateDeviceSettingsPolicy_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateDeviceSettingsPolicy_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
-func validateDeviceSettingsPolicy_IsTerraformResourceParameters(x interface{}) error {
+func validateDeviceSettingsPolicy_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetAccountIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetAllowedToLeaveParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetAllowedToLeaveParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetAllowedToLeaveParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetAllowModeSwitchParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetAllowModeSwitchParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetAllowModeSwitchParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetAllowUpdatesParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetAllowUpdatesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetCaptivePortalParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetConnectionParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDefaultParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDefaultParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDefaultParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDisableAutoFallbackParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDisableAutoFallbackParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -458,7 +458,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetDisableAutoFallbackParameter
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -478,7 +478,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetEnabledParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetExcludeOfficeIpsParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetExcludeOfficeIpsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -538,7 +538,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetPrecedenceParameters(val *fl
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -608,7 +608,7 @@ func (j *jsiiProxy_DeviceSettingsPolicy) validateSetSupportUrlParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DeviceSettingsPolicy) validateSetSwitchLockedParameters(val interface{}) error {
+func (j *jsiiProxy_DeviceSettingsPolicy) validateSetSwitchLockedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -646,4 +646,3 @@ func validateNewDeviceSettingsPolicyParameters(scope constructs.Construct, id *s
 
 	return nil
 }
-

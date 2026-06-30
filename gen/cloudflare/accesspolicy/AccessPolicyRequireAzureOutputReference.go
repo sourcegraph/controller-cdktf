@@ -12,9 +12,9 @@ type AccessPolicyRequireAzureOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type AccessPolicyRequireAzureOutputReference interface {
 	SetIdentityProviderId(val *string)
 	IdentityProviderIdInput() *string
 	IdInput() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -46,7 +46,7 @@ type AccessPolicyRequireAzureOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -71,7 +71,7 @@ type AccessPolicyRequireAzureOutputReference interface {
 	ResetIdentityProviderId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,8 +84,8 @@ type jsiiProxy_AccessPolicyRequireAzureOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) IdInput() *[]*string
 	return returns
 }
 
-func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,7 +194,6 @@ func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) TerraformResource() 
 	return returns
 }
 
-
 func NewAccessPolicyRequireAzureOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessPolicyRequireAzureOutputReference {
 	_init_.Initialize()
 
@@ -205,7 +204,7 @@ func NewAccessPolicyRequireAzureOutputReference(terraformResource cdktf.IInterpo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAzureOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -217,12 +216,12 @@ func NewAccessPolicyRequireAzureOutputReference_Override(a AccessPolicyRequireAz
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAzureOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -233,7 +232,7 @@ func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -244,7 +243,7 @@ func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetId(val *[]*string) {
+func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) SetId(val *[]*string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetId(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetIdentityProviderId(val *string) {
+func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) SetIdentityProviderId(val *string) {
 	if err := j.validateSetIdentityProviderIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetIdentityProviderId
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessPolicyRequireAzureOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,16 +311,16 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) ComputeFqn() *string
 	return returns
 }
 
-func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -337,7 +336,7 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetBooleanAttribute(
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -353,7 +352,7 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetBooleanMapAttribu
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -369,7 +368,7 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetListAttribute(ter
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -385,7 +384,7 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetNumberAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -401,7 +400,7 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetNumberListAttribu
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -417,7 +416,7 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetNumberMapAttribut
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -433,7 +432,7 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetStringAttribute(t
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -449,7 +448,7 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) GetStringMapAttribut
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -478,7 +477,7 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -501,16 +500,16 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) ResetIdentityProvide
 	)
 }
 
-func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -529,4 +528,3 @@ func (a *jsiiProxy_AccessPolicyRequireAzureOutputReference) ToString() *string {
 
 	return returns
 }
-

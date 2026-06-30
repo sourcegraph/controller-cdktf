@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) validateResolvePa
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) validateSetFailoverAcrossPoolsParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) validateSetFailoverAcrossPoolsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) validateSetFailov
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -242,4 +242,3 @@ func validateNewLoadBalancerAdaptiveRoutingOutputReferenceParameters(terraformRe
 
 	return nil
 }
-

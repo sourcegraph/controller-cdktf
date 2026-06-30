@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesC
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -206,4 +206,3 @@ func validateNewDataCloudflareRulesetsRulesetsRulesActionParametersOverridesCate
 
 	return nil
 }
-

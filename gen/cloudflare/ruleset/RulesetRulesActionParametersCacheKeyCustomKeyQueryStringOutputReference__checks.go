@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutpu
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRulesetRulesActionParametersCacheKeyCustomKeyQueryStringOutputRe
 
 	return nil
 }
-

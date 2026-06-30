@@ -15,9 +15,9 @@ type SplitTunnelTunnelsOutputReference interface {
 	AddressInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type SplitTunnelTunnelsOutputReference interface {
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,7 +49,7 @@ type SplitTunnelTunnelsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -75,7 +75,7 @@ type SplitTunnelTunnelsOutputReference interface {
 	ResetHost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,8 +108,8 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) AddressInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) HostInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,6 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) TerraformResource() cdktf.
 	return returns
 }
 
-
 func NewSplitTunnelTunnelsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SplitTunnelTunnelsOutputReference {
 	_init_.Initialize()
 
@@ -229,7 +228,7 @@ func NewSplitTunnelTunnelsOutputReference(terraformResource cdktf.IInterpolating
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -241,12 +240,12 @@ func NewSplitTunnelTunnelsOutputReference_Override(s SplitTunnelTunnelsOutputRef
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetAddress(val *string) {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) SetAddress(val *string) {
 	if err := j.validateSetAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -257,7 +256,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -268,7 +267,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetComplexObjectIndex(val i
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -279,7 +278,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetDescription(val *string) {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetDescription(val *string)
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetHost(val *string) {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) SetHost(val *string) {
 	if err := j.validateSetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetHost(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -347,16 +346,16 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -372,7 +371,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetBooleanAttribute(terraf
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -388,7 +387,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetBooleanMapAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -404,7 +403,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetListAttribute(terraform
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -420,7 +419,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetNumberAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -436,7 +435,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetNumberListAttribute(ter
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -452,7 +451,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetNumberMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -468,7 +467,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetStringAttribute(terrafo
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -484,7 +483,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) GetStringMapAttribute(terr
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -513,7 +512,7 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) InterpolationForAttribute(
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -544,16 +543,16 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) ResetHost() {
 	)
 }
 
-func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := s.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -572,4 +571,3 @@ func (s *jsiiProxy_SplitTunnelTunnelsOutputReference) ToString() *string {
 
 	return returns
 }
-

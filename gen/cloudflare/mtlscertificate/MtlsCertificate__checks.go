@@ -19,7 +19,7 @@ func (m *jsiiProxy_MtlsCertificate) validateAddMoveTargetParameters(moveTarget *
 	return nil
 }
 
-func (m *jsiiProxy_MtlsCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (m *jsiiProxy_MtlsCertificate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (m *jsiiProxy_MtlsCertificate) validateMoveFromIdParameters(id *string) err
 	return nil
 }
 
-func (m *jsiiProxy_MtlsCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (m *jsiiProxy_MtlsCertificate) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateMtlsCertificate_GenerateConfigForImportParameters(scope constructs.
 	return nil
 }
 
-func validateMtlsCertificate_IsConstructParameters(x interface{}) error {
+func validateMtlsCertificate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateMtlsCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateMtlsCertificate_IsTerraformElementParameters(x interface{}) error {
+func validateMtlsCertificate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateMtlsCertificate_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateMtlsCertificate_IsTerraformResourceParameters(x interface{}) error {
+func validateMtlsCertificate_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_MtlsCertificate) validateSetAccountIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_MtlsCertificate) validateSetCaParameters(val interface{}) error {
+func (j *jsiiProxy_MtlsCertificate) validateSetCaParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -280,7 +280,7 @@ func (j *jsiiProxy_MtlsCertificate) validateSetCertificatesParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_MtlsCertificate) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_MtlsCertificate) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_MtlsCertificate) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_MtlsCertificate) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_MtlsCertificate) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -402,7 +402,7 @@ func (j *jsiiProxy_MtlsCertificate) validateSetPrivateKeyParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_MtlsCertificate) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_MtlsCertificate) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -466,4 +466,3 @@ func validateNewMtlsCertificateParameters(scope constructs.Construct, id *string
 
 	return nil
 }
-

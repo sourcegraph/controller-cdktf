@@ -24,15 +24,15 @@ type AccessMutualTlsCertificate interface {
 	SetCertificate(val *string)
 	CertificateInput() *string
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,15 +63,15 @@ type AccessMutualTlsCertificate interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -81,9 +81,9 @@ type AccessMutualTlsCertificate interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type AccessMutualTlsCertificate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,7 +113,7 @@ type AccessMutualTlsCertificate interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -128,17 +128,17 @@ type AccessMutualTlsCertificate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetZoneId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AccessMutualTlsCertificate
@@ -216,8 +216,8 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) CertificateInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessMutualTlsCertificate) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessMutualTlsCertificate) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessMutualTlsCertificate) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,8 +366,8 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) Provider() cdktf.TerraformProvide
 	return returns
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AccessMutualTlsCertificate) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -376,8 +376,8 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessMutualTlsCertificate) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -396,8 +396,8 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessMutualTlsCertificate) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -436,7 +436,6 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_mutual_tls_certificate cloudflare_access_mutual_tls_certificate} Resource.
 func NewAccessMutualTlsCertificate(scope constructs.Construct, id *string, config *AccessMutualTlsCertificateConfig) AccessMutualTlsCertificate {
 	_init_.Initialize()
@@ -448,7 +447,7 @@ func NewAccessMutualTlsCertificate(scope constructs.Construct, id *string, confi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -461,12 +460,12 @@ func NewAccessMutualTlsCertificate_Override(a AccessMutualTlsCertificate, scope 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetAccountId(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -477,7 +476,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetAssociatedHostnames(val *[]*string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetAssociatedHostnames(val *[]*string) {
 	if err := j.validateSetAssociatedHostnamesParameters(val); err != nil {
 		panic(err)
 	}
@@ -488,7 +487,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetAssociatedHostnames(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetCertificate(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetCertificate(val *string) {
 	if err := j.validateSetCertificateParameters(val); err != nil {
 		panic(err)
 	}
@@ -499,7 +498,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetConnection(val interface{}) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -510,7 +509,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetCount(val interface{}) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -521,7 +520,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -529,7 +528,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -537,7 +536,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetId(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -548,7 +547,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -559,7 +558,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetName(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -570,7 +569,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -578,7 +577,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -589,7 +588,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate)SetProvisioners(val *[]interface{}
 	)
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate)SetZoneId(val *string) {
+func (j *jsiiProxy_AccessMutualTlsCertificate) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -612,7 +611,7 @@ func AccessMutualTlsCertificate_GenerateConfigForImport(scope constructs.Constru
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -636,7 +635,7 @@ func AccessMutualTlsCertificate_GenerateConfigForImport(scope constructs.Constru
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AccessMutualTlsCertificate_IsConstruct(x interface{}) *bool {
+func AccessMutualTlsCertificate_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessMutualTlsCertificate_IsConstructParameters(x); err != nil {
@@ -647,7 +646,7 @@ func AccessMutualTlsCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func AccessMutualTlsCertificate_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AccessMutualTlsCertificate_IsTerraformElement(x interface{}) *bool {
+func AccessMutualTlsCertificate_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessMutualTlsCertificate_IsTerraformElementParameters(x); err != nil {
@@ -666,7 +665,7 @@ func AccessMutualTlsCertificate_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -674,7 +673,7 @@ func AccessMutualTlsCertificate_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AccessMutualTlsCertificate_IsTerraformResource(x interface{}) *bool {
+func AccessMutualTlsCertificate_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessMutualTlsCertificate_IsTerraformResourceParameters(x); err != nil {
@@ -685,7 +684,7 @@ func AccessMutualTlsCertificate_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,31 +709,31 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) AddMoveTarget(moveTarget *string)
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AccessMutualTlsCertificate) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AccessMutualTlsCertificate) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AccessMutualTlsCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessMutualTlsCertificate) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -750,7 +749,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetBooleanAttribute(terraformAttr
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -766,7 +765,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetBooleanMapAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -782,7 +781,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetListAttribute(terraformAttribu
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -798,7 +797,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetNumberAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -814,7 +813,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetNumberListAttribute(terraformA
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -830,7 +829,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetNumberMapAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -846,7 +845,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetStringAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -862,15 +861,15 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) GetStringMapAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccessMutualTlsCertificate) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessMutualTlsCertificate) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -889,7 +888,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) ImportFrom(id *string, provider c
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -902,7 +901,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) InterpolationForAttribute(terrafo
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -916,18 +915,18 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AccessMutualTlsCertificate) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AccessMutualTlsCertificate) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -938,7 +937,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -949,7 +948,7 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) OverrideLogicalId(newLogicalId *s
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1001,8 +1000,8 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) ResetZoneId() {
 	)
 }
 
-func (a *jsiiProxy_AccessMutualTlsCertificate) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessMutualTlsCertificate) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1014,8 +1013,8 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) SynthesizeAttributes() *map[strin
 	return returns
 }
 
-func (a *jsiiProxy_AccessMutualTlsCertificate) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessMutualTlsCertificate) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1027,8 +1026,8 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) SynthesizeHclAttributes() *map[st
 	return returns
 }
 
-func (a *jsiiProxy_AccessMutualTlsCertificate) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessMutualTlsCertificate) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1040,8 +1039,8 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AccessMutualTlsCertificate) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessMutualTlsCertificate) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1066,8 +1065,8 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AccessMutualTlsCertificate) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessMutualTlsCertificate) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1078,4 +1077,3 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) ToTerraform() interface{} {
 
 	return returns
 }
-

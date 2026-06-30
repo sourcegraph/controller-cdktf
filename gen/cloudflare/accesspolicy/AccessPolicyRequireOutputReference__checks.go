@@ -90,7 +90,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validateInterpolationForA
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutAzureParameters(value interface{}) error {
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutAzureParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -132,7 +132,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutExternalEvalua
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGithubParameters(value interface{}) error {
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGithubParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGithubParamete
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGsuiteParameters(value interface{}) error {
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGsuiteParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -194,7 +194,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutGsuiteParamete
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutOktaParameters(value interface{}) error {
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutOktaParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -225,7 +225,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutOktaParameters
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutSamlParameters(value interface{}) error {
+func (a *jsiiProxy_AccessPolicyRequireOutputReference) validatePutSamlParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -264,7 +264,7 @@ func (a *jsiiProxy_AccessPolicyRequireOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetAnyValidServiceTokenParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetAnyValidServiceTokenParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -292,7 +292,7 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetAuthMethodPara
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetCertificateParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetCertificateParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -320,7 +320,7 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetCommonNamePara
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -409,7 +409,7 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetEmailDomainPar
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetEveryoneParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetEveryoneParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -445,7 +445,7 @@ func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetGroupParameter
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyRequireOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -536,4 +536,3 @@ func validateNewAccessPolicyRequireOutputReferenceParameters(terraformResource c
 
 	return nil
 }
-

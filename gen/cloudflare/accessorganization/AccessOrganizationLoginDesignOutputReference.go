@@ -15,9 +15,9 @@ type AccessOrganizationLoginDesignOutputReference interface {
 	BackgroundColorInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -36,8 +36,8 @@ type AccessOrganizationLoginDesignOutputReference interface {
 	HeaderText() *string
 	SetHeaderText(val *string)
 	HeaderTextInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	LogoPath() *string
 	SetLogoPath(val *string)
 	LogoPathInput() *string
@@ -55,7 +55,7 @@ type AccessOrganizationLoginDesignOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type AccessOrganizationLoginDesignOutputReference interface {
 	ResetTextColor()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -116,8 +116,8 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) BackgroundColor
 	return returns
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) HeaderTextInput
 	return returns
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) TextColorInput(
 	return returns
 }
 
-
 func NewAccessOrganizationLoginDesignOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessOrganizationLoginDesignOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewAccessOrganizationLoginDesignOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewAccessOrganizationLoginDesignOutputReference_Override(a AccessOrganizati
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganizationLoginDesignOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]any{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetBackgroundColor(val *string) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetBackgroundColor(val *string) {
 	if err := j.validateSetBackgroundColorParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetBackgroundCol
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetFooterText(val *string) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetFooterText(val *string) {
 	if err := j.validateSetFooterTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetFooterText(va
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetHeaderText(val *string) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetHeaderText(val *string) {
 	if err := j.validateSetHeaderTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetHeaderText(va
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetLogoPath(val *string) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetLogoPath(val *string) {
 	if err := j.validateSetLogoPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetLogoPath(val 
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference)SetTextColor(val *string) {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) SetTextColor(val *string) {
 	if err := j.validateSetTextColorParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) ResetTextColor(
 	)
 }
 
-func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) ToString() *str
 
 	return returns
 }
-

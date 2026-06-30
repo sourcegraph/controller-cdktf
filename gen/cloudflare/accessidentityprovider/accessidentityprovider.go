@@ -18,17 +18,17 @@ type AccessIdentityProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() AccessIdentityProviderConfigAList
-	ConfigInput() interface{}
+	ConfigInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,17 +58,17 @@ type AccessIdentityProvider interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	ScimConfig() AccessIdentityProviderScimConfigList
-	ScimConfigInput() interface{}
+	ScimConfigInput() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
@@ -81,9 +81,9 @@ type AccessIdentityProvider interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -101,7 +101,7 @@ type AccessIdentityProvider interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -113,15 +113,15 @@ type AccessIdentityProvider interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutConfig(value interface{})
-	PutScimConfig(value interface{})
+	PutConfig(value any)
+	PutScimConfig(value any)
 	ResetAccountId()
 	ResetConfig()
 	ResetId()
@@ -130,17 +130,17 @@ type AccessIdentityProvider interface {
 	ResetOverrideLogicalId()
 	ResetScimConfig()
 	ResetZoneId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AccessIdentityProvider
@@ -188,8 +188,8 @@ func (j *jsiiProxy_AccessIdentityProvider) Config() AccessIdentityProviderConfig
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProvider) ConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessIdentityProvider) ConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"configInput",
@@ -198,8 +198,8 @@ func (j *jsiiProxy_AccessIdentityProvider) ConfigInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProvider) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessIdentityProvider) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -208,8 +208,8 @@ func (j *jsiiProxy_AccessIdentityProvider) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessIdentityProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -218,8 +218,8 @@ func (j *jsiiProxy_AccessIdentityProvider) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProvider) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessIdentityProvider) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,8 +338,8 @@ func (j *jsiiProxy_AccessIdentityProvider) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProvider) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AccessIdentityProvider) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -348,8 +348,8 @@ func (j *jsiiProxy_AccessIdentityProvider) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessIdentityProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -368,8 +368,8 @@ func (j *jsiiProxy_AccessIdentityProvider) ScimConfig() AccessIdentityProviderSc
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProvider) ScimConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessIdentityProvider) ScimConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"scimConfigInput",
@@ -388,8 +388,8 @@ func (j *jsiiProxy_AccessIdentityProvider) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProvider) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AccessIdentityProvider) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -448,7 +448,6 @@ func (j *jsiiProxy_AccessIdentityProvider) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider cloudflare_access_identity_provider} Resource.
 func NewAccessIdentityProvider(scope constructs.Construct, id *string, config *AccessIdentityProviderConfig) AccessIdentityProvider {
 	_init_.Initialize()
@@ -460,7 +459,7 @@ func NewAccessIdentityProvider(scope constructs.Construct, id *string, config *A
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -473,12 +472,12 @@ func NewAccessIdentityProvider_Override(a AccessIdentityProvider, scope construc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetAccountId(val *string) {
+func (j *jsiiProxy_AccessIdentityProvider) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetConnection(val interface{}) {
+func (j *jsiiProxy_AccessIdentityProvider) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetCount(val interface{}) {
+func (j *jsiiProxy_AccessIdentityProvider) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AccessIdentityProvider) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -519,7 +518,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AccessIdentityProvider) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -527,7 +526,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetId(val *string) {
+func (j *jsiiProxy_AccessIdentityProvider) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -538,7 +537,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AccessIdentityProvider) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,7 +548,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetName(val *string) {
+func (j *jsiiProxy_AccessIdentityProvider) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -560,7 +559,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AccessIdentityProvider) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -568,7 +567,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AccessIdentityProvider) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -579,7 +578,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetType(val *string) {
+func (j *jsiiProxy_AccessIdentityProvider) SetType(val *string) {
 	if err := j.validateSetTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -590,7 +589,7 @@ func (j *jsiiProxy_AccessIdentityProvider)SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProvider)SetZoneId(val *string) {
+func (j *jsiiProxy_AccessIdentityProvider) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func AccessIdentityProvider_GenerateConfigForImport(scope constructs.Construct, 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -637,7 +636,7 @@ func AccessIdentityProvider_GenerateConfigForImport(scope constructs.Construct, 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AccessIdentityProvider_IsConstruct(x interface{}) *bool {
+func AccessIdentityProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessIdentityProvider_IsConstructParameters(x); err != nil {
@@ -648,7 +647,7 @@ func AccessIdentityProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -656,7 +655,7 @@ func AccessIdentityProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AccessIdentityProvider_IsTerraformElement(x interface{}) *bool {
+func AccessIdentityProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessIdentityProvider_IsTerraformElementParameters(x); err != nil {
@@ -667,7 +666,7 @@ func AccessIdentityProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -675,7 +674,7 @@ func AccessIdentityProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AccessIdentityProvider_IsTerraformResource(x interface{}) *bool {
+func AccessIdentityProvider_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAccessIdentityProvider_IsTerraformResourceParameters(x); err != nil {
@@ -686,7 +685,7 @@ func AccessIdentityProvider_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -711,31 +710,31 @@ func (a *jsiiProxy_AccessIdentityProvider) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AccessIdentityProvider) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AccessIdentityProvider) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -751,7 +750,7 @@ func (a *jsiiProxy_AccessIdentityProvider) GetBooleanAttribute(terraformAttribut
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -767,7 +766,7 @@ func (a *jsiiProxy_AccessIdentityProvider) GetBooleanMapAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -783,7 +782,7 @@ func (a *jsiiProxy_AccessIdentityProvider) GetListAttribute(terraformAttribute *
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -799,7 +798,7 @@ func (a *jsiiProxy_AccessIdentityProvider) GetNumberAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -815,7 +814,7 @@ func (a *jsiiProxy_AccessIdentityProvider) GetNumberListAttribute(terraformAttri
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -831,7 +830,7 @@ func (a *jsiiProxy_AccessIdentityProvider) GetNumberMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -847,7 +846,7 @@ func (a *jsiiProxy_AccessIdentityProvider) GetStringAttribute(terraformAttribute
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -863,15 +862,15 @@ func (a *jsiiProxy_AccessIdentityProvider) GetStringMapAttribute(terraformAttrib
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessIdentityProvider) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -890,7 +889,7 @@ func (a *jsiiProxy_AccessIdentityProvider) ImportFrom(id *string, provider cdktf
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -903,7 +902,7 @@ func (a *jsiiProxy_AccessIdentityProvider) InterpolationForAttribute(terraformAt
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,18 +916,18 @@ func (a *jsiiProxy_AccessIdentityProvider) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AccessIdentityProvider) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -939,7 +938,7 @@ func (a *jsiiProxy_AccessIdentityProvider) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -950,29 +949,29 @@ func (a *jsiiProxy_AccessIdentityProvider) OverrideLogicalId(newLogicalId *strin
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) PutConfig(value interface{}) {
+func (a *jsiiProxy_AccessIdentityProvider) PutConfig(value any) {
 	if err := a.validatePutConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) PutScimConfig(value interface{}) {
+func (a *jsiiProxy_AccessIdentityProvider) PutScimConfig(value any) {
 	if err := a.validatePutScimConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putScimConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1024,8 +1023,8 @@ func (a *jsiiProxy_AccessIdentityProvider) ResetZoneId() {
 	)
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessIdentityProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1037,8 +1036,8 @@ func (a *jsiiProxy_AccessIdentityProvider) SynthesizeAttributes() *map[string]in
 	return returns
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AccessIdentityProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1050,8 +1049,8 @@ func (a *jsiiProxy_AccessIdentityProvider) SynthesizeHclAttributes() *map[string
 	return returns
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessIdentityProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1063,8 +1062,8 @@ func (a *jsiiProxy_AccessIdentityProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessIdentityProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1089,8 +1088,8 @@ func (a *jsiiProxy_AccessIdentityProvider) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AccessIdentityProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AccessIdentityProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1101,4 +1100,3 @@ func (a *jsiiProxy_AccessIdentityProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

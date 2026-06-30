@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicy",
-		reflect.TypeOf((*AccessPolicy)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicy](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicy{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -102,11 +102,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroup",
-		reflect.TypeOf((*AccessPolicyApprovalGroup)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyApprovalGroup](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroupList",
-		reflect.TypeOf((*AccessPolicyApprovalGroupList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyApprovalGroupList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyApprovalGroupList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -128,7 +128,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroupOutputReference",
-		reflect.TypeOf((*AccessPolicyApprovalGroupOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyApprovalGroupOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "approvalsNeeded", GoGetter: "ApprovalsNeeded"},
 			_jsii_.MemberProperty{JsiiProperty: "approvalsNeededInput", GoGetter: "ApprovalsNeededInput"},
@@ -160,7 +160,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyApprovalGroupOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -168,19 +168,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyConfig",
-		reflect.TypeOf((*AccessPolicyConfig)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExclude",
-		reflect.TypeOf((*AccessPolicyExclude)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExclude](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzure",
-		reflect.TypeOf((*AccessPolicyExcludeAzure)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeAzure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzureList",
-		reflect.TypeOf((*AccessPolicyExcludeAzureList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeAzureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeAzureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -202,7 +202,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzureOutputReference",
-		reflect.TypeOf((*AccessPolicyExcludeAzureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeAzureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -232,7 +232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeAzureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -240,11 +240,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeExternalEvaluation",
-		reflect.TypeOf((*AccessPolicyExcludeExternalEvaluation)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeExternalEvaluation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeExternalEvaluationOutputReference",
-		reflect.TypeOf((*AccessPolicyExcludeExternalEvaluationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeExternalEvaluationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -274,7 +274,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeExternalEvaluationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -282,11 +282,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGithub",
-		reflect.TypeOf((*AccessPolicyExcludeGithub)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeGithub](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGithubList",
-		reflect.TypeOf((*AccessPolicyExcludeGithubList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeGithubList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -300,7 +300,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeGithubList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -308,7 +308,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGithubOutputReference",
-		reflect.TypeOf((*AccessPolicyExcludeGithubOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeGithubOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -341,7 +341,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeGithubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -349,11 +349,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGsuite",
-		reflect.TypeOf((*AccessPolicyExcludeGsuite)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeGsuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGsuiteList",
-		reflect.TypeOf((*AccessPolicyExcludeGsuiteList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeGsuiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -367,7 +367,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeGsuiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -375,7 +375,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGsuiteOutputReference",
-		reflect.TypeOf((*AccessPolicyExcludeGsuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeGsuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -405,7 +405,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeGsuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -413,7 +413,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeList",
-		reflect.TypeOf((*AccessPolicyExcludeList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -427,7 +427,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -435,11 +435,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeOkta",
-		reflect.TypeOf((*AccessPolicyExcludeOkta)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeOkta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeOktaList",
-		reflect.TypeOf((*AccessPolicyExcludeOktaList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeOktaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -453,7 +453,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeOktaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -461,7 +461,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeOktaOutputReference",
-		reflect.TypeOf((*AccessPolicyExcludeOktaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeOktaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -491,7 +491,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeOktaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -499,7 +499,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeOutputReference",
-		reflect.TypeOf((*AccessPolicyExcludeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceTokenInput", GoGetter: "AnyValidServiceTokenInput"},
@@ -589,7 +589,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -597,11 +597,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeSaml",
-		reflect.TypeOf((*AccessPolicyExcludeSaml)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeSamlList",
-		reflect.TypeOf((*AccessPolicyExcludeSamlList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeSamlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -615,7 +615,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeSamlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -623,7 +623,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeSamlOutputReference",
-		reflect.TypeOf((*AccessPolicyExcludeSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyExcludeSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -656,7 +656,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyExcludeSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -664,15 +664,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyInclude",
-		reflect.TypeOf((*AccessPolicyInclude)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyInclude](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzure",
-		reflect.TypeOf((*AccessPolicyIncludeAzure)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeAzure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzureList",
-		reflect.TypeOf((*AccessPolicyIncludeAzureList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeAzureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -686,7 +686,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeAzureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -694,7 +694,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzureOutputReference",
-		reflect.TypeOf((*AccessPolicyIncludeAzureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeAzureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -724,7 +724,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeAzureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -732,11 +732,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeExternalEvaluation",
-		reflect.TypeOf((*AccessPolicyIncludeExternalEvaluation)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeExternalEvaluation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeExternalEvaluationOutputReference",
-		reflect.TypeOf((*AccessPolicyIncludeExternalEvaluationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeExternalEvaluationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -766,7 +766,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeExternalEvaluationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -774,11 +774,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGithub",
-		reflect.TypeOf((*AccessPolicyIncludeGithub)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeGithub](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGithubList",
-		reflect.TypeOf((*AccessPolicyIncludeGithubList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeGithubList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -792,7 +792,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeGithubList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -800,7 +800,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGithubOutputReference",
-		reflect.TypeOf((*AccessPolicyIncludeGithubOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeGithubOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -833,7 +833,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeGithubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -841,11 +841,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGsuite",
-		reflect.TypeOf((*AccessPolicyIncludeGsuite)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeGsuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGsuiteList",
-		reflect.TypeOf((*AccessPolicyIncludeGsuiteList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeGsuiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -859,7 +859,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeGsuiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -867,7 +867,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeGsuiteOutputReference",
-		reflect.TypeOf((*AccessPolicyIncludeGsuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeGsuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -897,7 +897,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeGsuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -905,7 +905,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeList",
-		reflect.TypeOf((*AccessPolicyIncludeList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -919,7 +919,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -927,11 +927,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOkta",
-		reflect.TypeOf((*AccessPolicyIncludeOkta)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeOkta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOktaList",
-		reflect.TypeOf((*AccessPolicyIncludeOktaList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeOktaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -945,7 +945,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeOktaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -953,7 +953,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOktaOutputReference",
-		reflect.TypeOf((*AccessPolicyIncludeOktaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeOktaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -983,7 +983,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeOktaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -991,7 +991,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeOutputReference",
-		reflect.TypeOf((*AccessPolicyIncludeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceTokenInput", GoGetter: "AnyValidServiceTokenInput"},
@@ -1081,7 +1081,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1089,11 +1089,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSaml",
-		reflect.TypeOf((*AccessPolicyIncludeSaml)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSamlList",
-		reflect.TypeOf((*AccessPolicyIncludeSamlList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeSamlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1107,7 +1107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeSamlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1115,7 +1115,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSamlOutputReference",
-		reflect.TypeOf((*AccessPolicyIncludeSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyIncludeSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -1148,7 +1148,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyIncludeSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1156,15 +1156,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequire",
-		reflect.TypeOf((*AccessPolicyRequire)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequire](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAzure",
-		reflect.TypeOf((*AccessPolicyRequireAzure)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireAzure](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAzureList",
-		reflect.TypeOf((*AccessPolicyRequireAzureList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireAzureList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1178,7 +1178,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireAzureList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1186,7 +1186,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireAzureOutputReference",
-		reflect.TypeOf((*AccessPolicyRequireAzureOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireAzureOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1216,7 +1216,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireAzureOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1224,11 +1224,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireExternalEvaluation",
-		reflect.TypeOf((*AccessPolicyRequireExternalEvaluation)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireExternalEvaluation](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireExternalEvaluationOutputReference",
-		reflect.TypeOf((*AccessPolicyRequireExternalEvaluationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireExternalEvaluationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1258,7 +1258,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireExternalEvaluationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1266,11 +1266,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGithub",
-		reflect.TypeOf((*AccessPolicyRequireGithub)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireGithub](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGithubList",
-		reflect.TypeOf((*AccessPolicyRequireGithubList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireGithubList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1284,7 +1284,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireGithubList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1292,7 +1292,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGithubOutputReference",
-		reflect.TypeOf((*AccessPolicyRequireGithubOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireGithubOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1325,7 +1325,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireGithubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1333,11 +1333,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuite",
-		reflect.TypeOf((*AccessPolicyRequireGsuite)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireGsuite](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuiteList",
-		reflect.TypeOf((*AccessPolicyRequireGsuiteList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireGsuiteList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1351,7 +1351,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireGsuiteList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1359,7 +1359,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuiteOutputReference",
-		reflect.TypeOf((*AccessPolicyRequireGsuiteOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireGsuiteOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1389,7 +1389,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireGsuiteOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1397,7 +1397,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireList",
-		reflect.TypeOf((*AccessPolicyRequireList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1411,7 +1411,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1419,11 +1419,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOkta",
-		reflect.TypeOf((*AccessPolicyRequireOkta)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireOkta](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOktaList",
-		reflect.TypeOf((*AccessPolicyRequireOktaList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireOktaList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1437,7 +1437,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireOktaList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1445,7 +1445,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOktaOutputReference",
-		reflect.TypeOf((*AccessPolicyRequireOktaOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireOktaOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1475,7 +1475,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireOktaOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1483,7 +1483,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireOutputReference",
-		reflect.TypeOf((*AccessPolicyRequireOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceTokenInput", GoGetter: "AnyValidServiceTokenInput"},
@@ -1573,7 +1573,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1581,11 +1581,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireSaml",
-		reflect.TypeOf((*AccessPolicyRequireSaml)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireSaml](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireSamlList",
-		reflect.TypeOf((*AccessPolicyRequireSamlList)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireSamlList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1599,7 +1599,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireSamlList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1607,7 +1607,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireSamlOutputReference",
-		reflect.TypeOf((*AccessPolicyRequireSamlOutputReference)(nil)).Elem(),
+		reflect.TypeFor[AccessPolicyRequireSamlOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeNameInput", GoGetter: "AttributeNameInput"},
@@ -1640,7 +1640,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_AccessPolicyRequireSamlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

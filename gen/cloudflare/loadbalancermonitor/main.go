@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
-		reflect.TypeOf((*LoadBalancerMonitor)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerMonitor](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -103,7 +103,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerMonitor{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -111,15 +111,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorConfig",
-		reflect.TypeOf((*LoadBalancerMonitorConfig)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerMonitorConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeader",
-		reflect.TypeOf((*LoadBalancerMonitorHeader)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerMonitorHeader](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderList",
-		reflect.TypeOf((*LoadBalancerMonitorHeaderList)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerMonitorHeaderList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerMonitorHeaderList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -141,7 +141,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderOutputReference",
-		reflect.TypeOf((*LoadBalancerMonitorHeaderOutputReference)(nil)).Elem(),
+		reflect.TypeFor[LoadBalancerMonitorHeaderOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -169,7 +169,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "values", GoGetter: "Values"},
 			_jsii_.MemberProperty{JsiiProperty: "valuesInput", GoGetter: "ValuesInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_LoadBalancerMonitorHeaderOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

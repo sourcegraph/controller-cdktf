@@ -106,7 +106,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) validateSetAddressParamete
 	return nil
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -187,7 +187,7 @@ func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) validateSetHostParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SplitTunnelTunnelsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewSplitTunnelTunnelsOutputReferenceParameters(terraformResource cd
 
 	return nil
 }
-

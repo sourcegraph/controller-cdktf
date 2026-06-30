@@ -178,7 +178,7 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetClie
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -267,7 +267,7 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetIdpP
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -315,7 +315,7 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetOnel
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPkceEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetPkceEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -351,7 +351,7 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetScop
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetSignRequestParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetSignRequestParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -379,7 +379,7 @@ func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetSsoT
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetSupportGroupsParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderConfigAOutputReference) validateSetSupportGroupsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -442,4 +442,3 @@ func validateNewAccessIdentityProviderConfigAOutputReferenceParameters(terraform
 
 	return nil
 }
-

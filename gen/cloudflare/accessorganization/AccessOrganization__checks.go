@@ -19,7 +19,7 @@ func (a *jsiiProxy_AccessOrganization) validateAddMoveTargetParameters(moveTarge
 	return nil
 }
 
-func (a *jsiiProxy_AccessOrganization) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AccessOrganization) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AccessOrganization) validateMoveFromIdParameters(id *string) 
 	return nil
 }
 
-func (a *jsiiProxy_AccessOrganization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AccessOrganization) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AccessOrganization) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (a *jsiiProxy_AccessOrganization) validatePutLoginDesignParameters(value interface{}) error {
+func (a *jsiiProxy_AccessOrganization) validatePutLoginDesignParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateAccessOrganization_GenerateConfigForImportParameters(scope construc
 	return nil
 }
 
-func validateAccessOrganization_IsConstructParameters(x interface{}) error {
+func validateAccessOrganization_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateAccessOrganization_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAccessOrganization_IsTerraformElementParameters(x interface{}) error {
+func validateAccessOrganization_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateAccessOrganization_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
-func validateAccessOrganization_IsTerraformResourceParameters(x interface{}) error {
+func validateAccessOrganization_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_AccessOrganization) validateSetAuthDomainParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_AccessOrganization) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessOrganization) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -324,7 +324,7 @@ func (j *jsiiProxy_AccessOrganization) validateSetConnectionParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_AccessOrganization) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AccessOrganization) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -389,7 +389,7 @@ func (j *jsiiProxy_AccessOrganization) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_AccessOrganization) validateSetIsUiReadOnlyParameters(val interface{}) error {
+func (j *jsiiProxy_AccessOrganization) validateSetIsUiReadOnlyParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -425,7 +425,7 @@ func (j *jsiiProxy_AccessOrganization) validateSetNameParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_AccessOrganization) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AccessOrganization) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -513,4 +513,3 @@ func validateNewAccessOrganizationParameters(scope constructs.Construct, id *str
 
 	return nil
 }
-

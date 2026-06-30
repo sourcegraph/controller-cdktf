@@ -13,19 +13,19 @@ import (
 type ApiShield interface {
 	cdktf.TerraformResource
 	AuthIdCharacteristics() ApiShieldAuthIdCharacteristicsList
-	AuthIdCharacteristicsInput() interface{}
+	AuthIdCharacteristicsInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -52,15 +52,15 @@ type ApiShield interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneId() *string
@@ -70,9 +70,9 @@ type ApiShield interface {
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -90,7 +90,7 @@ type ApiShield interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -102,30 +102,30 @@ type ApiShield interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAuthIdCharacteristics(value interface{})
+	PutAuthIdCharacteristics(value any)
 	ResetAuthIdCharacteristics()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for ApiShield
@@ -143,8 +143,8 @@ func (j *jsiiProxy_ApiShield) AuthIdCharacteristics() ApiShieldAuthIdCharacteris
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) AuthIdCharacteristicsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShield) AuthIdCharacteristicsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"authIdCharacteristicsInput",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ApiShield) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShield) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -173,8 +173,8 @@ func (j *jsiiProxy_ApiShield) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiShield) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ApiShield) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShield) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -283,8 +283,8 @@ func (j *jsiiProxy_ApiShield) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_ApiShield) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -293,8 +293,8 @@ func (j *jsiiProxy_ApiShield) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ApiShield) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -313,8 +313,8 @@ func (j *jsiiProxy_ApiShield) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_ApiShield) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_ApiShield) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -353,7 +353,6 @@ func (j *jsiiProxy_ApiShield) ZoneIdInput() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/api_shield cloudflare_api_shield} Resource.
 func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfig) ApiShield {
 	_init_.Initialize()
@@ -365,7 +364,7 @@ func NewApiShield(scope constructs.Construct, id *string, config *ApiShieldConfi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiShield.ApiShield",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -378,12 +377,12 @@ func NewApiShield_Override(a ApiShield, scope constructs.Construct, id *string, 
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.apiShield.ApiShield",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetConnection(val interface{}) {
+func (j *jsiiProxy_ApiShield) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -394,7 +393,7 @@ func (j *jsiiProxy_ApiShield)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetCount(val interface{}) {
+func (j *jsiiProxy_ApiShield) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -405,7 +404,7 @@ func (j *jsiiProxy_ApiShield)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApiShield) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -413,7 +412,7 @@ func (j *jsiiProxy_ApiShield)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApiShield) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +420,7 @@ func (j *jsiiProxy_ApiShield)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetId(val *string) {
+func (j *jsiiProxy_ApiShield) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_ApiShield)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApiShield) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_ApiShield)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApiShield) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -451,7 +450,7 @@ func (j *jsiiProxy_ApiShield)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApiShield) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_ApiShield)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiShield)SetZoneId(val *string) {
+func (j *jsiiProxy_ApiShield) SetZoneId(val *string) {
 	if err := j.validateSetZoneIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,7 +484,7 @@ func ApiShield_GenerateConfigForImport(scope constructs.Construct, importToId *s
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -509,7 +508,7 @@ func ApiShield_GenerateConfigForImport(scope constructs.Construct, importToId *s
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func ApiShield_IsConstruct(x interface{}) *bool {
+func ApiShield_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiShield_IsConstructParameters(x); err != nil {
@@ -520,7 +519,7 @@ func ApiShield_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -528,7 +527,7 @@ func ApiShield_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiShield_IsTerraformElement(x interface{}) *bool {
+func ApiShield_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiShield_IsTerraformElementParameters(x); err != nil {
@@ -539,7 +538,7 @@ func ApiShield_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func ApiShield_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func ApiShield_IsTerraformResource(x interface{}) *bool {
+func ApiShield_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateApiShield_IsTerraformResourceParameters(x); err != nil {
@@ -558,7 +557,7 @@ func ApiShield_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.apiShield.ApiShield",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -583,31 +582,31 @@ func (a *jsiiProxy_ApiShield) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_ApiShield) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_ApiShield) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_ApiShield) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_ApiShield) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -623,7 +622,7 @@ func (a *jsiiProxy_ApiShield) GetBooleanAttribute(terraformAttribute *string) cd
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -639,7 +638,7 @@ func (a *jsiiProxy_ApiShield) GetBooleanMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -655,7 +654,7 @@ func (a *jsiiProxy_ApiShield) GetListAttribute(terraformAttribute *string) *[]*s
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -671,7 +670,7 @@ func (a *jsiiProxy_ApiShield) GetNumberAttribute(terraformAttribute *string) *fl
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -687,7 +686,7 @@ func (a *jsiiProxy_ApiShield) GetNumberListAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -703,7 +702,7 @@ func (a *jsiiProxy_ApiShield) GetNumberMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -719,7 +718,7 @@ func (a *jsiiProxy_ApiShield) GetStringAttribute(terraformAttribute *string) *st
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -735,15 +734,15 @@ func (a *jsiiProxy_ApiShield) GetStringMapAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiShield) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -762,7 +761,7 @@ func (a *jsiiProxy_ApiShield) ImportFrom(id *string, provider cdktf.TerraformPro
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -775,7 +774,7 @@ func (a *jsiiProxy_ApiShield) InterpolationForAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -789,18 +788,18 @@ func (a *jsiiProxy_ApiShield) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_ApiShield) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_ApiShield) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -811,7 +810,7 @@ func (a *jsiiProxy_ApiShield) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -822,18 +821,18 @@ func (a *jsiiProxy_ApiShield) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_ApiShield) PutAuthIdCharacteristics(value interface{}) {
+func (a *jsiiProxy_ApiShield) PutAuthIdCharacteristics(value any) {
 	if err := a.validatePutAuthIdCharacteristicsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAuthIdCharacteristics",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -861,8 +860,8 @@ func (a *jsiiProxy_ApiShield) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_ApiShield) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiShield) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -874,8 +873,8 @@ func (a *jsiiProxy_ApiShield) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_ApiShield) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -887,8 +886,8 @@ func (a *jsiiProxy_ApiShield) SynthesizeHclAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiShield) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -900,8 +899,8 @@ func (a *jsiiProxy_ApiShield) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiShield) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -926,8 +925,8 @@ func (a *jsiiProxy_ApiShield) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_ApiShield) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_ApiShield) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -938,4 +937,3 @@ func (a *jsiiProxy_ApiShield) ToTerraform() interface{} {
 
 	return returns
 }
-

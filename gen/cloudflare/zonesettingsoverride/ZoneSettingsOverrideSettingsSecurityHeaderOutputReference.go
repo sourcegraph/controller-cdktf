@@ -12,9 +12,9 @@ type ZoneSettingsOverrideSettingsSecurityHeaderOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -25,25 +25,25 @@ type ZoneSettingsOverrideSettingsSecurityHeaderOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	// Experimental.
 	Fqn() *string
-	IncludeSubdomains() interface{}
-	SetIncludeSubdomains(val interface{})
-	IncludeSubdomainsInput() interface{}
+	IncludeSubdomains() any
+	SetIncludeSubdomains(val any)
+	IncludeSubdomainsInput() any
 	InternalValue() *ZoneSettingsOverrideSettingsSecurityHeader
 	SetInternalValue(val *ZoneSettingsOverrideSettingsSecurityHeader)
 	MaxAge() *float64
 	SetMaxAge(val *float64)
 	MaxAgeInput() *float64
-	Nosniff() interface{}
-	SetNosniff(val interface{})
-	NosniffInput() interface{}
-	Preload() interface{}
-	SetPreload(val interface{})
-	PreloadInput() interface{}
+	Nosniff() any
+	SetNosniff(val any)
+	NosniffInput() any
+	Preload() any
+	SetPreload(val any)
+	PreloadInput() any
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,7 +55,7 @@ type ZoneSettingsOverrideSettingsSecurityHeaderOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -83,7 +83,7 @@ type ZoneSettingsOverrideSettingsSecurityHeaderOutputReference interface {
 	ResetPreload()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,8 +96,8 @@ type jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference struct 
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -126,8 +126,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Cr
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -136,8 +136,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -156,8 +156,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Fq
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) IncludeSubdomains() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) IncludeSubdomains() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSubdomains",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) In
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) IncludeSubdomainsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) IncludeSubdomainsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"includeSubdomainsInput",
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Ma
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Nosniff() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Nosniff() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nosniff",
@@ -216,8 +216,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) No
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) NosniffInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) NosniffInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"nosniffInput",
@@ -226,8 +226,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) No
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Preload() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Preload() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preload",
@@ -236,8 +236,8 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Pr
 	return returns
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) PreloadInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) PreloadInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"preloadInput",
@@ -266,7 +266,6 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Te
 	return returns
 }
 
-
 func NewZoneSettingsOverrideSettingsSecurityHeaderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ZoneSettingsOverrideSettingsSecurityHeaderOutputReference {
 	_init_.Initialize()
 
@@ -277,7 +276,7 @@ func NewZoneSettingsOverrideSettingsSecurityHeaderOutputReference(terraformResou
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeaderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -289,12 +288,12 @@ func NewZoneSettingsOverrideSettingsSecurityHeaderOutputReference_Override(z Zon
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeaderOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		z,
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,7 +304,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,7 +315,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,7 +326,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetIncludeSubdomains(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetIncludeSubdomains(val any) {
 	if err := j.validateSetIncludeSubdomainsParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,7 +337,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetInternalValue(val *ZoneSettingsOverrideSettingsSecurityHeader) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetInternalValue(val *ZoneSettingsOverrideSettingsSecurityHeader) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -349,7 +348,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetMaxAge(val *float64) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetMaxAge(val *float64) {
 	if err := j.validateSetMaxAgeParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,7 +359,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetNosniff(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetNosniff(val any) {
 	if err := j.validateSetNosniffParameters(val); err != nil {
 		panic(err)
 	}
@@ -371,7 +370,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetPreload(val interface{}) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetPreload(val any) {
 	if err := j.validateSetPreloadParameters(val); err != nil {
 		panic(err)
 	}
@@ -382,7 +381,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -393,7 +392,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,16 +416,16 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Co
 	return returns
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := z.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		z,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -442,7 +441,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -458,7 +457,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -474,7 +473,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -490,7 +489,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -506,7 +505,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -522,7 +521,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -538,7 +537,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -554,7 +553,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Ge
 	_jsii_.Invoke(
 		z,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -583,7 +582,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) In
 	_jsii_.Invoke(
 		z,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -630,16 +629,16 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Re
 	)
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := z.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		z,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -658,4 +657,3 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsSecurityHeaderOutputReference) To
 
 	return returns
 }
-

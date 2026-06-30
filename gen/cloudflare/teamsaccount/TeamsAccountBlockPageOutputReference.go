@@ -15,9 +15,9 @@ type TeamsAccountBlockPageOutputReference interface {
 	BackgroundColorInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -28,9 +28,9 @@ type TeamsAccountBlockPageOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	FooterText() *string
 	SetFooterText(val *string)
 	FooterTextInput() *string
@@ -64,7 +64,7 @@ type TeamsAccountBlockPageOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -95,7 +95,7 @@ type TeamsAccountBlockPageOutputReference interface {
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) BackgroundColorInput() 
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) CreationStack() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -338,7 +338,6 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewTeamsAccountBlockPageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsAccountBlockPageOutputReference {
 	_init_.Initialize()
 
@@ -349,7 +348,7 @@ func NewTeamsAccountBlockPageOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -361,12 +360,12 @@ func NewTeamsAccountBlockPageOutputReference_Override(t TeamsAccountBlockPageOut
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetBackgroundColor(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetBackgroundColor(val *string) {
 	if err := j.validateSetBackgroundColorParameters(val); err != nil {
 		panic(err)
 	}
@@ -377,7 +376,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetBackgroundColor(val *
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,7 +387,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,7 +398,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetEnabled(val interface{}) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,7 +409,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetEnabled(val interface
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetFooterText(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetFooterText(val *string) {
 	if err := j.validateSetFooterTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,7 +420,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetFooterText(val *strin
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetHeaderText(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetHeaderText(val *string) {
 	if err := j.validateSetHeaderTextParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,7 +431,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetHeaderText(val *strin
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetInternalValue(val *TeamsAccountBlockPage) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetInternalValue(val *TeamsAccountBlockPage) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +442,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetInternalValue(val *Te
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetLogoPath(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetLogoPath(val *string) {
 	if err := j.validateSetLogoPathParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +453,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetLogoPath(val *string)
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetMailtoAddress(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetMailtoAddress(val *string) {
 	if err := j.validateSetMailtoAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,7 +464,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetMailtoAddress(val *st
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetMailtoSubject(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetMailtoSubject(val *string) {
 	if err := j.validateSetMailtoSubjectParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,7 +475,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetMailtoSubject(val *st
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetName(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -487,7 +486,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +497,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,16 +521,16 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -547,7 +546,7 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -563,7 +562,7 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -579,7 +578,7 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -595,7 +594,7 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -611,7 +610,7 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -627,7 +626,7 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -643,7 +642,7 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -659,7 +658,7 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -688,7 +687,7 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -759,16 +758,16 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) ResetName() {
 	)
 }
 
-func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -787,4 +786,3 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) ToString() *string {
 
 	return returns
 }
-

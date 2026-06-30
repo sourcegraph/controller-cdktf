@@ -98,7 +98,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewRulesetRulesExposedCredentialCheckOutputReferenceParameters(terr
 
 	return nil
 }
-

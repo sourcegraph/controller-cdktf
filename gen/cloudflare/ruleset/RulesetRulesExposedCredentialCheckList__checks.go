@@ -34,7 +34,7 @@ func (r *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesExposedCredentialCheckList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRulesetRulesExposedCredentialCheckListParameters(terraformResour
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessPolicyRequireList) validateResolveParameters(_context c
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyRequireList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyRequireList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessPolicyRequireListParameters(terraformResource cdktf.IInter
 
 	return nil
 }
-

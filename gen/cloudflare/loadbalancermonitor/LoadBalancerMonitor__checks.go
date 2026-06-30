@@ -19,7 +19,7 @@ func (l *jsiiProxy_LoadBalancerMonitor) validateAddMoveTargetParameters(moveTarg
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LoadBalancerMonitor) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LoadBalancerMonitor) validateMoveFromIdParameters(id *string)
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LoadBalancerMonitor) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (l *jsiiProxy_LoadBalancerMonitor) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerMonitor) validatePutHeaderParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerMonitor) validatePutHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func validateLoadBalancerMonitor_GenerateConfigForImportParameters(scope constru
 	return nil
 }
 
-func validateLoadBalancerMonitor_IsConstructParameters(x interface{}) error {
+func validateLoadBalancerMonitor_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -259,7 +259,7 @@ func validateLoadBalancerMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateLoadBalancerMonitor_IsTerraformElementParameters(x interface{}) error {
+func validateLoadBalancerMonitor_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -267,7 +267,7 @@ func validateLoadBalancerMonitor_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
-func validateLoadBalancerMonitor_IsTerraformResourceParameters(x interface{}) error {
+func validateLoadBalancerMonitor_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -283,7 +283,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) validateSetAccountIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) validateSetAllowInsecureParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetAllowInsecureParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -303,7 +303,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) validateSetAllowInsecureParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -336,7 +336,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) validateSetConnectionParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -417,7 +417,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) validateSetExpectedCodesParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) validateSetFollowRedirectsParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetFollowRedirectsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -493,7 +493,7 @@ func (j *jsiiProxy_LoadBalancerMonitor) validateSetProbeZoneParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitor) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LoadBalancerMonitor) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -581,4 +581,3 @@ func validateNewLoadBalancerMonitorParameters(scope constructs.Construct, id *st
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (h *jsiiProxy_HealthcheckHeaderOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckHeaderOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckHeaderOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_HealthcheckHeaderOutputReference) validateSetHeaderParameters
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckHeaderOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckHeaderOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewHealthcheckHeaderOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

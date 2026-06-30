@@ -17,8 +17,8 @@ type RulesetRulesActionParametersOverridesRulesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type RulesetRulesActionParametersOverridesRulesList interface {
 	Get(index *float64) RulesetRulesActionParametersOverridesRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) WrapsSet() *b
 	return returns
 }
 
-
 func NewRulesetRulesActionParametersOverridesRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRulesActionParametersOverridesRulesList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewRulesetRulesActionParametersOverridesRulesList(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewRulesetRulesActionParametersOverridesRulesList_Override(r RulesetRulesAc
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRulesList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) AllWithMapKey
 	_jsii_.Invoke(
 		r,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) Get(index *fl
 	_jsii_.Invoke(
 		r,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) Resolve(_context cdktf.IResolveContext) any {
 	if err := r.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesRulesList) ToString() *s
 
 	return returns
 }
-

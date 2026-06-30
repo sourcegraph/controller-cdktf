@@ -19,7 +19,7 @@ func (e *jsiiProxy_EmailRoutingRule) validateAddMoveTargetParameters(moveTarget 
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRule) validateAddOverrideParameters(path *string, value interface{}) error {
+func (e *jsiiProxy_EmailRoutingRule) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (e *jsiiProxy_EmailRoutingRule) validateMoveFromIdParameters(id *string) er
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (e *jsiiProxy_EmailRoutingRule) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (e *jsiiProxy_EmailRoutingRule) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRule) validatePutActionParameters(value interface{}) error {
+func (e *jsiiProxy_EmailRoutingRule) validatePutActionParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (e *jsiiProxy_EmailRoutingRule) validatePutActionParameters(value interface
 	return nil
 }
 
-func (e *jsiiProxy_EmailRoutingRule) validatePutMatcherParameters(value interface{}) error {
+func (e *jsiiProxy_EmailRoutingRule) validatePutMatcherParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validateEmailRoutingRule_GenerateConfigForImportParameters(scope constructs
 	return nil
 }
 
-func validateEmailRoutingRule_IsConstructParameters(x interface{}) error {
+func validateEmailRoutingRule_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validateEmailRoutingRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateEmailRoutingRule_IsTerraformElementParameters(x interface{}) error {
+func validateEmailRoutingRule_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validateEmailRoutingRule_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateEmailRoutingRule_IsTerraformResourceParameters(x interface{}) error {
+func validateEmailRoutingRule_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -306,7 +306,7 @@ func validateEmailRoutingRule_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingRule) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_EmailRoutingRule) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_EmailRoutingRule) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingRule) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_EmailRoutingRule) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -396,7 +396,7 @@ func (j *jsiiProxy_EmailRoutingRule) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingRule) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_EmailRoutingRule) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -448,7 +448,7 @@ func (j *jsiiProxy_EmailRoutingRule) validateSetPriorityParameters(val *float64)
 	return nil
 }
 
-func (j *jsiiProxy_EmailRoutingRule) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_EmailRoutingRule) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewEmailRoutingRuleParameters(scope constructs.Construct, id *strin
 
 	return nil
 }
-

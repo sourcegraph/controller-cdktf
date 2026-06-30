@@ -106,7 +106,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetBackgroundCo
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -274,4 +274,3 @@ func validateNewTeamsAccountBlockPageOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

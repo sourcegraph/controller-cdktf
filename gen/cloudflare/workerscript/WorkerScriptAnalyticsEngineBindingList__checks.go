@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkerScriptAnalyticsEngineBindingListParameters(terraformResour
 
 	return nil
 }
-

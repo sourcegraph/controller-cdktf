@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessRuleConfigurationOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessRuleConfigurationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAccessRuleConfigurationOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

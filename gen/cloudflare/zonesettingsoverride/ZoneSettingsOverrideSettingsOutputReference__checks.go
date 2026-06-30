@@ -219,7 +219,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetCname
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -647,4 +647,3 @@ func validateNewZoneSettingsOverrideSettingsOutputReferenceParameters(terraformR
 
 	return nil
 }
-

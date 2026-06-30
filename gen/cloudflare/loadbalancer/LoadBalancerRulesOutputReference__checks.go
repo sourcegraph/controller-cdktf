@@ -101,7 +101,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) validatePutFixedResponsePar
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) validatePutOverridesParameters(value interface{}) error {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) validatePutOverridesParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) validateResolveParameters(_
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetConditionParamet
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetDisabledParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetDisabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -233,7 +233,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetDisabledParamete
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -273,7 +273,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetPriorityParamete
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetTerminatesParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) validateSetTerminatesParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -328,4 +328,3 @@ func validateNewLoadBalancerRulesOutputReferenceParameters(terraformResource cdk
 
 	return nil
 }
-

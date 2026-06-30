@@ -117,7 +117,7 @@ func (j *jsiiProxy_ListItemOutputReference) validateSetCommentParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ListItemOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -182,7 +182,7 @@ func (j *jsiiProxy_ListItemOutputReference) validateSetComplexObjectIsFromSetPar
 	return nil
 }
 
-func (j *jsiiProxy_ListItemOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -241,4 +241,3 @@ func validateNewListItemOutputReferenceParameters(terraformResource cdktf.IInter
 
 	return nil
 }
-

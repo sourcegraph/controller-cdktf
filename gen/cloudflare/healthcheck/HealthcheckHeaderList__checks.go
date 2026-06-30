@@ -34,7 +34,7 @@ func (h *jsiiProxy_HealthcheckHeaderList) validateResolveParameters(_context cdk
 	return nil
 }
 
-func (j *jsiiProxy_HealthcheckHeaderList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_HealthcheckHeaderList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewHealthcheckHeaderListParameters(terraformResource cdktf.IInterpo
 
 	return nil
 }
-

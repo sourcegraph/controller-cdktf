@@ -1,6 +1,5 @@
 package provider
 
-
 type CloudflareProviderConfig struct {
 	// Alias name.
 	//
@@ -15,7 +14,7 @@ type CloudflareProviderConfig struct {
 	// Alternatively, can be configured using the `CLOUDFLARE_API_CLIENT_LOGGING` environment variable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs#api_client_logging CloudflareProvider#api_client_logging}
-	ApiClientLogging interface{} `field:"optional" json:"apiClientLogging" yaml:"apiClientLogging"`
+	ApiClientLogging any `field:"optional" json:"apiClientLogging" yaml:"apiClientLogging"`
 	// Configure the hostname used by the API client. Alternatively, can be configured using the `CLOUDFLARE_API_HOSTNAME` environment variable.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs#api_hostname CloudflareProvider#api_hostname}
@@ -63,4 +62,3 @@ type CloudflareProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs#rps CloudflareProvider#rps}
 	Rps *float64 `field:"optional" json:"rps" yaml:"rps"`
 }
-

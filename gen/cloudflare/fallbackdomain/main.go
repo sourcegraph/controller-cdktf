@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
-		reflect.TypeOf((*FallbackDomain)(nil)).Elem(),
+		reflect.TypeFor[FallbackDomain](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -64,7 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FallbackDomain{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -72,15 +72,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainConfig",
-		reflect.TypeOf((*FallbackDomainConfig)(nil)).Elem(),
+		reflect.TypeFor[FallbackDomainConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomains",
-		reflect.TypeOf((*FallbackDomainDomains)(nil)).Elem(),
+		reflect.TypeFor[FallbackDomainDomains](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsList",
-		reflect.TypeOf((*FallbackDomainDomainsList)(nil)).Elem(),
+		reflect.TypeFor[FallbackDomainDomainsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FallbackDomainDomainsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -102,7 +102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference",
-		reflect.TypeOf((*FallbackDomainDomainsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[FallbackDomainDomainsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -135,7 +135,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_FallbackDomainDomainsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

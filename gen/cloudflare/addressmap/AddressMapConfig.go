@@ -6,9 +6,9 @@ import (
 
 type AddressMapConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AddressMapConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The account identifier to target for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/address_map#account_id AddressMap#account_id}
@@ -26,7 +26,7 @@ type AddressMapConfig struct {
 	// Whether the Address Map is enabled or not.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/address_map#enabled AddressMap#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// If you have legacy TLS clients which do not send the TLS server name indicator, then you can specify one default SNI on the map.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/address_map#default_sni AddressMap#default_sni}
@@ -43,10 +43,9 @@ type AddressMapConfig struct {
 	// ips block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/address_map#ips AddressMap#ips}
-	Ips interface{} `field:"optional" json:"ips" yaml:"ips"`
+	Ips any `field:"optional" json:"ips" yaml:"ips"`
 	// memberships block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/address_map#memberships AddressMap#memberships}
-	Memberships interface{} `field:"optional" json:"memberships" yaml:"memberships"`
+	Memberships any `field:"optional" json:"memberships" yaml:"memberships"`
 }
-

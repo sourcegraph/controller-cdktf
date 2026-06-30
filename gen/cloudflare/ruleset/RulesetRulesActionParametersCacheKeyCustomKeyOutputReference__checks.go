@@ -90,7 +90,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutCookieParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutCookieParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -121,7 +121,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHeaderParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHeaderParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -152,7 +152,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHostParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutHostParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutQueryStringParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutQueryStringParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -214,7 +214,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutUserParameters(value interface{}) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validatePutUserParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -253,7 +253,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -318,7 +318,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -377,4 +377,3 @@ func validateNewRulesetRulesActionParametersCacheKeyCustomKeyOutputReferencePara
 
 	return nil
 }
-

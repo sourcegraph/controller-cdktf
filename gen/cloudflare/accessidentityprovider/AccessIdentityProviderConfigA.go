@@ -1,6 +1,5 @@
 package accessidentityprovider
 
-
 type AccessIdentityProviderConfigA struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider#api_token AccessIdentityProvider#api_token}.
 	ApiToken *string `field:"optional" json:"apiToken" yaml:"apiToken"`
@@ -35,18 +34,17 @@ type AccessIdentityProviderConfigA struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider#onelogin_account AccessIdentityProvider#onelogin_account}.
 	OneloginAccount *string `field:"optional" json:"oneloginAccount" yaml:"oneloginAccount"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider#pkce_enabled AccessIdentityProvider#pkce_enabled}.
-	PkceEnabled interface{} `field:"optional" json:"pkceEnabled" yaml:"pkceEnabled"`
+	PkceEnabled any `field:"optional" json:"pkceEnabled" yaml:"pkceEnabled"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider#redirect_url AccessIdentityProvider#redirect_url}.
 	RedirectUrl *string `field:"optional" json:"redirectUrl" yaml:"redirectUrl"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider#scopes AccessIdentityProvider#scopes}.
 	Scopes *[]*string `field:"optional" json:"scopes" yaml:"scopes"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider#sign_request AccessIdentityProvider#sign_request}.
-	SignRequest interface{} `field:"optional" json:"signRequest" yaml:"signRequest"`
+	SignRequest any `field:"optional" json:"signRequest" yaml:"signRequest"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider#sso_target_url AccessIdentityProvider#sso_target_url}.
 	SsoTargetUrl *string `field:"optional" json:"ssoTargetUrl" yaml:"ssoTargetUrl"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider#support_groups AccessIdentityProvider#support_groups}.
-	SupportGroups interface{} `field:"optional" json:"supportGroups" yaml:"supportGroups"`
+	SupportGroups any `field:"optional" json:"supportGroups" yaml:"supportGroups"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_identity_provider#token_url AccessIdentityProvider#token_url}.
 	TokenUrl *string `field:"optional" json:"tokenUrl" yaml:"tokenUrl"`
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ApiTokenConditionRequestIpOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewApiTokenConditionRequestIpOutputReferenceParameters(terraformRes
 
 	return nil
 }
-

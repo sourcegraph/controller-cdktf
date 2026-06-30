@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
-		reflect.TypeOf((*UserAgentBlockingRule)(nil)).Elem(),
+		reflect.TypeFor[UserAgentBlockingRule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_UserAgentBlockingRule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -75,15 +75,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig",
-		reflect.TypeOf((*UserAgentBlockingRuleConfig)(nil)).Elem(),
+		reflect.TypeFor[UserAgentBlockingRuleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration",
-		reflect.TypeOf((*UserAgentBlockingRuleConfiguration)(nil)).Elem(),
+		reflect.TypeFor[UserAgentBlockingRuleConfiguration](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference",
-		reflect.TypeOf((*UserAgentBlockingRuleConfigurationOutputReference)(nil)).Elem(),
+		reflect.TypeFor[UserAgentBlockingRuleConfigurationOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -111,7 +111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

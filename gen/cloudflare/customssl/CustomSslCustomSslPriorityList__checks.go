@@ -34,7 +34,7 @@ func (c *jsiiProxy_CustomSslCustomSslPriorityList) validateResolveParameters(_co
 	return nil
 }
 
-func (j *jsiiProxy_CustomSslCustomSslPriorityList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_CustomSslCustomSslPriorityList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewCustomSslCustomSslPriorityListParameters(terraformResource cdktf
 
 	return nil
 }
-

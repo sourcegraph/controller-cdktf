@@ -106,7 +106,7 @@ func (j *jsiiProxy_DataCloudflareZonesFilterOutputReference) validateSetAccountI
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZonesFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZonesFilterOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -203,7 +203,7 @@ func (j *jsiiProxy_DataCloudflareZonesFilterOutputReference) validateSetNamePara
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZonesFilterOutputReference) validateSetPausedParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareZonesFilterOutputReference) validateSetPausedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewDataCloudflareZonesFilterOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetE
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetGroupMemberDeprovisionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetGroupMemberDeprovisionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetG
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -227,7 +227,7 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetI
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetSeatDeprovisionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetSeatDeprovisionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetUserDeprovisionParameters(val interface{}) error {
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) validateSetUserDeprovisionParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -310,4 +310,3 @@ func validateNewAccessIdentityProviderScimConfigOutputReferenceParameters(terraf
 
 	return nil
 }
-

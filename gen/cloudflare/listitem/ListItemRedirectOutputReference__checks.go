@@ -98,7 +98,7 @@ func (l *jsiiProxy_ListItemRedirectOutputReference) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ListItemRedirectOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -254,4 +254,3 @@ func validateNewListItemRedirectOutputReferenceParameters(terraformResource cdkt
 
 	return nil
 }
-

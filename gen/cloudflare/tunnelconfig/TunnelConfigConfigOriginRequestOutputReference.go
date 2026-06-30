@@ -10,17 +10,17 @@ import (
 
 type TunnelConfigConfigOriginRequestOutputReference interface {
 	cdktf.ComplexObject
-	BastionMode() interface{}
-	SetBastionMode(val interface{})
-	BastionModeInput() interface{}
+	BastionMode() any
+	SetBastionMode(val any)
+	BastionModeInput() any
 	CaPool() *string
 	SetCaPool(val *string)
 	CaPoolInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -34,9 +34,9 @@ type TunnelConfigConfigOriginRequestOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableChunkedEncoding() interface{}
-	SetDisableChunkedEncoding(val interface{})
-	DisableChunkedEncodingInput() interface{}
+	DisableChunkedEncoding() any
+	SetDisableChunkedEncoding(val any)
+	DisableChunkedEncodingInput() any
 	// Experimental.
 	Fqn() *string
 	HttpHostHeader() *string
@@ -45,19 +45,19 @@ type TunnelConfigConfigOriginRequestOutputReference interface {
 	InternalValue() *TunnelConfigConfigOriginRequest
 	SetInternalValue(val *TunnelConfigConfigOriginRequest)
 	IpRules() TunnelConfigConfigOriginRequestIpRulesList
-	IpRulesInput() interface{}
+	IpRulesInput() any
 	KeepAliveConnections() *float64
 	SetKeepAliveConnections(val *float64)
 	KeepAliveConnectionsInput() *float64
 	KeepAliveTimeout() *string
 	SetKeepAliveTimeout(val *string)
 	KeepAliveTimeoutInput() *string
-	NoHappyEyeballs() interface{}
-	SetNoHappyEyeballs(val interface{})
-	NoHappyEyeballsInput() interface{}
-	NoTlsVerify() interface{}
-	SetNoTlsVerify(val interface{})
-	NoTlsVerifyInput() interface{}
+	NoHappyEyeballs() any
+	SetNoHappyEyeballs(val any)
+	NoHappyEyeballsInput() any
+	NoTlsVerify() any
+	SetNoTlsVerify(val any)
+	NoTlsVerifyInput() any
 	OriginServerName() *string
 	SetOriginServerName(val *string)
 	OriginServerNameInput() *string
@@ -87,7 +87,7 @@ type TunnelConfigConfigOriginRequestOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -108,7 +108,7 @@ type TunnelConfigConfigOriginRequestOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutIpRules(value interface{})
+	PutIpRules(value any)
 	ResetBastionMode()
 	ResetCaPool()
 	ResetConnectTimeout()
@@ -127,7 +127,7 @@ type TunnelConfigConfigOriginRequestOutputReference interface {
 	ResetTlsTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -140,8 +140,8 @@ type jsiiProxy_TunnelConfigConfigOriginRequestOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) BastionMode() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) BastionMode() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bastionMode",
@@ -150,8 +150,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) BastionMode()
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) BastionModeInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) BastionModeInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"bastionModeInput",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) CaPoolInput()
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -230,8 +230,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) CreationStack
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) DisableChunkedEncoding() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) DisableChunkedEncoding() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableChunkedEncoding",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) DisableChunke
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) DisableChunkedEncodingInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) DisableChunkedEncodingInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"disableChunkedEncodingInput",
@@ -300,8 +300,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) IpRules() Tun
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) IpRulesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) IpRulesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"ipRulesInput",
@@ -350,8 +350,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) KeepAliveTime
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoHappyEyeballs() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoHappyEyeballs() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noHappyEyeballs",
@@ -360,8 +360,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoHappyEyebal
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoHappyEyeballsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoHappyEyeballsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noHappyEyeballsInput",
@@ -370,8 +370,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoHappyEyebal
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoTlsVerify() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoTlsVerify() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noTlsVerify",
@@ -380,8 +380,8 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoTlsVerify()
 	return returns
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoTlsVerifyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) NoTlsVerifyInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"noTlsVerifyInput",
@@ -530,7 +530,6 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) TlsTimeoutInp
 	return returns
 }
 
-
 func NewTunnelConfigConfigOriginRequestOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TunnelConfigConfigOriginRequestOutputReference {
 	_init_.Initialize()
 
@@ -541,7 +540,7 @@ func NewTunnelConfigConfigOriginRequestOutputReference(terraformResource cdktf.I
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -553,12 +552,12 @@ func NewTunnelConfigConfigOriginRequestOutputReference_Override(t TunnelConfigCo
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetBastionMode(val interface{}) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetBastionMode(val any) {
 	if err := j.validateSetBastionModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -569,7 +568,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetBastionMode
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetCaPool(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetCaPool(val *string) {
 	if err := j.validateSetCaPoolParameters(val); err != nil {
 		panic(err)
 	}
@@ -580,7 +579,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetCaPool(val 
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -591,7 +590,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -602,7 +601,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetConnectTimeout(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetConnectTimeout(val *string) {
 	if err := j.validateSetConnectTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -613,7 +612,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetConnectTime
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetDisableChunkedEncoding(val interface{}) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetDisableChunkedEncoding(val any) {
 	if err := j.validateSetDisableChunkedEncodingParameters(val); err != nil {
 		panic(err)
 	}
@@ -624,7 +623,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetDisableChun
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetHttpHostHeader(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetHttpHostHeader(val *string) {
 	if err := j.validateSetHttpHostHeaderParameters(val); err != nil {
 		panic(err)
 	}
@@ -635,7 +634,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetHttpHostHea
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetInternalValue(val *TunnelConfigConfigOriginRequest) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetInternalValue(val *TunnelConfigConfigOriginRequest) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetKeepAliveConnections(val *float64) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetKeepAliveConnections(val *float64) {
 	if err := j.validateSetKeepAliveConnectionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetKeepAliveCo
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetKeepAliveTimeout(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetKeepAliveTimeout(val *string) {
 	if err := j.validateSetKeepAliveTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -668,7 +667,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetKeepAliveTi
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetNoHappyEyeballs(val interface{}) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetNoHappyEyeballs(val any) {
 	if err := j.validateSetNoHappyEyeballsParameters(val); err != nil {
 		panic(err)
 	}
@@ -679,7 +678,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetNoHappyEyeb
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetNoTlsVerify(val interface{}) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetNoTlsVerify(val any) {
 	if err := j.validateSetNoTlsVerifyParameters(val); err != nil {
 		panic(err)
 	}
@@ -690,7 +689,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetNoTlsVerify
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetOriginServerName(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetOriginServerName(val *string) {
 	if err := j.validateSetOriginServerNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -701,7 +700,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetOriginServe
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetProxyAddress(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetProxyAddress(val *string) {
 	if err := j.validateSetProxyAddressParameters(val); err != nil {
 		panic(err)
 	}
@@ -712,7 +711,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetProxyAddres
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetProxyPort(val *float64) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetProxyPort(val *float64) {
 	if err := j.validateSetProxyPortParameters(val); err != nil {
 		panic(err)
 	}
@@ -723,7 +722,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetProxyPort(v
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetProxyType(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetProxyType(val *string) {
 	if err := j.validateSetProxyTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -734,7 +733,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetProxyType(v
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetTcpKeepAlive(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetTcpKeepAlive(val *string) {
 	if err := j.validateSetTcpKeepAliveParameters(val); err != nil {
 		panic(err)
 	}
@@ -745,7 +744,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetTcpKeepAliv
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -756,7 +755,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -767,7 +766,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference)SetTlsTimeout(val *string) {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) SetTlsTimeout(val *string) {
 	if err := j.validateSetTlsTimeoutParameters(val); err != nil {
 		panic(err)
 	}
@@ -791,16 +790,16 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) ComputeFqn() 
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -816,7 +815,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetBooleanAtt
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -832,7 +831,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetBooleanMap
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetListAttrib
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetNumberAttr
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetNumberList
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetNumberMapA
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetStringAttr
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) GetStringMapA
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -957,21 +956,21 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) Interpolation
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) PutIpRules(value interface{}) {
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) PutIpRules(value any) {
 	if err := t.validatePutIpRulesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"putIpRules",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1103,16 +1102,16 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) ResetTlsTimeo
 	)
 }
 
-func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1131,4 +1130,3 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestOutputReference) ToString() *s
 
 	return returns
 }
-

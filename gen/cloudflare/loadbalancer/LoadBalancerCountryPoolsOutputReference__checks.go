@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerCountryPoolsOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerCountryPoolsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerCountryPoolsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LoadBalancerCountryPoolsOutputReference) validateSetCountryPa
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerCountryPoolsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerCountryPoolsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoadBalancerCountryPoolsOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

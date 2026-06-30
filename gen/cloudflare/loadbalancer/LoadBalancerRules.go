@@ -1,6 +1,5 @@
 package loadbalancer
 
-
 type LoadBalancerRules struct {
 	// Human readable name for this rule.
 	//
@@ -15,7 +14,7 @@ type LoadBalancerRules struct {
 	// A disabled rule will not be executed.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#disabled LoadBalancer#disabled}
-	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
+	Disabled any `field:"optional" json:"disabled" yaml:"disabled"`
 	// fixed_response block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
@@ -23,7 +22,7 @@ type LoadBalancerRules struct {
 	// overrides block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#overrides LoadBalancer#overrides}
-	Overrides interface{} `field:"optional" json:"overrides" yaml:"overrides"`
+	Overrides any `field:"optional" json:"overrides" yaml:"overrides"`
 	// Priority used when determining the order of rule execution.
 	//
 	// Lower values are executed first. If not provided, the list order will be used.
@@ -35,6 +34,5 @@ type LoadBalancerRules struct {
 	// Note: setting a [`fixed_response`](#fixed_response) forces this field to `true`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/load_balancer#terminates LoadBalancer#terminates}
-	Terminates interface{} `field:"optional" json:"terminates" yaml:"terminates"`
+	Terminates any `field:"optional" json:"terminates" yaml:"terminates"`
 }
-

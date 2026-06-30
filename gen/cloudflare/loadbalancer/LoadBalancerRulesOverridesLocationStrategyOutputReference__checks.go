@@ -98,7 +98,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewLoadBalancerRulesOverridesLocationStrategyOutputReferenceParamet
 
 	return nil
 }
-

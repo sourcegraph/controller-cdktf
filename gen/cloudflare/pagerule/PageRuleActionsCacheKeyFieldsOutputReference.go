@@ -12,9 +12,9 @@ type PageRuleActionsCacheKeyFieldsOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -50,7 +50,7 @@ type PageRuleActionsCacheKeyFieldsOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -80,7 +80,7 @@ type PageRuleActionsCacheKeyFieldsOutputReference interface {
 	ResetHeader()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,8 +93,8 @@ type jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -263,7 +263,6 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) UserInput() *Pa
 	return returns
 }
 
-
 func NewPageRuleActionsCacheKeyFieldsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PageRuleActionsCacheKeyFieldsOutputReference {
 	_init_.Initialize()
 
@@ -274,7 +273,7 @@ func NewPageRuleActionsCacheKeyFieldsOutputReference(terraformResource cdktf.IIn
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -286,12 +285,12 @@ func NewPageRuleActionsCacheKeyFieldsOutputReference_Override(p PageRuleActionsC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		p,
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,7 +301,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,7 +312,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetInternalValue(val *PageRuleActionsCacheKeyFields) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) SetInternalValue(val *PageRuleActionsCacheKeyFields) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,7 +323,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,7 +334,7 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -359,16 +358,16 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ComputeFqn() *s
 	return returns
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		p,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -384,7 +383,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetBooleanAttri
 	_jsii_.Invoke(
 		p,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -400,7 +399,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetBooleanMapAt
 	_jsii_.Invoke(
 		p,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -416,7 +415,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetListAttribut
 	_jsii_.Invoke(
 		p,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -432,7 +431,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetNumberAttrib
 	_jsii_.Invoke(
 		p,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -448,7 +447,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetNumberListAt
 	_jsii_.Invoke(
 		p,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -464,7 +463,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetNumberMapAtt
 	_jsii_.Invoke(
 		p,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -480,7 +479,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetStringAttrib
 	_jsii_.Invoke(
 		p,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -496,7 +495,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) GetStringMapAtt
 	_jsii_.Invoke(
 		p,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -525,7 +524,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) InterpolationFo
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -539,7 +538,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) PutCookie(value
 	_jsii_.InvokeVoid(
 		p,
 		"putCookie",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -550,7 +549,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) PutHeader(value
 	_jsii_.InvokeVoid(
 		p,
 		"putHeader",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -561,7 +560,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) PutHost(value *
 	_jsii_.InvokeVoid(
 		p,
 		"putHost",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -572,7 +571,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) PutQueryString(
 	_jsii_.InvokeVoid(
 		p,
 		"putQueryString",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -583,7 +582,7 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) PutUser(value *
 	_jsii_.InvokeVoid(
 		p,
 		"putUser",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -603,16 +602,16 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ResetHeader() {
 	)
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := p.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -631,4 +630,3 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference) ToString() *str
 
 	return returns
 }
-

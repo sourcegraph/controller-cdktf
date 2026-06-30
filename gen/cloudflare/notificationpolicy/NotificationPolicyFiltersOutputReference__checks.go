@@ -98,7 +98,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -342,4 +342,3 @@ func validateNewNotificationPolicyFiltersOutputReferenceParameters(terraformReso
 
 	return nil
 }
-

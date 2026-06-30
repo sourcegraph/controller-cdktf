@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoadBalancerRulesOverridesAdaptiveRoutingListParameters(terrafor
 
 	return nil
 }
-

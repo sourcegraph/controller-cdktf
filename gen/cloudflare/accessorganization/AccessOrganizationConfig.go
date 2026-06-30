@@ -6,9 +6,9 @@ import (
 
 type AccessOrganizationConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AccessOrganizationConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique subdomain assigned to your Zero Trust organization.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization#auth_domain AccessOrganization#auth_domain}
@@ -35,11 +35,11 @@ type AccessOrganizationConfig struct {
 	// When set to true, this will disable all editing of Access resources via the Zero Trust Dashboard.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization#is_ui_read_only AccessOrganization#is_ui_read_only}
-	IsUiReadOnly interface{} `field:"optional" json:"isUiReadOnly" yaml:"isUiReadOnly"`
+	IsUiReadOnly any `field:"optional" json:"isUiReadOnly" yaml:"isUiReadOnly"`
 	// login_design block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization#login_design AccessOrganization#login_design}
-	LoginDesign interface{} `field:"optional" json:"loginDesign" yaml:"loginDesign"`
+	LoginDesign any `field:"optional" json:"loginDesign" yaml:"loginDesign"`
 	// The name of your Zero Trust organization.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization#name AccessOrganization#name}
@@ -59,4 +59,3 @@ type AccessOrganizationConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/access_organization#zone_id AccessOrganization#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
-

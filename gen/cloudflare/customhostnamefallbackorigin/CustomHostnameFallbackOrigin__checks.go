@@ -19,7 +19,7 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateAddMoveTargetParameters
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveFromIdParameters(id
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCustomHostnameFallbackOrigin_GenerateConfigForImportParameters(scop
 	return nil
 }
 
-func validateCustomHostnameFallbackOrigin_IsConstructParameters(x interface{}) error {
+func validateCustomHostnameFallbackOrigin_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCustomHostnameFallbackOrigin_IsConstructParameters(x interface{}) e
 	return nil
 }
 
-func validateCustomHostnameFallbackOrigin_IsTerraformElementParameters(x interface{}) error {
+func validateCustomHostnameFallbackOrigin_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCustomHostnameFallbackOrigin_IsTerraformElementParameters(x interfa
 	return nil
 }
 
-func validateCustomHostnameFallbackOrigin_IsTerraformResourceParameters(x interface{}) error {
+func validateCustomHostnameFallbackOrigin_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateCustomHostnameFallbackOrigin_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetConnectionParameters
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -358,7 +358,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetOriginParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewCustomHostnameFallbackOriginParameters(scope constructs.Construc
 
 	return nil
 }
-

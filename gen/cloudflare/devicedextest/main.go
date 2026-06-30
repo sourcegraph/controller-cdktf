@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest",
-		reflect.TypeOf((*DeviceDexTest)(nil)).Elem(),
+		reflect.TypeFor[DeviceDexTest](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updated", GoGetter: "Updated"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeviceDexTest{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig",
-		reflect.TypeOf((*DeviceDexTestConfig)(nil)).Elem(),
+		reflect.TypeFor[DeviceDexTestConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestData",
-		reflect.TypeOf((*DeviceDexTestData)(nil)).Elem(),
+		reflect.TypeFor[DeviceDexTestData](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestDataOutputReference",
-		reflect.TypeOf((*DeviceDexTestDataOutputReference)(nil)).Elem(),
+		reflect.TypeFor[DeviceDexTestDataOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -118,7 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_DeviceDexTestDataOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
-		reflect.TypeOf((*TeamsAccount)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccount](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -91,7 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlBrowserIsolationEnabled", GoGetter: "UrlBrowserIsolationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "urlBrowserIsolationEnabledInput", GoGetter: "UrlBrowserIsolationEnabledInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccount{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -99,11 +99,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirus",
-		reflect.TypeOf((*TeamsAccountAntivirus)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountAntivirus](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirusOutputReference",
-		reflect.TypeOf((*TeamsAccountAntivirusOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountAntivirusOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -133,7 +133,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountAntivirusOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -141,11 +141,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPage",
-		reflect.TypeOf((*TeamsAccountBlockPage)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountBlockPage](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference",
-		reflect.TypeOf((*TeamsAccountBlockPageOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountBlockPageOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColor", GoGetter: "BackgroundColor"},
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColorInput", GoGetter: "BackgroundColorInput"},
@@ -193,7 +193,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountBlockPageOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -201,15 +201,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig",
-		reflect.TypeOf((*TeamsAccountConfig)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFips",
-		reflect.TypeOf((*TeamsAccountFips)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountFips](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFipsOutputReference",
-		reflect.TypeOf((*TeamsAccountFipsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountFipsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -236,7 +236,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tlsInput", GoGetter: "TlsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountFipsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -244,11 +244,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLogging",
-		reflect.TypeOf((*TeamsAccountLogging)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLogging](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingOutputReference",
-		reflect.TypeOf((*TeamsAccountLoggingOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLoggingOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -277,7 +277,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountLoggingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -285,15 +285,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleType",
-		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleType)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLoggingSettingsByRuleType](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns",
-		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeDns)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLoggingSettingsByRuleTypeDns](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference",
-		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -321,7 +321,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -329,11 +329,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp",
-		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeHttp)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLoggingSettingsByRuleTypeHttp](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference",
-		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -361,7 +361,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -369,11 +369,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4",
-		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeL4)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLoggingSettingsByRuleTypeL4](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4OutputReference",
-		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeL4OutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLoggingSettingsByRuleTypeL4OutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -401,7 +401,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -409,7 +409,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeOutputReference",
-		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountLoggingSettingsByRuleTypeOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -442,7 +442,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -450,11 +450,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLog",
-		reflect.TypeOf((*TeamsAccountPayloadLog)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountPayloadLog](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLogOutputReference",
-		reflect.TypeOf((*TeamsAccountPayloadLogOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountPayloadLogOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -480,7 +480,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountPayloadLogOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -488,11 +488,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxy",
-		reflect.TypeOf((*TeamsAccountProxy)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountProxy](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
-		reflect.TypeOf((*TeamsAccountProxyOutputReference)(nil)).Elem(),
+		reflect.TypeFor[TeamsAccountProxyOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -520,7 +520,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "udp", GoGetter: "Udp"},
 			_jsii_.MemberProperty{JsiiProperty: "udpInput", GoGetter: "UdpInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_TeamsAccountProxyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

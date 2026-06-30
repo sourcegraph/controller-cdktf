@@ -34,7 +34,7 @@ func (a *jsiiProxy_AccessPolicyIncludeGithubList) validateResolveParameters(_con
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeGithubList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyIncludeGithubList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAccessPolicyIncludeGithubListParameters(terraformResource cdktf.
 
 	return nil
 }
-

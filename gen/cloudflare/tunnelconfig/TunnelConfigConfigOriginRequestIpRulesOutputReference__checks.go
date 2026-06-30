@@ -98,7 +98,7 @@ func (t *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateSetAllowParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateSetAllowParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -258,4 +258,3 @@ func validateNewTunnelConfigConfigOriginRequestIpRulesOutputReferenceParameters(
 
 	return nil
 }
-

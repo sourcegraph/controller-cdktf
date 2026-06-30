@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
-		reflect.TypeOf((*IpsecTunnel)(nil)).Elem(),
+		reflect.TypeFor[IpsecTunnel](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
@@ -97,7 +97,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_IpsecTunnel{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -105,6 +105,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig",
-		reflect.TypeOf((*IpsecTunnelConfig)(nil)).Elem(),
+		reflect.TypeFor[IpsecTunnelConfig](),
 	)
 }

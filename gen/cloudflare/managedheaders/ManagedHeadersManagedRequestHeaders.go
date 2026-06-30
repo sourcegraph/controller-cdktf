@@ -1,11 +1,10 @@
 package managedheaders
 
-
 type ManagedHeadersManagedRequestHeaders struct {
 	// Whether the headers rule is active.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers#enabled ManagedHeaders#enabled}
-	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"required" json:"enabled" yaml:"enabled"`
 	// Unique headers rule identifier.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/managed_headers#id ManagedHeaders#id}
@@ -14,4 +13,3 @@ type ManagedHeadersManagedRequestHeaders struct {
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"required" json:"id" yaml:"id"`
 }
-

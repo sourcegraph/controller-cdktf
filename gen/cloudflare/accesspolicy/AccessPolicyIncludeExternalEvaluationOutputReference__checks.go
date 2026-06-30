@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessPolicyIncludeExternalEvaluationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeExternalEvaluationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessPolicyIncludeExternalEvaluationOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -214,4 +214,3 @@ func validateNewAccessPolicyIncludeExternalEvaluationOutputReferenceParameters(t
 
 	return nil
 }
-

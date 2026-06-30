@@ -98,7 +98,7 @@ func (a *jsiiProxy_AccessGroupIncludeAzureOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeAzureOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupIncludeAzureOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AccessGroupIncludeAzureOutputReference) validateSetIdentityPr
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupIncludeAzureOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AccessGroupIncludeAzureOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewAccessGroupIncludeAzureOutputReferenceParameters(terraformResour
 
 	return nil
 }
-

@@ -106,7 +106,7 @@ func (j *jsiiProxy_WorkerScriptQueueBindingOutputReference) validateSetBindingPa
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptQueueBindingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScriptQueueBindingOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_WorkerScriptQueueBindingOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptQueueBindingOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkerScriptQueueBindingOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -238,4 +238,3 @@ func validateNewWorkerScriptQueueBindingOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

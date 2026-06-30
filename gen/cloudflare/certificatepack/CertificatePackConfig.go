@@ -6,9 +6,9 @@ import (
 
 type CertificatePackConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CertificatePackConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Which certificate authority to issue the certificate pack.
 	//
 	// Available values: `digicert`, `lets_encrypt`, `google`. **Modifying this attribute will force creation of a new resource.**
@@ -56,7 +56,7 @@ type CertificatePackConfig struct {
 	// This will add `sni.cloudflaressl.com` as the Common Name if set to `true`. **Modifying this attribute will force creation of a new resource.**
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
-	CloudflareBranding interface{} `field:"optional" json:"cloudflareBranding" yaml:"cloudflareBranding"`
+	CloudflareBranding any `field:"optional" json:"cloudflareBranding" yaml:"cloudflareBranding"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/certificate_pack#id CertificatePack#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -65,16 +65,15 @@ type CertificatePackConfig struct {
 	// validation_errors block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/certificate_pack#validation_errors CertificatePack#validation_errors}
-	ValidationErrors interface{} `field:"optional" json:"validationErrors" yaml:"validationErrors"`
+	ValidationErrors any `field:"optional" json:"validationErrors" yaml:"validationErrors"`
 	// validation_records block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/certificate_pack#validation_records CertificatePack#validation_records}
-	ValidationRecords interface{} `field:"optional" json:"validationRecords" yaml:"validationRecords"`
+	ValidationRecords any `field:"optional" json:"validationRecords" yaml:"validationRecords"`
 	// Whether or not to wait for a certificate pack to reach status `active` during creation.
 	//
 	// Defaults to `false`. **Modifying this attribute will force creation of a new resource.**
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/certificate_pack#wait_for_active_status CertificatePack#wait_for_active_status}
-	WaitForActiveStatus interface{} `field:"optional" json:"waitForActiveStatus" yaml:"waitForActiveStatus"`
+	WaitForActiveStatus any `field:"optional" json:"waitForActiveStatus" yaml:"waitForActiveStatus"`
 }
-

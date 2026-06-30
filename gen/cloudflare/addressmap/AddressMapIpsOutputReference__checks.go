@@ -98,7 +98,7 @@ func (a *jsiiProxy_AddressMapIpsOutputReference) validateResolveParameters(_cont
 	return nil
 }
 
-func (j *jsiiProxy_AddressMapIpsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AddressMapIpsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AddressMapIpsOutputReference) validateSetComplexObjectIsFromS
 	return nil
 }
 
-func (j *jsiiProxy_AddressMapIpsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AddressMapIpsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAddressMapIpsOutputReferenceParameters(terraformResource cdktf.I
 
 	return nil
 }
-

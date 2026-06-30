@@ -17,8 +17,8 @@ type AccessGroupRequireOktaList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type AccessGroupRequireOktaList interface {
 	Get(index *float64) AccessGroupRequireOktaOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_AccessGroupRequireOktaList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupRequireOktaList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AccessGroupRequireOktaList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_AccessGroupRequireOktaList) WrapsSet() *bool {
 	return returns
 }
 
-
 func NewAccessGroupRequireOktaList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessGroupRequireOktaList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewAccessGroupRequireOktaList(terraformResource cdktf.IInterpolatingParent,
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewAccessGroupRequireOktaList_Override(a AccessGroupRequireOktaList, terraf
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOktaList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AccessGroupRequireOktaList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_AccessGroupRequireOktaList)SetInternalValue(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOktaList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AccessGroupRequireOktaList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_AccessGroupRequireOktaList)SetTerraformAttribute(val *string)
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOktaList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupRequireOktaList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_AccessGroupRequireOktaList)SetTerraformResource(val cdktf.IIn
 	)
 }
 
-func (j *jsiiProxy_AccessGroupRequireOktaList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AccessGroupRequireOktaList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (a *jsiiProxy_AccessGroupRequireOktaList) AllWithMapKey(mapKeyAttributeName
 	_jsii_.Invoke(
 		a,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (a *jsiiProxy_AccessGroupRequireOktaList) Get(index *float64) AccessGroupRe
 	_jsii_.Invoke(
 		a,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AccessGroupRequireOktaList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AccessGroupRequireOktaList) Resolve(_context cdktf.IResolveContext) any {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (a *jsiiProxy_AccessGroupRequireOktaList) ToString() *string {
 
 	return returns
 }
-

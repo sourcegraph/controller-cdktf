@@ -34,7 +34,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersEdgeTtlList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_RulesetRulesActionParametersEdgeTtlList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewRulesetRulesActionParametersEdgeTtlListParameters(terraformResou
 
 	return nil
 }
-

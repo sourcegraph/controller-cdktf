@@ -98,7 +98,7 @@ func (d *jsiiProxy_DevicePostureRuleMatchOutputReference) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureRuleMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureRuleMatchOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DevicePostureRuleMatchOutputReference) validateSetComplexObje
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureRuleMatchOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DevicePostureRuleMatchOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewDevicePostureRuleMatchOutputReferenceParameters(terraformResourc
 
 	return nil
 }
-

@@ -18,15 +18,15 @@ type SplitTunnel interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,26 +59,26 @@ type SplitTunnel interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	Tunnels() SplitTunnelTunnelsList
-	TunnelsInput() interface{}
+	TunnelsInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -96,7 +96,7 @@ type SplitTunnel interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -108,30 +108,30 @@ type SplitTunnel interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTunnels(value interface{})
+	PutTunnels(value any)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for SplitTunnel
@@ -169,8 +169,8 @@ func (j *jsiiProxy_SplitTunnel) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnel) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SplitTunnel) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -179,8 +179,8 @@ func (j *jsiiProxy_SplitTunnel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnel) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SplitTunnel) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -189,8 +189,8 @@ func (j *jsiiProxy_SplitTunnel) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnel) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SplitTunnel) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -329,8 +329,8 @@ func (j *jsiiProxy_SplitTunnel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_SplitTunnel) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -339,8 +339,8 @@ func (j *jsiiProxy_SplitTunnel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnel) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SplitTunnel) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -359,8 +359,8 @@ func (j *jsiiProxy_SplitTunnel) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnel) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_SplitTunnel) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -389,8 +389,8 @@ func (j *jsiiProxy_SplitTunnel) Tunnels() SplitTunnelTunnelsList {
 	return returns
 }
 
-func (j *jsiiProxy_SplitTunnel) TunnelsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SplitTunnel) TunnelsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tunnelsInput",
@@ -398,7 +398,6 @@ func (j *jsiiProxy_SplitTunnel) TunnelsInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/split_tunnel cloudflare_split_tunnel} Resource.
 func NewSplitTunnel(scope constructs.Construct, id *string, config *SplitTunnelConfig) SplitTunnel {
@@ -411,7 +410,7 @@ func NewSplitTunnel(scope constructs.Construct, id *string, config *SplitTunnelC
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -424,12 +423,12 @@ func NewSplitTunnel_Override(s SplitTunnel, scope constructs.Construct, id *stri
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		s,
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetAccountId(val *string) {
+func (j *jsiiProxy_SplitTunnel) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,7 +439,7 @@ func (j *jsiiProxy_SplitTunnel)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetConnection(val interface{}) {
+func (j *jsiiProxy_SplitTunnel) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,7 +450,7 @@ func (j *jsiiProxy_SplitTunnel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetCount(val interface{}) {
+func (j *jsiiProxy_SplitTunnel) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -462,7 +461,7 @@ func (j *jsiiProxy_SplitTunnel)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SplitTunnel) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -470,7 +469,7 @@ func (j *jsiiProxy_SplitTunnel)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SplitTunnel) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -478,7 +477,7 @@ func (j *jsiiProxy_SplitTunnel)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetId(val *string) {
+func (j *jsiiProxy_SplitTunnel) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +488,7 @@ func (j *jsiiProxy_SplitTunnel)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SplitTunnel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,7 +499,7 @@ func (j *jsiiProxy_SplitTunnel)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetMode(val *string) {
+func (j *jsiiProxy_SplitTunnel) SetMode(val *string) {
 	if err := j.validateSetModeParameters(val); err != nil {
 		panic(err)
 	}
@@ -511,7 +510,7 @@ func (j *jsiiProxy_SplitTunnel)SetMode(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetPolicyId(val *string) {
+func (j *jsiiProxy_SplitTunnel) SetPolicyId(val *string) {
 	if err := j.validateSetPolicyIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -522,7 +521,7 @@ func (j *jsiiProxy_SplitTunnel)SetPolicyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SplitTunnel) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -530,7 +529,7 @@ func (j *jsiiProxy_SplitTunnel)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SplitTunnel)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SplitTunnel) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -553,7 +552,7 @@ func SplitTunnel_GenerateConfigForImport(scope constructs.Construct, importToId 
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -577,7 +576,7 @@ func SplitTunnel_GenerateConfigForImport(scope constructs.Construct, importToId 
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func SplitTunnel_IsConstruct(x interface{}) *bool {
+func SplitTunnel_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSplitTunnel_IsConstructParameters(x); err != nil {
@@ -588,7 +587,7 @@ func SplitTunnel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -596,7 +595,7 @@ func SplitTunnel_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func SplitTunnel_IsTerraformElement(x interface{}) *bool {
+func SplitTunnel_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSplitTunnel_IsTerraformElementParameters(x); err != nil {
@@ -607,7 +606,7 @@ func SplitTunnel_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -615,7 +614,7 @@ func SplitTunnel_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func SplitTunnel_IsTerraformResource(x interface{}) *bool {
+func SplitTunnel_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateSplitTunnel_IsTerraformResourceParameters(x); err != nil {
@@ -626,7 +625,7 @@ func SplitTunnel_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -651,31 +650,31 @@ func (s *jsiiProxy_SplitTunnel) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (s *jsiiProxy_SplitTunnel) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SplitTunnel) AddOverride(path *string, value any) {
 	if err := s.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (s *jsiiProxy_SplitTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SplitTunnel) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func (s *jsiiProxy_SplitTunnel) GetBooleanAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		s,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -707,7 +706,7 @@ func (s *jsiiProxy_SplitTunnel) GetBooleanMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -723,7 +722,7 @@ func (s *jsiiProxy_SplitTunnel) GetListAttribute(terraformAttribute *string) *[]
 	_jsii_.Invoke(
 		s,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -739,7 +738,7 @@ func (s *jsiiProxy_SplitTunnel) GetNumberAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -755,7 +754,7 @@ func (s *jsiiProxy_SplitTunnel) GetNumberListAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		s,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -771,7 +770,7 @@ func (s *jsiiProxy_SplitTunnel) GetNumberMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -787,7 +786,7 @@ func (s *jsiiProxy_SplitTunnel) GetStringAttribute(terraformAttribute *string) *
 	_jsii_.Invoke(
 		s,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -803,15 +802,15 @@ func (s *jsiiProxy_SplitTunnel) GetStringMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		s,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SplitTunnel) HasResourceMove() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SplitTunnel) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -830,7 +829,7 @@ func (s *jsiiProxy_SplitTunnel) ImportFrom(id *string, provider cdktf.TerraformP
 	_jsii_.InvokeVoid(
 		s,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -843,7 +842,7 @@ func (s *jsiiProxy_SplitTunnel) InterpolationForAttribute(terraformAttribute *st
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -857,18 +856,18 @@ func (s *jsiiProxy_SplitTunnel) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (s *jsiiProxy_SplitTunnel) MoveTo(moveTarget *string, index interface{}) {
+func (s *jsiiProxy_SplitTunnel) MoveTo(moveTarget *string, index any) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -879,7 +878,7 @@ func (s *jsiiProxy_SplitTunnel) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -890,18 +889,18 @@ func (s *jsiiProxy_SplitTunnel) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (s *jsiiProxy_SplitTunnel) PutTunnels(value interface{}) {
+func (s *jsiiProxy_SplitTunnel) PutTunnels(value any) {
 	if err := s.validatePutTunnelsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTunnels",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -929,8 +928,8 @@ func (s *jsiiProxy_SplitTunnel) ResetPolicyId() {
 	)
 }
 
-func (s *jsiiProxy_SplitTunnel) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SplitTunnel) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -942,8 +941,8 @@ func (s *jsiiProxy_SplitTunnel) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SplitTunnel) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (s *jsiiProxy_SplitTunnel) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		s,
@@ -955,8 +954,8 @@ func (s *jsiiProxy_SplitTunnel) SynthesizeHclAttributes() *map[string]interface{
 	return returns
 }
 
-func (s *jsiiProxy_SplitTunnel) ToHclTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SplitTunnel) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -968,8 +967,8 @@ func (s *jsiiProxy_SplitTunnel) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (s *jsiiProxy_SplitTunnel) ToMetadata() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SplitTunnel) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -994,8 +993,8 @@ func (s *jsiiProxy_SplitTunnel) ToString() *string {
 	return returns
 }
 
-func (s *jsiiProxy_SplitTunnel) ToTerraform() interface{} {
-	var returns interface{}
+func (s *jsiiProxy_SplitTunnel) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		s,
@@ -1006,4 +1005,3 @@ func (s *jsiiProxy_SplitTunnel) ToTerraform() interface{} {
 
 	return returns
 }
-

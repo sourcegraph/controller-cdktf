@@ -19,7 +19,7 @@ func (a *jsiiProxy_AddressMap) validateAddMoveTargetParameters(moveTarget *strin
 	return nil
 }
 
-func (a *jsiiProxy_AddressMap) validateAddOverrideParameters(path *string, value interface{}) error {
+func (a *jsiiProxy_AddressMap) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (a *jsiiProxy_AddressMap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AddressMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (a *jsiiProxy_AddressMap) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -204,7 +204,7 @@ func (a *jsiiProxy_AddressMap) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func (a *jsiiProxy_AddressMap) validatePutIpsParameters(value interface{}) error {
+func (a *jsiiProxy_AddressMap) validatePutIpsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (a *jsiiProxy_AddressMap) validatePutIpsParameters(value interface{}) error
 	return nil
 }
 
-func (a *jsiiProxy_AddressMap) validatePutMembershipsParameters(value interface{}) error {
+func (a *jsiiProxy_AddressMap) validatePutMembershipsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func validateAddressMap_GenerateConfigForImportParameters(scope constructs.Const
 	return nil
 }
 
-func validateAddressMap_IsConstructParameters(x interface{}) error {
+func validateAddressMap_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -290,7 +290,7 @@ func validateAddressMap_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateAddressMap_IsTerraformElementParameters(x interface{}) error {
+func validateAddressMap_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -298,7 +298,7 @@ func validateAddressMap_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateAddressMap_IsTerraformResourceParameters(x interface{}) error {
+func validateAddressMap_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -314,7 +314,7 @@ func (j *jsiiProxy_AddressMap) validateSetAccountIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_AddressMap) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_AddressMap) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_AddressMap) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_AddressMap) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_AddressMap) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -420,7 +420,7 @@ func (j *jsiiProxy_AddressMap) validateSetDescriptionParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_AddressMap) validateSetEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_AddressMap) validateSetEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -456,7 +456,7 @@ func (j *jsiiProxy_AddressMap) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
-func (j *jsiiProxy_AddressMap) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_AddressMap) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -520,4 +520,3 @@ func validateNewAddressMapParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-

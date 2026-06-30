@@ -12,9 +12,9 @@ type NotificationPolicyFiltersOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -94,7 +94,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -135,7 +135,7 @@ type NotificationPolicyFiltersOutputReference interface {
 	ResetZones()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -148,8 +148,8 @@ type jsiiProxy_NotificationPolicyFiltersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -578,7 +578,6 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) ZonesInput() *[]*st
 	return returns
 }
 
-
 func NewNotificationPolicyFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotificationPolicyFiltersOutputReference {
 	_init_.Initialize()
 
@@ -589,7 +588,7 @@ func NewNotificationPolicyFiltersOutputReference(terraformResource cdktf.IInterp
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -601,12 +600,12 @@ func NewNotificationPolicyFiltersOutputReference_Override(n NotificationPolicyFi
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		n,
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -617,7 +616,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -628,7 +627,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEnabled(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetEnabled(val *[]*string) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -639,7 +638,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEnabled(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEventSource(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetEventSource(val *[]*string) {
 	if err := j.validateSetEventSourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -650,7 +649,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEventSource(val *
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEventType(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetEventType(val *[]*string) {
 	if err := j.validateSetEventTypeParameters(val); err != nil {
 		panic(err)
 	}
@@ -661,7 +660,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetEventType(val *[]
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetHealthCheckId(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetHealthCheckId(val *[]*string) {
 	if err := j.validateSetHealthCheckIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -672,7 +671,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetHealthCheckId(val
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetInputId(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetInputId(val *[]*string) {
 	if err := j.validateSetInputIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -683,7 +682,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetInputId(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetInternalValue(val *NotificationPolicyFilters) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetInternalValue(val *NotificationPolicyFilters) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -694,7 +693,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetLimit(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetLimit(val *[]*string) {
 	if err := j.validateSetLimitParameters(val); err != nil {
 		panic(err)
 	}
@@ -705,7 +704,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetLimit(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetNewHealth(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetNewHealth(val *[]*string) {
 	if err := j.validateSetNewHealthParameters(val); err != nil {
 		panic(err)
 	}
@@ -716,7 +715,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetNewHealth(val *[]
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetPacketsPerSecond(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetPacketsPerSecond(val *[]*string) {
 	if err := j.validateSetPacketsPerSecondParameters(val); err != nil {
 		panic(err)
 	}
@@ -727,7 +726,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetPacketsPerSecond(
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetPoolId(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetPoolId(val *[]*string) {
 	if err := j.validateSetPoolIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -738,7 +737,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetPoolId(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetProduct(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetProduct(val *[]*string) {
 	if err := j.validateSetProductParameters(val); err != nil {
 		panic(err)
 	}
@@ -749,7 +748,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetProduct(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetProtocol(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetProtocol(val *[]*string) {
 	if err := j.validateSetProtocolParameters(val); err != nil {
 		panic(err)
 	}
@@ -760,7 +759,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetProtocol(val *[]*
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetRequestsPerSecond(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetRequestsPerSecond(val *[]*string) {
 	if err := j.validateSetRequestsPerSecondParameters(val); err != nil {
 		panic(err)
 	}
@@ -771,7 +770,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetRequestsPerSecond
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetServices(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetServices(val *[]*string) {
 	if err := j.validateSetServicesParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,7 +781,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetServices(val *[]*
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetSlo(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetSlo(val *[]*string) {
 	if err := j.validateSetSloParameters(val); err != nil {
 		panic(err)
 	}
@@ -793,7 +792,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetSlo(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetStatus(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetStatus(val *[]*string) {
 	if err := j.validateSetStatusParameters(val); err != nil {
 		panic(err)
 	}
@@ -804,7 +803,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetStatus(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetHost(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetTargetHost(val *[]*string) {
 	if err := j.validateSetTargetHostParameters(val); err != nil {
 		panic(err)
 	}
@@ -815,7 +814,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetHost(val *[
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetZoneName(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetTargetZoneName(val *[]*string) {
 	if err := j.validateSetTargetZoneNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -826,7 +825,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTargetZoneName(va
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -837,7 +836,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -848,7 +847,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference)SetZones(val *[]*string) {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) SetZones(val *[]*string) {
 	if err := j.validateSetZonesParameters(val); err != nil {
 		panic(err)
 	}
@@ -872,16 +871,16 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		n,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -897,7 +896,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetBooleanAttribute
 	_jsii_.Invoke(
 		n,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -913,7 +912,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetBooleanMapAttrib
 	_jsii_.Invoke(
 		n,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -929,7 +928,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetListAttribute(te
 	_jsii_.Invoke(
 		n,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -945,7 +944,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetNumberAttribute(
 	_jsii_.Invoke(
 		n,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -961,7 +960,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetNumberListAttrib
 	_jsii_.Invoke(
 		n,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -977,7 +976,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetNumberMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -993,7 +992,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetStringAttribute(
 	_jsii_.Invoke(
 		n,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1009,7 +1008,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) GetStringMapAttribu
 	_jsii_.Invoke(
 		n,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1038,7 +1037,7 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -1189,16 +1188,16 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ResetZones() {
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := n.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -1217,4 +1216,3 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) ToString() *string 
 
 	return returns
 }
-

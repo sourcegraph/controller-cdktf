@@ -19,7 +19,7 @@ func (u *jsiiProxy_UrlNormalizationSettings) validateAddMoveTargetParameters(mov
 	return nil
 }
 
-func (u *jsiiProxy_UrlNormalizationSettings) validateAddOverrideParameters(path *string, value interface{}) error {
+func (u *jsiiProxy_UrlNormalizationSettings) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (u *jsiiProxy_UrlNormalizationSettings) validateMoveFromIdParameters(id *st
 	return nil
 }
 
-func (u *jsiiProxy_UrlNormalizationSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (u *jsiiProxy_UrlNormalizationSettings) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateUrlNormalizationSettings_GenerateConfigForImportParameters(scope co
 	return nil
 }
 
-func validateUrlNormalizationSettings_IsConstructParameters(x interface{}) error {
+func validateUrlNormalizationSettings_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateUrlNormalizationSettings_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func validateUrlNormalizationSettings_IsTerraformElementParameters(x interface{}) error {
+func validateUrlNormalizationSettings_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateUrlNormalizationSettings_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
-func validateUrlNormalizationSettings_IsTerraformResourceParameters(x interface{}) error {
+func validateUrlNormalizationSettings_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateUrlNormalizationSettings_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
-func (j *jsiiProxy_UrlNormalizationSettings) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_UrlNormalizationSettings) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_UrlNormalizationSettings) validateSetConnectionParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_UrlNormalizationSettings) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_UrlNormalizationSettings) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_UrlNormalizationSettings) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_UrlNormalizationSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_UrlNormalizationSettings) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewUrlNormalizationSettingsParameters(scope constructs.Construct, i
 
 	return nil
 }
-

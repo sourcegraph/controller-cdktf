@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.apiShield.ApiShield",
-		reflect.TypeOf((*ApiShield)(nil)).Elem(),
+		reflect.TypeFor[ApiShield](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiShield{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -70,11 +70,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristics",
-		reflect.TypeOf((*ApiShieldAuthIdCharacteristics)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldAuthIdCharacteristics](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsList",
-		reflect.TypeOf((*ApiShieldAuthIdCharacteristicsList)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldAuthIdCharacteristicsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiShieldAuthIdCharacteristicsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -96,7 +96,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-cloudflare.apiShield.ApiShieldAuthIdCharacteristicsOutputReference",
-		reflect.TypeOf((*ApiShieldAuthIdCharacteristicsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldAuthIdCharacteristicsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -126,7 +126,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ApiShieldAuthIdCharacteristicsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -134,6 +134,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-cloudflare.apiShield.ApiShieldConfig",
-		reflect.TypeOf((*ApiShieldConfig)(nil)).Elem(),
+		reflect.TypeFor[ApiShieldConfig](),
 	)
 }

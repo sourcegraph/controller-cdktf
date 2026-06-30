@@ -1,6 +1,5 @@
 package deviceposturerule
 
-
 type DevicePostureRuleInput struct {
 	// Specific volume(s) to check for encryption.
 	//
@@ -21,11 +20,11 @@ type DevicePostureRuleInput struct {
 	// True if the firewall must be enabled.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#enabled DevicePostureRule#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Checks if the file should exist.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#exists DevicePostureRule#exists}
-	Exists interface{} `field:"optional" json:"exists" yaml:"exists"`
+	Exists any `field:"optional" json:"exists" yaml:"exists"`
 	// The Teams List id.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#id DevicePostureRule#id}
@@ -60,11 +59,11 @@ type DevicePostureRuleInput struct {
 	// True if all drives must be encrypted.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#require_all DevicePostureRule#require_all}
-	RequireAll interface{} `field:"optional" json:"requireAll" yaml:"requireAll"`
+	RequireAll any `field:"optional" json:"requireAll" yaml:"requireAll"`
 	// Checks if the application should be running.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#running DevicePostureRule#running}
-	Running interface{} `field:"optional" json:"running" yaml:"running"`
+	Running any `field:"optional" json:"running" yaml:"running"`
 	// Sensor signal score from Crowdstrike. Value must be between 1 and 100.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#sensor_config DevicePostureRule#sensor_config}
@@ -86,4 +85,3 @@ type DevicePostureRuleInput struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/device_posture_rule#version_operator DevicePostureRule#version_operator}
 	VersionOperator *string `field:"optional" json:"versionOperator" yaml:"versionOperator"`
 }
-

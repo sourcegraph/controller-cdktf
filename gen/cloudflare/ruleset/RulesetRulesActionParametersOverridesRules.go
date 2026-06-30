@@ -1,6 +1,5 @@
 package ruleset
 
-
 type RulesetRulesActionParametersOverridesRules struct {
 	// Action to perform in the rule-level override.
 	//
@@ -11,7 +10,7 @@ type RulesetRulesActionParametersOverridesRules struct {
 	// Defines if the current rule-level override enables or disables the rule.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#enabled Ruleset#enabled}
-	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	Enabled any `field:"optional" json:"enabled" yaml:"enabled"`
 	// Rule ID to apply the override to.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#id Ruleset#id}
@@ -28,4 +27,3 @@ type RulesetRulesActionParametersOverridesRules struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 	SensitivityLevel *string `field:"optional" json:"sensitivityLevel" yaml:"sensitivityLevel"`
 }
-

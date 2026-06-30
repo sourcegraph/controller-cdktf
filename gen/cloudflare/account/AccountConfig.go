@@ -6,9 +6,9 @@ import (
 
 type AccountConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type AccountConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the account that is displayed in the Cloudflare dashboard.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account#name Account#name}
@@ -26,7 +26,7 @@ type AccountConfig struct {
 	// Whether 2FA is enforced on the account. Defaults to `false`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account#enforce_twofactor Account#enforce_twofactor}
-	EnforceTwofactor interface{} `field:"optional" json:"enforceTwofactor" yaml:"enforceTwofactor"`
+	EnforceTwofactor any `field:"optional" json:"enforceTwofactor" yaml:"enforceTwofactor"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account#id Account#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -37,4 +37,3 @@ type AccountConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/account#type Account#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
-

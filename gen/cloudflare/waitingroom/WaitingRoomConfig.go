@@ -6,9 +6,9 @@ import (
 
 type WaitingRoomConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type WaitingRoomConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Host name for which the waiting room will be applied (no wildcards).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room#host WaitingRoom#host}
@@ -56,7 +56,7 @@ type WaitingRoomConfig struct {
 	// Disables automatic renewal of session cookies.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
-	DisableSessionRenewal interface{} `field:"optional" json:"disableSessionRenewal" yaml:"disableSessionRenewal"`
+	DisableSessionRenewal any `field:"optional" json:"disableSessionRenewal" yaml:"disableSessionRenewal"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room#id WaitingRoom#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -65,7 +65,7 @@ type WaitingRoomConfig struct {
 	// If true, requests to the waiting room with the header `Accept: application/json` will receive a JSON response object.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
-	JsonResponseEnabled interface{} `field:"optional" json:"jsonResponseEnabled" yaml:"jsonResponseEnabled"`
+	JsonResponseEnabled any `field:"optional" json:"jsonResponseEnabled" yaml:"jsonResponseEnabled"`
 	// The path within the host to enable the waiting room on. Defaults to `/`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room#path WaitingRoom#path}
@@ -73,7 +73,7 @@ type WaitingRoomConfig struct {
 	// If queue_all is true, then all traffic will be sent to the waiting room.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
-	QueueAll interface{} `field:"optional" json:"queueAll" yaml:"queueAll"`
+	QueueAll any `field:"optional" json:"queueAll" yaml:"queueAll"`
 	// The queueing method used by the waiting room. Available values: `fifo`, `random`, `passthrough`, `reject`. Defaults to `fifo`.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room#queueing_method WaitingRoom#queueing_method}
@@ -87,10 +87,9 @@ type WaitingRoomConfig struct {
 	// Suspends the waiting room.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room#suspended WaitingRoom#suspended}
-	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
+	Suspended any `field:"optional" json:"suspended" yaml:"suspended"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/waiting_room#timeouts WaitingRoom#timeouts}
 	Timeouts *WaitingRoomTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
-

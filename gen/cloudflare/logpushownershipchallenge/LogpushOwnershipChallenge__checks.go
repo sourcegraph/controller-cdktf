@@ -19,7 +19,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) validateAddMoveTargetParameters(mo
 	return nil
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveFromIdParameters(id *s
 	return nil
 }
 
-func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (l *jsiiProxy_LogpushOwnershipChallenge) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateLogpushOwnershipChallenge_GenerateConfigForImportParameters(scope c
 	return nil
 }
 
-func validateLogpushOwnershipChallenge_IsConstructParameters(x interface{}) error {
+func validateLogpushOwnershipChallenge_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateLogpushOwnershipChallenge_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
-func validateLogpushOwnershipChallenge_IsTerraformElementParameters(x interface{}) error {
+func validateLogpushOwnershipChallenge_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateLogpushOwnershipChallenge_IsTerraformElementParameters(x interface{
 	return nil
 }
 
-func validateLogpushOwnershipChallenge_IsTerraformResourceParameters(x interface{}) error {
+func validateLogpushOwnershipChallenge_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -252,7 +252,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetAccountIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -285,7 +285,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetConnectionParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -366,7 +366,7 @@ func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LogpushOwnershipChallenge) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -438,4 +438,3 @@ func validateNewLogpushOwnershipChallengeParameters(scope constructs.Construct, 
 
 	return nil
 }
-

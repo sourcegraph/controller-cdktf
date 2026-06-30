@@ -12,9 +12,9 @@ type TeamsRuleRuleSettingsEgressOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -49,7 +49,7 @@ type TeamsRuleRuleSettingsEgressOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,7 +73,7 @@ type TeamsRuleRuleSettingsEgressOutputReference interface {
 	ResetIpv4Fallback()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,8 +86,8 @@ type jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -216,7 +216,6 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) TerraformResource
 	return returns
 }
 
-
 func NewTeamsRuleRuleSettingsEgressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamsRuleRuleSettingsEgressOutputReference {
 	_init_.Initialize()
 
@@ -227,7 +226,7 @@ func NewTeamsRuleRuleSettingsEgressOutputReference(terraformResource cdktf.IInte
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		&j,
 	)
 
@@ -239,12 +238,12 @@ func NewTeamsRuleRuleSettingsEgressOutputReference_Override(t TeamsRuleRuleSetti
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]any{terraformResource, terraformAttribute},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -255,7 +254,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -266,7 +265,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetInternalValue(val *TeamsRuleRuleSettingsEgress) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) SetInternalValue(val *TeamsRuleRuleSettingsEgress) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -277,7 +276,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetIpv4(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) SetIpv4(val *string) {
 	if err := j.validateSetIpv4Parameters(val); err != nil {
 		panic(err)
 	}
@@ -288,7 +287,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetIpv4(val *strin
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetIpv4Fallback(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) SetIpv4Fallback(val *string) {
 	if err := j.validateSetIpv4FallbackParameters(val); err != nil {
 		panic(err)
 	}
@@ -299,7 +298,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetIpv4Fallback(va
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetIpv6(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) SetIpv6(val *string) {
 	if err := j.validateSetIpv6Parameters(val); err != nil {
 		panic(err)
 	}
@@ -310,7 +309,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetIpv6(val *strin
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -321,7 +320,7 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,16 +344,16 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) ComputeFqn() *str
 	return returns
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -370,7 +369,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetBooleanAttribu
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -386,7 +385,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetBooleanMapAttr
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -402,7 +401,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetListAttribute(
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -418,7 +417,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetNumberAttribut
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -434,7 +433,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetNumberListAttr
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -450,7 +449,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetNumberMapAttri
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -466,7 +465,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetStringAttribut
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -482,7 +481,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) GetStringMapAttri
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -511,7 +510,7 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
@@ -526,16 +525,16 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) ResetIpv4Fallback
 	)
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := t.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -554,4 +553,3 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference) ToString() *strin
 
 	return returns
 }
-

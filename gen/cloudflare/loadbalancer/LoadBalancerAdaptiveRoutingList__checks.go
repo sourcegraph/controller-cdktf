@@ -34,7 +34,7 @@ func (l *jsiiProxy_LoadBalancerAdaptiveRoutingList) validateResolveParameters(_c
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerAdaptiveRoutingList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_LoadBalancerAdaptiveRoutingList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewLoadBalancerAdaptiveRoutingListParameters(terraformResource cdkt
 
 	return nil
 }
-

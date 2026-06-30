@@ -98,7 +98,7 @@ func (t *jsiiProxy_TeamsAccountAntivirusOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetEnabledDownloadPhaseParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetEnabledDownloadPhaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -183,7 +183,7 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetEnabledDownl
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetEnabledUploadPhaseParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetEnabledUploadPhaseParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +203,7 @@ func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetEnabledUploa
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetFailClosedParameters(val interface{}) error {
+func (j *jsiiProxy_TeamsAccountAntivirusOutputReference) validateSetFailClosedParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -258,4 +258,3 @@ func validateNewTeamsAccountAntivirusOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

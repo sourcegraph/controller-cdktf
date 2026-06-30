@@ -98,7 +98,7 @@ func (p *jsiiProxy_PagesProjectSourceConfigOutputReference) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetComplexOb
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetDeploymentsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetDeploymentsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -199,7 +199,7 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetOwnerPara
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPrCommentsEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetPrCommentsEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductio
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentEnabledParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectSourceConfigOutputReference) validateSetProductionDeploymentEnabledParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -306,4 +306,3 @@ func validateNewPagesProjectSourceConfigOutputReferenceParameters(terraformResou
 
 	return nil
 }
-

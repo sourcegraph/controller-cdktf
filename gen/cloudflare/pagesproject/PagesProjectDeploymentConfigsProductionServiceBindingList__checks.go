@@ -34,7 +34,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingList) va
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewPagesProjectDeploymentConfigsProductionServiceBindingListParamet
 
 	return nil
 }
-

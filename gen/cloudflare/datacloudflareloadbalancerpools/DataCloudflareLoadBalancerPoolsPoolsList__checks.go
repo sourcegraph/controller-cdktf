@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsList) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewDataCloudflareLoadBalancerPoolsPoolsListParameters(terraformReso
 
 	return nil
 }
-

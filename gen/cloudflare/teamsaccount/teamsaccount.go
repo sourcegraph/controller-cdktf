@@ -15,9 +15,9 @@ type TeamsAccount interface {
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
-	ActivityLogEnabled() interface{}
-	SetActivityLogEnabled(val interface{})
-	ActivityLogEnabledInput() interface{}
+	ActivityLogEnabled() any
+	SetActivityLogEnabled(val any)
+	ActivityLogEnabledInput() any
 	Antivirus() TeamsAccountAntivirusOutputReference
 	AntivirusInput() *TeamsAccountAntivirus
 	BlockPage() TeamsAccountBlockPageOutputReference
@@ -25,15 +25,15 @@ type TeamsAccount interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -66,32 +66,32 @@ type TeamsAccount interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	Proxy() TeamsAccountProxyOutputReference
 	ProxyInput() *TeamsAccountProxy
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
-	TlsDecryptEnabled() interface{}
-	SetTlsDecryptEnabled(val interface{})
-	TlsDecryptEnabledInput() interface{}
-	UrlBrowserIsolationEnabled() interface{}
-	SetUrlBrowserIsolationEnabled(val interface{})
-	UrlBrowserIsolationEnabledInput() interface{}
+	TlsDecryptEnabled() any
+	SetTlsDecryptEnabled(val any)
+	TlsDecryptEnabledInput() any
+	UrlBrowserIsolationEnabled() any
+	SetUrlBrowserIsolationEnabled(val any)
+	UrlBrowserIsolationEnabledInput() any
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -109,7 +109,7 @@ type TeamsAccount interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -121,7 +121,7 @@ type TeamsAccount interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
@@ -147,17 +147,17 @@ type TeamsAccount interface {
 	ResetProxy()
 	ResetTlsDecryptEnabled()
 	ResetUrlBrowserIsolationEnabled()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for TeamsAccount
@@ -185,8 +185,8 @@ func (j *jsiiProxy_TeamsAccount) AccountIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) ActivityLogEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccount) ActivityLogEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activityLogEnabled",
@@ -195,8 +195,8 @@ func (j *jsiiProxy_TeamsAccount) ActivityLogEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) ActivityLogEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccount) ActivityLogEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"activityLogEnabledInput",
@@ -255,8 +255,8 @@ func (j *jsiiProxy_TeamsAccount) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccount) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -265,8 +265,8 @@ func (j *jsiiProxy_TeamsAccount) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamsAccount) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_TeamsAccount) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccount) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -435,8 +435,8 @@ func (j *jsiiProxy_TeamsAccount) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_TeamsAccount) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -465,8 +465,8 @@ func (j *jsiiProxy_TeamsAccount) ProxyInput() *TeamsAccountProxy {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccount) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -485,8 +485,8 @@ func (j *jsiiProxy_TeamsAccount) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_TeamsAccount) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -505,8 +505,8 @@ func (j *jsiiProxy_TeamsAccount) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) TlsDecryptEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccount) TlsDecryptEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tlsDecryptEnabled",
@@ -515,8 +515,8 @@ func (j *jsiiProxy_TeamsAccount) TlsDecryptEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) TlsDecryptEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccount) TlsDecryptEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"tlsDecryptEnabledInput",
@@ -525,8 +525,8 @@ func (j *jsiiProxy_TeamsAccount) TlsDecryptEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"urlBrowserIsolationEnabled",
@@ -535,8 +535,8 @@ func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"urlBrowserIsolationEnabledInput",
@@ -544,7 +544,6 @@ func (j *jsiiProxy_TeamsAccount) UrlBrowserIsolationEnabledInput() interface{} {
 	)
 	return returns
 }
-
 
 // Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/4.3.0/docs/resources/teams_account cloudflare_teams_account} Resource.
 func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccountConfig) TeamsAccount {
@@ -557,7 +556,7 @@ func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccoun
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -570,12 +569,12 @@ func NewTeamsAccount_Override(t TeamsAccount, scope constructs.Construct, id *st
 
 	_jsii_.Create(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		t,
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetAccountId(val *string) {
+func (j *jsiiProxy_TeamsAccount) SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -586,7 +585,7 @@ func (j *jsiiProxy_TeamsAccount)SetAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetActivityLogEnabled(val interface{}) {
+func (j *jsiiProxy_TeamsAccount) SetActivityLogEnabled(val any) {
 	if err := j.validateSetActivityLogEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -597,7 +596,7 @@ func (j *jsiiProxy_TeamsAccount)SetActivityLogEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetConnection(val interface{}) {
+func (j *jsiiProxy_TeamsAccount) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,7 +607,7 @@ func (j *jsiiProxy_TeamsAccount)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetCount(val interface{}) {
+func (j *jsiiProxy_TeamsAccount) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -619,7 +618,7 @@ func (j *jsiiProxy_TeamsAccount)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TeamsAccount) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -627,7 +626,7 @@ func (j *jsiiProxy_TeamsAccount)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TeamsAccount) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -635,7 +634,7 @@ func (j *jsiiProxy_TeamsAccount)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetId(val *string) {
+func (j *jsiiProxy_TeamsAccount) SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -646,7 +645,7 @@ func (j *jsiiProxy_TeamsAccount)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TeamsAccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -657,7 +656,7 @@ func (j *jsiiProxy_TeamsAccount)SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TeamsAccount) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -665,7 +664,7 @@ func (j *jsiiProxy_TeamsAccount)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TeamsAccount) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -676,7 +675,7 @@ func (j *jsiiProxy_TeamsAccount)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetTlsDecryptEnabled(val interface{}) {
+func (j *jsiiProxy_TeamsAccount) SetTlsDecryptEnabled(val any) {
 	if err := j.validateSetTlsDecryptEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -687,7 +686,7 @@ func (j *jsiiProxy_TeamsAccount)SetTlsDecryptEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TeamsAccount)SetUrlBrowserIsolationEnabled(val interface{}) {
+func (j *jsiiProxy_TeamsAccount) SetUrlBrowserIsolationEnabled(val any) {
 	if err := j.validateSetUrlBrowserIsolationEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -710,7 +709,7 @@ func TeamsAccount_GenerateConfigForImport(scope constructs.Construct, importToId
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -734,7 +733,7 @@ func TeamsAccount_GenerateConfigForImport(scope constructs.Construct, importToId
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func TeamsAccount_IsConstruct(x interface{}) *bool {
+func TeamsAccount_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamsAccount_IsConstructParameters(x); err != nil {
@@ -745,7 +744,7 @@ func TeamsAccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -753,7 +752,7 @@ func TeamsAccount_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamsAccount_IsTerraformElement(x interface{}) *bool {
+func TeamsAccount_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamsAccount_IsTerraformElementParameters(x); err != nil {
@@ -764,7 +763,7 @@ func TeamsAccount_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -772,7 +771,7 @@ func TeamsAccount_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func TeamsAccount_IsTerraformResource(x interface{}) *bool {
+func TeamsAccount_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateTeamsAccount_IsTerraformResourceParameters(x); err != nil {
@@ -783,7 +782,7 @@ func TeamsAccount_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -808,31 +807,31 @@ func (t *jsiiProxy_TeamsAccount) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (t *jsiiProxy_TeamsAccount) AddOverride(path *string, value interface{}) {
+func (t *jsiiProxy_TeamsAccount) AddOverride(path *string, value any) {
 	if err := t.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (t *jsiiProxy_TeamsAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (t *jsiiProxy_TeamsAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -848,7 +847,7 @@ func (t *jsiiProxy_TeamsAccount) GetBooleanAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		t,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -864,7 +863,7 @@ func (t *jsiiProxy_TeamsAccount) GetBooleanMapAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -880,7 +879,7 @@ func (t *jsiiProxy_TeamsAccount) GetListAttribute(terraformAttribute *string) *[
 	_jsii_.Invoke(
 		t,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -896,7 +895,7 @@ func (t *jsiiProxy_TeamsAccount) GetNumberAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		t,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -912,7 +911,7 @@ func (t *jsiiProxy_TeamsAccount) GetNumberListAttribute(terraformAttribute *stri
 	_jsii_.Invoke(
 		t,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -928,7 +927,7 @@ func (t *jsiiProxy_TeamsAccount) GetNumberMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		t,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -944,7 +943,7 @@ func (t *jsiiProxy_TeamsAccount) GetStringAttribute(terraformAttribute *string) 
 	_jsii_.Invoke(
 		t,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -960,15 +959,15 @@ func (t *jsiiProxy_TeamsAccount) GetStringMapAttribute(terraformAttribute *strin
 	_jsii_.Invoke(
 		t,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccount) HasResourceMove() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamsAccount) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -987,7 +986,7 @@ func (t *jsiiProxy_TeamsAccount) ImportFrom(id *string, provider cdktf.Terraform
 	_jsii_.InvokeVoid(
 		t,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -1000,7 +999,7 @@ func (t *jsiiProxy_TeamsAccount) InterpolationForAttribute(terraformAttribute *s
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -1014,18 +1013,18 @@ func (t *jsiiProxy_TeamsAccount) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (t *jsiiProxy_TeamsAccount) MoveTo(moveTarget *string, index interface{}) {
+func (t *jsiiProxy_TeamsAccount) MoveTo(moveTarget *string, index any) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		t,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -1036,7 +1035,7 @@ func (t *jsiiProxy_TeamsAccount) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1047,7 +1046,7 @@ func (t *jsiiProxy_TeamsAccount) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1058,7 +1057,7 @@ func (t *jsiiProxy_TeamsAccount) PutAntivirus(value *TeamsAccountAntivirus) {
 	_jsii_.InvokeVoid(
 		t,
 		"putAntivirus",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1069,7 +1068,7 @@ func (t *jsiiProxy_TeamsAccount) PutBlockPage(value *TeamsAccountBlockPage) {
 	_jsii_.InvokeVoid(
 		t,
 		"putBlockPage",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1080,7 +1079,7 @@ func (t *jsiiProxy_TeamsAccount) PutFips(value *TeamsAccountFips) {
 	_jsii_.InvokeVoid(
 		t,
 		"putFips",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1091,7 +1090,7 @@ func (t *jsiiProxy_TeamsAccount) PutLogging(value *TeamsAccountLogging) {
 	_jsii_.InvokeVoid(
 		t,
 		"putLogging",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1102,7 +1101,7 @@ func (t *jsiiProxy_TeamsAccount) PutPayloadLog(value *TeamsAccountPayloadLog) {
 	_jsii_.InvokeVoid(
 		t,
 		"putPayloadLog",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1113,7 +1112,7 @@ func (t *jsiiProxy_TeamsAccount) PutProxy(value *TeamsAccountProxy) {
 	_jsii_.InvokeVoid(
 		t,
 		"putProxy",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1205,8 +1204,8 @@ func (t *jsiiProxy_TeamsAccount) ResetUrlBrowserIsolationEnabled() {
 	)
 }
 
-func (t *jsiiProxy_TeamsAccount) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamsAccount) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1218,8 +1217,8 @@ func (t *jsiiProxy_TeamsAccount) SynthesizeAttributes() *map[string]interface{} 
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccount) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (t *jsiiProxy_TeamsAccount) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		t,
@@ -1231,8 +1230,8 @@ func (t *jsiiProxy_TeamsAccount) SynthesizeHclAttributes() *map[string]interface
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccount) ToHclTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamsAccount) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1244,8 +1243,8 @@ func (t *jsiiProxy_TeamsAccount) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccount) ToMetadata() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamsAccount) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1270,8 +1269,8 @@ func (t *jsiiProxy_TeamsAccount) ToString() *string {
 	return returns
 }
 
-func (t *jsiiProxy_TeamsAccount) ToTerraform() interface{} {
-	var returns interface{}
+func (t *jsiiProxy_TeamsAccount) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		t,
@@ -1282,4 +1281,3 @@ func (t *jsiiProxy_TeamsAccount) ToTerraform() interface{} {
 
 	return returns
 }
-
