@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (g *jsiiProxy_Gkeprivate) validateAddOverrideParameters(path *string, value interface{}) error {
+func (g *jsiiProxy_Gkeprivate) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (g *jsiiProxy_Gkeprivate) validateAddOverrideParameters(path *string, value
 	return nil
 }
 
-func (g *jsiiProxy_Gkeprivate) validateAddProviderParameters(provider interface{}) error {
+func (g *jsiiProxy_Gkeprivate) validateAddProviderParameters(provider any) error {
 	if provider == nil {
 		return fmt.Errorf("parameter provider is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (g *jsiiProxy_Gkeprivate) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func validateGkeprivate_IsConstructParameters(x interface{}) error {
+func validateGkeprivate_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func validateGkeprivate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateGkeprivate_IsTerraformElementParameters(x interface{}) error {
+func validateGkeprivate_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func validateGkeprivate_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Gkeprivate) validateSetClusterAutoscalingParameters(val interface{}) error {
+func (j *jsiiProxy_Gkeprivate) validateSetClusterAutoscalingParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -130,7 +130,7 @@ func (j *jsiiProxy_Gkeprivate) validateSetProjectIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_Gkeprivate) validateSetRayOperatorConfigParameters(val interface{}) error {
+func (j *jsiiProxy_Gkeprivate) validateSetRayOperatorConfigParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -138,7 +138,7 @@ func (j *jsiiProxy_Gkeprivate) validateSetRayOperatorConfigParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_Gkeprivate) validateSetRbacBindingConfigParameters(val interface{}) error {
+func (j *jsiiProxy_Gkeprivate) validateSetRbacBindingConfigParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -146,7 +146,7 @@ func (j *jsiiProxy_Gkeprivate) validateSetRbacBindingConfigParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_Gkeprivate) validateSetShadowFirewallRulesLogConfigParameters(val interface{}) error {
+func (j *jsiiProxy_Gkeprivate) validateSetShadowFirewallRulesLogConfigParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -180,4 +180,3 @@ func validateNewGkeprivateParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-
