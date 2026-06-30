@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tls.certRequest.CertRequest",
-		reflect.TypeOf((*CertRequest)(nil)).Elem(),
+		reflect.TypeFor[CertRequest](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uris", GoGetter: "Uris"},
 			_jsii_.MemberProperty{JsiiProperty: "urisInput", GoGetter: "UrisInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertRequest{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -79,15 +79,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tls.certRequest.CertRequestConfig",
-		reflect.TypeOf((*CertRequestConfig)(nil)).Elem(),
+		reflect.TypeFor[CertRequestConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-tls.certRequest.CertRequestSubject",
-		reflect.TypeOf((*CertRequestSubject)(nil)).Elem(),
+		reflect.TypeFor[CertRequestSubject](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-tls.certRequest.CertRequestSubjectOutputReference",
-		reflect.TypeOf((*CertRequestSubjectOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CertRequestSubjectOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
 			_jsii_.MemberProperty{JsiiProperty: "commonNameInput", GoGetter: "CommonNameInput"},
@@ -138,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CertRequestSubjectOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
