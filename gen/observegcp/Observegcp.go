@@ -23,7 +23,7 @@ type Observegcp interface {
 	CloudFunctionDebugLevel() *string
 	SetCloudFunctionDebugLevel(val *string)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -64,8 +64,8 @@ type Observegcp interface {
 	SetGcpRegion(val *string)
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
-	LoggingExclusions() interface{}
-	SetLoggingExclusions(val interface{})
+	LoggingExclusions() any
+	SetLoggingExclusions(val any)
 	LoggingFilter() *string
 	SetLoggingFilter(val *string)
 	MaxAttempts() *float64
@@ -88,7 +88,7 @@ type Observegcp interface {
 	SetProjectId(val *string)
 	ProjectOutput() *string
 	// Experimental.
-	Providers() *[]interface{}
+	Providers() *[]any
 	PubsubAckDeadlineSeconds() *float64
 	SetPubsubAckDeadlineSeconds(val *float64)
 	PubsubMaximumBackoff() *string
@@ -98,7 +98,7 @@ type Observegcp interface {
 	PubsubMinimumBackoff() *string
 	SetPubsubMinimumBackoff(val *string)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	Resource() *string
 	SetResource(val *string)
 	ServiceAccountKeyOutput() *string
@@ -111,9 +111,9 @@ type Observegcp interface {
 	// Experimental.
 	Version() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	AddProvider(provider interface{})
+	AddProvider(provider any)
 	// Experimental.
 	GetString(output *string) *string
 	// Experimental.
@@ -124,16 +124,16 @@ type Observegcp interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for Observegcp
@@ -181,8 +181,8 @@ func (j *jsiiProxy_Observegcp) CloudFunctionDebugLevel() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Observegcp) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_Observegcp) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -371,8 +371,8 @@ func (j *jsiiProxy_Observegcp) Labels() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Observegcp) LoggingExclusions() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Observegcp) LoggingExclusions() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"loggingExclusions",
@@ -491,8 +491,8 @@ func (j *jsiiProxy_Observegcp) ProjectOutput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Observegcp) Providers() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_Observegcp) Providers() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"providers",
@@ -541,8 +541,8 @@ func (j *jsiiProxy_Observegcp) PubsubMinimumBackoff() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Observegcp) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Observegcp) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -621,7 +621,6 @@ func (j *jsiiProxy_Observegcp) Version() *string {
 	return returns
 }
 
-
 func NewObservegcp(scope constructs.Construct, id *string, config *ObservegcpConfig) Observegcp {
 	_init_.Initialize()
 
@@ -632,7 +631,7 @@ func NewObservegcp(scope constructs.Construct, id *string, config *ObservegcpCon
 
 	_jsii_.Create(
 		"@cdktf/provider-observegcp.Observegcp",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -644,12 +643,12 @@ func NewObservegcp_Override(o Observegcp, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-observegcp.Observegcp",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		o,
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetBucketLifecycleAbortUploadDays(val *float64) {
+func (j *jsiiProxy_Observegcp) SetBucketLifecycleAbortUploadDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"bucketLifecycleAbortUploadDays",
@@ -657,7 +656,7 @@ func (j *jsiiProxy_Observegcp)SetBucketLifecycleAbortUploadDays(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetBucketLifecycleDeleteDays(val *float64) {
+func (j *jsiiProxy_Observegcp) SetBucketLifecycleDeleteDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"bucketLifecycleDeleteDays",
@@ -665,7 +664,7 @@ func (j *jsiiProxy_Observegcp)SetBucketLifecycleDeleteDays(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetCloudFunctionDebugLevel(val *string) {
+func (j *jsiiProxy_Observegcp) SetCloudFunctionDebugLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"cloudFunctionDebugLevel",
@@ -673,7 +672,7 @@ func (j *jsiiProxy_Observegcp)SetCloudFunctionDebugLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Observegcp) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -681,7 +680,7 @@ func (j *jsiiProxy_Observegcp)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetEnableAssetTracking(val *bool) {
+func (j *jsiiProxy_Observegcp) SetEnableAssetTracking(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableAssetTracking",
@@ -689,7 +688,7 @@ func (j *jsiiProxy_Observegcp)SetEnableAssetTracking(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetEnableFunction(val *bool) {
+func (j *jsiiProxy_Observegcp) SetEnableFunction(val *bool) {
 	_jsii_.Set(
 		j,
 		"enableFunction",
@@ -697,7 +696,7 @@ func (j *jsiiProxy_Observegcp)SetEnableFunction(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFolderIncludeChildren(val *bool) {
+func (j *jsiiProxy_Observegcp) SetFolderIncludeChildren(val *bool) {
 	_jsii_.Set(
 		j,
 		"folderIncludeChildren",
@@ -705,7 +704,7 @@ func (j *jsiiProxy_Observegcp)SetFolderIncludeChildren(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Observegcp) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -713,7 +712,7 @@ func (j *jsiiProxy_Observegcp)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFunctionAvailableMemoryMb(val *float64) {
+func (j *jsiiProxy_Observegcp) SetFunctionAvailableMemoryMb(val *float64) {
 	_jsii_.Set(
 		j,
 		"functionAvailableMemoryMb",
@@ -721,7 +720,7 @@ func (j *jsiiProxy_Observegcp)SetFunctionAvailableMemoryMb(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFunctionBucket(val *string) {
+func (j *jsiiProxy_Observegcp) SetFunctionBucket(val *string) {
 	_jsii_.Set(
 		j,
 		"functionBucket",
@@ -729,7 +728,7 @@ func (j *jsiiProxy_Observegcp)SetFunctionBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFunctionDisableLogging(val *bool) {
+func (j *jsiiProxy_Observegcp) SetFunctionDisableLogging(val *bool) {
 	_jsii_.Set(
 		j,
 		"functionDisableLogging",
@@ -737,7 +736,7 @@ func (j *jsiiProxy_Observegcp)SetFunctionDisableLogging(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFunctionMaxInstances(val *float64) {
+func (j *jsiiProxy_Observegcp) SetFunctionMaxInstances(val *float64) {
 	_jsii_.Set(
 		j,
 		"functionMaxInstances",
@@ -745,7 +744,7 @@ func (j *jsiiProxy_Observegcp)SetFunctionMaxInstances(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFunctionObject(val *string) {
+func (j *jsiiProxy_Observegcp) SetFunctionObject(val *string) {
 	_jsii_.Set(
 		j,
 		"functionObject",
@@ -753,7 +752,7 @@ func (j *jsiiProxy_Observegcp)SetFunctionObject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFunctionRoles(val *[]*string) {
+func (j *jsiiProxy_Observegcp) SetFunctionRoles(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"functionRoles",
@@ -761,7 +760,7 @@ func (j *jsiiProxy_Observegcp)SetFunctionRoles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFunctionScheduleFrequency(val *string) {
+func (j *jsiiProxy_Observegcp) SetFunctionScheduleFrequency(val *string) {
 	_jsii_.Set(
 		j,
 		"functionScheduleFrequency",
@@ -769,7 +768,7 @@ func (j *jsiiProxy_Observegcp)SetFunctionScheduleFrequency(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFunctionScheduleFrequencyRestOfAssets(val *string) {
+func (j *jsiiProxy_Observegcp) SetFunctionScheduleFrequencyRestOfAssets(val *string) {
 	_jsii_.Set(
 		j,
 		"functionScheduleFrequencyRestOfAssets",
@@ -777,7 +776,7 @@ func (j *jsiiProxy_Observegcp)SetFunctionScheduleFrequencyRestOfAssets(val *stri
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetFunctionTimeout(val *float64) {
+func (j *jsiiProxy_Observegcp) SetFunctionTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"functionTimeout",
@@ -785,7 +784,7 @@ func (j *jsiiProxy_Observegcp)SetFunctionTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetGcpRegion(val *string) {
+func (j *jsiiProxy_Observegcp) SetGcpRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"gcpRegion",
@@ -793,7 +792,7 @@ func (j *jsiiProxy_Observegcp)SetGcpRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_Observegcp) SetLabels(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"labels",
@@ -801,7 +800,7 @@ func (j *jsiiProxy_Observegcp)SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetLoggingExclusions(val interface{}) {
+func (j *jsiiProxy_Observegcp) SetLoggingExclusions(val any) {
 	if err := j.validateSetLoggingExclusionsParameters(val); err != nil {
 		panic(err)
 	}
@@ -812,7 +811,7 @@ func (j *jsiiProxy_Observegcp)SetLoggingExclusions(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetLoggingFilter(val *string) {
+func (j *jsiiProxy_Observegcp) SetLoggingFilter(val *string) {
 	_jsii_.Set(
 		j,
 		"loggingFilter",
@@ -820,7 +819,7 @@ func (j *jsiiProxy_Observegcp)SetLoggingFilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetMaxAttempts(val *float64) {
+func (j *jsiiProxy_Observegcp) SetMaxAttempts(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxAttempts",
@@ -828,7 +827,7 @@ func (j *jsiiProxy_Observegcp)SetMaxAttempts(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetMaxConcurrentDispatches(val *float64) {
+func (j *jsiiProxy_Observegcp) SetMaxConcurrentDispatches(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxConcurrentDispatches",
@@ -836,7 +835,7 @@ func (j *jsiiProxy_Observegcp)SetMaxConcurrentDispatches(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetMaxDispatchesPerSecond(val *float64) {
+func (j *jsiiProxy_Observegcp) SetMaxDispatchesPerSecond(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxDispatchesPerSecond",
@@ -844,7 +843,7 @@ func (j *jsiiProxy_Observegcp)SetMaxDispatchesPerSecond(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetMaxRetryDuration(val *string) {
+func (j *jsiiProxy_Observegcp) SetMaxRetryDuration(val *string) {
 	_jsii_.Set(
 		j,
 		"maxRetryDuration",
@@ -852,7 +851,7 @@ func (j *jsiiProxy_Observegcp)SetMaxRetryDuration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetMinBackoff(val *string) {
+func (j *jsiiProxy_Observegcp) SetMinBackoff(val *string) {
 	_jsii_.Set(
 		j,
 		"minBackoff",
@@ -860,7 +859,7 @@ func (j *jsiiProxy_Observegcp)SetMinBackoff(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetName(val *string) {
+func (j *jsiiProxy_Observegcp) SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
@@ -868,7 +867,7 @@ func (j *jsiiProxy_Observegcp)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetPollerRoles(val *[]*string) {
+func (j *jsiiProxy_Observegcp) SetPollerRoles(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"pollerRoles",
@@ -876,7 +875,7 @@ func (j *jsiiProxy_Observegcp)SetPollerRoles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetProjectId(val *string) {
+func (j *jsiiProxy_Observegcp) SetProjectId(val *string) {
 	_jsii_.Set(
 		j,
 		"projectId",
@@ -884,7 +883,7 @@ func (j *jsiiProxy_Observegcp)SetProjectId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetPubsubAckDeadlineSeconds(val *float64) {
+func (j *jsiiProxy_Observegcp) SetPubsubAckDeadlineSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"pubsubAckDeadlineSeconds",
@@ -892,7 +891,7 @@ func (j *jsiiProxy_Observegcp)SetPubsubAckDeadlineSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetPubsubMaximumBackoff(val *string) {
+func (j *jsiiProxy_Observegcp) SetPubsubMaximumBackoff(val *string) {
 	_jsii_.Set(
 		j,
 		"pubsubMaximumBackoff",
@@ -900,7 +899,7 @@ func (j *jsiiProxy_Observegcp)SetPubsubMaximumBackoff(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetPubsubMessageRetentionDuration(val *string) {
+func (j *jsiiProxy_Observegcp) SetPubsubMessageRetentionDuration(val *string) {
 	_jsii_.Set(
 		j,
 		"pubsubMessageRetentionDuration",
@@ -908,7 +907,7 @@ func (j *jsiiProxy_Observegcp)SetPubsubMessageRetentionDuration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetPubsubMinimumBackoff(val *string) {
+func (j *jsiiProxy_Observegcp) SetPubsubMinimumBackoff(val *string) {
 	_jsii_.Set(
 		j,
 		"pubsubMinimumBackoff",
@@ -916,7 +915,7 @@ func (j *jsiiProxy_Observegcp)SetPubsubMinimumBackoff(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetResource(val *string) {
+func (j *jsiiProxy_Observegcp) SetResource(val *string) {
 	if err := j.validateSetResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -944,7 +943,7 @@ func (j *jsiiProxy_Observegcp)SetResource(val *string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Observegcp_IsConstruct(x interface{}) *bool {
+func Observegcp_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateObservegcp_IsConstructParameters(x); err != nil {
@@ -955,7 +954,7 @@ func Observegcp_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observegcp.Observegcp",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -963,7 +962,7 @@ func Observegcp_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Observegcp_IsTerraformElement(x interface{}) *bool {
+func Observegcp_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateObservegcp_IsTerraformElementParameters(x); err != nil {
@@ -974,32 +973,32 @@ func Observegcp_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-observegcp.Observegcp",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
 	return returns
 }
 
-func (o *jsiiProxy_Observegcp) AddOverride(path *string, value interface{}) {
+func (o *jsiiProxy_Observegcp) AddOverride(path *string, value any) {
 	if err := o.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (o *jsiiProxy_Observegcp) AddProvider(provider interface{}) {
+func (o *jsiiProxy_Observegcp) AddProvider(provider any) {
 	if err := o.validateAddProviderParameters(provider); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		o,
 		"addProvider",
-		[]interface{}{provider},
+		[]any{provider},
 	)
 }
 
@@ -1012,7 +1011,7 @@ func (o *jsiiProxy_Observegcp) GetString(output *string) *string {
 	_jsii_.Invoke(
 		o,
 		"getString",
-		[]interface{}{output},
+		[]any{output},
 		&returns,
 	)
 
@@ -1028,7 +1027,7 @@ func (o *jsiiProxy_Observegcp) InterpolationForOutput(moduleOutput *string) cdkt
 	_jsii_.Invoke(
 		o,
 		"interpolationForOutput",
-		[]interface{}{moduleOutput},
+		[]any{moduleOutput},
 		&returns,
 	)
 
@@ -1042,7 +1041,7 @@ func (o *jsiiProxy_Observegcp) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		o,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -1054,8 +1053,8 @@ func (o *jsiiProxy_Observegcp) ResetOverrideLogicalId() {
 	)
 }
 
-func (o *jsiiProxy_Observegcp) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_Observegcp) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1067,8 +1066,8 @@ func (o *jsiiProxy_Observegcp) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_Observegcp) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (o *jsiiProxy_Observegcp) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		o,
@@ -1080,8 +1079,8 @@ func (o *jsiiProxy_Observegcp) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (o *jsiiProxy_Observegcp) ToHclTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_Observegcp) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1093,8 +1092,8 @@ func (o *jsiiProxy_Observegcp) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_Observegcp) ToMetadata() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_Observegcp) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1119,8 +1118,8 @@ func (o *jsiiProxy_Observegcp) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_Observegcp) ToTerraform() interface{} {
-	var returns interface{}
+func (o *jsiiProxy_Observegcp) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		o,
@@ -1131,4 +1130,3 @@ func (o *jsiiProxy_Observegcp) ToTerraform() interface{} {
 
 	return returns
 }
-

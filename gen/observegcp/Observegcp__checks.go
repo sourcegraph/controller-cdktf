@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (o *jsiiProxy_Observegcp) validateAddOverrideParameters(path *string, value interface{}) error {
+func (o *jsiiProxy_Observegcp) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (o *jsiiProxy_Observegcp) validateAddOverrideParameters(path *string, value
 	return nil
 }
 
-func (o *jsiiProxy_Observegcp) validateAddProviderParameters(provider interface{}) error {
+func (o *jsiiProxy_Observegcp) validateAddProviderParameters(provider any) error {
 	if provider == nil {
 		return fmt.Errorf("parameter provider is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (o *jsiiProxy_Observegcp) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
-func validateObservegcp_IsConstructParameters(x interface{}) error {
+func validateObservegcp_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func validateObservegcp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateObservegcp_IsTerraformElementParameters(x interface{}) error {
+func validateObservegcp_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func validateObservegcp_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Observegcp) validateSetLoggingExclusionsParameters(val interface{}) error {
+func (j *jsiiProxy_Observegcp) validateSetLoggingExclusionsParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -124,4 +124,3 @@ func validateNewObservegcpParameters(scope constructs.Construct, id *string, con
 
 	return nil
 }
-
