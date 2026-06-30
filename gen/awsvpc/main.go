@@ -10,7 +10,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-awsvpc.Awsvpc",
-		reflect.TypeOf((*Awsvpc)(nil)).Elem(),
+		reflect.TypeFor[Awsvpc](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "addProvider", GoMethod: "AddProvider"},
@@ -331,7 +331,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayId", GoGetter: "VpnGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayTags", GoGetter: "VpnGatewayTags"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Awsvpc{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformModule)
 			return &j
@@ -339,6 +339,6 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-awsvpc.AwsvpcConfig",
-		reflect.TypeOf((*AwsvpcConfig)(nil)).Elem(),
+		reflect.TypeFor[AwsvpcConfig](),
 	)
 }
