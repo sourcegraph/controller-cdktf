@@ -98,7 +98,7 @@ func (s *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewScheduleRotationsVersionsWorkingIntervalsOutputReferenceParamete
 
 	return nil
 }
-

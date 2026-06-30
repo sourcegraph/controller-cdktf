@@ -13,34 +13,34 @@ import (
 type AlertRoute interface {
 	cdktf.TerraformResource
 	AlertSources() AlertRouteAlertSourcesList
-	AlertSourcesInput() interface{}
+	AlertSourcesInput() any
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ChannelConfig() AlertRouteChannelConfigList
-	ChannelConfigInput() interface{}
+	ChannelConfigInput() any
 	ConditionGroups() AlertRouteConditionGroupsList
-	ConditionGroupsInput() interface{}
+	ConditionGroupsInput() any
 	// Experimental.
-	Connection() interface{}
+	Connection() any
 	// Experimental.
-	SetConnection(val interface{})
+	SetConnection(val any)
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	// Experimental.
-	Count() interface{}
+	Count() any
 	// Experimental.
-	SetCount(val interface{})
+	SetCount(val any)
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Enabled() interface{}
-	SetEnabled(val interface{})
-	EnabledInput() interface{}
+	Enabled() any
+	SetEnabled(val any)
+	EnabledInput() any
 	EscalationConfig() AlertRouteEscalationConfigOutputReference
-	EscalationConfigInput() interface{}
+	EscalationConfigInput() any
 	Expressions() AlertRouteExpressionsList
-	ExpressionsInput() interface{}
+	ExpressionsInput() any
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,12 +51,12 @@ type AlertRoute interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	IncidentConfig() AlertRouteIncidentConfigOutputReference
-	IncidentConfigInput() interface{}
+	IncidentConfigInput() any
 	IncidentTemplate() AlertRouteIncidentTemplateOutputReference
-	IncidentTemplateInput() interface{}
-	IsPrivate() interface{}
-	SetIsPrivate(val interface{})
-	IsPrivateInput() interface{}
+	IncidentTemplateInput() any
+	IsPrivate() any
+	SetIsPrivate(val any)
+	IsPrivateInput() any
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -71,24 +71,24 @@ type AlertRoute interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
+	Provisioners() *[]any
 	// Experimental.
-	SetProvisioners(val *[]interface{})
+	SetProvisioners(val *[]any)
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
-	TerraformMetaArguments() *map[string]interface{}
+	TerraformMetaArguments() *map[string]any
 	// Experimental.
 	TerraformResourceType() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -106,7 +106,7 @@ type AlertRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	HasResourceMove() interface{}
+	HasResourceMove() any
 	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
@@ -118,35 +118,35 @@ type AlertRoute interface {
 	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
-	MoveTo(moveTarget *string, index interface{})
+	MoveTo(moveTarget *string, index any)
 	// Moves this resource to the resource corresponding to "id".
 	// Experimental.
 	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAlertSources(value interface{})
-	PutChannelConfig(value interface{})
-	PutConditionGroups(value interface{})
+	PutAlertSources(value any)
+	PutChannelConfig(value any)
+	PutConditionGroups(value any)
 	PutEscalationConfig(value *AlertRouteEscalationConfig)
-	PutExpressions(value interface{})
+	PutExpressions(value any)
 	PutIncidentConfig(value *AlertRouteIncidentConfig)
 	PutIncidentTemplate(value *AlertRouteIncidentTemplate)
 	ResetChannelConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for AlertRoute
@@ -164,8 +164,8 @@ func (j *jsiiProxy_AlertRoute) AlertSources() AlertRouteAlertSourcesList {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) AlertSourcesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) AlertSourcesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"alertSourcesInput",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_AlertRoute) ChannelConfig() AlertRouteChannelConfigList {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) ChannelConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) ChannelConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"channelConfigInput",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_AlertRoute) ConditionGroups() AlertRouteConditionGroupsList {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) ConditionGroupsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) ConditionGroupsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"conditionGroupsInput",
@@ -224,8 +224,8 @@ func (j *jsiiProxy_AlertRoute) ConditionGroupsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) Connection() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) Connection() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"connection",
@@ -234,8 +234,8 @@ func (j *jsiiProxy_AlertRoute) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlertRoute) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -244,8 +244,8 @@ func (j *jsiiProxy_AlertRoute) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) Count() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) Count() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"count",
@@ -264,8 +264,8 @@ func (j *jsiiProxy_AlertRoute) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) Enabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) Enabled() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -274,8 +274,8 @@ func (j *jsiiProxy_AlertRoute) Enabled() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) EnabledInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) EnabledInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"enabledInput",
@@ -294,8 +294,8 @@ func (j *jsiiProxy_AlertRoute) EscalationConfig() AlertRouteEscalationConfigOutp
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) EscalationConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) EscalationConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"escalationConfigInput",
@@ -314,8 +314,8 @@ func (j *jsiiProxy_AlertRoute) Expressions() AlertRouteExpressionsList {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) ExpressionsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) ExpressionsInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"expressionsInput",
@@ -374,8 +374,8 @@ func (j *jsiiProxy_AlertRoute) IncidentConfig() AlertRouteIncidentConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) IncidentConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) IncidentConfigInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"incidentConfigInput",
@@ -394,8 +394,8 @@ func (j *jsiiProxy_AlertRoute) IncidentTemplate() AlertRouteIncidentTemplateOutp
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) IncidentTemplateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) IncidentTemplateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"incidentTemplateInput",
@@ -404,8 +404,8 @@ func (j *jsiiProxy_AlertRoute) IncidentTemplateInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) IsPrivate() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) IsPrivate() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isPrivate",
@@ -414,8 +414,8 @@ func (j *jsiiProxy_AlertRoute) IsPrivate() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) IsPrivateInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) IsPrivateInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"isPrivateInput",
@@ -474,8 +474,8 @@ func (j *jsiiProxy_AlertRoute) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) Provisioners() *[]interface{} {
-	var returns *[]interface{}
+func (j *jsiiProxy_AlertRoute) Provisioners() *[]any {
+	var returns *[]any
 	_jsii_.Get(
 		j,
 		"provisioners",
@@ -484,8 +484,8 @@ func (j *jsiiProxy_AlertRoute) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AlertRoute) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -504,8 +504,8 @@ func (j *jsiiProxy_AlertRoute) TerraformGeneratorMetadata() *cdktf.TerraformProv
 	return returns
 }
 
-func (j *jsiiProxy_AlertRoute) TerraformMetaArguments() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_AlertRoute) TerraformMetaArguments() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"terraformMetaArguments",
@@ -524,7 +524,6 @@ func (j *jsiiProxy_AlertRoute) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/alert_route incident_alert_route} Resource.
 func NewAlertRoute(scope constructs.Construct, id *string, config *AlertRouteConfig) AlertRoute {
 	_init_.Initialize()
@@ -536,7 +535,7 @@ func NewAlertRoute(scope constructs.Construct, id *string, config *AlertRouteCon
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -549,12 +548,12 @@ func NewAlertRoute_Override(a AlertRoute, scope constructs.Construct, id *string
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.alertRoute.AlertRoute",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetConnection(val interface{}) {
+func (j *jsiiProxy_AlertRoute) SetConnection(val any) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -565,7 +564,7 @@ func (j *jsiiProxy_AlertRoute)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetCount(val interface{}) {
+func (j *jsiiProxy_AlertRoute) SetCount(val any) {
 	if err := j.validateSetCountParameters(val); err != nil {
 		panic(err)
 	}
@@ -576,7 +575,7 @@ func (j *jsiiProxy_AlertRoute)SetCount(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AlertRoute) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -584,7 +583,7 @@ func (j *jsiiProxy_AlertRoute)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetEnabled(val interface{}) {
+func (j *jsiiProxy_AlertRoute) SetEnabled(val any) {
 	if err := j.validateSetEnabledParameters(val); err != nil {
 		panic(err)
 	}
@@ -595,7 +594,7 @@ func (j *jsiiProxy_AlertRoute)SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AlertRoute) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -603,7 +602,7 @@ func (j *jsiiProxy_AlertRoute)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetIsPrivate(val interface{}) {
+func (j *jsiiProxy_AlertRoute) SetIsPrivate(val any) {
 	if err := j.validateSetIsPrivateParameters(val); err != nil {
 		panic(err)
 	}
@@ -614,7 +613,7 @@ func (j *jsiiProxy_AlertRoute)SetIsPrivate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AlertRoute) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -625,7 +624,7 @@ func (j *jsiiProxy_AlertRoute)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetName(val *string) {
+func (j *jsiiProxy_AlertRoute) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -636,7 +635,7 @@ func (j *jsiiProxy_AlertRoute)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AlertRoute) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -644,7 +643,7 @@ func (j *jsiiProxy_AlertRoute)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AlertRoute)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AlertRoute) SetProvisioners(val *[]any) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
@@ -667,7 +666,7 @@ func AlertRoute_GenerateConfigForImport(scope constructs.Construct, importToId *
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.alertRoute.AlertRoute",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -691,7 +690,7 @@ func AlertRoute_GenerateConfigForImport(scope constructs.Construct, importToId *
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func AlertRoute_IsConstruct(x interface{}) *bool {
+func AlertRoute_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertRoute_IsConstructParameters(x); err != nil {
@@ -702,7 +701,7 @@ func AlertRoute_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.alertRoute.AlertRoute",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -710,7 +709,7 @@ func AlertRoute_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func AlertRoute_IsTerraformElement(x interface{}) *bool {
+func AlertRoute_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertRoute_IsTerraformElementParameters(x); err != nil {
@@ -721,7 +720,7 @@ func AlertRoute_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.alertRoute.AlertRoute",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -729,7 +728,7 @@ func AlertRoute_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func AlertRoute_IsTerraformResource(x interface{}) *bool {
+func AlertRoute_IsTerraformResource(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateAlertRoute_IsTerraformResourceParameters(x); err != nil {
@@ -740,7 +739,7 @@ func AlertRoute_IsTerraformResource(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.alertRoute.AlertRoute",
 		"isTerraformResource",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -765,31 +764,31 @@ func (a *jsiiProxy_AlertRoute) AddMoveTarget(moveTarget *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"addMoveTarget",
-		[]interface{}{moveTarget},
+		[]any{moveTarget},
 	)
 }
 
-func (a *jsiiProxy_AlertRoute) AddOverride(path *string, value interface{}) {
+func (a *jsiiProxy_AlertRoute) AddOverride(path *string, value any) {
 	if err := a.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
-func (a *jsiiProxy_AlertRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlertRoute) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -805,7 +804,7 @@ func (a *jsiiProxy_AlertRoute) GetBooleanAttribute(terraformAttribute *string) c
 	_jsii_.Invoke(
 		a,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -821,7 +820,7 @@ func (a *jsiiProxy_AlertRoute) GetBooleanMapAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -837,7 +836,7 @@ func (a *jsiiProxy_AlertRoute) GetListAttribute(terraformAttribute *string) *[]*
 	_jsii_.Invoke(
 		a,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -853,7 +852,7 @@ func (a *jsiiProxy_AlertRoute) GetNumberAttribute(terraformAttribute *string) *f
 	_jsii_.Invoke(
 		a,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -869,7 +868,7 @@ func (a *jsiiProxy_AlertRoute) GetNumberListAttribute(terraformAttribute *string
 	_jsii_.Invoke(
 		a,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -885,7 +884,7 @@ func (a *jsiiProxy_AlertRoute) GetNumberMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -901,7 +900,7 @@ func (a *jsiiProxy_AlertRoute) GetStringAttribute(terraformAttribute *string) *s
 	_jsii_.Invoke(
 		a,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -917,15 +916,15 @@ func (a *jsiiProxy_AlertRoute) GetStringMapAttribute(terraformAttribute *string)
 	_jsii_.Invoke(
 		a,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlertRoute) HasResourceMove() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertRoute) HasResourceMove() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -944,7 +943,7 @@ func (a *jsiiProxy_AlertRoute) ImportFrom(id *string, provider cdktf.TerraformPr
 	_jsii_.InvokeVoid(
 		a,
 		"importFrom",
-		[]interface{}{id, provider},
+		[]any{id, provider},
 	)
 }
 
@@ -957,7 +956,7 @@ func (a *jsiiProxy_AlertRoute) InterpolationForAttribute(terraformAttribute *str
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -971,18 +970,18 @@ func (a *jsiiProxy_AlertRoute) MoveFromId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveFromId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
-func (a *jsiiProxy_AlertRoute) MoveTo(moveTarget *string, index interface{}) {
+func (a *jsiiProxy_AlertRoute) MoveTo(moveTarget *string, index any) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"moveTo",
-		[]interface{}{moveTarget, index},
+		[]any{moveTarget, index},
 	)
 }
 
@@ -993,7 +992,7 @@ func (a *jsiiProxy_AlertRoute) MoveToId(id *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"moveToId",
-		[]interface{}{id},
+		[]any{id},
 	)
 }
 
@@ -1004,40 +1003,40 @@ func (a *jsiiProxy_AlertRoute) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
-func (a *jsiiProxy_AlertRoute) PutAlertSources(value interface{}) {
+func (a *jsiiProxy_AlertRoute) PutAlertSources(value any) {
 	if err := a.validatePutAlertSourcesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putAlertSources",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AlertRoute) PutChannelConfig(value interface{}) {
+func (a *jsiiProxy_AlertRoute) PutChannelConfig(value any) {
 	if err := a.validatePutChannelConfigParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putChannelConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AlertRoute) PutConditionGroups(value interface{}) {
+func (a *jsiiProxy_AlertRoute) PutConditionGroups(value any) {
 	if err := a.validatePutConditionGroupsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putConditionGroups",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1048,18 +1047,18 @@ func (a *jsiiProxy_AlertRoute) PutEscalationConfig(value *AlertRouteEscalationCo
 	_jsii_.InvokeVoid(
 		a,
 		"putEscalationConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
-func (a *jsiiProxy_AlertRoute) PutExpressions(value interface{}) {
+func (a *jsiiProxy_AlertRoute) PutExpressions(value any) {
 	if err := a.validatePutExpressionsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		a,
 		"putExpressions",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1070,7 +1069,7 @@ func (a *jsiiProxy_AlertRoute) PutIncidentConfig(value *AlertRouteIncidentConfig
 	_jsii_.InvokeVoid(
 		a,
 		"putIncidentConfig",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1081,7 +1080,7 @@ func (a *jsiiProxy_AlertRoute) PutIncidentTemplate(value *AlertRouteIncidentTemp
 	_jsii_.InvokeVoid(
 		a,
 		"putIncidentTemplate",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -1101,8 +1100,8 @@ func (a *jsiiProxy_AlertRoute) ResetOverrideLogicalId() {
 	)
 }
 
-func (a *jsiiProxy_AlertRoute) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlertRoute) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1114,8 +1113,8 @@ func (a *jsiiProxy_AlertRoute) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlertRoute) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (a *jsiiProxy_AlertRoute) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		a,
@@ -1127,8 +1126,8 @@ func (a *jsiiProxy_AlertRoute) SynthesizeHclAttributes() *map[string]interface{}
 	return returns
 }
 
-func (a *jsiiProxy_AlertRoute) ToHclTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertRoute) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1140,8 +1139,8 @@ func (a *jsiiProxy_AlertRoute) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (a *jsiiProxy_AlertRoute) ToMetadata() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertRoute) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1166,8 +1165,8 @@ func (a *jsiiProxy_AlertRoute) ToString() *string {
 	return returns
 }
 
-func (a *jsiiProxy_AlertRoute) ToTerraform() interface{} {
-	var returns interface{}
+func (a *jsiiProxy_AlertRoute) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		a,
@@ -1178,4 +1177,3 @@ func (a *jsiiProxy_AlertRoute) ToTerraform() interface{} {
 
 	return returns
 }
-

@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertRouteIncidentConfigGroupingKeysOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigGroupingKeysOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentConfigGroupingKeysOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlertRouteIncidentConfigGroupingKeysOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentConfigGroupingKeysOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentConfigGroupingKeysOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAlertRouteIncidentConfigGroupingKeysOutputReferenceParameters(te
 
 	return nil
 }
-

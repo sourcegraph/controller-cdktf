@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteAlertSourcesList) validateResolveParameters(_contex
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteAlertSourcesList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteAlertSourcesList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteAlertSourcesListParameters(terraformResource cdktf.IIn
 
 	return nil
 }
-

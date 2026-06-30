@@ -17,8 +17,8 @@ type EscalationPathPathIfElseThenPathLevelTargetsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +38,7 @@ type EscalationPathPathIfElseThenPathLevelTargetsList interface {
 	Get(index *float64) EscalationPathPathIfElseThenPathLevelTargetsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -71,8 +71,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -111,7 +111,6 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) WrapsSet() 
 	return returns
 }
 
-
 func NewEscalationPathPathIfElseThenPathLevelTargetsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EscalationPathPathIfElseThenPathLevelTargetsList {
 	_init_.Initialize()
 
@@ -122,7 +121,7 @@ func NewEscalationPathPathIfElseThenPathLevelTargetsList(terraformResource cdktf
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargetsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
 
@@ -134,12 +133,12 @@ func NewEscalationPathPathIfElseThenPathLevelTargetsList_Override(e EscalationPa
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargetsList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		[]any{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -150,7 +149,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList)SetInternalV
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +160,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +171,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -192,7 +191,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) AllWithMapK
 	_jsii_.Invoke(
 		e,
 		"allWithMapKey",
-		[]interface{}{mapKeyAttributeName},
+		[]any{mapKeyAttributeName},
 		&returns,
 	)
 
@@ -221,23 +220,23 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) Get(index *
 	_jsii_.Invoke(
 		e,
 		"get",
-		[]interface{}{index},
+		[]any{index},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) Resolve(_context cdktf.IResolveContext) any {
 	if err := e.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -256,4 +255,3 @@ func (e *jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList) ToString() 
 
 	return returns
 }
-

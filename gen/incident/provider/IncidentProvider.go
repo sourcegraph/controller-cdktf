@@ -21,7 +21,7 @@ type IncidentProvider interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
-	ConstructNodeMetadata() *map[string]interface{}
+	ConstructNodeMetadata() *map[string]any
 	Endpoint() *string
 	SetEndpoint(val *string)
 	EndpointInput() *string
@@ -30,11 +30,11 @@ type IncidentProvider interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	// Experimental.
-	MetaAttributes() *map[string]interface{}
+	MetaAttributes() *map[string]any
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	RawOverrides() interface{}
+	RawOverrides() any
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -42,7 +42,7 @@ type IncidentProvider interface {
 	// Experimental.
 	TerraformResourceType() *string
 	// Experimental.
-	AddOverride(path *string, value interface{})
+	AddOverride(path *string, value any)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -52,17 +52,17 @@ type IncidentProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	SynthesizeAttributes() *map[string]interface{}
-	SynthesizeHclAttributes() *map[string]interface{}
+	SynthesizeAttributes() *map[string]any
+	SynthesizeHclAttributes() *map[string]any
 	// Experimental.
-	ToHclTerraform() interface{}
+	ToHclTerraform() any
 	// Experimental.
-	ToMetadata() interface{}
+	ToMetadata() any
 	// Returns a string representation of this construct.
 	ToString() *string
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
-	ToTerraform() interface{}
+	ToTerraform() any
 }
 
 // The jsii proxy struct for IncidentProvider
@@ -120,8 +120,8 @@ func (j *jsiiProxy_IncidentProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_IncidentProvider) ConstructNodeMetadata() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IncidentProvider) ConstructNodeMetadata() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_IncidentProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IncidentProvider) MetaAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (j *jsiiProxy_IncidentProvider) MetaAttributes() *map[string]any {
+	var returns *map[string]any
 	_jsii_.Get(
 		j,
 		"metaAttributes",
@@ -190,8 +190,8 @@ func (j *jsiiProxy_IncidentProvider) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_IncidentProvider) RawOverrides() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IncidentProvider) RawOverrides() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"rawOverrides",
@@ -230,7 +230,6 @@ func (j *jsiiProxy_IncidentProvider) TerraformResourceType() *string {
 	return returns
 }
 
-
 // Create a new {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs incident} Resource.
 func NewIncidentProvider(scope constructs.Construct, id *string, config *IncidentProviderConfig) IncidentProvider {
 	_init_.Initialize()
@@ -242,7 +241,7 @@ func NewIncidentProvider(scope constructs.Construct, id *string, config *Inciden
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.provider.IncidentProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		&j,
 	)
 
@@ -255,12 +254,12 @@ func NewIncidentProvider_Override(i IncidentProvider, scope constructs.Construct
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.provider.IncidentProvider",
-		[]interface{}{scope, id, config},
+		[]any{scope, id, config},
 		i,
 	)
 }
 
-func (j *jsiiProxy_IncidentProvider)SetAlias(val *string) {
+func (j *jsiiProxy_IncidentProvider) SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -268,7 +267,7 @@ func (j *jsiiProxy_IncidentProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IncidentProvider)SetApiKey(val *string) {
+func (j *jsiiProxy_IncidentProvider) SetApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiKey",
@@ -276,7 +275,7 @@ func (j *jsiiProxy_IncidentProvider)SetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IncidentProvider)SetEndpoint(val *string) {
+func (j *jsiiProxy_IncidentProvider) SetEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"endpoint",
@@ -296,7 +295,7 @@ func IncidentProvider_GenerateConfigForImport(scope constructs.Construct, import
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.provider.IncidentProvider",
 		"generateConfigForImport",
-		[]interface{}{scope, importToId, importFromId, provider},
+		[]any{scope, importToId, importFromId, provider},
 		&returns,
 	)
 
@@ -320,7 +319,7 @@ func IncidentProvider_GenerateConfigForImport(scope constructs.Construct, import
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func IncidentProvider_IsConstruct(x interface{}) *bool {
+func IncidentProvider_IsConstruct(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIncidentProvider_IsConstructParameters(x); err != nil {
@@ -331,7 +330,7 @@ func IncidentProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.provider.IncidentProvider",
 		"isConstruct",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -339,7 +338,7 @@ func IncidentProvider_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func IncidentProvider_IsTerraformElement(x interface{}) *bool {
+func IncidentProvider_IsTerraformElement(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIncidentProvider_IsTerraformElementParameters(x); err != nil {
@@ -350,7 +349,7 @@ func IncidentProvider_IsTerraformElement(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.provider.IncidentProvider",
 		"isTerraformElement",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -358,7 +357,7 @@ func IncidentProvider_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func IncidentProvider_IsTerraformProvider(x interface{}) *bool {
+func IncidentProvider_IsTerraformProvider(x any) *bool {
 	_init_.Initialize()
 
 	if err := validateIncidentProvider_IsTerraformProviderParameters(x); err != nil {
@@ -369,7 +368,7 @@ func IncidentProvider_IsTerraformProvider(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-incident.provider.IncidentProvider",
 		"isTerraformProvider",
-		[]interface{}{x},
+		[]any{x},
 		&returns,
 	)
 
@@ -387,14 +386,14 @@ func IncidentProvider_TfResourceType() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IncidentProvider) AddOverride(path *string, value interface{}) {
+func (i *jsiiProxy_IncidentProvider) AddOverride(path *string, value any) {
 	if err := i.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
-		[]interface{}{path, value},
+		[]any{path, value},
 	)
 }
 
@@ -405,7 +404,7 @@ func (i *jsiiProxy_IncidentProvider) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",
-		[]interface{}{newLogicalId},
+		[]any{newLogicalId},
 	)
 }
 
@@ -441,8 +440,8 @@ func (i *jsiiProxy_IncidentProvider) ResetOverrideLogicalId() {
 	)
 }
 
-func (i *jsiiProxy_IncidentProvider) SynthesizeAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IncidentProvider) SynthesizeAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -454,8 +453,8 @@ func (i *jsiiProxy_IncidentProvider) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (i *jsiiProxy_IncidentProvider) SynthesizeHclAttributes() *map[string]interface{} {
-	var returns *map[string]interface{}
+func (i *jsiiProxy_IncidentProvider) SynthesizeHclAttributes() *map[string]any {
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		i,
@@ -467,8 +466,8 @@ func (i *jsiiProxy_IncidentProvider) SynthesizeHclAttributes() *map[string]inter
 	return returns
 }
 
-func (i *jsiiProxy_IncidentProvider) ToHclTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IncidentProvider) ToHclTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -480,8 +479,8 @@ func (i *jsiiProxy_IncidentProvider) ToHclTerraform() interface{} {
 	return returns
 }
 
-func (i *jsiiProxy_IncidentProvider) ToMetadata() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IncidentProvider) ToMetadata() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -506,8 +505,8 @@ func (i *jsiiProxy_IncidentProvider) ToString() *string {
 	return returns
 }
 
-func (i *jsiiProxy_IncidentProvider) ToTerraform() interface{} {
-	var returns interface{}
+func (i *jsiiProxy_IncidentProvider) ToTerraform() any {
+	var returns any
 
 	_jsii_.Invoke(
 		i,
@@ -518,4 +517,3 @@ func (i *jsiiProxy_IncidentProvider) ToTerraform() interface{} {
 
 	return returns
 }
-

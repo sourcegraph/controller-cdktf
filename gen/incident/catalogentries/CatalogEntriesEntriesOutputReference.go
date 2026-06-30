@@ -14,12 +14,12 @@ type CatalogEntriesEntriesOutputReference interface {
 	SetAliases(val *[]*string)
 	AliasesInput() *[]*string
 	AttributeValues() CatalogEntriesEntriesAttributeValuesMap
-	AttributeValuesInput() interface{}
+	AttributeValuesInput() any
 	// the index of the complex object in a list.
 	// Experimental.
-	ComplexObjectIndex() interface{}
+	ComplexObjectIndex() any
 	// Experimental.
-	SetComplexObjectIndex(val interface{})
+	SetComplexObjectIndex(val any)
 	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
 	// Experimental.
 	ComplexObjectIsFromSet() *bool
@@ -33,8 +33,8 @@ type CatalogEntriesEntriesOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() any
+	SetInternalValue(val any)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -52,7 +52,7 @@ type CatalogEntriesEntriesOutputReference interface {
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
-	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]any
 	// Experimental.
 	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
 	// Experimental.
@@ -73,12 +73,12 @@ type CatalogEntriesEntriesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAttributeValues(value interface{})
+	PutAttributeValues(value any)
 	ResetAliases()
 	ResetRank()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(_context cdktf.IResolveContext) any
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) AttributeValues() Catal
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) AttributeValuesInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) AttributeValuesInput() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"attributeValuesInput",
@@ -131,8 +131,8 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) AttributeValuesInput() 
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) ComplexObjectIndex() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) ComplexObjectIndex() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"complexObjectIndex",
@@ -181,8 +181,8 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) InternalValue() any {
+	var returns any
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -251,7 +251,6 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) TerraformResource() cdk
 	return returns
 }
 
-
 func NewCatalogEntriesEntriesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) CatalogEntriesEntriesOutputReference {
 	_init_.Initialize()
 
@@ -262,7 +261,7 @@ func NewCatalogEntriesEntriesOutputReference(terraformResource cdktf.IInterpolat
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
+		[]any{terraformResource, terraformAttribute, complexObjectKey},
 		&j,
 	)
 
@@ -274,12 +273,12 @@ func NewCatalogEntriesEntriesOutputReference_Override(c CatalogEntriesEntriesOut
 
 	_jsii_.Create(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectKey},
+		[]any{terraformResource, terraformAttribute, complexObjectKey},
 		c,
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetAliases(val *[]*string) {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) SetAliases(val *[]*string) {
 	if err := j.validateSetAliasesParameters(val); err != nil {
 		panic(err)
 	}
@@ -290,7 +289,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetAliases(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) SetComplexObjectIndex(val any) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -301,7 +300,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -312,7 +311,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) SetInternalValue(val any) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -323,7 +322,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetName(val *string) {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -334,7 +333,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetRank(val *float64) {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) SetRank(val *float64) {
 	if err := j.validateSetRankParameters(val); err != nil {
 		panic(err)
 	}
@@ -345,7 +344,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetRank(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -356,7 +355,7 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -380,16 +379,16 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) ComputeFqn() *string {
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]any {
 	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns *map[string]interface{}
+	var returns *map[string]any
 
 	_jsii_.Invoke(
 		c,
 		"getAnyMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -405,7 +404,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetBooleanAttribute(ter
 	_jsii_.Invoke(
 		c,
 		"getBooleanAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -421,7 +420,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetBooleanMapAttribute(
 	_jsii_.Invoke(
 		c,
 		"getBooleanMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -437,7 +436,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetListAttribute(terraf
 	_jsii_.Invoke(
 		c,
 		"getListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -453,7 +452,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetNumberAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getNumberAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -469,7 +468,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetNumberListAttribute(
 	_jsii_.Invoke(
 		c,
 		"getNumberListAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -485,7 +484,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetNumberMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getNumberMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -501,7 +500,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetStringAttribute(terr
 	_jsii_.Invoke(
 		c,
 		"getStringAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -517,7 +516,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) GetStringMapAttribute(t
 	_jsii_.Invoke(
 		c,
 		"getStringMapAttribute",
-		[]interface{}{terraformAttribute},
+		[]any{terraformAttribute},
 		&returns,
 	)
 
@@ -546,21 +545,21 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]any{property},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) PutAttributeValues(value interface{}) {
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) PutAttributeValues(value any) {
 	if err := c.validatePutAttributeValuesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAttributeValues",
-		[]interface{}{value},
+		[]any{value},
 	)
 }
 
@@ -580,16 +579,16 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) ResetRank() {
 	)
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) Resolve(_context cdktf.IResolveContext) any {
 	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
-	var returns interface{}
+	var returns any
 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]any{_context},
 		&returns,
 	)
 
@@ -608,4 +607,3 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) ToString() *string {
 
 	return returns
 }
-

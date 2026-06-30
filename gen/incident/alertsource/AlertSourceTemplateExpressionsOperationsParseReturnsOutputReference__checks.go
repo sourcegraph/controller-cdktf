@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsParseReturnsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsParseReturnsOutputReference) validateSetArrayParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsParseReturnsOutputReference) validateSetArrayParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsParseReturnsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsParseReturnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsParseReturnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsParseReturnsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsParseReturnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsParseReturnsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -242,4 +242,3 @@ func validateNewAlertSourceTemplateExpressionsOperationsParseReturnsOutputRefere
 
 	return nil
 }
-

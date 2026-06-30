@@ -6,9 +6,9 @@ import (
 
 type CatalogEntryConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,9 +18,9 @@ type CatalogEntryConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entry#attribute_values CatalogEntry#attribute_values}.
-	AttributeValues interface{} `field:"required" json:"attributeValues" yaml:"attributeValues"`
+	AttributeValues any `field:"required" json:"attributeValues" yaml:"attributeValues"`
 	// ID of this catalog type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entry#catalog_type_id CatalogEntry#catalog_type_id}
@@ -48,4 +48,3 @@ type CatalogEntryConfig struct {
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_entry#rank CatalogEntry#rank}
 	Rank *float64 `field:"optional" json:"rank" yaml:"rank"`
 }
-

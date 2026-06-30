@@ -98,7 +98,7 @@ func (e *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -246,4 +246,3 @@ func validateNewEscalationPathWorkingHoursWeekdayIntervalsOutputReferenceParamet
 
 	return nil
 }
-

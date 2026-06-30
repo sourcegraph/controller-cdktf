@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlertSourceTemplateAttributesBindingValueOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateAttributesBindingValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceTemplateAttributesBindingValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlertSourceTemplateAttributesBindingValueOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateAttributesBindingValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceTemplateAttributesBindingValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewAlertSourceTemplateAttributesBindingValueOutputReferenceParamete
 
 	return nil
 }
-

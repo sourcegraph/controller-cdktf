@@ -101,7 +101,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference) validatePutTargetsParameters(value interface{}) error {
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference) validatePutTargetsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -148,7 +148,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -213,7 +213,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -288,4 +288,3 @@ func validateNewEscalationPathPathIfElseElsePathLevelOutputReferenceParameters(t
 
 	return nil
 }
-

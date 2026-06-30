@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingArrayValueList) 
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteIncidentTemplateCustomFieldsBindingArrayValueListParam
 
 	return nil
 }
-

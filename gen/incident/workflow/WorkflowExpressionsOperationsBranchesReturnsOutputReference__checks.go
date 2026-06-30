@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsBranchesReturnsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesReturnsOutputReference) validateSetArrayParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesReturnsOutputReference) validateSetArrayParameters(val any) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -118,7 +118,7 @@ func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesReturnsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesReturnsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesReturnsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -183,7 +183,7 @@ func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesReturnsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesReturnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsBranchesReturnsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -242,4 +242,3 @@ func validateNewWorkflowExpressionsOperationsBranchesReturnsOutputReferenceParam
 
 	return nil
 }
-

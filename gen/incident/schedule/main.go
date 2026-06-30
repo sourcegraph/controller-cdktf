@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.Schedule",
-		reflect.TypeOf((*Schedule)(nil)).Elem(),
+		reflect.TypeFor[Schedule](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_Schedule{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -76,15 +76,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.schedule.ScheduleConfig",
-		reflect.TypeOf((*ScheduleConfig)(nil)).Elem(),
+		reflect.TypeFor[ScheduleConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.schedule.ScheduleHolidaysPublicConfig",
-		reflect.TypeOf((*ScheduleHolidaysPublicConfig)(nil)).Elem(),
+		reflect.TypeFor[ScheduleHolidaysPublicConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleHolidaysPublicConfigOutputReference",
-		reflect.TypeOf((*ScheduleHolidaysPublicConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleHolidaysPublicConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -110,7 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleHolidaysPublicConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -118,11 +118,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.schedule.ScheduleRotations",
-		reflect.TypeOf((*ScheduleRotations)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotations](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsList",
-		reflect.TypeOf((*ScheduleRotationsList)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -136,7 +136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -144,7 +144,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsOutputReference",
-		reflect.TypeOf((*ScheduleRotationsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -175,7 +175,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versions", GoGetter: "Versions"},
 			_jsii_.MemberProperty{JsiiProperty: "versionsInput", GoGetter: "VersionsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -183,15 +183,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersions",
-		reflect.TypeOf((*ScheduleRotationsVersions)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersions](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsHandovers",
-		reflect.TypeOf((*ScheduleRotationsVersionsHandovers)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsHandovers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsHandoversList",
-		reflect.TypeOf((*ScheduleRotationsVersionsHandoversList)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsHandoversList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -205,7 +205,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsVersionsHandoversList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -213,7 +213,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsHandoversOutputReference",
-		reflect.TypeOf((*ScheduleRotationsVersionsHandoversOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsHandoversOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -241,7 +241,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsVersionsHandoversOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -249,11 +249,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsLayers",
-		reflect.TypeOf((*ScheduleRotationsVersionsLayers)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsLayers](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsLayersList",
-		reflect.TypeOf((*ScheduleRotationsVersionsLayersList)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsLayersList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -267,7 +267,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsVersionsLayersList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -275,7 +275,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsLayersOutputReference",
-		reflect.TypeOf((*ScheduleRotationsVersionsLayersOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsLayersOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -303,7 +303,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsVersionsLayersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -311,7 +311,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsList",
-		reflect.TypeOf((*ScheduleRotationsVersionsList)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -325,7 +325,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsVersionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -333,7 +333,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsOutputReference",
-		reflect.TypeOf((*ScheduleRotationsVersionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingIntervals", GoGetter: "WorkingIntervals"},
 			_jsii_.MemberProperty{JsiiProperty: "workingIntervalsInput", GoGetter: "WorkingIntervalsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsVersionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -382,11 +382,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsWorkingIntervals",
-		reflect.TypeOf((*ScheduleRotationsVersionsWorkingIntervals)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsWorkingIntervals](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsWorkingIntervalsList",
-		reflect.TypeOf((*ScheduleRotationsVersionsWorkingIntervalsList)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsWorkingIntervalsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -400,7 +400,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -408,7 +408,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.schedule.ScheduleRotationsVersionsWorkingIntervalsOutputReference",
-		reflect.TypeOf((*ScheduleRotationsVersionsWorkingIntervalsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[ScheduleRotationsVersionsWorkingIntervalsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -438,7 +438,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekday", GoGetter: "Weekday"},
 			_jsii_.MemberProperty{JsiiProperty: "weekdayInput", GoGetter: "WeekdayInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_ScheduleRotationsVersionsWorkingIntervalsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

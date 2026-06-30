@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsNavigateOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsNavigateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsNavigateOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkflowExpressionsOperationsNavigateOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsNavigateOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsNavigateOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewWorkflowExpressionsOperationsNavigateOutputReferenceParameters(t
 
 	return nil
 }
-

@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsList) validateResolveParameters(
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkflowExpressionsOperationsListParameters(terraformResource cd
 
 	return nil
 }
-

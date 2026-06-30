@@ -19,7 +19,7 @@ func (c *jsiiProxy_CustomFieldOption) validateAddMoveTargetParameters(moveTarget
 	return nil
 }
 
-func (c *jsiiProxy_CustomFieldOption) validateAddOverrideParameters(path *string, value interface{}) error {
+func (c *jsiiProxy_CustomFieldOption) validateAddOverrideParameters(path *string, value any) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func (c *jsiiProxy_CustomFieldOption) validateMoveFromIdParameters(id *string) e
 	return nil
 }
 
-func (c *jsiiProxy_CustomFieldOption) validateMoveToParameters(moveTarget *string, index interface{}) error {
+func (c *jsiiProxy_CustomFieldOption) validateMoveToParameters(moveTarget *string, index any) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func validateCustomFieldOption_GenerateConfigForImportParameters(scope construct
 	return nil
 }
 
-func validateCustomFieldOption_IsConstructParameters(x interface{}) error {
+func validateCustomFieldOption_IsConstructParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -228,7 +228,7 @@ func validateCustomFieldOption_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCustomFieldOption_IsTerraformElementParameters(x interface{}) error {
+func validateCustomFieldOption_IsTerraformElementParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -236,7 +236,7 @@ func validateCustomFieldOption_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
-func validateCustomFieldOption_IsTerraformResourceParameters(x interface{}) error {
+func validateCustomFieldOption_IsTerraformResourceParameters(x any) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func validateCustomFieldOption_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_CustomFieldOption) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_CustomFieldOption) validateSetConnectionParameters(val any) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_CustomFieldOption) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_CustomFieldOption) validateSetCountParameters(val interface{}) error {
+func (j *jsiiProxy_CustomFieldOption) validateSetCountParameters(val any) error {
 	switch val.(type) {
 	case *float64:
 		// ok
@@ -350,7 +350,7 @@ func (j *jsiiProxy_CustomFieldOption) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_CustomFieldOption) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_CustomFieldOption) validateSetProvisionersParameters(val *[]any) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -430,4 +430,3 @@ func validateNewCustomFieldOptionParameters(scope constructs.Construct, id *stri
 
 	return nil
 }
-

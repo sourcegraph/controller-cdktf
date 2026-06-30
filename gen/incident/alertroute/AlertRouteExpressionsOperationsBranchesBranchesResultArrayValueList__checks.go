@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOperationsBranchesBranchesResultArrayVal
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOperationsBranchesBranchesResultArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteExpressionsOperationsBranchesBranchesResultArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertRouteExpressionsOperationsBranchesBranchesResultArrayValueL
 
 	return nil
 }
-

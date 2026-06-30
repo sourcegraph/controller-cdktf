@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPath",
-		reflect.TypeOf((*EscalationPath)(nil)).Elem(),
+		reflect.TypeFor[EscalationPath](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "workingHours", GoGetter: "WorkingHours"},
 			_jsii_.MemberProperty{JsiiProperty: "workingHoursInput", GoGetter: "WorkingHoursInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPath{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -74,23 +74,23 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathConfig",
-		reflect.TypeOf((*EscalationPathConfig)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPath",
-		reflect.TypeOf((*EscalationPathPath)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPath](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElse",
-		reflect.TypeOf((*EscalationPathPathIfElse)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElse](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditions",
-		reflect.TypeOf((*EscalationPathPathIfElseConditions)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditions](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsList",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -112,7 +112,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -143,7 +143,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -151,15 +151,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindings",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindings)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsParamBindings](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsArrayValue",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsArrayValue)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsParamBindingsArrayValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsArrayValueList",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsArrayValueList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsParamBindingsArrayValueList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -173,7 +173,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsArrayValueList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -181,7 +181,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsArrayValueOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsArrayValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsParamBindingsArrayValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -211,7 +211,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsArrayValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -219,7 +219,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsList",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsParamBindingsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -233,7 +233,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -241,7 +241,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsParamBindingsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayValue", GoGetter: "ArrayValue"},
 			_jsii_.MemberProperty{JsiiProperty: "arrayValueInput", GoGetter: "ArrayValueInput"},
@@ -273,7 +273,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -281,11 +281,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsValue",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsValue)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsParamBindingsValue](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseConditionsParamBindingsValueOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseConditionsParamBindingsValueOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseConditionsParamBindingsValueOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -315,7 +315,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseConditionsParamBindingsValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -323,15 +323,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePath",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePath)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePath](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevel",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevel)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathLevel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathLevelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ackMode", GoGetter: "AckMode"},
 			_jsii_.MemberProperty{JsiiProperty: "ackModeInput", GoGetter: "AckModeInput"},
@@ -374,7 +374,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeToAckWeekdayIntervalConfigIdInput", GoGetter: "TimeToAckWeekdayIntervalConfigIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathLevelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -382,11 +382,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfig",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelRoundRobinConfig)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathLevelRoundRobinConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -415,7 +415,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -423,11 +423,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelTargets",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelTargets)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathLevelTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelTargetsList",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelTargetsList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathLevelTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -441,7 +441,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathLevelTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -449,7 +449,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelTargetsOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathLevelTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathLevelTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -482,7 +482,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urgency", GoGetter: "Urgency"},
 			_jsii_.MemberProperty{JsiiProperty: "urgencyInput", GoGetter: "UrgencyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathLevelTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -490,7 +490,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathList",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -504,7 +504,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -512,11 +512,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannel",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannel)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathNotifyChannel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathNotifyChannelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -552,7 +552,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeToAckWeekdayIntervalConfigIdInput", GoGetter: "TimeToAckWeekdayIntervalConfigIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -560,11 +560,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelTargets",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannelTargets)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathNotifyChannelTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelTargetsList",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannelTargetsList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathNotifyChannelTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -578,7 +578,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -586,7 +586,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathNotifyChannelTargetsOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathNotifyChannelTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathNotifyChannelTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -619,7 +619,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urgency", GoGetter: "Urgency"},
 			_jsii_.MemberProperty{JsiiProperty: "urgencyInput", GoGetter: "UrgencyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathNotifyChannelTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -627,7 +627,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -672,7 +672,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -680,11 +680,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathRepeat",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathRepeat)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathRepeat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathRepeatOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseElsePathRepeatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseElsePathRepeatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -712,7 +712,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toNodeInput", GoGetter: "ToNodeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseElsePathRepeatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -720,7 +720,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -754,7 +754,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thenPathInput", GoGetter: "ThenPathInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -762,15 +762,15 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPath",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPath)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPath](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevel",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevel)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathLevel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathLevelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ackMode", GoGetter: "AckMode"},
 			_jsii_.MemberProperty{JsiiProperty: "ackModeInput", GoGetter: "AckModeInput"},
@@ -813,7 +813,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeToAckWeekdayIntervalConfigIdInput", GoGetter: "TimeToAckWeekdayIntervalConfigIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathLevelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -821,11 +821,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelRoundRobinConfig",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelRoundRobinConfig)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathLevelRoundRobinConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -854,7 +854,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathLevelRoundRobinConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -862,11 +862,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargets",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelTargets)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathLevelTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargetsList",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelTargetsList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathLevelTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -880,7 +880,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -888,7 +888,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathLevelTargetsOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathLevelTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathLevelTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -921,7 +921,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urgency", GoGetter: "Urgency"},
 			_jsii_.MemberProperty{JsiiProperty: "urgencyInput", GoGetter: "UrgencyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathLevelTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -929,7 +929,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathList",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -943,7 +943,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -951,11 +951,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannel",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannel)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathNotifyChannel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathNotifyChannelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -991,7 +991,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeToAckWeekdayIntervalConfigIdInput", GoGetter: "TimeToAckWeekdayIntervalConfigIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -999,11 +999,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargets",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannelTargets)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathNotifyChannelTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargetsList",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannelTargetsList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathNotifyChannelTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1017,7 +1017,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1025,7 +1025,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1058,7 +1058,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urgency", GoGetter: "Urgency"},
 			_jsii_.MemberProperty{JsiiProperty: "urgencyInput", GoGetter: "UrgencyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathNotifyChannelTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1066,7 +1066,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1111,7 +1111,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1119,11 +1119,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathRepeat",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathRepeat)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathRepeat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseThenPathRepeatOutputReference",
-		reflect.TypeOf((*EscalationPathPathIfElseThenPathRepeatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathIfElseThenPathRepeatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1151,7 +1151,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toNodeInput", GoGetter: "ToNodeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathIfElseThenPathRepeatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1159,11 +1159,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevel",
-		reflect.TypeOf((*EscalationPathPathLevel)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathLevel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelOutputReference",
-		reflect.TypeOf((*EscalationPathPathLevelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathLevelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ackMode", GoGetter: "AckMode"},
 			_jsii_.MemberProperty{JsiiProperty: "ackModeInput", GoGetter: "AckModeInput"},
@@ -1206,7 +1206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeToAckWeekdayIntervalConfigIdInput", GoGetter: "TimeToAckWeekdayIntervalConfigIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathLevelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1214,11 +1214,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelRoundRobinConfig",
-		reflect.TypeOf((*EscalationPathPathLevelRoundRobinConfig)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathLevelRoundRobinConfig](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelRoundRobinConfigOutputReference",
-		reflect.TypeOf((*EscalationPathPathLevelRoundRobinConfigOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathLevelRoundRobinConfigOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1247,7 +1247,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathLevelRoundRobinConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1255,11 +1255,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelTargets",
-		reflect.TypeOf((*EscalationPathPathLevelTargets)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathLevelTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelTargetsList",
-		reflect.TypeOf((*EscalationPathPathLevelTargetsList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathLevelTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1273,7 +1273,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathLevelTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1281,7 +1281,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelTargetsOutputReference",
-		reflect.TypeOf((*EscalationPathPathLevelTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathLevelTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1314,7 +1314,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urgency", GoGetter: "Urgency"},
 			_jsii_.MemberProperty{JsiiProperty: "urgencyInput", GoGetter: "UrgencyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathLevelTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1322,7 +1322,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathList",
-		reflect.TypeOf((*EscalationPathPathList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1336,7 +1336,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1344,11 +1344,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannel",
-		reflect.TypeOf((*EscalationPathPathNotifyChannel)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathNotifyChannel](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannelOutputReference",
-		reflect.TypeOf((*EscalationPathPathNotifyChannelOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathNotifyChannelOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1384,7 +1384,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "timeToAckWeekdayIntervalConfigIdInput", GoGetter: "TimeToAckWeekdayIntervalConfigIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathNotifyChannelOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1392,11 +1392,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannelTargets",
-		reflect.TypeOf((*EscalationPathPathNotifyChannelTargets)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathNotifyChannelTargets](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannelTargetsList",
-		reflect.TypeOf((*EscalationPathPathNotifyChannelTargetsList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathNotifyChannelTargetsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1410,7 +1410,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathNotifyChannelTargetsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1418,7 +1418,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathNotifyChannelTargetsOutputReference",
-		reflect.TypeOf((*EscalationPathPathNotifyChannelTargetsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathNotifyChannelTargetsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1451,7 +1451,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urgency", GoGetter: "Urgency"},
 			_jsii_.MemberProperty{JsiiProperty: "urgencyInput", GoGetter: "UrgencyInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathNotifyChannelTargetsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1459,7 +1459,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathOutputReference",
-		reflect.TypeOf((*EscalationPathPathOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1504,7 +1504,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1512,11 +1512,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathRepeat",
-		reflect.TypeOf((*EscalationPathPathRepeat)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathRepeat](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathPathRepeatOutputReference",
-		reflect.TypeOf((*EscalationPathPathRepeatOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathPathRepeatOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1544,7 +1544,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "toNodeInput", GoGetter: "ToNodeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathPathRepeatOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1552,11 +1552,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHours",
-		reflect.TypeOf((*EscalationPathWorkingHours)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathWorkingHours](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursList",
-		reflect.TypeOf((*EscalationPathWorkingHoursList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathWorkingHoursList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1570,7 +1570,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathWorkingHoursList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1578,7 +1578,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursOutputReference",
-		reflect.TypeOf((*EscalationPathWorkingHoursOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathWorkingHoursOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1611,7 +1611,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekdayIntervals", GoGetter: "WeekdayIntervals"},
 			_jsii_.MemberProperty{JsiiProperty: "weekdayIntervalsInput", GoGetter: "WeekdayIntervalsInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathWorkingHoursOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -1619,11 +1619,11 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursWeekdayIntervals",
-		reflect.TypeOf((*EscalationPathWorkingHoursWeekdayIntervals)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathWorkingHoursWeekdayIntervals](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursWeekdayIntervalsList",
-		reflect.TypeOf((*EscalationPathWorkingHoursWeekdayIntervalsList)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathWorkingHoursWeekdayIntervalsList](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1637,7 +1637,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
@@ -1645,7 +1645,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.escalationPath.EscalationPathWorkingHoursWeekdayIntervalsOutputReference",
-		reflect.TypeOf((*EscalationPathWorkingHoursWeekdayIntervalsOutputReference)(nil)).Elem(),
+		reflect.TypeFor[EscalationPathWorkingHoursWeekdayIntervalsOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1675,7 +1675,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "weekday", GoGetter: "Weekday"},
 			_jsii_.MemberProperty{JsiiProperty: "weekdayInput", GoGetter: "WeekdayInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_EscalationPathWorkingHoursWeekdayIntervalsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkflowConditionGroupsConditionsParamBindingsList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowConditionGroupsConditionsParamBindingsList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowConditionGroupsConditionsParamBindingsList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewWorkflowConditionGroupsConditionsParamBindingsListParameters(ter
 
 	return nil
 }
-

@@ -9,7 +9,7 @@ import (
 func init() {
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntries",
-		reflect.TypeOf((*CatalogEntries)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntries](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CatalogEntries{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
 			return &j
@@ -69,19 +69,19 @@ func init() {
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntriesConfig",
-		reflect.TypeOf((*CatalogEntriesConfig)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntriesConfig](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntries",
-		reflect.TypeOf((*CatalogEntriesEntries)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntriesEntries](),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesAttributeValues",
-		reflect.TypeOf((*CatalogEntriesEntriesAttributeValues)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntriesEntriesAttributeValues](),
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesAttributeValuesMap",
-		reflect.TypeOf((*CatalogEntriesEntriesAttributeValuesMap)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntriesEntriesAttributeValuesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -94,7 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CatalogEntriesEntriesAttributeValuesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -102,7 +102,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesAttributeValuesOutputReference",
-		reflect.TypeOf((*CatalogEntriesEntriesAttributeValuesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntriesEntriesAttributeValuesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayValue", GoGetter: "ArrayValue"},
 			_jsii_.MemberProperty{JsiiProperty: "arrayValueInput", GoGetter: "ArrayValueInput"},
@@ -132,7 +132,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CatalogEntriesEntriesAttributeValuesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
@@ -140,7 +140,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesMap",
-		reflect.TypeOf((*CatalogEntriesEntriesMap)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntriesEntriesMap](),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -153,7 +153,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CatalogEntriesEntriesMap{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
 			return &j
@@ -161,7 +161,7 @@ func init() {
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesOutputReference",
-		reflect.TypeOf((*CatalogEntriesEntriesOutputReference)(nil)).Elem(),
+		reflect.TypeFor[CatalogEntriesEntriesOutputReference](),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasesInput", GoGetter: "AliasesInput"},
@@ -197,7 +197,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
-		func() interface{} {
+		func() any {
 			j := jsiiProxy_CatalogEntriesEntriesOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j

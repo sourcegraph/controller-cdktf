@@ -98,7 +98,7 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsValueOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowStepsParamBindingsValueOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowStepsParamBindingsValueOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +163,7 @@ func (j *jsiiProxy_WorkflowStepsParamBindingsValueOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowStepsParamBindingsValueOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_WorkflowStepsParamBindingsValueOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -230,4 +230,3 @@ func validateNewWorkflowStepsParamBindingsValueOutputReferenceParameters(terrafo
 
 	return nil
 }
-

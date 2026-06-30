@@ -6,9 +6,9 @@ import (
 
 type CatalogTypeAttributeConfig struct {
 	// Experimental.
-	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	Connection any `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	Count any `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -18,7 +18,7 @@ type CatalogTypeAttributeConfig struct {
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
-	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	Provisioners *[]any `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of this catalog type.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_type_attribute#catalog_type_id CatalogTypeAttribute#catalog_type_id}
@@ -34,7 +34,7 @@ type CatalogTypeAttributeConfig struct {
 	// Whether this attribute is an array or scalar.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_type_attribute#array CatalogTypeAttribute#array}
-	Array interface{} `field:"optional" json:"array" yaml:"array"`
+	Array any `field:"optional" json:"array" yaml:"array"`
 	// If this is a backlink, the id of the attribute that it's linked from.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_type_attribute#backlink_attribute CatalogTypeAttribute#backlink_attribute}
@@ -50,6 +50,5 @@ type CatalogTypeAttributeConfig struct {
 	// NOTE: When enabled, you should use the `managed_attributes` argument on either `incident_catalog_entry` or `incident_catalog_entries` to manage the values of other attributes on this type, without Terraform overwriting values set in the dashboard.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/resources/catalog_type_attribute#schema_only CatalogTypeAttribute#schema_only}
-	SchemaOnly interface{} `field:"optional" json:"schemaOnly" yaml:"schemaOnly"`
+	SchemaOnly any `field:"optional" json:"schemaOnly" yaml:"schemaOnly"`
 }
-

@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlertSourceTemplateAttributesBindingArrayValueList) validateR
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateAttributesBindingArrayValueList) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertSourceTemplateAttributesBindingArrayValueList) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -101,4 +101,3 @@ func validateNewAlertSourceTemplateAttributesBindingArrayValueListParameters(ter
 
 	return nil
 }
-

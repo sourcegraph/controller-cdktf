@@ -101,7 +101,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validatePutElseBranchPa
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validatePutOperationsParameters(value interface{}) error {
+func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validatePutOperationsParameters(value any) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -140,7 +140,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -205,7 +205,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -288,4 +288,3 @@ func validateNewAlertRouteExpressionsOutputReferenceParameters(terraformResource
 
 	return nil
 }
-

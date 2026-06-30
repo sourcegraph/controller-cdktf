@@ -98,7 +98,7 @@ func (s *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateSetComplexObjectIndexParameters(val any) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateSetCount
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ScheduleHolidaysPublicConfigOutputReference) validateSetInternalValueParameters(val any) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
@@ -222,4 +222,3 @@ func validateNewScheduleHolidaysPublicConfigOutputReferenceParameters(terraformR
 
 	return nil
 }
-
